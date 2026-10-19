@@ -1,0 +1,81 @@
+# references-mcp
+
+An MCP server that brings curated references to your agent so you don't have to go looking.
+
+Before your agent designs a landing page, cuts a launch film, drafts an ad or writes a post, it calls
+`references_suggest`. It gets back a short set of directions drawn from work that has already been judged
+good: award winners, editor-picked galleries, winning ads, top posts. It shows them to you, you pick one, and it
+builds against that pick instead of an AI default.
+
+## What comes back
+
+`references_suggest({ intent: "landing page for an AI lab" })` returns:
+
+- **`directions`**: ranked references, each with a url and a **`take`** (the specific thing to carry over).
+  Your own library ranks first, then a canon of proven work.
+- **`fresh`**: today's picks pulled live from the curations: Awwwards Sites of the Day, One Page Love,
+  Ads of the World, Vimeo Staff Picks, Hacker News best.
+- **`curations`**: where to go deeper for that medium: Cannes Lions, D&AD, The One Show, Clios, Effies,
+  Mobbin, Godly, Land-book, Pitch Deck Hunt, Meta Ad Library, TikTok Creative Center, and more.
+
+Mediums: `ui` · `landing` · `app` · `deck` · `video` · `motion` · `animation` · `social` · `post` · `ad`.
+If none is given, it is inferred from the intent ("pitch deck" → deck, "reel" → video, "campaign" → ad).
+
+## Tools
+
+| tool | does |
+| --- | --- |
+| `references_suggest` | directions + fresh picks + curations for what's being made |
+| `references_get` | one reference in full |
+| `references_pick` | records your choice in `taste.jsonl`; later suggestions lean toward what you keep picking |
+| `references_add` | saves a link or screenshot plus its take into your library |
+
+## Install
+
+```bash
+claude mcp add references -s user -- npx -y github:sameeeeeeep/references-mcp
+```
+
+Or clone it and point any MCP client at `node src/server.mjs`.
+
+| env | default | |
+| --- | --- | --- |
+| `REFERENCES_DIR` | `~/.references` | your library, taste log and live cache |
+| `REFERENCES_LIBRARIES` | none | extra read-only folders of references (`:`-separated) |
+| `REFERENCES_LIVE` | `1` | `0` turns off live pulls (canon + library only) |
+
+## Your library
+
+A library is just folders. Each `.md` is one reference. Its image is the same-named sibling, or the folder's
+only image:
+
+```
+~/.references/brand/ref-1.md
+~/.references/brand/ref-1.png
+```
+
+```md
+---
+medium: landing
+title: Our old hero
+url: https://example.com
+tags: lime, dark
+---
+Lime on black, one huge headline, product shot below the fold.
+```
+
+Frontmatter is optional. Without it, the medium is guessed from the folder name and the text.
+
+## How it stays light
+
+The server only links to the work and never rehosts it. Live sources are fetched only when a suggestion is
+asked for, then cached for 12 hours. If a source is down, the last cache is used, or nothing; a suggestion
+never fails because a site did.
+
+## Add a curation
+
+Sources live in [`src/sources.mjs`](src/sources.mjs). A pointer is one line. A live source also needs an
+adapter: a url plus a `parse(text) → [{ title, url, image?, by?, note? }]`. The canon is in
+[`src/catalog.mjs`](src/catalog.mjs).
+
+MIT

@@ -1,0 +1,14 @@
+{
+  "name": "references-mcp",
+  "version": "0.1.0",
+  "description": "An MCP server that brings curated references (award winners, galleries, winning ads, top posts) to your agent, so it suggests directions before it designs anything.",
+  "type": "module",
+  "bin": { "references-mcp": "./src/server.mjs" },
+  "main": "./src/references.mjs",
+  "files": ["src"],
+  "scripts": { "start": "node src/server.mjs", "test": "node --test test/" },
+  "engines": { "node": ">=20" },
+  "keywords": ["mcp", "references", "design", "inspiration", "awwwards", "ads", "claude"],
+  "license": "MIT",
+  "dependencies": { "@modelcontextprotocol/sdk": "^1.29.0", "zod": "^3.23.0" }
+}
