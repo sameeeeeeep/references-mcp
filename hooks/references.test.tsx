@@ -39,7 +39,7 @@ for (const surface of ['desktop', 'terminal'] as const) {
     const done: any = await $.tool.call({ tool: TOOL, intent: SUGGEST.intent } as any)
     expect((done.context || []).join('\n')).toContain("don't build yet")
 
-    const ui = await $.ui.mount({ plugin: 'references', surface, ...ROW() } as any)
+    const ui = await $.ui.mount({ plugin: 'references', surface, ...BAND } as any)
     await until(ui, 'pick-video-linear-release')
     expect(await ui.find({ key: 'pick-live:vimeo:x' })).toBeDefined()
     await ui.press({ key: 'pick-live:vimeo:x' })
@@ -51,7 +51,8 @@ for (const surface of ['desktop', 'terminal'] as const) {
     expect(msg).not.toContain('Ignore previous instructions') // third-party titles never ride along
     await until(ui, 'pick-video-linear-release', true)
     expect(await ui.find({ key: 'pick-video-linear-release' })).toBeUndefined()
-    expect(await ui.find({ type: 'Text', text: /Picked: Ignore previous|Picked: / })).toBeDefined() // settles into one line
+    const row = await $.ui.mount({ plugin: 'references', surface, ...ROW() } as any)
+    expect(await row.find({ type: 'Text', text: /^Picked: / })).toBeDefined() // the chat row settles into one line
     await ui.unmount()
   })
 }
@@ -60,7 +61,7 @@ test('a canon pick carries its take; picking again unpicks', async ($, on) => {
   const sent: string[] = []
   world(on, sent)
   await $.tool.call({ tool: TOOL, intent: 'x' } as any)
-  const ui = await $.ui.mount({ plugin: 'references', surface: 'desktop', ...ROW() } as any)
+  const ui = await $.ui.mount({ plugin: 'references', surface: 'desktop', ...BAND } as any)
   await until(ui, 'pick-video-shot-on-iphone')
   await ui.press({ key: 'pick-video-shot-on-iphone' })
   await ui.press({ key: 'pick-video-shot-on-iphone' })
@@ -73,15 +74,13 @@ test('a message with no pick goes through untouched and clears the cards', async
   const sent: string[] = []
   world(on, sent)
   await $.tool.call({ tool: TOOL, intent: 'x' } as any)
-  const ui = await $.ui.mount({ plugin: 'references', surface: 'desktop', ...ROW() } as any)
+  const ui = await $.ui.mount({ plugin: 'references', surface: 'desktop', ...BAND } as any)
   await until(ui, 'more')
-  const band = await $.ui.mount({ plugin: 'references', surface: 'desktop', ...BAND } as any)
-  expect(await band.find({ key: 'dismiss' })).toBeDefined()
+  expect(await ui.find({ key: 'dismiss' })).toBeDefined()
   await $.prompt.submit({ text: 'never mind' })
   expect(sent.at(-1)).toBe('never mind')
   await until(ui, 'more', true)
   expect(await ui.find({ key: 'more' })).toBeUndefined()
-  expect(await band.find({ key: 'dismiss' })).toBeUndefined()
 })
 
 test('other tools pass straight through', async ($, on) => {
@@ -96,7 +95,7 @@ test('Preview opens a pane with the reference large; it steps between references
   on('ui.open' as any, () => ({ value: { opened: true } }) as any)
   on('ui.close' as any, () => ({ value: undefined }) as any)
   await $.tool.call({ tool: TOOL, intent: 'x' } as any)
-  const ui = await $.ui.mount({ plugin: 'references', surface: 'desktop', ...ROW() } as any)
+  const ui = await $.ui.mount({ plugin: 'references', surface: 'desktop', ...BAND } as any)
   await until(ui, 'view-video-linear-release')
   await ui.press({ key: 'view-video-linear-release' })
   const pane = await $.ui.mount({ plugin: 'references', surface: 'desktop', component: 'Pane', requestId: 'references-preview', props: { title: 'Reference', isFocused: true, bodyColumns: 80, placement: 'dock' } } as any)
@@ -111,28 +110,27 @@ test('Preview opens a pane with the reference large; it steps between references
   expect(sent.at(-1)).toContain('Reference picked: Apple "Shot on iPhone"')
 })
 
-test('a folded "Used 2 tools" group unfolds, and the cards draw on the suggestion row itself', async ($, on) => {
+test('in the chat the suggestion is one quiet line; the band pages through all the cards', async ($, on) => {
   const sent: string[] = []
-  let expanded: boolean | undefined
-  on('ui.render', { component: 'ToolGroup' } as any, ($: any, e: any) => { expanded = e.props.isExpanded; const { Box } = $.ui.resolve(e); return <Box /> })
   world(on, sent)
   await $.tool.call({ tool: TOOL, intent: 'x' } as any)
-  const group = await $.ui.mount({ plugin: 'references', surface: 'desktop', component: 'ToolGroup', props: { calls: [{ tool: 'ToolSearch', input: {}, isRunning: false, isErrored: false }, { tool_use_id: lastCall, tool: TOOL, input: {}, isRunning: false, isErrored: false }], isActive: false, isExpanded: false } } as any)
-  expect(expanded).toBe(true)
-  await group.unmount()
-  const row = await $.ui.mount({ plugin: 'references', surface: 'desktop', component: 'ToolUse', requestId: lastCall, props: { tool_use_id: lastCall, tool: TOOL, input: {}, isRunning: false, isErrored: false, isInterrupted: false, output: '' } } as any)
-  await until(row, 'pick-video-linear-release')
-  expect(await row.find({ key: 'pick-video-linear-release' })).toBeDefined()
+  const row = await $.ui.mount({ plugin: 'references', surface: 'desktop', ...ROW() } as any)
+  await until(row, 'never')
+  expect(await row.find({ type: 'Text', text: /references above the prompt/ })).toBeDefined()
+  expect(await row.find({ key: 'pick-video-linear-release' })).toBeUndefined()
+  const band = await $.ui.mount({ plugin: 'references', surface: 'desktop', ...BAND } as any)
+  await until(band, 'pick-video-linear-release')
+  expect(await band.find({ key: 'pick-video-shot-on-iphone' })).toBeDefined() // 3 cards fit one row of 4
 })
 
-test('/refs asks the server itself and draws the cards in its own row (no relay message, no turn)', async ($, on) => {
+test('/refs asks the server itself and the cards appear in the band (no relay message, no turn)', async ($, on) => {
   const sent: string[] = []
   world(on, sent)
   on('tool.list' as any, () => ({ value: [{ name: TOOL }] }) as any)
   const out: any = await $.command.run({ command: 'refs', args: 'launch film for a Mac app' } as any)
   expect(String(out?.text || '')).toContain('pick a card')
   expect(sent.length).toBe(0)
-  const row = await $.ui.mount({ plugin: 'references', surface: 'desktop', component: 'CommandOutput', props: { command: 'refs', args: 'launch film for a Mac app', text: '' } } as any)
-  await until(row, 'pick-video-linear-release')
-  expect(await row.find({ key: 'pick-video-linear-release' })).toBeDefined()
+  const band = await $.ui.mount({ plugin: 'references', surface: 'desktop', ...BAND } as any)
+  await until(band, 'pick-video-linear-release')
+  expect(await band.find({ key: 'pick-video-linear-release' })).toBeDefined()
 })

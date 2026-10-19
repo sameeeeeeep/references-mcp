@@ -38,7 +38,7 @@ If none is given, it is inferred from the intent ("pitch deck" → deck, "reel" 
 ## Install
 
 **Claude Code (server + picker):** one plugin brings the server and a mod that shows suggestions as picture
-cards right in the conversation.
+cards in a row above your prompt.
 
 ```bash
 claude plugin marketplace add sameeeeeeep/references-mcp
@@ -64,7 +64,7 @@ Or clone it and point the client at `node src/server.mjs`.
 
 ## The picker
 
-When Claude calls `references_suggest`, its result draws as up to six cards in the conversation: the best
+When Claude calls `references_suggest`, up to six cards appear in a row above your prompt (four at a time, ‹ › for the rest): the best
 directions plus one fresh pick per live source. Each card is a small carousel of the reference's own pictures
 (its page's gallery) or, for videos, real frames that play. Pick one, write your message as usual, and the
 pick is attached to it for Claude. **Preview** opens a side pane with the reference large; **Open / Play**

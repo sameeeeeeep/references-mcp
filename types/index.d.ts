@@ -26,6 +26,8 @@ export type Board = {
   pos: Record<string, number>
   /** The card open in the preview pane. */
   preview: string | null
+  /** Which row of cards the band shows. */
+  page: number
 }
 
 declare module 'claude-code' {

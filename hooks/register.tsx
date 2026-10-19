@@ -55,7 +55,7 @@ export const register: Register = on => {
       sections: [...r.sections, {
         id: 'references-first',
         scope: 'session',
-        text: 'Before you design or write anything with a look or a voice (UI, landing page, app screen, deck, video, motion, animation, social post, ad, written post), call references_suggest with what is being made. The person sees the results as picture cards in the conversation and picks one with their next message; a [Reference picked] note then arrives with it. If they name a card in words instead ("go with Shot on iPhone"), use that one.',
+        text: 'Before you design or write anything with a look or a voice (UI, landing page, app screen, deck, video, motion, animation, social post, ad, written post), call references_suggest with what is being made. The person sees the results as picture cards above their prompt and picks one with their next message; a [Reference picked] note then arrives with it. If they name a card in words instead ("go with Shot on iPhone"), use that one.',
       }],
     }
   })
@@ -71,7 +71,7 @@ export const register: Register = on => {
       slides.clear(); isVideo.clear(); tiny.clear()
       await update($, board, () => ({
         toolUseId: String((e as any).tool_use_id || ''), intent: String(out.intent || ''), medium: out.medium ?? null,
-        cards, thumbs: 0, selected: null, pos: {}, preview: null,
+        cards, thumbs: 0, selected: null, pos: {}, preview: null, page: 0,
       }))
       void media($, cards)
       return { ...ran, context: [...(ran.context || []), SHOWN] }
@@ -95,102 +95,85 @@ export const register: Register = on => {
     return next(card ? { ...e, context: [...(e.context || []), pickNote(card, b.intent)] } : e)
   })
 
-  // The cards, in the conversation, where the suggestion happened: under the tool's row, on the row itself when
-  // the transcript folds it into a group (unfolded below), or under /refs.
+  // In the conversation the suggestion is one quiet line (its raw result would be a wall of JSON); the cards
+  // themselves live in the band above the prompt, in view while the person writes.
   on('ui.render', { component: 'ToolResult' }, async ($, e, next) => {
     if (!IS_SUGGEST.test(String(e.props.tool))) return next(e)
-    return (await here($, e, String(e.props.tool_use_id), e.viewport?.columns)) ?? next(e)
-  })
-
-  on('ui.render', { component: 'ToolUse' }, async ($, e, next) => {
-    if (!IS_SUGGEST.test(String(e.props.tool)) || e.props.isRunning) return next(e)
-    return (await here($, e, String(e.props.tool_use_id), e.viewport?.columns)) ?? next(e)
-  })
-
-  // "Used 2 tools" would hide the cards: unfold any group holding a suggestion.
-  on('ui.render', { component: 'ToolGroup' }, async ($, e, next) => {
-    if (!e.props.calls.some((c: any) => IS_SUGGEST.test(String(c.tool)))) return next(e)
-    return next({ ...e, props: { ...e.props, isExpanded: true } })
+    return (await quietLine($, e, String(e.props.tool_use_id))) ?? next(e)
   })
 
   on('ui.render', { component: 'CommandOutput' }, async ($, e, next) => {
     if (e.props.command !== 'refs') return next(e)
     const b = await read($, board)
-    if (b && b.toolUseId && b.intent === String(e.props.args || '').trim()) return (await here($, e, b.toolUseId, e.viewport?.columns)) ?? next(e)
-    const line = settled.get(`refs:${String(e.props.args || '').trim()}`)
-    const { Text } = $.ui.resolve(e) as any
-    return line ? <Text dimColor>{line}</Text> : next(e)
+    const id = b && b.intent === String(e.props.args || '').trim() ? b.toolUseId : `refs:${String(e.props.args || '').trim()}`
+    return (await quietLine($, e, id)) ?? next(e)
   })
 
   on('ui.render', { component: 'Pane', requestId: PANE }, async ($, e) => {
     return previewPane($, e, $.ui.resolve(e) as any, await read($, board))
   })
 
-  // While they type: which reference rides along, with a way to clear it.
+  // The cards: one row above the prompt, in view while the person writes.
   on('ui.render', { component: 'AbovePrompt' }, async ($, e, next) => {
     const b = await read($, board)
     if (!b || e.props.hasSurvey) return next(e)
-    const { Box, Text, Button } = $.ui.resolve(e) as any
-    const i = b.cards.findIndex(c => c.id === b.selected)
-    return (
-      <Box flexDirection="row" gap={2}>
-        <Text>
-          <Text bold>References</Text>
-          <Text dimColor>{i >= 0 ? `  #${i + 1} ${b.cards[i].title} rides along with your message` : '  pick a card above, then write your message'}</Text>
-        </Text>
-        {i >= 0 ? <Button key="clear" label="Clear" plain onPress={() => update($, board, (cur: Board | null) => (cur ? { ...cur, selected: null } : cur))} /> : null}
-        <Button key="dismiss" label="Dismiss" role="dismiss" plain onPress={() => update($, board, () => null)} />
-      </Box>
-    )
+    return cardsView($, e, $.ui.resolve(e) as any, b, e.props.bodyColumns)
   })
 }
 
-// The live board's cards for this row, the one line it settled into, or nothing (the engine draws its own).
-async function here($: any, e: any, id: string, columns?: number) {
+// The line a suggestion's row shows: live ("N references above the prompt") or what it settled into.
+async function quietLine($: any, e: any, id: string) {
   const b = await read($, board)
-  const ui = $.ui.resolve(e) as any
-  if (b && b.toolUseId === id) return cardsView($, e, ui, b, columns ?? 140)
+  const { Text } = $.ui.resolve(e) as any
+  if (b && b.toolUseId === id) return <Text dimColor>{`${b.cards.length} references above the prompt: pick one, then write your message`}</Text>
   const line = settled.get(id)
-  return line ? <ui.Text dimColor>{line}</ui.Text> : undefined
+  return line ? <Text dimColor>{line}</Text> : undefined
 }
 
-const SHOWN = "These directions are now shown to the person as picture cards right under this call. Don't list or describe them again and don't build yet: end your turn with one short line inviting them to pick a card and add anything. Their pick arrives attached to their next message as a [Reference picked] note."
+const SHOWN = "These directions are now shown to the person as picture cards above their prompt. Don't list or describe them again and don't build yet: end your turn with one short line inviting them to pick a card and add anything. Their pick arrives attached to their next message as a [Reference picked] note."
+
+const PER_ROW = 4
 
 function cardsView($: any, e: any, ui: any, b: Board, columns: number) {
-  const { Box, Text, Button, Link } = ui
+  const { Box, Text, Button } = ui
   const desktop = e.surface === 'desktop'
-  const n = desktop ? b.cards.length : Math.max(1, Math.min(b.cards.length, Math.floor(columns / 32)))
-
-  const select = (id: string) => pick($, id)
-  const step = (id: string, by: number) => stepSlide($, id, by)
+  const per = desktop ? PER_ROW : Math.max(1, Math.min(PER_ROW, Math.floor(columns / 30)))
+  const pages = Math.max(1, Math.ceil(b.cards.length / per))
+  const page = Math.min(b.page || 0, pages - 1)
+  const shown = b.cards.slice(page * per, page * per + per)
+  const picked = b.cards.findIndex(c => c.id === b.selected)
   const send = (text: string) => () => { $.prompt.submit({ text }) }
+  const turn = (by: number) => () => update($, board, (cur: Board | null) => (cur ? { ...cur, page: ((cur.page || 0) + by + pages) % pages } : cur))
 
   return (
     <Box flexDirection="column" gap={1}>
       <Box flexDirection="row" justifyContent="space-between">
-        <Text dimColor>{b.intent}</Text>
+        <Text>
+          <Text bold>References</Text>
+          <Text dimColor>{picked >= 0 ? `  #${picked + 1} ${b.cards[picked].title} rides along with your message` : `  ${b.intent}  ·  pick one, then write your message`}</Text>
+        </Text>
         <Box flexDirection="row" gap={1}>
+          {pages > 1 ? <Button key="page-prev" label="‹" plain onPress={turn(-1)} /> : null}
+          {pages > 1 ? <Text dimColor>{`${page + 1}/${pages}`}</Text> : null}
+          {pages > 1 ? <Button key="page-next" label="›" plain onPress={turn(1)} /> : null}
           <Button key="more" label="More" plain onPress={send(`Show me different reference directions for "${b.intent}" (exclude ${JSON.stringify(b.cards.map(c => safeId(c.id)))}).`)} />
           <Button key="auto" label="You pick" plain onPress={send('You pick the reference that fits best, say which in one line, and go.')} />
+          {picked >= 0 ? <Button key="clear" label="Clear" plain onPress={() => update($, board, (cur: Board | null) => (cur ? { ...cur, selected: null } : cur))} /> : null}
+          <Button key="dismiss" label="Dismiss" role="dismiss" plain onPress={() => update($, board, () => null)} />
         </Box>
       </Box>
-      <Box flexDirection="row" flexWrap="wrap" gap={1}>
-        {b.cards.slice(0, n).map((c, i) => {
+      <Box flexDirection="row" flexWrap="nowrap" gap={1}>
+        {shown.map((c) => {
+          const i = b.cards.indexOf(c)
           const isPicked = c.id === b.selected
-          const k = slides.get(c.id)?.length || 0
-          const at = b.pos[c.id]
-          const link = safeUrl(c.url)
           return (
-            <Box key={c.id} flexDirection="column" width={desktop ? '32%' : 32}>
+            <Box key={c.id} flexDirection="column" width={desktop ? '24%' : 30}>
               {desktop
-                ? <ui.Svg source={cardSvg(c, CARD_W, i + 1, isPicked, slides.get(c.id), at, isVideo.has(c.id))} alt={`${c.title}: ${c.blurb}`} />
+                ? <ui.Svg source={cardSvg(c, CARD_W, i + 1, isPicked, slides.get(c.id), b.pos[c.id], isVideo.has(c.id), 0)} alt={`${c.title}: ${c.blurb}`} />
                 : e.surface === 'terminal' ? terminalCard(ui, c, i + 1, isPicked) : <Text>{c.title}</Text>}
               <Box flexDirection="row" gap={1}>
-                {k > 1 ? <Button key={`prev-${c.id}`} label="‹" plain onPress={step(c.id, -1)} /> : null}
-                <Button key={`pick-${c.id}`} label={isPicked ? '✓ Picked' : `Pick ${i + 1}`} variant={isPicked ? 'primary' : 'secondary'} onPress={select(c.id)} />
-                {k > 1 ? <Button key={`next-${c.id}`} label="›" plain onPress={step(c.id, 1)} /> : null}
+                <Button key={`pick-${c.id}`} label={isPicked ? '✓ Picked' : `Pick ${i + 1}`} hotkey={String(i + 1)} variant={isPicked ? 'primary' : 'secondary'} onPress={pick($, c.id)} />
                 <Button key={`view-${c.id}`} label="Preview" plain onPress={preview($, c.id)} />
-                {link ? <Link key={`open-${c.id}`} href={link} label={isVideo.has(c.id) ? 'Play ↗' : 'Open ↗'} /> : null}
               </Box>
             </Box>
           )
