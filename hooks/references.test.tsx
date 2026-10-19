@@ -37,7 +37,7 @@ for (const surface of ['desktop', 'terminal'] as const) {
     world(on, sent)
 
     const done: any = await $.tool.call({ tool: TOOL, intent: SUGGEST.intent } as any)
-    expect((done.context || []).join('\n')).toContain("Don't build yet")
+    expect((done.context || []).join('\n')).toContain("don't build yet")
 
     const ui = await $.ui.mount({ plugin: 'references', surface, ...ROW() } as any)
     await until(ui, 'pick-video-linear-release')
@@ -109,4 +109,30 @@ test('Preview opens a pane with the reference large; it steps between references
   await pane.press({ key: 'p-pick' })
   await $.prompt.submit({ text: 'this one' })
   expect(sent.at(-1)).toContain('Reference picked: Apple "Shot on iPhone"')
+})
+
+test('a folded "Used 2 tools" group unfolds, and the cards draw on the suggestion row itself', async ($, on) => {
+  const sent: string[] = []
+  let expanded: boolean | undefined
+  on('ui.render', { component: 'ToolGroup' } as any, ($: any, e: any) => { expanded = e.props.isExpanded; const { Box } = $.ui.resolve(e); return <Box /> })
+  world(on, sent)
+  await $.tool.call({ tool: TOOL, intent: 'x' } as any)
+  const group = await $.ui.mount({ plugin: 'references', surface: 'desktop', component: 'ToolGroup', props: { calls: [{ tool: 'ToolSearch', input: {}, isRunning: false, isErrored: false }, { tool_use_id: lastCall, tool: TOOL, input: {}, isRunning: false, isErrored: false }], isActive: false, isExpanded: false } } as any)
+  expect(expanded).toBe(true)
+  await group.unmount()
+  const row = await $.ui.mount({ plugin: 'references', surface: 'desktop', component: 'ToolUse', requestId: lastCall, props: { tool_use_id: lastCall, tool: TOOL, input: {}, isRunning: false, isErrored: false, isInterrupted: false, output: '' } } as any)
+  await until(row, 'pick-video-linear-release')
+  expect(await row.find({ key: 'pick-video-linear-release' })).toBeDefined()
+})
+
+test('/refs asks the server itself and draws the cards in its own row (no relay message, no turn)', async ($, on) => {
+  const sent: string[] = []
+  world(on, sent)
+  on('tool.list' as any, () => ({ value: [{ name: TOOL }] }) as any)
+  const out: any = await $.command.run({ command: 'refs', args: 'launch film for a Mac app' } as any)
+  expect(String(out?.text || '')).toContain('pick a card')
+  expect(sent.length).toBe(0)
+  const row = await $.ui.mount({ plugin: 'references', surface: 'desktop', component: 'CommandOutput', props: { command: 'refs', args: 'launch film for a Mac app', text: '' } } as any)
+  await until(row, 'pick-video-linear-release')
+  expect(await row.find({ key: 'pick-video-linear-release' })).toBeDefined()
 })

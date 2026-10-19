@@ -35,11 +35,16 @@ export const register: Register = on => {
     return next(e)
   })
 
+  // /refs asks the server directly and draws the cards in the command's own row: no relay message, no turn.
   on('command.run', { command: 'refs' }, async ($, e) => {
     const ask = (e.args || '').trim()
     if (!ask) return { text: 'Usage: /refs <what you are making>' }
-    $.clock.after(50, () => $.prompt.submit({ text: `Show me reference directions for: ${ask}. Call references_suggest with that as the intent.` }))
-    return { text: `finding references for "${ask}"…` }
+    const tools = (await $.tool.list()).map((t: any) => t.name)
+    const tool = tools.find((n: string) => IS_SUGGEST.test(n))
+    if (!tool) return { text: 'The references server is not connected. Reconnect it in /mcp, or reinstall the plugin.' }
+    const r: any = await $.tool.call({ tool, intent: ask } as any)
+    if (r?.deny !== undefined || r?.isError) return { text: `Could not get references: ${String(r?.deny || r?.text || '').slice(0, 200)}` }
+    return { text: `References for "${ask}": pick a card, then write your message.` }
   })
 
   // Claude reaches for references on its own, before it designs anything.
@@ -49,7 +54,7 @@ export const register: Register = on => {
       sections: [...r.sections, {
         id: 'references-first',
         scope: 'session',
-        text: 'Before you design or write anything with a look or a voice (UI, landing page, app screen, deck, video, motion, animation, social post, ad, written post), call references_suggest with what is being made. The person sees the results as cards in the conversation and picks one with their next message.',
+        text: 'Before you design or write anything with a look or a voice (UI, landing page, app screen, deck, video, motion, animation, social post, ad, written post), call references_suggest with what is being made. The person sees the results as picture cards in the conversation and picks one with their next message; a [Reference picked] note then arrives with it. If they name a card in words instead ("go with Shot on iPhone"), use that one.',
       }],
     }
   })
@@ -82,21 +87,38 @@ export const register: Register = on => {
     $.ui.status(undefined)
     if (b.preview) void $.ui.close({ id: PANE }).catch(() => {})
     const card = b.cards.find(c => c.id === b.selected)
-    if (b.toolUseId) settled.set(b.toolUseId, card ? `Picked: ${card.title} · ${card.source}` : 'No reference picked')
+    const line = card ? `Picked: ${card.title} · ${card.source}` : 'No reference picked'
+    if (b.toolUseId) settled.set(b.toolUseId, line)
+    settled.set(`refs:${b.intent}`, line)
     // Attached beside the message for Claude, not into what the person typed.
     return next(card ? { ...e, context: [...(e.context || []), pickNote(card, b.intent)] } : e)
   })
 
-  // The cards, in the conversation, where the suggestion happened.
+  // The cards, in the conversation, where the suggestion happened: under the tool's row, on the row itself when
+  // the transcript folds it into a group (unfolded below), or under /refs.
   on('ui.render', { component: 'ToolResult' }, async ($, e, next) => {
     if (!IS_SUGGEST.test(String(e.props.tool))) return next(e)
+    return (await here($, e, String(e.props.tool_use_id), e.viewport?.columns)) ?? next(e)
+  })
+
+  on('ui.render', { component: 'ToolUse' }, async ($, e, next) => {
+    if (!IS_SUGGEST.test(String(e.props.tool)) || e.props.isRunning) return next(e)
+    return (await here($, e, String(e.props.tool_use_id), e.viewport?.columns)) ?? next(e)
+  })
+
+  // "Used 2 tools" would hide the cards: unfold any group holding a suggestion.
+  on('ui.render', { component: 'ToolGroup' }, async ($, e, next) => {
+    if (!e.props.calls.some((c: any) => IS_SUGGEST.test(String(c.tool)))) return next(e)
+    return next({ ...e, props: { ...e.props, isExpanded: true } })
+  })
+
+  on('ui.render', { component: 'CommandOutput' }, async ($, e, next) => {
+    if (e.props.command !== 'refs') return next(e)
     const b = await read($, board)
-    const ui = $.ui.resolve(e) as any
-    if (!b || b.toolUseId !== e.props.tool_use_id) {
-      const line = settled.get(String(e.props.tool_use_id))
-      return line ? <ui.Text dimColor>{line}</ui.Text> : next(e)
-    }
-    return cardsView($, e, ui, b, e.viewport?.columns ?? 140)
+    if (b && b.toolUseId && b.intent === String(e.props.args || '').trim()) return (await here($, e, b.toolUseId, e.viewport?.columns)) ?? next(e)
+    const line = settled.get(`refs:${String(e.props.args || '').trim()}`)
+    const { Text } = $.ui.resolve(e) as any
+    return line ? <Text dimColor>{line}</Text> : next(e)
   })
 
   on('ui.render', { component: 'Pane', requestId: PANE }, async ($, e) => {
@@ -122,7 +144,16 @@ export const register: Register = on => {
   })
 }
 
-const SHOWN = "These directions are now shown to the person as picture cards in the conversation. Don't build yet: end your turn with one short line asking them to pick a card and say anything else they want. Their pick arrives attached to their next message as a [Reference picked] note."
+// The live board's cards for this row, the one line it settled into, or nothing (the engine draws its own).
+async function here($: any, e: any, id: string, columns?: number) {
+  const b = await read($, board)
+  const ui = $.ui.resolve(e) as any
+  if (b && b.toolUseId === id) return cardsView($, e, ui, b, columns ?? 140)
+  const line = settled.get(id)
+  return line ? <ui.Text dimColor>{line}</ui.Text> : undefined
+}
+
+const SHOWN = "These directions are now shown to the person as picture cards right under this call. Don't list or describe them again and don't build yet: end your turn with one short line inviting them to pick a card and add anything. Their pick arrives attached to their next message as a [Reference picked] note."
 
 function cardsView($: any, e: any, ui: any, b: Board, columns: number) {
   const { Box, Text, Button, Link } = ui
