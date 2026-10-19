@@ -21998,40 +21998,6 @@ async function fetchLive(source, { cacheDir, fetchImpl = fetch, now = Date.now()
   }
 }
 var OG_TTL = 30 * 24 * 36e5;
-async function previewImage(url, { cacheDir, fetchImpl = fetch, now = Date.now() } = {}) {
-  if (!/^https:\/\//.test(url || "")) return null;
-  const yt = /youtube\.com\/watch\?v=([\w-]{11})|youtu\.be\/([\w-]{11})/.exec(url);
-  if (yt) return `https://i.ytimg.com/vi/${yt[1] || yt[2]}/hqdefault.jpg`;
-  const file = cacheDir && join(cacheDir, "references-cache.json");
-  let cache = {};
-  try {
-    if (file && existsSync(file)) cache = JSON.parse(readFileSync(file, "utf8"));
-  } catch {
-    cache = {};
-  }
-  const key = `og:${url}`;
-  if (cache[key] && now - cache[key].at < OG_TTL) return cache[key].image;
-  let image = null;
-  try {
-    const res = await fetchImpl(url, { headers: { "user-agent": UA }, signal: AbortSignal.timeout(5e3) });
-    const html = (await res.text()).slice(0, 3e5);
-    const m = /<meta[^>]+(?:property|name)=["'](?:og:image|twitter:image)(?::src)?["'][^>]*content=["']([^"']+)["']/i.exec(html) || /<meta[^>]+content=["']([^"']+)["'][^>]*(?:property|name)=["'](?:og:image|twitter:image)["']/i.exec(html);
-    if (m) image = new URL(decode(m[1]), url).href;
-    if (image && !/^https:\/\//.test(image)) image = null;
-  } catch {
-    return cache[key]?.image ?? null;
-  }
-  if (file) {
-    try {
-      const fresh = existsSync(file) ? JSON.parse(readFileSync(file, "utf8")) : {};
-      fresh[key] = { at: now, image };
-      mkdirSync(cacheDir, { recursive: true });
-      writeFileSync(file, JSON.stringify(fresh));
-    } catch {
-    }
-  }
-  return image;
-}
 var YT_TTL = 24 * 36e5;
 var YT_HINT = { video: "", motion: "motion design", animation: "animation", ad: "ad commercial", social: "shorts", deck: "keynote presentation", landing: "website design", ui: "ui design", app: "app design", post: "" };
 var YT_MEDIA = ["video", "motion", "animation", "ad", "social"];
@@ -22080,6 +22046,78 @@ async function shelfFor(medium, { cacheDir, fetchImpl = fetch, now = Date.now() 
   return fetchLive(src, { cacheDir, fetchImpl, now });
 }
 ADAPTERS.shelfmedium = { url: ADAPTERS.shelf.url, parse: (s, src) => (JSON.parse(s).media?.[src.medium] || []).map(({ title, url, image, by, note, source }) => ({ title, url, image, by: by || source, note })) };
+var NOT_A_PICTURE = /\.(svg|gif|ico)(\?|$)|logo|icon|avatar|sprite|favicon|badge|emoji|pixel|spacer|placeholder|1x1|gravatar|profile/i;
+var SITE_IMAGES = [
+  [/awwwards\.com/, /\/awards\/(submissions|sites_of_the_day)\//],
+  [/adsoftheworld\.com/, /image\.adsoftheworld\.com\//],
+  [/producthunt\.com/, /ph-files\.imgix\.net\//],
+  [/onepagelove\.com/, /assets\.onepagelove\.com\/.*opl-screenshot/],
+  [/motionographer\.com/, /motionographer\.com\/wp-content\/uploads\//]
+];
+function parseImages(html, pageUrl, max = 6) {
+  const out = [], seen = /* @__PURE__ */ new Set();
+  const add = (raw) => {
+    if (!raw || out.length >= max) return;
+    let u;
+    try {
+      u = new URL(decode(raw.trim().split(/\s+/)[0]), pageUrl);
+    } catch {
+      return;
+    }
+    if (u.protocol !== "https:" || NOT_A_PICTURE.test(u.pathname)) return;
+    const site = SITE_IMAGES.find(([host]) => host.test(pageUrl));
+    if (site && out.length && !site[1].test(u.href)) return;
+    const month = (x) => /\/uploads\/(\d{4}\/\d{2})\//.exec(x)?.[1];
+    if (out.length && month(out[0]) && month(u.href) && month(u.href) !== month(out[0])) return;
+    const key = (/imgix|cdn-cgi/.test(u.href) ? u.href : u.origin + u.pathname).replace(/[-_.@](desktop|tablet|mobile|[123]x)(?=[-_.@]|$)/gi, "").replace(/\.[0-9a-f]{8}(?=\.\w+$)/, "");
+    if (seen.has(key)) return;
+    seen.add(key);
+    out.push(u.href);
+  };
+  for (const m of html.matchAll(/<meta[^>]+(?:property|name)=["'](?:og:image|twitter:image)(?::src)?["'][^>]*content=["']([^"']+)["']/gi)) add(m[1]);
+  for (const m of html.matchAll(/<meta[^>]+content=["']([^"']+)["'][^>]*(?:property|name)=["'](?:og:image|twitter:image)["']/gi)) add(m[1]);
+  for (const m of html.matchAll(/<(?:img|source)\b[^>]*>/gi)) {
+    const tag = m[0];
+    const w = Number(/\bwidth=["']?(\d+)/i.exec(tag)?.[1] || 0), h = Number(/\bheight=["']?(\d+)/i.exec(tag)?.[1] || 0);
+    if (w && w < 300 || h && h < 200) continue;
+    const srcset = /\b(?:data-)?srcset=["']([^"']+)["']/i.exec(tag)?.[1];
+    const best = srcset && srcset.split(",").map((x) => x.trim().split(/\s+/)).sort((a, b) => parseFloat(b[1] || 0) - parseFloat(a[1] || 0))[0]?.[0];
+    add(best || /\b(?:data-src|data-lazy-src|src)=["']([^"']+)["']/i.exec(tag)?.[1]);
+  }
+  return out;
+}
+var GAL_TTL = 30 * 24 * 36e5;
+async function pageImages(url, { cacheDir, fetchImpl = fetch, now = Date.now() } = {}) {
+  if (!/^https:\/\//.test(url || "")) return [];
+  const yt = /youtube\.com\/watch\?v=([\w-]{11})|youtu\.be\/([\w-]{11})/.exec(url);
+  if (yt) return [`https://i.ytimg.com/vi/${yt[1] || yt[2]}/hqdefault.jpg`];
+  const file = cacheDir && join(cacheDir, "references-cache.json");
+  const key = `gal:${url}`;
+  let cache = {};
+  try {
+    if (file && existsSync(file)) cache = JSON.parse(readFileSync(file, "utf8"));
+  } catch {
+    cache = {};
+  }
+  if (cache[key] && now - cache[key].at < GAL_TTL) return cache[key].images;
+  let images = [];
+  try {
+    const res = await fetchImpl(url, { headers: { "user-agent": UA }, signal: AbortSignal.timeout(6e3) });
+    images = parseImages((await res.text()).slice(0, 15e5), url);
+  } catch {
+    return cache[key]?.images || [];
+  }
+  if (file) {
+    try {
+      const fresh = existsSync(file) ? JSON.parse(readFileSync(file, "utf8")) : {};
+      fresh[key] = { at: now, images };
+      mkdirSync(cacheDir, { recursive: true });
+      writeFileSync(file, JSON.stringify(fresh));
+    } catch {
+    }
+  }
+  return images;
+}
 
 // src/references.mjs
 var IMG = /* @__PURE__ */ new Set([".png", ".jpg", ".jpeg", ".webp", ".gif"]);
@@ -22189,13 +22227,18 @@ function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, yo
         rank: i
       }));
       const ok = items.filter((x) => !skip.has(x.id)).sort((a, b) => !!b.image - !!a.image || a.rank - b.rank).slice(0, per);
-      await Promise.all(ok.filter((x) => !x.image && x.url).map(async (x) => {
-        x.image = await previewImage(x.url, { cacheDir, fetchImpl }) || void 0;
-      }));
+      await Promise.all(ok.map((x) => withGallery(x)));
       return { source: src.name, kind: src.kind, url: src.url, items: ok };
     }));
     for (const l of lists) for (const it of l.items) seenLive.set(it.id, it);
     return lists.filter((l) => l.items.length);
+  }
+  async function withGallery(x) {
+    if (!liveOn || !x.url || !/^https:/.test(x.url)) return x.image ? Object.assign(x, { gallery: [x.image] }) : x;
+    const found = await pageImages(x.url, { cacheDir, fetchImpl });
+    const gallery = [...new Set([x.image, ...found].filter(Boolean))].slice(0, 6);
+    Object.assign(x, { image: x.image || gallery[0], gallery });
+    return x;
   }
   async function suggest({ intent = "", medium, count = 4, exclude = [] } = {}) {
     const want = medium || guessMedium(intent);
@@ -22222,11 +22265,7 @@ function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, yo
     return {
       medium: want || null,
       intent,
-      directions: await Promise.all(picked.map(async ({ r, score }) => ({
-        ...r,
-        score: Math.round(score * 10) / 10,
-        ...!r.image && liveOn ? { image: await previewImage(r.url, { cacheDir, fetchImpl }) || void 0 } : {}
-      }))),
+      directions: await Promise.all(picked.map(({ r, score }) => withGallery({ ...r, score: Math.round(score * 10) / 10 }))),
       fresh: await fresh(want, want ? 3 : 2, skip, intent),
       curations: SOURCES.filter((s) => !want || s.media.includes(want)).map(({ name, kind, url, note }) => ({ name, kind, url, ...note ? { note } : {} })),
       tasteSignals: taste.length,

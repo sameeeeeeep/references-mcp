@@ -9,7 +9,7 @@ import { existsSync, readFileSync, readdirSync, mkdirSync, writeFileSync, append
 import { join, extname, basename } from 'node:path';
 import { z } from 'zod';
 import { CATALOG, MEDIA } from './catalog.mjs';
-import { SOURCES, fetchLive, previewImage, searchYouTube, shelfFor, YT_MEDIA } from './sources.mjs';
+import { SOURCES, fetchLive, pageImages, searchYouTube, shelfFor, YT_MEDIA } from './sources.mjs';
 
 const IMG = new Set(['.png', '.jpg', '.jpeg', '.webp', '.gif']);
 const STOP = new Set('a an the and or for of to in on with my our me we i it this that make build design create new some want need like'.split(' '));
@@ -117,12 +117,20 @@ export function createReferences({ dir, libraries = [], fetchImpl, youtube = sea
       }));
       // Items with a picture first: they are what the user sees on a card.
       const ok = items.filter((x) => !skip.has(x.id)).sort((a, b) => !!b.image - !!a.image || a.rank - b.rank).slice(0, per);
-      // Feeds without pictures (Product Hunt) borrow the page's own preview image.
-      await Promise.all(ok.filter((x) => !x.image && x.url).map(async (x) => { x.image = (await previewImage(x.url, { cacheDir, fetchImpl })) || undefined; }));
+      await Promise.all(ok.map((x) => withGallery(x)));
       return { source: src.name, kind: src.kind, url: src.url, items: ok };
     }));
     for (const l of lists) for (const it of l.items) seenLive.set(it.id, it);
     return lists.filter((l) => l.items.length);
+  }
+
+  // Its pictures for the carousel: the image it came with, then its page's own gallery (up to 6).
+  async function withGallery(x) {
+    if (!liveOn || !x.url || !/^https:/.test(x.url)) return x.image ? Object.assign(x, { gallery: [x.image] }) : x;
+    const found = await pageImages(x.url, { cacheDir, fetchImpl });
+    const gallery = [...new Set([x.image, ...found].filter(Boolean))].slice(0, 6);
+    Object.assign(x, { image: x.image || gallery[0], gallery });
+    return x;
   }
 
   async function suggest({ intent = '', medium, count = 4, exclude = [] } = {}) {
@@ -151,10 +159,7 @@ export function createReferences({ dir, libraries = [], fetchImpl, youtube = sea
     return {
       medium: want || null,
       intent,
-      directions: await Promise.all(picked.map(async ({ r, score }) => ({
-        ...r, score: Math.round(score * 10) / 10,
-        ...(!r.image && liveOn ? { image: (await previewImage(r.url, { cacheDir, fetchImpl })) || undefined } : {}),
-      }))),
+      directions: await Promise.all(picked.map(({ r, score }) => withGallery({ ...r, score: Math.round(score * 10) / 10 }))),
       fresh: await fresh(want, want ? 3 : 2, skip, intent),
       curations: SOURCES.filter((s) => !want || s.media.includes(want)).map(({ name, kind, url, note }) => ({ name, kind, url, ...(note ? { note } : {}) })),
       tasteSignals: taste.length,

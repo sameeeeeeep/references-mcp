@@ -220,3 +220,67 @@ export async function shelfFor(medium, { cacheDir, fetchImpl = fetch, now = Date
   return fetchLive(src, { cacheDir, fetchImpl, now });
 }
 ADAPTERS.shelfmedium = { url: ADAPTERS.shelf.url, parse: (s, src) => (JSON.parse(s).media?.[src.medium] || []).map(({ title, url, image, by, note, source }) => ({ title, url, image, by: by || source, note })) };
+
+// ── A reference's own pictures: the og image plus the real gallery on its page, for the carousel ──────────
+const NOT_A_PICTURE = /\.(svg|gif|ico)(\?|$)|logo|icon|avatar|sprite|favicon|badge|emoji|pixel|spacer|placeholder|1x1|gravatar|profile/i;
+// Where a site keeps the work itself, so its page chrome stays out of the carousel.
+const SITE_IMAGES = [
+  [/awwwards\.com/, /\/awards\/(submissions|sites_of_the_day)\//],
+  [/adsoftheworld\.com/, /image\.adsoftheworld\.com\//],
+  [/producthunt\.com/, /ph-files\.imgix\.net\//],
+  [/onepagelove\.com/, /assets\.onepagelove\.com\/.*opl-screenshot/],
+  [/motionographer\.com/, /motionographer\.com\/wp-content\/uploads\//],
+];
+
+export function parseImages(html, pageUrl, max = 6) {
+  const out = [], seen = new Set();
+  const add = (raw) => {
+    if (!raw || out.length >= max) return;
+    let u;
+    try { u = new URL(decode(raw.trim().split(/\s+/)[0]), pageUrl); } catch { return; }
+    if (u.protocol !== 'https:' || NOT_A_PICTURE.test(u.pathname)) return;
+    const site = SITE_IMAGES.find(([host]) => host.test(pageUrl));
+    if (site && out.length && !site[1].test(u.href)) return; // after the og image, only the site's own work
+    // WordPress sidebars show other posts: keep uploads from the same month as the lead image.
+    const month = (x) => /\/uploads\/(\d{4}\/\d{2})\//.exec(x)?.[1];
+    if (out.length && month(out[0]) && month(u.href) && month(u.href) !== month(out[0])) return;
+    // One picture at several sizes (desktop/tablet/mobile, 1x/2x) is one slide.
+    const key = (/imgix|cdn-cgi/.test(u.href) ? u.href : u.origin + u.pathname).replace(/[-_.@](desktop|tablet|mobile|[123]x)(?=[-_.@]|$)/gi, '').replace(/\.[0-9a-f]{8}(?=\.\w+$)/, '');
+    if (seen.has(key)) return;
+    seen.add(key); out.push(u.href);
+  };
+  for (const m of html.matchAll(/<meta[^>]+(?:property|name)=["'](?:og:image|twitter:image)(?::src)?["'][^>]*content=["']([^"']+)["']/gi)) add(m[1]);
+  for (const m of html.matchAll(/<meta[^>]+content=["']([^"']+)["'][^>]*(?:property|name)=["'](?:og:image|twitter:image)["']/gi)) add(m[1]);
+  for (const m of html.matchAll(/<(?:img|source)\b[^>]*>/gi)) {
+    const tag = m[0];
+    const w = Number(/\bwidth=["']?(\d+)/i.exec(tag)?.[1] || 0), h = Number(/\bheight=["']?(\d+)/i.exec(tag)?.[1] || 0);
+    if ((w && w < 300) || (h && h < 200)) continue;
+    const srcset = /\b(?:data-)?srcset=["']([^"']+)["']/i.exec(tag)?.[1];
+    const best = srcset && srcset.split(',').map((x) => x.trim().split(/\s+/)).sort((a, b) => parseFloat(b[1] || 0) - parseFloat(a[1] || 0))[0]?.[0];
+    add(best || /\b(?:data-src|data-lazy-src|src)=["']([^"']+)["']/i.exec(tag)?.[1]);
+  }
+  return out;
+}
+
+const GAL_TTL = 30 * 24 * 3600_000;
+
+/** Up to 6 pictures of a reference (its page's og image first, then its gallery); cached 30 days. */
+export async function pageImages(url, { cacheDir, fetchImpl = fetch, now = Date.now() } = {}) {
+  if (!/^https:\/\//.test(url || '')) return [];
+  const yt = /youtube\.com\/watch\?v=([\w-]{11})|youtu\.be\/([\w-]{11})/.exec(url);
+  if (yt) return [`https://i.ytimg.com/vi/${yt[1] || yt[2]}/hqdefault.jpg`];
+  const file = cacheDir && join(cacheDir, 'references-cache.json');
+  const key = `gal:${url}`;
+  let cache = {};
+  try { if (file && existsSync(file)) cache = JSON.parse(readFileSync(file, 'utf8')); } catch { cache = {}; }
+  if (cache[key] && now - cache[key].at < GAL_TTL) return cache[key].images;
+  let images = [];
+  try {
+    const res = await fetchImpl(url, { headers: { 'user-agent': UA }, signal: AbortSignal.timeout(6000) });
+    images = parseImages((await res.text()).slice(0, 1_500_000), url);
+  } catch { return cache[key]?.images || []; }
+  if (file) {
+    try { const fresh = existsSync(file) ? JSON.parse(readFileSync(file, 'utf8')) : {}; fresh[key] = { at: now, images }; mkdirSync(cacheDir, { recursive: true }); writeFileSync(file, JSON.stringify(fresh)); } catch {}
+  }
+  return images;
+}

@@ -5,7 +5,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { createReferences, guessMedium, loadLibrary } from '../src/references.mjs';
 import { CATALOG, MEDIA } from '../src/catalog.mjs';
-import { SOURCES, parseRss, parseAdsOfTheWorld, parseAtom, parseGitHubTrending, parseYtLines, searchYouTube, fetchLive } from '../src/sources.mjs';
+import { SOURCES, parseImages, parseRss, parseAdsOfTheWorld, parseAtom, parseGitHubTrending, parseYtLines, searchYouTube, fetchLive } from '../src/sources.mjs';
 
 test('catalog covers every medium with unique ids and a take', () => {
   for (const m of MEDIA) assert.ok(CATALOG.filter((r) => r.medium === m).length >= 3, `${m} has at least 3`);
@@ -115,4 +115,18 @@ test('viral-project feeds and YouTube search parse; YouTube ranks by views and d
   const items = await searchYouTube('launch film', 'video', { run: async () => lines });
   assert.deepEqual(items.map((x) => x.title + ' · ' + x.by), ['big · 5M views', 'small · 100 views']);
   assert.deepEqual(await searchYouTube('x', 'video', { run: async () => { throw new Error('no yt-dlp'); } }), []);
+});
+
+test('gallery: og image first, then the page's own work; chrome, icons, size variants and other posts dropped', () => {
+  const html = `<meta property="og:image" content="https://i0.wp.com/m.com/wp-content/uploads/2026/10/cover.jpg">
+    <img src="/logo.png"><img src="https://x.com/icon-32.png" width="32">
+    <img src="https://i0.wp.com/m.com/wp-content/uploads/2026/10/still-1.jpg">
+    <img src="https://i0.wp.com/m.com/wp-content/uploads/2024/02/other-post.jpg">
+    <img srcset="https://i0.wp.com/m.com/wp-content/uploads/2026/10/still-2-1x.jpg 1x, https://i0.wp.com/m.com/wp-content/uploads/2026/10/still-2-2x.jpg 2x">
+    <img src="https://i0.wp.com/m.com/wp-content/uploads/2026/10/still-2-1x.jpg">`;
+  assert.deepEqual(parseImages(html, 'https://m.com/post'), [
+    'https://i0.wp.com/m.com/wp-content/uploads/2026/10/cover.jpg',
+    'https://i0.wp.com/m.com/wp-content/uploads/2026/10/still-1.jpg',
+    'https://i0.wp.com/m.com/wp-content/uploads/2026/10/still-2-2x.jpg',
+  ]);
 });
