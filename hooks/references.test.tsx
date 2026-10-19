@@ -123,3 +123,26 @@ test('in the chat the suggestion is one quiet line; the band pages through all t
   expect(await band.find({ key: 'pick-video-shot-on-iphone' })).toBeDefined() // 3 cards fit one row of 4
 })
 
+
+test('Play opens the reference in the app browser pane; without one it says where to go', async ($, on) => {
+  const sent: string[] = []
+  world(on, sent)
+  const opened: string[] = []
+  const toasts: string[] = []
+  on('ui.toast' as any, (_$: any, e: any) => { toasts.push(String(e.text ?? e)); return { value: undefined } as any })
+  let hasBrowser = true
+  on('mcp.call' as any, (_$: any, e: any) => {
+    if (!hasBrowser) throw new Error('not connected')
+    opened.push(`${e.server}:${e.tool}:${e.args?.url}`)
+    return { value: { content: [], isError: false } } as any
+  })
+  await $.tool.call({ tool: TOOL, intent: 'x' } as any)
+  const ui = await $.ui.mount({ plugin: 'references', surface: 'desktop', ...BAND } as any)
+  await until(ui, 'play-live:vimeo:x')
+  expect(await ui.find({ key: 'play-video-shot-on-iphone' })).toBeUndefined() // no link, no Play
+  await ui.press({ key: 'play-live:vimeo:x' })
+  expect(opened).toEqual(['Claude_Browser:preview_start:https://vimeo.com/1'])
+  hasBrowser = false
+  await ui.press({ key: 'play-video-linear-release' })
+  expect(toasts.join('\n')).toContain('Preview')
+})

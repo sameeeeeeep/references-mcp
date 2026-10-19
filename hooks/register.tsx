@@ -145,6 +145,9 @@ function cardsView($: any, e: any, ui: any, b: Board, columns: number) {
                 : e.surface === 'terminal' ? terminalCard(ui, c, i + 1, isPicked) : <Text>{c.title}</Text>}
               <Box flexDirection="row" gap={1}>
                 <Button key={`pick-${c.id}`} label={isPicked ? '✓ Picked' : `Pick ${i + 1}`} hotkey={String(i + 1)} variant={isPicked ? 'primary' : 'secondary'} onPress={pick($, c.id)} />
+                {(slides.get(c.id)?.length || 0) > 1 && !isVideo.has(c.id) ? <Button key={`prev-${c.id}`} label="‹" plain onPress={stepSlide($, c.id, -1)} /> : null}
+                {(slides.get(c.id)?.length || 0) > 1 && !isVideo.has(c.id) ? <Button key={`next-${c.id}`} label="›" plain onPress={stepSlide($, c.id, 1)} /> : null}
+                {safeUrl(c.url) ? <Button key={`play-${c.id}`} label={VIDEO.test(c.url || '') ? '▶ Play' : 'Open'} plain onPress={openInApp($, c)} /> : null}
                 <Button key={`view-${c.id}`} label="Preview" plain onPress={preview($, c.id)} />
               </Box>
             </Box>
@@ -178,6 +181,24 @@ function preview($: any, id: string) {
   }
 }
 
+// Play / Open: the reference in the app's own browser pane (desktop), so a video plays without leaving the
+// conversation. The pane is the Claude_Browser MCP server; where it isn't there (terminal, older app) a toast
+// points at the Preview pane's Browser ↗ link instead.
+const BROWSER_SERVERS = ['Claude_Browser', 'Claude Browser']
+function openInApp($: any, c: Card) {
+  return async () => {
+    const url = safeUrl(c.url)
+    if (!url) return
+    for (const server of BROWSER_SERVERS) {
+      try {
+        const r = await $.mcp.call(server, 'preview_start', { url })
+        if (!r?.isError) return
+      } catch {}
+    }
+    $.ui.toast(`Couldn't open it in the app's browser: use Preview → Browser ↗ (${url})`)
+  }
+}
+
 // The preview pane: one reference large, its carousel stepped by hand, the full take, and the same Pick.
 function previewPane($: any, e: any, ui: any, b: Board | null) {
   const { Box, Text, Button, Link } = ui
@@ -199,7 +220,8 @@ function previewPane($: any, e: any, ui: any, b: Board | null) {
         {k > 1 ? <Text dimColor>{isVideo.has(c.id) ? `${k} frames` : `${(pos ?? 0) + 1} / ${k}`}</Text> : null}
         {k > 1 ? <Button key="p-next" label="›" plain onPress={stepSlide($, c.id, 1)} /> : null}
         <Button key="p-pick" label={isPicked ? '✓ Picked' : 'Pick this'} variant={isPicked ? 'primary' : 'secondary'} onPress={pick($, c.id)} />
-        {link ? <Link key="p-open" href={link} label={isVideo.has(c.id) ? 'Play ↗' : 'Open ↗'} /> : null}
+        {link ? <Button key="p-play" label={VIDEO.test(link) ? '▶ Play here' : 'Open here'} plain onPress={openInApp($, c)} /> : null}
+        {link ? <Link key="p-open" href={link} label="Browser ↗" /> : null}
       </Box>
       <Text bold>{`${at + 1}. ${c.title}`}</Text>
       <Text dimColor>{`${c.source}${link ? `  ·  ${link}` : ''}`}</Text>

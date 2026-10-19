@@ -71,19 +71,19 @@ export const CATALOG = [
     tags: ['keynote', 'data', 'product', 'enterprise', 'polished', 'charts'] },
 
   // ── video ──
-  { id: 'video-shot-on-iphone', medium: 'video', title: 'Apple "Shot on iPhone"', url: 'https://www.apple.com/iphone/',
+  { id: 'video-shot-on-iphone', medium: 'video', title: 'Apple "Shot on iPhone"', url: 'https://www.youtube.com/watch?v=V3dbG9pAi8I',
     take: 'Let the footage be the argument: no voiceover, music-led, a single line of type at the end.',
     tags: ['cinematic', 'brand', 'no-voiceover', 'music', 'consumer', 'premium'] },
-  { id: 'video-arc-launch', medium: 'video', title: 'The Browser Company (Arc) videos', url: 'https://www.youtube.com/@TheBrowserCompany',
+  { id: 'video-arc-launch', medium: 'video', title: 'The Browser Company (Arc) videos', url: 'https://www.youtube.com/watch?v=n5Vwrj1gEWs',
     take: 'Founder-led, candid product videos: real screen, real people, humour, behind-the-scenes honesty.',
     tags: ['founder', 'candid', 'product-demo', 'startup', 'authentic', 'playful'] },
-  { id: 'video-mkbhd', medium: 'video', title: 'MKBHD reviews', url: 'https://www.youtube.com/@mkbhd',
+  { id: 'video-mkbhd', medium: 'video', title: 'MKBHD reviews', url: 'https://www.youtube.com/watch?v=XbXXKhfvSF0',
     take: 'Clean studio look: slow product macros, matte backgrounds, clear spoken structure, crisp b-roll.',
     tags: ['review', 'studio', 'tech', 'clean', 'b-roll', 'talking-head'] },
   { id: 'video-fast-explainer', medium: 'video', title: 'Fast tech-news explainer format', url: 'https://www.youtube.com/@VarunMayya',
     take: 'Hook on evidence in 3s, presenter over proof, jump cuts every 1.5-3s, keyword captions, hard-cut ending. Format only.',
     tags: ['short', 'reel', 'vertical', 'explainer', 'fast', 'news', 'talking-head'] },
-  { id: 'video-linear-release', medium: 'video', title: 'Linear release videos', url: 'https://linear.app/changelog',
+  { id: 'video-linear-release', medium: 'video', title: 'Linear release videos', url: 'https://www.youtube.com/watch?v=6dIwFoQ0eVg',
     take: 'Product-only motion: UI glides through a feature with no narrator, dark backdrop, tight 20-40s.',
     tags: ['product-demo', 'saas', 'dark', 'short', 'no-voiceover', 'launch'] },
 
@@ -102,7 +102,7 @@ export const CATALOG = [
     tags: ['interactive', 'state-machine', 'playful', 'ui', 'character'] },
 
   // ── animation (illustrated / character) ──
-  { id: 'animation-kurzgesagt', medium: 'animation', title: 'Kurzgesagt', url: 'https://www.youtube.com/@kurzgesagt',
+  { id: 'animation-kurzgesagt', medium: 'animation', title: 'Kurzgesagt', url: 'https://www.youtube.com/watch?v=_y9JuojAIg0',
     take: 'Flat vector world, saturated palette on dark, constant gentle motion that makes abstract ideas concrete.',
     tags: ['explainer', 'flat', 'vector', 'science', 'saturated', 'educational'] },
   { id: 'animation-spiderverse', medium: 'animation', title: 'Spider-Man: Into the Spider-Verse', url: 'https://www.sonypictures.com/movies/spidermanintothespiderverse',

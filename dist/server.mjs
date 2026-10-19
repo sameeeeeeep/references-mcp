@@ -21660,7 +21660,7 @@ var CATALOG = [
     id: "video-shot-on-iphone",
     medium: "video",
     title: 'Apple "Shot on iPhone"',
-    url: "https://www.apple.com/iphone/",
+    url: "https://www.youtube.com/watch?v=V3dbG9pAi8I",
     take: "Let the footage be the argument: no voiceover, music-led, a single line of type at the end.",
     tags: ["cinematic", "brand", "no-voiceover", "music", "consumer", "premium"]
   },
@@ -21668,7 +21668,7 @@ var CATALOG = [
     id: "video-arc-launch",
     medium: "video",
     title: "The Browser Company (Arc) videos",
-    url: "https://www.youtube.com/@TheBrowserCompany",
+    url: "https://www.youtube.com/watch?v=n5Vwrj1gEWs",
     take: "Founder-led, candid product videos: real screen, real people, humour, behind-the-scenes honesty.",
     tags: ["founder", "candid", "product-demo", "startup", "authentic", "playful"]
   },
@@ -21676,7 +21676,7 @@ var CATALOG = [
     id: "video-mkbhd",
     medium: "video",
     title: "MKBHD reviews",
-    url: "https://www.youtube.com/@mkbhd",
+    url: "https://www.youtube.com/watch?v=XbXXKhfvSF0",
     take: "Clean studio look: slow product macros, matte backgrounds, clear spoken structure, crisp b-roll.",
     tags: ["review", "studio", "tech", "clean", "b-roll", "talking-head"]
   },
@@ -21692,7 +21692,7 @@ var CATALOG = [
     id: "video-linear-release",
     medium: "video",
     title: "Linear release videos",
-    url: "https://linear.app/changelog",
+    url: "https://www.youtube.com/watch?v=6dIwFoQ0eVg",
     take: "Product-only motion: UI glides through a feature with no narrator, dark backdrop, tight 20-40s.",
     tags: ["product-demo", "saas", "dark", "short", "no-voiceover", "launch"]
   },
@@ -21734,7 +21734,7 @@ var CATALOG = [
     id: "animation-kurzgesagt",
     medium: "animation",
     title: "Kurzgesagt",
-    url: "https://www.youtube.com/@kurzgesagt",
+    url: "https://www.youtube.com/watch?v=_y9JuojAIg0",
     take: "Flat vector world, saturated palette on dark, constant gentle motion that makes abstract ideas concrete.",
     tags: ["explainer", "flat", "vector", "science", "saturated", "educational"]
   },
