@@ -10,6 +10,7 @@ import { existsSync, readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { execFile } from 'node:child_process';
 import { lookup } from 'node:dns/promises';
+import https from 'node:https';
 import { isIP } from 'node:net';
 
 export const SOURCES = [
@@ -144,7 +145,7 @@ export async function fetchLive(source, { cacheDir, fetchImpl = fetch, now = Dat
 const OG_TTL = 30 * 24 * 3600_000;
 
 /** A page's preview image (og:image / twitter:image), cached for 30 days; null when there is none. */
-export async function previewImage(url, { cacheDir, fetchImpl = fetch, now = Date.now(), check = resolvesPublic } = {}) {
+export async function previewImage(url, { cacheDir, fetchImpl = pinnedFetch, now = Date.now(), check = resolvesPublic } = {}) {
   if (!/^https:\/\//.test(url || '')) return null;
   const yt = /youtube\.com\/watch\?v=([\w-]{11})|youtu\.be\/([\w-]{11})/.exec(url);
   if (yt) return `https://i.ytimg.com/vi/${yt[1] || yt[2]}/hqdefault.jpg`;
@@ -267,7 +268,7 @@ export function parseImages(html, pageUrl, max = 6) {
 const GAL_TTL = 30 * 24 * 3600_000;
 
 /** Up to 6 pictures of a reference (its page's og image first, then its gallery); cached 30 days. */
-export async function pageImages(url, { cacheDir, fetchImpl = fetch, now = Date.now(), check = resolvesPublic } = {}) {
+export async function pageImages(url, { cacheDir, fetchImpl = pinnedFetch, now = Date.now(), check = resolvesPublic } = {}) {
   if (!/^https:\/\//.test(url || '')) return [];
   const yt = /youtube\.com\/watch\?v=([\w-]{11})|youtu\.be\/([\w-]{11})/.exec(url);
   if (yt) return [`https://i.ytimg.com/vi/${yt[1] || yt[2]}/hqdefault.jpg`];
@@ -295,11 +296,24 @@ export async function pageImages(url, { cacheDir, fetchImpl = fetch, now = Date.
 // https on the default port, a hostname (or IP) that is not loopback, private, link-local or otherwise
 // internal, checked again on every redirect hop.
 const PRIVATE_V4 = [/^0\./, /^10\./, /^127\./, /^169\.254\./, /^172\.(1[6-9]|2\d|3[01])\./, /^192\.168\./, /^100\.(6[4-9]|[7-9]\d|1[01]\d|12[0-7])\./, /^198\.1[89]\./, /^2(2[4-9]|[3-5]\d)\./];
+// IPv6 forms that carry an IPv4 address (::ffff:a.b.c.d, ::ffff:7f00:1, ::a.b.c.d) are judged by that address.
+function embeddedV4(x) {
+  const dotted = /^::(?:ffff:)?(\d+\.\d+\.\d+\.\d+)$/i.exec(x);
+  if (dotted) return dotted[1];
+  const hex = /^::(?:ffff:)?([0-9a-f]{1,4}):([0-9a-f]{1,4})$/i.exec(x);
+  if (!hex) return null;
+  const a = parseInt(hex[1], 16), b = parseInt(hex[2], 16);
+  return `${a >> 8}.${a & 255}.${b >> 8}.${b & 255}`;
+}
+
 export function isPrivateAddress(ip) {
-  const v = ip.replace(/^::ffff:/i, '');
+  const v = String(ip).replace(/^\[|\]$/g, '').toLowerCase();
   if (isIP(v) === 4) return PRIVATE_V4.some((r) => r.test(v));
-  const x = v.toLowerCase();
-  return x === '::' || x === '::1' || /^f[cd]/.test(x) || /^fe[89ab]/.test(x) || /^ff/.test(x);
+  if (isIP(v) !== 6) return true; // not an address we can judge: refuse
+  const v4 = embeddedV4(v);
+  if (v4) return PRIVATE_V4.some((r) => r.test(v4));
+  // unspecified, loopback, unique-local, link-local, multicast, NAT64 and 6to4 (both can wrap internal v4)
+  return v === '::' || v === '::1' || /^f[cd]/.test(v) || /^fe[89ab]/.test(v) || /^ff/.test(v) || /^64:ff9b:/.test(v) || /^2002:/.test(v);
 }
 
 export function isPublicHttpsUrl(u) {
@@ -317,8 +331,41 @@ async function resolvesPublic(u) {
   try { return (await lookup(host, { all: true })).every((a) => !isPrivateAddress(a.address)); } catch { return false; }
 }
 
-/** fetch() for third-party addresses: refuses internal hosts, follows at most 3 redirects, re-checking each. */
-export async function safeFetch(url, init = {}, fetchImpl = fetch, check = resolvesPublic) {
+/**
+ * The connection's own DNS lookup, refusing internal addresses. Used as the socket's `lookup`, so the address
+ * that is checked is the address that is connected to: no window between check and connect (DNS rebinding).
+ */
+export function pinnedLookup(resolve = lookup) {
+  return (host, opts, cb) => {
+    resolve(host, { all: true }).then((addrs) => {
+      if (!addrs.length || addrs.some((a) => isPrivateAddress(a.address))) return cb(Object.assign(new Error(`refused: ${host}`), { code: 'EREFUSED' }));
+      const a = addrs[0];
+      return opts && opts.all ? cb(null, [{ address: a.address, family: a.family }]) : cb(null, a.address, a.family);
+    }, (err) => cb(err));
+  };
+}
+
+/** A minimal fetch over node:https whose sockets connect only to public addresses; no redirects of its own. */
+export function pinnedFetch(url, init = {}) {
+  return new Promise((resolve, reject) => {
+    const req = https.request(url, { method: 'GET', headers: init.headers, lookup: pinnedLookup(), timeout: 6000 }, (res) => {
+      const chunks = []; let size = 0;
+      res.on('data', (c) => { size += c.length; if (size > 2_000_000) req.destroy(); else chunks.push(c); });
+      res.on('end', () => {
+        const body = Buffer.concat(chunks).toString('utf8');
+        resolve({ status: res.statusCode, ok: res.statusCode < 300, headers: { get: (k) => res.headers[String(k).toLowerCase()] ?? null }, text: async () => body });
+      });
+      res.on('error', reject);
+    });
+    req.on('timeout', () => req.destroy(new Error('timeout')));
+    req.on('error', reject);
+    init.signal?.addEventListener?.('abort', () => req.destroy(new Error('aborted')));
+    req.end();
+  });
+}
+
+/** Fetch for third-party addresses: public https only, every redirect hop re-checked, connections pinned. */
+export async function safeFetch(url, init = {}, fetchImpl = pinnedFetch, check = resolvesPublic) {
   let at = url;
   for (let hop = 0; hop < 4; hop++) {
     if (!isPublicHttpsUrl(at) || !(await check(at))) throw new Error(`refused: ${at}`);

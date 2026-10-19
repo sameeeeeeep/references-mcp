@@ -5,7 +5,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { createReferences, guessMedium, loadLibrary } from '../src/references.mjs';
 import { CATALOG, MEDIA } from '../src/catalog.mjs';
-import { SOURCES, isPublicHttpsUrl, safeFetch, parseImages, parseRss, parseAdsOfTheWorld, parseAtom, parseGitHubTrending, parseYtLines, searchYouTube, fetchLive } from '../src/sources.mjs';
+import { SOURCES, isPublicHttpsUrl, isPrivateAddress, pinnedLookup, safeFetch, parseImages, parseRss, parseAdsOfTheWorld, parseAtom, parseGitHubTrending, parseYtLines, searchYouTube, fetchLive } from '../src/sources.mjs';
 
 test('catalog covers every medium with unique ids and a take', () => {
   for (const m of MEDIA) assert.ok(CATALOG.filter((r) => r.medium === m).length >= 3, `${m} has at least 3`);
@@ -144,4 +144,18 @@ test('third-party addresses never reach this machine or its network', async () =
   let asked = false;
   await assert.rejects(safeFetch('https://rebind.example/x', {}, async () => { asked = true; return { status: 200 }; }, async () => false), /refused/);
   assert.equal(asked, false);
+});
+
+test('wrapped and encoded internal addresses are refused; the socket lookup itself refuses internal answers', async () => {
+  for (const bad of ['https://[::ffff:127.0.0.1]/', 'https://[::ffff:a00:1]/', 'https://2130706433/', 'https://0x7f.0.0.1/',
+    'https://[64:ff9b::a00:1]/', 'https://[::127.0.0.1]/', 'https://[fe80::1]/', 'https://[2002:7f00:1::]/']) {
+    assert.equal(isPublicHttpsUrl(bad), false, bad);
+  }
+  assert.equal(isPrivateAddress('8.8.8.8'), false);
+  assert.equal(isPrivateAddress('2606:4700::1111'), false);
+  const ask = (answers) => new Promise((res) => pinnedLookup(async () => answers)('x.example', {}, (err, addr) => res(err ? 'refused' : addr)));
+  assert.equal(await ask([{ address: '93.184.216.34', family: 4 }]), '93.184.216.34');
+  assert.equal(await ask([{ address: '93.184.216.34', family: 4 }, { address: '10.0.0.1', family: 4 }]), 'refused');
+  assert.equal(await ask([{ address: '::ffff:127.0.0.1', family: 6 }]), 'refused');
+  assert.equal(await ask([]), 'refused');
 });

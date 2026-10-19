@@ -3738,7 +3738,7 @@ var require_schemes = __commonJS({
         serialize: httpSerialize
       }
     );
-    var https = (
+    var https2 = (
       /** @type {SchemeHandler} */
       {
         scheme: "https",
@@ -3787,7 +3787,7 @@ var require_schemes = __commonJS({
       /** @type {Record<SchemeName, SchemeHandler>} */
       {
         http,
-        https,
+        https: https2,
         ws,
         wss,
         urn,
@@ -21868,6 +21868,7 @@ import { existsSync, readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { join } from "node:path";
 import { execFile } from "node:child_process";
 import { lookup } from "node:dns/promises";
+import https from "node:https";
 import { isIP } from "node:net";
 var SOURCES = [
   // landing / ui
@@ -22089,7 +22090,7 @@ function parseImages(html, pageUrl, max = 6) {
   return out;
 }
 var GAL_TTL = 30 * 24 * 36e5;
-async function pageImages(url, { cacheDir, fetchImpl = fetch, now = Date.now(), check: check2 = resolvesPublic } = {}) {
+async function pageImages(url, { cacheDir, fetchImpl = pinnedFetch, now = Date.now(), check: check2 = resolvesPublic } = {}) {
   if (!/^https:\/\//.test(url || "")) return [];
   const yt = /youtube\.com\/watch\?v=([\w-]{11})|youtu\.be\/([\w-]{11})/.exec(url);
   if (yt) return [`https://i.ytimg.com/vi/${yt[1] || yt[2]}/hqdefault.jpg`];
@@ -22123,11 +22124,21 @@ async function pageImages(url, { cacheDir, fetchImpl = fetch, now = Date.now(), 
   return images;
 }
 var PRIVATE_V4 = [/^0\./, /^10\./, /^127\./, /^169\.254\./, /^172\.(1[6-9]|2\d|3[01])\./, /^192\.168\./, /^100\.(6[4-9]|[7-9]\d|1[01]\d|12[0-7])\./, /^198\.1[89]\./, /^2(2[4-9]|[3-5]\d)\./];
+function embeddedV4(x) {
+  const dotted = /^::(?:ffff:)?(\d+\.\d+\.\d+\.\d+)$/i.exec(x);
+  if (dotted) return dotted[1];
+  const hex = /^::(?:ffff:)?([0-9a-f]{1,4}):([0-9a-f]{1,4})$/i.exec(x);
+  if (!hex) return null;
+  const a = parseInt(hex[1], 16), b = parseInt(hex[2], 16);
+  return `${a >> 8}.${a & 255}.${b >> 8}.${b & 255}`;
+}
 function isPrivateAddress(ip) {
-  const v = ip.replace(/^::ffff:/i, "");
+  const v = String(ip).replace(/^\[|\]$/g, "").toLowerCase();
   if (isIP(v) === 4) return PRIVATE_V4.some((r) => r.test(v));
-  const x = v.toLowerCase();
-  return x === "::" || x === "::1" || /^f[cd]/.test(x) || /^fe[89ab]/.test(x) || /^ff/.test(x);
+  if (isIP(v) !== 6) return true;
+  const v4 = embeddedV4(v);
+  if (v4) return PRIVATE_V4.some((r) => r.test(v4));
+  return v === "::" || v === "::1" || /^f[cd]/.test(v) || /^fe[89ab]/.test(v) || /^ff/.test(v) || /^64:ff9b:/.test(v) || /^2002:/.test(v);
 }
 function isPublicHttpsUrl(u) {
   let x;
@@ -22150,7 +22161,38 @@ async function resolvesPublic(u) {
     return false;
   }
 }
-async function safeFetch(url, init = {}, fetchImpl = fetch, check2 = resolvesPublic) {
+function pinnedLookup(resolve2 = lookup) {
+  return (host, opts, cb) => {
+    resolve2(host, { all: true }).then((addrs) => {
+      if (!addrs.length || addrs.some((a2) => isPrivateAddress(a2.address))) return cb(Object.assign(new Error(`refused: ${host}`), { code: "EREFUSED" }));
+      const a = addrs[0];
+      return opts && opts.all ? cb(null, [{ address: a.address, family: a.family }]) : cb(null, a.address, a.family);
+    }, (err) => cb(err));
+  };
+}
+function pinnedFetch(url, init = {}) {
+  return new Promise((resolve2, reject) => {
+    const req = https.request(url, { method: "GET", headers: init.headers, lookup: pinnedLookup(), timeout: 6e3 }, (res) => {
+      const chunks = [];
+      let size = 0;
+      res.on("data", (c) => {
+        size += c.length;
+        if (size > 2e6) req.destroy();
+        else chunks.push(c);
+      });
+      res.on("end", () => {
+        const body = Buffer.concat(chunks).toString("utf8");
+        resolve2({ status: res.statusCode, ok: res.statusCode < 300, headers: { get: (k) => res.headers[String(k).toLowerCase()] ?? null }, text: async () => body });
+      });
+      res.on("error", reject);
+    });
+    req.on("timeout", () => req.destroy(new Error("timeout")));
+    req.on("error", reject);
+    init.signal?.addEventListener?.("abort", () => req.destroy(new Error("aborted")));
+    req.end();
+  });
+}
+async function safeFetch(url, init = {}, fetchImpl = pinnedFetch, check2 = resolvesPublic) {
   let at = url;
   for (let hop = 0; hop < 4; hop++) {
     if (!isPublicHttpsUrl(at) || !await check2(at)) throw new Error(`refused: ${at}`);

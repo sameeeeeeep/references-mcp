@@ -273,6 +273,28 @@ async function media($: any, cards: Card[]) {
 }
 
 const SH = ['/bin/sh', '-c']
+
+// get <url> <file>: download a third-party picture without ever reaching this machine or its network. The host
+// is resolved here (macOS dscacheutil), refused if internal, and curl is pinned to that very address with
+// --resolve, so its own lookup can't be steered elsewhere; redirects are followed by hand, each re-checked.
+// No explicit ports, no userinfo, https only.
+const PINNED_GET = String.raw`get() {
+  u="$1"
+  for hop in 1 2 3 4; do
+    case "$u" in https://*) ;; *) return 1 ;; esac
+    hp=$(printf '%s' "$u" | sed -E 's#^https://([^/?#]*).*#\1#')
+    case "$hp" in *@*|*:*|"") return 1 ;; esac
+    ip=$(dscacheutil -q host -a name "$hp" 2>/dev/null | awk '/^ip_address:/{print $2; exit}')
+    case "$ip" in
+      ""|0.*|10.*|127.*|169.254.*|192.168.*|172.1[6-9].*|172.2[0-9].*|172.3[01].*|198.1[89].*) return 1 ;;
+      100.6[4-9].*|100.[7-9][0-9].*|100.1[01][0-9].*|100.12[0-7].*|22[4-9].*|2[3-5][0-9].*) return 1 ;;
+    esac
+    loc=$(curl -s --proto =https --resolve "$hp:443:$ip" --max-redirs 0 --max-filesize 15000000 -m 8 -A "Mozilla/5.0" -o "$2" -w '%{redirect_url}' "$u") || return 1
+    [ -z "$loc" ] && return 0
+    u="$loc"
+  done
+  return 1
+}`
 const PATHS = 'export PATH=/opt/homebrew/bin:/usr/local/bin:$PATH'
 
 // Each argument (url or local path) becomes one line of base64 JPEG (empty when it would not load);
@@ -285,8 +307,9 @@ async function pictures($: any, c: Card) {
   if (!srcs.length) return
   const script = [
     PATHS, 't=$(mktemp -d); trap \'rm -rf "$t"\' EXIT; n=0',
+    PINNED_GET,
     'for src in "$@"; do n=$((n+1))',
-    '  case "$src" in https://*) curl -sL --proto =https --proto-redir =https --max-redirs 3 --max-filesize 15000000 -m 8 -A "Mozilla/5.0" -o "$t/i$n" "$src" ;; /*) cp "$src" "$t/i$n" 2>/dev/null ;; esac',
+    '  case "$src" in https://*) get "$src" "$t/i$n" ;; /*) cp "$src" "$t/i$n" 2>/dev/null ;; esac',
     '  if sips -Z 560 -s format jpeg -s formatOptions 42 "$t/i$n" --out "$t/o$n.jpg" >/dev/null 2>&1; then base64 -i "$t/o$n.jpg" | tr -d "\\n"; fi; echo',
     'done',
     'echo --; sips -Z 260 -s format png "$t/i1" --out "$t/p.png" >/dev/null 2>&1 && base64 -i "$t/p.png" | tr -d "\\n"',
