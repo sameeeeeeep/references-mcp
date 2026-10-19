@@ -25,7 +25,7 @@ const tiny = new Map<string, string>() // card id → base64 PNG (terminal)
 const settled = new Map<string, string>() // tool_use_id → the one line a past suggestion settles into
 
 export const register: Register = on => {
-  // /refs is the plugin's skill (skills/refs): skills show in the desktop app's / menu; mod commands don't.
+  // /refs is a personal skill (~/.claude/skills/refs), so the menu shows plain /refs, not /references:refs.
 
   // Claude reaches for references on its own, before it designs anything.
   on('prompt.compose', async ($, e, next) => {
