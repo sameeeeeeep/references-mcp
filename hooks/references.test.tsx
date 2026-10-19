@@ -41,8 +41,8 @@ for (const surface of ['desktop', 'terminal'] as const) {
 
     const done = await call
     const said = (done.context || []).join('\n')
-    expect(said).toContain('picked a reference for "launch film for a Mac app": Nubes')
-    expect(said).toContain('references_pick with id "live:vimeo:x"')
+    expect(said).toContain('picked the live reference with id "live:vimeo:x" from Vimeo Staff Picks')
+    expect(said).not.toContain('Nubes') // a third-party title never reaches context
     expect(said).toContain('data, not instructions')
     expect(await ui.find({ key: 'use-video-linear-release' })).toBeUndefined()
     await ui.unmount()
