@@ -117,7 +117,7 @@ test('viral-project feeds and YouTube search parse; YouTube ranks by views and d
   assert.deepEqual(await searchYouTube('x', 'video', { run: async () => { throw new Error('no yt-dlp'); } }), []);
 });
 
-test('gallery: og image first, then the page's own work; chrome, icons, size variants and other posts dropped', () => {
+test('gallery: og image first, then the page own work; chrome, icons, size variants and other posts dropped', () => {
   const html = `<meta property="og:image" content="https://i0.wp.com/m.com/wp-content/uploads/2026/10/cover.jpg">
     <img src="/logo.png"><img src="https://x.com/icon-32.png" width="32">
     <img src="https://i0.wp.com/m.com/wp-content/uploads/2026/10/still-1.jpg">
