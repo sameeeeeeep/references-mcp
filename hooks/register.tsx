@@ -25,28 +25,7 @@ const tiny = new Map<string, string>() // card id → base64 PNG (terminal)
 const settled = new Map<string, string>() // tool_use_id → the one line a past suggestion settles into
 
 export const register: Register = on => {
-  on('session.start', async ($, e, next) => {
-    try {
-      await $.command.register({
-        name: 'refs',
-        description: 'Show reference directions for what you are making, as cards in the conversation',
-        argumentHint: '<what you are making, e.g. "launch film for a Mac app">',
-      })
-    } catch {}
-    return next(e)
-  })
-
-  // /refs asks the server directly and draws the cards in the command's own row: no relay message, no turn.
-  on('command.run', { command: 'refs' }, async ($, e) => {
-    const ask = (e.args || '').trim()
-    if (!ask) return { text: 'Usage: /refs <what you are making>' }
-    const tools = (await $.tool.list()).map((t: any) => t.name)
-    const tool = tools.find((n: string) => IS_SUGGEST.test(n))
-    if (!tool) return { text: 'The references server is not connected. Reconnect it in /mcp, or reinstall the plugin.' }
-    const r: any = await $.tool.call({ tool, intent: ask } as any)
-    if (r?.deny !== undefined || r?.isError) return { text: `Could not get references: ${String(r?.deny || r?.text || '').slice(0, 200)}` }
-    return { text: `References for "${ask}": pick a card, then write your message.` }
-  })
+  // /refs is the plugin's skill (skills/refs): skills show in the desktop app's / menu; mod commands don't.
 
   // Claude reaches for references on its own, before it designs anything.
   on('prompt.compose', async ($, e, next) => {
@@ -100,13 +79,6 @@ export const register: Register = on => {
   on('ui.render', { component: 'ToolResult' }, async ($, e, next) => {
     if (!IS_SUGGEST.test(String(e.props.tool))) return next(e)
     return (await quietLine($, e, String(e.props.tool_use_id))) ?? next(e)
-  })
-
-  on('ui.render', { component: 'CommandOutput' }, async ($, e, next) => {
-    if (e.props.command !== 'refs') return next(e)
-    const b = await read($, board)
-    const id = b && b.intent === String(e.props.args || '').trim() ? b.toolUseId : `refs:${String(e.props.args || '').trim()}`
-    return (await quietLine($, e, id)) ?? next(e)
   })
 
   on('ui.render', { component: 'Pane', requestId: PANE }, async ($, e) => {

@@ -123,14 +123,3 @@ test('in the chat the suggestion is one quiet line; the band pages through all t
   expect(await band.find({ key: 'pick-video-shot-on-iphone' })).toBeDefined() // 3 cards fit one row of 4
 })
 
-test('/refs asks the server itself and the cards appear in the band (no relay message, no turn)', async ($, on) => {
-  const sent: string[] = []
-  world(on, sent)
-  on('tool.list' as any, () => ({ value: [{ name: TOOL }] }) as any)
-  const out: any = await $.command.run({ command: 'refs', args: 'launch film for a Mac app' } as any)
-  expect(String(out?.text || '')).toContain('pick a card')
-  expect(sent.length).toBe(0)
-  const band = await $.ui.mount({ plugin: 'references', surface: 'desktop', ...BAND } as any)
-  await until(band, 'pick-video-linear-release')
-  expect(await band.find({ key: 'pick-video-linear-release' })).toBeDefined()
-})

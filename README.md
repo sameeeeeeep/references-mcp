@@ -46,7 +46,7 @@ claude plugin install references@references
 ```
 
 Restart Claude Code (or start a new session). Then ask for anything with a look ("make me a launch video"),
-or type `/refs <what you're making>`.
+or type `/refs <what you're making>` (a skill, so it shows in the desktop app's `/` menu too).
 
 **Any MCP client (server only):**
 
