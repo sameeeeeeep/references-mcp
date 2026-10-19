@@ -95,6 +95,8 @@ test('live picks are cached, fail soft, and can be picked like any reference', a
     assert.equal(out.medium, 'ad');
     const pickMe = out.fresh[0].items[0];
     assert.equal(pickMe.title, 'Moldy · Burger King');
+    assert.equal(pickMe.untrusted, true);
+    assert.match(pickMe.take, /^Current pick from Ads of the World/, 'take is never third-party text');
     assert.ok(out.curations.some((c) => c.name.startsWith('Cannes Lions')));
     assert.equal(refs.pick({ id: pickMe.id, note: 'this energy' }).build.url, 'https://www.adsoftheworld.com/campaigns/moldy');
   } finally { rmSync(dir, { recursive: true, force: true }); }
