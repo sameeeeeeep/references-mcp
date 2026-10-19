@@ -13,8 +13,13 @@ builds against that pick instead of an AI default.
 
 - **`directions`**: ranked references, each with a url and a **`take`** (the specific thing to carry over).
   Your own library ranks first, then a canon of proven work.
-- **`fresh`**: today's picks pulled live from the curations: Awwwards Sites of the Day, One Page Love,
-  Ads of the World, Vimeo Staff Picks, Motionographer, STASH, Vimeo Motion Graphics, Hacker News best.
+- **`fresh`**: what's live right now:
+  - **YouTube, most viewed** for your exact ask (video, motion, animation, ads, social; needs `yt-dlp`).
+  - **The daily shelf**: this repo rebuilds `shelf/daily.json` every day (GitHub Action), from the latest
+    uploads of brands known for the craft (Apple, Nike, Spotify, Airbnb, Duolingo, Figma, Kurzgesagt...)
+    ranked by views, plus every live curation below.
+  - **Live curations**: Awwwards Sites of the Day, One Page Love, Ads of the World, Vimeo Staff Picks,
+    Motionographer, STASH, Vimeo Motion Graphics, Product Hunt, GitHub Trending, Hacker News best.
 - **`curations`**: where to go deeper for that medium: Cannes Lions, D&AD, The One Show, Clios, Effies,
   Mobbin, Godly, Land-book, Pitch Deck Hunt, Meta Ad Library, TikTok Creative Center, and more.
 
@@ -84,6 +89,11 @@ Lime on black, one huge headline, product shot below the fold.
 ```
 
 Frontmatter is optional. Without it, the medium is guessed from the folder name and the text.
+
+## What it does not do
+
+It links, it never rehosts: every card points at the original post. Instagram and TikTok are not in yet:
+Instagram serves nothing without a logged-in session, and TikTok is unreachable in some regions.
 
 ## How it stays light
 

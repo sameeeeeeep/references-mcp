@@ -5,7 +5,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { createReferences, guessMedium, loadLibrary } from '../src/references.mjs';
 import { CATALOG, MEDIA } from '../src/catalog.mjs';
-import { SOURCES, parseRss, parseAdsOfTheWorld, fetchLive } from '../src/sources.mjs';
+import { SOURCES, parseRss, parseAdsOfTheWorld, parseAtom, parseGitHubTrending, parseYtLines, searchYouTube, fetchLive } from '../src/sources.mjs';
 
 test('catalog covers every medium with unique ids and a take', () => {
   for (const m of MEDIA) assert.ok(CATALOG.filter((r) => r.medium === m).length >= 3, `${m} has at least 3`);
@@ -90,14 +90,29 @@ test('live picks are cached, fail soft, and can be picked like any reference', a
     const dead = async () => { throw new Error('offline'); };
     assert.equal((await fetchLive(src, { cacheDir: dir, fetchImpl: dead, now: Date.now() + 13 * 3600_000 }))[0].title, 'Moldy', 'stale cache beats nothing');
 
-    const refs = createReferences({ dir, fetchImpl });
+    const youtube = async () => [{ title: 'Big ad', url: 'https://www.youtube.com/watch?v=abcdefghijk', image: 'https://i.ytimg.com/vi/abcdefghijk/hqdefault.jpg', by: '2M views' }];
+    const refs = createReferences({ dir, fetchImpl, youtube });
     const out = await refs.suggest({ intent: 'a bold ad campaign' });
     assert.equal(out.medium, 'ad');
-    const pickMe = out.fresh[0].items[0];
+    assert.equal(out.fresh[0].source, 'YouTube · most viewed', 'most-watched comes first for video-like media');
+    assert.equal(out.fresh[0].items[0].title, 'Big ad · 2M views');
+    const pickMe = out.fresh.find((f) => f.source === 'Ads of the World').items[0];
     assert.equal(pickMe.title, 'Moldy · Burger King');
     assert.equal(pickMe.untrusted, true);
     assert.match(pickMe.take, /^Current pick from Ads of the World/, 'take is never third-party text');
     assert.ok(out.curations.some((c) => c.name.startsWith('Cannes Lions')));
     assert.equal(refs.pick({ id: pickMe.id, note: 'this energy' }).build.url, 'https://www.adsoftheworld.com/campaigns/moldy');
   } finally { rmSync(dir, { recursive: true, force: true }); }
+});
+
+test('viral-project feeds and YouTube search parse; YouTube ranks by views and drops long streams', async () => {
+  const atom = '<feed><entry><link rel="alternate" type="text/html" href="https://www.producthunt.com/products/x"/><title>Lookout</title><content type="html">&lt;p&gt;Urgent Slack messages.&lt;/p&gt; &lt;p&gt;Discussion | Link&lt;/p&gt;</content></entry></feed>';
+  assert.deepEqual(parseAtom(atom), [{ title: 'Lookout', url: 'https://www.producthunt.com/products/x', note: 'Urgent Slack messages.' }]);
+  const gh = '<article class="Box-row"><h2 class="h3"><a href="/a/b">a / b</a></h2><p class="col-9">A thing.</p><span>1,234 stars today</span></article>';
+  assert.deepEqual(parseGitHubTrending(gh), [{ title: 'a/b', url: 'https://github.com/a/b', image: 'https://opengraph.githubassets.com/1/a/b', by: '★ 1,234 today', note: 'A thing.' }]);
+  const lines = ['100\t30\tAAAAAAAAAAA\tsmall', '5000000\t45\tBBBBBBBBBBB\tbig', '9000000\t7200\tCCCCCCCCCCC\tstream', 'NA\tNA\tbad\tx'].join('\n');
+  assert.equal(parseYtLines(lines).length, 3);
+  const items = await searchYouTube('launch film', 'video', { run: async () => lines });
+  assert.deepEqual(items.map((x) => x.title + ' · ' + x.by), ['big · 5M views', 'small · 100 views']);
+  assert.deepEqual(await searchYouTube('x', 'video', { run: async () => { throw new Error('no yt-dlp'); } }), []);
 });

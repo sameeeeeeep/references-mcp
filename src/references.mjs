@@ -9,7 +9,7 @@ import { existsSync, readFileSync, readdirSync, mkdirSync, writeFileSync, append
 import { join, extname, basename } from 'node:path';
 import { z } from 'zod';
 import { CATALOG, MEDIA } from './catalog.mjs';
-import { SOURCES, fetchLive, previewImage } from './sources.mjs';
+import { SOURCES, fetchLive, previewImage, searchYouTube, shelfFor, YT_MEDIA } from './sources.mjs';
 
 const IMG = new Set(['.png', '.jpg', '.jpeg', '.webp', '.gif']);
 const STOP = new Set('a an the and or for of to in on with my our me we i it this that make build design create new some want need like'.split(' '));
@@ -92,17 +92,22 @@ function readTaste(dir) {
   } catch { return []; }
 }
 
-export function createReferences({ dir, libraries = [], fetchImpl, live: liveOn = true }) {
+export function createReferences({ dir, libraries = [], fetchImpl, youtube = searchYouTube, live: liveOn = true }) {
   const cacheDir = dir;
   const seenLive = new Map(); // live picks handed out this session, so get/pick can resolve their ids
   const all = () => [...[dir, ...libraries].flatMap(loadLibrary), ...CATALOG.map((r) => ({ ...r, source: 'curated' })), ...seenLive.values()];
 
   // Current picks from the live curations for this medium (Awwwards SOTD, Ads of the World, Staff Picks…).
-  async function fresh(want, per, skip) {
+  async function fresh(want, per, skip, intent) {
     if (!liveOn) return [];
     const srcs = SOURCES.filter((s) => s.live && (!want || s.media.includes(want)));
+    // What people actually watched for this exact ask: YouTube searched by intent, ranked by views.
+    if (want && YT_MEDIA.includes(want) && intent) srcs.unshift({ id: 'youtube', name: 'YouTube · most viewed', kind: 'performance', media: [want], search: true });
     const lists = await Promise.all(srcs.map(async (src) => {
-      const items = (await fetchLive(src, { cacheDir, fetchImpl })).map((it, i) => ({
+      const raw = src.search ? await youtube(intent, want, { cacheDir })
+        : src.id === 'shelf' ? (want ? await shelfFor(want, { cacheDir, fetchImpl }) : [])
+        : await fetchLive(src, { cacheDir, fetchImpl });
+      const items = raw.map((it, i) => ({
         id: `live:${src.id}:${it.url.replace(/^https?:\/\/(www\.)?/, '').replace(/[^a-z0-9]+/gi, '-').slice(0, 60)}`,
         medium: want || src.media[0], title: clean(it.by ? `${it.title} · ${it.by}` : it.title, 120), url: /^https:\/\//.test(it.url) ? it.url : undefined, image: /^https:\/\//.test(it.image || '') ? it.image : undefined,
         // `take` is always our own words; text from the site stays in `sourceText`, marked as third-party data.
@@ -111,8 +116,10 @@ export function createReferences({ dir, libraries = [], fetchImpl, live: liveOn 
         tags: [src.kind, src.id], source: src.name, rank: i,
       }));
       // Items with a picture first: they are what the user sees on a card.
-      const ok = items.filter((x) => !skip.has(x.id)).sort((a, b) => !!b.image - !!a.image || a.rank - b.rank);
-      return { source: src.name, kind: src.kind, url: src.url, items: ok.slice(0, per) };
+      const ok = items.filter((x) => !skip.has(x.id)).sort((a, b) => !!b.image - !!a.image || a.rank - b.rank).slice(0, per);
+      // Feeds without pictures (Product Hunt) borrow the page's own preview image.
+      await Promise.all(ok.filter((x) => !x.image && x.url).map(async (x) => { x.image = (await previewImage(x.url, { cacheDir, fetchImpl })) || undefined; }));
+      return { source: src.name, kind: src.kind, url: src.url, items: ok };
     }));
     for (const l of lists) for (const it of l.items) seenLive.set(it.id, it);
     return lists.filter((l) => l.items.length);
@@ -148,7 +155,7 @@ export function createReferences({ dir, libraries = [], fetchImpl, live: liveOn 
         ...r, score: Math.round(score * 10) / 10,
         ...(!r.image && liveOn ? { image: (await previewImage(r.url, { cacheDir, fetchImpl })) || undefined } : {}),
       }))),
-      fresh: await fresh(want, want ? 3 : 2, skip),
+      fresh: await fresh(want, want ? 3 : 2, skip, intent),
       curations: SOURCES.filter((s) => !want || s.media.includes(want)).map(({ name, kind, url, note }) => ({ name, kind, url, ...(note ? { note } : {}) })),
       tasteSignals: taste.length,
       next: 'Show the user a short set: the best 2-3 `directions` plus 1-2 `fresh` award/gallery picks (open a fresh pick first if you need to say what to take from it). Recommend one. Then call references_pick with their choice and build against its `take`. `curations` are where to go deeper if they want more.',
