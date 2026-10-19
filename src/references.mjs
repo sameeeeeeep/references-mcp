@@ -98,13 +98,13 @@ export function createReferences({ dir, libraries = [], fetchImpl, youtube = sea
   const all = () => [...[dir, ...libraries].flatMap(loadLibrary), ...CATALOG.map((r) => ({ ...r, source: 'curated' })), ...seenLive.values()];
 
   // Current picks from the live curations for this medium (Awwwards SOTD, Ads of the World, Staff Picks…).
-  async function fresh(want, per, skip, intent) {
+  async function fresh(want, per, skip, intent, styleWords = '') {
     if (!liveOn) return [];
     const srcs = SOURCES.filter((s) => s.live && (!want || s.media.includes(want)));
     // What people actually watched for this exact ask: YouTube searched by intent, ranked by views.
     if (want && YT_MEDIA.includes(want) && intent) srcs.unshift({ id: 'youtube', name: 'YouTube · most viewed', kind: 'performance', media: [want], search: true });
     const lists = await Promise.all(srcs.map(async (src) => {
-      const raw = src.search ? await youtube(intent, want, { cacheDir })
+      const raw = src.search ? await youtube(intent, want, { cacheDir, style: styleWords })
         : src.id === 'shelf' ? (want ? await shelfFor(want, { cacheDir, fetchImpl }) : [])
         : await fetchLive(src, { cacheDir, fetchImpl });
       const items = raw.map((it, i) => ({
@@ -133,7 +133,7 @@ export function createReferences({ dir, libraries = [], fetchImpl, youtube = sea
     return x;
   }
 
-  async function suggest({ intent = '', medium, count = 4, exclude = [] } = {}) {
+  async function suggest({ intent = '', medium, count = 4, exclude = [], style = [], styleWords = '' } = {}) {
     const want = medium || guessMedium(intent);
     const words = new Set(tokens(intent));
     const taste = readTaste(dir).filter((p) => !want || p.medium === want);
@@ -147,6 +147,7 @@ export function createReferences({ dir, libraries = [], fetchImpl, youtube = sea
         let score = 0;
         for (const w of words) score += r.tags.includes(w) ? 2 : hay.has(w) ? 1 : 0;
         for (const t of r.tags) score += Math.min(liked.get(t) || 0, 3) * 0.5;
+        for (const t of style) if (r.tags.includes(t)) score += 3; // the style the person chose in the quiz
         if (r.source === 'mine' && (score > 0 || !words.size)) score += 1.5; // the user's own refs win, when they fit
         return { r, score };
       })
@@ -160,7 +161,7 @@ export function createReferences({ dir, libraries = [], fetchImpl, youtube = sea
       medium: want || null,
       intent,
       directions: await Promise.all(picked.map(({ r, score }) => withGallery({ ...r, score: Math.round(score * 10) / 10 }))),
-      fresh: await fresh(want, want ? 3 : 2, skip, intent),
+      fresh: await fresh(want, want ? 3 : 2, skip, intent, styleWords),
       curations: SOURCES.filter((s) => !want || s.media.includes(want)).map(({ name, kind, url, note }) => ({ name, kind, url, ...(note ? { note } : {}) })),
       tasteSignals: taste.length,
       next: 'Show the user a short set: the best 2-3 `directions` plus 1-2 `fresh` award/gallery picks (open a fresh pick first if you need to say what to take from it). Recommend one. Then call references_pick with their choice and build against its `take`. `curations` are where to go deeper if they want more.',
@@ -217,6 +218,8 @@ export function registerReferenceTools(server, opts) {
       medium: medium.optional().describe('ad = advertising creative. Omit to infer from intent; if it cannot be inferred, directions span media.'),
       count: z.number().int().min(1).max(8).optional().describe('How many directions (default 4).'),
       exclude: z.array(z.string()).optional().describe('Reference ids already shown; use for "show me more".'),
+      style: z.array(z.string()).optional().describe('Style tags to lean toward (e.g. ["cinematic","no-voiceover"]); the cards\' style quiz sets these.'),
+      styleWords: z.string().optional().describe('A few plain words for the style, added to the live YouTube search (e.g. "cinematic voiceover").'),
     },
   }, reply((a) => refs.suggest(a)));
 

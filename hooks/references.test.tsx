@@ -26,6 +26,9 @@ function world(on: On, sent: string[]) {
   on('tool.call', { tool: TOOL }, (_$, e: any) => { lastCall = e.tool_use_id; return { result: [{ type: 'text', text }], text } as any })
 }
 
+// The cards for a video ask open on the style quiz; most tests skip straight to the cards.
+async function skipQuiz(ui: any) { await until(ui, 'quiz-skip'); await ui.press({ key: 'quiz-skip' }) }
+
 // Waits (by redrawing) until the band shows `key`: the plugin's hooks run across async hops.
 async function until(ui: any, key: string, gone = false) {
   for (let i = 0; i < 200; i++) { if (!!(await ui.find({ key })) !== gone) return; await Promise.resolve() }
@@ -40,6 +43,7 @@ for (const surface of ['desktop', 'terminal'] as const) {
     expect((done.context || []).join('\n')).toContain("don't build yet")
 
     const ui = await $.ui.mount({ plugin: 'references', surface, ...BAND } as any)
+  await skipQuiz(ui)
     await until(ui, 'pick-video-linear-release')
     expect(await ui.find({ key: 'pick-live:vimeo:x' })).toBeDefined()
     await ui.press({ key: 'pick-live:vimeo:x' })
@@ -62,6 +66,7 @@ test('a canon pick carries its take; picking again unpicks', async ($, on) => {
   world(on, sent)
   await $.tool.call({ tool: TOOL, intent: 'x' } as any)
   const ui = await $.ui.mount({ plugin: 'references', surface: 'desktop', ...BAND } as any)
+  await skipQuiz(ui)
   await until(ui, 'pick-video-shot-on-iphone')
   await ui.press({ key: 'pick-video-shot-on-iphone' })
   await ui.press({ key: 'pick-video-shot-on-iphone' })
@@ -75,6 +80,7 @@ test('a message with no pick goes through untouched and clears the cards', async
   world(on, sent)
   await $.tool.call({ tool: TOOL, intent: 'x' } as any)
   const ui = await $.ui.mount({ plugin: 'references', surface: 'desktop', ...BAND } as any)
+  await skipQuiz(ui)
   await until(ui, 'more')
   expect(await ui.find({ key: 'dismiss' })).toBeDefined()
   await $.prompt.submit({ text: 'never mind' })
@@ -96,6 +102,7 @@ test('Preview opens a pane with the reference large; it steps between references
   on('ui.close' as any, () => ({ value: undefined }) as any)
   await $.tool.call({ tool: TOOL, intent: 'x' } as any)
   const ui = await $.ui.mount({ plugin: 'references', surface: 'desktop', ...BAND } as any)
+  await skipQuiz(ui)
   await until(ui, 'view-video-linear-release')
   await ui.press({ key: 'view-video-linear-release' })
   const pane = await $.ui.mount({ plugin: 'references', surface: 'desktop', component: 'Pane', requestId: 'references-preview', props: { title: 'Reference', isFocused: true, bodyColumns: 80, placement: 'dock' } } as any)
@@ -119,6 +126,7 @@ test('in the chat the suggestion is one quiet line; the band pages through all t
   expect(await row.find({ type: 'Text', text: /references above the prompt/ })).toBeDefined()
   expect(await row.find({ key: 'pick-video-linear-release' })).toBeUndefined()
   const band = await $.ui.mount({ plugin: 'references', surface: 'desktop', ...BAND } as any)
+  await skipQuiz(band)
   await until(band, 'pick-video-linear-release')
   expect(await band.find({ key: 'pick-video-shot-on-iphone' })).toBeDefined() // 3 cards fit one row of 4
 })
@@ -138,6 +146,7 @@ test('Play opens the reference in the app browser pane; without one it says wher
   })
   await $.tool.call({ tool: TOOL, intent: 'x' } as any)
   const ui = await $.ui.mount({ plugin: 'references', surface: 'desktop', ...BAND } as any)
+  await skipQuiz(ui)
   await until(ui, 'play-live:vimeo:x')
   expect(await ui.find({ key: 'play-video-shot-on-iphone' })).toBeUndefined() // no link, no Play
   await ui.press({ key: 'play-live:vimeo:x' })
@@ -145,4 +154,29 @@ test('Play opens the reference in the app browser pane; without one it says wher
   hasBrowser = false
   await ui.press({ key: 'play-video-linear-release' })
   expect(toasts.join('\n')).toContain('Preview')
+})
+
+test('the style quiz: two taps with examples, then the cards come back in that style', async ($, on) => {
+  const sent: string[] = []
+  world(on, sent)
+  const asked: any[] = []
+  on('mcp.connect' as any, () => ({ value: { isConnected: true, server: 'plugin:references:references' } }) as any)
+  on('mcp.call' as any, (_$: any, e: any) => {
+    asked.push(e)
+    const out = { ...SUGGEST, directions: [{ id: 'video-arc-launch', title: 'Arc 1.0 · 34K views', take: 'Founder-led.', source: 'curated', url: 'https://www.youtube.com/watch?v=n5Vwrj1gEWs' }], fresh: [] }
+    return { value: { content: [{ type: 'text', text: JSON.stringify(out) }], isError: false } } as any
+  })
+  await $.tool.call({ tool: TOOL, intent: SUGGEST.intent } as any)
+  const ui = await $.ui.mount({ plugin: 'references', surface: 'desktop', ...BAND } as any)
+  await until(ui, 'quiz-founder')
+  expect(await ui.find({ key: 'pick-video-linear-release' })).toBeUndefined() // quiz first
+  await ui.press({ key: 'quiz-founder' })
+  await until(ui, 'quiz-music')
+  await ui.press({ key: 'quiz-music' })
+  await until(ui, 'pick-video-arc-launch')
+  expect(asked[0].tool).toBe('references_suggest')
+  expect(asked[0].args.style).toEqual(expect.arrayContaining(['founder', 'no-voiceover']))
+  expect(asked[0].args.styleWords).toBe('founder story')
+  expect(await ui.find({ type: 'Text', text: 'Arc 1.0' })).toBeDefined() // the name, readable on its own
+  expect(await ui.find({ type: 'Text', text: /34K views/ })).toBeDefined() // the stat kept, on its own line
 })

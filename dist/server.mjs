@@ -22020,8 +22020,11 @@ function craftQuery(intent, medium) {
   const hint = (YT_HINT[medium] || "").split(" ").filter((w) => w && !base.includes(w));
   return { query: [...base, ...hint].join(" ") || (YT_HINT[medium] || "product launch video"), words: base.length ? base.filter((w) => w !== "video") : hint };
 }
-async function searchYouTube(intent, medium, { cacheDir, now = Date.now(), run = ytdlp, search = "ytsearch15" } = {}) {
-  const { query, words } = craftQuery(intent, medium);
+async function searchYouTube(intent, medium, { cacheDir, now = Date.now(), run = ytdlp, search = "ytsearch15", style = "" } = {}) {
+  const crafted = craftQuery(intent, medium);
+  const extra = String(style).toLowerCase().replace(/[^a-z ]+/g, " ").split(/\s+/).filter((w) => w && !crafted.query.split(" ").includes(w)).slice(0, 4);
+  const { words } = crafted;
+  const query = [...crafted.query.split(" "), ...extra].join(" ");
   const file = cacheDir && join(cacheDir, "references-cache.json");
   const key = `yt:${search}:${query.toLowerCase()}`;
   let cache = {};
@@ -22299,12 +22302,12 @@ function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, yo
   const cacheDir = dir2;
   const seenLive = /* @__PURE__ */ new Map();
   const all = () => [...[dir2, ...libraries2].flatMap(loadLibrary), ...CATALOG.map((r) => ({ ...r, source: "curated" })), ...seenLive.values()];
-  async function fresh(want, per, skip, intent) {
+  async function fresh(want, per, skip, intent, styleWords = "") {
     if (!liveOn) return [];
     const srcs = SOURCES.filter((s) => s.live && (!want || s.media.includes(want)));
     if (want && YT_MEDIA.includes(want) && intent) srcs.unshift({ id: "youtube", name: "YouTube \xB7 most viewed", kind: "performance", media: [want], search: true });
     const lists = await Promise.all(srcs.map(async (src) => {
-      const raw = src.search ? await youtube(intent, want, { cacheDir }) : src.id === "shelf" ? want ? await shelfFor(want, { cacheDir, fetchImpl }) : [] : await fetchLive(src, { cacheDir, fetchImpl });
+      const raw = src.search ? await youtube(intent, want, { cacheDir, style: styleWords }) : src.id === "shelf" ? want ? await shelfFor(want, { cacheDir, fetchImpl }) : [] : await fetchLive(src, { cacheDir, fetchImpl });
       const items = raw.map((it, i) => ({
         id: `live:${src.id}:${it.url.replace(/^https?:\/\/(www\.)?/, "").replace(/[^a-z0-9]+/gi, "-").slice(0, 60)}`,
         medium: want || src.media[0],
@@ -22333,7 +22336,7 @@ function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, yo
     Object.assign(x, { image: x.image || gallery[0], gallery });
     return x;
   }
-  async function suggest({ intent = "", medium, count = 4, exclude = [] } = {}) {
+  async function suggest({ intent = "", medium, count = 4, exclude = [], style = [], styleWords = "" } = {}) {
     const want = medium || guessMedium(intent);
     const words = new Set(tokens(intent));
     const taste = readTaste(dir2).filter((p) => !want || p.medium === want);
@@ -22345,6 +22348,7 @@ function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, yo
       let score = 0;
       for (const w of words) score += r.tags.includes(w) ? 2 : hay.has(w) ? 1 : 0;
       for (const t of r.tags) score += Math.min(liked.get(t) || 0, 3) * 0.5;
+      for (const t of style) if (r.tags.includes(t)) score += 3;
       if (r.source === "mine" && (score > 0 || !words.size)) score += 1.5;
       return { r, score };
     }).sort((a, b) => b.score - a.score || (a.r.source === "mine" ? -1 : 1));
@@ -22359,7 +22363,7 @@ function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, yo
       medium: want || null,
       intent,
       directions: await Promise.all(picked.map(({ r, score }) => withGallery({ ...r, score: Math.round(score * 10) / 10 }))),
-      fresh: await fresh(want, want ? 3 : 2, skip, intent),
+      fresh: await fresh(want, want ? 3 : 2, skip, intent, styleWords),
       curations: SOURCES.filter((s) => !want || s.media.includes(want)).map(({ name, kind, url, note }) => ({ name, kind, url, ...note ? { note } : {} })),
       tasteSignals: taste.length,
       next: "Show the user a short set: the best 2-3 `directions` plus 1-2 `fresh` award/gallery picks (open a fresh pick first if you need to say what to take from it). Recommend one. Then call references_pick with their choice and build against its `take`. `curations` are where to go deeper if they want more."
@@ -22413,7 +22417,9 @@ function registerReferenceTools(server2, opts) {
       intent: external_exports.string().describe(`What is being made, in the user's words (e.g. "launch deck for a privacy-first Mac app").`),
       medium: medium.optional().describe("ad = advertising creative. Omit to infer from intent; if it cannot be inferred, directions span media."),
       count: external_exports.number().int().min(1).max(8).optional().describe("How many directions (default 4)."),
-      exclude: external_exports.array(external_exports.string()).optional().describe('Reference ids already shown; use for "show me more".')
+      exclude: external_exports.array(external_exports.string()).optional().describe('Reference ids already shown; use for "show me more".'),
+      style: external_exports.array(external_exports.string()).optional().describe(`Style tags to lean toward (e.g. ["cinematic","no-voiceover"]); the cards' style quiz sets these.`),
+      styleWords: external_exports.string().optional().describe('A few plain words for the style, added to the live YouTube search (e.g. "cinematic voiceover").')
     }
   }, reply((a) => refs.suggest(a)));
   server2.registerTool("references_get", {

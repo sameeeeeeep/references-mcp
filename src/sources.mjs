@@ -195,8 +195,11 @@ export function craftQuery(intent, medium) {
   return { query: [...base, ...hint].join(' ') || (YT_HINT[medium] || 'product launch video'), words: base.length ? base.filter((w) => w !== 'video') : hint };
 }
 
-export async function searchYouTube(intent, medium, { cacheDir, now = Date.now(), run = ytdlp, search = 'ytsearch15' } = {}) {
-  const { query, words } = craftQuery(intent, medium);
+export async function searchYouTube(intent, medium, { cacheDir, now = Date.now(), run = ytdlp, search = 'ytsearch15', style = '' } = {}) {
+  const crafted = craftQuery(intent, medium);
+  const extra = String(style).toLowerCase().replace(/[^a-z ]+/g, ' ').split(/\s+/).filter((w) => w && !crafted.query.split(' ').includes(w)).slice(0, 4);
+  const { words } = crafted;
+  const query = [...crafted.query.split(' '), ...extra].join(' ');
   const file = cacheDir && join(cacheDir, 'references-cache.json');
   const key = `yt:${search}:${query.toLowerCase()}`;
   let cache = {};

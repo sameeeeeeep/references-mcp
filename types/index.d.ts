@@ -28,6 +28,12 @@ export type Board = {
   preview: string | null
   /** Which row of cards the band shows. */
   page: number
+  /** The style quiz: which question is up and the option ids chosen so far; null when the medium has none. */
+  quiz?: { step: number; picks: string[] } | null
+  /** True while the cards are being fetched again in the chosen style. */
+  loading?: boolean
+  /** The labels of the style the person chose, shown in the header. */
+  styled?: string[]
 }
 
 declare module 'claude-code' {

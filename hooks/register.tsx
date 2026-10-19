@@ -51,7 +51,9 @@ export const register: Register = on => {
       await update($, board, () => ({
         toolUseId: String((e as any).tool_use_id || ''), intent: String(out.intent || ''), medium: out.medium ?? null,
         cards, thumbs: 0, selected: null, pos: {}, preview: null, page: 0,
+        quiz: QUIZZES[out.medium] ? { step: 0, picks: [] } : null, loading: false, styled: [],
       }))
+      for (const st of QUIZZES[out.medium] || []) for (const o of st.options) void pictures($, { id: quizKey(o), source: 'quiz', image: o.image } as Card)
       void media($, cards)
       return { ...ran, context: [...(ran.context || []), SHOWN] }
     } catch (err: any) {
@@ -106,6 +108,35 @@ const SHOWN = "These directions are now shown to the person as picture cards abo
 
 const PER_ROW = 4
 
+// A fast style quiz before the cards: two taps, each option shown by a real example, so the person narrows the
+// look by pointing instead of describing it. Answers become `style` on a second references_suggest call.
+type QuizOption = { id: string; label: string; hint: string; image: string; tags: string[]; words: string }
+type QuizStep = { q: string; options: QuizOption[] }
+const yt = (id: string) => `https://i.ytimg.com/vi/${id}/hqdefault.jpg`
+const VIDEO_QUIZ: QuizStep[] = [
+  { q: 'What should it feel like?', options: [
+    { id: 'cinematic', label: 'Cinematic & quiet', hint: 'Apple', image: yt('V3dbG9pAi8I'), tags: ['cinematic', 'premium', 'brand'], words: 'cinematic' },
+    { id: 'product', label: 'Product glide', hint: 'Linear', image: yt('6dIwFoQ0eVg'), tags: ['product-demo', 'saas', 'dark'], words: 'product demo' },
+    { id: 'founder', label: 'Founder & candid', hint: 'Arc', image: yt('n5Vwrj1gEWs'), tags: ['founder', 'candid', 'authentic'], words: 'founder story' },
+    { id: 'punchy', label: 'Fast & punchy', hint: 'Nothing', image: yt('oieVN1CLOaw'), tags: ['fast', 'short', 'energetic'], words: 'trailer' },
+  ] },
+  { q: 'Who does the talking?', options: [
+    { id: 'music', label: 'Music only', hint: 'Raycast', image: yt('Mi173xGb0ZA'), tags: ['no-voiceover', 'music'], words: '' },
+    { id: 'voiceover', label: 'A voiceover', hint: 'Kurzgesagt', image: yt('_y9JuojAIg0'), tags: ['voiceover', 'explainer'], words: 'voiceover' },
+    { id: 'oncamera', label: 'Someone on camera', hint: 'MKBHD', image: yt('XbXXKhfvSF0'), tags: ['talking-head', 'founder'], words: '' },
+  ] },
+]
+const QUIZZES: Record<string, QuizStep[]> = { video: VIDEO_QUIZ, ad: VIDEO_QUIZ }
+const quizFor = (b: Board) => (b.medium && QUIZZES[b.medium]) || null
+const quizKey = (o: QuizOption) => `quiz:${o.id}`
+
+// "Title · 501K views" → the name and the stat, so each reads at its own size.
+function splitStat(title: string): { name: string; stat: string } {
+  const m = title.match(/^(.*?)\s·\s([\d.,]+[KMB]?\s+views)$/)
+  const name = (m ? m[1] : title).trim()
+  return { name: name.length > 70 ? name.slice(0, 68).trimEnd() + '…' : name, stat: m ? m[2] : '' }
+}
+
 function cardsView($: any, e: any, ui: any, b: Board, columns: number) {
   const { Box, Text, Button } = ui
   const desktop = e.surface === 'desktop'
@@ -117,12 +148,15 @@ function cardsView($: any, e: any, ui: any, b: Board, columns: number) {
   const send = (text: string) => () => { $.prompt.submit({ text }) }
   const turn = (by: number) => () => update($, board, (cur: Board | null) => (cur ? { ...cur, page: ((cur.page || 0) + by + pages) % pages } : cur))
 
+  const quiz = quizFor(b)
+  if (quiz && b.quiz && b.quiz.step < quiz.length) return quizView($, e, ui, b, quiz)
+
   return (
     <Box flexDirection="column" gap={1}>
       <Box flexDirection="row" justifyContent="space-between">
         <Text>
           <Text bold>References</Text>
-          <Text dimColor>{picked >= 0 ? `  #${picked + 1} ${b.cards[picked].title} rides along with your message` : `  ${b.intent}  ·  pick one, then write your message`}</Text>
+          <Text dimColor>{picked >= 0 ? `  #${picked + 1} ${splitStat(b.cards[picked].title).name} rides along with your message` : `  ${b.intent}${b.styled?.length ? `  ·  ${b.styled.join(', ')}` : ''}  ·  pick one, then write your message`}</Text>
         </Text>
         <Box flexDirection="row" gap={1}>
           {pages > 1 ? <Button key="page-prev" label="‹" plain onPress={turn(-1)} /> : null}
@@ -130,10 +164,12 @@ function cardsView($: any, e: any, ui: any, b: Board, columns: number) {
           {pages > 1 ? <Button key="page-next" label="›" plain onPress={turn(1)} /> : null}
           <Button key="more" label="More" plain onPress={send(`Show me different reference directions for "${b.intent}" (exclude ${JSON.stringify(b.cards.map(c => safeId(c.id)))}).`)} />
           <Button key="auto" label="You pick" plain onPress={send('You pick the reference that fits best, say which in one line, and go.')} />
+          {quiz && !b.loading ? <Button key="restyle" label="Restyle" plain onPress={() => update($, board, (cur: Board | null) => (cur ? { ...cur, quiz: { step: 0, picks: [] } } : cur))} /> : null}
           {picked >= 0 ? <Button key="clear" label="Clear" plain onPress={() => update($, board, (cur: Board | null) => (cur ? { ...cur, selected: null } : cur))} /> : null}
           <Button key="dismiss" label="Dismiss" role="dismiss" plain onPress={() => update($, board, () => null)} />
         </Box>
       </Box>
+      {b.loading ? <Text dimColor>Finding references in that style…</Text> : null}
       <Box flexDirection="row" flexWrap="nowrap" gap={1}>
         {shown.map((c) => {
           const i = b.cards.indexOf(c)
@@ -141,7 +177,7 @@ function cardsView($: any, e: any, ui: any, b: Board, columns: number) {
           return (
             <Box key={c.id} flexDirection="column" width={desktop ? '24%' : 30}>
               {desktop
-                ? <ui.Svg source={cardSvg(c, CARD_W, i + 1, isPicked, slides.get(c.id), b.pos[c.id], isVideo.has(c.id), 0)} alt={`${c.title}: ${c.blurb}`} />
+                ? desktopCard(ui, c, i + 1, isPicked, b.pos[c.id])
                 : e.surface === 'terminal' ? terminalCard(ui, c, i + 1, isPicked) : <Text>{c.title}</Text>}
               <Box flexDirection="row" gap={1}>
                 <Button key={`pick-${c.id}`} label={isPicked ? '✓ Picked' : `Pick ${i + 1}`} hotkey={String(i + 1)} variant={isPicked ? 'primary' : 'secondary'} onPress={pick($, c.id)} />
@@ -156,6 +192,78 @@ function cardsView($: any, e: any, ui: any, b: Board, columns: number) {
       </Box>
     </Box>
   )
+}
+
+// Desktop card: the picture (no text inside it, since the app scales it down), then real text at full size.
+function desktopCard(ui: any, c: Card, n: number, isPicked: boolean, at?: number) {
+  const { Box, Text } = ui
+  const { name, stat } = splitStat(c.title)
+  return (
+    <Box flexDirection="column">
+      <ui.Svg source={cardSvg(c, CARD_W, n, isPicked, slides.get(c.id), at, isVideo.has(c.id), 0, true)} alt={c.title} />
+      <Text bold wrap="wrap">{name}</Text>
+      <Text dimColor wrap="truncate-end">{[c.source, stat].filter(Boolean).join('  ·  ')}</Text>
+      {c.blurb ? <Text wrap="wrap">{c.blurb.length > 110 ? c.blurb.slice(0, 108).trimEnd() + '…' : c.blurb}</Text> : null}
+    </Box>
+  )
+}
+
+function quizView($: any, e: any, ui: any, b: Board, quiz: QuizStep[]) {
+  const { Box, Text, Button } = ui
+  const step = b.quiz!.step
+  const s = quiz[step]
+  const answer = (o: QuizOption) => async () => {
+    const now = await update($, board, (cur: Board | null) => (cur && cur.quiz ? { ...cur, quiz: { step: cur.quiz.step + 1, picks: [...cur.quiz.picks, o.id] } } : cur))
+    if (now?.quiz && now.quiz.step >= quiz.length) void restyle($, now, quiz)
+  }
+  const skip = () => update($, board, (cur: Board | null) => (cur ? { ...cur, quiz: { step: quiz.length, picks: cur.quiz?.picks || [] } } : cur))
+  return (
+    <Box flexDirection="column" gap={1}>
+      <Box flexDirection="row" justifyContent="space-between">
+        <Text>
+          <Text bold>{s.q}</Text>
+          <Text dimColor>{`  ${step + 1} of ${quiz.length}  ·  ${b.intent}`}</Text>
+        </Text>
+        <Box flexDirection="row" gap={1}>
+          {step > 0 ? <Button key="quiz-back" label="‹ Back" plain onPress={() => update($, board, (cur: Board | null) => (cur && cur.quiz ? { ...cur, quiz: { step: cur.quiz.step - 1, picks: cur.quiz.picks.slice(0, -1) } } : cur))} /> : null}
+          <Button key="quiz-skip" label="Skip, show all" plain onPress={skip} />
+          <Button key="dismiss" label="Dismiss" role="dismiss" plain onPress={() => update($, board, () => null)} />
+        </Box>
+      </Box>
+      <Box flexDirection="row" flexWrap="nowrap" gap={1}>
+        {s.options.map((o, i) => (
+          <Box key={o.id} flexDirection="column" width={e.surface === 'desktop' ? '24%' : 26}>
+            {e.surface === 'desktop' ? <ui.Svg source={cardSvg({ id: quizKey(o), title: o.label, take: '', blurb: '', source: o.hint } as Card, CARD_W, i + 1, false, slides.get(quizKey(o)), undefined, false, 0, true)} alt={o.label} /> : null}
+            <Button key={`quiz-${o.id}`} label={o.label} hotkey={String(i + 1)} variant="secondary" onPress={answer(o)} />
+            <Text dimColor>{`like ${o.hint}`}</Text>
+          </Box>
+        ))}
+      </Box>
+    </Box>
+  )
+}
+
+// The quiz is done: ask the server again with the chosen style, and swap the cards in place (no new turn).
+async function restyle($: any, b: Board, quiz: QuizStep[]) {
+  const chosen = b.quiz!.picks.map((id, i) => quiz[i]?.options.find(o => o.id === id)).filter(Boolean) as QuizOption[]
+  if (!chosen.length) return
+  await update($, board, (cur: Board | null) => (cur ? { ...cur, loading: true } : cur))
+  try {
+    const conn = await $.mcp.connect('references')
+    if (!conn.isConnected) throw new Error(conn.reason)
+    const style = [...new Set(chosen.flatMap(o => o.tags))]
+    const words = chosen.map(o => o.words).filter(Boolean).join(' ')
+    const r = await $.mcp.call(conn.server, 'references_suggest', { intent: b.intent, ...(b.medium ? { medium: b.medium } : {}), style, styleWords: words })
+    const text = (r?.content || []).find((x: any) => x.type === 'text')?.text
+    const cards = text ? toCards(JSON.parse(text)) : []
+    if (!cards.length) throw new Error('no cards')
+    slides.clear(); isVideo.clear(); tiny.clear()
+    await update($, board, (cur: Board | null) => (cur ? { ...cur, cards, loading: false, selected: null, pos: {}, page: 0, preview: null, styled: chosen.map(o => o.label) } : cur))
+    void media($, cards)
+  } catch {
+    await update($, board, (cur: Board | null) => (cur ? { ...cur, loading: false } : cur))
+    $.ui.toast('Couldn’t restyle the references; showing the first set')
+  }
 }
 
 function pick($: any, id: string) {
@@ -389,8 +497,8 @@ function lines(text: string, chars: number, max: number): string[] {
 // One card: a carousel of slides (auto-advancing with dots until the person steps it by hand; video frames run
 // fast so they read as motion), number badge, title, source, two lines of blurb. A dark tile that reads in both
 // themes; the picked card gets a lime ring.
-function cardSvg(c: Card, W: number, n: number, isPicked: boolean, pics?: string[], at?: number, video?: boolean, blurbLines = 2): string {
-  const IH = Math.round(W * 0.6), H = IH + 46 + blurbLines * 14
+function cardSvg(c: Card, W: number, n: number, isPicked: boolean, pics?: string[], at?: number, video?: boolean, blurbLines = 2, bare = false): string {
+  const IH = Math.round(W * 0.6), H = bare ? IH : IH + 46 + blurbLines * 14
   const font = 'font-family="system-ui,-apple-system,sans-serif"'
   const img = (d: string, attrs = '', inner = '') =>
     `<image href="data:image/jpeg;base64,${d}" width="${W}" height="${IH}" preserveAspectRatio="xMidYMid slice" clip-path="url(#r)"${attrs}>${inner}</image>`
@@ -424,9 +532,9 @@ function cardSvg(c: Card, W: number, n: number, isPicked: boolean, pics?: string
 <defs><clipPath id="r"><path d="M0 10a10 10 0 0 1 10-10h${W - 20}a10 10 0 0 1 10 10v${IH - 10}h-${W}z"/></clipPath></defs>
 <rect width="${W}" height="${H}" rx="10" fill="#17181b"/>${pic}${dots}
 <g transform="translate(8,8)"><rect width="20" height="20" rx="10" fill="${isPicked ? LIME : '#000'}" fill-opacity="${isPicked ? 1 : 0.55}"/><text x="10" y="14" text-anchor="middle" font-size="11" font-weight="700" fill="${isPicked ? '#111' : '#fff'}" ${font}>${n}</text></g>
-<text x="12" y="${IH + 21}" font-size="13" font-weight="600" fill="#f2f3f5" ${font}>${esc(title)}</text>
+${bare ? '' : `<text x="12" y="${IH + 21}" font-size="13" font-weight="600" fill="#f2f3f5" ${font}>${esc(title)}</text>
 <text x="12" y="${IH + 37}" font-size="10.5" fill="#8a8f98" ${font}>${esc(c.source)}${k > 1 && !video ? ` · ${(at ?? 0) + 1}/${k}` : ''}</text>
-${blurb.map((l, i) => `<text x="12" y="${IH + 54 + i * 14}" font-size="11" fill="#c9ccd2" ${font}>${esc(l)}</text>`).join('')}
+${blurb.map((l, i) => `<text x="12" y="${IH + 54 + i * 14}" font-size="11" fill="#c9ccd2" ${font}>${esc(l)}</text>`).join('')}`}
 ${isPicked ? `<rect x="1.5" y="1.5" width="${W - 3}" height="${H - 3}" rx="9" fill="none" stroke="${LIME}" stroke-width="3"/>` : ''}
 </svg>`
 }
