@@ -14,7 +14,7 @@ builds against that pick instead of an AI default.
 - **`directions`**: ranked references, each with a url and a **`take`** (the specific thing to carry over).
   Your own library ranks first, then a canon of proven work.
 - **`fresh`**: today's picks pulled live from the curations: Awwwards Sites of the Day, One Page Love,
-  Ads of the World, Vimeo Staff Picks, Hacker News best.
+  Ads of the World, Vimeo Staff Picks, Motionographer, STASH, Vimeo Motion Graphics, Hacker News best.
 - **`curations`**: where to go deeper for that medium: Cannes Lions, D&AD, The One Show, Clios, Effies,
   Mobbin, Godly, Land-book, Pitch Deck Hunt, Meta Ad Library, TikTok Creative Center, and more.
 
@@ -32,17 +32,36 @@ If none is given, it is inferred from the intent ("pitch deck" → deck, "reel" 
 
 ## Install
 
+**Claude Code (server + picker):** one plugin brings the server and a mod that shows suggestions as picture
+cards above your prompt. Pick with a click or `1`-`6`; `m` for more, `p` to let Claude pick.
+
+```bash
+claude plugin marketplace add sameeeeeeep/references-mcp
+claude plugin install references@references
+```
+
+Then `/refs <what you're making>` asks on demand, and Claude asks on its own before it designs anything.
+
+**Any MCP client (server only):**
+
 ```bash
 claude mcp add references -s user -- npx -y github:sameeeeeeep/references-mcp
 ```
 
-Or clone it and point any MCP client at `node src/server.mjs`.
+Or clone it and point the client at `node src/server.mjs`.
 
 | env | default | |
 | --- | --- | --- |
 | `REFERENCES_DIR` | `~/.references` | your library, taste log and live cache |
 | `REFERENCES_LIBRARIES` | none | extra read-only folders of references (`:`-separated) |
 | `REFERENCES_LIVE` | `1` | `0` turns off live pulls (canon + library only) |
+
+## The picker
+
+When Claude calls `references_suggest`, the mod holds the call and shows up to six cards above the prompt: the best
+directions plus one fresh pick per live curation, each with its picture, title and source. Your choice goes back to
+Claude with the result. Thumbnails are fetched and shrunk on your machine (`curl` + `sips`, macOS); elsewhere the
+cards show text only. Desktop app and terminal both draw it.
 
 ## Your library
 

@@ -30,8 +30,10 @@ export const SOURCES = [
   { id: 'bestpitchdeck', name: 'Best Pitch Deck', kind: 'gallery', media: ['deck'], url: 'https://bestpitchdeck.com' },
   // video / animation / motion
   { id: 'vimeo-staffpicks', name: 'Vimeo Staff Picks', kind: 'gallery', media: ['video', 'animation'], url: 'https://vimeo.com/channels/staffpicks', live: 'vimeo' },
+  { id: 'motionographer', name: 'Motionographer', kind: 'gallery', media: ['motion', 'animation'], url: 'https://motionographer.com', live: 'motionographer' },
+  { id: 'stash', name: 'STASH', kind: 'gallery', media: ['motion', 'animation', 'video'], url: 'https://www.stashmedia.tv', live: 'stash' },
+  { id: 'vimeo-motion', name: 'Vimeo · Motion Graphics', kind: 'gallery', media: ['motion'], url: 'https://vimeo.com/channels/motiongraphics', live: 'vimeomotion' },
   { id: 'annecy', name: 'Annecy Festival', kind: 'award', media: ['animation'], url: 'https://www.annecy.org' },
-  { id: 'motionographer', name: 'Motionographer', kind: 'gallery', media: ['motion', 'animation', 'video'], url: 'https://motionographer.com' },
   { id: 'lottiefiles', name: 'LottieFiles · Featured', kind: 'gallery', media: ['motion'], url: 'https://lottiefiles.com/featured' },
   { id: 'rive', name: 'Rive Marketplace', kind: 'gallery', media: ['motion', 'animation'], url: 'https://rive.app/marketplace' },
   // ads
@@ -50,7 +52,7 @@ export const SOURCES = [
 
 // ── adapters: url → [{ title, url, image?, by?, note? }] ─────────────────────────────────────────
 const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36';
-const decode = (s) => String(s || '').replace(/<!\[CDATA\[|\]\]>/g, '').replace(/&amp;/g, '&').replace(/&#0?39;|&apos;/g, "'").replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/<[^>]+>/g, '').trim();
+const decode = (s) => String(s || '').replace(/<!\[CDATA\[|\]\]>/g, '').replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(+n)).replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16))).replace(/&amp;/g, '&').replace(/&#0?39;|&apos;/g, "'").replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/<[^>]+>/g, '').trim();
 
 export function parseRss(xml, { strip } = {}) {
   return [...String(xml).matchAll(/<item>([\s\S]*?)<\/item>/g)].map(([, it]) => {
@@ -76,6 +78,9 @@ const ADAPTERS = {
   onepagelove: { url: 'https://onepagelove.com/feed', parse: (s) => parseRss(s, { strip: /^Website Inspiration:\s*/ }) },
   vimeo: { url: 'https://vimeo.com/channels/staffpicks/videos/rss', parse: (s) => parseRss(s) },
   adsoftheworld: { url: 'https://www.adsoftheworld.com', parse: parseAdsOfTheWorld },
+  motionographer: { url: 'https://motionographer.com/feed/', parse: (s) => parseRss(s) },
+  stash: { url: 'https://www.stashmedia.tv/feed/', parse: (s) => parseRss(s) },
+  vimeomotion: { url: 'https://vimeo.com/channels/motiongraphics/videos/rss', parse: (s) => parseRss(s) },
   hnbest: { url: 'https://hnrss.org/best', parse: (s) => parseRss(s).map((x) => ({ ...x, note: undefined })) },
 };
 
@@ -95,11 +100,38 @@ export async function fetchLive(source, { cacheDir, fetchImpl = fetch, now = Dat
     if (!res.ok) throw new Error(String(res.status));
     const items = adapter.parse(await res.text()).slice(0, 12);
     if (file) {
-      cache[source.id] = { at: now, items };
-      try { mkdirSync(cacheDir, { recursive: true }); writeFileSync(file, JSON.stringify(cache)); } catch {}
+      // Re-read before writing: other sources and previews fill the same file in parallel.
+      try { const fresh = existsSync(file) ? JSON.parse(readFileSync(file, 'utf8')) : {}; fresh[source.id] = { at: now, items }; mkdirSync(cacheDir, { recursive: true }); writeFileSync(file, JSON.stringify(fresh)); } catch {}
     }
     return items;
   } catch {
     return hit?.items || [];
   }
+}
+
+const OG_TTL = 30 * 24 * 3600_000;
+
+/** A page's preview image (og:image / twitter:image), cached for 30 days; null when there is none. */
+export async function previewImage(url, { cacheDir, fetchImpl = fetch, now = Date.now() } = {}) {
+  if (!/^https:\/\//.test(url || '')) return null;
+  const yt = /youtube\.com\/watch\?v=([\w-]{11})|youtu\.be\/([\w-]{11})/.exec(url);
+  if (yt) return `https://i.ytimg.com/vi/${yt[1] || yt[2]}/hqdefault.jpg`;
+  const file = cacheDir && join(cacheDir, 'references-cache.json');
+  let cache = {};
+  try { if (file && existsSync(file)) cache = JSON.parse(readFileSync(file, 'utf8')); } catch { cache = {}; }
+  const key = `og:${url}`;
+  if (cache[key] && now - cache[key].at < OG_TTL) return cache[key].image;
+  let image = null;
+  try {
+    const res = await fetchImpl(url, { headers: { 'user-agent': UA }, signal: AbortSignal.timeout(5000) });
+    const html = (await res.text()).slice(0, 300_000);
+    const m = /<meta[^>]+(?:property|name)=["'](?:og:image|twitter:image)(?::src)?["'][^>]*content=["']([^"']+)["']/i.exec(html)
+      || /<meta[^>]+content=["']([^"']+)["'][^>]*(?:property|name)=["'](?:og:image|twitter:image)["']/i.exec(html);
+    if (m) image = new URL(decode(m[1]), url).href;
+    if (image && !/^https:\/\//.test(image)) image = null;
+  } catch { return cache[key]?.image ?? null; }
+  if (file) {
+    try { const fresh = existsSync(file) ? JSON.parse(readFileSync(file, 'utf8')) : {}; fresh[key] = { at: now, image }; mkdirSync(cacheDir, { recursive: true }); writeFileSync(file, JSON.stringify(fresh)); } catch {}
+  }
+  return image;
 }

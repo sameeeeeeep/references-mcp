@@ -9,7 +9,7 @@ import { existsSync, readFileSync, readdirSync, mkdirSync, writeFileSync, append
 import { join, extname, basename } from 'node:path';
 import { z } from 'zod';
 import { CATALOG, MEDIA } from './catalog.mjs';
-import { SOURCES, fetchLive } from './sources.mjs';
+import { SOURCES, fetchLive, previewImage } from './sources.mjs';
 
 const IMG = new Set(['.png', '.jpg', '.jpeg', '.webp', '.gif']);
 const STOP = new Set('a an the and or for of to in on with my our me we i it this that make build design create new some want need like'.split(' '));
@@ -110,7 +110,9 @@ export function createReferences({ dir, libraries = [], fetchImpl, live: liveOn 
         ...(it.note ? { sourceText: clean(it.note, 200) } : {}), untrusted: true,
         tags: [src.kind, src.id], source: src.name, rank: i,
       }));
-      return { source: src.name, kind: src.kind, url: src.url, items: items.filter((x) => !skip.has(x.id)).slice(0, per) };
+      // Items with a picture first: they are what the user sees on a card.
+      const ok = items.filter((x) => !skip.has(x.id)).sort((a, b) => !!b.image - !!a.image || a.rank - b.rank);
+      return { source: src.name, kind: src.kind, url: src.url, items: ok.slice(0, per) };
     }));
     for (const l of lists) for (const it of l.items) seenLive.set(it.id, it);
     return lists.filter((l) => l.items.length);
@@ -142,7 +144,10 @@ export function createReferences({ dir, libraries = [], fetchImpl, live: liveOn 
     return {
       medium: want || null,
       intent,
-      directions: picked.map(({ r, score }) => ({ ...r, score: Math.round(score * 10) / 10 })),
+      directions: await Promise.all(picked.map(async ({ r, score }) => ({
+        ...r, score: Math.round(score * 10) / 10,
+        ...(!r.image && liveOn ? { image: (await previewImage(r.url, { cacheDir, fetchImpl })) || undefined } : {}),
+      }))),
       fresh: await fresh(want, want ? 3 : 2, skip),
       curations: SOURCES.filter((s) => !want || s.media.includes(want)).map(({ name, kind, url, note }) => ({ name, kind, url, ...(note ? { note } : {}) })),
       tasteSignals: taste.length,

@@ -1,0 +1,8 @@
+{
+  "name": "references",
+  "description": "Curated references for agents: award winners, galleries, winning ads and top posts.",
+  "owner": { "name": "sameeeeeeep", "url": "https://github.com/sameeeeeeep" },
+  "plugins": [
+    { "name": "references", "source": "./", "description": "references-mcp plus a Claude Code mod that shows suggestions as picture cards above the prompt." }
+  ]
+}
