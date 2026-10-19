@@ -21867,6 +21867,7 @@ var CATALOG = [
 // src/sources.mjs
 import { existsSync, readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { join } from "node:path";
+import { execFile } from "node:child_process";
 var SOURCES = [
   // landing / ui
   { id: "awwwards", name: "Awwwards \xB7 Sites of the Day", kind: "award", media: ["landing", "ui"], url: "https://www.awwwards.com/websites/sites_of_the_day/", live: "awwwards" },
@@ -21883,6 +21884,11 @@ var SOURCES = [
   { id: "mobbin", name: "Mobbin", kind: "gallery", media: ["app", "ui"], url: "https://mobbin.com" },
   { id: "screenlane", name: "Screenlane", kind: "gallery", media: ["app", "ui"], url: "https://screenlane.com" },
   { id: "apple-design-awards", name: "Apple Design Awards", kind: "award", media: ["app", "ui"], url: "https://developer.apple.com/design/awards/" },
+  // the daily shelf this repo rebuilds itself (scripts/refresh.mjs): what is trending per medium
+  { id: "shelf", name: "Daily shelf \xB7 trending", kind: "trending", media: ["ui", "landing", "app", "deck", "video", "motion", "animation", "social", "post", "ad"], url: "https://github.com/sameeeeeeep/references-mcp/blob/main/shelf/daily.json", live: "shelf" },
+  // viral projects (what launched and took off)
+  { id: "producthunt", name: "Product Hunt \xB7 Today", kind: "trending", media: ["app", "landing", "ui"], url: "https://www.producthunt.com", live: "producthunt" },
+  { id: "github-trending", name: "GitHub Trending", kind: "trending", media: ["app", "ui"], url: "https://github.com/trending", live: "githubtrending" },
   // deck
   { id: "pitchdeckhunt", name: "Pitch Deck Hunt", kind: "gallery", media: ["deck"], url: "https://www.pitchdeckhunt.com" },
   { id: "bestpitchdeck", name: "Best Pitch Deck", kind: "gallery", media: ["deck"], url: "https://bestpitchdeck.com" },
@@ -21918,6 +21924,27 @@ function parseRss(xml, { strip } = {}) {
     return { title, url: tag("link"), image, note: tag("description").slice(0, 200) || void 0 };
   }).filter((x) => x.title && x.url);
 }
+function parseAtom(xml) {
+  return [...String(xml).matchAll(/<entry>([\s\S]*?)<\/entry>/g)].map(([, it]) => {
+    const link = /<link[^>]*rel="alternate"[^>]*href="([^"]+)"/.exec(it)?.[1];
+    const content = decode(decode(/<content[^>]*>([\s\S]*?)<\/content>/.exec(it)?.[1] || "")).replace(/\s+/g, " ").replace(/Discussion \| Link\s*$/, "").trim();
+    return { title: decode(/<title>([\s\S]*?)<\/title>/.exec(it)?.[1]), url: link, note: content.slice(0, 200) || void 0 };
+  }).filter((x) => x.title && x.url);
+}
+function parseGitHubTrending(html) {
+  return [...String(html).matchAll(/<article class="Box-row">([\s\S]*?)<\/article>/g)].map(([, a]) => {
+    const path = /<h2[^>]*>\s*<a[^>]*href="(\/[^"/]+\/[^"/]+)"/.exec(a)?.[1];
+    if (!path) return null;
+    const stars = /([\d,]+) stars today/.exec(a)?.[1];
+    return {
+      title: path.slice(1),
+      url: `https://github.com${path}`,
+      image: `https://opengraph.githubassets.com/1${path}`,
+      by: stars ? `\u2605 ${stars} today` : void 0,
+      note: decode(/<p class="[^"]*">([\s\S]*?)<\/p>/.exec(a)?.[1]).replace(/\s+/g, " ").slice(0, 200) || void 0
+    };
+  }).filter(Boolean);
+}
 function parseAdsOfTheWorld(html) {
   const out = /* @__PURE__ */ new Map();
   for (const m of String(html).matchAll(/<a href="(\/campaigns\/[a-z0-9-]+)"><picture>[\s\S]*?<img alt="([^"]+)"[^>]*src="([^"]+)"[\s\S]*?<\/a>[\s\S]{0,400}?<a href="\1">([^<]+)<\/a>/g)) {
@@ -21934,6 +21961,10 @@ var ADAPTERS = {
   motionographer: { url: "https://motionographer.com/feed/", parse: (s) => parseRss(s) },
   stash: { url: "https://www.stashmedia.tv/feed/", parse: (s) => parseRss(s) },
   vimeomotion: { url: "https://vimeo.com/channels/motiongraphics/videos/rss", parse: (s) => parseRss(s) },
+  producthunt: { url: "https://www.producthunt.com/feed", parse: (s) => parseAtom(s) },
+  githubtrending: { url: "https://github.com/trending", parse: (s) => parseGitHubTrending(s) },
+  // One JSON for all media; fetchLive caches it per medium id (shelf:<medium>), see shelfFor().
+  shelf: { url: "https://raw.githubusercontent.com/sameeeeeeep/references-mcp/main/shelf/daily.json", parse: (s) => JSON.parse(s) },
   hnbest: { url: "https://hnrss.org/best", parse: (s) => parseRss(s).map((x) => ({ ...x, note: void 0 })) }
 };
 var TTL = 12 * 36e5;
@@ -21952,7 +21983,7 @@ async function fetchLive(source, { cacheDir, fetchImpl = fetch, now = Date.now()
   try {
     const res = await fetchImpl(adapter.url, { headers: { "user-agent": UA }, signal: AbortSignal.timeout(6e3) });
     if (!res.ok) throw new Error(String(res.status));
-    const items = adapter.parse(await res.text()).slice(0, 12);
+    const items = adapter.parse(await res.text(), source).slice(0, 12);
     if (file) {
       try {
         const fresh = existsSync(file) ? JSON.parse(readFileSync(file, "utf8")) : {};
@@ -22002,6 +22033,54 @@ async function previewImage(url, { cacheDir, fetchImpl = fetch, now = Date.now()
   }
   return image;
 }
+var YT_TTL = 24 * 36e5;
+var YT_HINT = { video: "", motion: "motion design", animation: "animation", ad: "ad commercial", social: "reel", deck: "keynote presentation", landing: "website design", ui: "ui design", app: "app design", post: "" };
+var YT_MEDIA = ["video", "motion", "animation", "ad", "social"];
+var fmtViews = (n) => (n >= 1e6 ? `${(n / 1e6).toFixed(1).replace(/\.0$/, "")}M` : n >= 1e3 ? `${Math.round(n / 1e3)}K` : String(n)) + " views";
+function parseYtLines(text) {
+  return String(text).split("\n").map((l) => {
+    const [views, dur, id, ...t] = l.split("	");
+    if (!/^[\w-]{11}$/.test(id || "")) return null;
+    return { title: t.join(" ").trim(), url: `https://www.youtube.com/watch?v=${id}`, image: `https://i.ytimg.com/vi/${id}/hqdefault.jpg`, views: Number(views) || 0, duration: Number(dur) || 0 };
+  }).filter(Boolean);
+}
+async function searchYouTube(intent, medium, { cacheDir, now = Date.now(), run = ytdlp, search = "ytsearch15" } = {}) {
+  const query = `${intent} ${YT_HINT[medium] || ""}`.trim().slice(0, 120);
+  const file = cacheDir && join(cacheDir, "references-cache.json");
+  const key = `yt:${search}:${query.toLowerCase()}`;
+  let cache = {};
+  try {
+    if (file && existsSync(file)) cache = JSON.parse(readFileSync(file, "utf8"));
+  } catch {
+    cache = {};
+  }
+  if (cache[key] && now - cache[key].at < YT_TTL) return cache[key].items;
+  let items = [];
+  try {
+    items = parseYtLines(await run(["--flat-playlist", "--no-warnings", "--print", "%(view_count)s	%(duration)s	%(id)s	%(title)s", `${search}:${query}`])).filter((x) => x.duration && x.duration < 1200).sort((a, b) => b.views - a.views).filter((x, i, all) => all.findIndex((y) => y.title.toLowerCase() === x.title.toLowerCase()) === i).slice(0, 8).map(({ views, duration: duration3, ...x }) => ({ ...x, by: fmtViews(views) }));
+  } catch {
+    return cache[key]?.items || [];
+  }
+  if (file) {
+    try {
+      const fresh = existsSync(file) ? JSON.parse(readFileSync(file, "utf8")) : {};
+      fresh[key] = { at: now, items };
+      mkdirSync(cacheDir, { recursive: true });
+      writeFileSync(file, JSON.stringify(fresh));
+    } catch {
+    }
+  }
+  return items;
+}
+function ytdlp(args) {
+  const PATH = ["/opt/homebrew/bin", "/usr/local/bin", process.env.PATH].filter(Boolean).join(":");
+  return new Promise((resolve2, reject) => execFile("yt-dlp", args, { timeout: 15e3, env: { ...process.env, PATH }, maxBuffer: 4 << 20 }, (err, out) => err ? reject(err) : resolve2(out)));
+}
+async function shelfFor(medium, { cacheDir, fetchImpl = fetch, now = Date.now() } = {}) {
+  const src = { id: `shelf:${medium}`, live: "shelfmedium", medium };
+  return fetchLive(src, { cacheDir, fetchImpl, now });
+}
+ADAPTERS.shelfmedium = { url: ADAPTERS.shelf.url, parse: (s, src) => (JSON.parse(s).media?.[src.medium] || []).map(({ title, url, image, by, note, source }) => ({ title, url, image, by: by || source, note })) };
 
 // src/references.mjs
 var IMG = /* @__PURE__ */ new Set([".png", ".jpg", ".jpeg", ".webp", ".gif"]);
@@ -22086,15 +22165,17 @@ function readTaste(dir2) {
     return [];
   }
 }
-function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, live: liveOn = true }) {
+function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, youtube = searchYouTube, live: liveOn = true }) {
   const cacheDir = dir2;
   const seenLive = /* @__PURE__ */ new Map();
   const all = () => [...[dir2, ...libraries2].flatMap(loadLibrary), ...CATALOG.map((r) => ({ ...r, source: "curated" })), ...seenLive.values()];
-  async function fresh(want, per, skip) {
+  async function fresh(want, per, skip, intent) {
     if (!liveOn) return [];
     const srcs = SOURCES.filter((s) => s.live && (!want || s.media.includes(want)));
+    if (want && YT_MEDIA.includes(want) && intent) srcs.unshift({ id: "youtube", name: "YouTube \xB7 most viewed", kind: "performance", media: [want], search: true });
     const lists = await Promise.all(srcs.map(async (src) => {
-      const items = (await fetchLive(src, { cacheDir, fetchImpl })).map((it, i) => ({
+      const raw = src.search ? await youtube(intent, want, { cacheDir }) : src.id === "shelf" ? want ? await shelfFor(want, { cacheDir, fetchImpl }) : [] : await fetchLive(src, { cacheDir, fetchImpl });
+      const items = raw.map((it, i) => ({
         id: `live:${src.id}:${it.url.replace(/^https?:\/\/(www\.)?/, "").replace(/[^a-z0-9]+/gi, "-").slice(0, 60)}`,
         medium: want || src.media[0],
         title: clean(it.by ? `${it.title} \xB7 ${it.by}` : it.title, 120),
@@ -22108,8 +22189,11 @@ function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, li
         source: src.name,
         rank: i
       }));
-      const ok = items.filter((x) => !skip.has(x.id)).sort((a, b) => !!b.image - !!a.image || a.rank - b.rank);
-      return { source: src.name, kind: src.kind, url: src.url, items: ok.slice(0, per) };
+      const ok = items.filter((x) => !skip.has(x.id)).sort((a, b) => !!b.image - !!a.image || a.rank - b.rank).slice(0, per);
+      await Promise.all(ok.filter((x) => !x.image && x.url).map(async (x) => {
+        x.image = await previewImage(x.url, { cacheDir, fetchImpl }) || void 0;
+      }));
+      return { source: src.name, kind: src.kind, url: src.url, items: ok };
     }));
     for (const l of lists) for (const it of l.items) seenLive.set(it.id, it);
     return lists.filter((l) => l.items.length);
@@ -22144,7 +22228,7 @@ function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, li
         score: Math.round(score * 10) / 10,
         ...!r.image && liveOn ? { image: await previewImage(r.url, { cacheDir, fetchImpl }) || void 0 } : {}
       }))),
-      fresh: await fresh(want, want ? 3 : 2, skip),
+      fresh: await fresh(want, want ? 3 : 2, skip, intent),
       curations: SOURCES.filter((s) => !want || s.media.includes(want)).map(({ name, kind, url, note }) => ({ name, kind, url, ...note ? { note } : {} })),
       tasteSignals: taste.length,
       next: "Show the user a short set: the best 2-3 `directions` plus 1-2 `fresh` award/gallery picks (open a fresh pick first if you need to say what to take from it). Recommend one. Then call references_pick with their choice and build against its `take`. `curations` are where to go deeper if they want more."
