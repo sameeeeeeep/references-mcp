@@ -16,6 +16,8 @@ export type Board = {
   cards: Card[]
   /** Bumps when a thumbnail lands, so the band redraws. */
   thumbs: number
+  /** The card the person picked; it rides along with their next message. */
+  selected: string | null
 }
 
 declare module 'claude-code' {
