@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-19T19:49:52.905Z",
+ "updated": "2026-10-19T19:52:11.127Z",
  "media": {
   "ui": [
    {
@@ -59,9 +59,9 @@
     "kind": "award"
    },
    {
-    "title": "buddylist",
-    "url": "https://www.producthunt.com/products/buddylist-2",
-    "note": "Chat with your coding agents like it's 2005",
+    "title": "Own 1",
+    "url": "https://www.producthunt.com/products/own-1-a-powerful-personal-ai-computer",
+    "note": "Own your data. Own your AI. A mind of your own.",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -83,9 +83,9 @@
     "kind": "award"
    },
    {
-    "title": "Wally by Willow",
-    "url": "https://www.producthunt.com/products/willow-voice",
-    "note": "Your Scribe agent that learns how you write",
+    "title": "Figma Specs",
+    "url": "https://www.producthunt.com/products/figma",
+    "note": "A container for your context that lives on the Figma canvas",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -163,9 +163,9 @@
     "kind": "gallery"
    },
    {
-    "title": "buddylist",
-    "url": "https://www.producthunt.com/products/buddylist-2",
-    "note": "Chat with your coding agents like it's 2005",
+    "title": "Own 1",
+    "url": "https://www.producthunt.com/products/own-1-a-powerful-personal-ai-computer",
+    "note": "Own your data. Own your AI. A mind of your own.",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -186,9 +186,9 @@
     "kind": "gallery"
    },
    {
-    "title": "Wally by Willow",
-    "url": "https://www.producthunt.com/products/willow-voice",
-    "note": "Your Scribe agent that learns how you write",
+    "title": "Figma Specs",
+    "url": "https://www.producthunt.com/products/figma",
+    "note": "A container for your context that lives on the Figma canvas",
     "source": "Product Hunt · Today",
     "kind": "trending"
    }
@@ -227,9 +227,9 @@
     "kind": "trending"
    },
    {
-    "title": "buddylist",
-    "url": "https://www.producthunt.com/products/buddylist-2",
-    "note": "Chat with your coding agents like it's 2005",
+    "title": "Own 1",
+    "url": "https://www.producthunt.com/products/own-1-a-powerful-personal-ai-computer",
+    "note": "Own your data. Own your AI. A mind of your own.",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -243,9 +243,9 @@
     "kind": "trending"
    },
    {
-    "title": "Wally by Willow",
-    "url": "https://www.producthunt.com/products/willow-voice",
-    "note": "Your Scribe agent that learns how you write",
+    "title": "Figma Specs",
+    "url": "https://www.producthunt.com/products/figma",
+    "note": "A container for your context that lives on the Figma canvas",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -259,9 +259,9 @@
     "kind": "trending"
    },
    {
-    "title": "Point and Yap",
-    "url": "https://www.producthunt.com/products/point-and-yap",
-    "note": "Point at your screen and start yapping to your agent via MCP",
+    "title": "Wally by Willow",
+    "url": "https://www.producthunt.com/products/willow-voice",
+    "note": "Your Scribe agent that learns how you write",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -275,9 +275,9 @@
     "kind": "trending"
    },
    {
-    "title": "Triwarden",
-    "url": "https://www.producthunt.com/products/triwarden",
-    "note": "Native Mac password manager for Vaultwarden & Bitwarden",
+    "title": "Kai Resolve by Gleap",
+    "url": "https://www.producthunt.com/products/gleap",
+    "note": "Support that does the digging for you.",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -648,7 +648,80 @@
     "kind": "performance"
    }
   ],
-  "post": [],
+  "post": [
+   {
+    "title": "MiniMax M3.1 Flash",
+    "url": "https://www.minimax.io/blog/minimax-m31f",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "I no longer care to work on any Ruby gems so I've archived all my repositories",
+    "url": "https://po-ru.com/2026/10/18/why-im-no-longer-updating-this-repository",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "CERN and Mistral sign a statement of intent to establish a strategic partnership",
+    "url": "https://home.cern/cern-and-mistral-join-forces-to-accelerate-ai-for-science/",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "Wine ported to OpenBSD",
+    "url": "https://marc.info/?l=openbsd-ports&m=179236125692175",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "Alternatives to animal testing are finally taking off",
+    "url": "https://spectrum.ieee.org/alternatives-to-animal-testing",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "Let's Encrypt is adding two additional remote perspectives for domain validation",
+    "url": "https://community.letsencrypt.org/t/lets-encrypt-is-adding-two-additional-remote-perspectives-for-domain-validation/252166",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "Ousted Savannah police officer gave ICE agent husband access to Flock system",
+    "url": "https://www.wjcl.com/article/savannah-police-officer-ice-agent-flock-access/74135816",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "Timestral: Mistral's time-series foundation models",
+    "url": "https://mistral.ai/news/timestral/",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "Linux 7.3",
+    "url": "https://lwn.net/Articles/1101143/",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "William Gibson and the trademarking of cyberspace",
+    "url": "https://colo.to/cyberspace.html",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "If you don't run your own LLM proxy, how do you know whats going on?",
+    "url": "https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
+    "url": "https://arxiv.org/abs/2610.18861",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   }
+  ],
   "ad": [
    {
     "title": "Welcome Apple HomeView: Designed for life at home.",
