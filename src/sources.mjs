@@ -9,6 +9,8 @@
 import { existsSync, readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { execFile } from 'node:child_process';
+import { lookup } from 'node:dns/promises';
+import { isIP } from 'node:net';
 
 export const SOURCES = [
   // landing / ui
@@ -142,7 +144,7 @@ export async function fetchLive(source, { cacheDir, fetchImpl = fetch, now = Dat
 const OG_TTL = 30 * 24 * 3600_000;
 
 /** A page's preview image (og:image / twitter:image), cached for 30 days; null when there is none. */
-export async function previewImage(url, { cacheDir, fetchImpl = fetch, now = Date.now() } = {}) {
+export async function previewImage(url, { cacheDir, fetchImpl = fetch, now = Date.now(), check = resolvesPublic } = {}) {
   if (!/^https:\/\//.test(url || '')) return null;
   const yt = /youtube\.com\/watch\?v=([\w-]{11})|youtu\.be\/([\w-]{11})/.exec(url);
   if (yt) return `https://i.ytimg.com/vi/${yt[1] || yt[2]}/hqdefault.jpg`;
@@ -153,12 +155,12 @@ export async function previewImage(url, { cacheDir, fetchImpl = fetch, now = Dat
   if (cache[key] && now - cache[key].at < OG_TTL) return cache[key].image;
   let image = null;
   try {
-    const res = await fetchImpl(url, { headers: { 'user-agent': UA }, signal: AbortSignal.timeout(5000) });
+    const res = await safeFetch(url, { headers: { 'user-agent': UA }, signal: AbortSignal.timeout(5000) }, fetchImpl, check);
     const html = (await res.text()).slice(0, 300_000);
     const m = /<meta[^>]+(?:property|name)=["'](?:og:image|twitter:image)(?::src)?["'][^>]*content=["']([^"']+)["']/i.exec(html)
       || /<meta[^>]+content=["']([^"']+)["'][^>]*(?:property|name)=["'](?:og:image|twitter:image)["']/i.exec(html);
     if (m) image = new URL(decode(m[1]), url).href;
-    if (image && !/^https:\/\//.test(image)) image = null;
+    if (image && !isPublicHttpsUrl(image)) image = null;
   } catch { return cache[key]?.image ?? null; }
   if (file) {
     try { const fresh = existsSync(file) ? JSON.parse(readFileSync(file, 'utf8')) : {}; fresh[key] = { at: now, image }; mkdirSync(cacheDir, { recursive: true }); writeFileSync(file, JSON.stringify(fresh)); } catch {}
@@ -238,7 +240,7 @@ export function parseImages(html, pageUrl, max = 6) {
     if (!raw || out.length >= max) return;
     let u;
     try { u = new URL(decode(raw.trim().split(/\s+/)[0]), pageUrl); } catch { return; }
-    if (u.protocol !== 'https:' || NOT_A_PICTURE.test(u.pathname)) return;
+    if (!isPublicHttpsUrl(u.href) || NOT_A_PICTURE.test(u.pathname)) return;
     const site = SITE_IMAGES.find(([host]) => host.test(pageUrl));
     if (site && out.length && !site[1].test(u.href)) return; // after the og image, only the site's own work
     // WordPress sidebars show other posts: keep uploads from the same month as the lead image.
@@ -265,7 +267,7 @@ export function parseImages(html, pageUrl, max = 6) {
 const GAL_TTL = 30 * 24 * 3600_000;
 
 /** Up to 6 pictures of a reference (its page's og image first, then its gallery); cached 30 days. */
-export async function pageImages(url, { cacheDir, fetchImpl = fetch, now = Date.now() } = {}) {
+export async function pageImages(url, { cacheDir, fetchImpl = fetch, now = Date.now(), check = resolvesPublic } = {}) {
   if (!/^https:\/\//.test(url || '')) return [];
   const yt = /youtube\.com\/watch\?v=([\w-]{11})|youtu\.be\/([\w-]{11})/.exec(url);
   if (yt) return [`https://i.ytimg.com/vi/${yt[1] || yt[2]}/hqdefault.jpg`];
@@ -276,11 +278,54 @@ export async function pageImages(url, { cacheDir, fetchImpl = fetch, now = Date.
   if (cache[key] && now - cache[key].at < GAL_TTL) return cache[key].images;
   let images = [];
   try {
-    const res = await fetchImpl(url, { headers: { 'user-agent': UA }, signal: AbortSignal.timeout(6000) });
-    images = parseImages((await res.text()).slice(0, 1_500_000), url);
+    const res = await safeFetch(url, { headers: { 'user-agent': UA }, signal: AbortSignal.timeout(6000) }, fetchImpl, check);
+    const found = parseImages((await res.text()).slice(0, 1_500_000), url);
+    // The pictures get downloaded too, so each must also resolve to a public address.
+    const ok = await Promise.all(found.map((x) => check(x).catch(() => false)));
+    images = found.filter((_, i) => ok[i]);
   } catch { return cache[key]?.images || []; }
   if (file) {
     try { const fresh = existsSync(file) ? JSON.parse(readFileSync(file, 'utf8')) : {}; fresh[key] = { at: now, images }; mkdirSync(cacheDir, { recursive: true }); writeFileSync(file, JSON.stringify(fresh)); } catch {}
   }
   return images;
+}
+
+// ── Fetching addresses that came from third-party feeds: public https hosts only ────────────────────────
+// Page and gallery URLs are written by other sites, so they must never reach this machine or its network:
+// https on the default port, a hostname (or IP) that is not loopback, private, link-local or otherwise
+// internal, checked again on every redirect hop.
+const PRIVATE_V4 = [/^0\./, /^10\./, /^127\./, /^169\.254\./, /^172\.(1[6-9]|2\d|3[01])\./, /^192\.168\./, /^100\.(6[4-9]|[7-9]\d|1[01]\d|12[0-7])\./, /^198\.1[89]\./, /^2(2[4-9]|[3-5]\d)\./];
+export function isPrivateAddress(ip) {
+  const v = ip.replace(/^::ffff:/i, '');
+  if (isIP(v) === 4) return PRIVATE_V4.some((r) => r.test(v));
+  const x = v.toLowerCase();
+  return x === '::' || x === '::1' || /^f[cd]/.test(x) || /^fe[89ab]/.test(x) || /^ff/.test(x);
+}
+
+export function isPublicHttpsUrl(u) {
+  let x;
+  try { x = new URL(u); } catch { return false; }
+  if (x.protocol !== 'https:' || (x.port && x.port !== '443') || x.username || x.password) return false;
+  const host = x.hostname.replace(/^\[|\]$/g, '').toLowerCase();
+  if (!host || host === 'localhost' || host.endsWith('.localhost') || host.endsWith('.local') || host.endsWith('.internal') || !host.includes('.') && !isIP(host)) return false;
+  return !(isIP(host) && isPrivateAddress(host));
+}
+
+async function resolvesPublic(u) {
+  const host = new URL(u).hostname.replace(/^\[|\]$/g, '');
+  if (isIP(host)) return !isPrivateAddress(host);
+  try { return (await lookup(host, { all: true })).every((a) => !isPrivateAddress(a.address)); } catch { return false; }
+}
+
+/** fetch() for third-party addresses: refuses internal hosts, follows at most 3 redirects, re-checking each. */
+export async function safeFetch(url, init = {}, fetchImpl = fetch, check = resolvesPublic) {
+  let at = url;
+  for (let hop = 0; hop < 4; hop++) {
+    if (!isPublicHttpsUrl(at) || !(await check(at))) throw new Error(`refused: ${at}`);
+    const res = await fetchImpl(at, { ...init, redirect: 'manual' });
+    const to = res.status >= 300 && res.status < 400 && res.headers?.get?.('location');
+    if (!to) return res;
+    at = new URL(to, at).href;
+  }
+  throw new Error('too many redirects');
 }

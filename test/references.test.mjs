@@ -5,7 +5,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { createReferences, guessMedium, loadLibrary } from '../src/references.mjs';
 import { CATALOG, MEDIA } from '../src/catalog.mjs';
-import { SOURCES, parseImages, parseRss, parseAdsOfTheWorld, parseAtom, parseGitHubTrending, parseYtLines, searchYouTube, fetchLive } from '../src/sources.mjs';
+import { SOURCES, isPublicHttpsUrl, safeFetch, parseImages, parseRss, parseAdsOfTheWorld, parseAtom, parseGitHubTrending, parseYtLines, searchYouTube, fetchLive } from '../src/sources.mjs';
 
 test('catalog covers every medium with unique ids and a take', () => {
   for (const m of MEDIA) assert.ok(CATALOG.filter((r) => r.medium === m).length >= 3, `${m} has at least 3`);
@@ -129,4 +129,19 @@ test('gallery: og image first, then the page own work; chrome, icons, size varia
     'https://i0.wp.com/m.com/wp-content/uploads/2026/10/still-1.jpg',
     'https://i0.wp.com/m.com/wp-content/uploads/2026/10/still-2-2x.jpg',
   ]);
+});
+
+test('third-party addresses never reach this machine or its network', async () => {
+  for (const bad of ['http://example.com/a.jpg', 'https://localhost/x', 'https://127.0.0.1/x', 'https://10.0.0.5/x', 'https://192.168.1.1/x',
+    'https://169.254.169.254/latest', 'https://[::1]/x', 'https://router.local/x', 'https://example.com:8443/x', 'https://u:p@example.com/x', 'https://intranet/x']) {
+    assert.equal(isPublicHttpsUrl(bad), false, bad);
+  }
+  assert.equal(isPublicHttpsUrl('https://www.awwwards.com/sites/format'), true);
+  // A public page that redirects inward is refused at the hop.
+  const fetchImpl = async (u) => (u.includes('evil.example') ? { status: 302, headers: { get: () => 'https://192.168.0.1/admin' } } : { status: 200, headers: { get: () => null } });
+  await assert.rejects(safeFetch('https://evil.example/page', {}, fetchImpl, async () => true), /refused/);
+  // A hostname that resolves to a private address is refused before any request.
+  let asked = false;
+  await assert.rejects(safeFetch('https://rebind.example/x', {}, async () => { asked = true; return { status: 200 }; }, async () => false), /refused/);
+  assert.equal(asked, false);
 });

@@ -3337,8 +3337,8 @@ var require_utils = __commonJS({
     var HOST_DELIMS = { "@": "%40", "/": "%2F", "?": "%3F", "#": "%23", ":": "%3A" };
     var HOST_DELIM_RE = /[@/?#:]/g;
     var HOST_DELIM_NO_COLON_RE = /[@/?#]/g;
-    function reescapeHostDelimiters(host, isIP) {
-      const re = isIP ? HOST_DELIM_NO_COLON_RE : HOST_DELIM_RE;
+    function reescapeHostDelimiters(host, isIP2) {
+      const re = isIP2 ? HOST_DELIM_NO_COLON_RE : HOST_DELIM_RE;
       re.lastIndex = 0;
       return host.replace(re, (ch) => HOST_DELIMS[ch]);
     }
@@ -4027,8 +4027,8 @@ var require_fast_uri = __commonJS({
       const host = matches[4];
       return hasMalformedPercentEncoding(matches[3]) || host !== void 0 && !isIPLiteral(host) && hasMalformedPercentEncoding(host) || hasMalformedPercentEncoding(matches[6]) || hasMalformedPercentEncoding(matches[7]) || hasMalformedPercentEncoding(matches[8]);
     }
-    function canonicalizeHost(parsed, options, schemeHandler, isIP) {
-      if (!options.unicodeSupport && (!schemeHandler || !schemeHandler.unicodeSupport) && parsed.host && !isIPLiteral(parsed.host) && (options.domainHost || schemeHandler && schemeHandler.domainHost) && isIP === false && nonSimpleDomain(parsed.host)) {
+    function canonicalizeHost(parsed, options, schemeHandler, isIP2) {
+      if (!options.unicodeSupport && (!schemeHandler || !schemeHandler.unicodeSupport) && parsed.host && !isIPLiteral(parsed.host) && (options.domainHost || schemeHandler && schemeHandler.domainHost) && isIP2 === false && nonSimpleDomain(parsed.host)) {
         try {
           parsed.host = new URL("http://" + parsed.host).hostname;
         } catch (e) {
@@ -4055,7 +4055,7 @@ var require_fast_uri = __commonJS({
       let malformedHost = false;
       let malformedIPLiteral = false;
       let malformedScheme = false;
-      let isIP = false;
+      let isIP2 = false;
       if (options.reference === "suffix") {
         if (options.scheme) {
           uri = options.scheme + ":" + uri;
@@ -4118,15 +4118,15 @@ var require_fast_uri = __commonJS({
             const bracketedIPLiteral = isIPLiteral(parsed.host);
             const hasIPLiteralBracket = parsed.host.indexOf("[") !== -1 || parsed.host.indexOf("]") !== -1;
             const ipv6result = normalizeIPv6(parsed.host);
-            isIP = ipv6result.isIPV6 || ipv6result.isIPVFuture === true;
+            isIP2 = ipv6result.isIPV6 || ipv6result.isIPVFuture === true;
             malformedIPLiteral = hasIPLiteralBracket && (!bracketedIPLiteral || ipv6result.error === true);
-            parsed.host = isIP ? ipv6result.host : ipv6result.host.toLowerCase();
+            parsed.host = isIP2 ? ipv6result.host : ipv6result.host.toLowerCase();
             if (malformedIPLiteral) {
               parsed.error = parsed.error || "URI host is malformed.";
               malformedAuthorityOrPort = true;
             }
           } else {
-            isIP = true;
+            isIP2 = true;
           }
         }
         if (parsed.scheme === void 0 && parsed.userinfo === void 0 && parsed.host === void 0 && parsed.port === void 0 && parsed.query === void 0 && !parsed.path) {
@@ -4143,14 +4143,14 @@ var require_fast_uri = __commonJS({
         }
         const schemeHandler = getSchemeHandler(options.scheme || parsed.scheme);
         if (!malformedIPLiteral) {
-          malformedHost = canonicalizeHost(parsed, options, schemeHandler, isIP);
+          malformedHost = canonicalizeHost(parsed, options, schemeHandler, isIP2);
         }
         if (uri.indexOf("%") !== -1 && parsed.host !== void 0 && !malformedIPLiteral) {
-          let host = isIP ? parsed.host : normalizePercentEncoding(parsed.host, true);
-          if (!isIP) {
+          let host = isIP2 ? parsed.host : normalizePercentEncoding(parsed.host, true);
+          if (!isIP2) {
             host = normalizePercentEncoding(host.toLowerCase());
           }
-          parsed.host = reescapeHostDelimiters(host, isIP);
+          parsed.host = reescapeHostDelimiters(host, isIP2);
         }
         if (!schemeHandler || schemeHandler && !schemeHandler.skipNormalize) {
           if (parsed.path) {
@@ -21867,6 +21867,8 @@ var CATALOG = [
 import { existsSync, readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { join } from "node:path";
 import { execFile } from "node:child_process";
+import { lookup } from "node:dns/promises";
+import { isIP } from "node:net";
 var SOURCES = [
   // landing / ui
   { id: "awwwards", name: "Awwwards \xB7 Sites of the Day", kind: "award", media: ["landing", "ui"], url: "https://www.awwwards.com/websites/sites_of_the_day/", live: "awwwards" },
@@ -22064,7 +22066,7 @@ function parseImages(html, pageUrl, max = 6) {
     } catch {
       return;
     }
-    if (u.protocol !== "https:" || NOT_A_PICTURE.test(u.pathname)) return;
+    if (!isPublicHttpsUrl(u.href) || NOT_A_PICTURE.test(u.pathname)) return;
     const site = SITE_IMAGES.find(([host]) => host.test(pageUrl));
     if (site && out.length && !site[1].test(u.href)) return;
     const month = (x) => /\/uploads\/(\d{4}\/\d{2})\//.exec(x)?.[1];
@@ -22087,7 +22089,7 @@ function parseImages(html, pageUrl, max = 6) {
   return out;
 }
 var GAL_TTL = 30 * 24 * 36e5;
-async function pageImages(url, { cacheDir, fetchImpl = fetch, now = Date.now() } = {}) {
+async function pageImages(url, { cacheDir, fetchImpl = fetch, now = Date.now(), check: check2 = resolvesPublic } = {}) {
   if (!/^https:\/\//.test(url || "")) return [];
   const yt = /youtube\.com\/watch\?v=([\w-]{11})|youtu\.be\/([\w-]{11})/.exec(url);
   if (yt) return [`https://i.ytimg.com/vi/${yt[1] || yt[2]}/hqdefault.jpg`];
@@ -22102,8 +22104,10 @@ async function pageImages(url, { cacheDir, fetchImpl = fetch, now = Date.now() }
   if (cache[key] && now - cache[key].at < GAL_TTL) return cache[key].images;
   let images = [];
   try {
-    const res = await fetchImpl(url, { headers: { "user-agent": UA }, signal: AbortSignal.timeout(6e3) });
-    images = parseImages((await res.text()).slice(0, 15e5), url);
+    const res = await safeFetch(url, { headers: { "user-agent": UA }, signal: AbortSignal.timeout(6e3) }, fetchImpl, check2);
+    const found = parseImages((await res.text()).slice(0, 15e5), url);
+    const ok = await Promise.all(found.map((x) => check2(x).catch(() => false)));
+    images = found.filter((_, i) => ok[i]);
   } catch {
     return cache[key]?.images || [];
   }
@@ -22117,6 +22121,45 @@ async function pageImages(url, { cacheDir, fetchImpl = fetch, now = Date.now() }
     }
   }
   return images;
+}
+var PRIVATE_V4 = [/^0\./, /^10\./, /^127\./, /^169\.254\./, /^172\.(1[6-9]|2\d|3[01])\./, /^192\.168\./, /^100\.(6[4-9]|[7-9]\d|1[01]\d|12[0-7])\./, /^198\.1[89]\./, /^2(2[4-9]|[3-5]\d)\./];
+function isPrivateAddress(ip) {
+  const v = ip.replace(/^::ffff:/i, "");
+  if (isIP(v) === 4) return PRIVATE_V4.some((r) => r.test(v));
+  const x = v.toLowerCase();
+  return x === "::" || x === "::1" || /^f[cd]/.test(x) || /^fe[89ab]/.test(x) || /^ff/.test(x);
+}
+function isPublicHttpsUrl(u) {
+  let x;
+  try {
+    x = new URL(u);
+  } catch {
+    return false;
+  }
+  if (x.protocol !== "https:" || x.port && x.port !== "443" || x.username || x.password) return false;
+  const host = x.hostname.replace(/^\[|\]$/g, "").toLowerCase();
+  if (!host || host === "localhost" || host.endsWith(".localhost") || host.endsWith(".local") || host.endsWith(".internal") || !host.includes(".") && !isIP(host)) return false;
+  return !(isIP(host) && isPrivateAddress(host));
+}
+async function resolvesPublic(u) {
+  const host = new URL(u).hostname.replace(/^\[|\]$/g, "");
+  if (isIP(host)) return !isPrivateAddress(host);
+  try {
+    return (await lookup(host, { all: true })).every((a) => !isPrivateAddress(a.address));
+  } catch {
+    return false;
+  }
+}
+async function safeFetch(url, init = {}, fetchImpl = fetch, check2 = resolvesPublic) {
+  let at = url;
+  for (let hop = 0; hop < 4; hop++) {
+    if (!isPublicHttpsUrl(at) || !await check2(at)) throw new Error(`refused: ${at}`);
+    const res = await fetchImpl(at, { ...init, redirect: "manual" });
+    const to = res.status >= 300 && res.status < 400 && res.headers?.get?.("location");
+    if (!to) return res;
+    at = new URL(to, at).href;
+  }
+  throw new Error("too many redirects");
 }
 
 // src/references.mjs
@@ -22216,8 +22259,8 @@ function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, yo
         id: `live:${src.id}:${it.url.replace(/^https?:\/\/(www\.)?/, "").replace(/[^a-z0-9]+/gi, "-").slice(0, 60)}`,
         medium: want || src.media[0],
         title: clean(it.by ? `${it.title} \xB7 ${it.by}` : it.title, 120),
-        url: /^https:\/\//.test(it.url) ? it.url : void 0,
-        image: /^https:\/\//.test(it.image || "") ? it.image : void 0,
+        url: isPublicHttpsUrl(it.url) ? it.url : void 0,
+        image: isPublicHttpsUrl(it.image || "") ? it.image : void 0,
         // `take` is always our own words; text from the site stays in `sourceText`, marked as third-party data.
         take: `Current ${src.kind === "award" ? "award pick" : "pick"} from ${src.name}: open it and name what to carry over.`,
         ...it.note ? { sourceText: clean(it.note, 200) } : {},
@@ -22234,7 +22277,7 @@ function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, yo
     return lists.filter((l) => l.items.length);
   }
   async function withGallery(x) {
-    if (!liveOn || !x.url || !/^https:/.test(x.url)) return x.image ? Object.assign(x, { gallery: [x.image] }) : x;
+    if (!liveOn || !x.url || !isPublicHttpsUrl(x.url)) return x.image ? Object.assign(x, { gallery: [x.image] }) : x;
     const found = await pageImages(x.url, { cacheDir, fetchImpl });
     const gallery = [...new Set([x.image, ...found].filter(Boolean))].slice(0, 6);
     Object.assign(x, { image: x.image || gallery[0], gallery });

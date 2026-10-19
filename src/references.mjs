@@ -9,7 +9,7 @@ import { existsSync, readFileSync, readdirSync, mkdirSync, writeFileSync, append
 import { join, extname, basename } from 'node:path';
 import { z } from 'zod';
 import { CATALOG, MEDIA } from './catalog.mjs';
-import { SOURCES, fetchLive, pageImages, searchYouTube, shelfFor, YT_MEDIA } from './sources.mjs';
+import { SOURCES, fetchLive, pageImages, searchYouTube, shelfFor, isPublicHttpsUrl, YT_MEDIA } from './sources.mjs';
 
 const IMG = new Set(['.png', '.jpg', '.jpeg', '.webp', '.gif']);
 const STOP = new Set('a an the and or for of to in on with my our me we i it this that make build design create new some want need like'.split(' '));
@@ -109,7 +109,7 @@ export function createReferences({ dir, libraries = [], fetchImpl, youtube = sea
         : await fetchLive(src, { cacheDir, fetchImpl });
       const items = raw.map((it, i) => ({
         id: `live:${src.id}:${it.url.replace(/^https?:\/\/(www\.)?/, '').replace(/[^a-z0-9]+/gi, '-').slice(0, 60)}`,
-        medium: want || src.media[0], title: clean(it.by ? `${it.title} · ${it.by}` : it.title, 120), url: /^https:\/\//.test(it.url) ? it.url : undefined, image: /^https:\/\//.test(it.image || '') ? it.image : undefined,
+        medium: want || src.media[0], title: clean(it.by ? `${it.title} · ${it.by}` : it.title, 120), url: isPublicHttpsUrl(it.url) ? it.url : undefined, image: isPublicHttpsUrl(it.image || '') ? it.image : undefined,
         // `take` is always our own words; text from the site stays in `sourceText`, marked as third-party data.
         take: `Current ${src.kind === 'award' ? 'award pick' : 'pick'} from ${src.name}: open it and name what to carry over.`,
         ...(it.note ? { sourceText: clean(it.note, 200) } : {}), untrusted: true,
@@ -126,7 +126,7 @@ export function createReferences({ dir, libraries = [], fetchImpl, youtube = sea
 
   // Its pictures for the carousel: the image it came with, then its page's own gallery (up to 6).
   async function withGallery(x) {
-    if (!liveOn || !x.url || !/^https:/.test(x.url)) return x.image ? Object.assign(x, { gallery: [x.image] }) : x;
+    if (!liveOn || !x.url || !isPublicHttpsUrl(x.url)) return x.image ? Object.assign(x, { gallery: [x.image] }) : x;
     const found = await pageImages(x.url, { cacheDir, fetchImpl });
     const gallery = [...new Set([x.image, ...found].filter(Boolean))].slice(0, 6);
     Object.assign(x, { image: x.image || gallery[0], gallery });

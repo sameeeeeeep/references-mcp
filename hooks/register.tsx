@@ -278,12 +278,15 @@ const PATHS = 'export PATH=/opt/homebrew/bin:/usr/local/bin:$PATH'
 // Each argument (url or local path) becomes one line of base64 JPEG (empty when it would not load);
 // the first also leaves a PNG for the terminal after a "--" line.
 async function pictures($: any, c: Card) {
-  const srcs = (c.gallery?.length ? c.gallery : c.image ? [c.image] : []).slice(0, 6)
+  // Remote pictures: public https only. Local files: only for the person's own library cards.
+  const srcs = (c.gallery?.length ? c.gallery : c.image ? [c.image] : [])
+    .filter(x => (/^https:\/\//.test(x) ? isPublicHttps(x) : c.source === 'your library' && x.startsWith('/')))
+    .slice(0, 6)
   if (!srcs.length) return
   const script = [
     PATHS, 't=$(mktemp -d); trap \'rm -rf "$t"\' EXIT; n=0',
     'for src in "$@"; do n=$((n+1))',
-    '  case "$src" in http*) curl -sL -m 8 -A "Mozilla/5.0" -o "$t/i$n" "$src" ;; *) cp "$src" "$t/i$n" 2>/dev/null ;; esac',
+    '  case "$src" in https://*) curl -sL --proto =https --proto-redir =https --max-redirs 3 --max-filesize 15000000 -m 8 -A "Mozilla/5.0" -o "$t/i$n" "$src" ;; /*) cp "$src" "$t/i$n" 2>/dev/null ;; esac',
     '  if sips -Z 560 -s format jpeg -s formatOptions 42 "$t/i$n" --out "$t/o$n.jpg" >/dev/null 2>&1; then base64 -i "$t/o$n.jpg" | tr -d "\\n"; fi; echo',
     'done',
     'echo --; sips -Z 260 -s format png "$t/i1" --out "$t/p.png" >/dev/null 2>&1 && base64 -i "$t/p.png" | tr -d "\\n"',
@@ -390,6 +393,16 @@ function cardSvg(c: Card, W: number, n: number, isPicked: boolean, pics?: string
 ${blurb.map((l, i) => `<text x="12" y="${IH + 54 + i * 14}" font-size="11" fill="#c9ccd2" ${font}>${esc(l)}</text>`).join('')}
 ${isPicked ? `<rect x="1.5" y="1.5" width="${W - 3}" height="${H - 3}" rx="9" fill="none" stroke="${LIME}" stroke-width="3"/>` : ''}
 </svg>`
+}
+
+// A picture address from a third-party page: https on the default port, never a local or internal host.
+function isPublicHttps(u: string): boolean {
+  let x: URL
+  try { x = new URL(u) } catch { return false }
+  if (x.protocol !== 'https:' || (x.port && x.port !== '443') || x.username) return false
+  const h = x.hostname.replace(/^\[|\]$/g, '').toLowerCase()
+  if (h === 'localhost' || /\.(localhost|local|internal)$/.test(h) || !h.includes('.') && !h.includes(':')) return false
+  return !/^(0|10|127)\.|^169\.254\.|^172\.(1[6-9]|2\d|3[01])\.|^192\.168\.|^100\.(6[4-9]|[7-9]\d|1[01]\d|12[0-7])\.|^(::1?$|f[cd]|fe[89ab])/.test(h)
 }
 
 // Ids are ours (catalog / library slug / live:<source>:<url slug>); links are re-serialised and capped.
