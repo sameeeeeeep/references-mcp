@@ -8,6 +8,7 @@
 import { existsSync, readFileSync, readdirSync, mkdirSync, writeFileSync, appendFileSync, copyFileSync, statSync } from 'node:fs';
 import { join, extname, basename } from 'node:path';
 import { z } from 'zod';
+import { QUIZZES } from './quiz.mjs';
 import { CATALOG, MEDIA } from './catalog.mjs';
 import { SOURCES, fetchLive, pageImages, searchYouTube, shelfFor, isPublicHttpsUrl, YT_MEDIA } from './sources.mjs';
 
@@ -133,6 +134,17 @@ export function createReferences({ dir, libraries = [], fetchImpl, youtube = sea
     return x;
   }
 
+  // Each option's example picture, looked up live from its page (cached like any gallery).
+  async function quizFor(medium) {
+    return Promise.all(QUIZZES[medium].map(async (st) => ({
+      q: st.q,
+      options: await Promise.all(st.options.map(async ({ from, ...o }) => {
+        const image = liveOn ? (await pageImages(from, { cacheDir, fetchImpl }))[0] : undefined;
+        return { ...o, ...(image ? { image } : {}) };
+      })),
+    })));
+  }
+
   async function suggest({ intent = '', medium, count = 4, exclude = [], style = [], styleWords = '' } = {}) {
     const want = medium || guessMedium(intent);
     const words = new Set(tokens(intent));
@@ -163,6 +175,8 @@ export function createReferences({ dir, libraries = [], fetchImpl, youtube = sea
       directions: await Promise.all(picked.map(({ r, score }) => withGallery({ ...r, score: Math.round(score * 10) / 10 }))),
       fresh: await fresh(want, want ? 3 : 2, skip, intent, styleWords),
       curations: SOURCES.filter((s) => !want || s.media.includes(want)).map(({ name, kind, url, note }) => ({ name, kind, url, ...(note ? { note } : {}) })),
+      // The style quiz for this medium (only on a first ask, not once a style is chosen): the cards open on it.
+      ...(want && QUIZZES[want] && !style.length ? { quiz: await quizFor(want) } : {}),
       tasteSignals: taste.length,
       next: 'Show the user a short set: the best 2-3 `directions` plus 1-2 `fresh` award/gallery picks (open a fresh pick first if you need to say what to take from it). Recommend one. Then call references_pick with their choice and build against its `take`. `curations` are where to go deeper if they want more.',
     };

@@ -160,3 +160,17 @@ test('wrapped and encoded internal addresses are refused; the socket lookup itse
   assert.equal(await ask([{ address: '::ffff:127.0.0.1', family: 6 }]), 'refused');
   assert.equal(await ask([]), 'refused');
 });
+
+test('every medium has a quiz; the first ask carries it, a styled ask does not', async () => {
+  const { QUIZZES } = await import('../src/quiz.mjs');
+  const { MEDIA } = await import('../src/catalog.mjs');
+  for (const m of MEDIA) assert.ok(QUIZZES[m]?.length, `quiz for ${m}`);
+  const { createReferences } = await import('../src/references.mjs');
+  const refs = createReferences({ dir: join(tmpdir(), `refs-quiz-${process.pid}`), live: false });
+  const first = await refs.suggest({ intent: 'landing page', medium: 'landing' });
+  assert.equal(first.quiz.length, QUIZZES.landing.length);
+  assert.ok(first.quiz[0].options.every((o) => o.label && o.tags.length && !('from' in o)));
+  const styled = await refs.suggest({ intent: 'landing page', medium: 'landing', style: ['dark', 'glow'] });
+  assert.equal(styled.quiz, undefined);
+  assert.equal(styled.directions[0].id, 'landing-linear');
+});

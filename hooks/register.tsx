@@ -47,13 +47,14 @@ export const register: Register = on => {
       const out = JSON.parse(ran.text)
       const cards = toCards(out)
       if (!cards.length) return ran
+      const quiz = toQuiz(out.quiz)
       slides.clear(); isVideo.clear(); tiny.clear()
       await update($, board, () => ({
         toolUseId: String((e as any).tool_use_id || ''), intent: String(out.intent || ''), medium: out.medium ?? null,
         cards, thumbs: 0, selected: null, pos: {}, preview: null, page: 0,
-        quiz: QUIZZES[out.medium] ? { step: 0, picks: [] } : null, loading: false, styled: [],
+        quiz: quiz.length ? { step: 0, picks: [] } : null, quizSteps: quiz, loading: false, styled: [],
       }))
-      for (const st of QUIZZES[out.medium] || []) for (const o of st.options) void pictures($, { id: quizKey(o), source: 'quiz', image: o.image } as Card)
+      for (const st of quiz) for (const o of st.options) if (o.image) void pictures($, { id: quizKey(o), source: 'quiz', image: o.image } as Card)
       void media($, cards)
       return { ...ran, context: [...(ran.context || []), SHOWN] }
     } catch (err: any) {
@@ -108,27 +109,25 @@ const SHOWN = "These directions are now shown to the person as picture cards abo
 
 const PER_ROW = 4
 
-// A fast style quiz before the cards: two taps, each option shown by a real example, so the person narrows the
-// look by pointing instead of describing it. Answers become `style` on a second references_suggest call.
-type QuizOption = { id: string; label: string; hint: string; image: string; tags: string[]; words: string }
+// The style quiz comes with the suggestion (the server's QUIZZES, one per medium): a couple of taps before the
+// cards, each option shown by a real example. Answers become `style` on a second references_suggest call.
+type QuizOption = { id: string; label: string; hint: string; image?: string; tags: string[]; words: string }
 type QuizStep = { q: string; options: QuizOption[] }
-const yt = (id: string) => `https://i.ytimg.com/vi/${id}/hqdefault.jpg`
-const VIDEO_QUIZ: QuizStep[] = [
-  { q: 'What should it feel like?', options: [
-    { id: 'cinematic', label: 'Cinematic & quiet', hint: 'Apple', image: yt('V3dbG9pAi8I'), tags: ['cinematic', 'premium', 'brand'], words: 'cinematic' },
-    { id: 'product', label: 'Product glide', hint: 'Linear', image: yt('6dIwFoQ0eVg'), tags: ['product-demo', 'saas', 'dark'], words: 'product demo' },
-    { id: 'founder', label: 'Founder & candid', hint: 'Arc', image: yt('n5Vwrj1gEWs'), tags: ['founder', 'candid', 'authentic'], words: 'founder story' },
-    { id: 'punchy', label: 'Fast & punchy', hint: 'Nothing', image: yt('oieVN1CLOaw'), tags: ['fast', 'short', 'energetic'], words: 'trailer' },
-  ] },
-  { q: 'Who does the talking?', options: [
-    { id: 'music', label: 'Music only', hint: 'Raycast', image: yt('Mi173xGb0ZA'), tags: ['no-voiceover', 'music'], words: '' },
-    { id: 'voiceover', label: 'A voiceover', hint: 'Kurzgesagt', image: yt('_y9JuojAIg0'), tags: ['voiceover', 'explainer'], words: 'voiceover' },
-    { id: 'oncamera', label: 'Someone on camera', hint: 'MKBHD', image: yt('XbXXKhfvSF0'), tags: ['talking-head', 'founder'], words: '' },
-  ] },
-]
-const QUIZZES: Record<string, QuizStep[]> = { video: VIDEO_QUIZ, ad: VIDEO_QUIZ }
-const quizFor = (b: Board) => (b.medium && QUIZZES[b.medium]) || null
+const quizFor = (b: Board): QuizStep[] | null => (b.quizSteps?.length ? b.quizSteps as QuizStep[] : null)
 const quizKey = (o: QuizOption) => `quiz:${o.id}`
+
+// Only well-formed steps from the server's answer, capped; labels are ours (shipped in quiz.mjs).
+function toQuiz(raw: any): QuizStep[] {
+  if (!Array.isArray(raw)) return []
+  return raw.slice(0, 3).map((st: any) => ({
+    q: String(st?.q || '').slice(0, 80),
+    options: (Array.isArray(st?.options) ? st.options : []).slice(0, 4).map((o: any) => ({
+      id: String(o?.id || '').replace(/[^\w-]/g, '').slice(0, 30), label: String(o?.label || '').slice(0, 40), hint: String(o?.hint || '').slice(0, 40),
+      image: typeof o?.image === 'string' && isPublicHttps(o.image) ? o.image : undefined,
+      tags: (Array.isArray(o?.tags) ? o.tags : []).map(String).slice(0, 8), words: String(o?.words || '').slice(0, 40),
+    })).filter((o: QuizOption) => o.id && o.label),
+  })).filter((st: QuizStep) => st.q && st.options.length >= 2)
+}
 
 // "Title · 501K views" → the name and the stat, so each reads at its own size.
 function splitStat(title: string): { name: string; stat: string } {

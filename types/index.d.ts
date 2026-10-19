@@ -30,6 +30,8 @@ export type Board = {
   page: number
   /** The style quiz: which question is up and the option ids chosen so far; null when the medium has none. */
   quiz?: { step: number; picks: string[] } | null
+  /** The quiz's questions, as the server sent them with the suggestion. */
+  quizSteps?: { q: string; options: { id: string; label: string; hint: string; image?: string; tags: string[]; words: string }[] }[]
   /** True while the cards are being fetched again in the chosen style. */
   loading?: boolean
   /** The labels of the style the person chose, shown in the header. */
