@@ -15,14 +15,16 @@ const CHANNELS = {
   ad: ['apple', 'Nike', 'Spotify', 'Airbnb', 'duolingo'],
   video: ['apple', 'TheBrowserCompany', 'Figma', 'Notion', 'Stripe'],
   animation: ['kurzgesagt'],
-  social: ['duolingo/shorts', 'Spotify/shorts', 'Nike/shorts'],
+  // Instagram serves nothing without a login, so social comes from the same brands' YouTube Shorts:
+  // most post the same vertical cuts to both.
+  social: ['duolingo', 'Spotify', 'Nike', 'apple', 'redbull', 'GoPro', 'Netflix', 'Ryanair', 'Wendys', 'Starbucks', 'Chipotle', 'Samsung', 'Airbnb'].map((h) => `${h}/shorts`),
 };
 const byViews = (a, b) => (b.views || 0) - (a.views || 0);
 
 async function channelLatest(medium) {
   const lists = await Promise.all((CHANNELS[medium] || []).map((h) =>
     ytList(`https://www.youtube.com/@${h.includes('/') ? h : `${h}/videos`}`, 6).catch(() => [])));
-  return lists.flat().sort(byViews).slice(0, 8);
+  return lists.flat().sort(byViews).slice(0, medium === 'social' ? 12 : 8);
 }
 
 const shelf = { updated: new Date().toISOString(), media: {} };

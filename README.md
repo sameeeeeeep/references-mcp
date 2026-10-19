@@ -92,8 +92,10 @@ Frontmatter is optional. Without it, the medium is guessed from the folder name 
 
 ## What it does not do
 
-It links, it never rehosts: every card points at the original post. Instagram and TikTok are not in yet:
-Instagram serves nothing without a logged-in session, and TikTok is unreachable in some regions.
+It links, it never rehosts: every card points at the original post. Instagram serves nothing without a
+logged-in session, so social references come from the same brands' YouTube Shorts (Duolingo, Spotify, Nike,
+Red Bull, GoPro, Netflix, Ryanair, Wendy's...), where most post the same vertical cuts. TikTok is not in:
+it is unreachable in some regions.
 
 ## How it stays light
 

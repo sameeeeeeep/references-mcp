@@ -169,7 +169,7 @@ export async function previewImage(url, { cacheDir, fetchImpl = fetch, now = Dat
 // ── YouTube, searched by intent and ranked by views: what people actually watched ───────────────────
 // Needs yt-dlp on PATH (no download; metadata only). Absent or failing, it yields nothing.
 const YT_TTL = 24 * 3600_000;
-const YT_HINT = { video: '', motion: 'motion design', animation: 'animation', ad: 'ad commercial', social: 'reel', deck: 'keynote presentation', landing: 'website design', ui: 'ui design', app: 'app design', post: '' };
+const YT_HINT = { video: '', motion: 'motion design', animation: 'animation', ad: 'ad commercial', social: 'shorts', deck: 'keynote presentation', landing: 'website design', ui: 'ui design', app: 'app design', post: '' };
 export const YT_MEDIA = ['video', 'motion', 'animation', 'ad', 'social'];
 const fmtViews = (n) => (n >= 1e6 ? `${(n / 1e6).toFixed(1).replace(/\.0$/, '')}M` : n >= 1e3 ? `${Math.round(n / 1e3)}K` : String(n)) + ' views';
 

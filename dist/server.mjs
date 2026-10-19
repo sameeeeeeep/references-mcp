@@ -22033,7 +22033,7 @@ async function previewImage(url, { cacheDir, fetchImpl = fetch, now = Date.now()
   return image;
 }
 var YT_TTL = 24 * 36e5;
-var YT_HINT = { video: "", motion: "motion design", animation: "animation", ad: "ad commercial", social: "reel", deck: "keynote presentation", landing: "website design", ui: "ui design", app: "app design", post: "" };
+var YT_HINT = { video: "", motion: "motion design", animation: "animation", ad: "ad commercial", social: "shorts", deck: "keynote presentation", landing: "website design", ui: "ui design", app: "app design", post: "" };
 var YT_MEDIA = ["video", "motion", "animation", "ad", "social"];
 var fmtViews = (n) => (n >= 1e6 ? `${(n / 1e6).toFixed(1).replace(/\.0$/, "")}M` : n >= 1e3 ? `${Math.round(n / 1e3)}K` : String(n)) + " views";
 function parseYtLines(text) {
