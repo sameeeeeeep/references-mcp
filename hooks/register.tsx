@@ -15,7 +15,8 @@ const board = atom({ plugin: 'references', key: 'board' } as const, null)
 const IS_SUGGEST = /(^|__)references_suggest$/
 const PANE = 'references-preview'
 const LIME = '#C8F250'
-const PX_PER_COL = 7 // desktop: a conservative guess at a cell's width, to fit one row
+// Desktop cards are drawn at this width and scaled by the app to a third of the row (three per row).
+const CARD_W = 320
 const SVG_BUDGET = 112_000 // Svg source cap is 131,072 characters; leave room for the markup
 
 const slides = new Map<string, string[]>() // card id → base64 JPEG slides (gallery or video frames)
@@ -158,9 +159,7 @@ const SHOWN = "These directions are now shown to the person as picture cards rig
 function cardsView($: any, e: any, ui: any, b: Board, columns: number) {
   const { Box, Text, Button, Link } = ui
   const desktop = e.surface === 'desktop'
-  const avail = Math.max(420, columns * PX_PER_COL)
-  const n = desktop ? Math.max(2, Math.min(b.cards.length, Math.floor((avail + 10) / (250 + 10)))) : Math.max(1, Math.min(b.cards.length, Math.floor(columns / 32)))
-  const W = Math.min(340, Math.floor((avail - 10 * (n - 1)) / n))
+  const n = desktop ? b.cards.length : Math.max(1, Math.min(b.cards.length, Math.floor(columns / 32)))
 
   const select = (id: string) => pick($, id)
   const step = (id: string, by: number) => stepSlide($, id, by)
@@ -176,15 +175,15 @@ function cardsView($: any, e: any, ui: any, b: Board, columns: number) {
         </Box>
       </Box>
       <Box flexDirection="row" flexWrap="wrap" gap={1}>
-        {b.cards.slice(0, desktop ? b.cards.length : n).map((c, i) => {
+        {b.cards.slice(0, n).map((c, i) => {
           const isPicked = c.id === b.selected
           const k = slides.get(c.id)?.length || 0
           const at = b.pos[c.id]
           const link = safeUrl(c.url)
           return (
-            <Box key={c.id} flexDirection="column" width={desktop ? undefined : 32}>
+            <Box key={c.id} flexDirection="column" width={desktop ? '32%' : 32}>
               {desktop
-                ? <ui.Svg source={cardSvg(c, W, i + 1, isPicked, slides.get(c.id), at, isVideo.has(c.id))} alt={`${c.title}: ${c.blurb}`} width={W} isInteractive={k > 1 && at === undefined ? true : undefined} />
+                ? <ui.Svg source={cardSvg(c, CARD_W, i + 1, isPicked, slides.get(c.id), at, isVideo.has(c.id))} alt={`${c.title}: ${c.blurb}`} />
                 : e.surface === 'terminal' ? terminalCard(ui, c, i + 1, isPicked) : <Text>{c.title}</Text>}
               <Box flexDirection="row" gap={1}>
                 {k > 1 ? <Button key={`prev-${c.id}`} label="‹" plain onPress={step(c.id, -1)} /> : null}
@@ -232,14 +231,13 @@ function previewPane($: any, e: any, ui: any, b: Board | null) {
   const c = b.cards[at]
   const k = slides.get(c.id)?.length || 0
   const pos = b.pos[c.id]
-  const W = Math.max(320, Math.min(900, (e.props.bodyColumns || 60) * PX_PER_COL))
   const isPicked = b.selected === c.id
   const link = safeUrl(c.url)
   const go = (by: number) => () => update($, board, (cur: Board | null) => (cur ? { ...cur, preview: cur.cards[(at + by + cur.cards.length) % cur.cards.length].id } : cur))
   return (
     <Box flexDirection="column" gap={1}>
       {e.surface === 'desktop'
-        ? <ui.Svg source={cardSvg(c, W, at + 1, isPicked, slides.get(c.id), pos, isVideo.has(c.id), 0)} alt={c.title} width={W} isInteractive={k > 1 && pos === undefined ? true : undefined} />
+        ? <ui.Svg source={cardSvg(c, 720, at + 1, isPicked, slides.get(c.id), pos, isVideo.has(c.id), 0)} alt={c.title} />
         : e.surface === 'terminal' ? terminalCard(ui, c, at + 1, isPicked) : null}
       <Box flexDirection="row" gap={1}>
         {k > 1 ? <Button key="p-prev" label="‹" plain onPress={stepSlide($, c.id, -1)} /> : null}
@@ -330,9 +328,16 @@ const PATHS = 'export PATH=/opt/homebrew/bin:/usr/local/bin:$PATH'
 
 // Each argument (url or local path) becomes one line of base64 JPEG (empty when it would not load);
 // the first also leaves a PNG for the terminal after a "--" line.
+// The first picture lands on its own so every card shows something quickly; the rest of the gallery follows.
 async function pictures($: any, c: Card) {
+  const all = c.gallery?.length ? c.gallery : c.image ? [c.image] : []
+  await picturesOf($, c, all.slice(0, 1))
+  if (all.length > 1) await picturesOf($, c, all)
+}
+
+async function picturesOf($: any, c: Card, list: string[]) {
   // Remote pictures: public https only. Local files: only for the person's own library cards.
-  const srcs = (c.gallery?.length ? c.gallery : c.image ? [c.image] : [])
+  const srcs = list
     .filter(x => (/^https:\/\//.test(x) ? isPublicHttps(x) : c.source === 'your library' && x.startsWith('/')))
     .slice(0, 6)
   if (!srcs.length) return
@@ -341,7 +346,7 @@ async function pictures($: any, c: Card) {
     PINNED_GET,
     'for src in "$@"; do n=$((n+1))',
     '  case "$src" in https://*) get "$src" "$t/i$n" ;; /*) cp "$src" "$t/i$n" 2>/dev/null ;; esac',
-    '  if sips -Z 560 -s format jpeg -s formatOptions 42 "$t/i$n" --out "$t/o$n.jpg" >/dev/null 2>&1; then base64 -i "$t/o$n.jpg" | tr -d "\\n"; fi; echo',
+    '  if sips -Z 480 -s format jpeg -s formatOptions 42 "$t/i$n" --out "$t/o$n.jpg" >/dev/null 2>&1; then base64 -i "$t/o$n.jpg" | tr -d "\\n"; fi; echo',
     'done',
     'echo --; sips -Z 260 -s format png "$t/i1" --out "$t/p.png" >/dev/null 2>&1 && base64 -i "$t/p.png" | tr -d "\\n"',
   ].join('\n')
@@ -355,7 +360,7 @@ async function pictures($: any, c: Card) {
       got.push(line); total += line.length
     }
     if (!got.length) return
-    if (!isVideo.has(c.id)) slides.set(c.id, got)
+    if (!isVideo.has(c.id) && got.length >= (slides.get(c.id)?.length || 0)) slides.set(c.id, got)
     if (png?.trim() && png.trim().length < 2_000_000) tiny.set(c.id, png.trim())
     await bump($)
   } catch {}

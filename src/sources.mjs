@@ -184,8 +184,19 @@ export function parseYtLines(text) {
   }).filter(Boolean);
 }
 
+// Searching the person's own words ("launch film for wallpap") hits whatever is popular for the unknown name;
+// search the craft instead, and keep only results whose titles share a craft word with it.
+const CRAFT = new Set('launch film video trailer teaser product reveal ad ads commercial campaign explainer demo promo motion animation animated brand reel shorts short story app website site ui ux keynote intro title sequence cinematic 3d logo unboxing announcement spot tvc music saas startup iphone mac android game wallpaper typography kinetic'.split(' '));
+export function craftQuery(intent, medium) {
+  const words = String(intent).toLowerCase().split(/[^a-z0-9]+/).filter((w) => CRAFT.has(w));
+  const base = [...new Set(words)];
+  if (base.includes('launch') && !base.includes('product')) base.unshift('product');
+  const hint = (YT_HINT[medium] || '').split(' ').filter((w) => w && !base.includes(w));
+  return { query: [...base, ...hint].join(' ') || (YT_HINT[medium] || 'product launch video'), words: base.length ? base.filter((w) => w !== 'video') : hint };
+}
+
 export async function searchYouTube(intent, medium, { cacheDir, now = Date.now(), run = ytdlp, search = 'ytsearch15' } = {}) {
-  const query = `${intent} ${YT_HINT[medium] || ''}`.trim().slice(0, 120);
+  const { query, words } = craftQuery(intent, medium);
   const file = cacheDir && join(cacheDir, 'references-cache.json');
   const key = `yt:${search}:${query.toLowerCase()}`;
   let cache = {};
@@ -195,6 +206,7 @@ export async function searchYouTube(intent, medium, { cacheDir, now = Date.now()
   try {
     items = parseYtLines(await run(['--flat-playlist', '--no-warnings', '--print', '%(view_count)s\t%(duration)s\t%(id)s\t%(title)s', `${search}:${query}`]))
       .filter((x) => x.duration && x.duration < 1200) // films and ads, not livestreams or hour-long talks
+      .filter((x) => !words.length || words.some((w) => x.title.toLowerCase().includes(w)))
       .sort((a, b) => b.views - a.views)
       .filter((x, i, all) => all.findIndex((y) => y.title.toLowerCase() === x.title.toLowerCase()) === i)
       .slice(0, 8)

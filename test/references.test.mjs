@@ -111,9 +111,9 @@ test('viral-project feeds and YouTube search parse; YouTube ranks by views and d
   const gh = '<article class="Box-row"><h2 class="h3"><a href="/a/b">a / b</a></h2><p class="col-9">A thing.</p><span>1,234 stars today</span></article>';
   assert.deepEqual(parseGitHubTrending(gh), [{ title: 'a/b', url: 'https://github.com/a/b', image: 'https://opengraph.githubassets.com/1/a/b', by: '★ 1,234 today', note: 'A thing.' }]);
   const lines = ['100\t30\tAAAAAAAAAAA\tsmall', '5000000\t45\tBBBBBBBBBBB\tbig', '9000000\t7200\tCCCCCCCCCCC\tstream', 'NA\tNA\tbad\tx'].join('\n');
-  assert.equal(parseYtLines(lines).length, 3);
+  assert.equal(parseYtLines(lines).length, 4);
   const items = await searchYouTube('launch film', 'video', { run: async () => lines });
-  assert.deepEqual(items.map((x) => x.title + ' · ' + x.by), ['big · 5M views', 'small · 100 views']);
+  assert.deepEqual(items.map((x) => x.title + ' · ' + x.by), ['big launch film · 5M views', 'small launch film · 100 views'], 'off-craft titles (the trailer) drop out');
   assert.deepEqual(await searchYouTube('x', 'video', { run: async () => { throw new Error('no yt-dlp'); } }), []);
 });
 

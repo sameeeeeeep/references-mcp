@@ -22012,8 +22012,16 @@ function parseYtLines(text) {
     return { title: t.join(" ").trim(), url: `https://www.youtube.com/watch?v=${id}`, image: `https://i.ytimg.com/vi/${id}/hqdefault.jpg`, views: Number(views) || 0, duration: Number(dur) || 0 };
   }).filter(Boolean);
 }
+var CRAFT = new Set("launch film video trailer teaser product reveal ad ads commercial campaign explainer demo promo motion animation animated brand reel shorts short story app website site ui ux keynote intro title sequence cinematic 3d logo unboxing announcement spot tvc music saas startup iphone mac android game wallpaper typography kinetic".split(" "));
+function craftQuery(intent, medium) {
+  const words = String(intent).toLowerCase().split(/[^a-z0-9]+/).filter((w) => CRAFT.has(w));
+  const base = [...new Set(words)];
+  if (base.includes("launch") && !base.includes("product")) base.unshift("product");
+  const hint = (YT_HINT[medium] || "").split(" ").filter((w) => w && !base.includes(w));
+  return { query: [...base, ...hint].join(" ") || (YT_HINT[medium] || "product launch video"), words: base.length ? base.filter((w) => w !== "video") : hint };
+}
 async function searchYouTube(intent, medium, { cacheDir, now = Date.now(), run = ytdlp, search = "ytsearch15" } = {}) {
-  const query = `${intent} ${YT_HINT[medium] || ""}`.trim().slice(0, 120);
+  const { query, words } = craftQuery(intent, medium);
   const file = cacheDir && join(cacheDir, "references-cache.json");
   const key = `yt:${search}:${query.toLowerCase()}`;
   let cache = {};
@@ -22025,7 +22033,7 @@ async function searchYouTube(intent, medium, { cacheDir, now = Date.now(), run =
   if (cache[key] && now - cache[key].at < YT_TTL) return cache[key].items;
   let items = [];
   try {
-    items = parseYtLines(await run(["--flat-playlist", "--no-warnings", "--print", "%(view_count)s	%(duration)s	%(id)s	%(title)s", `${search}:${query}`])).filter((x) => x.duration && x.duration < 1200).sort((a, b) => b.views - a.views).filter((x, i, all) => all.findIndex((y) => y.title.toLowerCase() === x.title.toLowerCase()) === i).slice(0, 8).map(({ views, duration: duration3, ...x }) => ({ ...x, by: fmtViews(views) }));
+    items = parseYtLines(await run(["--flat-playlist", "--no-warnings", "--print", "%(view_count)s	%(duration)s	%(id)s	%(title)s", `${search}:${query}`])).filter((x) => x.duration && x.duration < 1200).filter((x) => !words.length || words.some((w) => x.title.toLowerCase().includes(w))).sort((a, b) => b.views - a.views).filter((x, i, all) => all.findIndex((y) => y.title.toLowerCase() === x.title.toLowerCase()) === i).slice(0, 8).map(({ views, duration: duration3, ...x }) => ({ ...x, by: fmtViews(views) }));
   } catch {
     return cache[key]?.items || [];
   }
