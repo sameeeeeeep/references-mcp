@@ -71,6 +71,14 @@ pick is attached to it for Claude. **Preview** opens a side pane with the refere
 goes to the original. Thumbnails and frames are made on your machine (`curl` + `sips` on macOS, `yt-dlp` +
 `ffmpeg` for video frames); without them the cards show text. Desktop app and terminal both draw it.
 
+## Narrowing
+
+Every answer carries `facets`: the tags among the matching references, with how many carry each ("Scrolling 190 ·
+Storytelling 70 · Minimal 25"). Pass picks back as `filters` and only references carrying all of them return. The
+style quiz's options map onto these tags, and the band shows them as chips (✕ to drop one, + to add one). Behind
+landing, UI and app sits a catalog the daily job crawls from Awwwards' category pages: about 1,100 judged sites,
+each with its style tags. If a mix leaves too few, the last filter loosens and the answer says which.
+
 ## Your library
 
 A library is just folders. Each `.md` is one reference. Its image is the same-named sibling, or the folder's

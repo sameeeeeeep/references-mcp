@@ -14256,13 +14256,13 @@ function _array(Class2, element, params) {
   });
 }
 function _custom(Class2, fn, _params) {
-  const norm = normalizeParams(_params);
-  norm.abort ?? (norm.abort = true);
+  const norm2 = normalizeParams(_params);
+  norm2.abort ?? (norm2.abort = true);
   const schema = new Class2({
     type: "custom",
     check: "custom",
     fn,
-    ...norm
+    ...norm2
   });
   return schema;
 }
@@ -21532,10 +21532,10 @@ var QUIZZES = {
   ],
   ui: [
     { q: "How dense?", options: [
-      { id: "dense", label: "Dense, keyboard-first", hint: "Linear", from: "https://linear.app", tags: ["dense", "keyboard", "productivity"], words: "" },
-      { id: "calm", label: "Calm & airy", hint: "Things", from: "https://culturedcode.com/things/", tags: ["calm", "whitespace", "craft"], words: "" },
-      { id: "launcher", label: "One input does it all", hint: "Raycast", from: "https://www.raycast.com", tags: ["launcher", "command", "native"], words: "" },
-      { id: "playful", label: "Playful hardware", hint: "Teenage Engineering", from: "https://teenage.engineering/products/op-1", tags: ["playful", "hardware", "retro", "mono"], words: "" }
+      { id: "dense", label: "Dense, keyboard-first", hint: "Linear", from: "https://linear.app", tags: ["dense", "keyboard", "productivity"], words: "", filters: ["Interaction Design"] },
+      { id: "calm", label: "Calm & airy", hint: "Things", from: "https://culturedcode.com/things/", tags: ["calm", "whitespace", "craft"], words: "", filters: ["Clean"] },
+      { id: "launcher", label: "One input does it all", hint: "Raycast", from: "https://www.raycast.com", tags: ["launcher", "command", "native"], words: "", filters: ["Microinteractions"] },
+      { id: "playful", label: "Playful hardware", hint: "Teenage Engineering", from: "https://teenage.engineering/products/op-1", tags: ["playful", "hardware", "retro", "mono"], words: "", filters: ["Colorful"] }
     ] },
     { q: "Light or dark?", options: [
       { id: "dark", label: "Dark", hint: "Linear", from: "https://linear.app", tags: ["dark"], words: "" },
@@ -21544,22 +21544,22 @@ var QUIZZES = {
   ],
   landing: [
     { q: "How should it open?", options: [
-      { id: "glow", label: "Glowing product", hint: "Linear", from: "https://linear.app", tags: ["dark", "glow", "product-led"], words: "" },
-      { id: "scroll", label: "Scroll story", hint: "Apple", from: "https://www.apple.com/airpods-pro/", tags: ["scroll", "cinematic", "big-type"], words: "" },
-      { id: "gradient", label: "Gradient & trust", hint: "Stripe", from: "https://stripe.com", tags: ["gradient", "trust", "polished"], words: "" },
-      { id: "craft", label: "Small & crafted", hint: "rauno.me", from: "https://rauno.me", tags: ["craft", "minimal", "subtle", "personal"], words: "" }
+      { id: "glow", label: "Glowing product", hint: "Linear", from: "https://linear.app", tags: ["dark", "glow", "product-led"], words: "", filters: ["3D"] },
+      { id: "scroll", label: "Scroll story", hint: "Apple", from: "https://www.apple.com/airpods-pro/", tags: ["scroll", "cinematic", "big-type"], words: "", filters: ["Scrolling"] },
+      { id: "gradient", label: "Gradient & trust", hint: "Stripe", from: "https://stripe.com", tags: ["gradient", "trust", "polished"], words: "", filters: ["Colorful"] },
+      { id: "craft", label: "Small & crafted", hint: "rauno.me", from: "https://rauno.me", tags: ["craft", "minimal", "subtle", "personal"], words: "", filters: ["Minimal"] }
     ] },
     { q: "What tone?", options: [
-      { id: "technical", label: "Technical, black & white", hint: "Vercel", from: "https://vercel.com", tags: ["black-white", "technical", "grid", "developer"], words: "" },
-      { id: "warm", label: "Warm & friendly", hint: "Headspace", from: "https://www.headspace.com", tags: ["warm", "friendly", "illustration"], words: "" },
-      { id: "loud", label: "Loud & bold", hint: "Liquid Death", from: "https://liquiddeath.com", tags: ["bold", "absurd", "brand-voice"], words: "" }
+      { id: "technical", label: "Technical, black & white", hint: "Vercel", from: "https://vercel.com", tags: ["black-white", "technical", "grid", "developer"], words: "", filters: ["Clean"] },
+      { id: "warm", label: "Warm & friendly", hint: "Headspace", from: "https://www.headspace.com", tags: ["warm", "friendly", "illustration"], words: "", filters: ["Illustration"] },
+      { id: "loud", label: "Loud & bold", hint: "Liquid Death", from: "https://liquiddeath.com", tags: ["bold", "absurd", "brand-voice"], words: "", filters: ["Experimental"] }
     ] }
   ],
   app: [
     { q: "What should it feel like?", options: [
-      { id: "gamified", label: "Playful & gamified", hint: "Duolingo", from: "https://www.duolingo.com", tags: ["playful", "gamified", "mascot"], words: "" },
+      { id: "gamified", label: "Playful & gamified", hint: "Duolingo", from: "https://www.duolingo.com", tags: ["playful", "gamified", "mascot"], words: "", filters: ["Colorful"] },
       { id: "photo", label: "Photo-first", hint: "Airbnb", from: "https://news.airbnb.com", tags: ["photo", "marketplace", "friendly"], words: "" },
-      { id: "calm", label: "Calm & illustrated", hint: "Headspace", from: "https://www.headspace.com", tags: ["calm", "illustration", "warm"], words: "" },
+      { id: "calm", label: "Calm & illustrated", hint: "Headspace", from: "https://www.headspace.com", tags: ["calm", "illustration", "warm"], words: "", filters: ["Illustration"] },
       { id: "number", label: "One big number", hint: "Robinhood", from: "https://robinhood.com", tags: ["minimal", "data", "bold", "chart"], words: "" }
     ] }
   ],
@@ -22204,6 +22204,15 @@ function parseImages(html, pageUrl, max = 6) {
   }
   return out;
 }
+var VIDEO_HOSTS = [/^https:\/\/assets\.awwwards\.com\/awards\/element\/[\w/.-]+\.mp4$/];
+function parseVideos(html, max = 3) {
+  const out = [];
+  for (const m of String(html).matchAll(/https:\/\/[^"'\s<>]+?\.mp4/g)) {
+    const u = m[0];
+    if (VIDEO_HOSTS.some((r) => r.test(u)) && !out.includes(u) && out.length < max) out.push(u);
+  }
+  return out;
+}
 var GAL_TTL = 30 * 24 * 36e5;
 async function pageImages(url, { cacheDir, fetchImpl = pinnedFetch, now = Date.now(), check: check2 = resolvesPublic } = {}) {
   if (!/^https:\/\//.test(url || "")) return [];
@@ -22218,10 +22227,12 @@ async function pageImages(url, { cacheDir, fetchImpl = pinnedFetch, now = Date.n
     cache = {};
   }
   if (cache[key] && now - cache[key].at < GAL_TTL) return cache[key].images;
-  let images = [];
+  let images = [], videos = [];
   try {
     const res = await safeFetch(url, { headers: { "user-agent": UA }, signal: AbortSignal.timeout(6e3) }, fetchImpl, check2);
-    const found = parseImages((await res.text()).slice(0, 15e5), url);
+    const html = (await res.text()).slice(0, 15e5);
+    videos = parseVideos(html);
+    const found = parseImages(html, url);
     const ok = await Promise.all(found.map((x) => check2(x).catch(() => false)));
     images = found.filter((_, i) => ok[i]);
   } catch {
@@ -22231,12 +22242,20 @@ async function pageImages(url, { cacheDir, fetchImpl = pinnedFetch, now = Date.n
     try {
       const fresh = existsSync(file) ? JSON.parse(readFileSync(file, "utf8")) : {};
       fresh[key] = { at: now, images };
+      fresh[`vid:${url}`] = { at: now, videos };
       mkdirSync(cacheDir, { recursive: true });
       writeFileSync(file, JSON.stringify(fresh));
     } catch {
     }
   }
   return images;
+}
+function pageVideos(url, { cacheDir } = {}) {
+  try {
+    return JSON.parse(readFileSync(join(cacheDir, "references-cache.json"), "utf8"))[`vid:${url}`]?.videos || [];
+  } catch {
+    return [];
+  }
 }
 var PRIVATE_V4 = [/^0\./, /^10\./, /^127\./, /^169\.254\./, /^172\.(1[6-9]|2\d|3[01])\./, /^192\.168\./, /^100\.(6[4-9]|[7-9]\d|1[01]\d|12[0-7])\./, /^198\.1[89]\./, /^2(2[4-9]|[3-5]\d)\./];
 function embeddedV4(x) {
@@ -22317,6 +22336,32 @@ async function safeFetch(url, init = {}, fetchImpl = pinnedFetch, check2 = resol
     at = new URL(to, at).href;
   }
   throw new Error("too many redirects");
+}
+var INDEX_URL = (medium) => `https://raw.githubusercontent.com/sameeeeeeep/references-mcp/main/shelf/index/${medium}.json`;
+var INDEX_TTL = 12 * 36e5;
+async function loadIndex(medium, { cacheDir, fetchImpl = fetch, now = Date.now() } = {}) {
+  const file = cacheDir && join(cacheDir, `references-index-${medium}.json`);
+  let hit = null;
+  try {
+    if (file && existsSync(file)) hit = JSON.parse(readFileSync(file, "utf8"));
+  } catch {
+  }
+  if (hit && now - hit.at < INDEX_TTL) return hit.items;
+  try {
+    const res = await fetchImpl(INDEX_URL(medium), { headers: { "user-agent": UA }, signal: AbortSignal.timeout(8e3) });
+    if (!res.ok) throw new Error(String(res.status));
+    const items = (JSON.parse(await res.text()).items || []).filter((x) => x && x.title && isPublicHttpsUrl(x.url || ""));
+    if (file) {
+      try {
+        mkdirSync(cacheDir, { recursive: true });
+        writeFileSync(file, JSON.stringify({ at: now, items }));
+      } catch {
+      }
+    }
+    return items;
+  } catch {
+    return hit?.items || [];
+  }
 }
 
 // src/references.mjs
@@ -22402,6 +22447,58 @@ function readTaste(dir2) {
     return [];
   }
 }
+var NOT_A_FACET = /* @__PURE__ */ new Set([
+  "GSAP",
+  "Figma",
+  "Next.js",
+  "Nuxt.js",
+  "Javascript",
+  "CSS",
+  "Webflow",
+  "React",
+  "HTML5",
+  "Wordpress",
+  "Three.js",
+  "Typescript",
+  "Framer",
+  "Vue.js",
+  "Shopify",
+  "Contentful",
+  "Svelte",
+  "Sanity",
+  "Prismic",
+  "Gatsby",
+  "Astro",
+  "Lottie",
+  "PHP",
+  "jQuery",
+  "Web & Interactive",
+  "Responsive Design",
+  "Responsive",
+  "SEO",
+  "Adobe XD",
+  "Sketch",
+  "Barba.js",
+  "Lenis",
+  "Unicorn Studio",
+  "Spline"
+]);
+var norm = (t) => String(t).toLowerCase().replace(/[^a-z0-9]+/g, "");
+function hasTag(r, f) {
+  const want = norm(f);
+  return (r.tags || []).some((t) => {
+    const n = norm(t);
+    return n === want || want.length >= 4 && n.startsWith(want) || n.length >= 4 && want.startsWith(n);
+  });
+}
+function facetsOf(items, applied) {
+  const counts = /* @__PURE__ */ new Map();
+  for (const r of items) for (const t of new Set(r.tags || [])) {
+    if (NOT_A_FACET.has(t) || applied.some((f) => hasTag({ tags: [t] }, f)) || !/[A-Z0-9]/.test(t[0] || "")) continue;
+    counts.set(t, (counts.get(t) || 0) + 1);
+  }
+  return [...counts].filter(([, n]) => n >= 2 && n < items.length).sort((a, b) => b[1] - a[1]).slice(0, 14).map(([tag, count]) => ({ tag, count }));
+}
 function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, youtube = searchYouTube, live: liveOn = true }) {
   const cacheDir = dir2;
   const seenLive = /* @__PURE__ */ new Map();
@@ -22437,7 +22534,8 @@ function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, yo
     if (!liveOn || !x.url || !isPublicHttpsUrl(x.url)) return x.image ? Object.assign(x, { gallery: [x.image] }) : x;
     const found = await pageImages(x.url, { cacheDir, fetchImpl });
     const gallery = [...new Set([x.image, ...found].filter(Boolean))].slice(0, 6);
-    Object.assign(x, { image: x.image || gallery[0], gallery });
+    const videos = pageVideos(x.url, { cacheDir });
+    Object.assign(x, { image: x.image || gallery[0], gallery, ...videos.length ? { videos: videos.slice(0, 1) } : {} });
     return x;
   }
   async function quizFor(medium) {
@@ -22449,14 +22547,38 @@ function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, yo
       }))
     })));
   }
-  async function suggest({ intent = "", medium, count = 4, exclude = [], style = [], styleWords = "" } = {}) {
+  async function indexFor(medium) {
+    const items = await loadIndex(medium, { cacheDir, fetchImpl });
+    return items.map((x) => ({
+      id: String(x.id),
+      medium,
+      title: String(x.title),
+      url: x.url,
+      image: x.image,
+      take: `${x.source} pick, tagged ${(x.tags || []).filter((t) => !NOT_A_FACET.has(t)).slice(0, 4).join(", ")}: open it and name what to carry over.`,
+      tags: (x.tags || []).map(String),
+      source: String(x.source || "Awwwards"),
+      untrusted: true
+    }));
+  }
+  async function suggest({ intent = "", medium, count, exclude = [], style = [], styleWords = "", filters = [] } = {}) {
     const want = medium || guessMedium(intent);
     const words = new Set(tokens(intent));
+    const index = want && liveOn ? await indexFor(want) : [];
+    count = count || (index.length ? 12 : 4);
     const taste = readTaste(dir2).filter((p) => !want || p.medium === want);
     const liked = /* @__PURE__ */ new Map();
     for (const p of taste) for (const t of p.tags || []) liked.set(t, (liked.get(t) || 0) + 1);
     const skip = new Set(exclude);
-    const scored = all().filter((r) => (!want || r.medium === want) && !skip.has(r.id)).map((r) => {
+    const pool = [...all(), ...index].filter((r) => (!want || r.medium === want) && !skip.has(r.id));
+    let applied = filters.map((f) => String(f).trim()).filter(Boolean);
+    let matching = pool.filter((r) => applied.every((f) => hasTag(r, f)));
+    const loosened = [];
+    while (applied.length && matching.length < Math.min(count, 4)) {
+      loosened.unshift(applied.pop());
+      matching = pool.filter((r) => applied.every((f) => hasTag(r, f)));
+    }
+    const scored = matching.map((r) => {
       const hay = /* @__PURE__ */ new Set([...tokens(r.title), ...tokens(r.take)]);
       let score = 0;
       for (const w of words) score += r.tags.includes(w) ? 2 : hay.has(w) ? 1 : 0;
@@ -22476,7 +22598,13 @@ function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, yo
       medium: want || null,
       intent,
       directions: await Promise.all(picked.map(({ r, score }) => withGallery({ ...r, score: Math.round(score * 10) / 10 }))),
-      fresh: await fresh(want, want ? 3 : 2, skip, intent, styleWords),
+      // Filtered asks stay on the filter: no unfiltered live picks mixed in.
+      fresh: applied.length ? [] : await fresh(want, want ? 3 : 2, skip, intent, styleWords),
+      filters: applied,
+      ...loosened.length ? { loosened } : {},
+      matching: matching.length,
+      // The next choices, from what is actually left: each tag with how many references carry it.
+      facets: facetsOf(matching, applied),
       curations: SOURCES.filter((s) => !want || s.media.includes(want)).map(({ name, kind, url, note }) => ({ name, kind, url, ...note ? { note } : {} })),
       // The style quiz for this medium (only on a first ask, not once a style is chosen): the cards open on it.
       ...want && QUIZZES[want] && !style.length ? { quiz: await quizFor(want) } : {},
@@ -22531,8 +22659,9 @@ function registerReferenceTools(server2, opts) {
     inputSchema: {
       intent: external_exports.string().describe(`What is being made, in the user's words (e.g. "launch deck for a privacy-first Mac app").`),
       medium: medium.optional().describe("ad = advertising creative. Omit to infer from intent; if it cannot be inferred, directions span media."),
-      count: external_exports.number().int().min(1).max(8).optional().describe("How many directions (default 4)."),
+      count: external_exports.number().int().min(1).max(24).optional().describe("How many directions (default 4)."),
       exclude: external_exports.array(external_exports.string()).optional().describe('Reference ids already shown; use for "show me more".'),
+      filters: external_exports.array(external_exports.string()).optional().describe('Hard filters: only references carrying every one of these tags (e.g. ["Scrolling","Storytelling"]). Take them from the `facets` a previous answer returned, or from what the person picked in a quiz.'),
       style: external_exports.array(external_exports.string()).optional().describe(`Style tags to lean toward (e.g. ["cinematic","no-voiceover"]); the cards' style quiz sets these.`),
       styleWords: external_exports.string().optional().describe('A few plain words for the style, added to the live YouTube search (e.g. "cinematic voiceover").')
     }

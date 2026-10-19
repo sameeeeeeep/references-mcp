@@ -21,6 +21,7 @@ const SVG_BUDGET = 112_000 // Svg source cap is 131,072 characters; leave room f
 
 const slides = new Map<string, string[]>() // card id → base64 JPEG slides (gallery or video frames)
 const isVideo = new Set<string>() // cards whose slides are video frames
+const motion = new Map<string, string[]>() // card id → frames of the site's own screen recording (Preview pane)
 const tiny = new Map<string, string>() // card id → base64 PNG (terminal)
 const settled = new Map<string, string>() // tool_use_id → the one line a past suggestion settles into
 
@@ -34,7 +35,8 @@ export const register: Register = on => {
       sections: [...r.sections, {
         id: 'references-first',
         scope: 'session',
-        text: 'Before you design or write anything with a look or a voice (UI, landing page, app screen, deck, video, motion, animation, social post, ad, written post), call references_suggest with what is being made. The person sees the results as picture cards above their prompt and picks one with their next message; a [Reference picked] note then arrives with it. If they name a card in words instead ("go with Shot on iPhone"), use that one.',
+        text: 'Before you design or write anything with a look or a voice (UI, landing page, app screen, deck, video, motion, animation, social post, ad, written post), call references_suggest with what is being made. The person sees the results as picture cards above their prompt, can narrow them there, and picks one with their next message; a [Reference picked] note then arrives with it. If they name a card in words instead, use that one. If you ask them about style yourself, offer the `facets` the last answer returned as the options (they are real tags with counts), and pass what they choose as `filters` on the next references_suggest call, so the cards really narrow.',
+
       }],
     }
   })
@@ -48,11 +50,12 @@ export const register: Register = on => {
       const cards = toCards(out)
       if (!cards.length) return ran
       const quiz = toQuiz(out.quiz)
-      slides.clear(); isVideo.clear(); tiny.clear()
+      slides.clear(); isVideo.clear(); tiny.clear(); motion.clear()
       await update($, board, () => ({
         toolUseId: String((e as any).tool_use_id || ''), intent: String(out.intent || ''), medium: out.medium ?? null,
         cards, thumbs: 0, selected: null, pos: {}, preview: null, page: 0,
         quiz: quiz.length ? { step: 0, picks: [] } : null, quizSteps: quiz, loading: false, styled: [],
+        ...narrowing(out),
       }))
       for (const st of quiz) for (const o of st.options) if (o.image) void pictures($, { id: quizKey(o), source: 'quiz', image: o.image } as Card)
       void media($, cards)
@@ -111,7 +114,7 @@ const PER_ROW = 4
 
 // The style quiz comes with the suggestion (the server's QUIZZES, one per medium): a couple of taps before the
 // cards, each option shown by a real example. Answers become `style` on a second references_suggest call.
-type QuizOption = { id: string; label: string; hint: string; image?: string; tags: string[]; words: string }
+type QuizOption = { id: string; label: string; hint: string; image?: string; tags: string[]; words: string; filters?: string[] }
 type QuizStep = { q: string; options: QuizOption[] }
 const quizFor = (b: Board): QuizStep[] | null => (b.quizSteps?.length ? b.quizSteps as QuizStep[] : null)
 const quizKey = (o: QuizOption) => `quiz:${o.id}`
@@ -125,6 +128,7 @@ function toQuiz(raw: any): QuizStep[] {
       id: String(o?.id || '').replace(/[^\w-]/g, '').slice(0, 30), label: String(o?.label || '').slice(0, 40), hint: String(o?.hint || '').slice(0, 40),
       image: typeof o?.image === 'string' && isPublicHttps(o.image) ? o.image : undefined,
       tags: (Array.isArray(o?.tags) ? o.tags : []).map(String).slice(0, 8), words: String(o?.words || '').slice(0, 40),
+      filters: (Array.isArray(o?.filters) ? o.filters : []).map((f: unknown) => String(f).slice(0, 40)).slice(0, 4),
     })).filter((o: QuizOption) => o.id && o.label),
   })).filter((st: QuizStep) => st.q && st.options.length >= 2)
 }
@@ -161,14 +165,15 @@ function cardsView($: any, e: any, ui: any, b: Board, columns: number) {
           {pages > 1 ? <Button key="page-prev" label="‹" plain onPress={turn(-1)} /> : null}
           {pages > 1 ? <Text dimColor>{`${page + 1}/${pages}`}</Text> : null}
           {pages > 1 ? <Button key="page-next" label="›" plain onPress={turn(1)} /> : null}
-          <Button key="more" label="More" plain onPress={send(`Show me different reference directions for "${b.intent}" (exclude ${JSON.stringify(b.cards.map(c => safeId(c.id)))}).`)} />
+          <Button key="more" label="More" plain onPress={() => refetch($, b, { exclude: b.cards.map(c => safeId(c.id)) })} />
           <Button key="auto" label="You pick" plain onPress={send('You pick the reference that fits best, say which in one line, and go.')} />
           {quiz && !b.loading ? <Button key="restyle" label="Restyle" plain onPress={() => update($, board, (cur: Board | null) => (cur ? { ...cur, quiz: { step: 0, picks: [] } } : cur))} /> : null}
           {picked >= 0 ? <Button key="clear" label="Clear" plain onPress={() => update($, board, (cur: Board | null) => (cur ? { ...cur, selected: null } : cur))} /> : null}
           <Button key="dismiss" label="Dismiss" role="dismiss" plain onPress={() => update($, board, () => null)} />
         </Box>
       </Box>
-      {b.loading ? <Text dimColor>Finding references in that style…</Text> : null}
+      {b.loading ? <Text dimColor>Finding references…</Text> : null}
+      {chips($, ui, b)}
       <Box flexDirection="row" flexWrap="nowrap" gap={1}>
         {shown.map((c) => {
           const i = b.cards.indexOf(c)
@@ -189,6 +194,23 @@ function cardsView($: any, e: any, ui: any, b: Board, columns: number) {
           )
         })}
       </Box>
+    </Box>
+  )
+}
+
+// The narrowing row: filters in force (tap to drop), then the next choices with how many each leaves (tap to add).
+function chips($: any, ui: any, b: Board) {
+  const { Box, Text, Button } = ui
+  const on = b.filters || []
+  const next = (b.facets || []).slice(0, 8)
+  if (!on.length && !next.length) return null
+  const set = (filters: string[]) => () => refetch($, b, { filters })
+  return (
+    <Box flexDirection="row" flexWrap="wrap" gap={1}>
+      {b.matching ? <Text dimColor>{`${b.matching} match`}</Text> : null}
+      {on.map(f => <Button key={`f-${f}`} label={`✕ ${f}`} variant="primary" onPress={set(on.filter(x => x !== f))} />)}
+      {(b.loosened || []).length ? <Text dimColor>{`(too few with ${b.loosened!.join(', ')})`}</Text> : null}
+      {next.map(f => <Button key={`facet-${f.tag}`} label={`+ ${f.tag} ${f.count}`} plain onPress={set([...on, f.tag])} />)}
     </Box>
   )
 }
@@ -242,26 +264,54 @@ function quizView($: any, e: any, ui: any, b: Board, quiz: QuizStep[]) {
   )
 }
 
-// The quiz is done: ask the server again with the chosen style, and swap the cards in place (no new turn).
+// The quiz is done: ask again with the chosen style. Picks that name catalog tags (`filters`) are hard: only
+// references carrying them come back, so "Scroll story" really means scroll-story pages.
 async function restyle($: any, b: Board, quiz: QuizStep[]) {
   const chosen = b.quiz!.picks.map((id, i) => quiz[i]?.options.find(o => o.id === id)).filter(Boolean) as QuizOption[]
   if (!chosen.length) return
+  await refetch($, b, {
+    filters: [...new Set(chosen.flatMap(o => o.filters || []))],
+    style: [...new Set(chosen.flatMap(o => o.tags))],
+    words: chosen.map(o => o.words).filter(Boolean).join(' '),
+    styled: chosen.map(o => o.label),
+  })
+}
+
+// Ask the server again and swap the cards in place, with no new turn: after the quiz, a facet chip, or More.
+async function refetch($: any, b: Board, ask: { filters?: string[]; style?: string[]; words?: string; styled?: string[]; exclude?: string[] }) {
   await update($, board, (cur: Board | null) => (cur ? { ...cur, loading: true } : cur))
   try {
     const conn = await $.mcp.connect('references')
     if (!conn.isConnected) throw new Error(conn.reason)
-    const style = [...new Set(chosen.flatMap(o => o.tags))]
-    const words = chosen.map(o => o.words).filter(Boolean).join(' ')
-    const r = await $.mcp.call(conn.server, 'references_suggest', { intent: b.intent, ...(b.medium ? { medium: b.medium } : {}), style, styleWords: words })
+    const filters = ask.filters ?? b.filters ?? []
+    const r = await $.mcp.call(conn.server, 'references_suggest', {
+      intent: b.intent, ...(b.medium ? { medium: b.medium } : {}), filters, count: 12,
+      ...(ask.style?.length ? { style: ask.style } : {}), ...(ask.words ? { styleWords: ask.words } : {}),
+      ...(ask.exclude?.length ? { exclude: ask.exclude } : {}),
+    })
     const text = (r?.content || []).find((x: any) => x.type === 'text')?.text
-    const cards = text ? toCards(JSON.parse(text)) : []
+    const out = text ? JSON.parse(text) : null
+    const cards = out ? toCards(out) : []
     if (!cards.length) throw new Error('no cards')
-    slides.clear(); isVideo.clear(); tiny.clear()
-    await update($, board, (cur: Board | null) => (cur ? { ...cur, cards, loading: false, selected: null, pos: {}, page: 0, preview: null, styled: chosen.map(o => o.label) } : cur))
+    slides.clear(); isVideo.clear(); tiny.clear(); motion.clear()
+    await update($, board, (cur: Board | null) => (cur ? {
+      ...cur, cards, loading: false, selected: null, pos: {}, page: 0, preview: null,
+      styled: ask.styled ?? cur.styled, ...narrowing(out),
+    } : cur))
     void media($, cards)
   } catch {
     await update($, board, (cur: Board | null) => (cur ? { ...cur, loading: false } : cur))
-    $.ui.toast('Couldn’t restyle the references; showing the first set')
+    $.ui.toast('Couldn’t refresh the references; keeping this set')
+  }
+}
+
+// What the answer says about narrowing: the filters in force, what was loosened, how many match, the next choices.
+function narrowing(out: any) {
+  const list = (x: unknown) => (Array.isArray(x) ? x.map((t) => String(t).slice(0, 40)).slice(0, 8) : [])
+  return {
+    filters: list(out?.filters), loosened: list(out?.loosened), matching: Number(out?.matching) || 0,
+    facets: (Array.isArray(out?.facets) ? out.facets : []).slice(0, 14)
+      .map((f: any) => ({ tag: String(f?.tag || '').slice(0, 40), count: Number(f?.count) || 0 })).filter((f: any) => f.tag),
   }
 }
 
@@ -283,9 +333,15 @@ function stepSlide($: any, id: string, by: number) {
 
 function preview($: any, id: string) {
   return async () => {
-    await update($, board, (cur: Board | null) => (cur ? { ...cur, preview: id } : cur))
+    const now = await update($, board, (cur: Board | null) => (cur ? { ...cur, preview: id } : cur))
     await $.ui.open({ id: PANE, title: 'Reference' })
+    loadMotion($, now?.cards.find(c => c.id === id))
   }
+}
+
+// The site's own screen recording is fetched only when its reference is opened in the pane.
+function loadMotion($: any, c?: Card) {
+  if (c?.videos?.length && !motion.has(c.id)) { motion.set(c.id, []); void frames($, c) }
 }
 
 // Play / Open: the reference in the app's own browser pane (desktop), so a video plays without leaving the
@@ -316,7 +372,11 @@ function previewPane($: any, e: any, ui: any, b: Board | null) {
   const pos = b.pos[c.id]
   const isPicked = b.selected === c.id
   const link = safeUrl(c.url)
-  const go = (by: number) => () => update($, board, (cur: Board | null) => (cur ? { ...cur, preview: cur.cards[(at + by + cur.cards.length) % cur.cards.length].id } : cur))
+  const go = (by: number) => async () => {
+    const now = await update($, board, (cur: Board | null) => (cur ? { ...cur, preview: cur.cards[(at + by + cur.cards.length) % cur.cards.length].id } : cur))
+    loadMotion($, now?.cards.find(x => x.id === now?.preview))
+  }
+  const moving = motion.get(c.id) || []
   return (
     <Box flexDirection="column" gap={1}>
       {e.surface === 'desktop'
@@ -330,6 +390,9 @@ function previewPane($: any, e: any, ui: any, b: Board | null) {
         {link ? <Button key="p-play" label={VIDEO.test(link) ? '▶ Play here' : 'Open here'} plain onPress={openInApp($, c)} /> : null}
         {link ? <Link key="p-open" href={link} label="Browser ↗" /> : null}
       </Box>
+      {e.surface === 'desktop' && moving.length >= 3
+        ? <Box flexDirection="column"><Text dimColor>How it moves</Text><ui.Svg source={cardSvg(c, 720, at + 1, false, moving, undefined, true, 0, true)} alt={`${c.title}, in motion`} /></Box>
+        : c.videos?.length && e.surface === 'desktop' ? <Text dimColor>Loading how it moves…</Text> : null}
       <Text bold>{`${at + 1}. ${c.title}`}</Text>
       <Text dimColor>{`${c.source}${link ? `  ·  ${link}` : ''}`}</Text>
       <Text>{c.blurb}</Text>
@@ -361,22 +424,27 @@ function toCards(out: any): Card[] {
     id: String(r.id), title: String(r.title || ''), take: String(r.take || ''), source,
     url: r.url, image: r.image, untrusted: !!r.untrusted,
     gallery: Array.isArray(r.gallery) ? r.gallery.filter((x: unknown) => typeof x === 'string').slice(0, 6) : undefined,
+    videos: Array.isArray(r.videos) ? r.videos.filter((x: unknown) => typeof x === 'string' && SITE_VIDEO.test(x)).slice(0, 1) : undefined,
+    // Screenshots of pages read from the top (the hero), not the middle.
+    crop: ['landing', 'ui', 'app'].includes(String(r.medium || out.medium)) ? 'top' : undefined,
     // On a card a live pick shows the site's own words (display only; Claude never gets them as instructions).
     blurb: r.untrusted ? String(r.sourceText || '') : String(r.take || ''),
   })
-  const dirs = (out.directions || []).slice(0, 4).map((r: any) => card(r, r.source === 'mine' ? 'your library' : r.source === 'curated' ? 'canon' : String(r.source || '')))
+  const dirs = (out.directions || []).slice(0, 12).map((r: any) => card(r, r.source === 'mine' ? 'your library' : r.source === 'curated' ? 'canon' : String(r.source || '')))
   const fresh = (out.fresh || []).map((f: any) => {
     const it = (f.items || []).find((x: any) => x.image) || f.items?.[0]
     return it && card(it, f.source)
   }).filter(Boolean).sort((a: Card, b: Card) => +!!b.image - +!!a.image)
   const mixed: Card[] = []
-  for (let i = 0; mixed.length < 6 && (i < dirs.length || i < fresh.length); i++) {
+  for (let i = 0; mixed.length < 12 && (i < dirs.length || i < fresh.length); i++) {
     if (dirs[i]) mixed.push(dirs[i])
-    if (fresh[i] && mixed.length < 6) mixed.push(fresh[i])
+    if (fresh[i] && mixed.length < 12) mixed.push(fresh[i])
   }
   return mixed
 }
 
+// Screen recordings of the work (Awwwards keeps one per site): downloaded pinned, then sampled into a loop.
+const SITE_VIDEO = /^https:\/\/assets\.awwwards\.com\/awards\/element\/[\w/.-]+\.mp4$/
 const VIDEO = /youtube\.com\/watch\?v=[\w-]{11}|youtu\.be\/[\w-]{11}|vimeo\.com\/(?:channels\/[\w-]+\/)?\d+/
 
 // Pictures for every card first (fast), then frame loops for videos one at a time (slower; device stays light).
@@ -402,7 +470,7 @@ const PINNED_GET = String.raw`get() {
       ""|0.*|10.*|127.*|169.254.*|192.168.*|172.1[6-9].*|172.2[0-9].*|172.3[01].*|198.1[89].*) return 1 ;;
       100.6[4-9].*|100.[7-9][0-9].*|100.1[01][0-9].*|100.12[0-7].*|22[4-9].*|2[3-5][0-9].*) return 1 ;;
     esac
-    loc=$(curl -s --proto =https --resolve "$hp:443:$ip" --max-redirs 0 --max-filesize 15000000 -m 8 -A "Mozilla/5.0" -o "$2" -w '%{redirect_url}' "$u") || return 1
+    loc=$(curl -s --proto =https --resolve "$hp:443:$ip" --max-redirs 0 --max-filesize "${'$'}{3:-15000000}" -m 20 -A "Mozilla/5.0" -o "$2" -w '%{redirect_url}' "$u") || return 1
     [ -z "$loc" ] && return 0
     u="$loc"
   done
@@ -454,15 +522,23 @@ async function picturesOf($: any, c: Card, list: string[]) {
 async function frames($: any, c: Card) {
   const script = [
     PATHS, 't=$(mktemp -d); trap \'rm -rf "$t"\' EXIT',
-    'u="$1"; case "$u" in *vimeo.com/*) u="https://player.vimeo.com/video/${u##*/}";; esac',
-    'out=$(yt-dlp --no-warnings --referer https://vimeo.com -S "res:360,+size" --print "%(duration)s" --print urls "$u" 2>/dev/null) || exit 1',
-    'd=$(printf "%s\\n" "$out" | sed -n 1p | cut -d. -f1); s=$(printf "%s\\n" "$out" | sed -n 2p)',
-    '[ -n "$s" ] && [ "${d:-0}" -gt 6 ] || exit 1',
-    'for i in 0 1 2 3 4 5 6 7; do at=$(( d * (10 + i * 10) / 100 )); ffmpeg -loglevel error -ss "$at" -i "$s" -frames:v 1 -vf "scale=400:-2" -q:v 10 -y "$t/f$i.jpg" </dev/null; done',
+    PINNED_GET,
+    'u="$1"',
+    // A site recording: fetch the file itself (pinned, up to 40 MB), then sample it locally.
+    'if printf "%s" "$u" | grep -Eq "^https://assets\\.awwwards\\.com/awards/element/[A-Za-z0-9/._-]+\\.mp4$"; then',
+    '  get "$u" "$t/v.mp4" 40000000 || exit 1; s="$t/v.mp4"',
+    '  d=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$s" | cut -d. -f1)',
+    'else',
+    '  case "$u" in *vimeo.com/*) u="https://player.vimeo.com/video/${u##*/}";; esac',
+    '  out=$(yt-dlp --no-warnings --referer https://vimeo.com -S "res:360,+size" --print "%(duration)s" --print urls "$u" 2>/dev/null) || exit 1',
+    '  d=$(printf "%s\\n" "$out" | sed -n 1p | cut -d. -f1); s=$(printf "%s\\n" "$out" | sed -n 2p)',
+    'fi',
+    '[ -n "$s" ] && [ "${d:-0}" -gt 2 ] || exit 1',
+    'for i in 0 1 2 3 4 5 6 7; do at=$(( d * (10 + i * 10) / 100 )); ffmpeg -loglevel error -ss "$at" -i "$s" -frames:v 1 -vf "scale=520:-2" -q:v 8 -y "$t/f$i.jpg" </dev/null; done',
     'for i in 0 1 2 3 4 5 6 7; do [ -f "$t/f$i.jpg" ] && base64 -i "$t/f$i.jpg" | tr -d "\\n"; echo; done',
   ].join('\n')
   try {
-    const r = await $.process.run([...SH, script, 'frames', c.url], { timeoutMs: 60_000 })
+    const r = await $.process.run([...SH, script, 'frames', c.videos?.[0] || c.url], { timeoutMs: 90_000 })
     const got: string[] = []
     let total = 0
     for (const line of String(r.stdout || '').split('\n').map((s: string) => s.trim()).filter(Boolean)) {
@@ -470,7 +546,9 @@ async function frames($: any, c: Card) {
       got.push(line); total += line.length
     }
     if (got.length < 3) return
-    slides.set(c.id, got); isVideo.add(c.id)
+    // A site's recording is a close-up of how it moves: it plays in the Preview pane; the card keeps the page.
+    if (c.videos?.length && !VIDEO.test(c.url || '')) motion.set(c.id, got)
+    else { slides.set(c.id, got); isVideo.add(c.id) }
     await bump($)
   } catch {}
 }
@@ -500,7 +578,7 @@ function cardSvg(c: Card, W: number, n: number, isPicked: boolean, pics?: string
   const IH = Math.round(W * 0.6), H = bare ? IH : IH + 46 + blurbLines * 14
   const font = 'font-family="system-ui,-apple-system,sans-serif"'
   const img = (d: string, attrs = '', inner = '') =>
-    `<image href="data:image/jpeg;base64,${d}" width="${W}" height="${IH}" preserveAspectRatio="xMidYMid slice" clip-path="url(#r)"${attrs}>${inner}</image>`
+    `<image href="data:image/jpeg;base64,${d}" width="${W}" height="${IH}" preserveAspectRatio="${c.crop === 'top' && !video ? 'xMidYMin' : 'xMidYMid'} slice" clip-path="url(#r)"${attrs}>${inner}</image>`
   let pic = `<rect width="${W}" height="${IH}" fill="#26282c" clip-path="url(#r)"/><text x="12" y="${IH / 2 + 5}" font-size="13" fill="#8a8f98" ${font}>${esc(c.source)}</text>`
   let dots = ''
   const k = pics?.length || 0

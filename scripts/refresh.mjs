@@ -9,7 +9,7 @@
 // without yt-dlp or a dozen fetches of their own. Every stream fails soft.
 import { writeFileSync, mkdirSync } from 'node:fs';
 import { MEDIA } from '../src/catalog.mjs';
-import { SOURCES, fetchLive, ytList } from '../src/sources.mjs';
+import { SOURCES, fetchLive, ytList, parseAwwwardsList } from '../src/sources.mjs';
 
 const CHANNELS = {
   ad: ['apple', 'Nike', 'Spotify', 'Airbnb', 'duolingo'],
@@ -54,3 +54,42 @@ for (const medium of MEDIA) {
 
 mkdirSync('shelf', { recursive: true });
 writeFileSync('shelf/daily.json', JSON.stringify(shelf, null, 1) + '\n');
+
+// ── The tagged catalog: Awwwards' category pages (each card carries its style tags) → shelf/index/<medium>.json.
+// Hundreds of judged sites per medium, so a narrowed ask ("scroll storytelling, dark") still has real range.
+const AWWWARDS_CATEGORIES = ['scrolling', 'storytelling', 'parallax', 'minimal', 'typography', '3d', 'animation', 'transitions',
+  'fullscreen', 'horizontal-layout', 'single-page', 'illustration', 'colorful', 'clean', 'retro', 'big-background-images',
+  'e-commerce', 'portfolio', 'startups', 'technology', 'fashion', 'luxury', 'food-drink', 'mobile-apps', 'app-style',
+  'data-visualization', 'graphic-design', 'photography', 'promotional', 'experimental', 'header-design', 'microinteractions',
+  'infinite-scroll', 'interaction-design', 'navigation', 'gallery', 'real-estate', 'music-sound', 'architecture', 'sports'];
+const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36';
+const UI_TAGS = new Set(['UI design', 'Interaction Design', 'Microinteractions', 'Navigation', 'Navigation Menu', 'Header Design', 'Footer Design',
+  'Forms and Input', 'Forms & Input', 'Data Visualization', 'App Style', 'Gestures / Interaction', 'Menu Horizontal', 'Menu Vertical', 'Icons']);
+const APP_TAGS = new Set(['Mobile Apps', 'App Style']);
+
+const sites = new Map();
+for (const cat of AWWWARDS_CATEGORIES) {
+  for (const page of [1, 2]) {
+    try {
+      const res = await fetch(`https://www.awwwards.com/websites/${cat}/${page > 1 ? `?page=${page}` : ''}`, { headers: { 'user-agent': UA }, signal: AbortSignal.timeout(15000) });
+      if (!res.ok) break;
+      for (const it of parseAwwwardsList(await res.text())) {
+        const prev = sites.get(it.url);
+        sites.set(it.url, prev ? { ...prev, tags: [...new Set([...prev.tags, ...it.tags])] } : it);
+      }
+    } catch { break; }
+    await new Promise((r) => setTimeout(r, 400)); // be a polite crawler
+  }
+}
+const toItem = (x) => ({ id: `aw:${x.url.split('/').pop()}`, title: x.title, url: x.url, image: x.image, tags: x.tags, source: 'Awwwards' });
+const all = [...sites.values()];
+const index = {
+  landing: all,
+  ui: all.filter((x) => x.tags.some((t) => UI_TAGS.has(t))),
+  app: all.filter((x) => x.tags.some((t) => APP_TAGS.has(t))),
+};
+mkdirSync('shelf/index', { recursive: true });
+for (const [medium, items] of Object.entries(index)) {
+  writeFileSync(`shelf/index/${medium}.json`, JSON.stringify({ updated: shelf.updated, items: items.map(toItem) }) + '\n');
+  console.log(`index/${medium}: ${items.length}`);
+}

@@ -93,6 +93,24 @@ export function parseGitHubTrending(html) {
   }).filter(Boolean);
 }
 
+// An Awwwards listing page (a category, a tag, Sites of the Day): each card carries its own JSON with the
+// site's title, slug, thumbnail and style tags (Scrolling, Storytelling, WebGL, Minimal...).
+export function parseAwwwardsList(html) {
+  const out = [];
+  for (const m of String(html).matchAll(/data-collectable-model-value="([^"]+)"/g)) {
+    let d;
+    try { d = JSON.parse(m[1].replace(/&quot;/g, '"').replace(/&amp;/g, '&').replace(/&#039;/g, "'")); } catch { continue; }
+    const thumb = d.images?.thumbnail || d.collectableImage;
+    if (!d.slug || !thumb || !/^[a-z0-9-]+$/.test(d.slug)) continue;
+    out.push({
+      title: decode(d.title || d.collectableTitle || d.slug), url: `https://www.awwwards.com/sites/${d.slug}`,
+      image: `https://assets.awwwards.com/awards/media/cache/thumb_880_660/${String(thumb).replace(/^\/+/, '')}`,
+      tags: (d.tags || []).map((t) => decode(String(t))).filter(Boolean).slice(0, 20),
+    });
+  }
+  return out;
+}
+
 export function parseAdsOfTheWorld(html) {
   const out = new Map();
   for (const m of String(html).matchAll(/<a href="(\/campaigns\/[a-z0-9-]+)"><picture>[\s\S]*?<img alt="([^"]+)"[^>]*src="([^"]+)"[\s\S]*?<\/a>[\s\S]{0,400}?<a href="\1">([^<]+)<\/a>/g)) {
@@ -280,6 +298,17 @@ export function parseImages(html, pageUrl, max = 6) {
   return out;
 }
 
+// Screen recordings of the work itself, from hosts we know serve them: these become the card's moving preview.
+const VIDEO_HOSTS = [/^https:\/\/assets\.awwwards\.com\/awards\/element\/[\w/.-]+\.mp4$/];
+export function parseVideos(html, max = 3) {
+  const out = [];
+  for (const m of String(html).matchAll(/https:\/\/[^"'\s<>]+?\.mp4/g)) {
+    const u = m[0];
+    if (VIDEO_HOSTS.some((r) => r.test(u)) && !out.includes(u) && out.length < max) out.push(u);
+  }
+  return out;
+}
+
 const GAL_TTL = 30 * 24 * 3600_000;
 
 /** Up to 6 pictures of a reference (its page's og image first, then its gallery); cached 30 days. */
@@ -292,18 +321,25 @@ export async function pageImages(url, { cacheDir, fetchImpl = pinnedFetch, now =
   let cache = {};
   try { if (file && existsSync(file)) cache = JSON.parse(readFileSync(file, 'utf8')); } catch { cache = {}; }
   if (cache[key] && now - cache[key].at < GAL_TTL) return cache[key].images;
-  let images = [];
+  let images = [], videos = [];
   try {
     const res = await safeFetch(url, { headers: { 'user-agent': UA }, signal: AbortSignal.timeout(6000) }, fetchImpl, check);
-    const found = parseImages((await res.text()).slice(0, 1_500_000), url);
+    const html = (await res.text()).slice(0, 1_500_000);
+    videos = parseVideos(html);
+    const found = parseImages(html, url);
     // The pictures get downloaded too, so each must also resolve to a public address.
     const ok = await Promise.all(found.map((x) => check(x).catch(() => false)));
     images = found.filter((_, i) => ok[i]);
   } catch { return cache[key]?.images || []; }
   if (file) {
-    try { const fresh = existsSync(file) ? JSON.parse(readFileSync(file, 'utf8')) : {}; fresh[key] = { at: now, images }; mkdirSync(cacheDir, { recursive: true }); writeFileSync(file, JSON.stringify(fresh)); } catch {}
+    try { const fresh = existsSync(file) ? JSON.parse(readFileSync(file, 'utf8')) : {}; fresh[key] = { at: now, images }; fresh[`vid:${url}`] = { at: now, videos }; mkdirSync(cacheDir, { recursive: true }); writeFileSync(file, JSON.stringify(fresh)); } catch {}
   }
   return images;
+}
+
+/** The screen recordings pageImages found on the same page (call it first); [] when none. */
+export function pageVideos(url, { cacheDir } = {}) {
+  try { return JSON.parse(readFileSync(join(cacheDir, 'references-cache.json'), 'utf8'))[`vid:${url}`]?.videos || []; } catch { return []; }
 }
 
 // ── Fetching addresses that came from third-party feeds: public https hosts only ────────────────────────
@@ -390,4 +426,22 @@ export async function safeFetch(url, init = {}, fetchImpl = pinnedFetch, check =
     at = new URL(to, at).href;
   }
   throw new Error('too many redirects');
+}
+
+// ── The big tagged catalog: shelf/index/<medium>.json, crawled daily from the galleries' category pages ─────
+export const INDEX_URL = (medium) => `https://raw.githubusercontent.com/sameeeeeeep/references-mcp/main/shelf/index/${medium}.json`;
+const INDEX_TTL = 12 * 3600_000;
+
+export async function loadIndex(medium, { cacheDir, fetchImpl = fetch, now = Date.now() } = {}) {
+  const file = cacheDir && join(cacheDir, `references-index-${medium}.json`);
+  let hit = null;
+  try { if (file && existsSync(file)) hit = JSON.parse(readFileSync(file, 'utf8')); } catch {}
+  if (hit && now - hit.at < INDEX_TTL) return hit.items;
+  try {
+    const res = await fetchImpl(INDEX_URL(medium), { headers: { 'user-agent': UA }, signal: AbortSignal.timeout(8000) });
+    if (!res.ok) throw new Error(String(res.status));
+    const items = (JSON.parse(await res.text()).items || []).filter((x) => x && x.title && isPublicHttpsUrl(x.url || ''));
+    if (file) { try { mkdirSync(cacheDir, { recursive: true }); writeFileSync(file, JSON.stringify({ at: now, items })); } catch {} }
+    return items;
+  } catch { return hit?.items || []; }
 }

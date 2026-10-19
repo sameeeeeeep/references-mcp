@@ -201,3 +201,48 @@ test('no quiz from the server: the cards show straight away', async ($, on) => {
   await until(ui, 'pick-video-linear-release')
   expect(await ui.find({ key: 'quiz-skip' })).toBeUndefined()
 })
+
+test('narrowing: a quiz pick is a hard filter, chips add and drop filters, More fetches a fresh set; no turns', async ($, on) => {
+  const sent: string[] = []
+  const asked: any[] = []
+  on('mcp.connect' as any, () => ({ value: { isConnected: true, server: 'plugin:references:references' } }) as any)
+  on('mcp.call' as any, (_$: any, e: any) => {
+    asked.push(e.args)
+    const f: string[] = e.args.filters || []
+    const out = {
+      intent: 'landing page', medium: 'landing', quiz: undefined, fresh: [], filters: f, matching: f.length > 1 ? 70 : 190,
+      facets: f.length > 1 ? [{ tag: 'Minimal', count: 25 }] : [{ tag: 'Storytelling', count: 70 }, { tag: 'WebGL', count: 44 }],
+      directions: [{ id: `aw:site-${f.length}-${asked.length}`, title: `Scroll site ${f.join('+')}`, take: 'Awwwards pick.', source: 'Awwwards', untrusted: true, medium: 'landing', url: 'https://www.awwwards.com/sites/x' }],
+    }
+    return { value: { content: [{ type: 'text', text: JSON.stringify(out) }], isError: false } } as any
+  })
+  const landing = {
+    ...SUGGEST, intent: 'landing page', medium: 'landing', fresh: [],
+    quiz: [{ q: 'How should it open?', options: [
+      { id: 'scroll', label: 'Scroll story', hint: 'Apple', tags: ['scroll'], words: '', filters: ['Scrolling'] },
+      { id: 'craft', label: 'Small & crafted', hint: 'rauno', tags: ['craft'], words: '', filters: ['Minimal'] },
+    ] }],
+  }
+  on('tool.call', { tool: TOOL } as any, () => ({ result: [], text: JSON.stringify(landing) }) as any)
+  world(on, sent)
+  await $.tool.call({ tool: TOOL, intent: 'landing page' } as any)
+  const ui = await $.ui.mount({ plugin: 'references', surface: 'desktop', ...BAND } as any)
+  await until(ui, 'quiz-scroll')
+  await ui.press({ key: 'quiz-scroll' })
+  await until(ui, 'facet-Storytelling')
+  expect(asked[0].filters).toEqual(['Scrolling']) // the pick filters, not just leans
+  expect(await ui.find({ type: 'Text', text: '190 match' })).toBeDefined()
+  expect(await ui.find({ key: 'f-Scrolling' })).toBeDefined()
+  await ui.press({ key: 'facet-Storytelling' })
+  await until(ui, 'facet-Minimal')
+  expect(asked[1].filters).toEqual(['Scrolling', 'Storytelling'])
+  expect(await ui.find({ type: 'Text', text: '70 match' })).toBeDefined()
+  await ui.press({ key: 'f-Storytelling' }) // drop it again
+  await until(ui, 'facet-WebGL')
+  expect(asked[2].filters).toEqual(['Scrolling'])
+  await ui.press({ key: 'more' })
+  await until(ui, 'pick-aw:site-1-4')
+  expect(asked[3].exclude).toEqual(['aw:site-1-3']) // More: the next set, same filters, no Claude turn
+  expect(asked[3].filters).toEqual(['Scrolling'])
+  expect(sent.length).toBe(0)
+})

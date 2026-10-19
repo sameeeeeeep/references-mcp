@@ -10,7 +10,7 @@ import { join, extname, basename } from 'node:path';
 import { z } from 'zod';
 import { QUIZZES } from './quiz.mjs';
 import { CATALOG, MEDIA } from './catalog.mjs';
-import { SOURCES, fetchLive, pageImages, searchYouTube, shelfFor, isPublicHttpsUrl, YT_MEDIA } from './sources.mjs';
+import { SOURCES, fetchLive, pageImages, pageVideos, loadIndex, searchYouTube, shelfFor, isPublicHttpsUrl, YT_MEDIA } from './sources.mjs';
 
 const IMG = new Set(['.png', '.jpg', '.jpeg', '.webp', '.gif']);
 const STOP = new Set('a an the and or for of to in on with my our me we i it this that make build design create new some want need like'.split(' '));
@@ -93,6 +93,27 @@ function readTaste(dir) {
   } catch { return []; }
 }
 
+// Tags that say how a site was built, not how it looks: kept on the reference, never offered as a choice.
+const NOT_A_FACET = new Set(['GSAP', 'Figma', 'Next.js', 'Nuxt.js', 'Javascript', 'CSS', 'Webflow', 'React', 'HTML5', 'Wordpress', 'Three.js',
+  'Typescript', 'Framer', 'Vue.js', 'Shopify', 'Contentful', 'Svelte', 'Sanity', 'Prismic', 'Gatsby', 'Astro', 'Lottie', 'PHP', 'jQuery',
+  'Web & Interactive', 'Responsive Design', 'Responsive', 'SEO', 'Adobe XD', 'Sketch', 'Barba.js', 'Lenis', 'Unicorn Studio', 'Spline']);
+
+const norm = (t) => String(t).toLowerCase().replace(/[^a-z0-9]+/g, '');
+/** A tag filter matches loosely: "scroll" finds "Scrolling", "3d" finds "3D", "e-commerce" finds "E-Commerce". */
+function hasTag(r, f) {
+  const want = norm(f);
+  return (r.tags || []).some((t) => { const n = norm(t); return n === want || (want.length >= 4 && n.startsWith(want)) || (n.length >= 4 && want.startsWith(n)); });
+}
+
+function facetsOf(items, applied) {
+  const counts = new Map();
+  for (const r of items) for (const t of new Set(r.tags || [])) {
+    if (NOT_A_FACET.has(t) || applied.some((f) => hasTag({ tags: [t] }, f)) || !/[A-Z0-9]/.test(t[0] || '')) continue; // display tags only
+    counts.set(t, (counts.get(t) || 0) + 1);
+  }
+  return [...counts].filter(([, n]) => n >= 2 && n < items.length).sort((a, b) => b[1] - a[1]).slice(0, 14).map(([tag, count]) => ({ tag, count }));
+}
+
 export function createReferences({ dir, libraries = [], fetchImpl, youtube = searchYouTube, live: liveOn = true }) {
   const cacheDir = dir;
   const seenLive = new Map(); // live picks handed out this session, so get/pick can resolve their ids
@@ -130,7 +151,8 @@ export function createReferences({ dir, libraries = [], fetchImpl, youtube = sea
     if (!liveOn || !x.url || !isPublicHttpsUrl(x.url)) return x.image ? Object.assign(x, { gallery: [x.image] }) : x;
     const found = await pageImages(x.url, { cacheDir, fetchImpl });
     const gallery = [...new Set([x.image, ...found].filter(Boolean))].slice(0, 6);
-    Object.assign(x, { image: x.image || gallery[0], gallery });
+    const videos = pageVideos(x.url, { cacheDir }); // the site's own screen recording, when the page has one
+    Object.assign(x, { image: x.image || gallery[0], gallery, ...(videos.length ? { videos: videos.slice(0, 1) } : {}) });
     return x;
   }
 
@@ -145,15 +167,36 @@ export function createReferences({ dir, libraries = [], fetchImpl, youtube = sea
     })));
   }
 
-  async function suggest({ intent = '', medium, count = 4, exclude = [], style = [], styleWords = '' } = {}) {
+  async function indexFor(medium) {
+    const items = await loadIndex(medium, { cacheDir, fetchImpl });
+    return items.map((x) => ({
+      id: String(x.id), medium, title: String(x.title), url: x.url, image: x.image,
+      take: `${x.source} pick, tagged ${(x.tags || []).filter((t) => !NOT_A_FACET.has(t)).slice(0, 4).join(', ')}: open it and name what to carry over.`,
+      tags: (x.tags || []).map(String), source: String(x.source || 'Awwwards'), untrusted: true,
+    }));
+  }
+
+  async function suggest({ intent = '', medium, count, exclude = [], style = [], styleWords = '', filters = [] } = {}) {
     const want = medium || guessMedium(intent);
     const words = new Set(tokens(intent));
+    // The tagged catalog for this medium (hundreds of judged sites for landing/ui/app), when there is one.
+    const index = want && liveOn ? (await indexFor(want)) : [];
+    count = count || (index.length ? 12 : 4);
     const taste = readTaste(dir).filter((p) => !want || p.medium === want);
     const liked = new Map();
     for (const p of taste) for (const t of p.tags || []) liked.set(t, (liked.get(t) || 0) + 1);
     const skip = new Set(exclude);
-    const scored = all()
-      .filter((r) => (!want || r.medium === want) && !skip.has(r.id))
+    // Filters are hard: a reference must carry every one (matched loosely: "scroll" finds "Scrolling"). If the
+    // combination leaves too little, the last filter loosens rather than coming back empty, and the answer says so.
+    const pool = [...all(), ...index].filter((r) => (!want || r.medium === want) && !skip.has(r.id));
+    let applied = filters.map((f) => String(f).trim()).filter(Boolean);
+    let matching = pool.filter((r) => applied.every((f) => hasTag(r, f)));
+    const loosened = [];
+    while (applied.length && matching.length < Math.min(count, 4)) {
+      loosened.unshift(applied.pop());
+      matching = pool.filter((r) => applied.every((f) => hasTag(r, f)));
+    }
+    const scored = matching
       .map((r) => {
         const hay = new Set([...tokens(r.title), ...tokens(r.take)]);
         let score = 0;
@@ -173,7 +216,13 @@ export function createReferences({ dir, libraries = [], fetchImpl, youtube = sea
       medium: want || null,
       intent,
       directions: await Promise.all(picked.map(({ r, score }) => withGallery({ ...r, score: Math.round(score * 10) / 10 }))),
-      fresh: await fresh(want, want ? 3 : 2, skip, intent, styleWords),
+      // Filtered asks stay on the filter: no unfiltered live picks mixed in.
+      fresh: applied.length ? [] : await fresh(want, want ? 3 : 2, skip, intent, styleWords),
+      filters: applied,
+      ...(loosened.length ? { loosened } : {}),
+      matching: matching.length,
+      // The next choices, from what is actually left: each tag with how many references carry it.
+      facets: facetsOf(matching, applied),
       curations: SOURCES.filter((s) => !want || s.media.includes(want)).map(({ name, kind, url, note }) => ({ name, kind, url, ...(note ? { note } : {}) })),
       // The style quiz for this medium (only on a first ask, not once a style is chosen): the cards open on it.
       ...(want && QUIZZES[want] && !style.length ? { quiz: await quizFor(want) } : {}),
@@ -230,8 +279,9 @@ export function registerReferenceTools(server, opts) {
     inputSchema: {
       intent: z.string().describe('What is being made, in the user\'s words (e.g. "launch deck for a privacy-first Mac app").'),
       medium: medium.optional().describe('ad = advertising creative. Omit to infer from intent; if it cannot be inferred, directions span media.'),
-      count: z.number().int().min(1).max(8).optional().describe('How many directions (default 4).'),
+      count: z.number().int().min(1).max(24).optional().describe('How many directions (default 4).'),
       exclude: z.array(z.string()).optional().describe('Reference ids already shown; use for "show me more".'),
+      filters: z.array(z.string()).optional().describe('Hard filters: only references carrying every one of these tags (e.g. ["Scrolling","Storytelling"]). Take them from the `facets` a previous answer returned, or from what the person picked in a quiz.'),
       style: z.array(z.string()).optional().describe('Style tags to lean toward (e.g. ["cinematic","no-voiceover"]); the cards\' style quiz sets these.'),
       styleWords: z.string().optional().describe('A few plain words for the style, added to the live YouTube search (e.g. "cinematic voiceover").'),
     },

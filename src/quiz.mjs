@@ -2,7 +2,8 @@
 // the look by pointing instead of describing it. Answers go back into references_suggest as `style` (tags that
 // lift matching canon) and `styleWords` (plain words added to the live YouTube search).
 //
-// Shape: { [medium]: [{ q, options: [{ id, label, hint, from, tags[], words }] }] }. `from` is the example's
+// Shape: { [medium]: [{ q, options: [{ id, label, hint, from, tags[], words, filters? }] }] }. `filters` are catalog tags
+// (Awwwards' vocabulary) that the pick makes hard: only references carrying them come back. `from` is the example's
 // page or video; its picture is looked up live (og:image / YouTube thumbnail) and cached.
 const yt = (id) => `https://www.youtube.com/watch?v=${id}`;
 
@@ -33,10 +34,10 @@ export const QUIZZES = {
   ],
   ui: [
     { q: 'How dense?', options: [
-      { id: 'dense', label: 'Dense, keyboard-first', hint: 'Linear', from: 'https://linear.app', tags: ['dense', 'keyboard', 'productivity'], words: '' },
-      { id: 'calm', label: 'Calm & airy', hint: 'Things', from: 'https://culturedcode.com/things/', tags: ['calm', 'whitespace', 'craft'], words: '' },
-      { id: 'launcher', label: 'One input does it all', hint: 'Raycast', from: 'https://www.raycast.com', tags: ['launcher', 'command', 'native'], words: '' },
-      { id: 'playful', label: 'Playful hardware', hint: 'Teenage Engineering', from: 'https://teenage.engineering/products/op-1', tags: ['playful', 'hardware', 'retro', 'mono'], words: '' },
+      { id: 'dense', label: 'Dense, keyboard-first', hint: 'Linear', from: 'https://linear.app', tags: ['dense', 'keyboard', 'productivity'], words: '', filters: ['Interaction Design'] },
+      { id: 'calm', label: 'Calm & airy', hint: 'Things', from: 'https://culturedcode.com/things/', tags: ['calm', 'whitespace', 'craft'], words: '', filters: ['Clean'] },
+      { id: 'launcher', label: 'One input does it all', hint: 'Raycast', from: 'https://www.raycast.com', tags: ['launcher', 'command', 'native'], words: '', filters: ['Microinteractions'] },
+      { id: 'playful', label: 'Playful hardware', hint: 'Teenage Engineering', from: 'https://teenage.engineering/products/op-1', tags: ['playful', 'hardware', 'retro', 'mono'], words: '', filters: ['Colorful'] },
     ] },
     { q: 'Light or dark?', options: [
       { id: 'dark', label: 'Dark', hint: 'Linear', from: 'https://linear.app', tags: ['dark'], words: '' },
@@ -45,22 +46,22 @@ export const QUIZZES = {
   ],
   landing: [
     { q: 'How should it open?', options: [
-      { id: 'glow', label: 'Glowing product', hint: 'Linear', from: 'https://linear.app', tags: ['dark', 'glow', 'product-led'], words: '' },
-      { id: 'scroll', label: 'Scroll story', hint: 'Apple', from: 'https://www.apple.com/airpods-pro/', tags: ['scroll', 'cinematic', 'big-type'], words: '' },
-      { id: 'gradient', label: 'Gradient & trust', hint: 'Stripe', from: 'https://stripe.com', tags: ['gradient', 'trust', 'polished'], words: '' },
-      { id: 'craft', label: 'Small & crafted', hint: 'rauno.me', from: 'https://rauno.me', tags: ['craft', 'minimal', 'subtle', 'personal'], words: '' },
+      { id: 'glow', label: 'Glowing product', hint: 'Linear', from: 'https://linear.app', tags: ['dark', 'glow', 'product-led'], words: '', filters: ['3D'] },
+      { id: 'scroll', label: 'Scroll story', hint: 'Apple', from: 'https://www.apple.com/airpods-pro/', tags: ['scroll', 'cinematic', 'big-type'], words: '', filters: ['Scrolling'] },
+      { id: 'gradient', label: 'Gradient & trust', hint: 'Stripe', from: 'https://stripe.com', tags: ['gradient', 'trust', 'polished'], words: '', filters: ['Colorful'] },
+      { id: 'craft', label: 'Small & crafted', hint: 'rauno.me', from: 'https://rauno.me', tags: ['craft', 'minimal', 'subtle', 'personal'], words: '', filters: ['Minimal'] },
     ] },
     { q: 'What tone?', options: [
-      { id: 'technical', label: 'Technical, black & white', hint: 'Vercel', from: 'https://vercel.com', tags: ['black-white', 'technical', 'grid', 'developer'], words: '' },
-      { id: 'warm', label: 'Warm & friendly', hint: 'Headspace', from: 'https://www.headspace.com', tags: ['warm', 'friendly', 'illustration'], words: '' },
-      { id: 'loud', label: 'Loud & bold', hint: 'Liquid Death', from: 'https://liquiddeath.com', tags: ['bold', 'absurd', 'brand-voice'], words: '' },
+      { id: 'technical', label: 'Technical, black & white', hint: 'Vercel', from: 'https://vercel.com', tags: ['black-white', 'technical', 'grid', 'developer'], words: '', filters: ['Clean'] },
+      { id: 'warm', label: 'Warm & friendly', hint: 'Headspace', from: 'https://www.headspace.com', tags: ['warm', 'friendly', 'illustration'], words: '', filters: ['Illustration'] },
+      { id: 'loud', label: 'Loud & bold', hint: 'Liquid Death', from: 'https://liquiddeath.com', tags: ['bold', 'absurd', 'brand-voice'], words: '', filters: ['Experimental'] },
     ] },
   ],
   app: [
     { q: 'What should it feel like?', options: [
-      { id: 'gamified', label: 'Playful & gamified', hint: 'Duolingo', from: 'https://www.duolingo.com', tags: ['playful', 'gamified', 'mascot'], words: '' },
+      { id: 'gamified', label: 'Playful & gamified', hint: 'Duolingo', from: 'https://www.duolingo.com', tags: ['playful', 'gamified', 'mascot'], words: '', filters: ['Colorful'] },
       { id: 'photo', label: 'Photo-first', hint: 'Airbnb', from: 'https://news.airbnb.com', tags: ['photo', 'marketplace', 'friendly'], words: '' },
-      { id: 'calm', label: 'Calm & illustrated', hint: 'Headspace', from: 'https://www.headspace.com', tags: ['calm', 'illustration', 'warm'], words: '' },
+      { id: 'calm', label: 'Calm & illustrated', hint: 'Headspace', from: 'https://www.headspace.com', tags: ['calm', 'illustration', 'warm'], words: '', filters: ['Illustration'] },
       { id: 'number', label: 'One big number', hint: 'Robinhood', from: 'https://robinhood.com', tags: ['minimal', 'data', 'bold', 'chart'], words: '' },
     ] },
   ],

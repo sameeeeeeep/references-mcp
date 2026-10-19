@@ -174,3 +174,31 @@ test('every medium has a quiz; the first ask carries it, a styled ask does not',
   assert.equal(styled.quiz, undefined);
   assert.equal(styled.directions[0].id, 'landing-linear');
 });
+
+test('filters are hard, facets show what is left, and a too-narrow mix loosens its last filter', async () => {
+  const vault = mkdtempSync(join(tmpdir(), 'sb-refs-idx-'));
+  try {
+    const items = [
+      ...Array.from({ length: 6 }, (_, i) => ({ id: `aw:s${i}`, title: `Scroll ${i}`, url: `https://www.awwwards.com/sites/s${i}`, tags: ['Scrolling', 'Storytelling', i < 4 ? 'Minimal' : 'WebGL', 'GSAP'], source: 'Awwwards' })),
+      ...Array.from({ length: 6 }, (_, i) => ({ id: `aw:m${i}`, title: `Minimal ${i}`, url: `https://www.awwwards.com/sites/m${i}`, tags: ['Minimal', 'Clean'], source: 'Awwwards' })),
+    ];
+    const fetchImpl = async (u) => (String(u).includes('shelf/index/landing.json')
+      ? { ok: true, status: 200, text: async () => JSON.stringify({ items }), headers: { get: () => null } }
+      : { ok: false, status: 404, text: async () => '', headers: { get: () => null } });
+    const refs = createReferences({ dir: vault, fetchImpl, youtube: async () => [] });
+    const scroll = await refs.suggest({ intent: 'landing page', medium: 'landing', filters: ['scroll'] });
+    assert.equal(scroll.matching, 6 + 1, 'six crawled scroll sites plus the Apple scroll-story canon');
+    assert.ok(scroll.directions.every((d) => d.tags.some((t) => /^scroll/i.test(t))), 'every card carries the filter');
+    assert.deepEqual(scroll.fresh, [], 'no unfiltered live picks mixed in');
+    const facets = Object.fromEntries(scroll.facets.map((f) => [f.tag, f.count]));
+    assert.equal(facets.Minimal, 4); assert.equal(facets.WebGL, 2);
+    assert.equal(facets.GSAP, undefined, 'build-tool tags are never offered as choices');
+    assert.equal(facets.Scrolling, undefined, 'an applied filter is not offered again');
+    const narrow = await refs.suggest({ intent: 'landing page', medium: 'landing', filters: ['Scrolling', 'Minimal'] });
+    assert.equal(narrow.matching, 4);
+    assert.equal(narrow.loosened, undefined);
+    const tooNarrow = await refs.suggest({ intent: 'landing page', medium: 'landing', filters: ['Scrolling', 'Clean'] });
+    assert.deepEqual(tooNarrow.loosened, ['Clean']);
+    assert.deepEqual(tooNarrow.filters, ['Scrolling']);
+  } finally { rmSync(vault, { recursive: true, force: true }); }
+});
