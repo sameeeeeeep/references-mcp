@@ -22597,7 +22597,8 @@ function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, yo
     return {
       medium: want || null,
       intent,
-      directions: await Promise.all(picked.map(({ r, score }) => withGallery({ ...r, score: Math.round(score * 10) / 10 }))),
+      // The first row gets its page's gallery (a page fetch each, cached a month); the rest show their own picture.
+      directions: await Promise.all(picked.map(({ r, score }, i) => i < 4 ? withGallery({ ...r, score: Math.round(score * 10) / 10 }) : { ...r, score: Math.round(score * 10) / 10, ...r.image ? { gallery: [r.image] } : {} })),
       // Filtered asks stay on the filter: no unfiltered live picks mixed in.
       fresh: applied.length ? [] : await fresh(want, want ? 3 : 2, skip, intent, styleWords),
       filters: applied,
@@ -22607,7 +22608,7 @@ function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, yo
       facets: facetsOf(matching, applied),
       curations: SOURCES.filter((s) => !want || s.media.includes(want)).map(({ name, kind, url, note }) => ({ name, kind, url, ...note ? { note } : {} })),
       // The style quiz for this medium (only on a first ask, not once a style is chosen): the cards open on it.
-      ...want && QUIZZES[want] && !style.length ? { quiz: await quizFor(want) } : {},
+      ...want && QUIZZES[want] && !style.length && !filters.length ? { quiz: await quizFor(want) } : {},
       tasteSignals: taste.length,
       next: "Show the user a short set: the best 2-3 `directions` plus 1-2 `fresh` award/gallery picks (open a fresh pick first if you need to say what to take from it). Recommend one. Then call references_pick with their choice and build against its `take`. `curations` are where to go deeper if they want more."
     };
