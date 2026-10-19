@@ -38,14 +38,15 @@ If none is given, it is inferred from the intent ("pitch deck" → deck, "reel" 
 ## Install
 
 **Claude Code (server + picker):** one plugin brings the server and a mod that shows suggestions as picture
-cards above your prompt. Pick with a click or `1`-`6`; `m` for more, `p` to let Claude pick.
+cards right in the conversation.
 
 ```bash
 claude plugin marketplace add sameeeeeeep/references-mcp
 claude plugin install references@references
 ```
 
-Then `/refs <what you're making>` asks on demand, and Claude asks on its own before it designs anything.
+Restart Claude Code (or start a new session). Then ask for anything with a look ("make me a launch video"),
+or type `/refs <what you're making>`.
 
 **Any MCP client (server only):**
 
@@ -63,10 +64,12 @@ Or clone it and point the client at `node src/server.mjs`.
 
 ## The picker
 
-When Claude calls `references_suggest`, the mod holds the call and shows up to six cards above the prompt: the best
-directions plus one fresh pick per live curation, each with its picture, title and source. Your choice goes back to
-Claude with the result. Thumbnails are fetched and shrunk on your machine (`curl` + `sips`, macOS); elsewhere the
-cards show text only. Desktop app and terminal both draw it.
+When Claude calls `references_suggest`, its result draws as up to six cards in the conversation: the best
+directions plus one fresh pick per live source. Each card is a small carousel of the reference's own pictures
+(its page's gallery) or, for videos, real frames that play. Pick one, write your message as usual, and the
+pick is attached to it for Claude. **Preview** opens a side pane with the reference large; **Open / Play**
+goes to the original. Thumbnails and frames are made on your machine (`curl` + `sips` on macOS, `yt-dlp` +
+`ffmpeg` for video frames); without them the cards show text. Desktop app and terminal both draw it.
 
 ## Your library
 
