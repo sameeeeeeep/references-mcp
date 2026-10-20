@@ -197,8 +197,11 @@ export function createReferences({ dir, libraries = [], fetchImpl, youtube = sea
   async function quizFor(medium, candidates = []) {
     const used = new Set();
     // The best match for the option among this project's references; else the next unused one, never the stock example.
-    const exampleFor = (o) => candidates.find((r) => !used.has(r.id) && r.image && (o.filters || []).some((f) => hasTag(r, f)))
-      || candidates.find((r) => !used.has(r.id) && r.image);
+    // An option shows an example only when one of the project's references really is that: it carries the option's
+    // catalog filter, or its title says the option's own words. A mismatched example misleads more than none.
+    const fits = (o, r) => (o.filters || []).some((f) => hasTag(r, f))
+      || (o.words && tokens(o.words).some((w) => w.length >= 5 && tokens(r.title).includes(w)));
+    const exampleFor = (o) => candidates.find((r) => !used.has(r.id) && r.image && fits(o, r));
     return Promise.all(QUIZZES[medium].map(async (st) => ({
       q: st.q,
       options: await Promise.all(st.options.map(async ({ from, ...o }) => {
