@@ -14,7 +14,9 @@ builds against that pick instead of an AI default.
 - **`directions`**: ranked references, each with a url and a **`take`** (the specific thing to carry over).
   Your own library ranks first, then a canon of proven work.
 - **`fresh`**: what's live right now:
-  - **YouTube, most viewed** for your exact ask (video, motion, animation, ads, social; needs `yt-dlp`).
+  - **For your project** (video, motion, ads, animation, social; needs `yt-dlp`): launch films of YC companies in
+    your space (fintech → Alaan, Verto, Aspire…) and proven work searched on the global market: made work only
+    (films, campaigns, commercials, launches), no trailers, tutorials, samples or listicles.
   - **The daily shelf**: this repo rebuilds `shelf/daily.json` every day (GitHub Action), from the latest
     uploads of brands known for the craft (Apple, Nike, Spotify, Airbnb, Duolingo, Figma, Kurzgesagt...)
     ranked by views, plus every live curation below.
@@ -84,7 +86,7 @@ Every answer carries `facets`: the tags among the matching references, with how 
 Storytelling 70 · Minimal 25"). Pass picks back as `filters` and only references carrying all of them return. The
 style quiz's options map onto these tags, and the band shows them as chips (✕ to drop one, + to add one). Behind
 landing, UI and app sits a catalog of judged winners only (Awwwards Sites of the Day and Honorable Mentions,
-about 2,000, each with its style tags), refreshed daily. Nominees never get in. If a mix leaves too few, the last filter loosens and the answer says which.
+about 2,000, each with its style tags) plus every live YC company's site (~5,000, tagged by industry and batch), refreshed daily. Nominees never get in; the two sources take turns so neither crowds the other out. If a mix leaves too few, the last filter loosens and the answer says which.
 
 ## Your library
 

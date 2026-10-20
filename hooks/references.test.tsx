@@ -71,7 +71,7 @@ for (const surface of ['desktop', 'terminal'] as const) {
   })
 }
 
-test('a canon pick carries its take; picking again unpicks', async ($, on) => {
+test('a canon pick carries its take; picks are sticky and move to the last card picked', async ($, on) => {
   const sent: string[] = []
   world(on, sent)
   await $.tool.call({ tool: TOOL, intent: 'x' } as any)
@@ -79,8 +79,9 @@ test('a canon pick carries its take; picking again unpicks', async ($, on) => {
   await skipQuiz(ui)
   await until(ui, 'pick-video-shot-on-iphone')
   await ui.press({ key: 'pick-video-shot-on-iphone' })
-  await ui.press({ key: 'pick-video-shot-on-iphone' })
-  await ui.press({ key: 'pick-video-linear-release' })
+  await ui.press({ key: 'pick-video-shot-on-iphone' }) // a second click keeps the pick (sticky)
+  expect(await ui.find({ key: 'clear' })).toBeDefined()
+  await ui.press({ key: 'pick-video-linear-release' }) // picking another moves the pick
   await $.prompt.submit({ text: 'go' })
   expect(sent.at(-1)).toContain('[Reference picked: Linear release videos (https://linear.app/changelog), from canon. What to take from it: Product-only motion, no narrator.')
 })

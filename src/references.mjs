@@ -10,7 +10,7 @@ import { join, extname, basename } from 'node:path';
 import { z } from 'zod';
 import { QUIZZES } from './quiz.mjs';
 import { CATALOG, MEDIA } from './catalog.mjs';
-import { SOURCES, fetchLive, pageImages, pageVideos, loadIndex, projectPool, fmtViews, searchYouTube, shelfFor, isPublicHttpsUrl, YT_MEDIA } from './sources.mjs';
+import { SOURCES, fetchLive, pageImages, pageVideos, loadIndex, projectPool, ycLaunches, fmtViews, searchYouTube, shelfFor, isPublicHttpsUrl, YT_MEDIA } from './sources.mjs';
 
 const IMG = new Set(['.png', '.jpg', '.jpeg', '.webp', '.gif']);
 const STOP = new Set('a an the and or for of to in on with my our me we i it this that make build design create new some want need like'.split(' '));
@@ -113,6 +113,12 @@ const BRIDGE = {
   property: ['Real Estate', 'Architecture'], apartments: ['Real Estate', 'Architecture'], homes: ['Real Estate'], wallpaper: ['3D', 'Big Background Images', 'Photo & Video'], scenic: ['Big Background Images', 'Photography'],
   dark: ['3D', 'WebGL'], playful: ['Colorful', 'Illustration'], elegant: ['Luxury', 'Minimal'], premium: ['Luxury'], bold: ['Typography', 'Experimental'], cinematic: ['Photo & Video', 'Storytelling', 'Scrolling'],
 };
+/** Adjacent word pairs, so "developer tools" or "real estate" can meet the tag of the same name. */
+function phrases(text) {
+  const w = String(text || '').toLowerCase().split(/[^a-z0-9]+/).filter(Boolean);
+  return w.slice(1).map((x, i) => `${w[i]} ${x}`);
+}
+
 /** The words plus the catalog tags they stand for. */
 function bridged(words) {
   const out = new Set(words);
@@ -120,11 +126,14 @@ function bridged(words) {
   return out;
 }
 
+// "scroll" ~ "Scrolling", "startup" ~ "Startups", "3d" = "3D"; but "live" is not "Livestock Health".
+const nearForm = (n, m) => n === m || (m.length >= 4 && n.startsWith(m) && n.length - m.length <= 3) || (n.length >= 4 && m.startsWith(n) && m.length - n.length <= 3);
+
 const norm = (t) => String(t).toLowerCase().replace(/[^a-z0-9]+/g, '');
 /** A tag filter matches loosely: "scroll" finds "Scrolling", "3d" finds "3D", "e-commerce" finds "E-Commerce". */
 function hasTag(r, f) {
   const want = norm(f);
-  return (r.tags || []).some((t) => { const n = norm(t); return n === want || (want.length >= 4 && n.startsWith(want)) || (n.length >= 4 && want.startsWith(n)); });
+  return (r.tags || []).some((t) => nearForm(norm(t), want));
 }
 
 function facetsOf(items, applied) {
@@ -213,14 +222,32 @@ export function createReferences({ dir, libraries = [], fetchImpl, youtube = sea
     })));
   }
 
+  // The YC companies in this brief's space (their tags against the brief and project), top companies first.
+  async function ycFor(intent, context, n = 6) {
+    const yc = await loadIndex('yc', { cacheDir, fetchImpl });
+    const want = bridged([...tokens(intent), ...tokens(context), ...phrases(intent), ...phrases(context)]);
+    // In the space (at least two of the brief's tags), then the companies whose launches are most worth seeing:
+    // YC's top companies first, then the biggest teams.
+    return yc.map((c) => ({ c, m: [...want].filter((w) => String(w).length >= 3 && hasTag(c, w)).length }))
+      .filter((x) => x.m >= 2)
+      .map((x) => ({ ...x, s: x.m + (x.c.top ? 3 : 0) + Math.log10((x.c.team || 0) + 1) }))
+      .sort((a, b) => b.s - a.s).slice(0, n).map((x) => x.c);
+  }
+
   async function forProject(medium, intent, context) {
-    const found = await projectSearch(intent, medium, context, { cacheDir });
+    const companies = ['video', 'motion', 'ad'].includes(medium) && liveOn ? await ycFor(intent, context) : [];
+    const [general, launches] = await Promise.all([
+      projectSearch(intent, medium, context, { cacheDir }),
+      companies.length ? ycLaunches(companies, { cacheDir }) : [],
+    ]);
+    const found = [...launches.map((x) => ({ ...x, yc: true })), ...general.filter((g) => !launches.some((l) => l.url === g.url))];
     return found.map((x) => {
       const id = `yt:${(/[?&]v=([\w-]{11})/.exec(x.url) || [])[1] || x.url}`;
       const item = {
         id, medium, title: `${clean(x.title, 110)} · ${fmtViews(x.views)}`, url: x.url, image: x.image, source: 'YouTube',
         take: 'Proven work for this brief (searched for your project, ranked by views): open it and name what to carry over.',
         tags: x.query.split(' ').filter(Boolean), untrusted: true, views: x.views, rank: 0, ...(x.craft ? { craft: true } : {}),
+        ...(x.yc ? { source: 'YC launch', award: x.top ? 'YC top company' : 'YC', take: `The launch film of ${x.company}, a YC company in your space: open it and name what to carry over.` } : {}),
       };
       known.set(id, item);
       return item;
@@ -251,11 +278,13 @@ export function createReferences({ dir, libraries = [], fetchImpl, youtube = sea
       take: `${x.source} pick, tagged ${(x.tags || []).filter((t) => !NOT_A_FACET.has(t)).slice(0, 4).join(', ')}: open it and name what to carry over.`,
       tags: (x.tags || []).map(String), source: String(x.source || 'Awwwards'), untrusted: true,
       ...(x.award ? { award: String(x.award) } : {}), rank: Number(x.rank) || 0,
+      ...(x.source === 'YC' ? { award: x.top ? 'YC top company' : `YC ${String(x.batch || '').replace(/^(\w)\w+ (\d\d)(\d\d)$/, '$1$3')}`, top: !!x.top, team: Number(x.team) || 0, ...(x.note ? { sourceText: String(x.note) } : {}) } : {}),
     })).map((x) => { known.set(x.id, x); return x; });
   }
 
   async function suggest({ intent = '', medium, count, exclude = [], style = [], styleWords = '', filters = [], context = '', pool: poolSize } = {}) {
     const want = medium || guessMedium(intent);
+    const literal = new Set([...tokens(intent), ...tokens(context)]);
     const words = bridged(tokens(intent));
     const about = bridged(tokens(context)); // the project, in Claude's words: brand, audience, product, vibe
     const seen = readSeen();
@@ -279,19 +308,43 @@ export function createReferences({ dir, libraries = [], fetchImpl, youtube = sea
       loosened.unshift(applied.pop());
       matching = pool.filter((r) => applied.every((f) => hasTag(r, f)));
     }
+    // How specific each tag is in this pool: "Fintech" says far more than "Business & Corporate".
+    const df = new Map();
+    for (const r of matching) for (const t of new Set(r.tags || [])) df.set(norm(t), (df.get(norm(t)) || 0) + 1);
+    const maxIdf = Math.log(matching.length + 1) || 1;
+    const rarity = (r, w) => {
+      let best = -1;
+      for (const t of r.tags || []) {
+        const n = norm(t), m = norm(w);
+        if (nearForm(n, m) || String(t) === String(w)) {
+          best = Math.max(best, Math.log((matching.length + 1) / ((df.get(n) || 0) + 1)) / maxIdf);
+        }
+      }
+      return best; // -1: no tag matches
+    };
+    // One weighted set of terms, each counted once: the brief's own words weigh most, the project context next,
+    // bridged guesses ("fintech" → Business & Corporate) least. A match is worth more the rarer its tag.
+    const terms = new Map();
+    const put = (w, wt) => { if (String(w).length >= 3) terms.set(w, Math.max(terms.get(w) || 0, wt)); };
+    for (const w of [...tokens(intent), ...phrases(intent)]) put(w, 2);
+    for (const w of [...tokens(context), ...phrases(context)]) put(w, 1.5);
+    for (const w of [...words, ...about]) if (!literal.has(w)) put(w, 0.6);
     const scored = matching
       .map((r) => {
         const hay = new Set([...tokens(r.title), ...tokens(r.take)]);
         let score = 0;
         // The brief's words against the tags, case- and form-insensitive ("luxury" finds "Luxury", "scroll" finds "Scrolling").
-        for (const w of words) score += w.length >= 3 && hasTag(r, w) ? 2 : hay.has(w) ? 1 : 0;
+        for (const [w, wt] of terms) {
+          const rare = rarity(r, w);
+          score += rare >= 0 ? wt * (0.4 + 1.6 * rare) : hay.has(w) ? wt * 0.4 : 0;
+        }
         for (const t of r.tags) score += Math.min(liked.get(t) || 0, 3) * 0.5;
         for (const t of style) if (r.tags.includes(t)) score += 3; // the style the person chose in the quiz
-        for (const w of about) score += r.tags.some((t) => norm(t) === norm(w) || norm(t).startsWith(norm(w)) && w.length >= 4) ? 1.5 : hay.has(w) ? 0.5 : 0;
         if (r.source === 'mine' && (score > 0 || !words.size)) score += 4; // the user's own refs win, when they fit
-        score += r.award === 'Site of the Day' ? 2 : r.award ? 1 : 0; // judged winners first
+        score += r.award === 'Site of the Day' ? 2 : r.source === 'YC' ? (r.top ? 2 : Math.min(1, Math.log10((r.team || 0) + 1) / 2)) : r.award ? 1 : 0; // judged winners, YC's top companies
         if (r.views) score += Math.min(3, Math.log10(r.views) - 3.5); // proven by audience: 1M views ≈ +2.5
         if (r.craft) score += 2.5; // a film, campaign or launch, not just a popular video
+        if (r.source === 'YC launch') score += 3; // a YC company in the same space, launching: closest to the brief
         if (r.source === 'curated' && index.length) score -= 3; // the hand-picked canon is a fallback, not the answer
         if (r.rank !== undefined) score += Math.max(0, 1 - r.rank / 1500); // newer winners a little ahead
         if (seen.has(r.id)) score -= 4; // shown in the last month: let others through
@@ -299,6 +352,28 @@ export function createReferences({ dir, libraries = [], fetchImpl, youtube = sea
         return { r, score };
       })
       .sort((a, b) => b.score - a.score || (a.r.source === 'mine' ? -1 : 1));
+    // Interleave the catalog's sources (award winners, YC companies, YC launches, the wider web) by their own rank, so
+    // one source's quality bonus can't take every slot: a fintech brief sees fintech companies next to award craft.
+    {
+      // Only sources whose best match is close to the overall best take turns; the hand-picked canon never does.
+      const best = scored[0]?.score || 0;
+      const groups = new Map(), rest = [];
+      for (const x of scored) {
+        const k = x.r.source;
+        if (k === 'curated') { rest.push(x); continue; }
+        if (!groups.has(k)) groups.set(k, []);
+        groups.get(k).push(x);
+      }
+      const lead = [...groups.keys()].filter((k) => k === 'mine' || groups.get(k)[0].score >= best * 0.6)
+        .sort((a, b) => (a === 'mine' ? -1 : b === 'mine' ? 1 : groups.get(b)[0].score - groups.get(a)[0].score));
+      if (lead.length > 1) {
+        const mixed = [];
+        const longest = Math.max(...lead.map((k) => groups.get(k).length));
+        for (let i = 0; i < longest; i++) for (const k of lead) { const x = groups.get(k)[i]; if (x) mixed.push(x); }
+        const others = scored.filter((x) => !mixed.includes(x));
+        scored.splice(0, scored.length, ...mixed, ...others);
+      }
+    }
     // Without a medium, spread across media so the user sees range, not five of one kind.
     const picked = [];
     const seenMedia = new Set();
@@ -325,8 +400,8 @@ export function createReferences({ dir, libraries = [], fetchImpl, youtube = sea
       medium: want || null,
       intent,
       // The first row gets its page's gallery (a page fetch each, cached a month); the rest show their own picture.
-      directions: await Promise.all(picked.map(({ r, score }, i) => (i < 4 ? withGallery({ ...r, score: Math.round(score * 10) / 10 })
-        : { ...r, score: Math.round(score * 10) / 10, ...(r.image ? { gallery: [r.image] } : {}) }))),
+      directions: await Promise.all(picked.map(({ r, score }, i) => (i < 4 || !r.image ? withGallery({ ...r, score: Math.round(score * 10) / 10 })
+        : { ...r, score: Math.round(score * 10) / 10, gallery: [r.image] }))),
       // Filtered asks stay on the filter: no unfiltered live picks mixed in.
       // Filtered or per-project asks stay on the project: no generic trending picks mixed in.
       fresh: applied.length || index.some((r) => r.source === 'YouTube') ? [] : await fresh(want, want ? 3 : 2, skip, intent, styleWords),

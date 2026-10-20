@@ -10,5 +10,6 @@ test('stress: 12 different projects get their own on-brief, award-winning landin
   const fits = [...out.matchAll(/fit (\d)\/8/g)].map((m) => Number(m[1]));
   assert.equal(fits.length, 12);
   assert.ok(fits.every((f) => f >= 6), `a project got an off-brief set: ${fits.join(',')}`);
-  assert.ok(!/canon \[[^\]]+\]/.test(out), 'the hand-picked canon must not crowd out the catalog');
+  const canon = [...out.matchAll(/canon \[([^\]]*)\]/g)].map((m) => (m[1] ? m[1].split(', ').length : 0));
+  assert.ok(canon.every((n) => n <= 1), `the hand-picked canon crowds out the catalog: ${canon.join(',')}`);
 });

@@ -80,15 +80,38 @@ for (const [path, award, pages] of AWARDS) {
     await new Promise((r) => setTimeout(r, 400)); // be a polite crawler
   }
 }
+// ── Every active YC company: its site joins the landing catalog (tagged by industry, tags, batch), and the list
+// itself (shelf/index/yc.json) lets a video ask find the launch films of YC companies in the same space.
+const yc = [];
+try {
+  const res = await fetch('https://yc-oss.github.io/api/companies/all.json', { signal: AbortSignal.timeout(60000) });
+  const list = (s) => (Array.isArray(s) ? s : String(s || '').match(/'([^']+)'/g)?.map((x) => x.slice(1, -1)) || []);
+  for (const c of await res.json()) {
+    // Active, public and acquired companies all keep live sites; only inactive ones are dropped. http → https.
+    if (c.status === 'Inactive' || !/^https?:\/\//.test(c.website || '') || !c.slug) continue;
+    c.website = c.website.replace(/^http:/, 'https:');
+    yc.push({
+      id: `yc:${c.slug}`, title: c.name, url: c.website.replace(/\/$/, ''), source: 'YC', batch: c.batch,
+      top: String(c.top_company) === 'True', team: Number(c.team_size) || 0, note: String(c.one_liner || '').slice(0, 140),
+      tags: [...new Set([c.industry, ...list(c.industries), ...list(c.tags), 'YC'].filter(Boolean))].slice(0, 12),
+    });
+  }
+} catch (e) { console.log('yc: skipped', e.message); }
+mkdirSync('shelf/index', { recursive: true });
+writeFileSync('shelf/index/yc.json', JSON.stringify({ updated: new Date().toISOString(), items: yc }) + '\n');
+console.log(`index/yc: ${yc.length}`);
+
 const toItem = (x) => ({ id: `aw:${x.url.split('/').pop()}`, title: x.title, url: x.url, image: x.image, tags: x.tags, source: 'Awwwards', award: x.award, rank: x.rank });
 const all = [...sites.values()];
 const index = {
-  landing: all,
+  landing: [...all, ...yc],
   ui: all.filter((x) => x.tags.some((t) => UI_TAGS.has(t))),
   app: all.filter((x) => x.tags.some((t) => APP_TAGS.has(t))),
 };
 mkdirSync('shelf/index', { recursive: true });
+
+
 for (const [medium, items] of Object.entries(index)) {
-  writeFileSync(`shelf/index/${medium}.json`, JSON.stringify({ updated: shelf.updated, items: items.map(toItem) }) + '\n');
+  writeFileSync(`shelf/index/${medium}.json`, JSON.stringify({ updated: shelf.updated, items: items.map((x) => (x.source === 'YC' ? x : toItem(x))) }) + '\n');
   console.log(`index/${medium}: ${items.length}`);
 }

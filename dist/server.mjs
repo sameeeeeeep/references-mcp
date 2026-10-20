@@ -22366,7 +22366,7 @@ async function loadIndex(medium, { cacheDir, fetchImpl = fetch, now = Date.now()
 }
 var ALT = { video: "commercial", ad: "campaign", motion: "animation", animation: "short film", social: "campaign" };
 var NOUN = { video: "launch film", ad: "commercial ad", motion: "motion design reel", animation: "animated short film", social: "brand shorts" };
-var NOT_CRAFT = /\b(\d+ (?:settings|things|tips|tricks|ways|mistakes)|you need to|rocket|spacex|starship|falcon 9|ship launch|fails|close calls|live:|who does it better|with claude|unlocked|hindi|telugu|tamil|malayalam|kannada|punjabi|marathi|bollywood|tollywood|how i|here'?s how|how to|tutorial|course|explained|recap|reaction|reacts?|quiz|guess the|lyrics?|song|music video|official audio|official video|full movie|movie|netflix|hbo|recipe|vlog|podcast|interview|review|unboxing|walkthrough|beginner|in \d+ minutes|lesson|class \d|learn to|kids songs|nursery|asmr|live ?stream|compilation|top \d+|\d+ best|best \d+|vs\.?|episode|ep\.? ?\d|news|highlights|gameplay|let'?s play|tips|hack|guide)\b/i;
+var NOT_CRAFT = /\b(example|sample|parod\w*|video production|production house|services|\d+ (?:settings|things|tips|tricks|ways|mistakes)|you need to|rocket|spacex|starship|falcon 9|ship launch|fails|close calls|live:|who does it better|with claude|unlocked|hindi|telugu|tamil|malayalam|kannada|punjabi|marathi|bollywood|tollywood|how i|here'?s how|how to|tutorial|course|explained|recap|reaction|reacts?|quiz|guess the|lyrics?|song|music video|official audio|official video|full movie|movie|netflix|hbo|recipe|vlog|podcast|interview|review|unboxing|walkthrough|beginner|in \d+ minutes|lesson|class \d|learn to|kids songs|nursery|asmr|live ?stream|compilation|top \d+|\d+ best|best \d+|vs\.?|episode|ep\.? ?\d|news|highlights|gameplay|let'?s play|tips|hack|guide)\b/i;
 var MADE_WORK = /\b(explainer|product video|demo video|introduces|presents|official launch|design film|brand film|film|campaign|commercial|\bad\b|spec ad|tvc|launch|introducing|teaser|showreel|reel|spot|brand video|promo|keynote|motion|animation|animated|short film|manifesto)\b/i;
 var MAX_LEN = { video: 600, ad: 240, motion: 600, animation: 1200, social: 120 };
 var FILLER = new Set("a an the and or for of to in on with my our me we i it this that make build design create new some want need like page site website app video film launch ad ads commercial reel short shorts motion animation animated social post landing brand product macos ios android".split(" "));
@@ -22434,6 +22434,23 @@ async function cachedYt(query, { cacheDir, run, now = Date.now() }) {
     }
   }
   return items;
+}
+async function ycLaunches(companies, { cacheDir, run = ytdlp } = {}) {
+  const out = [];
+  await Promise.all(companies.map(async (c) => {
+    const about = String(c.note || "").toLowerCase().split(/[^a-z0-9]+/).filter((w) => w.length >= 5 && !FILLER.has(w)).slice(0, 3);
+    const items = await cachedYt(`${c.title} ${about.slice(0, 2).join(" ")} launch`.trim(), { cacheDir, run });
+    const name = c.title.toLowerCase();
+    const ok = (t) => {
+      const x = t.toLowerCase();
+      if (!x.includes(name) || NOT_CRAFT.test(t) || /[^\x00-\x7F\u2018-\u201F\u2013\u2014\u00C0-\u017F·|]/.test(t.replace(new RegExp("\\p{Extended_Pictographic}", "gu"), ""))) return false;
+      return /\b(launch|launching|introducing|introduces|demo|announc\w*|yc|y combinator|product video|meet)\b/i.test(t) || about.some((w) => x.includes(w));
+    };
+    for (const it of items.filter((x) => ok(x.title) && x.duration && x.duration <= 300 && x.views >= 1e3).slice(0, 2)) {
+      out.push({ ...it, query: `${c.title} launch`, craft: true, company: c.title, top: c.top });
+    }
+  }));
+  return out;
 }
 
 // src/references.mjs
@@ -22619,18 +22636,20 @@ var BRIDGE = {
   bold: ["Typography", "Experimental"],
   cinematic: ["Photo & Video", "Storytelling", "Scrolling"]
 };
+function phrases(text) {
+  const w = String(text || "").toLowerCase().split(/[^a-z0-9]+/).filter(Boolean);
+  return w.slice(1).map((x, i) => `${w[i]} ${x}`);
+}
 function bridged(words) {
   const out = new Set(words);
   for (const w of words) for (const t of BRIDGE[w] || []) out.add(t);
   return out;
 }
+var nearForm = (n, m) => n === m || m.length >= 4 && n.startsWith(m) && n.length - m.length <= 3 || n.length >= 4 && m.startsWith(n) && m.length - n.length <= 3;
 var norm = (t) => String(t).toLowerCase().replace(/[^a-z0-9]+/g, "");
 function hasTag(r, f) {
   const want = norm(f);
-  return (r.tags || []).some((t) => {
-    const n = norm(t);
-    return n === want || want.length >= 4 && n.startsWith(want) || n.length >= 4 && want.startsWith(n);
-  });
+  return (r.tags || []).some((t) => nearForm(norm(t), want));
 }
 function facetsOf(items, applied) {
   const counts = /* @__PURE__ */ new Map();
@@ -22705,8 +22724,18 @@ function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, yo
       }))
     })));
   }
+  async function ycFor(intent, context, n = 6) {
+    const yc = await loadIndex("yc", { cacheDir, fetchImpl });
+    const want = bridged([...tokens(intent), ...tokens(context), ...phrases(intent), ...phrases(context)]);
+    return yc.map((c) => ({ c, m: [...want].filter((w) => String(w).length >= 3 && hasTag(c, w)).length })).filter((x) => x.m >= 2).map((x) => ({ ...x, s: x.m + (x.c.top ? 3 : 0) + Math.log10((x.c.team || 0) + 1) })).sort((a, b) => b.s - a.s).slice(0, n).map((x) => x.c);
+  }
   async function forProject(medium, intent, context) {
-    const found = await projectSearch(intent, medium, context, { cacheDir });
+    const companies = ["video", "motion", "ad"].includes(medium) && liveOn ? await ycFor(intent, context) : [];
+    const [general, launches] = await Promise.all([
+      projectSearch(intent, medium, context, { cacheDir }),
+      companies.length ? ycLaunches(companies, { cacheDir }) : []
+    ]);
+    const found = [...launches.map((x) => ({ ...x, yc: true })), ...general.filter((g) => !launches.some((l) => l.url === g.url))];
     return found.map((x) => {
       const id = `yt:${(/[?&]v=([\w-]{11})/.exec(x.url) || [])[1] || x.url}`;
       const item = {
@@ -22721,7 +22750,8 @@ function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, yo
         untrusted: true,
         views: x.views,
         rank: 0,
-        ...x.craft ? { craft: true } : {}
+        ...x.craft ? { craft: true } : {},
+        ...x.yc ? { source: "YC launch", award: x.top ? "YC top company" : "YC", take: `The launch film of ${x.company}, a YC company in your space: open it and name what to carry over.` } : {}
       };
       known.set(id, item);
       return item;
@@ -22764,7 +22794,8 @@ function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, yo
       source: String(x.source || "Awwwards"),
       untrusted: true,
       ...x.award ? { award: String(x.award) } : {},
-      rank: Number(x.rank) || 0
+      rank: Number(x.rank) || 0,
+      ...x.source === "YC" ? { award: x.top ? "YC top company" : `YC ${String(x.batch || "").replace(/^(\w)\w+ (\d\d)(\d\d)$/, "$1$3")}`, top: !!x.top, team: Number(x.team) || 0, ...x.note ? { sourceText: String(x.note) } : {} } : {}
     })).map((x) => {
       known.set(x.id, x);
       return x;
@@ -22772,6 +22803,7 @@ function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, yo
   }
   async function suggest({ intent = "", medium, count, exclude = [], style = [], styleWords = "", filters = [], context = "", pool: poolSize } = {}) {
     const want = medium || guessMedium(intent);
+    const literal2 = /* @__PURE__ */ new Set([...tokens(intent), ...tokens(context)]);
     const words = bridged(tokens(intent));
     const about = bridged(tokens(context));
     const seen = readSeen();
@@ -22791,23 +22823,70 @@ function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, yo
       loosened.unshift(applied.pop());
       matching = pool.filter((r) => applied.every((f) => hasTag(r, f)));
     }
+    const df = /* @__PURE__ */ new Map();
+    for (const r of matching) for (const t of new Set(r.tags || [])) df.set(norm(t), (df.get(norm(t)) || 0) + 1);
+    const maxIdf = Math.log(matching.length + 1) || 1;
+    const rarity = (r, w) => {
+      let best = -1;
+      for (const t of r.tags || []) {
+        const n = norm(t), m = norm(w);
+        if (nearForm(n, m) || String(t) === String(w)) {
+          best = Math.max(best, Math.log((matching.length + 1) / ((df.get(n) || 0) + 1)) / maxIdf);
+        }
+      }
+      return best;
+    };
+    const terms = /* @__PURE__ */ new Map();
+    const put = (w, wt) => {
+      if (String(w).length >= 3) terms.set(w, Math.max(terms.get(w) || 0, wt));
+    };
+    for (const w of [...tokens(intent), ...phrases(intent)]) put(w, 2);
+    for (const w of [...tokens(context), ...phrases(context)]) put(w, 1.5);
+    for (const w of [...words, ...about]) if (!literal2.has(w)) put(w, 0.6);
     const scored = matching.map((r) => {
       const hay = /* @__PURE__ */ new Set([...tokens(r.title), ...tokens(r.take)]);
       let score = 0;
-      for (const w of words) score += w.length >= 3 && hasTag(r, w) ? 2 : hay.has(w) ? 1 : 0;
+      for (const [w, wt] of terms) {
+        const rare = rarity(r, w);
+        score += rare >= 0 ? wt * (0.4 + 1.6 * rare) : hay.has(w) ? wt * 0.4 : 0;
+      }
       for (const t of r.tags) score += Math.min(liked.get(t) || 0, 3) * 0.5;
       for (const t of style) if (r.tags.includes(t)) score += 3;
-      for (const w of about) score += r.tags.some((t) => norm(t) === norm(w) || norm(t).startsWith(norm(w)) && w.length >= 4) ? 1.5 : hay.has(w) ? 0.5 : 0;
       if (r.source === "mine" && (score > 0 || !words.size)) score += 4;
-      score += r.award === "Site of the Day" ? 2 : r.award ? 1 : 0;
+      score += r.award === "Site of the Day" ? 2 : r.source === "YC" ? r.top ? 2 : Math.min(1, Math.log10((r.team || 0) + 1) / 2) : r.award ? 1 : 0;
       if (r.views) score += Math.min(3, Math.log10(r.views) - 3.5);
       if (r.craft) score += 2.5;
+      if (r.source === "YC launch") score += 3;
       if (r.source === "curated" && index.length) score -= 3;
       if (r.rank !== void 0) score += Math.max(0, 1 - r.rank / 1500);
       if (seen.has(r.id)) score -= 4;
       score += jitter(r.id);
       return { r, score };
     }).sort((a, b) => b.score - a.score || (a.r.source === "mine" ? -1 : 1));
+    {
+      const best = scored[0]?.score || 0;
+      const groups = /* @__PURE__ */ new Map(), rest = [];
+      for (const x of scored) {
+        const k = x.r.source;
+        if (k === "curated") {
+          rest.push(x);
+          continue;
+        }
+        if (!groups.has(k)) groups.set(k, []);
+        groups.get(k).push(x);
+      }
+      const lead = [...groups.keys()].filter((k) => k === "mine" || groups.get(k)[0].score >= best * 0.6).sort((a, b) => a === "mine" ? -1 : b === "mine" ? 1 : groups.get(b)[0].score - groups.get(a)[0].score);
+      if (lead.length > 1) {
+        const mixed = [];
+        const longest = Math.max(...lead.map((k) => groups.get(k).length));
+        for (let i = 0; i < longest; i++) for (const k of lead) {
+          const x = groups.get(k)[i];
+          if (x) mixed.push(x);
+        }
+        const others = scored.filter((x) => !mixed.includes(x));
+        scored.splice(0, scored.length, ...mixed, ...others);
+      }
+    }
     const picked = [];
     const seenMedia = /* @__PURE__ */ new Set();
     for (const s of scored) if (picked.length < count && (want || !seenMedia.has(s.r.medium))) {
@@ -22845,7 +22924,7 @@ function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, yo
       medium: want || null,
       intent,
       // The first row gets its page's gallery (a page fetch each, cached a month); the rest show their own picture.
-      directions: await Promise.all(picked.map(({ r, score }, i) => i < 4 ? withGallery({ ...r, score: Math.round(score * 10) / 10 }) : { ...r, score: Math.round(score * 10) / 10, ...r.image ? { gallery: [r.image] } : {} })),
+      directions: await Promise.all(picked.map(({ r, score }, i) => i < 4 || !r.image ? withGallery({ ...r, score: Math.round(score * 10) / 10 }) : { ...r, score: Math.round(score * 10) / 10, gallery: [r.image] })),
       // Filtered asks stay on the filter: no unfiltered live picks mixed in.
       // Filtered or per-project asks stay on the project: no generic trending picks mixed in.
       fresh: applied.length || index.some((r) => r.source === "YouTube") ? [] : await fresh(want, want ? 3 : 2, skip, intent, styleWords),

@@ -454,7 +454,7 @@ export async function loadIndex(medium, { cacheDir, fetchImpl = fetch, now = Dat
 const ALT = { video: 'commercial', ad: 'campaign', motion: 'animation', animation: 'short film', social: 'campaign' };
 const NOUN = { video: 'launch film', ad: 'commercial ad', motion: 'motion design reel', animation: 'animated short film', social: 'brand shorts' };
 // Not references: how-tos, recaps, reactions, quizzes, songs, movie trailers, recipes, vlogs, reviews, lists.
-const NOT_CRAFT = /\b(\d+ (?:settings|things|tips|tricks|ways|mistakes)|you need to|rocket|spacex|starship|falcon 9|ship launch|fails|close calls|live:|who does it better|with claude|unlocked|hindi|telugu|tamil|malayalam|kannada|punjabi|marathi|bollywood|tollywood|how i|here'?s how|how to|tutorial|course|explained|recap|reaction|reacts?|quiz|guess the|lyrics?|song|music video|official audio|official video|full movie|movie|netflix|hbo|recipe|vlog|podcast|interview|review|unboxing|walkthrough|beginner|in \d+ minutes|lesson|class \d|learn to|kids songs|nursery|asmr|live ?stream|compilation|top \d+|\d+ best|best \d+|vs\.?|episode|ep\.? ?\d|news|highlights|gameplay|let'?s play|tips|hack|guide)\b/i;
+const NOT_CRAFT = /\b(example|sample|parod\w*|video production|production house|services|\d+ (?:settings|things|tips|tricks|ways|mistakes)|you need to|rocket|spacex|starship|falcon 9|ship launch|fails|close calls|live:|who does it better|with claude|unlocked|hindi|telugu|tamil|malayalam|kannada|punjabi|marathi|bollywood|tollywood|how i|here'?s how|how to|tutorial|course|explained|recap|reaction|reacts?|quiz|guess the|lyrics?|song|music video|official audio|official video|full movie|movie|netflix|hbo|recipe|vlog|podcast|interview|review|unboxing|walkthrough|beginner|in \d+ minutes|lesson|class \d|learn to|kids songs|nursery|asmr|live ?stream|compilation|top \d+|\d+ best|best \d+|vs\.?|episode|ep\.? ?\d|news|highlights|gameplay|let'?s play|tips|hack|guide)\b/i;
 // Made work: films, campaigns, ads, launches, teasers, reels.
 const MADE_WORK = /\b(explainer|product video|demo video|introduces|presents|official launch|design film|brand film|film|campaign|commercial|\bad\b|spec ad|tvc|launch|introducing|teaser|showreel|reel|spot|brand video|promo|keynote|motion|animation|animated|short film|manifesto)\b/i;
 const MAX_LEN = { video: 600, ad: 240, motion: 600, animation: 1200, social: 120 };
@@ -508,3 +508,23 @@ async function cachedYt(query, { cacheDir, run, now = Date.now() }) {
   return items;
 }
 export { fmtViews };
+
+// ── YC launch videos: the companies in the brief's space (top companies first), their own launch films ─────
+export async function ycLaunches(companies, { cacheDir, run = ytdlp } = {}) {
+  const out = [];
+  await Promise.all(companies.map(async (c) => {
+    // What the company does, from its one-liner: disambiguates names like "Papa" or "Sieve" from everything else.
+    const about = String(c.note || '').toLowerCase().split(/[^a-z0-9]+/).filter((w) => w.length >= 5 && !FILLER.has(w)).slice(0, 3);
+    const items = await cachedYt(`${c.title} ${about.slice(0, 2).join(' ')} launch`.trim(), { cacheDir, run });
+    const name = c.title.toLowerCase();
+    const ok = (t) => {
+      const x = t.toLowerCase();
+      if (!x.includes(name) || NOT_CRAFT.test(t) || /[^\x00-\x7F\u2018-\u201F\u2013\u2014\u00C0-\u017F·|]/.test(t.replace(/\p{Extended_Pictographic}/gu, ''))) return false;
+      return /\b(launch|launching|introducing|introduces|demo|announc\w*|yc|y combinator|product video|meet)\b/i.test(t) || about.some((w) => x.includes(w));
+    };
+    for (const it of items.filter((x) => ok(x.title) && x.duration && x.duration <= 300 && x.views >= 1000).slice(0, 2)) {
+      out.push({ ...it, query: `${c.title} launch`, craft: true, company: c.title, top: c.top });
+    }
+  }));
+  return out;
+}

@@ -235,15 +235,11 @@ function desktopCard(ui: any, c: Card, n: number, isPicked: boolean, at?: number
       <ui.Svg source={cardSvg(c, CARD_W, n, isPicked, slides.get(c.id), at, isVideo.has(c.id), 0, true)} alt={c.title} />
       <Text bold wrap="truncate-end">{name}</Text>
       <Text dimColor wrap="truncate-end">{[c.award ? `${c.source} · ${c.award}` : c.source, stat].filter(Boolean).join('  ·  ')}</Text>
-      {/* Two lines, always, so every card's buttons sit on the same row. */}
-      {twoLines(c.blurb).map((l, k) => <Text key={`b${k}`} wrap="truncate-end">{l || ' '}</Text>)}
+      {/* No generic description in the band (it lives in Preview), so the band fits whole; only Claude's reason
+          this fits the project stays, on one line. */}
+      {c.blurb.startsWith('For you:') ? <Text wrap="truncate-end">{c.blurb}</Text> : null}
     </Box>
   )
-}
-
-function twoLines(text: string): string[] {
-  const out = lines(String(text || ''), 34, 2)
-  return [out[0] || '', out[1] || '']
 }
 
 function quizView($: any, e: any, ui: any, b: Board, quiz: QuizStep[]) {
@@ -360,7 +356,8 @@ function refill($: any, b: Board) {
 
 function pick($: any, id: string) {
   return async () => {
-    const now = await update($, board, (cur: Board | null) => (cur ? { ...cur, selected: cur.selected === id ? null : id } : cur))
+    // Picking is sticky: a second click (or a double-click) keeps the pick; Clear is how it goes away.
+    const now = await update($, board, (cur: Board | null) => (cur ? { ...cur, selected: id } : cur))
     $.ui.status(now?.selected ? 'references: picked; write your message and send' : undefined)
   }
 }
