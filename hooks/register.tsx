@@ -247,7 +247,7 @@ function quizView($: any, e: any, ui: any, b: Board, quiz: QuizStep[]) {
         </Text>
         <Box flexDirection="row" gap={1}>
           {step > 0 ? <Button key="quiz-back" label="‹ Back" plain onPress={() => update($, board, (cur: Board | null) => (cur && cur.quiz ? { ...cur, quiz: { step: cur.quiz.step - 1, picks: cur.quiz.picks.slice(0, -1) } } : cur))} /> : null}
-          <Button key="quiz-skip" label="Skip, show all" plain onPress={skip} />
+          <Button key="quiz-skip" label="Skip questions" plain onPress={skip} />
           <Button key="dismiss" label="Dismiss" role="dismiss" plain onPress={() => update($, board, () => null)} />
         </Box>
       </Box>
