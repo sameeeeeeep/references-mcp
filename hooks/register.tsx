@@ -192,15 +192,12 @@ function cardsView($: any, e: any, ui: any, b: Board, columns: number) {
           const i = b.cards.indexOf(c)
           const isPicked = c.id === b.selected
           return (
-            <Box key={c.id} flexDirection="column" width={desktop ? '24%' : 30}>
+            <Box key={c.id} flexDirection="column" width={desktop ? '24%' : 30} overflow="hidden">
               {desktop
                 ? desktopCard(ui, c, i + 1, isPicked, b.pos[c.id])
                 : e.surface === 'terminal' ? terminalCard(ui, c, i + 1, isPicked) : <Text>{c.title}</Text>}
               <Box flexDirection="row" gap={1}>
-                <Button key={`pick-${c.id}`} label={isPicked ? '✓ Picked' : `Pick ${i + 1}`} hotkey={String(i + 1)} variant={isPicked ? 'primary' : 'secondary'} onPress={pick($, c.id)} />
-                {(slides.get(c.id)?.length || 0) > 1 && !isVideo.has(c.id) ? <Button key={`prev-${c.id}`} label="‹" plain onPress={stepSlide($, c.id, -1)} /> : null}
-                {(slides.get(c.id)?.length || 0) > 1 && !isVideo.has(c.id) ? <Button key={`next-${c.id}`} label="›" plain onPress={stepSlide($, c.id, 1)} /> : null}
-                {safeUrl(c.url) ? <Button key={`play-${c.id}`} label={VIDEO.test(c.url || '') ? '▶ Play' : 'Open'} plain onPress={openInApp($, c)} /> : null}
+                <Button key={`pick-${c.id}`} label={isPicked ? '✓ Picked' : 'Pick'} hotkey={String(i + 1)} variant={isPicked ? 'primary' : 'secondary'} onPress={pick($, c.id)} />
                 <Button key={`view-${c.id}`} label="Preview" plain onPress={preview($, c.id)} />
               </Box>
             </Box>
@@ -235,11 +232,17 @@ function desktopCard(ui: any, c: Card, n: number, isPicked: boolean, at?: number
   return (
     <Box flexDirection="column">
       <ui.Svg source={cardSvg(c, CARD_W, n, isPicked, slides.get(c.id), at, isVideo.has(c.id), 0, true)} alt={c.title} />
-      <Text bold wrap="wrap">{name}</Text>
+      <Text bold wrap="truncate-end">{name}</Text>
       <Text dimColor wrap="truncate-end">{[c.award ? `${c.source} · ${c.award}` : c.source, stat].filter(Boolean).join('  ·  ')}</Text>
-      {c.blurb ? <Text wrap="wrap">{c.blurb.length > 110 ? c.blurb.slice(0, 108).trimEnd() + '…' : c.blurb}</Text> : null}
+      {/* Two lines, always, so every card's buttons sit on the same row. */}
+      {twoLines(c.blurb).map((l, k) => <Text key={`b${k}`} wrap="truncate-end">{l || ' '}</Text>)}
     </Box>
   )
+}
+
+function twoLines(text: string): string[] {
+  const out = lines(String(text || ''), 34, 2)
+  return [out[0] || '', out[1] || '']
 }
 
 function quizView($: any, e: any, ui: any, b: Board, quiz: QuizStep[]) {

@@ -430,10 +430,11 @@ export async function safeFetch(url, init = {}, fetchImpl = pinnedFetch, check =
 
 // ── The big tagged catalog: shelf/index/<medium>.json, crawled daily from the galleries' category pages ─────
 export const INDEX_URL = (medium) => `https://raw.githubusercontent.com/sameeeeeeep/references-mcp/main/shelf/index/${medium}.json`;
-const INDEX_TTL = 12 * 3600_000;
+const INDEX_TTL = 3 * 3600_000;
+const INDEX_VERSION = 2; // bump when the catalog's shape or source changes: old caches are ignored
 
 export async function loadIndex(medium, { cacheDir, fetchImpl = fetch, now = Date.now() } = {}) {
-  const file = cacheDir && join(cacheDir, `references-index-${medium}.json`);
+  const file = cacheDir && join(cacheDir, `references-index-v${INDEX_VERSION}-${medium}.json`);
   let hit = null;
   try { if (file && existsSync(file)) hit = JSON.parse(readFileSync(file, 'utf8')); } catch {}
   if (hit && now - hit.at < INDEX_TTL) return hit.items;

@@ -142,12 +142,13 @@ test('in the chat the suggestion is one quiet line; the band pages through all t
 })
 
 
-test('Play opens the reference in the app browser pane; without one it says where to go', async ($, on) => {
+test('Play (in the Preview pane) opens the reference in the app browser pane; without one it says where to go', async ($, on) => {
   const sent: string[] = []
   world(on, sent)
   const opened: string[] = []
   const toasts: string[] = []
   on('ui.toast' as any, (_$: any, e: any) => { toasts.push(String(e.text ?? e)); return { value: undefined } as any })
+  on('ui.open' as any, () => ({ value: { opened: true } }) as any)
   let hasBrowser = true
   on('mcp.call' as any, (_$: any, e: any) => {
     if (!hasBrowser) throw new Error('not connected')
@@ -157,12 +158,17 @@ test('Play opens the reference in the app browser pane; without one it says wher
   await $.tool.call({ tool: TOOL, intent: 'x' } as any)
   const ui = await $.ui.mount({ plugin: 'references', surface: 'desktop', ...BAND } as any)
   await skipQuiz(ui)
-  await until(ui, 'play-live:vimeo:x')
-  expect(await ui.find({ key: 'play-video-shot-on-iphone' })).toBeUndefined() // no link, no Play
-  await ui.press({ key: 'play-live:vimeo:x' })
+  await until(ui, 'view-live:vimeo:x')
+  expect(await ui.find({ key: 'play-live:vimeo:x' })).toBeUndefined() // the card itself stays to Pick + Preview
+  await ui.press({ key: 'view-live:vimeo:x' })
+  const pane = await $.ui.mount({ plugin: 'references', surface: 'desktop', component: 'Pane', requestId: 'references-preview', props: { title: 'Reference', isFocused: true, bodyColumns: 80, placement: 'dock' } } as any)
+  await until(pane, 'p-play')
+  await pane.press({ key: 'p-play' })
   expect(opened).toEqual(['Claude_Browser:preview_start:https://vimeo.com/1'])
   hasBrowser = false
-  await ui.press({ key: 'play-video-linear-release' })
+  await ui.press({ key: 'view-video-linear-release' })
+  await until(pane, 'p-play')
+  await pane.press({ key: 'p-play' })
   expect(toasts.join('\n')).toContain('Preview')
 })
 
@@ -270,7 +276,7 @@ test('curate: a pool shows "Curating…", the shortlist brings the cards with wh
   expect(await ui.find({ type: 'Text', text: /Curating references for this project from 387/ })).toBeDefined()
   await $.tool.call({ tool: 'mcp__references__references_shortlist', ids: ['aw:a', 'aw:b'] } as any)
   await until(ui, 'pick-aw:a')
-  expect(await ui.find({ type: 'Text', text: /For you: dark hero like your lime-on-black brand/ })).toBeDefined()
+  expect(await ui.find({ type: 'Text', text: /^For you: dark hero/ })).toBeDefined() // the reason, on the card (two fixed lines)
   expect(await ui.find({ type: 'Text', text: /Awwwards · Site of the Day/ })).toBeDefined()
   await ui.press({ key: 'pick-aw:b' })
   await ui.press({ key: 'facet-Minimal' })

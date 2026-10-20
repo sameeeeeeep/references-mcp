@@ -22338,9 +22338,10 @@ async function safeFetch(url, init = {}, fetchImpl = pinnedFetch, check2 = resol
   throw new Error("too many redirects");
 }
 var INDEX_URL = (medium) => `https://raw.githubusercontent.com/sameeeeeeep/references-mcp/main/shelf/index/${medium}.json`;
-var INDEX_TTL = 12 * 36e5;
+var INDEX_TTL = 3 * 36e5;
+var INDEX_VERSION = 2;
 async function loadIndex(medium, { cacheDir, fetchImpl = fetch, now = Date.now() } = {}) {
-  const file = cacheDir && join(cacheDir, `references-index-${medium}.json`);
+  const file = cacheDir && join(cacheDir, `references-index-v${INDEX_VERSION}-${medium}.json`);
   let hit = null;
   try {
     if (file && existsSync(file)) hit = JSON.parse(readFileSync(file, "utf8"));
