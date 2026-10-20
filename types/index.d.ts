@@ -14,6 +14,8 @@ export type Card = {
   videos?: string[]
   /** 'top' for page screenshots: the hero, not the middle. */
   crop?: 'top'
+  /** 'Site of the Day' / 'Honorable Mention' for judged winners. */
+  award?: string
 }
 
 export type Board = {
@@ -47,6 +49,10 @@ export type Board = {
   matching?: number
   /** The next choices: tags among the matches, with how many each leaves. */
   facets?: { tag: string; count: number }[]
+  /** The project in Claude's words, kept so refetches stay personal. */
+  context?: string
+  /** True while Claude reads the pool and shortlists. */
+  curating?: boolean
 }
 
 declare module 'claude-code' {

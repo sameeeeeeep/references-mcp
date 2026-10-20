@@ -13,6 +13,8 @@ import type { Board, Card } from '../types'
 const board = atom({ plugin: 'references', key: 'board' } as const, null)
 
 const IS_SUGGEST = /(^|__)references_suggest$/
+const IS_SHORTLIST = /(^|__)references_shortlist$/
+const IS_REFS = /(^|__)references_(suggest|shortlist)$/
 const PANE = 'references-preview'
 const LIME = '#C8F250'
 // Desktop cards are drawn at this width and scaled by the app to a third of the row (three per row).
@@ -35,18 +37,29 @@ export const register: Register = on => {
       sections: [...r.sections, {
         id: 'references-first',
         scope: 'session',
-        text: 'Before you design or write anything with a look or a voice (UI, landing page, app screen, deck, video, motion, animation, social post, ad, written post), call references_suggest with what is being made. The person sees the results as picture cards above their prompt, can narrow them there, and picks one with their next message; a [Reference picked] note then arrives with it. If they name a card in words instead, use that one. If you ask them about style yourself, offer the `facets` the last answer returned as the options (they are real tags with counts), and pass what they choose as `filters` on the next references_suggest call, so the cards really narrow.',
+        text: 'Before you design or write anything with a look or a voice (UI, landing page, app screen, deck, video, motion, animation, social post, ad, written post), get references and CURATE them for this project: (1) call references_suggest with the intent, a short `context` (product, brand colours/type, audience, the look so far) and `pool: 60`; (2) read the pool against what you know about this project and this person (their `taste`, past picks), and call references_shortlist with your best 8 ids, strongest first, each with a one-line `why` for THIS project. Never show an average or generic set. The cards appear above the prompt; the person picks one with their next message (a [Reference picked] note arrives with it), or names one in words. If you ask style questions, offer the `facets` as options and pass picks as `filters`.',
 
       }],
     }
   })
 
   on('tool.call', async ($, e, next) => {
-    if (!IS_SUGGEST.test(e.tool)) return next(e)
+    if (!IS_REFS.test(e.tool)) return next(e)
     const ran = await next(e)
     if (ran.deny !== undefined || ran.isError || !ran.text) return ran
     try {
       const out = JSON.parse(ran.text)
+      const context = String((e as any).context || (await read($, board))?.context || '').slice(0, 300)
+      // A pool is Claude curating: the band says so until references_shortlist brings the cards.
+      if (IS_SUGGEST.test(e.tool) && Array.isArray(out.pool) && !(out.directions || []).length) {
+        const id = String((e as any).tool_use_id || '')
+        settled.set(id, `Looked through ${out.pool.length} of ${out.matching || out.pool.length} references for this project`)
+        await update($, board, () => ({
+          toolUseId: id, intent: String(out.intent || ''), medium: out.medium ?? null, cards: [], thumbs: 0, selected: null,
+          pos: {}, preview: null, page: 0, quiz: null, quizSteps: [], loading: true, curating: true, styled: [], context, ...narrowing(out),
+        }))
+        return ran
+      }
       const cards = toCards(out)
       if (!cards.length) return ran
       const quiz = toQuiz(out.quiz)
@@ -55,7 +68,7 @@ export const register: Register = on => {
         toolUseId: String((e as any).tool_use_id || ''), intent: String(out.intent || ''), medium: out.medium ?? null,
         cards, thumbs: 0, selected: null, pos: {}, preview: null, page: 0,
         quiz: quiz.length ? { step: 0, picks: [] } : null, quizSteps: quiz, loading: false, styled: [],
-        ...narrowing(out),
+        ...narrowing(out), context, curating: false,
       }))
       for (const st of quiz) for (const o of st.options) if (o.image) void pictures($, { id: quizKey(o), source: 'quiz', image: o.image } as Card)
       void media($, cards)
@@ -83,7 +96,7 @@ export const register: Register = on => {
   // In the conversation the suggestion is one quiet line (its raw result would be a wall of JSON); the cards
   // themselves live in the band above the prompt, in view while the person writes.
   on('ui.render', { component: 'ToolResult' }, async ($, e, next) => {
-    if (!IS_SUGGEST.test(String(e.props.tool))) return next(e)
+    if (!IS_REFS.test(String(e.props.tool))) return next(e)
     return (await quietLine($, e, String(e.props.tool_use_id))) ?? next(e)
   })
 
@@ -172,7 +185,7 @@ function cardsView($: any, e: any, ui: any, b: Board, columns: number) {
           <Button key="dismiss" label="Dismiss" role="dismiss" plain onPress={() => update($, board, () => null)} />
         </Box>
       </Box>
-      {b.loading ? <Text dimColor>Finding references…</Text> : null}
+      {b.curating ? <Text dimColor>{`Curating references for this project from ${b.matching || 'the'} award winners…`}</Text> : b.loading ? <Text dimColor>Finding references…</Text> : null}
       {chips($, ui, b)}
       <Box flexDirection="row" flexWrap="nowrap" gap={1}>
         {shown.map((c) => {
@@ -223,7 +236,7 @@ function desktopCard(ui: any, c: Card, n: number, isPicked: boolean, at?: number
     <Box flexDirection="column">
       <ui.Svg source={cardSvg(c, CARD_W, n, isPicked, slides.get(c.id), at, isVideo.has(c.id), 0, true)} alt={c.title} />
       <Text bold wrap="wrap">{name}</Text>
-      <Text dimColor wrap="truncate-end">{[c.source, stat].filter(Boolean).join('  ·  ')}</Text>
+      <Text dimColor wrap="truncate-end">{[c.award ? `${c.source} · ${c.award}` : c.source, stat].filter(Boolean).join('  ·  ')}</Text>
       {c.blurb ? <Text wrap="wrap">{c.blurb.length > 110 ? c.blurb.slice(0, 108).trimEnd() + '…' : c.blurb}</Text> : null}
     </Box>
   )
@@ -234,7 +247,9 @@ function quizView($: any, e: any, ui: any, b: Board, quiz: QuizStep[]) {
   const step = b.quiz!.step
   const s = quiz[step]
   const answer = (o: QuizOption) => async () => {
-    const now = await update($, board, (cur: Board | null) => (cur && cur.quiz ? { ...cur, quiz: { step: cur.quiz.step + 1, picks: [...cur.quiz.picks, o.id] } } : cur))
+    // Only the question on screen takes an answer: a double tap must not also answer the next one.
+    const now = await update($, board, (cur: Board | null) => (cur && cur.quiz && cur.quiz.step === step ? { ...cur, quiz: { step: cur.quiz.step + 1, picks: [...cur.quiz.picks, o.id] } } : cur))
+    if (now?.quiz?.step !== step + 1) return
     if (now?.quiz && now.quiz.step >= quiz.length) void restyle($, now, quiz)
   }
   const skip = () => update($, board, (cur: Board | null) => (cur ? { ...cur, quiz: { step: quiz.length, picks: cur.quiz?.picks || [] } } : cur))
@@ -285,7 +300,7 @@ async function refetch($: any, b: Board, ask: { filters?: string[]; style?: stri
     if (!conn.isConnected) throw new Error(conn.reason)
     const filters = ask.filters ?? b.filters ?? []
     const r = await $.mcp.call(conn.server, 'references_suggest', {
-      intent: b.intent, ...(b.medium ? { medium: b.medium } : {}), filters, count: 12,
+      intent: b.intent, ...(b.medium ? { medium: b.medium } : {}), filters, count: 12, ...(b.context ? { context: b.context } : {}),
       ...(ask.style?.length ? { style: ask.style } : {}), ...(ask.words ? { styleWords: ask.words } : {}),
       ...(ask.exclude?.length ? { exclude: ask.exclude } : {}),
     })
@@ -293,9 +308,9 @@ async function refetch($: any, b: Board, ask: { filters?: string[]; style?: stri
     const out = text ? JSON.parse(text) : null
     const cards = out ? toCards(out) : []
     if (!cards.length) throw new Error('no cards')
-    slides.clear(); isVideo.clear(); tiny.clear(); motion.clear()
+    forgetCards()
     await update($, board, (cur: Board | null) => (cur ? {
-      ...cur, cards, loading: false, selected: null, pos: {}, page: 0, preview: null,
+      ...cur, ...keepPick(cur, cards), loading: false, pos: {}, page: 0, preview: null,
       styled: ask.styled ?? cur.styled, ...narrowing(out),
     } : cur))
     void media($, cards)
@@ -303,6 +318,19 @@ async function refetch($: any, b: Board, ask: { filters?: string[]; style?: stri
     await update($, board, (cur: Board | null) => (cur ? { ...cur, loading: false } : cur))
     $.ui.toast('Couldn’t refresh the references; keeping this set')
   }
+}
+
+// New cards in: the picked one stays (pinned first) so a chip, More or the quiz never drops what they chose.
+function keepPick(cur: Board, cards: Card[]) {
+  const was = cur.selected ? cur.cards.find(c => c.id === cur.selected) : undefined
+  if (!was) return { cards, selected: null }
+  return { cards: [was, ...cards.filter(c => c.id !== was.id)].slice(0, 12), selected: was.id }
+}
+
+// Drop the old cards' pictures, but keep the quiz's example pictures (Restyle shows them again).
+function forgetCards() {
+  for (const k of [...slides.keys()]) if (!k.startsWith('quiz:')) slides.delete(k)
+  isVideo.clear(); tiny.clear(); motion.clear()
 }
 
 // What the answer says about narrowing: the filters in force, what was loosened, how many match, the next choices.
@@ -427,8 +455,9 @@ function toCards(out: any): Card[] {
     videos: Array.isArray(r.videos) ? r.videos.filter((x: unknown) => typeof x === 'string' && SITE_VIDEO.test(x)).slice(0, 1) : undefined,
     // Screenshots of pages read from the top (the hero), not the middle.
     crop: ['landing', 'ui', 'app'].includes(String(r.medium || out.medium)) ? 'top' : undefined,
-    // On a card a live pick shows the site's own words (display only; Claude never gets them as instructions).
-    blurb: r.untrusted ? String(r.sourceText || '') : String(r.take || ''),
+    // Claude's reason this fits the project when it curated; otherwise the site's own words (display only) or the take.
+    blurb: r.why ? `For you: ${String(r.why)}` : r.untrusted ? String(r.sourceText || '') : String(r.take || ''),
+    ...(r.award ? { award: String(r.award).slice(0, 30) } : {}),
   })
   const dirs = (out.directions || []).slice(0, 12).map((r: any) => card(r, r.source === 'mine' ? 'your library' : r.source === 'curated' ? 'canon' : String(r.source || '')))
   const fresh = (out.fresh || []).map((f: any) => {

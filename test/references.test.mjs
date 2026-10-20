@@ -202,3 +202,29 @@ test('filters are hard, facets show what is left, and a too-narrow mix loosens i
     assert.deepEqual(tooNarrow.filters, ['Scrolling']);
   } finally { rmSync(vault, { recursive: true, force: true }); }
 });
+
+test('curate mode: a pool of strong candidates (winners first), a shortlist with reasons, catalog picks work, no repeats', async () => {
+  const vault = mkdtempSync(join(tmpdir(), 'sb-refs-cur-'));
+  try {
+    const items = [
+      ...Array.from({ length: 30 }, (_, i) => ({ id: `aw:h${i}`, title: `HM ${i}`, url: `https://www.awwwards.com/sites/h${i}`, tags: ['Scrolling'], source: 'Awwwards', award: 'Honorable Mention', rank: 100 + i })),
+      ...Array.from({ length: 30 }, (_, i) => ({ id: `aw:s${i}`, title: `SOTD ${i}`, url: `https://www.awwwards.com/sites/s${i}`, tags: ['Scrolling'], source: 'Awwwards', award: 'Site of the Day', rank: i })),
+    ];
+    const fetchImpl = async (u) => (String(u).includes('shelf/index/landing.json')
+      ? { ok: true, status: 200, text: async () => JSON.stringify({ items }), headers: { get: () => null } }
+      : { ok: false, status: 404, text: async () => '', headers: { get: () => null } });
+    const refs = createReferences({ dir: vault, fetchImpl, youtube: async () => [] });
+    const out = await refs.suggest({ intent: 'landing page', medium: 'landing', filters: ['Scrolling'], pool: 20, context: 'mac wallpaper app' });
+    assert.deepEqual(out.directions, undefined, 'no cards until Claude shortlists');
+    assert.equal(out.pool.length, 20);
+    assert.ok(out.pool.slice(0, 10).every((p) => p.award === 'Site of the Day'), 'judged winners lead the pool');
+    assert.match(out.next, /references_shortlist/);
+    const short = await refs.shortlist({ ids: ['aw:s3', 'aw:s1'], why: { 'aw:s3': 'scroll story like the brief' } });
+    assert.deepEqual(short.directions.map((d) => d.id), ['aw:s3', 'aw:s1']);
+    assert.equal(short.directions[0].why, 'scroll story like the brief');
+    assert.deepEqual(short.filters, ['Scrolling'], 'the pool narrowing carries over');
+    assert.equal(refs.pick({ id: 'aw:s3' }).ok, true, 'catalog references can be picked');
+    const again = await refs.suggest({ intent: 'landing page', medium: 'landing', filters: ['Scrolling'], pool: 20 });
+    assert.ok(!again.pool.slice(0, 5).some((p) => p.id === 'aw:s3' || p.id === 'aw:s1'), 'what was shown sinks for a month');
+  } finally { rmSync(vault, { recursive: true, force: true }); }
+});

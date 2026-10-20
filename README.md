@@ -71,13 +71,20 @@ pick is attached to it for Claude. **Preview** opens a side pane with the refere
 goes to the original. Thumbnails and frames are made on your machine (`curl` + `sips` on macOS, `yt-dlp` +
 `ffmpeg` for video frames); without them the cards show text. Desktop app and terminal both draw it.
 
+## Curated for the project
+
+Claude doesn't show the top of a list. It calls `references_suggest` with the project's `context` and `pool: 60`,
+reads the pool against the project and your taste, and calls `references_shortlist` with its best 8, each with a
+one-line why ("For you: …" on the card). What you've been shown sinks for a month, winners rank ahead, and the
+order varies, so two asks never open on the same ten.
+
 ## Narrowing
 
 Every answer carries `facets`: the tags among the matching references, with how many carry each ("Scrolling 190 ·
 Storytelling 70 · Minimal 25"). Pass picks back as `filters` and only references carrying all of them return. The
 style quiz's options map onto these tags, and the band shows them as chips (✕ to drop one, + to add one). Behind
-landing, UI and app sits a catalog the daily job crawls from Awwwards' category pages: about 1,100 judged sites,
-each with its style tags. If a mix leaves too few, the last filter loosens and the answer says which.
+landing, UI and app sits a catalog of judged winners only (Awwwards Sites of the Day and Honorable Mentions,
+about 2,000, each with its style tags), refreshed daily. Nominees never get in. If a mix leaves too few, the last filter loosens and the answer says which.
 
 ## Your library
 

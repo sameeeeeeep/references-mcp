@@ -246,3 +246,49 @@ test('narrowing: a quiz pick is a hard filter, chips add and drop filters, More 
   expect(asked[3].filters).toEqual(['Scrolling'])
   expect(sent.length).toBe(0)
 })
+
+test('curate: a pool shows "Curating…", the shortlist brings the cards with why each fits; a pick survives a chip', async ($, on) => {
+  const sent: string[] = []
+  const pool = { intent: 'landing page', medium: 'landing', pool: [{ id: 'aw:a', title: 'A', source: 'Awwwards' }], directions: [], matching: 387,
+    filters: ['Scrolling'], facets: [{ tag: 'Minimal', count: 40 }] }
+  const short = { intent: 'landing page', medium: 'landing', curated: true, fresh: [], filters: ['Scrolling'], matching: 387, facets: [{ tag: 'Minimal', count: 40 }],
+    directions: [{ id: 'aw:a', title: 'Alpha', source: 'Awwwards', award: 'Site of the Day', why: 'dark hero like your lime-on-black brand', untrusted: true, url: 'https://www.awwwards.com/sites/a', medium: 'landing' },
+      { id: 'aw:b', title: 'Beta', source: 'Awwwards', why: 'pixel type', untrusted: true, url: 'https://www.awwwards.com/sites/b', medium: 'landing' }] }
+  on('tool.call', { tool: 'mcp__references__references_shortlist' } as any, () => ({ result: [], text: JSON.stringify(short) }) as any)
+  on('tool.call', { tool: TOOL } as any, () => ({ result: [], text: JSON.stringify(pool) }) as any)
+  on('mcp.connect' as any, () => ({ value: { isConnected: true, server: 'plugin:references:references' } }) as any)
+  const asked: any[] = []
+  on('mcp.call' as any, (_$: any, e: any) => {
+    asked.push(e.args)
+    const out = { ...short, filters: e.args.filters, directions: [{ id: 'aw:c', title: 'Gamma', source: 'Awwwards', untrusted: true, url: 'https://www.awwwards.com/sites/c', medium: 'landing' }] }
+    return { value: { content: [{ type: 'text', text: JSON.stringify(out) }], isError: false } } as any
+  })
+  world(on, sent)
+  await $.tool.call({ tool: TOOL, intent: 'landing page', pool: 60, context: 'lime + Doto Mac app' } as any)
+  const ui = await $.ui.mount({ plugin: 'references', surface: 'desktop', ...BAND } as any)
+  await until(ui, 'never')
+  expect(await ui.find({ type: 'Text', text: /Curating references for this project from 387/ })).toBeDefined()
+  await $.tool.call({ tool: 'mcp__references__references_shortlist', ids: ['aw:a', 'aw:b'] } as any)
+  await until(ui, 'pick-aw:a')
+  expect(await ui.find({ type: 'Text', text: /For you: dark hero like your lime-on-black brand/ })).toBeDefined()
+  expect(await ui.find({ type: 'Text', text: /Awwwards · Site of the Day/ })).toBeDefined()
+  await ui.press({ key: 'pick-aw:b' })
+  await ui.press({ key: 'facet-Minimal' })
+  await until(ui, 'pick-aw:c')
+  expect(asked[0].context).toBe('lime + Doto Mac app') // refetches stay personal
+  expect(await ui.find({ key: 'pick-aw:b' })).toBeDefined() // the pick stays, pinned first
+  await $.prompt.submit({ text: 'go' })
+  expect(sent.at(-1)).toContain('live pick "aw:b"')
+})
+
+test('a double tap on a quiz answer answers only the question on screen', async ($, on) => {
+  const sent: string[] = []
+  world(on, sent)
+  on('mcp.connect' as any, () => ({ value: { isConnected: false, reason: 'test' } }) as any)
+  await $.tool.call({ tool: TOOL, intent: SUGGEST.intent } as any)
+  const ui = await $.ui.mount({ plugin: 'references', surface: 'desktop', ...BAND } as any)
+  await until(ui, 'quiz-founder')
+  await Promise.all([ui.press({ key: 'quiz-founder' }), ui.press({ key: 'quiz-founder' })])
+  await until(ui, 'quiz-music')
+  expect(await ui.find({ key: 'quiz-music' })).toBeDefined() // still on question 2, not skipped past it
+})

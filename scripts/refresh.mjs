@@ -55,33 +55,32 @@ for (const medium of MEDIA) {
 mkdirSync('shelf', { recursive: true });
 writeFileSync('shelf/daily.json', JSON.stringify(shelf, null, 1) + '\n');
 
-// ── The tagged catalog: Awwwards' category pages (each card carries its style tags) → shelf/index/<medium>.json.
-// Hundreds of judged sites per medium, so a narrowed ask ("scroll storytelling, dark") still has real range.
-const AWWWARDS_CATEGORIES = ['scrolling', 'storytelling', 'parallax', 'minimal', 'typography', '3d', 'animation', 'transitions',
-  'fullscreen', 'horizontal-layout', 'single-page', 'illustration', 'colorful', 'clean', 'retro', 'big-background-images',
-  'e-commerce', 'portfolio', 'startups', 'technology', 'fashion', 'luxury', 'food-drink', 'mobile-apps', 'app-style',
-  'data-visualization', 'graphic-design', 'photography', 'promotional', 'experimental', 'header-design', 'microinteractions',
-  'infinite-scroll', 'interaction-design', 'navigation', 'gallery', 'real-estate', 'music-sound', 'architecture', 'sports'];
+// ── The tagged catalog: only judged winners. Awwwards' Site of the Day and Honorable Mention listings (each card
+// carries its style tags) → shelf/index/<medium>.json. Nominees never get in: references must be the best, not average.
+const AWARDS = [['sites_of_the_day', 'Site of the Day', 40], ['honorable', 'Honorable Mention', 30]];
 const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36';
 const UI_TAGS = new Set(['UI design', 'Interaction Design', 'Microinteractions', 'Navigation', 'Navigation Menu', 'Header Design', 'Footer Design',
   'Forms and Input', 'Forms & Input', 'Data Visualization', 'App Style', 'Gestures / Interaction', 'Menu Horizontal', 'Menu Vertical', 'Icons']);
 const APP_TAGS = new Set(['Mobile Apps', 'App Style']);
 
 const sites = new Map();
-for (const cat of AWWWARDS_CATEGORIES) {
-  for (const page of [1, 2]) {
+for (const [path, award, pages] of AWARDS) {
+  for (let page = 1; page <= pages; page++) {
     try {
-      const res = await fetch(`https://www.awwwards.com/websites/${cat}/${page > 1 ? `?page=${page}` : ''}`, { headers: { 'user-agent': UA }, signal: AbortSignal.timeout(15000) });
+      const res = await fetch(`https://www.awwwards.com/websites/${path}/${page > 1 ? `?page=${page}` : ''}`, { headers: { 'user-agent': UA }, signal: AbortSignal.timeout(15000) });
       if (!res.ok) break;
-      for (const it of parseAwwwardsList(await res.text())) {
+      const found = parseAwwwardsList(await res.text());
+      if (!found.length) break;
+      for (const it of found) {
         const prev = sites.get(it.url);
-        sites.set(it.url, prev ? { ...prev, tags: [...new Set([...prev.tags, ...it.tags])] } : it);
+        // A site that won Site of the Day keeps that, even if it also shows up among Honorable Mentions.
+        sites.set(it.url, prev ? { ...prev, tags: [...new Set([...prev.tags, ...it.tags])] } : { ...it, award, rank: sites.size });
       }
     } catch { break; }
     await new Promise((r) => setTimeout(r, 400)); // be a polite crawler
   }
 }
-const toItem = (x) => ({ id: `aw:${x.url.split('/').pop()}`, title: x.title, url: x.url, image: x.image, tags: x.tags, source: 'Awwwards' });
+const toItem = (x) => ({ id: `aw:${x.url.split('/').pop()}`, title: x.title, url: x.url, image: x.image, tags: x.tags, source: 'Awwwards', award: x.award, rank: x.rank });
 const all = [...sites.values()];
 const index = {
   landing: all,
