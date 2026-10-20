@@ -108,6 +108,7 @@ export const register: Register = on => {
   on('ui.render', { component: 'AbovePrompt' }, async ($, e, next) => {
     const b = await read($, board)
     if (!b || e.props.hasSurvey) return next(e)
+    refill($, b)
     return cardsView($, e, $.ui.resolve(e) as any, b, e.props.bodyColumns)
   })
 }
@@ -274,7 +275,7 @@ function quizView($: any, e: any, ui: any, b: Board, quiz: QuizStep[]) {
           <Box key={o.id} flexDirection="column" width={e.surface === 'desktop' ? '24%' : 26}>
             {e.surface === 'desktop' ? <ui.Svg source={cardSvg({ id: quizKey(o), title: o.label, take: '', blurb: '', source: o.hint } as Card, CARD_W, i + 1, false, slides.get(quizKey(o)), undefined, false, 0, true)} alt={o.label} /> : null}
             <Button key={`quiz-${o.id}`} label={o.label} hotkey={String(i + 1)} variant="secondary" onPress={answer(o)} />
-            <Text dimColor>{`like ${o.hint}`}</Text>
+            {o.hint ? <Text dimColor wrap="truncate-end">{`like ${o.hint}`}</Text> : null}
           </Box>
         ))}
       </Box>
@@ -343,6 +344,17 @@ function narrowing(out: any) {
     filters: list(out?.filters), loosened: list(out?.loosened), matching: Number(out?.matching) || 0,
     facets: (Array.isArray(out?.facets) ? out.facets : []).slice(0, 14)
       .map((f: any) => ({ tag: String(f?.tag || '').slice(0, 40), count: Number(f?.count) || 0 })).filter((f: any) => f.tag),
+  }
+}
+
+// Pictures live in this module, so a reload (an update, a hot reload) forgets them while the cards stay. Fetch
+// whatever is missing again, once per card or quiz option, instead of drawing blank tiles.
+const refetched = new Set<string>()
+function refill($: any, b: Board) {
+  for (const c of b.cards) if (!slides.has(c.id) && !refetched.has(c.id)) { refetched.add(c.id); void pictures($, c) }
+  for (const st of b.quizSteps || []) for (const o of st.options) {
+    const id = `quiz:${o.id}`
+    if (o.image && !slides.has(id) && !refetched.has(id)) { refetched.add(id); void pictures($, { id, source: 'quiz', image: o.image } as Card) }
   }
 }
 

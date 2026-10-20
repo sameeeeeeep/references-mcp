@@ -451,30 +451,42 @@ export async function loadIndex(medium, { cacheDir, fetchImpl = fetch, now = Dat
 // Two searches built from the project itself: the brief's own words and the project context, each with the
 // medium's noun ("luxury perfume commercial", "kids learning app launch film"). Proven work only: a views
 // floor, a length cap, no duplicates. Each search is cached a day.
+const ALT = { video: 'commercial', ad: 'campaign', motion: 'animation', animation: 'short film', social: 'campaign' };
 const NOUN = { video: 'launch film', ad: 'commercial ad', motion: 'motion design reel', animation: 'animated short film', social: 'brand shorts' };
 // Not references: how-tos, recaps, reactions, quizzes, songs, movie trailers, recipes, vlogs, reviews, lists.
-const NOT_CRAFT = /\b(how to|tutorial|course|explained|recap|reaction|reacts?|quiz|guess the|lyrics?|song|music video|official audio|official video|full movie|movie|netflix|hbo|recipe|vlog|podcast|interview|review|unboxing|walkthrough|beginner|in \d+ minutes|lesson|class \d|learn to|kids songs|nursery|asmr|live ?stream|compilation|top \d+|\d+ best|best \d+|vs\.?|episode|ep\.? ?\d|news|highlights|gameplay|let'?s play|tips|hack|guide)\b/i;
+const NOT_CRAFT = /\b(\d+ (?:settings|things|tips|tricks|ways|mistakes)|you need to|rocket|spacex|starship|falcon 9|ship launch|fails|close calls|live:|who does it better|with claude|unlocked|hindi|telugu|tamil|malayalam|kannada|punjabi|marathi|bollywood|tollywood|how i|here'?s how|how to|tutorial|course|explained|recap|reaction|reacts?|quiz|guess the|lyrics?|song|music video|official audio|official video|full movie|movie|netflix|hbo|recipe|vlog|podcast|interview|review|unboxing|walkthrough|beginner|in \d+ minutes|lesson|class \d|learn to|kids songs|nursery|asmr|live ?stream|compilation|top \d+|\d+ best|best \d+|vs\.?|episode|ep\.? ?\d|news|highlights|gameplay|let'?s play|tips|hack|guide)\b/i;
 // Made work: films, campaigns, ads, launches, teasers, reels.
-const MADE_WORK = /\b(film|campaign|commercial|\bad\b|spec ad|tvc|launch|introducing|teaser|showreel|reel|spot|brand video|promo|keynote|motion|animation|animated|short film|manifesto)\b/i;
+const MADE_WORK = /\b(explainer|product video|demo video|introduces|presents|official launch|design film|brand film|film|campaign|commercial|\bad\b|spec ad|tvc|launch|introducing|teaser|showreel|reel|spot|brand video|promo|keynote|motion|animation|animated|short film|manifesto)\b/i;
 const MAX_LEN = { video: 600, ad: 240, motion: 600, animation: 1200, social: 120 };
 const FILLER = new Set('a an the and or for of to in on with my our me we i it this that make build design create new some want need like page site website app video film launch ad ads commercial reel short shorts motion animation animated social post landing brand product macos ios android'.split(' '));
 const keyWords = (text, n) => [...new Set(String(text).toLowerCase().split(/[^a-z0-9]+/).filter((w) => w.length > 2 && !FILLER.has(w)))].slice(0, n);
 
 export async function projectPool(intent, medium, context = '', { cacheDir, run = ytdlp, minViews = 20000 } = {}) {
+  // Movie and game trailers only when the brief is about one.
+  const trailers = /\b(game|trailer|teaser|movie|film festival)\b/i.test(`${intent} ${context}`);
   if (!NOUN[medium]) return [];
   const brief = keyWords(intent, 3), about = keyWords(context, 3);
+  // What kind of thing it is, from plain words: "Mac app launch film" finds Mac app launches even for an unknown name.
+  const text = `${intent} ${context}`.toLowerCase();
+  const kind = [['mac app', /\b(mac|macos)\b/], ['ios app', /\b(ios|iphone)\b/], ['app', /\bapp\b/], ['saas', /\bsaas\b/], ['startup', /\bstartup\b/],
+    ['game', /\bgame\b/], ['fragrance', /\b(perfume|fragrance)\b/], ['fashion', /\bfashion\b/], ['brand', /\bbrand\b/]].find(([, r]) => r.test(text))?.[0] || 'product';
   const queries = [...new Set([
     brief.length ? `${brief.join(' ')} ${NOUN[medium]}` : '',
+    brief.length ? `${brief.join(' ')} ${ALT[medium]}` : '',
     about.length ? `${about.join(' ')} ${NOUN[medium]}` : '',
+    `${kind} ${NOUN[medium]}`,
   ].filter(Boolean))];
-  if (!queries.length) queries.push(NOUN[medium]);
   const seen = new Set(), out = [];
   for (const q of queries) {
+    if (out.length >= 24) break;
     const items = await cachedYt(q, { cacheDir, run });
     for (const it of items) {
       if (seen.has(it.url) || it.views < minViews || !it.duration || it.duration > MAX_LEN[medium] || NOT_CRAFT.test(it.title)) continue;
+      if (!trailers && /\btrailer\b/i.test(it.title)) continue;
+      // Made work only (a film, campaign, commercial, launch, showreel…): popularity alone never gets a video in.
+      if (!MADE_WORK.test(it.title)) continue;
       seen.add(it.url);
-      out.push({ ...it, query: q, craft: MADE_WORK.test(it.title) });
+      out.push({ ...it, query: q, craft: true });
     }
   }
   return out.sort((a, b) => b.views - a.views).slice(0, 30);
@@ -482,13 +494,15 @@ export async function projectPool(intent, medium, context = '', { cacheDir, run 
 
 async function cachedYt(query, { cacheDir, run, now = Date.now() }) {
   const file = cacheDir && join(cacheDir, 'references-cache.json');
-  const key = `ytp:${query.toLowerCase()}`;
+  const key = `ytp2:${query.toLowerCase()}`;
   let cache = {};
   try { if (file && existsSync(file)) cache = JSON.parse(readFileSync(file, 'utf8')); } catch { cache = {}; }
   if (cache[key] && now - cache[key].at < YT_TTL) return cache[key].items;
   let items = [];
   try {
-    items = parseYtLines(await run(['--flat-playlist', '--no-warnings', '--print', '%(view_count)s\t%(duration)s\t%(id)s\t%(title)s', `ytsearch25:${query}`]));
+    // The global market in English (gl=US): local results skew to whatever is big in the viewer's own country.
+    const url = `https://www.youtube.com/results?search_query=${encodeURIComponent(query)}&gl=US&hl=en`;
+    items = parseYtLines(await run(['--flat-playlist', '--no-warnings', '--playlist-end', '30', '--print', '%(view_count)s\t%(duration)s\t%(id)s\t%(title)s', url]));
   } catch { return cache[key]?.items || []; }
   if (file) { try { const fresh = existsSync(file) ? JSON.parse(readFileSync(file, 'utf8')) : {}; fresh[key] = { at: now, items }; mkdirSync(cacheDir, { recursive: true }); writeFileSync(file, JSON.stringify(fresh)); } catch {} }
   return items;

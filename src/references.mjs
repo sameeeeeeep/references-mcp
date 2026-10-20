@@ -196,17 +196,16 @@ export function createReferences({ dir, libraries = [], fetchImpl, youtube = sea
   // like the person's options, not the same famous sites every time); the fixed example is only a fallback.
   async function quizFor(medium, candidates = []) {
     const used = new Set();
-    const matches = (o, r) => (o.filters || []).some((f) => hasTag(r, f)) || (o.words && tokens(r.title).some((w) => tokens(o.words).includes(w)));
     // The best match for the option among this project's references; else the next unused one, never the stock example.
-    const exampleFor = (o) => candidates.find((r) => !used.has(r.id) && r.image && matches(o, r))
+    const exampleFor = (o) => candidates.find((r) => !used.has(r.id) && r.image && (o.filters || []).some((f) => hasTag(r, f)))
       || candidates.find((r) => !used.has(r.id) && r.image);
     return Promise.all(QUIZZES[medium].map(async (st) => ({
       q: st.q,
       options: await Promise.all(st.options.map(async ({ from, ...o }) => {
         const ex = exampleFor(o);
         if (ex) { used.add(ex.id); return { ...o, hint: clean(String(ex.title).split(' · ')[0], 40), image: ex.image }; }
-        const image = liveOn ? (await pageImages(from, { cacheDir, fetchImpl }))[0] : undefined;
-        return { ...o, ...(image ? { image } : {}) };
+        // Nothing of the project's left to show it: the option stands on its label alone (no stock brand).
+        return { ...o, hint: '' };
       })),
     })));
   }
