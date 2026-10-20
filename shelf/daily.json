@@ -1,7 +1,31 @@
 {
- "updated": "2026-10-19T21:50:23.159Z",
+ "updated": "2026-10-20T08:38:45.175Z",
  "media": {
   "ui": [
+   {
+    "title": "Cartier - Le Chœur des Pierres",
+    "url": "https://www.awwwards.com/sites/cartier-le-choeur-des-pierres",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6a9860ad909a8461187548.png",
+    "note": "An immersive journey into Cartier High Jewellery, where gemstones reveal the inspiration, craftsmanship and guachés behind each exceptional creation.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "Stella",
+    "url": "https://www.producthunt.com/products/stella-5",
+    "note": "Your emotional wellness AI. A friend to figure it out with.",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "MadsLorentzen/ai-job-search",
+    "url": "https://github.com/MadsLorentzen/ai-job-search",
+    "image": "https://opengraph.githubassets.com/1/MadsLorentzen/ai-job-search",
+    "by": "★ 3,856 today",
+    "note": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
    {
     "title": "FORMAT",
     "url": "https://www.awwwards.com/sites/format",
@@ -11,18 +35,18 @@
     "kind": "award"
    },
    {
-    "title": "Lookout (for Slack)",
-    "url": "https://www.producthunt.com/products/lookout-for-slack",
-    "note": "Urgent Slack messages, handled instantly. Powered by Jev.",
+    "title": "Exa 3.0",
+    "url": "https://www.producthunt.com/products/exa-ai",
+    "note": "Smarter search that gives AI agent richer data at lower cost",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "MadsLorentzen/ai-job-search",
-    "url": "https://github.com/MadsLorentzen/ai-job-search",
-    "image": "https://opengraph.githubassets.com/1/MadsLorentzen/ai-job-search",
-    "by": "★ 3,860 today",
-    "note": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
+    "title": "anomalyco/opencode",
+    "url": "https://github.com/anomalyco/opencode",
+    "image": "https://opengraph.githubassets.com/1/anomalyco/opencode",
+    "by": "★ 1,311 today",
+    "note": "The open source coding agent.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
@@ -35,33 +59,9 @@
     "kind": "award"
    },
    {
-    "title": "Switch Lab",
-    "url": "https://www.producthunt.com/products/switch-lab",
-    "note": "Hear and type on keyboard switches before you buy them",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "anomalyco/opencode",
-    "url": "https://github.com/anomalyco/opencode",
-    "image": "https://opengraph.githubassets.com/1/anomalyco/opencode",
-    "by": "★ 1,310 today",
-    "note": "The open source coding agent.",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Belgrade Arbor",
-    "url": "https://www.awwwards.com/sites/belgrade-arbor",
-    "image": "https://www.awwwards.com/awards/submissions/2026/08/6a71de2018b90440463756.png",
-    "note": "An immersive architectural experience blending cinematic storytelling, motion, and 3D design to transform a contemporary residential project into a memorable digital journey.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
-   },
-   {
-    "title": "Wally by Willow",
-    "url": "https://www.producthunt.com/products/willow-voice",
-    "note": "Your Scribe agent that learns how you write",
+    "title": "Intel® GPU D-series",
+    "url": "https://www.producthunt.com/products/intel",
+    "note": "Memory-rich AI inference without HBM",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -75,17 +75,17 @@
     "kind": "trending"
    },
    {
-    "title": "OFFFForum",
-    "url": "https://www.awwwards.com/sites/offfforum",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6a96ee63ba3f3137560669.jpg",
-    "note": "A one-week festival convening designers, artists, and digital culture practitioners. Where talent sparks innovation.",
+    "title": "Belgrade Arbor",
+    "url": "https://www.awwwards.com/sites/belgrade-arbor",
+    "image": "https://www.awwwards.com/awards/submissions/2026/08/6a71de2018b90440463756.png",
+    "note": "An immersive architectural experience blending cinematic storytelling, motion, and 3D design to transform a contemporary residential project into a memorable digital journey.",
     "source": "Awwwards · Sites of the Day",
     "kind": "award"
    },
    {
-    "title": "walkai-talkai",
-    "url": "https://www.producthunt.com/products/walkai-talkai",
-    "note": "Talk to your AI coding agent over a walkie-talkie",
+    "title": "yggy",
+    "url": "https://www.producthunt.com/products/yggy",
+    "note": "The AI knowledge graph that builds itself",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -101,10 +101,10 @@
   ],
   "landing": [
    {
-    "title": "FORMAT",
-    "url": "https://www.awwwards.com/sites/format",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6a9965c9beb49063820691.jpg",
-    "note": "FORMAT is an interactive Obys × DES Special Project exploring format as a design tool. Discover how different shapes, proportions, and boundaries can change the way we design.",
+    "title": "Cartier - Le Chœur des Pierres",
+    "url": "https://www.awwwards.com/sites/cartier-le-choeur-des-pierres",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6a9860ad909a8461187548.png",
+    "note": "An immersive journey into Cartier High Jewellery, where gemstones reveal the inspiration, craftsmanship and guachés behind each exceptional creation.",
     "source": "Awwwards · Sites of the Day",
     "kind": "award"
    },
@@ -117,17 +117,17 @@
     "kind": "gallery"
    },
    {
-    "title": "Lookout (for Slack)",
-    "url": "https://www.producthunt.com/products/lookout-for-slack",
-    "note": "Urgent Slack messages, handled instantly. Powered by Jev.",
+    "title": "Stella",
+    "url": "https://www.producthunt.com/products/stella-5",
+    "note": "Your emotional wellness AI. A friend to figure it out with.",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "Signal-A Studio",
-    "url": "https://www.awwwards.com/sites/signal-a-studio",
-    "image": "https://www.awwwards.com/awards/submissions/2026/01/69761964571b9601514717.jpg",
-    "note": "Signal-A is an award-winning interface & experience design studio building meticulously crafted digital experiences.",
+    "title": "FORMAT",
+    "url": "https://www.awwwards.com/sites/format",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6a9965c9beb49063820691.jpg",
+    "note": "FORMAT is an interactive Obys × DES Special Project exploring format as a design tool. Discover how different shapes, proportions, and boundaries can change the way we design.",
     "source": "Awwwards · Sites of the Day",
     "kind": "award"
    },
@@ -140,17 +140,17 @@
     "kind": "gallery"
    },
    {
-    "title": "Switch Lab",
-    "url": "https://www.producthunt.com/products/switch-lab",
-    "note": "Hear and type on keyboard switches before you buy them",
+    "title": "Exa 3.0",
+    "url": "https://www.producthunt.com/products/exa-ai",
+    "note": "Smarter search that gives AI agent richer data at lower cost",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "Belgrade Arbor",
-    "url": "https://www.awwwards.com/sites/belgrade-arbor",
-    "image": "https://www.awwwards.com/awards/submissions/2026/08/6a71de2018b90440463756.png",
-    "note": "An immersive architectural experience blending cinematic storytelling, motion, and 3D design to transform a contemporary residential project into a memorable digital journey.",
+    "title": "Signal-A Studio",
+    "url": "https://www.awwwards.com/sites/signal-a-studio",
+    "image": "https://www.awwwards.com/awards/submissions/2026/01/69761964571b9601514717.jpg",
+    "note": "Signal-A is an award-winning interface & experience design studio building meticulously crafted digital experiences.",
     "source": "Awwwards · Sites of the Day",
     "kind": "award"
    },
@@ -163,17 +163,17 @@
     "kind": "gallery"
    },
    {
-    "title": "Wally by Willow",
-    "url": "https://www.producthunt.com/products/willow-voice",
-    "note": "Your Scribe agent that learns how you write",
+    "title": "Intel® GPU D-series",
+    "url": "https://www.producthunt.com/products/intel",
+    "note": "Memory-rich AI inference without HBM",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "OFFFForum",
-    "url": "https://www.awwwards.com/sites/offfforum",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6a96ee63ba3f3137560669.jpg",
-    "note": "A one-week festival convening designers, artists, and digital culture practitioners. Where talent sparks innovation.",
+    "title": "Belgrade Arbor",
+    "url": "https://www.awwwards.com/sites/belgrade-arbor",
+    "image": "https://www.awwwards.com/awards/submissions/2026/08/6a71de2018b90440463756.png",
+    "note": "An immersive architectural experience blending cinematic storytelling, motion, and 3D design to transform a contemporary residential project into a memorable digital journey.",
     "source": "Awwwards · Sites of the Day",
     "kind": "award"
    },
@@ -186,18 +186,18 @@
     "kind": "gallery"
    },
    {
-    "title": "walkai-talkai",
-    "url": "https://www.producthunt.com/products/walkai-talkai",
-    "note": "Talk to your AI coding agent over a walkie-talkie",
+    "title": "yggy",
+    "url": "https://www.producthunt.com/products/yggy",
+    "note": "The AI knowledge graph that builds itself",
     "source": "Product Hunt · Today",
     "kind": "trending"
    }
   ],
   "app": [
    {
-    "title": "Lookout (for Slack)",
-    "url": "https://www.producthunt.com/products/lookout-for-slack",
-    "note": "Urgent Slack messages, handled instantly. Powered by Jev.",
+    "title": "Stella",
+    "url": "https://www.producthunt.com/products/stella-5",
+    "note": "Your emotional wellness AI. A friend to figure it out with.",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -205,15 +205,15 @@
     "title": "MadsLorentzen/ai-job-search",
     "url": "https://github.com/MadsLorentzen/ai-job-search",
     "image": "https://opengraph.githubassets.com/1/MadsLorentzen/ai-job-search",
-    "by": "★ 3,860 today",
+    "by": "★ 3,856 today",
     "note": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Switch Lab",
-    "url": "https://www.producthunt.com/products/switch-lab",
-    "note": "Hear and type on keyboard switches before you buy them",
+    "title": "Exa 3.0",
+    "url": "https://www.producthunt.com/products/exa-ai",
+    "note": "Smarter search that gives AI agent richer data at lower cost",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -221,15 +221,15 @@
     "title": "anomalyco/opencode",
     "url": "https://github.com/anomalyco/opencode",
     "image": "https://opengraph.githubassets.com/1/anomalyco/opencode",
-    "by": "★ 1,310 today",
+    "by": "★ 1,311 today",
     "note": "The open source coding agent.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Wally by Willow",
-    "url": "https://www.producthunt.com/products/willow-voice",
-    "note": "Your Scribe agent that learns how you write",
+    "title": "Intel® GPU D-series",
+    "url": "https://www.producthunt.com/products/intel",
+    "note": "Memory-rich AI inference without HBM",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -243,9 +243,9 @@
     "kind": "trending"
    },
    {
-    "title": "walkai-talkai",
-    "url": "https://www.producthunt.com/products/walkai-talkai",
-    "note": "Talk to your AI coding agent over a walkie-talkie",
+    "title": "yggy",
+    "url": "https://www.producthunt.com/products/yggy",
+    "note": "The AI knowledge graph that builds itself",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -259,9 +259,9 @@
     "kind": "trending"
    },
    {
-    "title": "Own 1",
-    "url": "https://www.producthunt.com/products/own-1-a-powerful-personal-ai-computer",
-    "note": "Own your data. Own your AI. A mind of your own.",
+    "title": "Kling 4.0",
+    "url": "https://www.producthunt.com/products/kling-4-0-4",
+    "note": "Fast and affordable AI video for high-frequency creators",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -275,9 +275,9 @@
     "kind": "trending"
    },
    {
-    "title": "Starkomand",
-    "url": "https://www.producthunt.com/products/starkomand",
-    "note": "Run your AI coding agents on an infinite canvas.",
+    "title": "reception",
+    "url": "https://www.producthunt.com/products/reception",
+    "note": "Native iOS support chat for less churn",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -285,7 +285,7 @@
     "title": "stablyai/orca",
     "url": "https://github.com/stablyai/orca",
     "image": "https://opengraph.githubassets.com/1/stablyai/orca",
-    "by": "★ 1,591 today",
+    "by": "★ 1,590 today",
     "note": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
     "source": "GitHub Trending",
     "kind": "trending"
@@ -310,9 +310,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Not To Scale Welcomes Jovardi for US Representation",
-    "url": "https://www.stashmedia.tv/not-to-scale-welcomes-jovardi-for-us-representation/",
-    "note": "From the release: Not To Scale has signed visionary director Jovardi for US representation, adding a distinctly digital, genre-fluid voice to its roster. [Watch]\nThe post Not To Scale Welcomes Jovardi",
+    "title": "Abstract Clarity: Illo Illuminates Everpure x Bloomberg TV",
+    "url": "https://www.stashmedia.tv/abstract-clarity-illo-illuminates-everpure-x-bloomberg-tv/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Everpure-x-Bloomberg-TV-brand-films-by-Illo-STASH-MAGAZINE3-1920x1080.jpg",
+    "note": "The latest explainer project from CDs Ilenia Notarangelo, Arianna Cristiano, and their design crew at Illo, is a series of films built on purposeful abstraction for Bloomberg TV and data platform comp",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -333,10 +334,9 @@
     "kind": "gallery"
    },
    {
-    "title": "Frame Explores Our Planet for Ege Carpets x Gensler",
-    "url": "https://www.stashmedia.tv/frame-explores-our-planet-for-ege-carpets-x-gensler/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/EGE-Carpets-brand-film-by-Frame-STASH-MAGAZINE7-1920x1080.jpg",
-    "note": "Join FRAME co-founder Anders Schroder for a detailed look at the studio's approach to using AI in the production of this beautiful film for a new carpet collection from US architecture giant Gensler a",
+    "title": "Not To Scale Welcomes Jovardi for US Representation",
+    "url": "https://www.stashmedia.tv/not-to-scale-welcomes-jovardi-for-us-representation/",
+    "note": "From the release: Not To Scale has signed visionary director Jovardi for US representation, adding a distinctly digital, genre-fluid voice to its roster. [Watch]\nThe post Not To Scale Welcomes Jovardi",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -357,10 +357,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Cypher Releases Sonic Studies #1: Textiles & Fashion",
-    "url": "https://www.stashmedia.tv/cypher-releases-sonic-studies-1-textiles-fashion/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Cypher-Releases-Sonic-Studies-1-Textiles-Fashion-STASH-MAGAZINE8-1437x1080.jpg",
-    "note": "Music and sound design studios usually find themselves tucked into the tail end of a project's schedule, but the crew at Cypher have flipped that script with the first in a new series of Sonic Studies",
+    "title": "Frame Explores Our Planet for Ege Carpets x Gensler",
+    "url": "https://www.stashmedia.tv/frame-explores-our-planet-for-ege-carpets-x-gensler/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/EGE-Carpets-brand-film-by-Frame-STASH-MAGAZINE7-1920x1080.jpg",
+    "note": "Join FRAME co-founder Anders Schroder for a detailed look at the studio's approach to using AI in the production of this beautiful film for a new carpet collection from US architecture giant Gensler a",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -368,7 +368,7 @@
     "title": "The new HomePod mini 2: Rich, room-filling sound in a compact design.",
     "url": "https://www.youtube.com/watch?v=xLL4UnrLNWs",
     "image": "https://i.ytimg.com/vi/xLL4UnrLNWs/hqdefault.jpg",
-    "by": "923K views",
+    "by": "927K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -381,15 +381,39 @@
     "kind": "gallery"
    },
    {
-    "title": "We Love Pitching: Chronicles of a Necessary Mess – Part 21",
-    "url": "https://www.stashmedia.tv/we-love-pitching-chronicles-of-a-necessary-mess-part-21/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/We-Love-Pitching-Part-21-Guest-editorial-by-Claus-Cibilis-_-STASH-MAGAZINE-1424x1080.jpg",
-    "note": "Winning and losing are the hard realities at the center of the creative pitching process, but as Nerdo ECD Claus Cibils points out, there are shades of both and lessons to be learned from all of them.",
+    "title": "Cypher Releases Sonic Studies #1: Textiles & Fashion",
+    "url": "https://www.stashmedia.tv/cypher-releases-sonic-studies-1-textiles-fashion/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Cypher-Releases-Sonic-Studies-1-Textiles-Fashion-STASH-MAGAZINE8-1437x1080.jpg",
+    "note": "Music and sound design studios usually find themselves tucked into the tail end of a project's schedule, but the crew at Cypher have flipped that script with the first in a new series of Sonic Studies",
     "source": "STASH",
     "kind": "gallery"
    }
   ],
   "motion": [
+   {
+    "title": "ROVE Launches a New Identity and Website, Signs Ashley McKim Consulting",
+    "url": "https://motionographer.com/news/rove-new-brand-identity-website-ashley-mckim/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/10/CleanShot-2026-10-19-at-6.53.01-PM%402x-scaled.png",
+    "note": "The Portland-rooted studio unveils a motion-led identity and website, with creative contributions from Irene Feleo, Connor Linde and STOKT, and new representation by Ashley McKim Consulting.",
+    "source": "Motionographer",
+    "kind": "gallery"
+   },
+   {
+    "title": "Abstract Clarity: Illo Illuminates Everpure x Bloomberg TV",
+    "url": "https://www.stashmedia.tv/abstract-clarity-illo-illuminates-everpure-x-bloomberg-tv/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Everpure-x-Bloomberg-TV-brand-films-by-Illo-STASH-MAGAZINE3-1920x1080.jpg",
+    "note": "The latest explainer project from CDs Ilenia Notarangelo, Arianna Cristiano, and their design crew at Illo, is a series of films built on purposeful abstraction for Bloomberg TV and data platform comp",
+    "source": "STASH",
+    "kind": "gallery"
+   },
+   {
+    "title": "Envisioning Chemistry: Flowers & Colors",
+    "url": "https://vimeo.com/channels/motiongraphics/261819172",
+    "image": "https://i.vimeocdn.com/video/690929383-5cb1fb3a3c6baa3e358f8604ada1936cdd9dc21375b56a6c157db804f031505f-d_960?region=us",
+    "note": "Most red, blue, or purple flowers contain pigments called anthocyanins, whose colors are sensitive to pH (the acidity or basicity of an aqueous solution). As a result,&hellip;",
+    "source": "Vimeo · Motion Graphics",
+    "kind": "gallery"
+   },
    {
     "title": "The Continuous Thread | Tomakti Studio",
     "url": "https://motionographer.com/quickie/the-continuous-thread-tomakti-studio/",
@@ -406,10 +430,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Envisioning Chemistry: Flowers & Colors",
-    "url": "https://vimeo.com/channels/motiongraphics/261819172",
-    "image": "https://i.vimeocdn.com/video/690929383-5cb1fb3a3c6baa3e358f8604ada1936cdd9dc21375b56a6c157db804f031505f-d_960?region=us",
-    "note": "Most red, blue, or purple flowers contain pigments called anthocyanins, whose colors are sensitive to pH (the acidity or basicity of an aqueous solution). As a result,&hellip;",
+    "title": "Nubes",
+    "url": "https://vimeo.com/channels/motiongraphics/539443669",
+    "image": "https://i.vimeocdn.com/video/1116843177-ac8dbde0d30fe9d4cc03c21be3f6701429124c366872552cd19b4b348eada71f-d_960?region=us",
+    "note": "2020                                                                                                                                    Custom software in Real-time:&hellip;",
     "source": "Vimeo · Motion Graphics",
     "kind": "gallery"
    },
@@ -430,10 +454,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Nubes",
-    "url": "https://vimeo.com/channels/motiongraphics/539443669",
-    "image": "https://i.vimeocdn.com/video/1116843177-ac8dbde0d30fe9d4cc03c21be3f6701429124c366872552cd19b4b348eada71f-d_960?region=us",
-    "note": "2020                                                                                                                                    Custom software in Real-time:&hellip;",
+    "title": "„SAY_SUPERSTRINGS“ / A Real-Time Generative Installation Performance Of Electrical Activity In The Musician’s Brain!",
+    "url": "https://vimeo.com/channels/motiongraphics/298695684",
+    "image": "https://i.vimeocdn.com/video/736658402-2913e277735c5780d047fc84e9d533f71e0bceb9f38084e11b8ba3d79ec60a44-d_960?region=us",
+    "note": "&bdquo;SAY_SUPERSTRINGS&ldquo; A Real-Time Generative Installation Performance Of Electrical Activity In The Musician&rsquo;s Brain!  dastrio x Ouchhh x Ars Electronica  CREDIT: Direction_Design_Anima",
     "source": "Vimeo · Motion Graphics",
     "kind": "gallery"
    },
@@ -450,29 +474,6 @@
     "url": "https://www.stashmedia.tv/cypher-releases-sonic-studies-1-textiles-fashion/",
     "image": "http://www.stashmedia.tv/wp-content/uploads/Cypher-Releases-Sonic-Studies-1-Textiles-Fashion-STASH-MAGAZINE8-1437x1080.jpg",
     "note": "Music and sound design studios usually find themselves tucked into the tail end of a project's schedule, but the crew at Cypher have flipped that script with the first in a new series of Sonic Studies",
-    "source": "STASH",
-    "kind": "gallery"
-   },
-   {
-    "title": "„SAY_SUPERSTRINGS“ / A Real-Time Generative Installation Performance Of Electrical Activity In The Musician’s Brain!",
-    "url": "https://vimeo.com/channels/motiongraphics/298695684",
-    "image": "https://i.vimeocdn.com/video/736658402-2913e277735c5780d047fc84e9d533f71e0bceb9f38084e11b8ba3d79ec60a44-d_960?region=us",
-    "note": "&bdquo;SAY_SUPERSTRINGS&ldquo; A Real-Time Generative Installation Performance Of Electrical Activity In The Musician&rsquo;s Brain!  dastrio x Ouchhh x Ars Electronica  CREDIT: Direction_Design_Anima",
-    "source": "Vimeo · Motion Graphics",
-    "kind": "gallery"
-   },
-   {
-    "title": "Creative Must Win: The Belief Behind RevThink’s Tim Thompson",
-    "url": "https://motionographer.com/2026/10/13/creative-must-win-the-belief-behind-revthinks-tim-thompson/",
-    "note": "Tim Thompson wanted to be a movie star. He made it to Hollywood, then spent nearly twenty years helping creative people build businesses, find their footing, and give themselves permission to change.",
-    "source": "Motionographer",
-    "kind": "gallery"
-   },
-   {
-    "title": "We Love Pitching: Chronicles of a Necessary Mess – Part 21",
-    "url": "https://www.stashmedia.tv/we-love-pitching-chronicles-of-a-necessary-mess-part-21/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/We-Love-Pitching-Part-21-Guest-editorial-by-Claus-Cibilis-_-STASH-MAGAZINE-1424x1080.jpg",
-    "note": "Winning and losing are the hard realities at the center of the creative pitching process, but as Nerdo ECD Claus Cibils points out, there are shades of both and lessons to be learned from all of them.",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -503,17 +504,18 @@
     "kind": "gallery"
    },
    {
-    "title": "The Continuous Thread | Tomakti Studio",
-    "url": "https://motionographer.com/quickie/the-continuous-thread-tomakti-studio/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/10/The-Continuous-Thread-Tomakti-cosmos.png",
-    "note": "Dimitrios Sakkas and Tomakti Studio journey from the Big Bang to a quiet mountain peak in The Continuous Thread, with music by Blakk Harbor and sound design by Sotiris Laskaris.",
+    "title": "ROVE Launches a New Identity and Website, Signs Ashley McKim Consulting",
+    "url": "https://motionographer.com/news/rove-new-brand-identity-website-ashley-mckim/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/10/CleanShot-2026-10-19-at-6.53.01-PM%402x-scaled.png",
+    "note": "The Portland-rooted studio unveils a motion-led identity and website, with creative contributions from Irene Feleo, Connor Linde and STOKT, and new representation by Ashley McKim Consulting.",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "Not To Scale Welcomes Jovardi for US Representation",
-    "url": "https://www.stashmedia.tv/not-to-scale-welcomes-jovardi-for-us-representation/",
-    "note": "From the release: Not To Scale has signed visionary director Jovardi for US representation, adding a distinctly digital, genre-fluid voice to its roster. [Watch]\nThe post Not To Scale Welcomes Jovardi",
+    "title": "Abstract Clarity: Illo Illuminates Everpure x Bloomberg TV",
+    "url": "https://www.stashmedia.tv/abstract-clarity-illo-illuminates-everpure-x-bloomberg-tv/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Everpure-x-Bloomberg-TV-brand-films-by-Illo-STASH-MAGAZINE3-1920x1080.jpg",
+    "note": "The latest explainer project from CDs Ilenia Notarangelo, Arianna Cristiano, and their design crew at Illo, is a series of films built on purposeful abstraction for Bloomberg TV and data platform comp",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -534,6 +536,37 @@
     "kind": "gallery"
    },
    {
+    "title": "The Continuous Thread | Tomakti Studio",
+    "url": "https://motionographer.com/quickie/the-continuous-thread-tomakti-studio/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/10/The-Continuous-Thread-Tomakti-cosmos.png",
+    "note": "Dimitrios Sakkas and Tomakti Studio journey from the Big Bang to a quiet mountain peak in The Continuous Thread, with music by Blakk Harbor and sound design by Sotiris Laskaris.",
+    "source": "Motionographer",
+    "kind": "gallery"
+   },
+   {
+    "title": "Not To Scale Welcomes Jovardi for US Representation",
+    "url": "https://www.stashmedia.tv/not-to-scale-welcomes-jovardi-for-us-representation/",
+    "note": "From the release: Not To Scale has signed visionary director Jovardi for US representation, adding a distinctly digital, genre-fluid voice to its roster. [Watch]\nThe post Not To Scale Welcomes Jovardi",
+    "source": "STASH",
+    "kind": "gallery"
+   },
+   {
+    "title": "We Finally Know More About Humanity’s First Civilization",
+    "url": "https://www.youtube.com/watch?v=_y9JuojAIg0",
+    "image": "https://i.ytimg.com/vi/_y9JuojAIg0/hqdefault.jpg",
+    "by": "10M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "The Rockjob",
+    "url": "https://vimeo.com/channels/staffpicks/1236047508",
+    "image": "https://i.vimeocdn.com/video/2212555408-331a19bd99df8d1f03a0345d187b1a9d4147b46866898c9f007125eb7c290f4d-d_960?region=us",
+    "note": "A Cain and Abel tale of two warring brothers and the heinous misappropriation of Missing Pet posters.  &mdash;  An Aussie short film starring Harry Granger, Jack&hellip;",
+    "source": "Vimeo Staff Picks",
+    "kind": "gallery"
+   },
+   {
     "title": "Hypersail | FutureDeluxe",
     "url": "https://motionographer.com/quickie/hypersail-futuredeluxe/",
     "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/10/Hypersail-FutureDeluxe-cover-scaled.jpg",
@@ -548,54 +581,14 @@
     "note": "Join FRAME co-founder Anders Schroder for a detailed look at the studio's approach to using AI in the production of this beautiful film for a new carpet collection from US architecture giant Gensler a",
     "source": "STASH",
     "kind": "gallery"
-   },
-   {
-    "title": "Why Humanity Will Never Leave The Solar System",
-    "url": "https://www.youtube.com/watch?v=Cyl3X88KEgg",
-    "image": "https://i.ytimg.com/vi/Cyl3X88KEgg/hqdefault.jpg",
-    "by": "10M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "The Rockjob",
-    "url": "https://vimeo.com/channels/staffpicks/1236047508",
-    "image": "https://i.vimeocdn.com/video/2212555408-331a19bd99df8d1f03a0345d187b1a9d4147b46866898c9f007125eb7c290f4d-d_960?region=us",
-    "note": "A Cain and Abel tale of two warring brothers and the heinous misappropriation of Missing Pet posters.  &mdash;  An Aussie short film starring Harry Granger, Jack&hellip;",
-    "source": "Vimeo Staff Picks",
-    "kind": "gallery"
-   },
-   {
-    "title": "What Is Dyslexia? | Art&Graft",
-    "url": "https://motionographer.com/quickie/what-is-dyslexia-artgraft/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/10/What-Is-Dyslexia-ArtGraft-D_026.jpg",
-    "note": "Art&Graft and director Kyra Bartley follow Lola through a painterly animated world in a film for Made By Dyslexia.",
-    "source": "Motionographer",
-    "kind": "gallery"
-   },
-   {
-    "title": "Cypher Releases Sonic Studies #1: Textiles & Fashion",
-    "url": "https://www.stashmedia.tv/cypher-releases-sonic-studies-1-textiles-fashion/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Cypher-Releases-Sonic-Studies-1-Textiles-Fashion-STASH-MAGAZINE8-1437x1080.jpg",
-    "note": "Music and sound design studios usually find themselves tucked into the tail end of a project's schedule, but the crew at Cypher have flipped that script with the first in a new series of Sonic Studies",
-    "source": "STASH",
-    "kind": "gallery"
    }
   ],
   "social": [
    {
-    "title": "She Made It Look Easy 😮‍💨",
-    "url": "https://www.youtube.com/watch?v=BlbCsfnbC3w",
-    "image": "https://i.ytimg.com/vi/BlbCsfnbC3w/hqdefault.jpg",
-    "by": "2.8M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
     "title": "What Does Your Ego Say? 😅",
     "url": "https://www.youtube.com/watch?v=4flIo3S9cHI",
     "image": "https://i.ytimg.com/vi/4flIo3S9cHI/hqdefault.jpg",
-    "by": "2.2M views",
+    "by": "2.3M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -611,7 +604,7 @@
     "title": "Wingsuiting Down a Norwegian Road 🎬 Amber Forte + Espen Fadnes #GoPro",
     "url": "https://www.youtube.com/watch?v=IG783lckvuo",
     "image": "https://i.ytimg.com/vi/IG783lckvuo/hqdefault.jpg",
-    "by": "757K views",
+    "by": "768K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -624,18 +617,10 @@
     "kind": "performance"
    },
    {
-    "title": "Get sorted for college with Roxie from the Apple Store.",
-    "url": "https://www.youtube.com/watch?v=P5GxUjU4uBI",
-    "image": "https://i.ytimg.com/vi/P5GxUjU4uBI/hqdefault.jpg",
-    "by": "353K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
     "title": "WORLD RECORD Skateboard Speed 🤯",
     "url": "https://www.youtube.com/watch?v=3huZ0cdjg5E",
     "image": "https://i.ytimg.com/vi/3huZ0cdjg5E/hqdefault.jpg",
-    "by": "345K views",
+    "by": "477K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -643,7 +628,15 @@
     "title": "Airbnb | あつまる？エアビる？｜プールでエアビる",
     "url": "https://www.youtube.com/watch?v=QS0QEqKGGIw",
     "image": "https://i.ytimg.com/vi/QS0QEqKGGIw/hqdefault.jpg",
-    "by": "336K views",
+    "by": "373K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Get sorted for college with Roxie from the Apple Store.",
+    "url": "https://www.youtube.com/watch?v=P5GxUjU4uBI",
+    "image": "https://i.ytimg.com/vi/P5GxUjU4uBI/hqdefault.jpg",
+    "by": "353K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -656,10 +649,18 @@
     "kind": "performance"
    },
    {
+    "title": "Airbnb | あつまる？エアビる？｜今日はちょっと、大人忘れます。",
+    "url": "https://www.youtube.com/watch?v=p8HvRJALo4Y",
+    "image": "https://i.ytimg.com/vi/p8HvRJALo4Y/hqdefault.jpg",
+    "by": "257K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
     "title": "NO WAY He's That Close 🫣",
     "url": "https://www.youtube.com/watch?v=KMEptKdsWtg",
     "image": "https://i.ytimg.com/vi/KMEptKdsWtg/hqdefault.jpg",
-    "by": "237K views",
+    "by": "244K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -667,20 +668,62 @@
     "title": "Episode 6 - The Night Shift (DuoTV Finale)",
     "url": "https://www.youtube.com/watch?v=lsNxpodd-14",
     "image": "https://i.ytimg.com/vi/lsNxpodd-14/hqdefault.jpg",
-    "by": "232K views",
+    "by": "243K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
    {
-    "title": "Airbnb | あつまる？エアビる？｜今日はちょっと、大人忘れます。",
-    "url": "https://www.youtube.com/watch?v=p8HvRJALo4Y",
-    "image": "https://i.ytimg.com/vi/p8HvRJALo4Y/hqdefault.jpg",
-    "by": "228K views",
+    "title": "The Fastest Skateboarder on Earth 🛹",
+    "url": "https://www.youtube.com/watch?v=aEZBtp-KJTE",
+    "image": "https://i.ytimg.com/vi/aEZBtp-KJTE/hqdefault.jpg",
+    "by": "236K views",
     "source": "Latest from brands",
     "kind": "performance"
    }
   ],
   "post": [
+   {
+    "title": "OpenBSD 8.0",
+    "url": "https://www.openbsd.org/80.html",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "Lula supporters protest against Meta to denounce its 'electoral interference'",
+    "url": "https://efe.com/english/latest-news/2026-10-20/lula-supporters-protest-against-meta-to-denounce-its-electoral-interference/",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "WhatsApp's help pages hid LLM instructions: dont recommend a regulator",
+    "url": "https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "Putting Linux on my RTX Spark laptop because I don't have a Microsoft account",
+    "url": "https://josie.lol/blog/linux-rtx-spark",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "The reverts will continue until morale improves",
+    "url": "http://peter.eisentraut.org/blog/2026/10/09/the-reverts-will-continue-until-morale-improves",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "Mercury 3: Diffusion at scale",
+    "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-3",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "Android apps running native on macOS",
+    "url": "https://github.com/kksimp/Mac.apk",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
    {
     "title": "MiniMax M3.1 Flash",
     "url": "https://www.minimax.io/blog/minimax-m31f",
@@ -694,6 +737,12 @@
     "kind": "performance"
    },
    {
+    "title": "Ukraine claims first drone evacuation of wounded soldier",
+    "url": "https://www.nbcnews.com/world/ukraine/ukraine-first-drone-evacuation-wounded-soldier-frontlines-hexacopter-rcna604310",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
     "title": "CERN and Mistral sign a statement of intent to establish a strategic partnership",
     "url": "https://home.cern/cern-and-mistral-join-forces-to-accelerate-ai-for-science/",
     "source": "Hacker News · Best",
@@ -702,54 +751,6 @@
    {
     "title": "Wine ported to OpenBSD",
     "url": "https://marc.info/?l=openbsd-ports&m=179236125692175",
-    "source": "Hacker News · Best",
-    "kind": "performance"
-   },
-   {
-    "title": "Alternatives to animal testing are finally taking off",
-    "url": "https://spectrum.ieee.org/alternatives-to-animal-testing",
-    "source": "Hacker News · Best",
-    "kind": "performance"
-   },
-   {
-    "title": "Let's Encrypt is adding two additional remote perspectives for domain validation",
-    "url": "https://community.letsencrypt.org/t/lets-encrypt-is-adding-two-additional-remote-perspectives-for-domain-validation/252166",
-    "source": "Hacker News · Best",
-    "kind": "performance"
-   },
-   {
-    "title": "Ousted Savannah police officer gave ICE agent husband access to Flock system",
-    "url": "https://www.wjcl.com/article/savannah-police-officer-ice-agent-flock-access/74135816",
-    "source": "Hacker News · Best",
-    "kind": "performance"
-   },
-   {
-    "title": "Timestral: Mistral's time-series foundation models",
-    "url": "https://mistral.ai/news/timestral/",
-    "source": "Hacker News · Best",
-    "kind": "performance"
-   },
-   {
-    "title": "I built a drone with only one motor [video]",
-    "url": "https://www.youtube.com/watch?v=Ndftcft6XhU",
-    "source": "Hacker News · Best",
-    "kind": "performance"
-   },
-   {
-    "title": "Linux 7.3",
-    "url": "https://lwn.net/Articles/1101143/",
-    "source": "Hacker News · Best",
-    "kind": "performance"
-   },
-   {
-    "title": "William Gibson and the trademarking of cyberspace",
-    "url": "https://colo.to/cyberspace.html",
-    "source": "Hacker News · Best",
-    "kind": "performance"
-   },
-   {
-    "title": "If you don't run your own LLM proxy, how do you know whats going on?",
-    "url": "https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/",
     "source": "Hacker News · Best",
     "kind": "performance"
    }
@@ -823,7 +824,7 @@
     "title": "The new HomePod mini 2: Rich, room-filling sound in a compact design.",
     "url": "https://www.youtube.com/watch?v=xLL4UnrLNWs",
     "image": "https://i.ytimg.com/vi/xLL4UnrLNWs/hqdefault.jpg",
-    "by": "923K views",
+    "by": "927K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -847,7 +848,7 @@
     "title": "Airbnb | あつまる？エアビる？｜リビングでエアビる",
     "url": "https://www.youtube.com/watch?v=Mx608ORGCFA",
     "image": "https://i.ytimg.com/vi/Mx608ORGCFA/hqdefault.jpg",
-    "by": "487K views",
+    "by": "555K views",
     "source": "Latest from brands",
     "kind": "performance"
    }
