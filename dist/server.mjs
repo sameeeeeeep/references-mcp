@@ -22672,7 +22672,8 @@ function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, yo
   }
   async function quizFor(medium, candidates = []) {
     const used = /* @__PURE__ */ new Set();
-    const exampleFor = (o) => candidates.find((r) => !used.has(r.id) && r.image && ((o.filters || []).some((f) => hasTag(r, f)) || o.words && tokens(r.title).some((w) => tokens(o.words).includes(w))));
+    const matches = (o, r) => (o.filters || []).some((f) => hasTag(r, f)) || o.words && tokens(r.title).some((w) => tokens(o.words).includes(w));
+    const exampleFor = (o) => candidates.find((r) => !used.has(r.id) && r.image && matches(o, r)) || candidates.find((r) => !used.has(r.id) && r.image);
     return Promise.all(QUIZZES[medium].map(async (st) => ({
       q: st.q,
       options: await Promise.all(st.options.map(async ({ from, ...o }) => {
@@ -22828,7 +22829,8 @@ function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, yo
       // The first row gets its page's gallery (a page fetch each, cached a month); the rest show their own picture.
       directions: await Promise.all(picked.map(({ r, score }, i) => i < 4 ? withGallery({ ...r, score: Math.round(score * 10) / 10 }) : { ...r, score: Math.round(score * 10) / 10, ...r.image ? { gallery: [r.image] } : {} })),
       // Filtered asks stay on the filter: no unfiltered live picks mixed in.
-      fresh: applied.length ? [] : await fresh(want, want ? 3 : 2, skip, intent, styleWords),
+      // Filtered or per-project asks stay on the project: no generic trending picks mixed in.
+      fresh: applied.length || index.some((r) => r.source === "YouTube") ? [] : await fresh(want, want ? 3 : 2, skip, intent, styleWords),
       filters: applied,
       ...loosened.length ? { loosened } : {},
       matching: matching.length,

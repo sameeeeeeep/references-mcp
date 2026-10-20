@@ -91,7 +91,7 @@ test('live picks are cached, fail soft, and can be picked like any reference', a
     assert.equal((await fetchLive(src, { cacheDir: dir, fetchImpl: dead, now: Date.now() + 13 * 3600_000 }))[0].title, 'Moldy', 'stale cache beats nothing');
 
     const youtube = async () => [{ title: 'Big ad', url: 'https://www.youtube.com/watch?v=abcdefghijk', image: 'https://i.ytimg.com/vi/abcdefghijk/hqdefault.jpg', by: '2M views' }];
-    const refs = createReferences({ dir, fetchImpl, youtube });
+    const refs = createReferences({ dir, fetchImpl, youtube, projectSearch: async () => [] });
     const out = await refs.suggest({ intent: 'a bold ad campaign' });
     assert.equal(out.medium, 'ad');
     assert.equal(out.fresh[0].source, 'YouTube · most viewed', 'most-watched comes first for video-like media');
