@@ -454,13 +454,16 @@ export async function loadIndex(medium, { cacheDir, fetchImpl = fetch, now = Dat
 const ALT = { video: 'commercial', ad: 'campaign', motion: 'animation', animation: 'short film', social: 'campaign' };
 const NOUN = { video: 'launch film', ad: 'commercial ad', motion: 'motion design reel', animation: 'animated short film', social: 'brand shorts' };
 // Not references: how-tos, recaps, reactions, quizzes, songs, movie trailers, recipes, vlogs, reviews, lists.
-const NOT_CRAFT = /\b(example|sample|parod\w*|video production|production house|services|\d+ (?:settings|things|tips|tricks|ways|mistakes)|you need to|rocket|spacex|starship|falcon 9|ship launch|fails|close calls|live:|who does it better|with claude|unlocked|hindi|telugu|tamil|malayalam|kannada|punjabi|marathi|bollywood|tollywood|how i|here'?s how|how to|tutorial|course|explained|recap|reaction|reacts?|quiz|guess the|lyrics?|song|music video|official audio|official video|full movie|movie|netflix|hbo|recipe|vlog|podcast|interview|review|unboxing|walkthrough|beginner|in \d+ minutes|lesson|class \d|learn to|kids songs|nursery|asmr|live ?stream|compilation|top \d+|\d+ best|best \d+|vs\.?|episode|ep\.? ?\d|news|highlights|gameplay|let'?s play|tips|hack|guide)\b/i;
+const NOT_CRAFT = /\b(20th century|warner bros|universal pictures|paramount|sony pictures|lionsgate|a24|what is|what are|why (?:you|your|every|choose)|template|editable|compilation|ever made|tricks|canva|no one tells|before you launch|untold|launch event|unboxing|badges|grand opening|example|sample|parod\w*|video production|production house|services|\d+ (?:settings|things|tips|tricks|ways|mistakes)|you need to|rocket|spacex|starship|falcon 9|ship launch|fails|close calls|live:|who does it better|with claude|unlocked|hindi|telugu|tamil|malayalam|kannada|punjabi|marathi|bollywood|tollywood|how i|here'?s how|how to|tutorial|course|explained|recap|reaction|reacts?|quiz|guess the|lyrics?|song|music video|official audio|official video|full movie|movie|netflix|hbo|recipe|vlog|podcast|interview|review|unboxing|walkthrough|beginner|in \d+ minutes|lesson|class \d|learn to|kids songs|nursery|asmr|live ?stream|compilation|top \d+|\d+ best|best \d+|vs\.?|episode|ep\.? ?\d|news|highlights|gameplay|let'?s play|tips|hack|guide)\b/i;
 // Made work: films, campaigns, ads, launches, teasers, reels.
 const MADE_WORK = /\b(explainer|product video|demo video|introduces|presents|official launch|design film|brand film|film|campaign|commercial|\bad\b|spec ad|tvc|launch|introducing|teaser|showreel|reel|spot|brand video|promo|keynote|motion|animation|animated|short film|manifesto)\b/i;
 const MAX_LEN = { video: 600, ad: 240, motion: 600, animation: 1200, social: 120 };
-const FILLER = new Set('a an the and or for of to in on with my our me we i it this that make build design create new some want need like page site website app video film launch ad ads commercial reel short shorts motion animation animated social post landing brand product macos ios android'.split(' '));
+const FILLER = new Set('a an the and or for of to in on with my our me we i it this that make build design create new some want need like style styles look feel page site website app video film launch ad ads commercial reel short shorts motion animation animated social post landing brand product macos ios android'.split(' '));
 const keyWords = (text, n) => [...new Set(String(text).toLowerCase().split(/[^a-z0-9]+/).filter((w) => w.length > 2 && !FILLER.has(w)))].slice(0, n);
 
+// Mood words describe a look, not a subject: "trust" or "modern" in a title says nothing about the brief.
+const MOOD = new Set('trust modern clean bold playful minimal premium elegant warm cinematic friendly simple calm cozy energetic emotional luxury dense colorful technical local design'.split(' '));
+const LAUNCHES = { video: true, ad: true };
 export async function projectPool(intent, medium, context = '', { cacheDir, run = ytdlp, minViews = 20000 } = {}) {
   // Movie and game trailers only when the brief is about one.
   const trailers = /\b(game|trailer|teaser|movie|film festival)\b/i.test(`${intent} ${context}`);
@@ -470,44 +473,92 @@ export async function projectPool(intent, medium, context = '', { cacheDir, run 
   const text = `${intent} ${context}`.toLowerCase();
   const kind = [['mac app', /\b(mac|macos)\b/], ['ios app', /\b(ios|iphone)\b/], ['app', /\bapp\b/], ['saas', /\bsaas\b/], ['startup', /\bstartup\b/],
     ['game', /\bgame\b/], ['fragrance', /\b(perfume|fragrance)\b/], ['fashion', /\bfashion\b/], ['brand', /\bbrand\b/]].find(([, r]) => r.test(text))?.[0] || 'product';
-  const queries = [...new Set([
-    brief.length ? `${brief.join(' ')} ${NOUN[medium]}` : '',
-    brief.length ? `${brief.join(' ')} ${ALT[medium]}` : '',
-    about.length ? `${about.join(' ')} ${NOUN[medium]}` : '',
-    `${kind} ${NOUN[medium]}`,
-  ].filter(Boolean))];
+  // Angles, best first: the brief's own words, then the project context, then the product kind. Each result
+  // remembers its angle so the brief's own hits rank above the generic ones.
+  const B = brief.join(' '), A = about.join(' ');
+  const angles = [
+    // "introducing …" finds launches: right for launch videos and ads, wrong for a style of motion or animation.
+    ...(brief.length ? [[`${B} ${NOUN[medium]}`, 'brief'], [`${B} ${ALT[medium]}`, 'brief'], ...(LAUNCHES[medium] ? [[`introducing ${B}`, 'brief']] : [])] : []),
+    ...(about.length ? [[`${A} ${NOUN[medium]}`, 'context']] : []),
+    [`${kind} ${NOUN[medium]}`, 'kind'], [`${kind} ${ALT[medium]}`, 'kind'], ...(LAUNCHES[medium] ? [[`introducing ${kind}`, 'kind']] : []), [`${kind} trailer`, 'kind'],
+  ];
+  const queries = [...new Map(angles.map(([q, via]) => [q, via])).entries()];
   const seen = new Set(), out = [];
-  for (const q of queries) {
+  for (const [q, via] of queries) {
     if (out.length >= 24) break;
     const items = await cachedYt(q, { cacheDir, run });
     for (const it of items) {
-      if (seen.has(it.url) || it.views < minViews || !it.duration || it.duration > MAX_LEN[medium] || NOT_CRAFT.test(it.title)) continue;
-      if (!trailers && /\btrailer\b/i.test(it.title)) continue;
+      if (seen.has(it.url) || it.views < minViews || !it.duration || it.duration > MAX_LEN[medium] || NOT_CRAFT.test(it.title) || (medium !== 'social' && /#shorts/i.test(it.title))) continue;
+      const lower = it.title.toLowerCase();
+      // "mac app": mac AND app ("Mac and Cheese" is out). Generic kinds (app, product, brand) vouch for nothing alone.
+      const kindHit = !['app', 'product', 'brand', 'startup'].includes(kind) && kind.split(' ').every((w) => lower.includes(w));
+      const briefHit = [...brief, ...about].some((w) => w.length >= 4 && !MOOD.has(w) && lower.includes(w));
+      if (/\btrailer\b/i.test(it.title) && !trailers && !kindHit) continue;
+      // A generic product-kind hit that names neither the kind nor the brief ranks last (weak), never first.
       // Made work only (a film, campaign, commercial, launch, showreel…): popularity alone never gets a video in.
-      if (!MADE_WORK.test(it.title)) continue;
+      if (!MADE_WORK.test(it.title) && !(kindHit && /\btrailer\b/i.test(it.title))) continue;
       seen.add(it.url);
-      out.push({ ...it, query: q, craft: true });
+      out.push({ ...it, query: q, via: (via === 'kind' && !kindHit && !briefHit) || (via === 'context' && !briefHit) ? 'weak' : via, craft: true });
     }
   }
   return out.sort((a, b) => b.views - a.views).slice(0, 30);
 }
 
-async function cachedYt(query, { cacheDir, run, now = Date.now() }) {
+async function cachedYt(query, { cacheDir, run, now = Date.now(), url: at }) {
   const file = cacheDir && join(cacheDir, 'references-cache.json');
-  const key = `ytp2:${query.toLowerCase()}`;
+  const key = at ? `ytc:${at}` : `ytp2:${query.toLowerCase()}`;
   let cache = {};
   try { if (file && existsSync(file)) cache = JSON.parse(readFileSync(file, 'utf8')); } catch { cache = {}; }
   if (cache[key] && now - cache[key].at < YT_TTL) return cache[key].items;
   let items = [];
   try {
     // The global market in English (gl=US): local results skew to whatever is big in the viewer's own country.
-    const url = `https://www.youtube.com/results?search_query=${encodeURIComponent(query)}&gl=US&hl=en`;
+    const url = at || `https://www.youtube.com/results?search_query=${encodeURIComponent(query)}&gl=US&hl=en`;
     items = parseYtLines(await run(['--flat-playlist', '--no-warnings', '--playlist-end', '30', '--print', '%(view_count)s\t%(duration)s\t%(id)s\t%(title)s', url]));
   } catch { return cache[key]?.items || []; }
   if (file) { try { const fresh = existsSync(file) ? JSON.parse(readFileSync(file, 'utf8')) : {}; fresh[key] = { at: now, items }; mkdirSync(cacheDir, { recursive: true }); writeFileSync(file, JSON.stringify(fresh)); } catch {} }
   return items;
 }
 export { fmtViews };
+
+// ── Makers: the launch films product companies put out themselves, on their own channels ──────────────────
+// Each channel is a company known for how it launches; a brief in its space searches its channel for
+// "introducing" and keeps the short launch films. Handles checked by hand (scripts/evaluate.mjs re-checks).
+export const MAKERS = [
+  [/\b(fintech|payments?|bank\w*|neobank|finance|money|card|invest\w*|trading|payroll|spend)\b/, ['tryramp', 'stripe', 'monzobank', 'Revolut', 'robinhoodapp', 'PlaidInc', 'wise', 'cashapp', 'Gusto', 'RipplingHQ']],
+  [/\b(developer|dev ?tool|devtools?|code|coding|terminal|api|database|infra\w*|engineer\w*)\b/, ['warpdotdev', 'Supabase', 'VercelHQ', 'GitHub', 'cursor_ai', 'replit', 'lovable', 'boltdotnew', 'retool', 'raycastapp']],
+  [/\b(ai|agents?|llm|assistant|copilot)\b/, ['OpenAI', 'anthropic-ai', 'perplexity', 'ElevenLabs', 'runwayml', 'pika_labs', 'Midjourney', 'cursor_ai', 'lovable']],
+  [/\b(mac|macos|desktop|productivity|browser|launcher|notes?|calendar|email)\b/, ['raycastapp', 'TheBrowserCompany', 'Notion', 'linear', 'pitchHQ', 'warpdotdev', 'descript']],
+  [/\b(design tool|design|creative|video editing|editor|website builder|no-?code|presentation)\b/, ['figma', 'framer', 'Webflow', 'pitchHQ', 'descript', 'runwayml', 'Squarespace', 'Wix']],
+  [/\b(health\w*|wellness|fitness|sleep|meditation|mental|medical|calm)\b/, ['whoop', 'Headspace', 'calm', 'onepeloton']],
+  [/\b(hardware|device|gadget|phone|laptop|headphones?|earbuds|wearable|synth\w*)\b/, ['NothingTechnology', 'FrameworkComputer', 'teenageengineering', 'whoop']],
+  [/\b(car|cars|ev|electric vehicle|automotive|vehicle|truck|suv)\b/, ['Tesla', 'Rivian', 'lucidmotors', 'PolestarCars']],
+  [/\b(ecommerce|e-commerce|store|shop|commerce|retail|d2c|dtc)\b/, ['Shopify', 'Squarespace', 'Wix']],
+  [/\b(automation|workflow|no-?code|ops|hr|saas|b2b|teams?)\b/, ['Zapier', 'RipplingHQ', 'Notion', 'linear', 'retool']],
+  [/\b(learning|education|edtech|language|kids|school)\b/, ['duolingo']],
+  [/\b(travel|rides?|delivery|marketplace|stays?)\b/, ['airbnb', 'uber']],
+  [/\b(music|audio|podcast|sound)\b/, ['spotify', 'teenageengineering', 'ElevenLabs']],
+];
+const LAUNCH_WORD = /\b(introducing|introduces|meet|announcing|launch\w*|unveil\w*|this is|presenting|now available|say hello)\b/i;
+
+export async function makerLaunches(intent, context = '', { cacheDir, run = ytdlp, max = 6 } = {}) {
+  const text = `${intent} ${context}`.toLowerCase();
+  // The brief's own space counts double: its matches come before the context's.
+  const score = new Map();
+  for (const [re, handles] of MAKERS) {
+    const w = re.test(String(intent).toLowerCase()) ? 2 : re.test(text) ? 1 : 0;
+    if (w) handles.forEach((h, i) => score.set(h, (score.get(h) || 0) + w - i * 0.01));
+  }
+  const handles = [...score.entries()].sort((a, b) => b[1] - a[1]).slice(0, max).map(([h]) => h);
+  const out = [];
+  await Promise.all(handles.map(async (h) => {
+    const items = await cachedYt('', { cacheDir, run, url: `https://www.youtube.com/@${h}/search?query=introducing` });
+    for (const it of items.filter((x) => LAUNCH_WORD.test(x.title) && !/#shorts/i.test(x.title) && !NOT_CRAFT.test(x.title) && x.duration && x.duration <= 300 && x.views >= 3000).slice(0, handles.length >= 4 ? 1 : 2)) {
+      out.push({ ...it, query: `${h} launch`, craft: true, maker: h, via: 'maker' });
+    }
+  }));
+  return out;
+}
 
 // ── YC launch videos: the companies in the brief's space (top companies first), their own launch films ─────
 export async function ycLaunches(companies, { cacheDir, run = ytdlp } = {}) {
@@ -520,7 +571,7 @@ export async function ycLaunches(companies, { cacheDir, run = ytdlp } = {}) {
     const ok = (t) => {
       const x = t.toLowerCase();
       if (!x.includes(name) || NOT_CRAFT.test(t) || /[^\x00-\x7F\u2018-\u201F\u2013\u2014\u00C0-\u017F·|]/.test(t.replace(/\p{Extended_Pictographic}/gu, ''))) return false;
-      return /\b(launch|launching|introducing|introduces|demo|announc\w*|yc|y combinator|product video|meet)\b/i.test(t) || about.some((w) => x.includes(w));
+      return /\b(launch|launching|introducing|introduces|announc\w*|yc|y combinator|meet)\b/i.test(t);
     };
     for (const it of items.filter((x) => ok(x.title) && x.duration && x.duration <= 300 && x.views >= 1000).slice(0, 2)) {
       out.push({ ...it, query: `${c.title} launch`, craft: true, company: c.title, top: c.top });

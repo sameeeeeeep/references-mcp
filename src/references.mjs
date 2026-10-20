@@ -10,7 +10,7 @@ import { join, extname, basename } from 'node:path';
 import { z } from 'zod';
 import { QUIZZES } from './quiz.mjs';
 import { CATALOG, MEDIA } from './catalog.mjs';
-import { SOURCES, fetchLive, pageImages, pageVideos, loadIndex, projectPool, ycLaunches, fmtViews, searchYouTube, shelfFor, isPublicHttpsUrl, YT_MEDIA } from './sources.mjs';
+import { SOURCES, fetchLive, pageImages, pageVideos, loadIndex, projectPool, ycLaunches, makerLaunches, fmtViews, searchYouTube, shelfFor, isPublicHttpsUrl, YT_MEDIA } from './sources.mjs';
 
 const IMG = new Set(['.png', '.jpg', '.jpeg', '.webp', '.gif']);
 const STOP = new Set('a an the and or for of to in on with my our me we i it this that make build design create new some want need like'.split(' '));
@@ -103,13 +103,13 @@ const BRIDGE = {
   kids: ['Culture & Education', 'Illustration', 'Colorful'], children: ['Culture & Education', 'Illustration', 'Colorful'], child: ['Culture & Education', 'Colorful'],
   learning: ['Culture & Education'], education: ['Culture & Education'], school: ['Culture & Education'], math: ['Culture & Education', 'Illustration'], edtech: ['Culture & Education', 'Technology'],
   fintech: ['Business & Corporate', 'Technology', 'Data Visualization'], finance: ['Business & Corporate', 'Data Visualization'], bank: ['Business & Corporate'], banking: ['Business & Corporate'],
-  trading: ['Data Visualization', 'Technology'], crypto: ['Technology', '3D'], web3: ['Technology', '3D', 'WebGL'], dashboard: ['Data Visualization', 'UI design'], saas: ['Technology', 'Startups', 'UI design'],
+  trading: ['Data Visualization', 'Technology'], crypto: ['Technology', '3D', 'Crypto / Web3'], web3: ['Technology', '3D', 'WebGL', 'Crypto / Web3'], dashboard: ['Data Visualization', 'UI design'], saas: ['Technology', 'Startups', 'UI design'],
   developer: ['Technology', 'Startups'], dev: ['Technology', 'Startups'], cli: ['Technology', 'Typography'], api: ['Technology'], code: ['Technology'], ai: ['Technology', 'Startups'], startup: ['Startups'],
   nonprofit: ['Social responsibility', 'Institutions'], charity: ['Social responsibility'], climate: ['Social responsibility', 'Storytelling'], ngo: ['Social responsibility', 'Institutions'],
   restaurant: ['Food & Drink', 'Hotel / Restaurant'], cafe: ['Food & Drink'], coffee: ['Food & Drink'], food: ['Food & Drink'], bar: ['Food & Drink'], hotel: ['Hotel / Restaurant', 'Luxury'],
   perfume: ['Luxury', 'Fashion'], beauty: ['Fashion', 'Luxury'], jewellery: ['Luxury', 'Fashion'], jewelry: ['Luxury', 'Fashion'], streetwear: ['Fashion', 'E-Commerce'], shop: ['E-Commerce'], store: ['E-Commerce'],
   festival: ['Events', 'Music & Sound'], concert: ['Events', 'Music & Sound'], music: ['Music & Sound'], event: ['Events'], conference: ['Events'],
-  game: ['Games & Entertainment', '3D'], gaming: ['Games & Entertainment', '3D'], studio: ['Design Agencies', 'Portfolio'], agency: ['Design Agencies'], portfolio: ['Portfolio'],
+  game: ['Games & Entertainment', '3D', 'Gaming'], games: ['Games & Entertainment', 'Gaming'], gaming: ['Games & Entertainment', '3D', 'Gaming'], studio: ['Design Agencies', 'Portfolio'], agency: ['Design Agencies'], portfolio: ['Portfolio'],
   property: ['Real Estate', 'Architecture'], apartments: ['Real Estate', 'Architecture'], homes: ['Real Estate'], wallpaper: ['3D', 'Big Background Images', 'Photo & Video'], scenic: ['Big Background Images', 'Photography'],
   dark: ['3D', 'WebGL'], playful: ['Colorful', 'Illustration'], elegant: ['Luxury', 'Minimal'], premium: ['Luxury'], bold: ['Typography', 'Experimental'], cinematic: ['Photo & Video', 'Storytelling', 'Scrolling'],
 };
@@ -158,7 +158,7 @@ function tasteSummary(liked) {
   return [...liked].sort((a, b) => b[1] - a[1]).slice(0, 8).map(([tag, picks]) => ({ tag, picks }));
 }
 
-export function createReferences({ dir, libraries = [], fetchImpl, youtube = searchYouTube, projectSearch = projectPool, live: liveOn = true }) {
+export function createReferences({ dir, libraries = [], fetchImpl, youtube = searchYouTube, projectSearch = projectPool, makerSearch = makerLaunches, live: liveOn = true }) {
   const cacheDir = dir;
   const seenLive = new Map(); // live picks handed out this session, so get/pick can resolve their ids
   const all = () => [...[dir, ...libraries].flatMap(loadLibrary), ...CATALOG.map((r) => ({ ...r, source: 'curated' })), ...seenLive.values()];
@@ -236,17 +236,20 @@ export function createReferences({ dir, libraries = [], fetchImpl, youtube = sea
 
   async function forProject(medium, intent, context) {
     const companies = ['video', 'motion', 'ad'].includes(medium) && liveOn ? await ycFor(intent, context) : [];
-    const [general, launches] = await Promise.all([
+    const [general, launches, makers] = await Promise.all([
       projectSearch(intent, medium, context, { cacheDir }),
       companies.length ? ycLaunches(companies, { cacheDir }) : [],
+      ['video', 'ad'].includes(medium) && liveOn ? makerSearch(intent, context, { cacheDir }) : [],
     ]);
-    const found = [...launches.map((x) => ({ ...x, yc: true })), ...general.filter((g) => !launches.some((l) => l.url === g.url))];
+    const firsts = [...launches.map((x) => ({ ...x, yc: true })), ...makers.filter((m) => !launches.some((l) => l.url === m.url))];
+    const found = [...firsts, ...general.filter((g) => !firsts.some((l) => l.url === g.url))];
     return found.map((x) => {
       const id = `yt:${(/[?&]v=([\w-]{11})/.exec(x.url) || [])[1] || x.url}`;
       const item = {
         id, medium, title: `${clean(x.title, 110)} · ${fmtViews(x.views)}`, url: x.url, image: x.image, source: 'YouTube',
         take: 'Proven work for this brief (searched for your project, ranked by views): open it and name what to carry over.',
-        tags: x.query.split(' ').filter(Boolean), untrusted: true, views: x.views, rank: 0, ...(x.craft ? { craft: true } : {}),
+        tags: x.query.split(' ').filter(Boolean), untrusted: true, views: x.views, rank: 0, ...(x.craft ? { craft: true } : {}), via: x.via || 'brief',
+        ...(x.maker ? { source: 'Maker launch', take: `A launch film ${x.maker} made for its own product, a company in your space: open it and name what to carry over.` } : {}),
         ...(x.yc ? { source: 'YC launch', award: x.top ? 'YC top company' : 'YC', take: `The launch film of ${x.company}, a YC company in your space: open it and name what to carry over.` } : {}),
       };
       known.set(id, item);
@@ -300,7 +303,12 @@ export function createReferences({ dir, libraries = [], fetchImpl, youtube = sea
     const skip = new Set(exclude);
     // Filters are hard: a reference must carry every one (matched loosely: "scroll" finds "Scrolling"). If the
     // combination leaves too little, the last filter loosens rather than coming back empty, and the answer says so.
-    const pool = [...all(), ...index].filter((r) => (!want || r.medium === want) && !skip.has(r.id));
+    // With a real pool (4+ of the project's own candidates) the hand-picked canon steps aside entirely; with a
+    // thin one it may fill a single slot, never more (a short set beats the same famous five every time).
+    const thinProject = index.length > 0 && index.length < 4;
+    let canonLeft = thinProject ? 1 : Infinity;
+    const pool = [...all(), ...index].filter((r) => (!want || r.medium === want) && !skip.has(r.id) && !(r.source === 'curated' && index.length >= 4))
+      .filter((r) => r.source !== 'curated' || !thinProject || canonLeft-- > 0);
     let applied = filters.map((f) => String(f).trim()).filter(Boolean);
     let matching = pool.filter((r) => applied.every((f) => hasTag(r, f)));
     const loosened = [];
@@ -345,6 +353,7 @@ export function createReferences({ dir, libraries = [], fetchImpl, youtube = sea
         if (r.views) score += Math.min(3, Math.log10(r.views) - 3.5); // proven by audience: 1M views ≈ +2.5
         if (r.craft) score += 2.5; // a film, campaign or launch, not just a popular video
         if (r.source === 'YC launch') score += 3; // a YC company in the same space, launching: closest to the brief
+        if (r.via) score += r.via === 'maker' ? 2.5 : r.via === 'brief' ? 2 : r.via === 'context' ? 0.8 : r.via === 'weak' ? -6 : 0; // brief's hits first, weak last
         if (r.source === 'curated' && index.length) score -= 3; // the hand-picked canon is a fallback, not the answer
         if (r.rank !== undefined) score += Math.max(0, 1 - r.rank / 1500); // newer winners a little ahead
         if (seen.has(r.id)) score -= 4; // shown in the last month: let others through
@@ -369,7 +378,8 @@ export function createReferences({ dir, libraries = [], fetchImpl, youtube = sea
       if (lead.length > 1) {
         const mixed = [];
         const longest = Math.max(...lead.map((k) => groups.get(k).length));
-        for (let i = 0; i < longest; i++) for (const k of lead) { const x = groups.get(k)[i]; if (x) mixed.push(x); }
+        // Each one taking a turn must hold its own too: a source's weak tail never rides along on its leader.
+        for (let i = 0; i < longest; i++) for (const k of lead) { const x = groups.get(k)[i]; if (x && (k === 'mine' || x.score >= best * 0.5)) mixed.push(x); }
         const others = scored.filter((x) => !mixed.includes(x));
         scored.splice(0, scored.length, ...mixed, ...others);
       }

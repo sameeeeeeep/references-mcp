@@ -22366,11 +22366,13 @@ async function loadIndex(medium, { cacheDir, fetchImpl = fetch, now = Date.now()
 }
 var ALT = { video: "commercial", ad: "campaign", motion: "animation", animation: "short film", social: "campaign" };
 var NOUN = { video: "launch film", ad: "commercial ad", motion: "motion design reel", animation: "animated short film", social: "brand shorts" };
-var NOT_CRAFT = /\b(example|sample|parod\w*|video production|production house|services|\d+ (?:settings|things|tips|tricks|ways|mistakes)|you need to|rocket|spacex|starship|falcon 9|ship launch|fails|close calls|live:|who does it better|with claude|unlocked|hindi|telugu|tamil|malayalam|kannada|punjabi|marathi|bollywood|tollywood|how i|here'?s how|how to|tutorial|course|explained|recap|reaction|reacts?|quiz|guess the|lyrics?|song|music video|official audio|official video|full movie|movie|netflix|hbo|recipe|vlog|podcast|interview|review|unboxing|walkthrough|beginner|in \d+ minutes|lesson|class \d|learn to|kids songs|nursery|asmr|live ?stream|compilation|top \d+|\d+ best|best \d+|vs\.?|episode|ep\.? ?\d|news|highlights|gameplay|let'?s play|tips|hack|guide)\b/i;
+var NOT_CRAFT = /\b(20th century|warner bros|universal pictures|paramount|sony pictures|lionsgate|a24|what is|what are|why (?:you|your|every|choose)|template|editable|compilation|ever made|tricks|canva|no one tells|before you launch|untold|launch event|unboxing|badges|grand opening|example|sample|parod\w*|video production|production house|services|\d+ (?:settings|things|tips|tricks|ways|mistakes)|you need to|rocket|spacex|starship|falcon 9|ship launch|fails|close calls|live:|who does it better|with claude|unlocked|hindi|telugu|tamil|malayalam|kannada|punjabi|marathi|bollywood|tollywood|how i|here'?s how|how to|tutorial|course|explained|recap|reaction|reacts?|quiz|guess the|lyrics?|song|music video|official audio|official video|full movie|movie|netflix|hbo|recipe|vlog|podcast|interview|review|unboxing|walkthrough|beginner|in \d+ minutes|lesson|class \d|learn to|kids songs|nursery|asmr|live ?stream|compilation|top \d+|\d+ best|best \d+|vs\.?|episode|ep\.? ?\d|news|highlights|gameplay|let'?s play|tips|hack|guide)\b/i;
 var MADE_WORK = /\b(explainer|product video|demo video|introduces|presents|official launch|design film|brand film|film|campaign|commercial|\bad\b|spec ad|tvc|launch|introducing|teaser|showreel|reel|spot|brand video|promo|keynote|motion|animation|animated|short film|manifesto)\b/i;
 var MAX_LEN = { video: 600, ad: 240, motion: 600, animation: 1200, social: 120 };
-var FILLER = new Set("a an the and or for of to in on with my our me we i it this that make build design create new some want need like page site website app video film launch ad ads commercial reel short shorts motion animation animated social post landing brand product macos ios android".split(" "));
+var FILLER = new Set("a an the and or for of to in on with my our me we i it this that make build design create new some want need like style styles look feel page site website app video film launch ad ads commercial reel short shorts motion animation animated social post landing brand product macos ios android".split(" "));
 var keyWords = (text, n) => [...new Set(String(text).toLowerCase().split(/[^a-z0-9]+/).filter((w) => w.length > 2 && !FILLER.has(w)))].slice(0, n);
+var MOOD = new Set("trust modern clean bold playful minimal premium elegant warm cinematic friendly simple calm cozy energetic emotional luxury dense colorful technical local design".split(" "));
+var LAUNCHES = { video: true, ad: true };
 async function projectPool(intent, medium, context = "", { cacheDir, run = ytdlp, minViews = 2e4 } = {}) {
   const trailers = /\b(game|trailer|teaser|movie|film festival)\b/i.test(`${intent} ${context}`);
   if (!NOUN[medium]) return [];
@@ -22387,29 +22389,37 @@ async function projectPool(intent, medium, context = "", { cacheDir, run = ytdlp
     ["fashion", /\bfashion\b/],
     ["brand", /\bbrand\b/]
   ].find(([, r]) => r.test(text))?.[0] || "product";
-  const queries = [...new Set([
-    brief.length ? `${brief.join(" ")} ${NOUN[medium]}` : "",
-    brief.length ? `${brief.join(" ")} ${ALT[medium]}` : "",
-    about.length ? `${about.join(" ")} ${NOUN[medium]}` : "",
-    `${kind} ${NOUN[medium]}`
-  ].filter(Boolean))];
+  const B = brief.join(" "), A = about.join(" ");
+  const angles = [
+    // "introducing …" finds launches: right for launch videos and ads, wrong for a style of motion or animation.
+    ...brief.length ? [[`${B} ${NOUN[medium]}`, "brief"], [`${B} ${ALT[medium]}`, "brief"], ...LAUNCHES[medium] ? [[`introducing ${B}`, "brief"]] : []] : [],
+    ...about.length ? [[`${A} ${NOUN[medium]}`, "context"]] : [],
+    [`${kind} ${NOUN[medium]}`, "kind"],
+    [`${kind} ${ALT[medium]}`, "kind"],
+    ...LAUNCHES[medium] ? [[`introducing ${kind}`, "kind"]] : [],
+    [`${kind} trailer`, "kind"]
+  ];
+  const queries = [...new Map(angles.map(([q, via]) => [q, via])).entries()];
   const seen = /* @__PURE__ */ new Set(), out = [];
-  for (const q of queries) {
+  for (const [q, via] of queries) {
     if (out.length >= 24) break;
     const items = await cachedYt(q, { cacheDir, run });
     for (const it of items) {
-      if (seen.has(it.url) || it.views < minViews || !it.duration || it.duration > MAX_LEN[medium] || NOT_CRAFT.test(it.title)) continue;
-      if (!trailers && /\btrailer\b/i.test(it.title)) continue;
-      if (!MADE_WORK.test(it.title)) continue;
+      if (seen.has(it.url) || it.views < minViews || !it.duration || it.duration > MAX_LEN[medium] || NOT_CRAFT.test(it.title) || medium !== "social" && /#shorts/i.test(it.title)) continue;
+      const lower = it.title.toLowerCase();
+      const kindHit = !["app", "product", "brand", "startup"].includes(kind) && kind.split(" ").every((w) => lower.includes(w));
+      const briefHit = [...brief, ...about].some((w) => w.length >= 4 && !MOOD.has(w) && lower.includes(w));
+      if (/\btrailer\b/i.test(it.title) && !trailers && !kindHit) continue;
+      if (!MADE_WORK.test(it.title) && !(kindHit && /\btrailer\b/i.test(it.title))) continue;
       seen.add(it.url);
-      out.push({ ...it, query: q, craft: true });
+      out.push({ ...it, query: q, via: via === "kind" && !kindHit && !briefHit || via === "context" && !briefHit ? "weak" : via, craft: true });
     }
   }
   return out.sort((a, b) => b.views - a.views).slice(0, 30);
 }
-async function cachedYt(query, { cacheDir, run, now = Date.now() }) {
+async function cachedYt(query, { cacheDir, run, now = Date.now(), url: at }) {
   const file = cacheDir && join(cacheDir, "references-cache.json");
-  const key = `ytp2:${query.toLowerCase()}`;
+  const key = at ? `ytc:${at}` : `ytp2:${query.toLowerCase()}`;
   let cache = {};
   try {
     if (file && existsSync(file)) cache = JSON.parse(readFileSync(file, "utf8"));
@@ -22419,7 +22429,7 @@ async function cachedYt(query, { cacheDir, run, now = Date.now() }) {
   if (cache[key] && now - cache[key].at < YT_TTL) return cache[key].items;
   let items = [];
   try {
-    const url = `https://www.youtube.com/results?search_query=${encodeURIComponent(query)}&gl=US&hl=en`;
+    const url = at || `https://www.youtube.com/results?search_query=${encodeURIComponent(query)}&gl=US&hl=en`;
     items = parseYtLines(await run(["--flat-playlist", "--no-warnings", "--playlist-end", "30", "--print", "%(view_count)s	%(duration)s	%(id)s	%(title)s", url]));
   } catch {
     return cache[key]?.items || [];
@@ -22435,6 +22445,39 @@ async function cachedYt(query, { cacheDir, run, now = Date.now() }) {
   }
   return items;
 }
+var MAKERS = [
+  [/\b(fintech|payments?|bank\w*|neobank|finance|money|card|invest\w*|trading|payroll|spend)\b/, ["tryramp", "stripe", "monzobank", "Revolut", "robinhoodapp", "PlaidInc", "wise", "cashapp", "Gusto", "RipplingHQ"]],
+  [/\b(developer|dev ?tool|devtools?|code|coding|terminal|api|database|infra\w*|engineer\w*)\b/, ["warpdotdev", "Supabase", "VercelHQ", "GitHub", "cursor_ai", "replit", "lovable", "boltdotnew", "retool", "raycastapp"]],
+  [/\b(ai|agents?|llm|assistant|copilot)\b/, ["OpenAI", "anthropic-ai", "perplexity", "ElevenLabs", "runwayml", "pika_labs", "Midjourney", "cursor_ai", "lovable"]],
+  [/\b(mac|macos|desktop|productivity|browser|launcher|notes?|calendar|email)\b/, ["raycastapp", "TheBrowserCompany", "Notion", "linear", "pitchHQ", "warpdotdev", "descript"]],
+  [/\b(design tool|design|creative|video editing|editor|website builder|no-?code|presentation)\b/, ["figma", "framer", "Webflow", "pitchHQ", "descript", "runwayml", "Squarespace", "Wix"]],
+  [/\b(health\w*|wellness|fitness|sleep|meditation|mental|medical|calm)\b/, ["whoop", "Headspace", "calm", "onepeloton"]],
+  [/\b(hardware|device|gadget|phone|laptop|headphones?|earbuds|wearable|synth\w*)\b/, ["NothingTechnology", "FrameworkComputer", "teenageengineering", "whoop"]],
+  [/\b(car|cars|ev|electric vehicle|automotive|vehicle|truck|suv)\b/, ["Tesla", "Rivian", "lucidmotors", "PolestarCars"]],
+  [/\b(ecommerce|e-commerce|store|shop|commerce|retail|d2c|dtc)\b/, ["Shopify", "Squarespace", "Wix"]],
+  [/\b(automation|workflow|no-?code|ops|hr|saas|b2b|teams?)\b/, ["Zapier", "RipplingHQ", "Notion", "linear", "retool"]],
+  [/\b(learning|education|edtech|language|kids|school)\b/, ["duolingo"]],
+  [/\b(travel|rides?|delivery|marketplace|stays?)\b/, ["airbnb", "uber"]],
+  [/\b(music|audio|podcast|sound)\b/, ["spotify", "teenageengineering", "ElevenLabs"]]
+];
+var LAUNCH_WORD = /\b(introducing|introduces|meet|announcing|launch\w*|unveil\w*|this is|presenting|now available|say hello)\b/i;
+async function makerLaunches(intent, context = "", { cacheDir, run = ytdlp, max = 6 } = {}) {
+  const text = `${intent} ${context}`.toLowerCase();
+  const score = /* @__PURE__ */ new Map();
+  for (const [re, handles2] of MAKERS) {
+    const w = re.test(String(intent).toLowerCase()) ? 2 : re.test(text) ? 1 : 0;
+    if (w) handles2.forEach((h, i) => score.set(h, (score.get(h) || 0) + w - i * 0.01));
+  }
+  const handles = [...score.entries()].sort((a, b) => b[1] - a[1]).slice(0, max).map(([h]) => h);
+  const out = [];
+  await Promise.all(handles.map(async (h) => {
+    const items = await cachedYt("", { cacheDir, run, url: `https://www.youtube.com/@${h}/search?query=introducing` });
+    for (const it of items.filter((x) => LAUNCH_WORD.test(x.title) && !/#shorts/i.test(x.title) && !NOT_CRAFT.test(x.title) && x.duration && x.duration <= 300 && x.views >= 3e3).slice(0, handles.length >= 4 ? 1 : 2)) {
+      out.push({ ...it, query: `${h} launch`, craft: true, maker: h, via: "maker" });
+    }
+  }));
+  return out;
+}
 async function ycLaunches(companies, { cacheDir, run = ytdlp } = {}) {
   const out = [];
   await Promise.all(companies.map(async (c) => {
@@ -22444,7 +22487,7 @@ async function ycLaunches(companies, { cacheDir, run = ytdlp } = {}) {
     const ok = (t) => {
       const x = t.toLowerCase();
       if (!x.includes(name) || NOT_CRAFT.test(t) || /[^\x00-\x7F\u2018-\u201F\u2013\u2014\u00C0-\u017F·|]/.test(t.replace(new RegExp("\\p{Extended_Pictographic}", "gu"), ""))) return false;
-      return /\b(launch|launching|introducing|introduces|demo|announc\w*|yc|y combinator|product video|meet)\b/i.test(t) || about.some((w) => x.includes(w));
+      return /\b(launch|launching|introducing|introduces|announc\w*|yc|y combinator|meet)\b/i.test(t);
     };
     for (const it of items.filter((x) => ok(x.title) && x.duration && x.duration <= 300 && x.views >= 1e3).slice(0, 2)) {
       out.push({ ...it, query: `${c.title} launch`, craft: true, company: c.title, top: c.top });
@@ -22586,8 +22629,8 @@ var BRIDGE = {
   bank: ["Business & Corporate"],
   banking: ["Business & Corporate"],
   trading: ["Data Visualization", "Technology"],
-  crypto: ["Technology", "3D"],
-  web3: ["Technology", "3D", "WebGL"],
+  crypto: ["Technology", "3D", "Crypto / Web3"],
+  web3: ["Technology", "3D", "WebGL", "Crypto / Web3"],
   dashboard: ["Data Visualization", "UI design"],
   saas: ["Technology", "Startups", "UI design"],
   developer: ["Technology", "Startups"],
@@ -22619,8 +22662,9 @@ var BRIDGE = {
   music: ["Music & Sound"],
   event: ["Events"],
   conference: ["Events"],
-  game: ["Games & Entertainment", "3D"],
-  gaming: ["Games & Entertainment", "3D"],
+  game: ["Games & Entertainment", "3D", "Gaming"],
+  games: ["Games & Entertainment", "Gaming"],
+  gaming: ["Games & Entertainment", "3D", "Gaming"],
   studio: ["Design Agencies", "Portfolio"],
   agency: ["Design Agencies"],
   portfolio: ["Portfolio"],
@@ -22669,7 +22713,7 @@ function seededJitter(seed) {
 function tasteSummary(liked) {
   return [...liked].sort((a, b) => b[1] - a[1]).slice(0, 8).map(([tag, picks]) => ({ tag, picks }));
 }
-function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, youtube = searchYouTube, projectSearch = projectPool, live: liveOn = true }) {
+function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, youtube = searchYouTube, projectSearch = projectPool, makerSearch = makerLaunches, live: liveOn = true }) {
   const cacheDir = dir2;
   const seenLive = /* @__PURE__ */ new Map();
   const all = () => [...[dir2, ...libraries2].flatMap(loadLibrary), ...CATALOG.map((r) => ({ ...r, source: "curated" })), ...seenLive.values()];
@@ -22731,11 +22775,13 @@ function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, yo
   }
   async function forProject(medium, intent, context) {
     const companies = ["video", "motion", "ad"].includes(medium) && liveOn ? await ycFor(intent, context) : [];
-    const [general, launches] = await Promise.all([
+    const [general, launches, makers] = await Promise.all([
       projectSearch(intent, medium, context, { cacheDir }),
-      companies.length ? ycLaunches(companies, { cacheDir }) : []
+      companies.length ? ycLaunches(companies, { cacheDir }) : [],
+      ["video", "ad"].includes(medium) && liveOn ? makerSearch(intent, context, { cacheDir }) : []
     ]);
-    const found = [...launches.map((x) => ({ ...x, yc: true })), ...general.filter((g) => !launches.some((l) => l.url === g.url))];
+    const firsts = [...launches.map((x) => ({ ...x, yc: true })), ...makers.filter((m) => !launches.some((l) => l.url === m.url))];
+    const found = [...firsts, ...general.filter((g) => !firsts.some((l) => l.url === g.url))];
     return found.map((x) => {
       const id = `yt:${(/[?&]v=([\w-]{11})/.exec(x.url) || [])[1] || x.url}`;
       const item = {
@@ -22751,6 +22797,8 @@ function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, yo
         views: x.views,
         rank: 0,
         ...x.craft ? { craft: true } : {},
+        via: x.via || "brief",
+        ...x.maker ? { source: "Maker launch", take: `A launch film ${x.maker} made for its own product, a company in your space: open it and name what to carry over.` } : {},
         ...x.yc ? { source: "YC launch", award: x.top ? "YC top company" : "YC", take: `The launch film of ${x.company}, a YC company in your space: open it and name what to carry over.` } : {}
       };
       known.set(id, item);
@@ -22815,7 +22863,9 @@ function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, yo
     const liked = /* @__PURE__ */ new Map();
     for (const p of taste) for (const t of p.tags || []) liked.set(t, (liked.get(t) || 0) + 1);
     const skip = new Set(exclude);
-    const pool = [...all(), ...index].filter((r) => (!want || r.medium === want) && !skip.has(r.id));
+    const thinProject = index.length > 0 && index.length < 4;
+    let canonLeft = thinProject ? 1 : Infinity;
+    const pool = [...all(), ...index].filter((r) => (!want || r.medium === want) && !skip.has(r.id) && !(r.source === "curated" && index.length >= 4)).filter((r) => r.source !== "curated" || !thinProject || canonLeft-- > 0);
     let applied = filters.map((f) => String(f).trim()).filter(Boolean);
     let matching = pool.filter((r) => applied.every((f) => hasTag(r, f)));
     const loosened = [];
@@ -22857,6 +22907,7 @@ function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, yo
       if (r.views) score += Math.min(3, Math.log10(r.views) - 3.5);
       if (r.craft) score += 2.5;
       if (r.source === "YC launch") score += 3;
+      if (r.via) score += r.via === "maker" ? 2.5 : r.via === "brief" ? 2 : r.via === "context" ? 0.8 : r.via === "weak" ? -6 : 0;
       if (r.source === "curated" && index.length) score -= 3;
       if (r.rank !== void 0) score += Math.max(0, 1 - r.rank / 1500);
       if (seen.has(r.id)) score -= 4;
@@ -22881,7 +22932,7 @@ function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, yo
         const longest = Math.max(...lead.map((k) => groups.get(k).length));
         for (let i = 0; i < longest; i++) for (const k of lead) {
           const x = groups.get(k)[i];
-          if (x) mixed.push(x);
+          if (x && (k === "mine" || x.score >= best * 0.5)) mixed.push(x);
         }
         const others = scored.filter((x) => !mixed.includes(x));
         scored.splice(0, scored.length, ...mixed, ...others);

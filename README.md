@@ -14,9 +14,11 @@ builds against that pick instead of an AI default.
 - **`directions`**: ranked references, each with a url and a **`take`** (the specific thing to carry over).
   Your own library ranks first, then a canon of proven work.
 - **`fresh`**: what's live right now:
-  - **For your project** (video, motion, ads, animation, social; needs `yt-dlp`): launch films of YC companies in
-    your space (fintech → Alaan, Verto, Aspire…) and proven work searched on the global market: made work only
-    (films, campaigns, commercials, launches), no trailers, tutorials, samples or listicles.
+  - **For your project** (video, motion, ads, animation, social; needs `yt-dlp`): the launch films product makers
+    in your space put out on their own channels (dev tool → Cursor, Warp, Supabase; health → WHOOP, Headspace;
+    fintech → Monzo, Ramp, Plaid; 54 channels across 13 spaces), launch films of YC companies in your space
+    (fintech → Alaan, Verto, Aspire…), and proven work searched on the global market: made work only (films,
+    campaigns, commercials, launches), no trailers, tutorials, samples, explainers or listicles.
   - **The daily shelf**: this repo rebuilds `shelf/daily.json` every day (GitHub Action), from the latest
     uploads of brands known for the craft (Apple, Nike, Spotify, Airbnb, Duolingo, Figma, Kurzgesagt...)
     ranked by views, plus every live curation below.
@@ -86,7 +88,7 @@ Every answer carries `facets`: the tags among the matching references, with how 
 Storytelling 70 · Minimal 25"). Pass picks back as `filters` and only references carrying all of them return. The
 style quiz's options map onto these tags, and the band shows them as chips (✕ to drop one, + to add one). Behind
 landing, UI and app sits a catalog of judged winners only (Awwwards Sites of the Day and Honorable Mentions,
-about 2,000, each with its style tags) plus every live YC company's site (~5,000, tagged by industry and batch), refreshed daily. Nominees never get in; the two sources take turns so neither crowds the other out. If a mix leaves too few, the last filter loosens and the answer says which.
+about 2,000, each with its style tags) plus every live YC company's site whose preview picture really loads (checked one by one, tagged by industry and batch), refreshed daily. Nominees never get in; the two sources take turns so neither crowds the other out. If a mix leaves too few, the last filter loosens and the answer says which.
 
 ## Your library
 
@@ -122,6 +124,12 @@ it is unreachable in some regions.
 The server only links to the work and never rehosts it. Live sources are fetched only when a suggestion is
 asked for, then cached for 12 hours. If a source is down, the last cache is used, or nothing; a suggestion
 never fails because a site did.
+
+## Checking quality
+
+`node scripts/evaluate.mjs` runs 26 very different projects across landing, UI, video, ads, motion, animation
+and social and reports, per set: cards, how many have a picture, how many are on-brief, junk, canon and the overlap
+between projects. `npm test` holds the stress bar (12 landing projects: overlap ≤5%, fit ≥6/8).
 
 ## Add a curation
 

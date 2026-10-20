@@ -9,7 +9,8 @@
 // without yt-dlp or a dozen fetches of their own. Every stream fails soft.
 import { writeFileSync, mkdirSync } from 'node:fs';
 import { MEDIA } from '../src/catalog.mjs';
-import { SOURCES, fetchLive, ytList, parseAwwwardsList } from '../src/sources.mjs';
+import { SOURCES, fetchLive, ytList, parseAwwwardsList, parseImages } from '../src/sources.mjs';
+import { existsSync, readFileSync } from 'node:fs';
 
 const CHANNELS = {
   ad: ['apple', 'Nike', 'Spotify', 'Airbnb', 'duolingo'],
@@ -97,6 +98,44 @@ try {
     });
   }
 } catch (e) { console.log('yc: skipped', e.message); }
+// Every YC site's picture, checked once and remembered (shelf/yc-pictures.json): the page's preview image, and only
+// if that image really loads. Sites without a working picture stay out of the catalog. Misses are retried monthly.
+const PIC_FILE = 'shelf/yc-pictures.json';
+const pics = existsSync(PIC_FILE) ? JSON.parse(readFileSync(PIC_FILE, 'utf8')) : {};
+const MONTH = 30 * 24 * 3600_000;
+const due = yc.filter((c) => !pics[c.url] || (!pics[c.url].image && Date.now() - pics[c.url].at > MONTH));
+async function pictureOf(url) {
+  try {
+    const res = await fetch(url, { headers: { 'user-agent': UA }, signal: AbortSignal.timeout(8000), redirect: 'follow' });
+    const imgs = parseImages((await res.text()).slice(0, 1_000_000), res.url || url);
+    for (const img of imgs.slice(0, 2)) {
+      // A HEAD (or a one-byte range GET where HEAD is refused) says whether the picture is real, without downloading it.
+      let r = await fetch(img, { method: 'HEAD', headers: { 'user-agent': UA }, signal: AbortSignal.timeout(8000) }).catch(() => null);
+      if (!r || r.status === 405 || r.status === 403) {
+        r = await fetch(img, { headers: { 'user-agent': UA, range: 'bytes=0-0' }, signal: AbortSignal.timeout(8000) }).catch(() => null);
+        if (r) await r.arrayBuffer().catch(() => {});
+      }
+      const type = r?.headers.get('content-type') || '';
+      const size = Number(r?.headers.get('content-length') || 0);
+      if (r && (r.ok || r.status === 206) && /^image\/(jpe?g|png|webp|gif)/.test(type) && (!size || size > 4000 || r.status === 206)) return img;
+    }
+  } catch {}
+  return null;
+}
+// A stray fetch error deep in the HTTP client must not kill a 5,000-site run: log it and carry on.
+process.on('uncaughtException', (e) => console.log('ignored:', e.code || e.message));
+process.on('unhandledRejection', (e) => console.log('ignored:', e?.code || e?.message || e));
+mkdirSync('shelf', { recursive: true });
+for (let i = 0; i < due.length; i += 24) {
+  // A hard cap per site: a response body that stalls can leave a fetch unsettled, and Node then quietly exits mid-run.
+  const capped = (u) => Promise.race([pictureOf(u).catch(() => null), new Promise((r) => setTimeout(() => r(null), 30_000))]);
+  await Promise.all(due.slice(i, i + 24).map(async (c) => { pics[c.url] = { image: await capped(c.url), at: Date.now() }; }));
+  writeFileSync(PIC_FILE, JSON.stringify(pics) + '\n'); // progress survives a crash; the next run resumes
+  if (i % 480 === 0) console.log(`yc pictures: ${Math.min(i + 24, due.length)}/${due.length}`);
+}
+for (const c of yc) c.image = pics[c.url]?.image || null;
+const ycShown = yc.filter((c) => c.image);
+console.log(`yc with a working picture: ${ycShown.length}/${yc.length}`);
 mkdirSync('shelf/index', { recursive: true });
 writeFileSync('shelf/index/yc.json', JSON.stringify({ updated: new Date().toISOString(), items: yc }) + '\n');
 console.log(`index/yc: ${yc.length}`);
@@ -104,7 +143,7 @@ console.log(`index/yc: ${yc.length}`);
 const toItem = (x) => ({ id: `aw:${x.url.split('/').pop()}`, title: x.title, url: x.url, image: x.image, tags: x.tags, source: 'Awwwards', award: x.award, rank: x.rank });
 const all = [...sites.values()];
 const index = {
-  landing: [...all, ...yc],
+  landing: [...all, ...ycShown], // only YC sites whose picture really loads
   ui: all.filter((x) => x.tags.some((t) => UI_TAGS.has(t))),
   app: all.filter((x) => x.tags.some((t) => APP_TAGS.has(t))),
 };

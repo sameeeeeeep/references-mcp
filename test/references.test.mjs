@@ -5,7 +5,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { createReferences, guessMedium, loadLibrary } from '../src/references.mjs';
 import { CATALOG, MEDIA } from '../src/catalog.mjs';
-import { SOURCES, isPublicHttpsUrl, isPrivateAddress, pinnedLookup, safeFetch, parseImages, parseRss, parseAdsOfTheWorld, parseAtom, parseGitHubTrending, parseYtLines, searchYouTube, fetchLive } from '../src/sources.mjs';
+import { SOURCES, isPublicHttpsUrl, isPrivateAddress, pinnedLookup, safeFetch, parseImages, parseRss, parseAdsOfTheWorld, parseAtom, parseGitHubTrending, parseYtLines, searchYouTube, fetchLive, makerLaunches } from '../src/sources.mjs';
 
 test('catalog covers every medium with unique ids and a take', () => {
   for (const m of MEDIA) assert.ok(CATALOG.filter((r) => r.medium === m).length >= 3, `${m} has at least 3`);
@@ -187,7 +187,7 @@ test('filters are hard, facets show what is left, and a too-narrow mix loosens i
       : { ok: false, status: 404, text: async () => '', headers: { get: () => null } });
     const refs = createReferences({ dir: vault, fetchImpl, youtube: async () => [] });
     const scroll = await refs.suggest({ intent: 'landing page', medium: 'landing', filters: ['scroll'] });
-    assert.equal(scroll.matching, 6 + 1, 'six crawled scroll sites plus the Apple scroll-story canon');
+    assert.equal(scroll.matching, 6, 'the six crawled scroll sites; with a real catalog the hand-picked canon steps aside');
     assert.ok(scroll.directions.every((d) => d.tags.some((t) => /^scroll/i.test(t))), 'every card carries the filter');
     assert.deepEqual(scroll.fresh, [], 'no unfiltered live picks mixed in');
     const facets = Object.fromEntries(scroll.facets.map((f) => [f.tag, f.count]));
@@ -227,4 +227,21 @@ test('curate mode: a pool of strong candidates (winners first), a shortlist with
     const again = await refs.suggest({ intent: 'landing page', medium: 'landing', filters: ['Scrolling'], pool: 20 });
     assert.ok(!again.pool.slice(0, 5).some((p) => p.id === 'aw:s3' || p.id === 'aw:s1'), 'what was shown sinks for a month');
   } finally { rmSync(vault, { recursive: true, force: true }); }
+});
+
+test('makers: a brief in a company space gets that company\'s own short launch films, never its how-tos', async () => {
+  const dir = mkdtempSync(join(tmpdir(), 'refs-makers-'));
+  const asked = [];
+  const run = async (args) => {
+    const url = args.at(-1); asked.push(url);
+    if (!url.includes('@warpdotdev')) return '';
+    return ['176357\t95\taaaaaaaaaaa\tIntroducing Oz: cloud agents', '50000\t95\tbbbbbbbbbbb\tHow to use Warp', '9000\t2400\tccccccccccc\tIntroducing Warp (full keynote)', '99000\t40\tddddddddddd\tIntroducing Warp #shorts'].join('\n');
+  };
+  const out = await makerLaunches('launch video for an AI developer tool', 'developer tools', { cacheDir: dir, run });
+  assert.ok(asked.some((u) => u.includes('@warpdotdev/search?query=introducing')), 'searched a dev-tool maker');
+  assert.ok(!asked.some((u) => u.includes('@whoop')), 'no maker outside the space');
+  assert.deepEqual(out.map((x) => x.title), ['Introducing Oz: cloud agents']);
+  assert.equal(out[0].via, 'maker');
+  assert.deepEqual(await makerLaunches('launch film for my pottery studio', '', { cacheDir: dir, run }), []);
+  rmSync(dir, { recursive: true, force: true });
 });
