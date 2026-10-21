@@ -1,6 +1,6 @@
 {
   "name": "references",
-  "version": "0.13.0",
+  "version": "0.13.1",
   "description": "Curated references brought to you: before Claude designs anything, award winners, galleries, winning ads and top posts show up as picture cards above your prompt. Pick one and Claude builds on it.",
   "author": { "name": "sameeeeeeep", "url": "https://github.com/sameeeeeeep" },
   "displayName": "References",

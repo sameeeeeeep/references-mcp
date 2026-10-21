@@ -257,6 +257,7 @@ export function createReferences({ dir, libraries = [], fetchImpl, youtube = sea
     });
   }
 
+  let warm = null; // the pool's gallery warm-up, in flight while Claude curates
   const known = new Map(); // catalog items by id, once loaded: get, pick and shortlist resolve them
 
   // What this person has already been shown (<dir>/seen.jsonl): pushed down for a month, so asks don't repeat.
@@ -397,6 +398,9 @@ export function createReferences({ dir, libraries = [], fetchImpl, youtube = sea
         ...(r.take && !r.untrusted ? { take: r.take } : {}),
       }));
       for (const { r } of scored) known.set(r.id, r);
+      // While Claude reads the pool, fetch the top candidates' galleries (cached on disk), so the shortlist's cards
+      // land with their pictures instead of waiting on a page fetch each.
+      warm = Promise.all(scored.slice(0, 24).map(({ r }) => withGallery({ ...r }).catch(() => null)));
       lastAsk = { intent, medium: want, filters: applied, loosened, matching: matching.length, facets: facetsOf(matching, applied) };
       return {
         medium: want || null, intent, pool: list, filters: applied, ...(loosened.length ? { loosened } : {}),
@@ -435,10 +439,10 @@ export function createReferences({ dir, libraries = [], fetchImpl, youtube = sea
     const chosen = [...new Set(ids.map(String))].map((id) => all().find((x) => x.id === id) || known.get(id)).filter(Boolean).slice(0, 12);
     if (!chosen.length) throw new Error('None of those ids are in the pool. Call references_suggest with pool first.');
     markSeen(chosen.map((r) => r.id));
-    const directions = await Promise.all(chosen.map((r, i) => {
-      const card = { ...r, ...(why[r.id] ? { why: clean(why[r.id], 160) } : {}) };
-      return i < 4 ? withGallery(card) : { ...card, ...(r.image ? { gallery: [r.image] } : {}) };
-    }));
+    // Galleries: from the warm-up when it got there, else a quick look (never more than ~1.5s) and the card's own picture.
+    const quick = (card) => Promise.race([withGallery(card), new Promise((ok) => setTimeout(() => ok(null), 1500))])
+      .then((x) => x || { ...card, ...(card.image ? { gallery: [card.image] } : {}) });
+    const directions = await Promise.all(chosen.map((r) => quick({ ...r, ...(why[r.id] ? { why: clean(why[r.id], 160) } : {}) })));
     const ask = lastAsk || {};
     return {
       medium: medium || ask.medium || directions[0].medium || null, intent: intent || ask.intent || '', curated: true,

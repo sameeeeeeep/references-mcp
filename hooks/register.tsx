@@ -488,8 +488,10 @@ function toCards(out: any): Card[] {
 const SITE_VIDEO = /^https:\/\/assets\.awwwards\.com\/awards\/element\/[\w/.-]+\.mp4$/
 const VIDEO = /youtube\.com\/watch\?v=[\w-]{11}|youtu\.be\/[\w-]{11}|vimeo\.com\/(?:channels\/[\w-]+\/)?\d+/
 
-// Pictures for every card first (fast), then frame loops for videos one at a time (slower; device stays light).
+// Pictures for every card first, all first pictures in one run (fast), then each card's gallery, then frame loops
+// for videos one at a time (slower; the device stays light).
 async function media($: any, cards: Card[]) {
+  await firsts($, cards)
   await Promise.all(cards.map(c => pictures($, c)))
   for (const c of cards) if (c.url && VIDEO.test(c.url)) await frames($, c)
 }
@@ -519,42 +521,74 @@ const PINNED_GET = String.raw`get() {
 }`
 const PATHS = 'export PATH=/opt/homebrew/bin:/usr/local/bin:$PATH'
 
-// Each argument (url or local path) becomes one line of base64 JPEG (empty when it would not load);
-// the first also leaves a PNG for the terminal after a "--" line.
-// The first picture lands on its own so every card shows something quickly; the rest of the gallery follows.
+// Pictures already made this session, by address: a new ask, More or a reload shows them at once.
+const byUrl = new Map<string, string>()
+const firstOf = (c: Card) => (c.gallery?.length ? c.gallery[0] : c.image) || ''
+const allowed = (c: Card) => (x: string) => (/^https:\/\//.test(x) ? isPublicHttps(x) : c.source === 'your library' && x.startsWith('/'))
+
+// Each argument (url or local path) becomes one line of base64 JPEG (empty when it would not load), in order;
+// with `png`, the first also leaves a PNG for the terminal after a "--" line. Downloads run side by side, and every
+// converted picture is kept on disk (~/Library/Caches/references-mcp), so the same picture never downloads twice.
+async function jpegs($: any, srcs: string[], png = false): Promise<{ got: string[]; png?: string }> {
+  const script = [
+    PATHS, 't=$(mktemp -d); trap \'rm -rf "$t"\' EXIT; C="$HOME/Library/Caches/references-mcp/pics"; mkdir -p "$C"; n=0',
+    PINNED_GET,
+    'one() {',
+    '  k=$(printf "%s" "$1" | shasum | cut -c1-24)',
+    '  if [ ! -s "$C/$k.jpg" ]; then',
+    '    case "$1" in https://*) get "$1" "$t/i$2" ;; /*) cp "$1" "$t/i$2" 2>/dev/null ;; esac',
+    '    sips -Z 480 -s format jpeg -s formatOptions 42 "$t/i$2" --out "$t/o$2.jpg" >/dev/null 2>&1 && mv "$t/o$2.jpg" "$C/$k.jpg"',
+    '  fi',
+    '  [ -s "$C/$k.jpg" ] && base64 -i "$C/$k.jpg" | tr -d "\\n" > "$t/b$2"',
+    '}',
+    'for src in "$@"; do n=$((n+1)); one "$src" "$n" & done; wait',
+    'i=0; for src in "$@"; do i=$((i+1)); [ -f "$t/b$i" ] && cat "$t/b$i"; echo; done',
+    ...(png ? ['echo --; k=$(printf "%s" "$1" | shasum | cut -c1-24); sips -Z 260 -s format png "$C/$k.jpg" --out "$t/p.png" >/dev/null 2>&1 && base64 -i "$t/p.png" | tr -d "\\n"'] : []),
+  ].join('\n')
+  const r = await $.process.run([...SH, script, 'pictures', ...srcs], { timeoutMs: 40_000 })
+  const [body, tail] = String(r.stdout || '').split('\n--\n')
+  return { got: body.split('\n').slice(0, srcs.length).map((x: string) => x.trim()), png: tail?.trim() }
+}
+
+// Every card's first picture in one run: the row fills together, a second or two after the cards land.
+async function firsts($: any, cards: Card[]) {
+  const want = cards.filter(c => !slides.has(c.id))
+  for (const c of want) { const hit = byUrl.get(firstOf(c)); if (hit) slides.set(c.id, [hit]) }
+  const left = want.filter(c => !slides.has(c.id) && firstOf(c) && allowed(c)(firstOf(c)))
+  if (want.length !== left.length) await bump($)
+  if (!left.length) return
+  try {
+    const { got } = await jpegs($, left.map(firstOf))
+    left.forEach((c, i) => { if (got[i]) { byUrl.set(firstOf(c), got[i]); if (!slides.has(c.id)) slides.set(c.id, [got[i]]) } })
+    await bump($)
+  } catch {}
+}
+
+// A card's whole gallery (its first picture again, from the cache, plus up to five more).
 async function pictures($: any, c: Card) {
   const all = c.gallery?.length ? c.gallery : c.image ? [c.image] : []
-  await picturesOf($, c, all.slice(0, 1))
-  if (all.length > 1) await picturesOf($, c, all)
+  const hit = byUrl.get(all[0] || '')
+  if (hit && !slides.has(c.id)) { slides.set(c.id, [hit]); await bump($) }
+  await picturesOf($, c, all)
 }
 
 async function picturesOf($: any, c: Card, list: string[]) {
   // Remote pictures: public https only. Local files: only for the person's own library cards.
-  const srcs = list
-    .filter(x => (/^https:\/\//.test(x) ? isPublicHttps(x) : c.source === 'your library' && x.startsWith('/')))
-    .slice(0, 6)
+  const srcs = list.filter(allowed(c)).slice(0, 6)
   if (!srcs.length) return
-  const script = [
-    PATHS, 't=$(mktemp -d); trap \'rm -rf "$t"\' EXIT; n=0',
-    PINNED_GET,
-    'for src in "$@"; do n=$((n+1))',
-    '  case "$src" in https://*) get "$src" "$t/i$n" ;; /*) cp "$src" "$t/i$n" 2>/dev/null ;; esac',
-    '  if sips -Z 480 -s format jpeg -s formatOptions 42 "$t/i$n" --out "$t/o$n.jpg" >/dev/null 2>&1; then base64 -i "$t/o$n.jpg" | tr -d "\\n"; fi; echo',
-    'done',
-    'echo --; sips -Z 260 -s format png "$t/i1" --out "$t/p.png" >/dev/null 2>&1 && base64 -i "$t/p.png" | tr -d "\\n"',
-  ].join('\n')
   try {
-    const r = await $.process.run([...SH, script, 'pictures', ...srcs], { timeoutMs: 40_000 })
-    const [jpegs, png] = String(r.stdout || '').split('\n--\n')
+    const { got: lines, png } = await jpegs($, srcs, true)
     const got: string[] = []
     let total = 0
-    for (const line of jpegs.split('\n').map((s: string) => s.trim()).filter(Boolean)) {
+    lines.forEach((line, i) => { if (line) byUrl.set(srcs[i], line) })
+    for (const line of lines.filter(Boolean)) {
       if (total + line.length > SVG_BUDGET) break
       got.push(line); total += line.length
     }
+    if (byUrl.size > 400) for (const k of [...byUrl.keys()].slice(0, 100)) byUrl.delete(k)
     if (!got.length) return
     if (!isVideo.has(c.id) && got.length >= (slides.get(c.id)?.length || 0)) slides.set(c.id, got)
-    if (png?.trim() && png.trim().length < 2_000_000) tiny.set(c.id, png.trim())
+    if (png && png.length < 2_000_000) tiny.set(c.id, png)
     await bump($)
   } catch {}
 }

@@ -22805,6 +22805,7 @@ function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, yo
       return item;
     });
   }
+  let warm = null;
   const known = /* @__PURE__ */ new Map();
   function readSeen() {
     try {
@@ -22956,6 +22957,7 @@ function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, yo
         ...r.take && !r.untrusted ? { take: r.take } : {}
       }));
       for (const { r } of scored) known.set(r.id, r);
+      warm = Promise.all(scored.slice(0, 24).map(({ r }) => withGallery({ ...r }).catch(() => null)));
       lastAsk = { intent, medium: want, filters: applied, loosened, matching: matching.length, facets: facetsOf(matching, applied) };
       return {
         medium: want || null,
@@ -22996,10 +22998,8 @@ function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, yo
     const chosen = [...new Set(ids.map(String))].map((id) => all().find((x) => x.id === id) || known.get(id)).filter(Boolean).slice(0, 12);
     if (!chosen.length) throw new Error("None of those ids are in the pool. Call references_suggest with pool first.");
     markSeen(chosen.map((r) => r.id));
-    const directions = await Promise.all(chosen.map((r, i) => {
-      const card = { ...r, ...why[r.id] ? { why: clean(why[r.id], 160) } : {} };
-      return i < 4 ? withGallery(card) : { ...card, ...r.image ? { gallery: [r.image] } : {} };
-    }));
+    const quick = (card) => Promise.race([withGallery(card), new Promise((ok) => setTimeout(() => ok(null), 1500))]).then((x) => x || { ...card, ...card.image ? { gallery: [card.image] } : {} });
+    const directions = await Promise.all(chosen.map((r) => quick({ ...r, ...why[r.id] ? { why: clean(why[r.id], 160) } : {} })));
     const ask = lastAsk || {};
     return {
       medium: medium || ask.medium || directions[0].medium || null,
