@@ -245,3 +245,8 @@ test('makers: a brief in a company space gets that company\'s own short launch f
   assert.deepEqual(await makerLaunches('launch film for my pottery studio', '', { cacheDir: dir, run }), []);
   rmSync(dir, { recursive: true, force: true });
 });
+
+test('every hand-picked reference has a picture: pages that block previews carry their own', () => {
+  const blocked = /tiktok\.com|instagram\.com|wikipedia\.org|linkedin\.com|slideshare\.net|dashboard\.stripe|paulgraham\.com|sonypictures\.com|rive\.app|airbnb\.com/;
+  for (const c of CATALOG) if (blocked.test(c.url || '')) assert.ok(c.image, `${c.id} needs its own image`);
+});

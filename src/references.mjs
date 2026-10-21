@@ -10,7 +10,7 @@ import { join, extname, basename } from 'node:path';
 import { z } from 'zod';
 import { QUIZZES } from './quiz.mjs';
 import { CATALOG, MEDIA } from './catalog.mjs';
-import { SOURCES, fetchLive, pageImages, pageVideos, loadIndex, projectPool, ycLaunches, makerLaunches, fmtViews, searchYouTube, shelfFor, isPublicHttpsUrl, YT_MEDIA } from './sources.mjs';
+import { SOURCES, fetchLive, previewImage, pageImages, pageVideos, loadIndex, projectPool, ycLaunches, makerLaunches, fmtViews, searchYouTube, shelfFor, isPublicHttpsUrl, YT_MEDIA } from './sources.mjs';
 
 const IMG = new Set(['.png', '.jpg', '.jpeg', '.webp', '.gif']);
 const STOP = new Set('a an the and or for of to in on with my our me we i it this that make build design create new some want need like'.split(' '));
@@ -221,8 +221,10 @@ export function createReferences({ dir, libraries = [], fetchImpl, youtube = sea
       options: await Promise.all(st.options.map(async ({ from, like, ...o }) => {
         const ex = exampleFor({ ...o, like });
         if (ex) { used.add(ex.id); return { ...o, hint: clean(String(ex.title).split(' · ')[0], 40), image: ex.image }; }
-        // Nothing of the project's left to show it: the option stands on its label alone (no stock brand).
-        return { ...o, hint: '' };
+        // Nothing of the project's to show it (decks, posts: small catalogs): its own example's picture, so no
+        // option is ever blank.
+        const image = liveOn && from ? await previewImage(from, { cacheDir }).catch(() => null) : null;
+        return image ? { ...o, image } : { ...o, hint: '' };
       })),
     })));
   }
@@ -445,7 +447,8 @@ export function createReferences({ dir, libraries = [], fetchImpl, youtube = sea
     if (!chosen.length) throw new Error('None of those ids are in the pool. Call references_suggest with pool first.');
     markSeen(chosen.map((r) => r.id));
     // Galleries: from the warm-up when it got there, else a quick look (never more than ~1.5s) and the card's own picture.
-    const quick = (card) => Promise.race([withGallery(card), new Promise((ok) => setTimeout(() => ok(null), 1500))])
+    // A card with no picture of its own waits longer for its page's: a card without a picture is the worse wait.
+    const quick = (card) => Promise.race([withGallery(card), new Promise((ok) => setTimeout(() => ok(null), card.image ? 1500 : 6000))])
       .then((x) => x || { ...card, ...(card.image ? { gallery: [card.image] } : {}) });
     const directions = await Promise.all(chosen.map((r) => quick({ ...r, ...(why[r.id] ? { why: clean(why[r.id], 160) } : {}) })));
     const ask = lastAsk || {};

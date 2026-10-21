@@ -74,7 +74,7 @@ export const QUIZZES = {
     ] },
     { q: 'How much on each slide?', options: [
       { id: 'one', label: 'One word or image', hint: 'Jobs', from: yt('MnrJzXM7a6o'), tags: ['minimal', 'big-type', 'black'], words: '' },
-      { id: 'simple', label: 'A simple point', hint: 'Airbnb 2008', from: 'https://www.ycombinator.com/library/4T-how-to-design-a-better-pitch-deck', tags: ['simple', 'narrative'], words: '' },
+      { id: 'simple', label: 'A simple point', hint: 'Airbnb 2008', from: yt('uuxnzuH3XiM'), tags: ['simple', 'narrative'], words: '' },
       { id: 'dense', label: 'Charts & numbers', hint: 'Stripe', from: 'https://stripe.com/sessions', tags: ['data', 'charts', 'polished'], words: '' },
     ] },
   ],
@@ -103,7 +103,7 @@ export const QUIZZES = {
   ],
   post: [
     { q: 'What voice?', options: [
-      { id: 'essay', label: 'A plain essay', hint: 'Paul Graham', from: 'https://paulgraham.com/articles.html', tags: ['essay', 'plain', 'thoughtful', 'longform'], words: '' },
+      { id: 'essay', label: 'A plain essay', hint: 'Paul Graham', from: yt('2OZ94b3fJvo'), tags: ['essay', 'plain', 'thoughtful', 'longform'], words: '' },
       { id: 'raw', label: 'Raw build-in-public', hint: 'levelsio', from: 'https://levels.io', tags: ['build-in-public', 'raw', 'numbers', 'indie'], words: '' },
       { id: 'tactical', label: 'Tactical deep-dive', hint: "Lenny's", from: 'https://www.lennysnewsletter.com', tags: ['tactical', 'frameworks', 'newsletter'], words: '' },
       { id: 'hook', label: 'Short-line hooks', hint: 'LinkedIn format', from: 'https://www.justinwelsh.me', tags: ['hook', 'short', 'skimmable', 'linkedin'], words: '' },

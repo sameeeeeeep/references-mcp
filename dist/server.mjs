@@ -21571,7 +21571,7 @@ var QUIZZES = {
     ] },
     { q: "How much on each slide?", options: [
       { id: "one", label: "One word or image", hint: "Jobs", from: yt("MnrJzXM7a6o"), tags: ["minimal", "big-type", "black"], words: "" },
-      { id: "simple", label: "A simple point", hint: "Airbnb 2008", from: "https://www.ycombinator.com/library/4T-how-to-design-a-better-pitch-deck", tags: ["simple", "narrative"], words: "" },
+      { id: "simple", label: "A simple point", hint: "Airbnb 2008", from: yt("uuxnzuH3XiM"), tags: ["simple", "narrative"], words: "" },
       { id: "dense", label: "Charts & numbers", hint: "Stripe", from: "https://stripe.com/sessions", tags: ["data", "charts", "polished"], words: "" }
     ] }
   ],
@@ -21600,7 +21600,7 @@ var QUIZZES = {
   ],
   post: [
     { q: "What voice?", options: [
-      { id: "essay", label: "A plain essay", hint: "Paul Graham", from: "https://paulgraham.com/articles.html", tags: ["essay", "plain", "thoughtful", "longform"], words: "" },
+      { id: "essay", label: "A plain essay", hint: "Paul Graham", from: yt("2OZ94b3fJvo"), tags: ["essay", "plain", "thoughtful", "longform"], words: "" },
       { id: "raw", label: "Raw build-in-public", hint: "levelsio", from: "https://levels.io", tags: ["build-in-public", "raw", "numbers", "indie"], words: "" },
       { id: "tactical", label: "Tactical deep-dive", hint: "Lenny's", from: "https://www.lennysnewsletter.com", tags: ["tactical", "frameworks", "newsletter"], words: "" },
       { id: "hook", label: "Short-line hooks", hint: "LinkedIn format", from: "https://www.justinwelsh.me", tags: ["hook", "short", "skimmable", "linkedin"], words: "" }
@@ -21622,6 +21622,7 @@ var CATALOG = [
   },
   {
     id: "ui-stripe-dashboard",
+    image: "https://i.ytimg.com/vi/UB_hdbpFNwk/hqdefault.jpg",
     medium: "ui",
     title: "Stripe Dashboard",
     url: "https://dashboard.stripe.com",
@@ -21704,6 +21705,7 @@ var CATALOG = [
   },
   {
     id: "app-airbnb",
+    image: "https://i.ytimg.com/vi/bFHdNb74YDo/hqdefault.jpg",
     medium: "app",
     title: "Airbnb",
     url: "https://www.airbnb.com",
@@ -21732,6 +21734,7 @@ var CATALOG = [
     medium: "deck",
     title: "Airbnb 2008 pitch deck",
     url: "https://www.slideshare.net/slideshow/airbnb-pitch-deck-from-2008/40196935",
+    image: "https://i.ytimg.com/vi/uuxnzuH3XiM/hqdefault.jpg",
     take: "Problem \u2192 solution \u2192 market \u2192 product \u2192 business model, one idea per slide, almost no text.",
     tags: ["pitch", "fundraise", "startup", "simple", "narrative", "yc"]
   },
@@ -21786,6 +21789,7 @@ var CATALOG = [
   },
   {
     id: "video-fast-explainer",
+    image: "https://i.ytimg.com/vi/GuqAUv4UKXo/hqdefault.jpg",
     medium: "video",
     title: "Fast tech-news explainer format",
     url: "https://www.youtube.com/@VarunMayya",
@@ -21827,6 +21831,7 @@ var CATALOG = [
   },
   {
     id: "motion-rive",
+    image: "https://i.ytimg.com/vi/mMpik32gkt4/hqdefault.jpg",
     medium: "motion",
     title: "Rive community examples",
     url: "https://rive.app/marketplace",
@@ -21844,6 +21849,7 @@ var CATALOG = [
   },
   {
     id: "animation-spiderverse",
+    image: "https://i.ytimg.com/vi/g4Hbz2jLxvQ/hqdefault.jpg",
     medium: "animation",
     title: "Spider-Man: Into the Spider-Verse",
     url: "https://www.sonypictures.com/movies/spidermanintothespiderverse",
@@ -21861,6 +21867,7 @@ var CATALOG = [
   // ── social (visual social: IG, TikTok, carousels) ──
   {
     id: "social-duolingo-tiktok",
+    image: "https://i.ytimg.com/vi/bgOcogUygKk/hqdefault.jpg",
     medium: "social",
     title: "Duolingo on TikTok",
     url: "https://www.tiktok.com/@duolingo",
@@ -21869,6 +21876,7 @@ var CATALOG = [
   },
   {
     id: "social-liquid-death",
+    image: "https://i.ytimg.com/vi/EeRADNpdKD4/hqdefault.jpg",
     medium: "social",
     title: "Liquid Death on Instagram",
     url: "https://www.instagram.com/liquiddeath/",
@@ -21877,6 +21885,7 @@ var CATALOG = [
   },
   {
     id: "social-notion",
+    image: "https://i.ytimg.com/vi/FElBbgnNtVA/hqdefault.jpg",
     medium: "social",
     title: "Notion on Instagram",
     url: "https://www.instagram.com/notionhq/",
@@ -21885,6 +21894,7 @@ var CATALOG = [
   },
   {
     id: "social-ryanair",
+    image: "https://i.ytimg.com/vi/dyhaEKpB67U/hqdefault.jpg",
     medium: "social",
     title: "Ryanair on TikTok",
     url: "https://www.tiktok.com/@ryanair",
@@ -21894,6 +21904,7 @@ var CATALOG = [
   // ── ad (award-winning campaigns) ──
   {
     id: "ad-dove-sketches",
+    image: "https://i.ytimg.com/vi/MjzaAiZHAlc/hqdefault.jpg",
     medium: "ad",
     title: 'Dove "Real Beauty Sketches"',
     url: "https://en.wikipedia.org/wiki/Dove_Real_Beauty_Sketches",
@@ -21902,6 +21913,7 @@ var CATALOG = [
   },
   {
     id: "ad-old-spice",
+    image: "https://i.ytimg.com/vi/CaT_oieImqw/hqdefault.jpg",
     medium: "ad",
     title: 'Old Spice "The Man Your Man Could Smell Like"',
     url: "https://en.wikipedia.org/wiki/The_Man_Your_Man_Could_Smell_Like",
@@ -21910,6 +21922,7 @@ var CATALOG = [
   },
   {
     id: "ad-nike-dream-crazy",
+    image: "https://i.ytimg.com/vi/WW2yKSt2C_A/hqdefault.jpg",
     medium: "ad",
     title: 'Nike "Dream Crazy"',
     url: "https://en.wikipedia.org/wiki/Dream_Crazy",
@@ -21918,6 +21931,7 @@ var CATALOG = [
   },
   {
     id: "ad-spotify-wrapped",
+    image: "https://i.ytimg.com/vi/UR9KUwrdoIs/hqdefault.jpg",
     medium: "ad",
     title: "Spotify Wrapped",
     url: "https://en.wikipedia.org/wiki/Spotify_Wrapped",
@@ -21926,6 +21940,7 @@ var CATALOG = [
   },
   {
     id: "ad-think-different",
+    image: "https://i.ytimg.com/vi/5sMBhDv4sik/hqdefault.jpg",
     medium: "ad",
     title: 'Apple "Think Different"',
     url: "https://en.wikipedia.org/wiki/Think_different",
@@ -21938,6 +21953,7 @@ var CATALOG = [
     medium: "post",
     title: "Paul Graham essays",
     url: "https://paulgraham.com/articles.html",
+    image: "https://i.ytimg.com/vi/2OZ94b3fJvo/hqdefault.jpg",
     take: "Plain words, short sentences, one idea pushed further than expected; no formatting tricks.",
     tags: ["essay", "longform", "founder", "plain", "thoughtful"]
   },
@@ -21962,6 +21978,7 @@ var CATALOG = [
     medium: "post",
     title: "Short-line LinkedIn format",
     url: "https://www.linkedin.com/in/justinwelsh/",
+    image: "https://justinwelsh.me/og/homepage.png",
     take: "One-line hook, white space between short lines, a list in the middle, a single takeaway at the end.",
     tags: ["linkedin", "hook", "short", "founder", "format", "skimmable"]
   }
@@ -22105,6 +22122,40 @@ async function fetchLive(source, { cacheDir, fetchImpl = fetch, now = Date.now()
   }
 }
 var OG_TTL = 30 * 24 * 36e5;
+async function previewImage(url, { cacheDir, fetchImpl = pinnedFetch, now = Date.now(), check: check2 = resolvesPublic } = {}) {
+  if (!/^https:\/\//.test(url || "")) return null;
+  const yt2 = /youtube\.com\/watch\?v=([\w-]{11})|youtu\.be\/([\w-]{11})/.exec(url);
+  if (yt2) return `https://i.ytimg.com/vi/${yt2[1] || yt2[2]}/hqdefault.jpg`;
+  const file = cacheDir && join(cacheDir, "references-cache.json");
+  let cache = {};
+  try {
+    if (file && existsSync(file)) cache = JSON.parse(readFileSync(file, "utf8"));
+  } catch {
+    cache = {};
+  }
+  const key = `og:${url}`;
+  if (cache[key] && now - cache[key].at < OG_TTL) return cache[key].image;
+  let image = null;
+  try {
+    const res = await safeFetch(url, { headers: { "user-agent": UA }, signal: AbortSignal.timeout(5e3) }, fetchImpl, check2);
+    const html = (await res.text()).slice(0, 3e5);
+    const m = /<meta[^>]+(?:property|name)=["'](?:og:image|twitter:image)(?::src)?["'][^>]*content=["']([^"']+)["']/i.exec(html) || /<meta[^>]+content=["']([^"']+)["'][^>]*(?:property|name)=["'](?:og:image|twitter:image)["']/i.exec(html);
+    if (m) image = new URL(decode(m[1]), url).href;
+    if (image && !isPublicHttpsUrl(image)) image = null;
+  } catch {
+    return cache[key]?.image ?? null;
+  }
+  if (file) {
+    try {
+      const fresh = existsSync(file) ? JSON.parse(readFileSync(file, "utf8")) : {};
+      fresh[key] = { at: now, image };
+      mkdirSync(cacheDir, { recursive: true });
+      writeFileSync(file, JSON.stringify(fresh));
+    } catch {
+    }
+  }
+  return image;
+}
 var YT_TTL = 24 * 36e5;
 var YT_HINT = { video: "", motion: "motion design", animation: "animation", ad: "ad commercial", social: "shorts", deck: "keynote presentation", landing: "website design", ui: "ui design", app: "app design", post: "" };
 var YT_MEDIA = ["video", "motion", "animation", "ad", "social"];
@@ -22765,7 +22816,8 @@ function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, yo
           used.add(ex.id);
           return { ...o, hint: clean(String(ex.title).split(" \xB7 ")[0], 40), image: ex.image };
         }
-        return { ...o, hint: "" };
+        const image = liveOn && from ? await previewImage(from, { cacheDir }).catch(() => null) : null;
+        return image ? { ...o, image } : { ...o, hint: "" };
       }))
     })));
   }
@@ -22999,7 +23051,7 @@ function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, yo
     const chosen = [...new Set(ids.map(String))].map((id) => all().find((x) => x.id === id) || known.get(id)).filter(Boolean).slice(0, 12);
     if (!chosen.length) throw new Error("None of those ids are in the pool. Call references_suggest with pool first.");
     markSeen(chosen.map((r) => r.id));
-    const quick = (card) => Promise.race([withGallery(card), new Promise((ok) => setTimeout(() => ok(null), 1500))]).then((x) => x || { ...card, ...card.image ? { gallery: [card.image] } : {} });
+    const quick = (card) => Promise.race([withGallery(card), new Promise((ok) => setTimeout(() => ok(null), card.image ? 1500 : 6e3))]).then((x) => x || { ...card, ...card.image ? { gallery: [card.image] } : {} });
     const directions = await Promise.all(chosen.map((r) => quick({ ...r, ...why[r.id] ? { why: clean(why[r.id], 160) } : {} })));
     const ask = lastAsk || {};
     return {
