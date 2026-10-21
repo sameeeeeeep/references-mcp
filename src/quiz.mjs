@@ -2,33 +2,34 @@
 // the look by pointing instead of describing it. Answers go back into references_suggest as `style` (tags that
 // lift matching canon) and `styleWords` (plain words added to the live YouTube search).
 //
-// Shape: { [medium]: [{ q, options: [{ id, label, hint, from, tags[], words, filters? }] }] }. `filters` are catalog tags
+// Shape: { [medium]: [{ q, options: [{ id, label, hint, from, tags[], words, filters?, like? }] }] }. `like` is a title
+// pattern for picking the option's example among the project's own references when no tag says it outright. `filters` are catalog tags
 // (Awwwards' vocabulary) that the pick makes hard: only references carrying them come back. `from` is the example's
 // page or video; its picture is looked up live (og:image / YouTube thumbnail) and cached.
 const yt = (id) => `https://www.youtube.com/watch?v=${id}`;
 
 const WHO_TALKS = { q: 'Who does the talking?', options: [
-  { id: 'music', label: 'Music only', hint: 'Raycast', from: yt('Mi173xGb0ZA'), tags: ['no-voiceover', 'music'], words: '' },
-  { id: 'voiceover', label: 'A voiceover', hint: 'Think Different', from: yt('5sMBhDv4sik'), tags: ['voiceover', 'manifesto'], words: 'voiceover' },
-  { id: 'oncamera', label: 'Someone on camera', hint: 'MKBHD', from: yt('XbXXKhfvSF0'), tags: ['talking-head', 'founder'], words: '' },
+  { id: 'music', like: /\b(film|commercial|trailer|reveal|ad)\b/i, label: 'Music only', hint: 'Raycast', from: yt('Mi173xGb0ZA'), tags: ['no-voiceover', 'music'], words: '' },
+  { id: 'voiceover', like: /\b(manifesto|think different|story|campaign|anthem|1984)\b/i, label: 'A voiceover', hint: 'Think Different', from: yt('5sMBhDv4sik'), tags: ['voiceover', 'manifesto'], words: 'voiceover' },
+  { id: 'oncamera', like: /\b(introduces|keynote|founder|ceo|meet|jobs|interview|presents)\b/i, label: 'Someone on camera', hint: 'MKBHD', from: yt('XbXXKhfvSF0'), tags: ['talking-head', 'founder'], words: '' },
 ] };
 
 export const QUIZZES = {
   video: [
     { q: 'What should it feel like?', options: [
-      { id: 'cinematic', label: 'Cinematic & quiet', hint: 'Apple', from: yt('V3dbG9pAi8I'), tags: ['cinematic', 'premium', 'brand'], words: 'cinematic' },
-      { id: 'product', label: 'Product glide', hint: 'Linear', from: yt('6dIwFoQ0eVg'), tags: ['product-demo', 'saas', 'dark'], words: 'product demo' },
-      { id: 'founder', label: 'Founder & candid', hint: 'Arc', from: yt('n5Vwrj1gEWs'), tags: ['founder', 'candid', 'authentic'], words: 'founder story' },
-      { id: 'punchy', label: 'Fast & punchy', hint: 'Nothing', from: yt('oieVN1CLOaw'), tags: ['fast', 'short', 'energetic'], words: 'trailer' },
+      { id: 'cinematic', like: /\b(film|cinematic|commercial|1984|anthem|brand)\b/i, label: 'Cinematic & quiet', hint: 'Apple', from: yt('V3dbG9pAi8I'), tags: ['cinematic', 'premium', 'brand'], words: 'cinematic' },
+      { id: 'product', like: /\b(introducing|demo|product|app|now available|meet)\b/i, label: 'Product glide', hint: 'Linear', from: yt('6dIwFoQ0eVg'), tags: ['product-demo', 'saas', 'dark'], words: 'product demo' },
+      { id: 'founder', like: /\b(founder|ceo|jobs|introduces|keynote|story|why we|raises)\b/i, label: 'Founder & candid', hint: 'Arc', from: yt('n5Vwrj1gEWs'), tags: ['founder', 'candid', 'authentic'], words: 'founder story' },
+      { id: 'punchy', like: /\b(trailer|teaser|reveal|in \d+ seconds|launch)\b/i, label: 'Fast & punchy', hint: 'Nothing', from: yt('oieVN1CLOaw'), tags: ['fast', 'short', 'energetic'], words: 'trailer' },
     ] },
     WHO_TALKS,
   ],
   ad: [
     { q: 'What kind of idea?', options: [
-      { id: 'insight', label: 'Emotional truth', hint: 'Dove', from: yt('MjzaAiZHAlc'), tags: ['emotional', 'insight', 'documentary'], words: 'emotional' },
-      { id: 'absurd', label: 'Absurd humour', hint: 'Old Spice', from: yt('CaT_oieImqw'), tags: ['humour', 'absurd', 'one-take'], words: 'funny' },
-      { id: 'stance', label: 'A bold stance', hint: 'Nike', from: yt('-grjIUWKoBA'), tags: ['bold', 'stance', 'montage', 'inspirational'], words: 'inspirational' },
-      { id: 'manifesto', label: 'A manifesto', hint: 'Think Different', from: yt('5sMBhDv4sik'), tags: ['manifesto', 'iconic', 'black-white'], words: 'manifesto' },
+      { id: 'insight', like: /\b(real|truth|story|mother|mom|dad|life|love)\b/i, label: 'Emotional truth', hint: 'Dove', from: yt('MjzaAiZHAlc'), tags: ['emotional', 'insight', 'documentary'], words: 'emotional' },
+      { id: 'absurd', like: /\b(funny|super bowl|guy|really|crazy|weird)\b/i, label: 'Absurd humour', hint: 'Old Spice', from: yt('CaT_oieImqw'), tags: ['humour', 'absurd', 'one-take'], words: 'funny' },
+      { id: 'stance', like: /\b(anthem|dream|believe|just do|impossible|champion|running|sport)\b/i, label: 'A bold stance', hint: 'Nike', from: yt('-grjIUWKoBA'), tags: ['bold', 'stance', 'montage', 'inspirational'], words: 'inspirational' },
+      { id: 'manifesto', like: /\b(manifesto|think different|1984|crazy ones|we believe)\b/i, label: 'A manifesto', hint: 'Think Different', from: yt('5sMBhDv4sik'), tags: ['manifesto', 'iconic', 'black-white'], words: 'manifesto' },
     ] },
     WHO_TALKS,
   ],
@@ -79,25 +80,25 @@ export const QUIZZES = {
   ],
   motion: [
     { q: 'What kind of motion?', options: [
-      { id: 'ambient', label: 'Ambient & slow', hint: 'Stripe', from: 'https://stripe.com', tags: ['gradient', 'ambient', 'subtle'], words: 'ambient' },
-      { id: 'fluid', label: 'Fluid transitions', hint: 'Family', from: 'https://benji.org/family-values', tags: ['fluid', 'micro-interaction', 'spring', 'transition'], words: 'ui animation' },
-      { id: 'reveal', label: 'Product reveal', hint: 'Apple', from: 'https://www.apple.com', tags: ['reveal', 'cinematic', '3d', 'premium'], words: 'product reveal' },
-      { id: 'interactive', label: 'Reacts to you', hint: 'Rive', from: 'https://rive.app', tags: ['interactive', 'state-machine', 'playful'], words: 'interactive' },
+      { id: 'ambient', like: /\b(ambient|loop|gradient|calm)\b/i, label: 'Ambient & slow', hint: 'Stripe', from: 'https://stripe.com', tags: ['gradient', 'ambient', 'subtle'], words: 'ambient' },
+      { id: 'fluid', like: /\b(ui|transition|interaction|app)\b/i, label: 'Fluid transitions', hint: 'Family', from: 'https://benji.org/family-values', tags: ['fluid', 'micro-interaction', 'spring', 'transition'], words: 'ui animation' },
+      { id: 'reveal', like: /\b(reveal|product|3d|launch)\b/i, label: 'Product reveal', hint: 'Apple', from: 'https://www.apple.com', tags: ['reveal', 'cinematic', '3d', 'premium'], words: 'product reveal' },
+      { id: 'interactive', like: /\b(interactive|rive|game|play)\b/i, label: 'Reacts to you', hint: 'Rive', from: 'https://rive.app', tags: ['interactive', 'state-machine', 'playful'], words: 'interactive' },
     ] },
   ],
   animation: [
     { q: 'What style?', options: [
-      { id: 'flat', label: 'Flat vector explainer', hint: 'Kurzgesagt', from: yt('_y9JuojAIg0'), tags: ['flat', 'vector', 'explainer'], words: 'explainer' },
-      { id: 'comic', label: 'Comic texture', hint: 'Spider-Verse', from: 'https://www.sonypictures.com/movies/spidermanintothespiderverse', tags: ['comic', 'texture', 'stylised', 'bold'], words: 'stylised' },
-      { id: 'characters', label: 'Simple characters', hint: 'Duolingo', from: 'https://blog.duolingo.com', tags: ['character', 'geometric', 'expressive', 'mascot'], words: 'character' },
+      { id: 'flat', like: /\b(explainer|explained|kurzgesagt|flat)\b/i, label: 'Flat vector explainer', hint: 'Kurzgesagt', from: yt('_y9JuojAIg0'), tags: ['flat', 'vector', 'explainer'], words: 'explainer' },
+      { id: 'comic', like: /\b(comic|stylised|stylized|2d|hand-?drawn)\b/i, label: 'Comic texture', hint: 'Spider-Verse', from: 'https://www.sonypictures.com/movies/spidermanintothespiderverse', tags: ['comic', 'texture', 'stylised', 'bold'], words: 'stylised' },
+      { id: 'characters', like: /\b(character|mascot|cute|short film)\b/i, label: 'Simple characters', hint: 'Duolingo', from: 'https://blog.duolingo.com', tags: ['character', 'geometric', 'expressive', 'mascot'], words: 'character' },
     ] },
   ],
   social: [
     { q: 'What voice?', options: [
-      { id: 'mascot', label: 'Mascot on trends', hint: 'Duolingo', from: yt('P5Lug4uY8JE'), tags: ['mascot', 'trend', 'native'], words: '' },
+      { id: 'mascot', like: /\b(mascot|duo|trend|tiktok)\b/i, label: 'Mascot on trends', hint: 'Duolingo', from: yt('P5Lug4uY8JE'), tags: ['mascot', 'trend', 'native'], words: '' },
       { id: 'absurd', label: 'Absurd & loud', hint: 'Liquid Death', from: 'https://liquiddeath.com', tags: ['bold', 'absurd', 'brand-voice'], words: '' },
-      { id: 'teach', label: 'Clean & teaching', hint: 'Notion', from: 'https://www.notion.com', tags: ['carousel', 'education', 'clean'], words: '' },
-      { id: 'selfaware', label: 'Self-aware humour', hint: 'Ryanair', from: yt('R7qGqWdm9lc'), tags: ['humour', 'self-aware', 'trend'], words: '' },
+      { id: 'teach', like: /\b(how|tips|learn|explained|guide)\b/i, label: 'Clean & teaching', hint: 'Notion', from: 'https://www.notion.com', tags: ['carousel', 'education', 'clean'], words: '' },
+      { id: 'selfaware', like: /\b(funny|humou?r|ryanair|self)\b/i, label: 'Self-aware humour', hint: 'Ryanair', from: yt('R7qGqWdm9lc'), tags: ['humour', 'self-aware', 'trend'], words: '' },
     ] },
   ],
   post: [

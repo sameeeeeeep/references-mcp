@@ -299,3 +299,32 @@ test('a double tap on a quiz answer answers only the question on screen', async 
   await until(ui, 'quiz-music')
   expect(await ui.find({ key: 'quiz-music' })).toBeDefined() // still on question 2, not skipped past it
 })
+
+test('pictures: the cards draw the pictures the picture run returns, each in its own card', async ($, on) => {
+  const sent: string[] = []
+  mock.clock(on)
+  on('ui.status' as any, () => ({ value: undefined }) as any)
+  on('ui.render', ($, e) => { const { Box } = $.ui.resolve(e) as any; return <Box /> })
+  const runs: string[][] = []
+  on('process.run' as any, (_$: any, e: any) => {
+    const argv: string[] = e.argv || e.command || e.args || []
+    runs.push(argv)
+    if (argv[3] !== 'pictures') throw new Error('no frames in tests')
+    const srcs = argv.slice(4)
+    const body = srcs.map((s: string) => (s.includes('linear') ? 'TElORUFS' : 'SVBIT05F')).join('\n')
+    return { value: { exitCode: 0, stdout: `${body}\n--\nUE5H`, stderr: '' } } as any
+  })
+  const withPics = { ...SUGGEST, quiz: [], directions: SUGGEST.directions.map((d) => ({ ...d, image: `https://example.com/${d.id.includes('linear') ? 'linear' : 'iphone'}.jpg` })) }
+  const text = JSON.stringify(withPics)
+  on('tool.call', { tool: TOOL }, (_$, e: any) => { lastCall = e.tool_use_id; return { result: [{ type: 'text', text }], text } as any })
+  await $.tool.call({ tool: TOOL, intent: 'x' } as any)
+  const ui = await $.ui.mount({ plugin: 'references', surface: 'desktop', ...BAND } as any)
+  let svgs = ''
+  for (let i = 0; i < 400 && !(svgs.includes('TElORUFS') && svgs.includes('SVBIT05F')); i++) {
+    await Promise.resolve()
+    svgs = JSON.stringify(await ui.findAll?.({ type: 'Svg' }) ?? await ui.find({ type: 'Svg' }))
+  }
+  expect(runs.length).toBeGreaterThan(0)
+  expect(svgs).toContain('data:image/jpeg;base64,TElORUFS')
+  expect(svgs).toContain('data:image/jpeg;base64,SVBIT05F')
+})

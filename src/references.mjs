@@ -210,11 +210,16 @@ export function createReferences({ dir, libraries = [], fetchImpl, youtube = sea
     // catalog filter, or its title says the option's own words. A mismatched example misleads more than none.
     const fits = (o, r) => (o.filters || []).some((f) => hasTag(r, f))
       || (o.words && tokens(o.words).some((w) => w.length >= 5 && tokens(r.title).includes(w)));
-    const exampleFor = (o) => candidates.find((r) => !used.has(r.id) && r.image && fits(o, r));
+    // Best first: one that is the option (its tags or words), then one whose title reads like it, then the project's
+    // next unused reference, so every option shows a picture from this project, never a blank or a stock brand.
+    const open = (r) => !used.has(r.id) && r.image;
+    const exampleFor = (o) => candidates.find((r) => open(r) && fits(o, r))
+      || (o.like && candidates.find((r) => open(r) && o.like.test(String(r.title))))
+      || candidates.find(open);
     return Promise.all(QUIZZES[medium].map(async (st) => ({
       q: st.q,
-      options: await Promise.all(st.options.map(async ({ from, ...o }) => {
-        const ex = exampleFor(o);
+      options: await Promise.all(st.options.map(async ({ from, like, ...o }) => {
+        const ex = exampleFor({ ...o, like });
         if (ex) { used.add(ex.id); return { ...o, hint: clean(String(ex.title).split(' · ')[0], 40), image: ex.image }; }
         // Nothing of the project's left to show it: the option stands on its label alone (no stock brand).
         return { ...o, hint: '' };
