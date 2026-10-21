@@ -21507,16 +21507,16 @@ import { join as join2, extname, basename } from "node:path";
 // src/quiz.mjs
 var yt = (id) => `https://www.youtube.com/watch?v=${id}`;
 var WHO_TALKS = { q: "Who does the talking?", options: [
-  { id: "music", like: /\b(film|commercial|trailer|reveal|ad)\b/i, label: "Music only", hint: "Raycast", from: yt("Mi173xGb0ZA"), tags: ["no-voiceover", "music"], words: "" },
-  { id: "voiceover", like: /\b(manifesto|think different|story|campaign|anthem|1984)\b/i, label: "A voiceover", hint: "Think Different", from: yt("5sMBhDv4sik"), tags: ["voiceover", "manifesto"], words: "voiceover" },
-  { id: "oncamera", like: /\b(introduces|keynote|founder|ceo|meet|jobs|interview|presents)\b/i, label: "Someone on camera", hint: "MKBHD", from: yt("XbXXKhfvSF0"), tags: ["talking-head", "founder"], words: "" }
+  { id: "music", like: /\b(film|commercial|trailer|reveal|ad)\b/i, label: "Music only", hint: "Raycast", from: yt("Mi173xGb0ZA"), tags: ["no-voiceover", "music"], words: "music" },
+  { id: "voiceover", like: /\b(manifesto|think different|story|campaign|anthem|1984)\b/i, label: "A voiceover", hint: "Think Different", from: yt("5sMBhDv4sik"), tags: ["voiceover", "manifesto"], words: "anthem film" },
+  { id: "oncamera", like: /\b(introduces|keynote|founder|ceo|meet|jobs|interview|presents)\b/i, label: "Someone on camera", hint: "MKBHD", from: yt("XbXXKhfvSF0"), tags: ["talking-head", "founder"], words: "founder introduces" }
 ] };
 var QUIZZES = {
   video: [
     { q: "What should it feel like?", options: [
-      { id: "cinematic", like: /\b(film|cinematic|commercial|1984|anthem|brand)\b/i, label: "Cinematic & quiet", hint: "Apple", from: yt("V3dbG9pAi8I"), tags: ["cinematic", "premium", "brand"], words: "cinematic" },
+      { id: "cinematic", like: /\b(film|cinematic|commercial|1984|anthem|brand)\b/i, label: "Cinematic & quiet", hint: "Apple", from: yt("V3dbG9pAi8I"), tags: ["cinematic", "premium", "brand"], words: "cinematic brand film" },
       { id: "product", like: /\b(introducing|demo|product|app|now available|meet)\b/i, label: "Product glide", hint: "Linear", from: yt("6dIwFoQ0eVg"), tags: ["product-demo", "saas", "dark"], words: "product demo" },
-      { id: "founder", like: /\b(founder|ceo|jobs|introduces|keynote|story|why we|raises)\b/i, label: "Founder & candid", hint: "Arc", from: yt("n5Vwrj1gEWs"), tags: ["founder", "candid", "authentic"], words: "founder story" },
+      { id: "founder", like: /\b(founder|ceo|jobs|introduces|keynote|story|why we|raises)\b/i, label: "Founder & candid", hint: "Arc", from: yt("n5Vwrj1gEWs"), tags: ["founder", "candid", "authentic"], words: "founder" },
       { id: "punchy", like: /\b(trailer|teaser|reveal|in \d+ seconds|launch)\b/i, label: "Fast & punchy", hint: "Nothing", from: yt("oieVN1CLOaw"), tags: ["fast", "short", "energetic"], words: "trailer" }
     ] },
     WHO_TALKS
@@ -21526,7 +21526,7 @@ var QUIZZES = {
       { id: "insight", like: /\b(real|truth|story|mother|mom|dad|life|love)\b/i, label: "Emotional truth", hint: "Dove", from: yt("MjzaAiZHAlc"), tags: ["emotional", "insight", "documentary"], words: "emotional" },
       { id: "absurd", like: /\b(funny|super bowl|guy|really|crazy|weird)\b/i, label: "Absurd humour", hint: "Old Spice", from: yt("CaT_oieImqw"), tags: ["humour", "absurd", "one-take"], words: "funny" },
       { id: "stance", like: /\b(anthem|dream|believe|just do|impossible|champion|running|sport)\b/i, label: "A bold stance", hint: "Nike", from: yt("-grjIUWKoBA"), tags: ["bold", "stance", "montage", "inspirational"], words: "inspirational" },
-      { id: "manifesto", like: /\b(manifesto|think different|1984|crazy ones|we believe)\b/i, label: "A manifesto", hint: "Think Different", from: yt("5sMBhDv4sik"), tags: ["manifesto", "iconic", "black-white"], words: "manifesto" }
+      { id: "manifesto", like: /\b(manifesto|think different|1984|crazy ones|we believe)\b/i, label: "A manifesto", hint: "Think Different", from: yt("5sMBhDv4sik"), tags: ["manifesto", "iconic", "black-white"], words: "manifesto film" }
     ] },
     WHO_TALKS
   ],
@@ -21538,8 +21538,8 @@ var QUIZZES = {
       { id: "playful", label: "Playful hardware", hint: "Teenage Engineering", from: "https://teenage.engineering/products/op-1", tags: ["playful", "hardware", "retro", "mono"], words: "", filters: ["Colorful"] }
     ] },
     { q: "Light or dark?", options: [
-      { id: "dark", label: "Dark", hint: "Linear", from: "https://linear.app", tags: ["dark"], words: "" },
-      { id: "light", label: "Light", hint: "Stripe", from: "https://stripe.com", tags: ["light", "clean"], words: "" }
+      { id: "dark", label: "Dark", hint: "Linear", from: "https://linear.app", tags: ["dark"], words: "", filters: ["WebGL"] },
+      { id: "light", label: "Light", hint: "Stripe", from: "https://stripe.com", tags: ["light", "clean"], words: "", filters: ["Minimal"] }
     ] }
   ],
   landing: [
@@ -21558,9 +21558,9 @@ var QUIZZES = {
   app: [
     { q: "What should it feel like?", options: [
       { id: "gamified", label: "Playful & gamified", hint: "Duolingo", from: "https://www.duolingo.com", tags: ["playful", "gamified", "mascot"], words: "", filters: ["Colorful"] },
-      { id: "photo", label: "Photo-first", hint: "Airbnb", from: "https://news.airbnb.com", tags: ["photo", "marketplace", "friendly"], words: "" },
-      { id: "calm", label: "Calm & illustrated", hint: "Headspace", from: "https://www.headspace.com", tags: ["calm", "illustration", "warm"], words: "", filters: ["Illustration"] },
-      { id: "number", label: "One big number", hint: "Robinhood", from: "https://robinhood.com", tags: ["minimal", "data", "bold", "chart"], words: "" }
+      { id: "photo", label: "Photo-first", hint: "Airbnb", from: "https://news.airbnb.com", tags: ["photo", "marketplace", "friendly"], words: "", filters: ["Big Background Images"] },
+      { id: "calm", label: "Calm & illustrated", hint: "Headspace", from: "https://www.headspace.com", tags: ["calm", "illustration", "warm"], words: "", filters: ["Clean"] },
+      { id: "number", label: "One big number", hint: "Robinhood", from: "https://robinhood.com", tags: ["minimal", "data", "bold", "chart"], words: "", filters: ["Data Visualization"] }
     ] }
   ],
   deck: [
@@ -21592,10 +21592,10 @@ var QUIZZES = {
   ],
   social: [
     { q: "What voice?", options: [
-      { id: "mascot", like: /\b(mascot|duo|trend|tiktok)\b/i, label: "Mascot on trends", hint: "Duolingo", from: yt("P5Lug4uY8JE"), tags: ["mascot", "trend", "native"], words: "" },
-      { id: "absurd", label: "Absurd & loud", hint: "Liquid Death", from: "https://liquiddeath.com", tags: ["bold", "absurd", "brand-voice"], words: "" },
-      { id: "teach", like: /\b(how|tips|learn|explained|guide)\b/i, label: "Clean & teaching", hint: "Notion", from: "https://www.notion.com", tags: ["carousel", "education", "clean"], words: "" },
-      { id: "selfaware", like: /\b(funny|humou?r|ryanair|self)\b/i, label: "Self-aware humour", hint: "Ryanair", from: yt("R7qGqWdm9lc"), tags: ["humour", "self-aware", "trend"], words: "" }
+      { id: "mascot", like: /\b(mascot|duo|trend|tiktok)\b/i, label: "Mascot on trends", hint: "Duolingo", from: yt("P5Lug4uY8JE"), tags: ["mascot", "trend", "native"], words: "mascot" },
+      { id: "absurd", label: "Absurd & loud", hint: "Liquid Death", from: "https://liquiddeath.com", tags: ["bold", "absurd", "brand-voice"], words: "funny absurd" },
+      { id: "teach", like: /\b(how|tips|learn|explained|guide)\b/i, label: "Clean & teaching", hint: "Notion", from: "https://www.notion.com", tags: ["carousel", "education", "clean"], words: "educational" },
+      { id: "selfaware", like: /\b(funny|humou?r|ryanair|self)\b/i, label: "Self-aware humour", hint: "Ryanair", from: yt("R7qGqWdm9lc"), tags: ["humour", "self-aware", "trend"], words: "funny self-aware" }
     ] }
   ],
   post: [
@@ -21761,6 +21761,33 @@ var CATALOG = [
     url: "https://stripe.com/sessions",
     take: "Data-backed keynote: crisp charts, product demos inline, numbers as headlines.",
     tags: ["keynote", "data", "product", "enterprise", "polished", "charts"]
+  },
+  {
+    id: "deck-meeker-trends",
+    medium: "deck",
+    title: 'Mary Meeker "Trends \u2013 AI" report',
+    url: "https://www.bondcap.com/reports/tai",
+    image: "https://www.bondcap.com/report/png/tai/cover.png",
+    take: "One chart per slide, a headline that states the finding, the source in small type: the data does the arguing.",
+    tags: ["data", "charts", "enterprise", "polished", "report"]
+  },
+  {
+    id: "deck-jobs-macbook-air",
+    medium: "deck",
+    title: "Jobs: MacBook Air out of an envelope (Macworld 2008)",
+    url: "https://www.youtube.com/watch?v=OIV6peKMj9M",
+    image: "https://i.ytimg.com/vi/OIV6peKMj9M/hqdefault.jpg",
+    take: "One object, one word, black stage: the slide sets up the reveal and gets out of the way.",
+    tags: ["keynote", "minimal", "big-type", "black", "reveal"]
+  },
+  {
+    id: "deck-uber-2008",
+    medium: "deck",
+    title: "Uber (UberCab) 2008 pitch deck",
+    url: "https://www.youtube.com/watch?v=0jzh4pHiB_I",
+    image: "https://i.ytimg.com/vi/0jzh4pHiB_I/hqdefault.jpg",
+    take: "Problem, product, how it works, the market: a plain sentence per slide, no design tricks.",
+    tags: ["pitch", "simple", "narrative", "startup", "fundraise"]
   },
   // ── video ──
   {
@@ -21981,6 +22008,33 @@ var CATALOG = [
     image: "https://justinwelsh.me/og/homepage.png",
     take: "One-line hook, white space between short lines, a list in the middle, a single takeaway at the end.",
     tags: ["linkedin", "hook", "short", "founder", "format", "skimmable"]
+  },
+  {
+    id: "post-marc-lou-bip",
+    medium: "post",
+    title: "Marc Lou: building in public, solo",
+    url: "https://www.youtube.com/watch?v=eqgUjOByexc",
+    image: "https://i.ytimg.com/vi/eqgUjOByexc/hqdefault.jpg",
+    take: "Real numbers, real failures, posted as they happen: revenue screenshots beat polished claims.",
+    tags: ["build-in-public", "raw", "numbers", "indie", "founder"]
+  },
+  {
+    id: "post-first-round-review",
+    medium: "post",
+    title: "First Round Review",
+    url: "https://review.firstround.com",
+    image: "https://review.firstround.com/content/images/size/w1200/2024/02/Cover-Image--2--1.png",
+    take: "One operator, one hard-won playbook, step by step with their own examples: tactics you can copy Monday.",
+    tags: ["tactical", "frameworks", "newsletter", "longform", "operators"]
+  },
+  {
+    id: "post-sahil-bloom-hooks",
+    medium: "post",
+    title: "Sahil Bloom: one-line hooks",
+    url: "https://x.com/SahilBloom",
+    image: "https://pbs.twimg.com/profile_images/1586859332104343552/V1HRpbP1_400x400.jpg",
+    take: "A first line that makes a promise, then short lines that pay it off one at a time.",
+    tags: ["hook", "short", "skimmable", "threads", "founder"]
   }
 ];
 
@@ -22424,7 +22478,7 @@ var FILLER = new Set("a an the and or for of to in on with my our me we i it thi
 var keyWords = (text, n) => [...new Set(String(text).toLowerCase().split(/[^a-z0-9]+/).filter((w) => w.length > 2 && !FILLER.has(w)))].slice(0, n);
 var MOOD = new Set("trust modern clean bold playful minimal premium elegant warm cinematic friendly simple calm cozy energetic emotional luxury dense colorful technical local design".split(" "));
 var LAUNCHES = { video: true, ad: true };
-async function projectPool(intent, medium, context = "", { cacheDir, run = ytdlp, minViews = 2e4 } = {}) {
+async function projectPool(intent, medium, context = "", { cacheDir, run = ytdlp, minViews = 2e4, style = "" } = {}) {
   const trailers = /\b(game|trailer|teaser|movie|film festival)\b/i.test(`${intent} ${context}`);
   if (!NOUN[medium]) return [];
   const brief = keyWords(intent, 3), about = keyWords(context, 3);
@@ -22441,7 +22495,10 @@ async function projectPool(intent, medium, context = "", { cacheDir, run = ytdlp
     ["brand", /\bbrand\b/]
   ].find(([, r]) => r.test(text))?.[0] || "product";
   const B = brief.join(" "), A = about.join(" ");
+  const S = String(style).trim().toLowerCase();
+  const styleWordsOf = S.split(/\s+/).filter((w) => w.length >= 4);
   const angles = [
+    ...S ? [[`${B || kind} ${S} ${NOUN[medium]}`, "style"], [`${S} ${NOUN[medium]}`, "style"], [`${S} ${ALT[medium]}`, "style"]] : [],
     // "introducing …" finds launches: right for launch videos and ads, wrong for a style of motion or animation.
     ...brief.length ? [[`${B} ${NOUN[medium]}`, "brief"], [`${B} ${ALT[medium]}`, "brief"], ...LAUNCHES[medium] ? [[`introducing ${B}`, "brief"]] : []] : [],
     ...about.length ? [[`${A} ${NOUN[medium]}`, "context"]] : [],
@@ -22461,9 +22518,10 @@ async function projectPool(intent, medium, context = "", { cacheDir, run = ytdlp
       const kindHit = !["app", "product", "brand", "startup"].includes(kind) && kind.split(" ").every((w) => lower.includes(w));
       const briefHit = [...brief, ...about].some((w) => w.length >= 4 && !MOOD.has(w) && lower.includes(w));
       if (/\btrailer\b/i.test(it.title) && !trailers && !kindHit) continue;
-      if (!MADE_WORK.test(it.title) && !(kindHit && /\btrailer\b/i.test(it.title))) continue;
+      const styleHit = styleWordsOf.some((w) => lower.includes(w.replace(/s$/, "")));
+      if (!MADE_WORK.test(it.title) && !(kindHit && /\btrailer\b/i.test(it.title)) && !(via === "style" && styleHit)) continue;
       seen.add(it.url);
-      out.push({ ...it, query: q, via: via === "kind" && !kindHit && !briefHit || via === "context" && !briefHit ? "weak" : via, craft: true });
+      out.push({ ...it, query: q, via: via === "style" || styleHit ? "style" : via === "kind" && !kindHit && !briefHit || via === "context" && !briefHit ? "weak" : via, craft: true });
     }
   }
   return out.sort((a, b) => b.views - a.views).slice(0, 30);
@@ -22485,6 +22543,7 @@ async function cachedYt(query, { cacheDir, run, now = Date.now(), url: at }) {
   } catch {
     return cache[key]?.items || [];
   }
+  if (!items.length) return cache[key]?.items || [];
   if (file) {
     try {
       const fresh = existsSync(file) ? JSON.parse(readFileSync(file, "utf8")) : {};
@@ -22525,6 +22584,23 @@ async function makerLaunches(intent, context = "", { cacheDir, run = ytdlp, max 
     const items = await cachedYt("", { cacheDir, run, url: `https://www.youtube.com/@${h}/search?query=introducing` });
     for (const it of items.filter((x) => LAUNCH_WORD.test(x.title) && !/#shorts/i.test(x.title) && !NOT_CRAFT.test(x.title) && x.duration && x.duration <= 300 && x.views >= 3e3).slice(0, handles.length >= 4 ? 1 : 2)) {
       out.push({ ...it, query: `${h} launch`, craft: true, maker: h, via: "maker" });
+    }
+  }));
+  return out;
+}
+var VOICES = [
+  [["mascot", "trend", "native"], ["duolingo", "scrubdaddyofficial", "TacoBell"]],
+  [["absurd", "bold", "brand-voice"], ["Wendys", "Oreo", "Chipotle"]],
+  [["carousel", "education", "clean"], ["notion", "canva", "nerdwallet"]],
+  [["humour", "self-aware"], ["Ryanair", "Wendys", "TacoBell"]]
+];
+async function voiceShorts(style = [], { cacheDir, run = ytdlp, per = 3 } = {}) {
+  const handles = [...new Set(VOICES.filter(([tags]) => tags.some((t) => style.includes(t))).flatMap(([, h]) => h))].slice(0, 4);
+  const out = [];
+  await Promise.all(handles.map(async (h) => {
+    const items = await cachedYt("", { cacheDir, run, url: `https://www.youtube.com/@${h}/shorts` });
+    for (const it of items.filter((x) => !NOT_CRAFT.test(x.title)).sort((a, b) => b.views - a.views).slice(0, per)) {
+      out.push({ ...it, url: it.url, query: `${h} shorts`, craft: true, voice: h, via: "style" });
     }
   }));
   return out;
@@ -22826,14 +22902,16 @@ function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, yo
     const want = bridged([...tokens(intent), ...tokens(context), ...phrases(intent), ...phrases(context)]);
     return yc.map((c) => ({ c, m: [...want].filter((w) => String(w).length >= 3 && hasTag(c, w)).length })).filter((x) => x.m >= 2).map((x) => ({ ...x, s: x.m + (x.c.top ? 3 : 0) + Math.log10((x.c.team || 0) + 1) })).sort((a, b) => b.s - a.s).slice(0, n).map((x) => x.c);
   }
-  async function forProject(medium, intent, context) {
-    const companies = ["video", "motion", "ad"].includes(medium) && liveOn ? await ycFor(intent, context) : [];
+  async function forProject(medium, intent, context, styleWords = "", style = []) {
+    const founderLed = style.some((t) => t === "founder" || t === "talking-head");
+    const companies = ["video", "motion", "ad"].includes(medium) && liveOn && (!styleWords || founderLed) ? await ycFor(intent, context) : [];
     const [general, launches, makers] = await Promise.all([
-      projectSearch(intent, medium, context, { cacheDir }),
+      projectSearch(intent, medium, context, { cacheDir, style: styleWords }),
       companies.length ? ycLaunches(companies, { cacheDir }) : [],
-      ["video", "ad"].includes(medium) && liveOn ? makerSearch(intent, context, { cacheDir }) : []
+      ["video", "ad"].includes(medium) && liveOn && !styleWords ? makerSearch(intent, context, { cacheDir }) : []
     ]);
-    const firsts = [...launches.map((x) => ({ ...x, yc: true })), ...makers.filter((m) => !launches.some((l) => l.url === m.url))];
+    const voiced = medium === "social" && liveOn && style.length ? await voiceShorts(style, { cacheDir }) : [];
+    const firsts = [...voiced, ...launches.map((x) => ({ ...x, yc: true, ...founderLed ? { via: "style" } : {} })), ...makers.filter((m) => !launches.some((l) => l.url === m.url))];
     const found = [...firsts, ...general.filter((g) => !firsts.some((l) => l.url === g.url))];
     return found.map((x) => {
       const id = `yt:${(/[?&]v=([\w-]{11})/.exec(x.url) || [])[1] || x.url}`;
@@ -22851,6 +22929,7 @@ function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, yo
         rank: 0,
         ...x.craft ? { craft: true } : {},
         via: x.via || "brief",
+        ...x.voice ? { source: "Brand shorts", take: `A post from ${x.voice}, known for this voice: open it and name what to carry over.` } : {},
         ...x.maker ? { source: "Maker launch", take: `A launch film ${x.maker} made for its own product, a company in your space: open it and name what to carry over.` } : {},
         ...x.yc ? { source: "YC launch", award: x.top ? "YC top company" : "YC", take: `The launch film of ${x.company}, a YC company in your space: open it and name what to carry over.` } : {}
       };
@@ -22884,7 +22963,11 @@ function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, yo
     }
   }
   async function indexFor(medium) {
-    const items = await loadIndex(medium, { cacheDir, fetchImpl });
+    let items = await loadIndex(medium, { cacheDir, fetchImpl });
+    if (medium === "app") {
+      const have = new Set(items.map((x) => String(x.id)));
+      items = [...items, ...(await loadIndex("landing", { cacheDir, fetchImpl })).filter((x) => !have.has(String(x.id)) && (x.tags || []).some((t) => t === "Mobile & Apps" || t === "App Style"))];
+    }
     return items.map((x) => ({
       id: String(x.id),
       medium,
@@ -22911,7 +22994,7 @@ function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, yo
     const seen = readSeen();
     const jitter = seededJitter(`${intent}|${filters.join(",")}|${(/* @__PURE__ */ new Date()).toISOString().slice(0, 10)}`);
     const index = want && liveOn ? await indexFor(want) : [];
-    if (want && liveOn && !index.length) index.push(...await forProject(want, intent, context));
+    if (want && liveOn && !index.length) index.push(...await forProject(want, intent, context, styleWords, style));
     count = count || (index.length ? 12 : 4);
     const taste = readTaste(dir2).filter((p) => !want || p.medium === want);
     const liked = /* @__PURE__ */ new Map();
@@ -22961,13 +23044,17 @@ function createReferences({ dir: dir2, libraries: libraries2 = [], fetchImpl, yo
       if (r.views) score += Math.min(3, Math.log10(r.views) - 3.5);
       if (r.craft) score += 2.5;
       if (r.source === "YC launch") score += 3;
-      if (r.via) score += r.via === "maker" ? 2.5 : r.via === "brief" ? 2 : r.via === "context" ? 0.8 : r.via === "weak" ? -6 : 0;
+      if (r.via) score += r.via === "style" ? 4 : r.via === "maker" ? 2.5 : r.via === "brief" ? 2 : r.via === "context" ? 0.8 : r.via === "weak" ? -6 : 0;
       if (r.source === "curated" && index.length) score -= 3;
       if (r.rank !== void 0) score += Math.max(0, 1 - r.rank / 1500);
       if (seen.has(r.id)) score -= 4;
       score += jitter(r.id);
       return { r, score };
     }).sort((a, b) => b.score - a.score || (a.r.source === "mine" ? -1 : 1));
+    if (style.length && !filters.length) {
+      const carriers = scored.filter(({ r }) => r.via === "style" || style.some((t) => (r.tags || []).includes(t)));
+      if (carriers.length >= 2) scored.splice(0, scored.length, ...carriers);
+    }
     {
       const best = scored[0]?.score || 0;
       const groups = /* @__PURE__ */ new Map(), rest = [];

@@ -9,17 +9,17 @@
 const yt = (id) => `https://www.youtube.com/watch?v=${id}`;
 
 const WHO_TALKS = { q: 'Who does the talking?', options: [
-  { id: 'music', like: /\b(film|commercial|trailer|reveal|ad)\b/i, label: 'Music only', hint: 'Raycast', from: yt('Mi173xGb0ZA'), tags: ['no-voiceover', 'music'], words: '' },
-  { id: 'voiceover', like: /\b(manifesto|think different|story|campaign|anthem|1984)\b/i, label: 'A voiceover', hint: 'Think Different', from: yt('5sMBhDv4sik'), tags: ['voiceover', 'manifesto'], words: 'voiceover' },
-  { id: 'oncamera', like: /\b(introduces|keynote|founder|ceo|meet|jobs|interview|presents)\b/i, label: 'Someone on camera', hint: 'MKBHD', from: yt('XbXXKhfvSF0'), tags: ['talking-head', 'founder'], words: '' },
+  { id: 'music', like: /\b(film|commercial|trailer|reveal|ad)\b/i, label: 'Music only', hint: 'Raycast', from: yt('Mi173xGb0ZA'), tags: ['no-voiceover', 'music'], words: 'music' },
+  { id: 'voiceover', like: /\b(manifesto|think different|story|campaign|anthem|1984)\b/i, label: 'A voiceover', hint: 'Think Different', from: yt('5sMBhDv4sik'), tags: ['voiceover', 'manifesto'], words: 'anthem film' },
+  { id: 'oncamera', like: /\b(introduces|keynote|founder|ceo|meet|jobs|interview|presents)\b/i, label: 'Someone on camera', hint: 'MKBHD', from: yt('XbXXKhfvSF0'), tags: ['talking-head', 'founder'], words: 'founder introduces' },
 ] };
 
 export const QUIZZES = {
   video: [
     { q: 'What should it feel like?', options: [
-      { id: 'cinematic', like: /\b(film|cinematic|commercial|1984|anthem|brand)\b/i, label: 'Cinematic & quiet', hint: 'Apple', from: yt('V3dbG9pAi8I'), tags: ['cinematic', 'premium', 'brand'], words: 'cinematic' },
+      { id: 'cinematic', like: /\b(film|cinematic|commercial|1984|anthem|brand)\b/i, label: 'Cinematic & quiet', hint: 'Apple', from: yt('V3dbG9pAi8I'), tags: ['cinematic', 'premium', 'brand'], words: 'cinematic brand film' },
       { id: 'product', like: /\b(introducing|demo|product|app|now available|meet)\b/i, label: 'Product glide', hint: 'Linear', from: yt('6dIwFoQ0eVg'), tags: ['product-demo', 'saas', 'dark'], words: 'product demo' },
-      { id: 'founder', like: /\b(founder|ceo|jobs|introduces|keynote|story|why we|raises)\b/i, label: 'Founder & candid', hint: 'Arc', from: yt('n5Vwrj1gEWs'), tags: ['founder', 'candid', 'authentic'], words: 'founder story' },
+      { id: 'founder', like: /\b(founder|ceo|jobs|introduces|keynote|story|why we|raises)\b/i, label: 'Founder & candid', hint: 'Arc', from: yt('n5Vwrj1gEWs'), tags: ['founder', 'candid', 'authentic'], words: 'founder' },
       { id: 'punchy', like: /\b(trailer|teaser|reveal|in \d+ seconds|launch)\b/i, label: 'Fast & punchy', hint: 'Nothing', from: yt('oieVN1CLOaw'), tags: ['fast', 'short', 'energetic'], words: 'trailer' },
     ] },
     WHO_TALKS,
@@ -29,7 +29,7 @@ export const QUIZZES = {
       { id: 'insight', like: /\b(real|truth|story|mother|mom|dad|life|love)\b/i, label: 'Emotional truth', hint: 'Dove', from: yt('MjzaAiZHAlc'), tags: ['emotional', 'insight', 'documentary'], words: 'emotional' },
       { id: 'absurd', like: /\b(funny|super bowl|guy|really|crazy|weird)\b/i, label: 'Absurd humour', hint: 'Old Spice', from: yt('CaT_oieImqw'), tags: ['humour', 'absurd', 'one-take'], words: 'funny' },
       { id: 'stance', like: /\b(anthem|dream|believe|just do|impossible|champion|running|sport)\b/i, label: 'A bold stance', hint: 'Nike', from: yt('-grjIUWKoBA'), tags: ['bold', 'stance', 'montage', 'inspirational'], words: 'inspirational' },
-      { id: 'manifesto', like: /\b(manifesto|think different|1984|crazy ones|we believe)\b/i, label: 'A manifesto', hint: 'Think Different', from: yt('5sMBhDv4sik'), tags: ['manifesto', 'iconic', 'black-white'], words: 'manifesto' },
+      { id: 'manifesto', like: /\b(manifesto|think different|1984|crazy ones|we believe)\b/i, label: 'A manifesto', hint: 'Think Different', from: yt('5sMBhDv4sik'), tags: ['manifesto', 'iconic', 'black-white'], words: 'manifesto film' },
     ] },
     WHO_TALKS,
   ],
@@ -41,8 +41,8 @@ export const QUIZZES = {
       { id: 'playful', label: 'Playful hardware', hint: 'Teenage Engineering', from: 'https://teenage.engineering/products/op-1', tags: ['playful', 'hardware', 'retro', 'mono'], words: '', filters: ['Colorful'] },
     ] },
     { q: 'Light or dark?', options: [
-      { id: 'dark', label: 'Dark', hint: 'Linear', from: 'https://linear.app', tags: ['dark'], words: '' },
-      { id: 'light', label: 'Light', hint: 'Stripe', from: 'https://stripe.com', tags: ['light', 'clean'], words: '' },
+      { id: 'dark', label: 'Dark', hint: 'Linear', from: 'https://linear.app', tags: ['dark'], words: '', filters: ['WebGL'] },
+      { id: 'light', label: 'Light', hint: 'Stripe', from: 'https://stripe.com', tags: ['light', 'clean'], words: '', filters: ['Minimal'] },
     ] },
   ],
   landing: [
@@ -61,9 +61,9 @@ export const QUIZZES = {
   app: [
     { q: 'What should it feel like?', options: [
       { id: 'gamified', label: 'Playful & gamified', hint: 'Duolingo', from: 'https://www.duolingo.com', tags: ['playful', 'gamified', 'mascot'], words: '', filters: ['Colorful'] },
-      { id: 'photo', label: 'Photo-first', hint: 'Airbnb', from: 'https://news.airbnb.com', tags: ['photo', 'marketplace', 'friendly'], words: '' },
-      { id: 'calm', label: 'Calm & illustrated', hint: 'Headspace', from: 'https://www.headspace.com', tags: ['calm', 'illustration', 'warm'], words: '', filters: ['Illustration'] },
-      { id: 'number', label: 'One big number', hint: 'Robinhood', from: 'https://robinhood.com', tags: ['minimal', 'data', 'bold', 'chart'], words: '' },
+      { id: 'photo', label: 'Photo-first', hint: 'Airbnb', from: 'https://news.airbnb.com', tags: ['photo', 'marketplace', 'friendly'], words: '', filters: ['Big Background Images'] },
+      { id: 'calm', label: 'Calm & illustrated', hint: 'Headspace', from: 'https://www.headspace.com', tags: ['calm', 'illustration', 'warm'], words: '', filters: ['Clean'] },
+      { id: 'number', label: 'One big number', hint: 'Robinhood', from: 'https://robinhood.com', tags: ['minimal', 'data', 'bold', 'chart'], words: '', filters: ['Data Visualization'] },
     ] },
   ],
   deck: [
@@ -95,10 +95,10 @@ export const QUIZZES = {
   ],
   social: [
     { q: 'What voice?', options: [
-      { id: 'mascot', like: /\b(mascot|duo|trend|tiktok)\b/i, label: 'Mascot on trends', hint: 'Duolingo', from: yt('P5Lug4uY8JE'), tags: ['mascot', 'trend', 'native'], words: '' },
-      { id: 'absurd', label: 'Absurd & loud', hint: 'Liquid Death', from: 'https://liquiddeath.com', tags: ['bold', 'absurd', 'brand-voice'], words: '' },
-      { id: 'teach', like: /\b(how|tips|learn|explained|guide)\b/i, label: 'Clean & teaching', hint: 'Notion', from: 'https://www.notion.com', tags: ['carousel', 'education', 'clean'], words: '' },
-      { id: 'selfaware', like: /\b(funny|humou?r|ryanair|self)\b/i, label: 'Self-aware humour', hint: 'Ryanair', from: yt('R7qGqWdm9lc'), tags: ['humour', 'self-aware', 'trend'], words: '' },
+      { id: 'mascot', like: /\b(mascot|duo|trend|tiktok)\b/i, label: 'Mascot on trends', hint: 'Duolingo', from: yt('P5Lug4uY8JE'), tags: ['mascot', 'trend', 'native'], words: 'mascot' },
+      { id: 'absurd', label: 'Absurd & loud', hint: 'Liquid Death', from: 'https://liquiddeath.com', tags: ['bold', 'absurd', 'brand-voice'], words: 'funny absurd' },
+      { id: 'teach', like: /\b(how|tips|learn|explained|guide)\b/i, label: 'Clean & teaching', hint: 'Notion', from: 'https://www.notion.com', tags: ['carousel', 'education', 'clean'], words: 'educational' },
+      { id: 'selfaware', like: /\b(funny|humou?r|ryanair|self)\b/i, label: 'Self-aware humour', hint: 'Ryanair', from: yt('R7qGqWdm9lc'), tags: ['humour', 'self-aware', 'trend'], words: 'funny self-aware' },
     ] },
   ],
   post: [

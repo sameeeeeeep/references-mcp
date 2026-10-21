@@ -464,7 +464,7 @@ const keyWords = (text, n) => [...new Set(String(text).toLowerCase().split(/[^a-
 // Mood words describe a look, not a subject: "trust" or "modern" in a title says nothing about the brief.
 const MOOD = new Set('trust modern clean bold playful minimal premium elegant warm cinematic friendly simple calm cozy energetic emotional luxury dense colorful technical local design'.split(' '));
 const LAUNCHES = { video: true, ad: true };
-export async function projectPool(intent, medium, context = '', { cacheDir, run = ytdlp, minViews = 20000 } = {}) {
+export async function projectPool(intent, medium, context = '', { cacheDir, run = ytdlp, minViews = 20000, style = '' } = {}) {
   // Movie and game trailers only when the brief is about one.
   const trailers = /\b(game|trailer|teaser|movie|film festival)\b/i.test(`${intent} ${context}`);
   if (!NOUN[medium]) return [];
@@ -476,7 +476,11 @@ export async function projectPool(intent, medium, context = '', { cacheDir, run 
   // Angles, best first: the brief's own words, then the project context, then the product kind. Each result
   // remembers its angle so the brief's own hits rank above the generic ones.
   const B = brief.join(' '), A = about.join(' ');
+  // A style the person picked in the quiz leads: its searches come first and its hits rank above everything else.
+  const S = String(style).trim().toLowerCase();
+  const styleWordsOf = S.split(/\s+/).filter((w) => w.length >= 4);
   const angles = [
+    ...(S ? [[`${B || kind} ${S} ${NOUN[medium]}`, 'style'], [`${S} ${NOUN[medium]}`, 'style'], [`${S} ${ALT[medium]}`, 'style']] : []),
     // "introducing …" finds launches: right for launch videos and ads, wrong for a style of motion or animation.
     ...(brief.length ? [[`${B} ${NOUN[medium]}`, 'brief'], [`${B} ${ALT[medium]}`, 'brief'], ...(LAUNCHES[medium] ? [[`introducing ${B}`, 'brief']] : [])] : []),
     ...(about.length ? [[`${A} ${NOUN[medium]}`, 'context']] : []),
@@ -496,9 +500,11 @@ export async function projectPool(intent, medium, context = '', { cacheDir, run 
       if (/\btrailer\b/i.test(it.title) && !trailers && !kindHit) continue;
       // A generic product-kind hit that names neither the kind nor the brief ranks last (weak), never first.
       // Made work only (a film, campaign, commercial, launch, showreel…): popularity alone never gets a video in.
-      if (!MADE_WORK.test(it.title) && !(kindHit && /\btrailer\b/i.test(it.title))) continue;
+      // A searched style vouches for its own hits: "founder story" films rarely say "film" or "campaign".
+      const styleHit = styleWordsOf.some((w) => lower.includes(w.replace(/s$/, '')));
+      if (!MADE_WORK.test(it.title) && !(kindHit && /\btrailer\b/i.test(it.title)) && !(via === 'style' && styleHit)) continue;
       seen.add(it.url);
-      out.push({ ...it, query: q, via: (via === 'kind' && !kindHit && !briefHit) || (via === 'context' && !briefHit) ? 'weak' : via, craft: true });
+      out.push({ ...it, query: q, via: via === 'style' || styleHit ? 'style' : (via === 'kind' && !kindHit && !briefHit) || (via === 'context' && !briefHit) ? 'weak' : via, craft: true });
     }
   }
   return out.sort((a, b) => b.views - a.views).slice(0, 30);
@@ -516,6 +522,8 @@ async function cachedYt(query, { cacheDir, run, now = Date.now(), url: at }) {
     const url = at || `https://www.youtube.com/results?search_query=${encodeURIComponent(query)}&gl=US&hl=en`;
     items = parseYtLines(await run(['--flat-playlist', '--no-warnings', '--playlist-end', '30', '--print', '%(view_count)s\t%(duration)s\t%(id)s\t%(title)s', url]));
   } catch { return cache[key]?.items || []; }
+  // An empty answer is usually YouTube refusing for a moment: never remember it, so the next ask tries again.
+  if (!items.length) return cache[key]?.items || [];
   if (file) { try { const fresh = existsSync(file) ? JSON.parse(readFileSync(file, 'utf8')) : {}; fresh[key] = { at: now, items }; mkdirSync(cacheDir, { recursive: true }); writeFileSync(file, JSON.stringify(fresh)); } catch {} }
   return items;
 }
@@ -555,6 +563,25 @@ export async function makerLaunches(intent, context = '', { cacheDir, run = ytdl
     const items = await cachedYt('', { cacheDir, run, url: `https://www.youtube.com/@${h}/search?query=introducing` });
     for (const it of items.filter((x) => LAUNCH_WORD.test(x.title) && !/#shorts/i.test(x.title) && !NOT_CRAFT.test(x.title) && x.duration && x.duration <= 300 && x.views >= 3000).slice(0, handles.length >= 4 ? 1 : 2)) {
       out.push({ ...it, query: `${h} launch`, craft: true, maker: h, via: 'maker' });
+    }
+  }));
+  return out;
+}
+
+// ── Social voices: the latest Shorts of the brands best known for each voice (the quiz's social options) ──────
+export const VOICES = [
+  [['mascot', 'trend', 'native'], ['duolingo', 'scrubdaddyofficial', 'TacoBell']],
+  [['absurd', 'bold', 'brand-voice'], ['Wendys', 'Oreo', 'Chipotle']],
+  [['carousel', 'education', 'clean'], ['notion', 'canva', 'nerdwallet']],
+  [['humour', 'self-aware'], ['Ryanair', 'Wendys', 'TacoBell']],
+];
+export async function voiceShorts(style = [], { cacheDir, run = ytdlp, per = 3 } = {}) {
+  const handles = [...new Set(VOICES.filter(([tags]) => tags.some((t) => style.includes(t))).flatMap(([, h]) => h))].slice(0, 4);
+  const out = [];
+  await Promise.all(handles.map(async (h) => {
+    const items = await cachedYt('', { cacheDir, run, url: `https://www.youtube.com/@${h}/shorts` });
+    for (const it of items.filter((x) => !NOT_CRAFT.test(x.title)).sort((a, b) => b.views - a.views).slice(0, per)) {
+      out.push({ ...it, url: it.url, query: `${h} shorts`, craft: true, voice: h, via: 'style' });
     }
   }));
   return out;

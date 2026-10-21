@@ -10,7 +10,7 @@ import { join, extname, basename } from 'node:path';
 import { z } from 'zod';
 import { QUIZZES } from './quiz.mjs';
 import { CATALOG, MEDIA } from './catalog.mjs';
-import { SOURCES, fetchLive, previewImage, pageImages, pageVideos, loadIndex, projectPool, ycLaunches, makerLaunches, fmtViews, searchYouTube, shelfFor, isPublicHttpsUrl, YT_MEDIA } from './sources.mjs';
+import { SOURCES, fetchLive, previewImage, pageImages, pageVideos, loadIndex, projectPool, ycLaunches, makerLaunches, voiceShorts, fmtViews, searchYouTube, shelfFor, isPublicHttpsUrl, YT_MEDIA } from './sources.mjs';
 
 const IMG = new Set(['.png', '.jpg', '.jpeg', '.webp', '.gif']);
 const STOP = new Set('a an the and or for of to in on with my our me we i it this that make build design create new some want need like'.split(' '));
@@ -241,14 +241,18 @@ export function createReferences({ dir, libraries = [], fetchImpl, youtube = sea
       .sort((a, b) => b.s - a.s).slice(0, n).map((x) => x.c);
   }
 
-  async function forProject(medium, intent, context) {
-    const companies = ['video', 'motion', 'ad'].includes(medium) && liveOn ? await ycFor(intent, context) : [];
+  async function forProject(medium, intent, context, styleWords = '', style = []) {
+    // Founders on camera: YC launch films are mostly the founders presenting their own product.
+    const founderLed = style.some((t) => t === 'founder' || t === 'talking-head');
+    const companies = ['video', 'motion', 'ad'].includes(medium) && liveOn && (!styleWords || founderLed) ? await ycFor(intent, context) : [];
     const [general, launches, makers] = await Promise.all([
-      projectSearch(intent, medium, context, { cacheDir }),
+      projectSearch(intent, medium, context, { cacheDir, style: styleWords }),
       companies.length ? ycLaunches(companies, { cacheDir }) : [],
-      ['video', 'ad'].includes(medium) && liveOn ? makerSearch(intent, context, { cacheDir }) : [],
+      ['video', 'ad'].includes(medium) && liveOn && !styleWords ? makerSearch(intent, context, { cacheDir }) : [],
     ]);
-    const firsts = [...launches.map((x) => ({ ...x, yc: true })), ...makers.filter((m) => !launches.some((l) => l.url === m.url))];
+    // Social in a picked voice: that voice's own posts, from the brands best known for it.
+    const voiced = medium === 'social' && liveOn && style.length ? await voiceShorts(style, { cacheDir }) : [];
+    const firsts = [...voiced, ...launches.map((x) => ({ ...x, yc: true, ...(founderLed ? { via: 'style' } : {}) })), ...makers.filter((m) => !launches.some((l) => l.url === m.url))];
     const found = [...firsts, ...general.filter((g) => !firsts.some((l) => l.url === g.url))];
     return found.map((x) => {
       const id = `yt:${(/[?&]v=([\w-]{11})/.exec(x.url) || [])[1] || x.url}`;
@@ -256,6 +260,7 @@ export function createReferences({ dir, libraries = [], fetchImpl, youtube = sea
         id, medium, title: `${clean(x.title, 110)} · ${fmtViews(x.views)}`, url: x.url, image: x.image, source: 'YouTube',
         take: 'Proven work for this brief (searched for your project, ranked by views): open it and name what to carry over.',
         tags: x.query.split(' ').filter(Boolean), untrusted: true, views: x.views, rank: 0, ...(x.craft ? { craft: true } : {}), via: x.via || 'brief',
+        ...(x.voice ? { source: 'Brand shorts', take: `A post from ${x.voice}, known for this voice: open it and name what to carry over.` } : {}),
         ...(x.maker ? { source: 'Maker launch', take: `A launch film ${x.maker} made for its own product, a company in your space: open it and name what to carry over.` } : {}),
         ...(x.yc ? { source: 'YC launch', award: x.top ? 'YC top company' : 'YC', take: `The launch film of ${x.company}, a YC company in your space: open it and name what to carry over.` } : {}),
       };
@@ -283,7 +288,12 @@ export function createReferences({ dir, libraries = [], fetchImpl, youtube = sea
   }
 
   async function indexFor(medium) {
-    const items = await loadIndex(medium, { cacheDir, fetchImpl });
+    let items = await loadIndex(medium, { cacheDir, fetchImpl });
+    // The app catalog is small (judged app sites only): add the landing winners that are apps, so filters have room.
+    if (medium === 'app') {
+      const have = new Set(items.map((x) => String(x.id)));
+      items = [...items, ...(await loadIndex('landing', { cacheDir, fetchImpl })).filter((x) => !have.has(String(x.id)) && (x.tags || []).some((t) => t === 'Mobile & Apps' || t === 'App Style'))];
+    }
     return items.map((x) => ({
       id: String(x.id), medium, title: String(x.title), url: x.url, image: x.image,
       take: `${x.source} pick, tagged ${(x.tags || []).filter((t) => !NOT_A_FACET.has(t)).slice(0, 4).join(', ')}: open it and name what to carry over.`,
@@ -303,7 +313,7 @@ export function createReferences({ dir, libraries = [], fetchImpl, youtube = sea
     // The tagged catalog for this medium (hundreds of judged sites for landing/ui/app), when there is one.
     const index = want && liveOn ? (await indexFor(want)) : [];
     // No catalog for this medium: search proven work for THIS project instead (YouTube, by views).
-    if (want && liveOn && !index.length) index.push(...(await forProject(want, intent, context)));
+    if (want && liveOn && !index.length) index.push(...(await forProject(want, intent, context, styleWords, style)));
     count = count || (index.length ? 12 : 4);
     const taste = readTaste(dir).filter((p) => !want || p.medium === want);
     const liked = new Map();
@@ -361,7 +371,7 @@ export function createReferences({ dir, libraries = [], fetchImpl, youtube = sea
         if (r.views) score += Math.min(3, Math.log10(r.views) - 3.5); // proven by audience: 1M views ≈ +2.5
         if (r.craft) score += 2.5; // a film, campaign or launch, not just a popular video
         if (r.source === 'YC launch') score += 3; // a YC company in the same space, launching: closest to the brief
-        if (r.via) score += r.via === 'maker' ? 2.5 : r.via === 'brief' ? 2 : r.via === 'context' ? 0.8 : r.via === 'weak' ? -6 : 0; // brief's hits first, weak last
+        if (r.via) score += r.via === 'style' ? 4 : r.via === 'maker' ? 2.5 : r.via === 'brief' ? 2 : r.via === 'context' ? 0.8 : r.via === 'weak' ? -6 : 0; // brief's hits first, weak last
         if (r.source === 'curated' && index.length) score -= 3; // the hand-picked canon is a fallback, not the answer
         if (r.rank !== undefined) score += Math.max(0, 1 - r.rank / 1500); // newer winners a little ahead
         if (seen.has(r.id)) score -= 4; // shown in the last month: let others through
@@ -369,6 +379,12 @@ export function createReferences({ dir, libraries = [], fetchImpl, youtube = sea
         return { r, score };
       })
       .sort((a, b) => b.score - a.score || (a.r.source === 'mine' ? -1 : 1));
+    // A style picked in the quiz narrows, not just nudges: once two or more references carry it (its tags, or found
+    // by its own search), only those come back.
+    if (style.length && !filters.length) { // a catalog pick narrows by its filters instead
+      const carriers = scored.filter(({ r }) => r.via === 'style' || style.some((t) => (r.tags || []).includes(t)));
+      if (carriers.length >= 2) scored.splice(0, scored.length, ...carriers);
+    }
     // Interleave the catalog's sources (award winners, YC companies, YC launches, the wider web) by their own rank, so
     // one source's quality bonus can't take every slot: a fintech brief sees fintech companies next to award craft.
     {
