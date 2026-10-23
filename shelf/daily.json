@@ -1,75 +1,67 @@
 {
- "updated": "2026-10-22T08:42:16.435Z",
+ "updated": "2026-10-23T08:37:50.779Z",
  "media": {
   "ui": [
    {
-    "title": "Resend Inboxes",
-    "url": "https://www.producthunt.com/products/resend",
-    "note": "Create shared inboxes, connect your agents, build workflows",
+    "title": "ESR Bespoke",
+    "url": "https://www.awwwards.com/sites/esr-bespoke",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6a9a15b7a13f0223976250.png",
+    "note": "ESR Bespoke is a luxury autobody shop with a proud heritage, highly respected name in the industry and holds exclusive accreditations with luxury brands like Porsche.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "Instant Search",
+    "url": "https://www.producthunt.com/products/instant-search-2",
+    "note": "The fastest, most precise local AI Search for your files.",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "cloudflare/security-audit-skill",
-    "url": "https://github.com/cloudflare/security-audit-skill",
-    "image": "https://opengraph.githubassets.com/1/cloudflare/security-audit-skill",
-    "by": "★ 2,012 today",
-    "note": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+    "title": "php/php-src",
+    "url": "https://github.com/php/php-src",
+    "image": "https://opengraph.githubassets.com/1/php/php-src",
+    "by": "★ 287 today",
+    "note": "The PHP Interpreter",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Whiteboard",
-    "url": "https://www.producthunt.com/products/whiteboard-5",
-    "note": "the open-source IDE for thoughtful software design",
+    "title": "Emotion Agency",
+    "url": "https://www.awwwards.com/sites/emotion-agency-1",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6a9ad27402bed148704137.jpg",
+    "note": "We didn’t just build a portfolio. We built a space that reflects exactly how we think, how we feel, and the standard we apply to our clients' products.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "Polylane for Cloudflare",
+    "url": "https://www.producthunt.com/products/polylane",
+    "note": "An AI on-call engineer for your Cloudflare apps",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "vllm-project/vllm",
-    "url": "https://github.com/vllm-project/vllm",
-    "image": "https://opengraph.githubassets.com/1/vllm-project/vllm",
-    "by": "★ 441 today",
-    "note": "A high-throughput and memory-efficient inference and serving engine for LLMs",
+    "title": "anthropics/knowledge-work-plugins",
+    "url": "https://github.com/anthropics/knowledge-work-plugins",
+    "image": "https://opengraph.githubassets.com/1/anthropics/knowledge-work-plugins",
+    "by": "★ 303 today",
+    "note": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Claire Mail",
-    "url": "https://www.producthunt.com/products/claire-mail",
-    "note": "Email, calendar and reminders, in one fast app",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
+    "title": "Ascension — Pegassi®",
+    "url": "https://www.awwwards.com/sites/ascension-pegassi-r",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6a9bd8fb824ba811507042.jpg",
+    "note": "Website for the launch of Pegassi's debut EP called 'Ascension'.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
    },
    {
-    "title": "stablyai/orca",
-    "url": "https://github.com/stablyai/orca",
-    "image": "https://opengraph.githubassets.com/1/stablyai/orca",
-    "by": "★ 1,541 today",
-    "note": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Archivist",
-    "url": "https://www.producthunt.com/products/archivist",
-    "note": "From messy filenames to shareable collections",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "headroomlabs-ai/headroom",
-    "url": "https://github.com/headroomlabs-ai/headroom",
-    "image": "https://opengraph.githubassets.com/1/headroomlabs-ai/headroom",
-    "by": "★ 474 today",
-    "note": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Doneas",
-    "url": "https://www.producthunt.com/products/doneas",
-    "note": "A daily accountability call with other entrepreneurs.",
+    "title": "ShogunAI",
+    "url": "https://www.producthunt.com/products/shogunai",
+    "note": "Your personal AGI on your pc",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -77,29 +69,68 @@
     "title": "DietrichGebert/ponytail",
     "url": "https://github.com/DietrichGebert/ponytail",
     "image": "https://opengraph.githubassets.com/1/DietrichGebert/ponytail",
-    "by": "★ 2,079 today",
+    "by": "★ 1,948 today",
     "note": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Fastlane 2.0",
-    "url": "https://www.producthunt.com/products/fastlane-3",
-    "note": "Create, launch and scale winning ads with AI",
+    "title": "Cartier - Le Chœur des Pierres",
+    "url": "https://www.awwwards.com/sites/cartier-le-choeur-des-pierres",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6a9860ad909a8461187548.png",
+    "note": "An immersive journey into Cartier High Jewellery, where gemstones reveal the inspiration, craftsmanship and guachés behind each exceptional creation.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "Agent Hunt",
+    "url": "https://www.producthunt.com/products/monid",
+    "note": "Live rankings of the tools AI agents use most",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "Comfy-Org/ComfyUI",
-    "url": "https://github.com/Comfy-Org/ComfyUI",
-    "image": "https://opengraph.githubassets.com/1/Comfy-Org/ComfyUI",
-    "by": "★ 939 today",
-    "note": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
+    "title": "cloudflare/security-audit-skill",
+    "url": "https://github.com/cloudflare/security-audit-skill",
+    "image": "https://opengraph.githubassets.com/1/cloudflare/security-audit-skill",
+    "by": "★ 2,979 today",
+    "note": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
     "source": "GitHub Trending",
     "kind": "trending"
    }
   ],
   "landing": [
+   {
+    "title": "ESR Bespoke",
+    "url": "https://www.awwwards.com/sites/esr-bespoke",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6a9a15b7a13f0223976250.png",
+    "note": "ESR Bespoke is a luxury autobody shop with a proud heritage, highly respected name in the industry and holds exclusive accreditations with luxury brands like Porsche.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "Stolaze",
+    "url": "https://onepagelove.com/stolaze",
+    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/10/opl-screenshot-stolaze-1792505321925-desktop.jpg",
+    "note": "Stolaze is the portfolio of graphic designer Amaury Eckern. The portfolio uses enormous monochrome typography, an index-like project structure, translucent fading text and a sculptural 3D hero object.",
+    "source": "One Page Love",
+    "kind": "gallery"
+   },
+   {
+    "title": "Instant Search",
+    "url": "https://www.producthunt.com/products/instant-search-2",
+    "note": "The fastest, most precise local AI Search for your files.",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "Emotion Agency",
+    "url": "https://www.awwwards.com/sites/emotion-agency-1",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6a9ad27402bed148704137.jpg",
+    "note": "We didn’t just build a portfolio. We built a space that reflects exactly how we think, how we feel, and the standard we apply to our clients' products.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
    {
     "title": "Resurf",
     "url": "https://onepagelove.com/resurf",
@@ -109,11 +140,19 @@
     "kind": "gallery"
    },
    {
-    "title": "Resend Inboxes",
-    "url": "https://www.producthunt.com/products/resend",
-    "note": "Create shared inboxes, connect your agents, build workflows",
+    "title": "Polylane for Cloudflare",
+    "url": "https://www.producthunt.com/products/polylane",
+    "note": "An AI on-call engineer for your Cloudflare apps",
     "source": "Product Hunt · Today",
     "kind": "trending"
+   },
+   {
+    "title": "Ascension — Pegassi®",
+    "url": "https://www.awwwards.com/sites/ascension-pegassi-r",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6a9bd8fb824ba811507042.jpg",
+    "note": "Website for the launch of Pegassi's debut EP called 'Ascension'.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
    },
    {
     "title": "Aniket",
@@ -124,11 +163,19 @@
     "kind": "gallery"
    },
    {
-    "title": "Whiteboard",
-    "url": "https://www.producthunt.com/products/whiteboard-5",
-    "note": "the open-source IDE for thoughtful software design",
+    "title": "ShogunAI",
+    "url": "https://www.producthunt.com/products/shogunai",
+    "note": "Your personal AGI on your pc",
     "source": "Product Hunt · Today",
     "kind": "trending"
+   },
+   {
+    "title": "Cartier - Le Chœur des Pierres",
+    "url": "https://www.awwwards.com/sites/cartier-le-choeur-des-pierres",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6a9860ad909a8461187548.png",
+    "note": "An immersive journey into Cartier High Jewellery, where gemstones reveal the inspiration, craftsmanship and guachés behind each exceptional creation.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
    },
    {
     "title": "Eventually",
@@ -139,127 +186,50 @@
     "kind": "gallery"
    },
    {
-    "title": "Claire Mail",
-    "url": "https://www.producthunt.com/products/claire-mail",
-    "note": "Email, calendar and reminders, in one fast app",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "Kizupi",
-    "url": "https://onepagelove.com/kizupi",
-    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/10/opl-screenshot-kizupi-c2b7-1792073668989-desktop.jpg",
-    "note": "Kizupi is a math tutor for elementary students offering short, interactive lessons, quizzes and progress tracking for children. Its friendly design uses rounded cards, warm natural colors, playful ill",
-    "source": "One Page Love",
-    "kind": "gallery"
-   },
-   {
-    "title": "Archivist",
-    "url": "https://www.producthunt.com/products/archivist",
-    "note": "From messy filenames to shareable collections",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "Pairio",
-    "url": "https://onepagelove.com/pairio",
-    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/10/pairio-onepagelove-2880.png",
-    "note": "Pairio offers affordable pair programming with screen sharing, remote control, live drawing, and voice for €15 per month. The website combines a clean white editorial layout, understated serif typogra",
-    "source": "One Page Love",
-    "kind": "gallery"
-   },
-   {
-    "title": "Doneas",
-    "url": "https://www.producthunt.com/products/doneas",
-    "note": "A daily accountability call with other entrepreneurs.",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "Scout Graphics",
-    "url": "https://onepagelove.com/scout-graphics",
-    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/10/scout-graphics-landing-page-preview.jpg",
-    "note": "Scout Graphics is a Montreal design studio creating hand-drawn visual identities, illustration, custom signage and painting for brands. The site uses a warm off-white canvas, hand-drawn accents, signa",
-    "source": "One Page Love",
-    "kind": "gallery"
-   },
-   {
-    "title": "Fastlane 2.0",
-    "url": "https://www.producthunt.com/products/fastlane-3",
-    "note": "Create, launch and scale winning ads with AI",
+    "title": "Agent Hunt",
+    "url": "https://www.producthunt.com/products/monid",
+    "note": "Live rankings of the tools AI agents use most",
     "source": "Product Hunt · Today",
     "kind": "trending"
    }
   ],
   "app": [
    {
-    "title": "Resend Inboxes",
-    "url": "https://www.producthunt.com/products/resend",
-    "note": "Create shared inboxes, connect your agents, build workflows",
+    "title": "Instant Search",
+    "url": "https://www.producthunt.com/products/instant-search-2",
+    "note": "The fastest, most precise local AI Search for your files.",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "cloudflare/security-audit-skill",
-    "url": "https://github.com/cloudflare/security-audit-skill",
-    "image": "https://opengraph.githubassets.com/1/cloudflare/security-audit-skill",
-    "by": "★ 2,012 today",
-    "note": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+    "title": "php/php-src",
+    "url": "https://github.com/php/php-src",
+    "image": "https://opengraph.githubassets.com/1/php/php-src",
+    "by": "★ 287 today",
+    "note": "The PHP Interpreter",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Whiteboard",
-    "url": "https://www.producthunt.com/products/whiteboard-5",
-    "note": "the open-source IDE for thoughtful software design",
+    "title": "Polylane for Cloudflare",
+    "url": "https://www.producthunt.com/products/polylane",
+    "note": "An AI on-call engineer for your Cloudflare apps",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "vllm-project/vllm",
-    "url": "https://github.com/vllm-project/vllm",
-    "image": "https://opengraph.githubassets.com/1/vllm-project/vllm",
-    "by": "★ 441 today",
-    "note": "A high-throughput and memory-efficient inference and serving engine for LLMs",
+    "title": "anthropics/knowledge-work-plugins",
+    "url": "https://github.com/anthropics/knowledge-work-plugins",
+    "image": "https://opengraph.githubassets.com/1/anthropics/knowledge-work-plugins",
+    "by": "★ 303 today",
+    "note": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Claire Mail",
-    "url": "https://www.producthunt.com/products/claire-mail",
-    "note": "Email, calendar and reminders, in one fast app",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "stablyai/orca",
-    "url": "https://github.com/stablyai/orca",
-    "image": "https://opengraph.githubassets.com/1/stablyai/orca",
-    "by": "★ 1,541 today",
-    "note": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Archivist",
-    "url": "https://www.producthunt.com/products/archivist",
-    "note": "From messy filenames to shareable collections",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "headroomlabs-ai/headroom",
-    "url": "https://github.com/headroomlabs-ai/headroom",
-    "image": "https://opengraph.githubassets.com/1/headroomlabs-ai/headroom",
-    "by": "★ 474 today",
-    "note": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Doneas",
-    "url": "https://www.producthunt.com/products/doneas",
-    "note": "A daily accountability call with other entrepreneurs.",
+    "title": "ShogunAI",
+    "url": "https://www.producthunt.com/products/shogunai",
+    "note": "Your personal AGI on your pc",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -267,24 +237,56 @@
     "title": "DietrichGebert/ponytail",
     "url": "https://github.com/DietrichGebert/ponytail",
     "image": "https://opengraph.githubassets.com/1/DietrichGebert/ponytail",
-    "by": "★ 2,079 today",
+    "by": "★ 1,948 today",
     "note": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Fastlane 2.0",
-    "url": "https://www.producthunt.com/products/fastlane-3",
-    "note": "Create, launch and scale winning ads with AI",
+    "title": "Agent Hunt",
+    "url": "https://www.producthunt.com/products/monid",
+    "note": "Live rankings of the tools AI agents use most",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "Comfy-Org/ComfyUI",
-    "url": "https://github.com/Comfy-Org/ComfyUI",
-    "image": "https://opengraph.githubassets.com/1/Comfy-Org/ComfyUI",
-    "by": "★ 939 today",
-    "note": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
+    "title": "cloudflare/security-audit-skill",
+    "url": "https://github.com/cloudflare/security-audit-skill",
+    "image": "https://opengraph.githubassets.com/1/cloudflare/security-audit-skill",
+    "by": "★ 2,979 today",
+    "note": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "Ovren Live Preview",
+    "url": "https://www.producthunt.com/products/ovren",
+    "note": "See your product change live before it ships",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "Graphify-Labs/graphify",
+    "url": "https://github.com/Graphify-Labs/graphify",
+    "image": "https://opengraph.githubassets.com/1/Graphify-Labs/graphify",
+    "by": "★ 1,408 today",
+    "note": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, e",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "MOVO AI",
+    "url": "https://www.producthunt.com/products/movo-ai",
+    "note": "The world's first long-form video agent for mobile",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "supabase/supabase",
+    "url": "https://github.com/supabase/supabase",
+    "image": "https://opengraph.githubassets.com/1/supabase/supabase",
+    "by": "★ 693 today",
+    "note": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications.",
     "source": "GitHub Trending",
     "kind": "trending"
    }
@@ -300,18 +302,18 @@
     "kind": "performance"
    },
    {
-    "title": "Nostalgie",
-    "url": "https://vimeo.com/channels/staffpicks/1237618682",
-    "image": "https://i.vimeocdn.com/video/2214963146-19a038dcc903ddc47d85bd337e7f61ba7f75c3d765c1a464b2e95c7031e63a67-d_960?region=us",
-    "note": "Drama / 2025 / Directed by Kathryn Ferguson  A faded 80s pop star from England is invited to perform at an event in Belfast, Northern Ireland. Hoping to recapture&hellip;",
+    "title": "What We Leave Behind",
+    "url": "https://vimeo.com/channels/staffpicks/1237757917",
+    "image": "https://i.vimeocdn.com/video/2214751793-f6b07e05a97ca25b8317452b11b762554e485b071e11806c71b2141a000095bd-d_960?region=us",
+    "note": "Dan has a gaping hole in his neck that won't heal. Why? He can't remember, nor talk about it. Back in the sinister arena of his childhood, he must find&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
    {
-    "title": "Code/Type/Music: Ranger & Fox for Microsoft Foundry Labs",
-    "url": "https://www.stashmedia.tv/code-type-music-ranger-fox-for-microsoft-foundry-labs/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Microsoft-Foundry-Labs-Brand-Film-by-Ranger-Fox-STASH-MAGAZINE3-1920x1080.jpg",
-    "note": "ECD Stephen Panicara and the Ranger & Fox crew in LA injects plenty of personality and attitude into Microsoft Foundry Labs with this kinetic brand film designed for the 2026 Microsoft Build conferenc",
+    "title": "FutureDeluxe Zooms Way Out for Verizon London Hub Film",
+    "url": "https://www.stashmedia.tv/futuredeluxe-zooms-way-out-for-verizon-london-hub-film/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Verizon-London-Hub-Brand-Film-by-FutureDeluxe-STASH-MAGAZINE6-1920x1011.jpg",
+    "note": "Inspired by Charles and Ray Eames’ 1977 classic short film Powers of Ten, director Marcus Chaloner and the FutureDeluxe CG motion crew created this intricate welcome film for a tech hub at Verizon's L",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -324,18 +326,17 @@
     "kind": "performance"
    },
    {
-    "title": "Leonie, Skeet and the Piglets",
-    "url": "https://vimeo.com/channels/staffpicks/1226646947",
-    "image": "https://i.vimeocdn.com/video/2201577883-56bf81453160d4a8ad32eaf907a6c01e3ef01dedc2fae9af26c0e2399e79c784-d_960?region=us",
-    "note": "Eleven-year-old Leonie dreams of becoming a pig farmer one day, but the dream is threatened by the impending bankruptcy of her parents&rsquo; farm.  CREDITS  Writer&hellip;",
+    "title": "The Art Of Entering The Sea",
+    "url": "https://vimeo.com/channels/staffpicks/1225933284",
+    "image": "https://i.vimeocdn.com/video/2214028871-7c37f0cb4ca8a530827dd9db0d259d6f256358995f2342e1c877158e4d6b58d0-d_960?region=us",
+    "note": "A film study of the moments before people meet the water. The Art Of Entering The Sea observes the pause before the plunge. A natural sequel to Hands of Sicily (Nowness),&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
    {
-    "title": "Brent Bonacorso Answers Five Questions About His New Short Film “Query”",
-    "url": "https://www.stashmedia.tv/brent-bonacorso-answers-five-questions-about-his-new-short-film-query/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/22Query22-Short-Film-by-Brent-Bonacorso-STASH-MAGAZINE6-1920x1080.jpg",
-    "note": "Join veteran director Brent Bonacorso for a deep dive into the unique process behind his new short film Query and how he's built on his 25-years of experience in design, animation, VFX, and live actio",
+    "title": "Fight for Kindness Poster Exhibits Launch Nov 13 in 5 Cities",
+    "url": "https://www.stashmedia.tv/fight-for-kindness-poster-exhibition-of-nov-13-in-5-cities/",
+    "note": "From the release: On November 13, World Kindness Day, Fight for Kindness, a project by TypeCampus sponsored by Zetafonts, launches its 2026 Global Exhibition Season with five simultaneous exhibitions ",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -348,18 +349,18 @@
     "kind": "performance"
    },
    {
-    "title": "Someone To Steal Horses With",
-    "url": "https://vimeo.com/channels/staffpicks/1236356268",
-    "image": "https://i.vimeocdn.com/video/2212845866-9c9f54fb3c3337ad6574d508921fa2f2b101dd5586728db9c96d53aeabe9975e-d_960?region=us",
-    "note": "A horse reflects on memory, disturbing the daily routines of citizens in Los Santos, San Andreas, during the press release for his new book \"Someone to Steal&hellip;",
+    "title": "Nostalgie",
+    "url": "https://vimeo.com/channels/staffpicks/1237618682",
+    "image": "https://i.vimeocdn.com/video/2214963146-19a038dcc903ddc47d85bd337e7f61ba7f75c3d765c1a464b2e95c7031e63a67-d_960?region=us",
+    "note": "Drama / 2025 / Directed by Kathryn Ferguson  A faded 80s pop star from England is invited to perform at an event in Belfast, Northern Ireland. Hoping to recapture&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
    {
-    "title": "Drama & Damage: Kutuko Let’s Loose for Bullpadel Xplo 02",
-    "url": "https://www.stashmedia.tv/drama-damage-kutuko-lets-loose-for-bullpadel-xplo-02/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Bullpadel-Xplo-02-racket-launch-film-by-Kutuko-STASH-MAGAZINE3-1920x1080.jpg",
-    "note": "In their latest work for Spanish sports gear brand Bullpadel, the CG motion crew at Kutuko in Madrid capture the full impact of the new Xplo 02 Padel Racket with plenty of drama and over-the-top damag",
+    "title": "Ordinary Folk Goes the “Distance” in Powerful New Short Film",
+    "url": "https://www.stashmedia.tv/ordinary-folk-goes-the-distance-in-powerful-new-short-film/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Distance-Short-Film-by-Ordinary-Folk-STASH-MAGAZINE5.jpg",
+    "note": "Illuminating a small chapter of American History that is both heartbreaking and inspiring, Ordinary Folk's latest passion project assembles 900 hand-painted frames into a moving tribute to an unlikely",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -367,32 +368,16 @@
     "title": "The new HomePod mini 2: Rich, room-filling sound in a compact design.",
     "url": "https://www.youtube.com/watch?v=xLL4UnrLNWs",
     "image": "https://i.ytimg.com/vi/xLL4UnrLNWs/hqdefault.jpg",
-    "by": "945K views",
+    "by": "952K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
    {
-    "title": "Marriaginalia",
-    "url": "https://vimeo.com/channels/staffpicks/1235421735",
-    "image": "https://i.vimeocdn.com/video/2211768251-5936a139251a1d88cf230b9fdb8d48fff3484bd89f5d0a2f9c28bdf9f08659d4-d_960?region=us",
-    "note": "TIFF 2025 Famous Actors - Rodrigo Fernandez-Stoll @rodrigofstoll &amp; Kayla Lorette @kaylalorette Producer - Jacqueline De Niverville - @jackieden EPs - Rob Burns,&hellip;",
+    "title": "Leonie, Skeet and the Piglets",
+    "url": "https://vimeo.com/channels/staffpicks/1226646947",
+    "image": "https://i.vimeocdn.com/video/2201577883-56bf81453160d4a8ad32eaf907a6c01e3ef01dedc2fae9af26c0e2399e79c784-d_960?region=us",
+    "note": "Eleven-year-old Leonie dreams of becoming a pig farmer one day, but the dream is threatened by the impending bankruptcy of her parents&rsquo; farm.  CREDITS  Writer&hellip;",
     "source": "Vimeo Staff Picks",
-    "kind": "gallery"
-   },
-   {
-    "title": "Meet PATHOS, the New German Agency With Plenty of Attitude (and a Really Long Press Release)",
-    "url": "https://www.stashmedia.tv/meet-pathos-the-new-german-agency-with-plenty-of-attitude-and-a-really-long-press-release/",
-    "note": "From the release: Kevin Claus, Felix Ebell and Finn-Jordan Max are launching PATHOS, a Hamburg-based agency specializing in branded entertainment. The agency launches with renowned clients and a blunt",
-    "source": "STASH",
-    "kind": "gallery"
-   }
-  ],
-  "motion": [
-   {
-    "title": "Food Forest – Ketelbroek | Freek Freriks",
-    "url": "https://motionographer.com/quickie/food-forest-ketelbroek-freek-freriks/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/10/food-forest-ketelbroek.png",
-    "source": "Motionographer",
     "kind": "gallery"
    },
    {
@@ -400,6 +385,23 @@
     "url": "https://www.stashmedia.tv/code-type-music-ranger-fox-for-microsoft-foundry-labs/",
     "image": "http://www.stashmedia.tv/wp-content/uploads/Microsoft-Foundry-Labs-Brand-Film-by-Ranger-Fox-STASH-MAGAZINE3-1920x1080.jpg",
     "note": "ECD Stephen Panicara and the Ranger & Fox crew in LA injects plenty of personality and attitude into Microsoft Foundry Labs with this kinetic brand film designed for the 2026 Microsoft Build conferenc",
+    "source": "STASH",
+    "kind": "gallery"
+   }
+  ],
+  "motion": [
+   {
+    "title": "Lorem Ipsum Rap | F&C ai Lab",
+    "url": "https://motionographer.com/quickie/lorem-ipsum-rap-fc-ai-lab/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/10/Lorem_Ipsum_02-ezgif.com-overlay.jpg",
+    "source": "Motionographer",
+    "kind": "gallery"
+   },
+   {
+    "title": "FutureDeluxe Zooms Way Out for Verizon London Hub Film",
+    "url": "https://www.stashmedia.tv/futuredeluxe-zooms-way-out-for-verizon-london-hub-film/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Verizon-London-Hub-Brand-Film-by-FutureDeluxe-STASH-MAGAZINE6-1920x1011.jpg",
+    "note": "Inspired by Charles and Ray Eames’ 1977 classic short film Powers of Ten, director Marcus Chaloner and the FutureDeluxe CG motion crew created this intricate welcome film for a tech hub at Verizon's L",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -412,17 +414,16 @@
     "kind": "gallery"
    },
    {
-    "title": "The Flowers Look Back: teamLab at OFFF Barcelona 2026",
-    "url": "https://motionographer.com/2026/10/21/the-flowers-look-back-teamlab-at-offf-barcelona-2026/",
-    "note": "How does an art collective open permanent museums on three continents without turning into a company? We sat down with Sakurako “Saka” Naka of teamLab at OFFF Barcelona 2026 and got an answer about or",
+    "title": "Food Forest – Ketelbroek | Freek Freriks",
+    "url": "https://motionographer.com/quickie/food-forest-ketelbroek-freek-freriks/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/10/food-forest-ketelbroek.png",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "Brent Bonacorso Answers Five Questions About His New Short Film “Query”",
-    "url": "https://www.stashmedia.tv/brent-bonacorso-answers-five-questions-about-his-new-short-film-query/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/22Query22-Short-Film-by-Brent-Bonacorso-STASH-MAGAZINE6-1920x1080.jpg",
-    "note": "Join veteran director Brent Bonacorso for a deep dive into the unique process behind his new short film Query and how he's built on his 25-years of experience in design, animation, VFX, and live actio",
+    "title": "Fight for Kindness Poster Exhibits Launch Nov 13 in 5 Cities",
+    "url": "https://www.stashmedia.tv/fight-for-kindness-poster-exhibition-of-nov-13-in-5-cities/",
+    "note": "From the release: On November 13, World Kindness Day, Fight for Kindness, a project by TypeCampus sponsored by Zetafonts, launches its 2026 Global Exhibition Season with five simultaneous exhibitions ",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -435,18 +436,17 @@
     "kind": "gallery"
    },
    {
-    "title": "Sekondo Puts ChatGPT and Claude Inside After Effects and Premiere Pro.",
-    "url": "https://motionographer.com/news/sekondo-puts-chatgpt-and-claude-inside-after-effects-and-premiere-pro/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/10/Sekondo_Premiere_Pro.png",
-    "note": "Córdoba-based graphic designer Jose Manuel Fernández has launched Sekondo, a plugin that connects ChatGPT and Claude to six Adobe applications: After Effects, Premiere Pro, Photoshop, Illustrator, InD",
+    "title": "The Flowers Look Back: teamLab at OFFF Barcelona 2026",
+    "url": "https://motionographer.com/2026/10/21/the-flowers-look-back-teamlab-at-offf-barcelona-2026/",
+    "note": "How does an art collective open permanent museums on three continents without turning into a company? We sat down with Sakurako “Saka” Naka of teamLab at OFFF Barcelona 2026 and got an answer about or",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "Drama & Damage: Kutuko Let’s Loose for Bullpadel Xplo 02",
-    "url": "https://www.stashmedia.tv/drama-damage-kutuko-lets-loose-for-bullpadel-xplo-02/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Bullpadel-Xplo-02-racket-launch-film-by-Kutuko-STASH-MAGAZINE3-1920x1080.jpg",
-    "note": "In their latest work for Spanish sports gear brand Bullpadel, the CG motion crew at Kutuko in Madrid capture the full impact of the new Xplo 02 Padel Racket with plenty of drama and over-the-top damag",
+    "title": "Ordinary Folk Goes the “Distance” in Powerful New Short Film",
+    "url": "https://www.stashmedia.tv/ordinary-folk-goes-the-distance-in-powerful-new-short-film/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Distance-Short-Film-by-Ordinary-Folk-STASH-MAGAZINE5.jpg",
+    "note": "Illuminating a small chapter of American History that is both heartbreaking and inspiring, Ordinary Folk's latest passion project assembles 900 hand-painted frames into a moving tribute to an unlikely",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -459,17 +459,18 @@
     "kind": "gallery"
    },
    {
-    "title": "ROVE Launches a New Identity and Website, Signs Ashley McKim Consulting",
-    "url": "https://motionographer.com/news/rove-new-brand-identity-website-ashley-mckim/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/10/CleanShot-2026-10-19-at-6.53.01-PM%402x-scaled.png",
-    "note": "The Portland-rooted studio unveils a motion-led identity and website, with creative contributions from Irene Feleo, Connor Linde and STOKT, and new representation by Ashley McKim Consulting.",
+    "title": "Sekondo Puts ChatGPT and Claude Inside After Effects and Premiere Pro.",
+    "url": "https://motionographer.com/news/sekondo-puts-chatgpt-and-claude-inside-after-effects-and-premiere-pro/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/10/Sekondo_Premiere_Pro.png",
+    "note": "Córdoba-based graphic designer Jose Manuel Fernández has launched Sekondo, a plugin that connects ChatGPT and Claude to six Adobe applications: After Effects, Premiere Pro, Photoshop, Illustrator, InD",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "Meet PATHOS, the New German Agency With Plenty of Attitude (and a Really Long Press Release)",
-    "url": "https://www.stashmedia.tv/meet-pathos-the-new-german-agency-with-plenty-of-attitude-and-a-really-long-press-release/",
-    "note": "From the release: Kevin Claus, Felix Ebell and Finn-Jordan Max are launching PATHOS, a Hamburg-based agency specializing in branded entertainment. The agency launches with renowned clients and a blunt",
+    "title": "Code/Type/Music: Ranger & Fox for Microsoft Foundry Labs",
+    "url": "https://www.stashmedia.tv/code-type-music-ranger-fox-for-microsoft-foundry-labs/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Microsoft-Foundry-Labs-Brand-Film-by-Ranger-Fox-STASH-MAGAZINE3-1920x1080.jpg",
+    "note": "ECD Stephen Panicara and the Ranger & Fox crew in LA injects plenty of personality and attitude into Microsoft Foundry Labs with this kinetic brand film designed for the 2026 Microsoft Build conferenc",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -492,25 +493,25 @@
     "kind": "performance"
    },
    {
-    "title": "Nostalgie",
-    "url": "https://vimeo.com/channels/staffpicks/1237618682",
-    "image": "https://i.vimeocdn.com/video/2214963146-19a038dcc903ddc47d85bd337e7f61ba7f75c3d765c1a464b2e95c7031e63a67-d_960?region=us",
-    "note": "Drama / 2025 / Directed by Kathryn Ferguson  A faded 80s pop star from England is invited to perform at an event in Belfast, Northern Ireland. Hoping to recapture&hellip;",
+    "title": "What We Leave Behind",
+    "url": "https://vimeo.com/channels/staffpicks/1237757917",
+    "image": "https://i.vimeocdn.com/video/2214751793-f6b07e05a97ca25b8317452b11b762554e485b071e11806c71b2141a000095bd-d_960?region=us",
+    "note": "Dan has a gaping hole in his neck that won't heal. Why? He can't remember, nor talk about it. Back in the sinister arena of his childhood, he must find&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
    {
-    "title": "Food Forest – Ketelbroek | Freek Freriks",
-    "url": "https://motionographer.com/quickie/food-forest-ketelbroek-freek-freriks/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/10/food-forest-ketelbroek.png",
+    "title": "Lorem Ipsum Rap | F&C ai Lab",
+    "url": "https://motionographer.com/quickie/lorem-ipsum-rap-fc-ai-lab/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/10/Lorem_Ipsum_02-ezgif.com-overlay.jpg",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "Code/Type/Music: Ranger & Fox for Microsoft Foundry Labs",
-    "url": "https://www.stashmedia.tv/code-type-music-ranger-fox-for-microsoft-foundry-labs/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Microsoft-Foundry-Labs-Brand-Film-by-Ranger-Fox-STASH-MAGAZINE3-1920x1080.jpg",
-    "note": "ECD Stephen Panicara and the Ranger & Fox crew in LA injects plenty of personality and attitude into Microsoft Foundry Labs with this kinetic brand film designed for the 2026 Microsoft Build conferenc",
+    "title": "FutureDeluxe Zooms Way Out for Verizon London Hub Film",
+    "url": "https://www.stashmedia.tv/futuredeluxe-zooms-way-out-for-verizon-london-hub-film/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Verizon-London-Hub-Brand-Film-by-FutureDeluxe-STASH-MAGAZINE6-1920x1011.jpg",
+    "note": "Inspired by Charles and Ray Eames’ 1977 classic short film Powers of Ten, director Marcus Chaloner and the FutureDeluxe CG motion crew created this intricate welcome film for a tech hub at Verizon's L",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -523,25 +524,24 @@
     "kind": "performance"
    },
    {
-    "title": "Leonie, Skeet and the Piglets",
-    "url": "https://vimeo.com/channels/staffpicks/1226646947",
-    "image": "https://i.vimeocdn.com/video/2201577883-56bf81453160d4a8ad32eaf907a6c01e3ef01dedc2fae9af26c0e2399e79c784-d_960?region=us",
-    "note": "Eleven-year-old Leonie dreams of becoming a pig farmer one day, but the dream is threatened by the impending bankruptcy of her parents&rsquo; farm.  CREDITS  Writer&hellip;",
+    "title": "The Art Of Entering The Sea",
+    "url": "https://vimeo.com/channels/staffpicks/1225933284",
+    "image": "https://i.vimeocdn.com/video/2214028871-7c37f0cb4ca8a530827dd9db0d259d6f256358995f2342e1c877158e4d6b58d0-d_960?region=us",
+    "note": "A film study of the moments before people meet the water. The Art Of Entering The Sea observes the pause before the plunge. A natural sequel to Hands of Sicily (Nowness),&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
    {
-    "title": "The Flowers Look Back: teamLab at OFFF Barcelona 2026",
-    "url": "https://motionographer.com/2026/10/21/the-flowers-look-back-teamlab-at-offf-barcelona-2026/",
-    "note": "How does an art collective open permanent museums on three continents without turning into a company? We sat down with Sakurako “Saka” Naka of teamLab at OFFF Barcelona 2026 and got an answer about or",
+    "title": "Food Forest – Ketelbroek | Freek Freriks",
+    "url": "https://motionographer.com/quickie/food-forest-ketelbroek-freek-freriks/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/10/food-forest-ketelbroek.png",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "Brent Bonacorso Answers Five Questions About His New Short Film “Query”",
-    "url": "https://www.stashmedia.tv/brent-bonacorso-answers-five-questions-about-his-new-short-film-query/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/22Query22-Short-Film-by-Brent-Bonacorso-STASH-MAGAZINE6-1920x1080.jpg",
-    "note": "Join veteran director Brent Bonacorso for a deep dive into the unique process behind his new short film Query and how he's built on his 25-years of experience in design, animation, VFX, and live actio",
+    "title": "Fight for Kindness Poster Exhibits Launch Nov 13 in 5 Cities",
+    "url": "https://www.stashmedia.tv/fight-for-kindness-poster-exhibition-of-nov-13-in-5-cities/",
+    "note": "From the release: On November 13, World Kindness Day, Fight for Kindness, a project by TypeCampus sponsored by Zetafonts, launches its 2026 Global Exhibition Season with five simultaneous exhibitions ",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -554,26 +554,25 @@
     "kind": "performance"
    },
    {
-    "title": "Someone To Steal Horses With",
-    "url": "https://vimeo.com/channels/staffpicks/1236356268",
-    "image": "https://i.vimeocdn.com/video/2212845866-9c9f54fb3c3337ad6574d508921fa2f2b101dd5586728db9c96d53aeabe9975e-d_960?region=us",
-    "note": "A horse reflects on memory, disturbing the daily routines of citizens in Los Santos, San Andreas, during the press release for his new book \"Someone to Steal&hellip;",
+    "title": "Nostalgie",
+    "url": "https://vimeo.com/channels/staffpicks/1237618682",
+    "image": "https://i.vimeocdn.com/video/2214963146-19a038dcc903ddc47d85bd337e7f61ba7f75c3d765c1a464b2e95c7031e63a67-d_960?region=us",
+    "note": "Drama / 2025 / Directed by Kathryn Ferguson  A faded 80s pop star from England is invited to perform at an event in Belfast, Northern Ireland. Hoping to recapture&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
    {
-    "title": "Sekondo Puts ChatGPT and Claude Inside After Effects and Premiere Pro.",
-    "url": "https://motionographer.com/news/sekondo-puts-chatgpt-and-claude-inside-after-effects-and-premiere-pro/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/10/Sekondo_Premiere_Pro.png",
-    "note": "Córdoba-based graphic designer Jose Manuel Fernández has launched Sekondo, a plugin that connects ChatGPT and Claude to six Adobe applications: After Effects, Premiere Pro, Photoshop, Illustrator, InD",
+    "title": "The Flowers Look Back: teamLab at OFFF Barcelona 2026",
+    "url": "https://motionographer.com/2026/10/21/the-flowers-look-back-teamlab-at-offf-barcelona-2026/",
+    "note": "How does an art collective open permanent museums on three continents without turning into a company? We sat down with Sakurako “Saka” Naka of teamLab at OFFF Barcelona 2026 and got an answer about or",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "Drama & Damage: Kutuko Let’s Loose for Bullpadel Xplo 02",
-    "url": "https://www.stashmedia.tv/drama-damage-kutuko-lets-loose-for-bullpadel-xplo-02/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Bullpadel-Xplo-02-racket-launch-film-by-Kutuko-STASH-MAGAZINE3-1920x1080.jpg",
-    "note": "In their latest work for Spanish sports gear brand Bullpadel, the CG motion crew at Kutuko in Madrid capture the full impact of the new Xplo 02 Padel Racket with plenty of drama and over-the-top damag",
+    "title": "Ordinary Folk Goes the “Distance” in Powerful New Short Film",
+    "url": "https://www.stashmedia.tv/ordinary-folk-goes-the-distance-in-powerful-new-short-film/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Distance-Short-Film-by-Ordinary-Folk-STASH-MAGAZINE5.jpg",
+    "note": "Illuminating a small chapter of American History that is both heartbreaking and inspiring, Ordinary Folk's latest passion project assembles 900 hand-painted frames into a moving tribute to an unlikely",
     "source": "STASH",
     "kind": "gallery"
    }
@@ -583,15 +582,7 @@
     "title": "WORLD RECORD Skateboard Speed 🤯",
     "url": "https://www.youtube.com/watch?v=3huZ0cdjg5E",
     "image": "https://i.ytimg.com/vi/3huZ0cdjg5E/hqdefault.jpg",
-    "by": "4.7M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "What Does Your Ego Say? 😅",
-    "url": "https://www.youtube.com/watch?v=4flIo3S9cHI",
-    "image": "https://i.ytimg.com/vi/4flIo3S9cHI/hqdefault.jpg",
-    "by": "4.4M views",
+    "by": "6.5M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -599,7 +590,7 @@
     "title": "\"That's Impossible\"",
     "url": "https://www.youtube.com/watch?v=s2XXcGdtFh8",
     "image": "https://i.ytimg.com/vi/s2XXcGdtFh8/hqdefault.jpg",
-    "by": "3.6M views",
+    "by": "4.3M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -607,7 +598,7 @@
     "title": "Wingsuiting Down a Norwegian Road 🎬 Amber Forte + Espen Fadnes #GoPro",
     "url": "https://www.youtube.com/watch?v=IG783lckvuo",
     "image": "https://i.ytimg.com/vi/IG783lckvuo/hqdefault.jpg",
-    "by": "836K views",
+    "by": "874K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -615,7 +606,7 @@
     "title": "That's Not What We Expected 😳",
     "url": "https://www.youtube.com/watch?v=N_WT8lM1MA0",
     "image": "https://i.ytimg.com/vi/N_WT8lM1MA0/hqdefault.jpg",
-    "by": "617K views",
+    "by": "843K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -623,15 +614,15 @@
     "title": "Airbnb | あつまる？エアビる？｜プールでエアビる",
     "url": "https://www.youtube.com/watch?v=QS0QEqKGGIw",
     "image": "https://i.ytimg.com/vi/QS0QEqKGGIw/hqdefault.jpg",
-    "by": "563K views",
+    "by": "740K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
    {
-    "title": "Nido de Villanas: Ep. 1 Don Cristóbal’s inheritance",
-    "url": "https://www.youtube.com/watch?v=wG_LaKvlcqM",
-    "image": "https://i.ytimg.com/vi/wG_LaKvlcqM/hqdefault.jpg",
-    "by": "549K views",
+    "title": "Backflipping Off An Iceberg 🥶",
+    "url": "https://www.youtube.com/watch?v=0kZ3FsOrOcw",
+    "image": "https://i.ytimg.com/vi/0kZ3FsOrOcw/hqdefault.jpg",
+    "by": "710K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -639,7 +630,15 @@
     "title": "Airbnb | あつまる？エアビる？｜今日はちょっと、大人忘れます。",
     "url": "https://www.youtube.com/watch?v=p8HvRJALo4Y",
     "image": "https://i.ytimg.com/vi/p8HvRJALo4Y/hqdefault.jpg",
-    "by": "401K views",
+    "by": "560K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Nido de Villanas: Ep. 1 Don Cristóbal’s inheritance",
+    "url": "https://www.youtube.com/watch?v=wG_LaKvlcqM",
+    "image": "https://i.ytimg.com/vi/wG_LaKvlcqM/hqdefault.jpg",
+    "by": "550K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -647,7 +646,7 @@
     "title": "Get sorted for college with Roxie from the Apple Store.",
     "url": "https://www.youtube.com/watch?v=P5GxUjU4uBI",
     "image": "https://i.ytimg.com/vi/P5GxUjU4uBI/hqdefault.jpg",
-    "by": "354K views",
+    "by": "355K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -655,7 +654,7 @@
     "title": "The Fastest Skateboarder on Earth 🛹",
     "url": "https://www.youtube.com/watch?v=aEZBtp-KJTE",
     "image": "https://i.ytimg.com/vi/aEZBtp-KJTE/hqdefault.jpg",
-    "by": "293K views",
+    "by": "324K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -663,89 +662,89 @@
     "title": "Show off your work with Desk View. Tip from Kylie at the Apple Store.",
     "url": "https://www.youtube.com/watch?v=BTyWlJJUX2I",
     "image": "https://i.ytimg.com/vi/BTyWlJJUX2I/hqdefault.jpg",
-    "by": "288K views",
+    "by": "289K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
    {
-    "title": "Episode 6 - The Night Shift (DuoTV Finale)",
-    "url": "https://www.youtube.com/watch?v=lsNxpodd-14",
-    "image": "https://i.ytimg.com/vi/lsNxpodd-14/hqdefault.jpg",
-    "by": "286K views",
+    "title": "who’s my cute lil baka?? 🥰",
+    "url": "https://www.youtube.com/watch?v=riBx8kalPdI",
+    "image": "https://i.ytimg.com/vi/riBx8kalPdI/hqdefault.jpg",
+    "by": "284K views",
     "source": "Latest from brands",
     "kind": "performance"
    }
   ],
   "post": [
    {
-    "title": "mitmproxy adds --emudhra option",
-    "url": "https://github.com/mitmproxy/mitmproxy/commit/169234499088fc2c414644a67efaed3d64ae2e3b",
+    "title": "Docker is weird",
+    "url": "https://codeandcake.dev/posts/2026-10-22-docker-is-weird",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "There isn't an easy exploit for this PHP vulnerability",
-    "url": "https://eliastaylor.com/noexploit/",
+    "title": "Jared Kushner Hacked Phone Reveals Secret Negotiations, Millions in Transactions",
+    "url": "https://www.vanityfair.com/story/jared-kushner-hacked-phone-secret-negotiations",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Security Disclosure",
-    "url": "https://blog.railway.com/p/security-disclosure-wednesday-october-21st",
+    "title": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
+    "url": "https://github.com/NVIDIA/OpenShell",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Meta ordered to pay $25B penalty in New Mexico Cambridge Analytica case",
-    "url": "https://www.cnbc.com/2026/10/21/meta-new-mexico-cambridge-analytica-penalty.html",
+    "title": "Every AI model has the same \"controversial\" take on humans",
+    "url": "https://www.modelcompare.ai/blog/ai-models-controversial-take-on-humans",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "EA is shutting down BioWare",
-    "url": "https://www.theverge.com/games/1015647/ea-is-shutting-down-bioware",
+    "title": "Run full iOS 16.5 firmware on Android Devices",
+    "url": "https://github.com/oosexgang/hackios-xnu-kernel",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Today's PHP security release, and how we're strengthening security",
-    "url": "https://thephp.foundation/blog/2026/10/21/todays-php-security-release-and-how-were-strengthening-php-security/",
+    "title": "Quad9 to exit France",
+    "url": "https://quad9.net/news/blog/au-revoir-france/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "The No Kings Takedown Is Why You Shouldn't Rent Your Megaphone from Zuck",
-    "url": "https://www.techdirt.com/2026/10/20/accident-or-not-the-no-kings-takedown-is-why-you-shouldnt-rent-your-megaphone-from-zuck/",
+    "title": "What’s getting pwned right now",
+    "url": "https://pwn.watch/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "DuckDB 2.0.0 LTS “Cinnamon Teal”",
-    "url": "https://duckdb.org/2026/10/21/announcing-duckdb-200",
+    "title": "eMudhra to exit global SSL/TLS certificate business",
+    "url": "https://emudhra.com/en/press-release/emudhra-to-exit-global-ssl-tls-certificate-business",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Compromised LiteLLM 1.107.0 on PyPI Installs a Credential Stealer and Backdoor",
-    "url": "https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/",
+    "title": "Woman charged with computer fraud due to scam CashApp account being in her name",
+    "url": "https://www.404media.co/amanda-smith-opened-a-cashapp-in-her-name-she-faces-years-in-prison-cashapp-fraud/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "PHP 8.2.35",
-    "url": "https://github.com/php/php-src/releases/tag/php-8.2.35",
+    "title": "Tell HN: I unknowingly broke the PHP RCE embargo. I am sorry.",
+    "url": "https://news.ycombinator.com/item?id=50193416",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "PHP2Shell: AI uncovers critical RCE in PHP",
-    "url": "https://www.wiz.io/blog/php2shell-php-rce",
+    "title": "CVE-2026-111943: Compromised Intermediate Certificate Authority",
+    "url": "https://nvd.nist.gov/vuln/detail/cve-2026-111943",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Eight Bits of Trust: eMudhra's CA keys cracked in milliseconds",
-    "url": "https://scotthelme.co.uk/eight-bits-of-trust-emudhras-ca-keys-cracked-in-milliseconds/",
+    "title": "Jailbreaking the Switch 2",
+    "url": "https://pepsipu.com/blog/2026-10-switch2-jailbreak-ns2jb/",
     "source": "Hacker News · Best",
     "kind": "performance"
    }
@@ -760,10 +759,10 @@
     "kind": "performance"
    },
    {
-    "title": "Haunted Farms",
-    "url": "https://www.adsoftheworld.com/campaigns/haunted-farms",
-    "image": "https://image.adsoftheworld.com/e1hrsmpwvjhzh3e5rlgs28neijmf",
-    "by": "Hay Day",
+    "title": "Heatball Fight",
+    "url": "https://www.adsoftheworld.com/campaigns/heatball-fight",
+    "image": "https://image.adsoftheworld.com/vrepagf1e6yqsv7b1w7tq8837mbo",
+    "by": "Midea",
     "source": "Ads of the World",
     "kind": "gallery"
    },
@@ -776,10 +775,10 @@
     "kind": "performance"
    },
    {
-    "title": "This is a Halloween Nightmare!",
-    "url": "https://www.adsoftheworld.com/campaigns/this-is-a-halloween-nightmare",
-    "image": "https://image.adsoftheworld.com/pse8ic0icnmaxvv5lfqfd441mykv",
-    "by": "State Farm",
+    "title": "Take a Shopping Trip",
+    "url": "https://www.adsoftheworld.com/campaigns/take-a-shopping-trip",
+    "image": "https://image.adsoftheworld.com/7yz8g1el613er79uivbf667q13ao",
+    "by": "Whatnot",
     "source": "Ads of the World",
     "kind": "gallery"
    },
@@ -792,10 +791,10 @@
     "kind": "performance"
    },
    {
-    "title": "Better protected",
-    "url": "https://www.adsoftheworld.com/campaigns/better-protected",
-    "image": "https://image.adsoftheworld.com/zctzblssfuag0xg02wpu46nd1fhu",
-    "by": "KPN",
+    "title": "Haunted Farms",
+    "url": "https://www.adsoftheworld.com/campaigns/haunted-farms",
+    "image": "https://image.adsoftheworld.com/e1hrsmpwvjhzh3e5rlgs28neijmf",
+    "by": "Hay Day",
     "source": "Ads of the World",
     "kind": "gallery"
    },
@@ -808,26 +807,10 @@
     "kind": "performance"
    },
    {
-    "title": "Lives on hold",
-    "url": "https://www.adsoftheworld.com/campaigns/lives-on-hold",
-    "image": "https://image.adsoftheworld.com/1jpo74q5r8tp8evaa1l77c6c92ln",
-    "by": "Spoorsector Nederland",
-    "source": "Ads of the World",
-    "kind": "gallery"
-   },
-   {
-    "title": "The new HomePod mini 2: Rich, room-filling sound in a compact design.",
-    "url": "https://www.youtube.com/watch?v=xLL4UnrLNWs",
-    "image": "https://i.ytimg.com/vi/xLL4UnrLNWs/hqdefault.jpg",
-    "by": "945K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "Find Your Flow State",
-    "url": "https://www.adsoftheworld.com/campaigns/find-your-flow-state",
-    "image": "https://image.adsoftheworld.com/fa1c20srap7j80w535n292hlcfl9",
-    "by": "Figma",
+    "title": "This is a Halloween Nightmare!",
+    "url": "https://www.adsoftheworld.com/campaigns/this-is-a-halloween-nightmare",
+    "image": "https://image.adsoftheworld.com/pse8ic0icnmaxvv5lfqfd441mykv",
+    "by": "State Farm",
     "source": "Ads of the World",
     "kind": "gallery"
    },
@@ -835,15 +818,31 @@
     "title": "Airbnb | あつまる？エアビる？｜リビングでエアビる",
     "url": "https://www.youtube.com/watch?v=Mx608ORGCFA",
     "image": "https://i.ytimg.com/vi/Mx608ORGCFA/hqdefault.jpg",
-    "by": "814K views",
+    "by": "960K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
    {
-    "title": "Linguist Breaks Down Jujutsu Kaisen Dubbing Mistakes",
-    "url": "https://www.youtube.com/watch?v=C49AvaU8zs8",
-    "image": "https://i.ytimg.com/vi/C49AvaU8zs8/hqdefault.jpg",
-    "by": "561K views",
+    "title": "Better protected",
+    "url": "https://www.adsoftheworld.com/campaigns/better-protected",
+    "image": "https://image.adsoftheworld.com/zctzblssfuag0xg02wpu46nd1fhu",
+    "by": "KPN",
+    "source": "Ads of the World",
+    "kind": "gallery"
+   },
+   {
+    "title": "The new HomePod mini 2: Rich, room-filling sound in a compact design.",
+    "url": "https://www.youtube.com/watch?v=xLL4UnrLNWs",
+    "image": "https://i.ytimg.com/vi/xLL4UnrLNWs/hqdefault.jpg",
+    "by": "952K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Airbnb | あつまる？エアビる？｜今日はちょっと、大人忘れます。",
+    "url": "https://www.youtube.com/watch?v=hmYXIfxAIoM",
+    "image": "https://i.ytimg.com/vi/hmYXIfxAIoM/hqdefault.jpg",
+    "by": "414K views",
     "source": "Latest from brands",
     "kind": "performance"
    }
