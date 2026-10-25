@@ -1,7 +1,31 @@
 {
- "updated": "2026-10-24T08:13:17.271Z",
+ "updated": "2026-10-25T08:30:29.362Z",
  "media": {
   "ui": [
+   {
+    "title": "Forge Automotive",
+    "url": "https://www.awwwards.com/sites/forge-automotive",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6a9dd26911421823414798.jpg",
+    "note": "A performance atelier creating bespoke vehicles through bodywork, interiors, wheels, lighting, exhaust and PPF",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "MRRaudit",
+    "url": "https://www.producthunt.com/products/mrraudit",
+    "note": "Understand why your MRR differs and get a number you trust",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "cloudflare/security-audit-skill",
+    "url": "https://github.com/cloudflare/security-audit-skill",
+    "image": "https://opengraph.githubassets.com/1/cloudflare/security-audit-skill",
+    "by": "★ 2,264 today",
+    "note": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
    {
     "title": "Brandon Yasin",
     "url": "https://www.awwwards.com/sites/brandon-yasin",
@@ -11,18 +35,18 @@
     "kind": "award"
    },
    {
-    "title": "zCAD AI",
-    "url": "https://www.producthunt.com/products/zcad-ai",
-    "note": "AI 3D that creates real parts, not just shapes",
+    "title": "How It Spread",
+    "url": "https://www.producthunt.com/products/how-it-spread",
+    "note": "See how anything went viral, from the first post",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "cloudflare/security-audit-skill",
-    "url": "https://github.com/cloudflare/security-audit-skill",
-    "image": "https://opengraph.githubassets.com/1/cloudflare/security-audit-skill",
-    "by": "★ 2,716 today",
-    "note": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+    "title": "NVIDIA/OpenShell",
+    "url": "https://github.com/NVIDIA/OpenShell",
+    "image": "https://opengraph.githubassets.com/1/NVIDIA/OpenShell",
+    "by": "★ 896 today",
+    "note": "OpenShell is the safe, private runtime for autonomous AI agents.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
@@ -35,18 +59,18 @@
     "kind": "award"
    },
    {
-    "title": "Basedash Scheduled CSV Exports",
-    "url": "https://www.producthunt.com/products/basedash",
-    "note": "Ask once. Get a fresh CSV in Slack or email every week.",
+    "title": "Yourcast 2.0",
+    "url": "https://www.producthunt.com/products/yourcast",
+    "note": "AI summaries with tap-to-jump timestamps, right in Telegram",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "php/php-src",
-    "url": "https://github.com/php/php-src",
-    "image": "https://opengraph.githubassets.com/1/php/php-src",
-    "by": "★ 716 today",
-    "note": "The PHP Interpreter",
+    "title": "aws/agent-toolkit-for-aws",
+    "url": "https://github.com/aws/agent-toolkit-for-aws",
+    "image": "https://opengraph.githubassets.com/1/aws/agent-toolkit-for-aws",
+    "by": "★ 13 today",
+    "note": "Official, AWS-supported MCP servers, skills, and plugins to help AI agents build on AWS",
     "source": "GitHub Trending",
     "kind": "trending"
    },
@@ -59,47 +83,46 @@
     "kind": "award"
    },
    {
-    "title": "Penta",
-    "url": "https://www.producthunt.com/products/penta-cd-player-changer",
-    "note": "A ’90s 5-disc CD changer on iPhone Duo",
+    "title": "Papermark Virtual Data Room",
+    "url": "https://www.producthunt.com/products/papermark-2",
+    "note": "Secure data rooms your AI agents can run. Live in",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "anthropics/knowledge-work-plugins",
-    "url": "https://github.com/anthropics/knowledge-work-plugins",
-    "image": "https://opengraph.githubassets.com/1/anthropics/knowledge-work-plugins",
-    "by": "★ 635 today",
-    "note": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Ascension — Pegassi®",
-    "url": "https://www.awwwards.com/sites/ascension-pegassi-r",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6a9bd8fb824ba811507042.jpg",
-    "note": "Website for the launch of Pegassi's debut EP called 'Ascension'.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
-   },
-   {
-    "title": "sideOS.ai",
-    "url": "https://www.producthunt.com/products/sideos-ai",
-    "note": "Local AI for dictation, meetings, background tasks and more",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "NVIDIA/OpenShell",
-    "url": "https://github.com/NVIDIA/OpenShell",
-    "image": "https://opengraph.githubassets.com/1/NVIDIA/OpenShell",
-    "by": "★ 1,119 today",
-    "note": "OpenShell is the safe, private runtime for autonomous AI agents.",
+    "title": "Nutlope/hallmark",
+    "url": "https://github.com/Nutlope/hallmark",
+    "image": "https://opengraph.githubassets.com/1/Nutlope/hallmark",
+    "by": "★ 455 today",
+    "note": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
     "source": "GitHub Trending",
     "kind": "trending"
    }
   ],
   "landing": [
+   {
+    "title": "Forge Automotive",
+    "url": "https://www.awwwards.com/sites/forge-automotive",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6a9dd26911421823414798.jpg",
+    "note": "A performance atelier creating bespoke vehicles through bodywork, interiors, wheels, lighting, exhaust and PPF",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "Duo Case",
+    "url": "https://onepagelove.com/duo-case",
+    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/10/Duo-Iphone-case-preview.png",
+    "note": "Duo Case is an independent parody product concept that combines two older iPhones into a single foldable device. The site convincingly recreates a premium tech campaign using cinematic black product r",
+    "source": "One Page Love",
+    "kind": "gallery"
+   },
+   {
+    "title": "MRRaudit",
+    "url": "https://www.producthunt.com/products/mrraudit",
+    "note": "Understand why your MRR differs and get a number you trust",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
    {
     "title": "Brandon Yasin",
     "url": "https://www.awwwards.com/sites/brandon-yasin",
@@ -117,9 +140,9 @@
     "kind": "gallery"
    },
    {
-    "title": "zCAD AI",
-    "url": "https://www.producthunt.com/products/zcad-ai",
-    "note": "AI 3D that creates real parts, not just shapes",
+    "title": "How It Spread",
+    "url": "https://www.producthunt.com/products/how-it-spread",
+    "note": "See how anything went viral, from the first post",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -140,9 +163,9 @@
     "kind": "gallery"
    },
    {
-    "title": "Basedash Scheduled CSV Exports",
-    "url": "https://www.producthunt.com/products/basedash",
-    "note": "Ask once. Get a fresh CSV in Slack or email every week.",
+    "title": "Yourcast 2.0",
+    "url": "https://www.producthunt.com/products/yourcast",
+    "note": "AI summaries with tap-to-jump timestamps, right in Telegram",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -163,41 +186,18 @@
     "kind": "gallery"
    },
    {
-    "title": "Penta",
-    "url": "https://www.producthunt.com/products/penta-cd-player-changer",
-    "note": "A ’90s 5-disc CD changer on iPhone Duo",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "Ascension — Pegassi®",
-    "url": "https://www.awwwards.com/sites/ascension-pegassi-r",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6a9bd8fb824ba811507042.jpg",
-    "note": "Website for the launch of Pegassi's debut EP called 'Ascension'.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
-   },
-   {
-    "title": "Aniket",
-    "url": "https://onepagelove.com/aniket",
-    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/10/screencapture-unfunnyket-2026-10-19-10_09_20.png",
-    "note": "Aniket’s personal portfolio and résumé as a product engineer. Its playful alternate view transforms the page into an interactive photographic collage, with scattered images connected by thin pink line",
-    "source": "One Page Love",
-    "kind": "gallery"
-   },
-   {
-    "title": "sideOS.ai",
-    "url": "https://www.producthunt.com/products/sideos-ai",
-    "note": "Local AI for dictation, meetings, background tasks and more",
+    "title": "Papermark Virtual Data Room",
+    "url": "https://www.producthunt.com/products/papermark-2",
+    "note": "Secure data rooms your AI agents can run. Live in",
     "source": "Product Hunt · Today",
     "kind": "trending"
    }
   ],
   "app": [
    {
-    "title": "zCAD AI",
-    "url": "https://www.producthunt.com/products/zcad-ai",
-    "note": "AI 3D that creates real parts, not just shapes",
+    "title": "MRRaudit",
+    "url": "https://www.producthunt.com/products/mrraudit",
+    "note": "Understand why your MRR differs and get a number you trust",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -205,47 +205,15 @@
     "title": "cloudflare/security-audit-skill",
     "url": "https://github.com/cloudflare/security-audit-skill",
     "image": "https://opengraph.githubassets.com/1/cloudflare/security-audit-skill",
-    "by": "★ 2,716 today",
+    "by": "★ 2,264 today",
     "note": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Basedash Scheduled CSV Exports",
-    "url": "https://www.producthunt.com/products/basedash",
-    "note": "Ask once. Get a fresh CSV in Slack or email every week.",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "php/php-src",
-    "url": "https://github.com/php/php-src",
-    "image": "https://opengraph.githubassets.com/1/php/php-src",
-    "by": "★ 716 today",
-    "note": "The PHP Interpreter",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Penta",
-    "url": "https://www.producthunt.com/products/penta-cd-player-changer",
-    "note": "A ’90s 5-disc CD changer on iPhone Duo",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "anthropics/knowledge-work-plugins",
-    "url": "https://github.com/anthropics/knowledge-work-plugins",
-    "image": "https://opengraph.githubassets.com/1/anthropics/knowledge-work-plugins",
-    "by": "★ 635 today",
-    "note": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "sideOS.ai",
-    "url": "https://www.producthunt.com/products/sideos-ai",
-    "note": "Local AI for dictation, meetings, background tasks and more",
+    "title": "How It Spread",
+    "url": "https://www.producthunt.com/products/how-it-spread",
+    "note": "See how anything went viral, from the first post",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -253,40 +221,72 @@
     "title": "NVIDIA/OpenShell",
     "url": "https://github.com/NVIDIA/OpenShell",
     "image": "https://opengraph.githubassets.com/1/NVIDIA/OpenShell",
-    "by": "★ 1,119 today",
+    "by": "★ 896 today",
     "note": "OpenShell is the safe, private runtime for autonomous AI agents.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Many Displays",
-    "url": "https://www.producthunt.com/products/many-displays",
-    "note": "Zero clicks: windows back after sleep, unlock or replugging",
+    "title": "Yourcast 2.0",
+    "url": "https://www.producthunt.com/products/yourcast",
+    "note": "AI summaries with tap-to-jump timestamps, right in Telegram",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "Renhuai123/ziwei-doushu",
-    "url": "https://github.com/Renhuai123/ziwei-doushu",
-    "image": "https://opengraph.githubassets.com/1/Renhuai123/ziwei-doushu",
-    "by": "★ 546 today",
-    "note": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
+    "title": "aws/agent-toolkit-for-aws",
+    "url": "https://github.com/aws/agent-toolkit-for-aws",
+    "image": "https://opengraph.githubassets.com/1/aws/agent-toolkit-for-aws",
+    "by": "★ 13 today",
+    "note": "Official, AWS-supported MCP servers, skills, and plugins to help AI agents build on AWS",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Byter",
-    "url": "https://www.producthunt.com/products/byter",
-    "note": "Know exactly how much data you use, on every network",
+    "title": "Papermark Virtual Data Room",
+    "url": "https://www.producthunt.com/products/papermark-2",
+    "note": "Secure data rooms your AI agents can run. Live in",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "SnailSploit/Claude-Red",
-    "url": "https://github.com/SnailSploit/Claude-Red",
-    "image": "https://opengraph.githubassets.com/1/SnailSploit/Claude-Red",
-    "by": "★ 226 today",
-    "note": "claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a spec",
+    "title": "Nutlope/hallmark",
+    "url": "https://github.com/Nutlope/hallmark",
+    "image": "https://opengraph.githubassets.com/1/Nutlope/hallmark",
+    "by": "★ 455 today",
+    "note": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "pawl",
+    "url": "https://www.producthunt.com/products/pawl",
+    "note": "a tiny mac focus timer you start by pulling a paw",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "luongnv89/claude-howto",
+    "url": "https://github.com/luongnv89/claude-howto",
+    "image": "https://opengraph.githubassets.com/1/luongnv89/claude-howto",
+    "by": "★ 392 today",
+    "note": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "Clips by Plastic",
+    "url": "https://www.producthunt.com/products/clips-by-plastic",
+    "note": "Lyric video ads for every part of your song, on the beat",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "pbakaus/impeccable",
+    "url": "https://github.com/pbakaus/impeccable",
+    "image": "https://opengraph.githubassets.com/1/pbakaus/impeccable",
+    "by": "★ 619 today",
+    "note": "The design language that makes your AI harness better at design.",
     "source": "GitHub Trending",
     "kind": "trending"
    }
@@ -321,7 +321,7 @@
     "title": "The new Apple TV 4K: The ultimate cinematic experience.",
     "url": "https://www.youtube.com/watch?v=bNdmGYamiWM",
     "image": "https://i.ytimg.com/vi/bNdmGYamiWM/hqdefault.jpg",
-    "by": "1.4M views",
+    "by": "1.5M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -369,7 +369,7 @@
     "title": "The new HomePod mini 2: Rich, room-filling sound in a compact design.",
     "url": "https://www.youtube.com/watch?v=xLL4UnrLNWs",
     "image": "https://i.ytimg.com/vi/xLL4UnrLNWs/hqdefault.jpg",
-    "by": "959K views",
+    "by": "965K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -582,18 +582,10 @@
   ],
   "social": [
    {
-    "title": "WORLD RECORD Skateboard Speed 🤯",
-    "url": "https://www.youtube.com/watch?v=3huZ0cdjg5E",
-    "image": "https://i.ytimg.com/vi/3huZ0cdjg5E/hqdefault.jpg",
-    "by": "8.5M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
     "title": "\"That's Impossible\"",
     "url": "https://www.youtube.com/watch?v=s2XXcGdtFh8",
     "image": "https://i.ytimg.com/vi/s2XXcGdtFh8/hqdefault.jpg",
-    "by": "5.5M views",
+    "by": "6.4M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -601,7 +593,15 @@
     "title": "Backflipping Off An Iceberg 🥶",
     "url": "https://www.youtube.com/watch?v=0kZ3FsOrOcw",
     "image": "https://i.ytimg.com/vi/0kZ3FsOrOcw/hqdefault.jpg",
-    "by": "1.6M views",
+    "by": "2.3M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "She Just Made History 👏",
+    "url": "https://www.youtube.com/watch?v=ddRY9ITtb0Q",
+    "image": "https://i.ytimg.com/vi/ddRY9ITtb0Q/hqdefault.jpg",
+    "by": "1.2M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -609,7 +609,7 @@
     "title": "That's Not What We Expected 😳",
     "url": "https://www.youtube.com/watch?v=N_WT8lM1MA0",
     "image": "https://i.ytimg.com/vi/N_WT8lM1MA0/hqdefault.jpg",
-    "by": "972K views",
+    "by": "1.1M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -617,15 +617,7 @@
     "title": "Airbnb | あつまる？エアビる？｜プールでエアビる",
     "url": "https://www.youtube.com/watch?v=QS0QEqKGGIw",
     "image": "https://i.ytimg.com/vi/QS0QEqKGGIw/hqdefault.jpg",
-    "by": "971K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "Wingsuiting Down a Norwegian Road 🎬 Amber Forte + Espen Fadnes #GoPro",
-    "url": "https://www.youtube.com/watch?v=IG783lckvuo",
-    "image": "https://i.ytimg.com/vi/IG783lckvuo/hqdefault.jpg",
-    "by": "906K views",
+    "by": "1.1M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -633,7 +625,15 @@
     "title": "Airbnb | あつまる？エアビる？｜今日はちょっと、大人忘れます。",
     "url": "https://www.youtube.com/watch?v=p8HvRJALo4Y",
     "image": "https://i.ytimg.com/vi/p8HvRJALo4Y/hqdefault.jpg",
-    "by": "779K views",
+    "by": "991K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Wingsuiting Down a Norwegian Road 🎬 Amber Forte + Espen Fadnes #GoPro",
+    "url": "https://www.youtube.com/watch?v=IG783lckvuo",
+    "image": "https://i.ytimg.com/vi/IG783lckvuo/hqdefault.jpg",
+    "by": "932K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -641,7 +641,7 @@
     "title": "so close eddy, you're a pink lafufu. hope this helps!",
     "url": "https://www.youtube.com/watch?v=nSt9U8x-Drw",
     "image": "https://i.ytimg.com/vi/nSt9U8x-Drw/hqdefault.jpg",
-    "by": "568K views",
+    "by": "863K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -649,23 +649,7 @@
     "title": "Nido de Villanas: Ep. 1 Don Cristóbal’s inheritance",
     "url": "https://www.youtube.com/watch?v=wG_LaKvlcqM",
     "image": "https://i.ytimg.com/vi/wG_LaKvlcqM/hqdefault.jpg",
-    "by": "550K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "Get sorted for college with Roxie from the Apple Store.",
-    "url": "https://www.youtube.com/watch?v=P5GxUjU4uBI",
-    "image": "https://i.ytimg.com/vi/P5GxUjU4uBI/hqdefault.jpg",
-    "by": "355K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "The Fastest Skateboarder on Earth 🛹",
-    "url": "https://www.youtube.com/watch?v=aEZBtp-KJTE",
-    "image": "https://i.ytimg.com/vi/aEZBtp-KJTE/hqdefault.jpg",
-    "by": "352K views",
+    "by": "551K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -673,81 +657,97 @@
     "title": "who’s my cute lil baka?? 🥰",
     "url": "https://www.youtube.com/watch?v=riBx8kalPdI",
     "image": "https://i.ytimg.com/vi/riBx8kalPdI/hqdefault.jpg",
-    "by": "343K views",
+    "by": "392K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Get sorted for college with Roxie from the Apple Store.",
+    "url": "https://www.youtube.com/watch?v=P5GxUjU4uBI",
+    "image": "https://i.ytimg.com/vi/P5GxUjU4uBI/hqdefault.jpg",
+    "by": "356K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "what's everyone dressing up as??",
+    "url": "https://www.youtube.com/watch?v=1cLHuTNlXuk",
+    "image": "https://i.ytimg.com/vi/1cLHuTNlXuk/hqdefault.jpg",
+    "by": "351K views",
     "source": "Latest from brands",
     "kind": "performance"
    }
   ],
   "post": [
    {
-    "title": "Now Google says it might use your Gmail and Google Photos data to target ads",
-    "url": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
+    "title": "America has lost 200k of jobs in media, film and the arts. How much is AI?",
+    "url": "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Dessa: Conversation Model trained only on speech",
-    "url": "https://block.xyz/dessa",
+    "title": "We should be more ambitious with the software we build",
+    "url": "https://danluu.com/ambitious/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Kimi K3.1 Pro and K3.1 Pro Highspeed",
-    "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+    "title": "Show HN: Steal My Bitcoin",
+    "url": "https://stealmybitcoin.com/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Today, we hacked what we'd set out to hack: the iPhone",
-    "url": "https://blog.calif.io/p/iphone",
+    "title": "No signs of AI payoff outside the tech sector",
+    "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Investor-owned utilities charge 23% more for electricity than public providers",
-    "url": "https://www.kadoa.com/energy-prices/insights/investor-owned-utilities",
+    "title": "The Goose Programming Language",
+    "url": "https://aardappel.github.io/goose/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Your Phone Is About to Stop Being Yours: 70 Days Until Lockdown",
-    "url": "https://keepandroidopen.org/?",
+    "title": "Danish Government silently drops plan to dump MS Office",
+    "url": "https://www.computerworld.dk/art/297226/digitaliseringsministeriet-har-i-al-stilhed-droppet-stort-anlagt-forsoeg-med-open-source-alternativ-til-microsoft",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Apple Music 404 Not Found",
-    "url": "https://music.apple.com/this-url-doesnt-exist",
+    "title": "Roku developer repositories moved from GitHub to GitLab",
+    "url": "https://blog.roku.com/developer/gitlab-move",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Swedish government offices to ban ChatGPT and Claude",
-    "url": "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet",
+    "title": "FreeDNS",
+    "url": "https://freedns.afraid.org/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Dutch government had hacked into Jared Kushner's phone",
-    "url": "https://twitter.com/jaredkushner/status/2113376217415958767",
+    "title": "Google illegally cut down 250K trees in Finland for data center",
+    "url": "https://nypost.com/2026/10/24/business/google-illegally-tore-down-250k-trees-for-finland-data-center-infuriating-locals-report/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Disney Raising Prices Days After Confirming Ads Will Now Show Up on Every Tier",
-    "url": "https://www.tvfandomlounge.com/disney-plus-price-hike-ads-premium-tier-nielsen-emmys-2026/",
+    "title": "Elon Musk Just Gave Europe a Reason to Replace American Technology",
+    "url": "https://steveblank.com/2026/10/24/europe-gets-a-wake-up-call/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "The foolishness of \"natural language programming\" (1978)",
-    "url": "https://www.cs.utexas.edu/~EWD/transcriptions/EWD06xx/EWD667.html",
+    "title": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards",
+    "url": "https://github.com/Zagitta/gpu-unlock",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Docker is weird",
-    "url": "https://codeandcake.dev/posts/2026-10-22-docker-is-weird",
+    "title": "I don't understand quantum physics (2018)",
+    "url": "https://www.southampton.ac.uk/~doug/quantum_physics/index.html",
     "source": "Hacker News · Best",
     "kind": "performance"
    }
@@ -773,7 +773,7 @@
     "title": "The new Apple TV 4K: The ultimate cinematic experience.",
     "url": "https://www.youtube.com/watch?v=bNdmGYamiWM",
     "image": "https://i.ytimg.com/vi/bNdmGYamiWM/hqdefault.jpg",
-    "by": "1.4M views",
+    "by": "1.5M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -802,10 +802,10 @@
     "kind": "gallery"
    },
    {
-    "title": "The new Apple HomeView: Keep the whole home connected, entertained, and in the know.",
-    "url": "https://www.youtube.com/watch?v=QeQAXuQpGEA",
-    "image": "https://i.ytimg.com/vi/QeQAXuQpGEA/hqdefault.jpg",
-    "by": "1.1M views",
+    "title": "Airbnb | あつまる？エアビる？｜リビングでエアビる",
+    "url": "https://www.youtube.com/watch?v=Mx608ORGCFA",
+    "image": "https://i.ytimg.com/vi/Mx608ORGCFA/hqdefault.jpg",
+    "by": "1.2M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -818,10 +818,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Airbnb | あつまる？エアビる？｜リビングでエアビる",
-    "url": "https://www.youtube.com/watch?v=Mx608ORGCFA",
-    "image": "https://i.ytimg.com/vi/Mx608ORGCFA/hqdefault.jpg",
-    "by": "1M views",
+    "title": "The new Apple HomeView: Keep the whole home connected, entertained, and in the know.",
+    "url": "https://www.youtube.com/watch?v=QeQAXuQpGEA",
+    "image": "https://i.ytimg.com/vi/QeQAXuQpGEA/hqdefault.jpg",
+    "by": "1.1M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -834,18 +834,18 @@
     "kind": "gallery"
    },
    {
-    "title": "The new HomePod mini 2: Rich, room-filling sound in a compact design.",
-    "url": "https://www.youtube.com/watch?v=xLL4UnrLNWs",
-    "image": "https://i.ytimg.com/vi/xLL4UnrLNWs/hqdefault.jpg",
-    "by": "959K views",
+    "title": "Airbnb | あつまる？エアビる？｜今日はちょっと、大人忘れます。",
+    "url": "https://www.youtube.com/watch?v=hmYXIfxAIoM",
+    "image": "https://i.ytimg.com/vi/hmYXIfxAIoM/hqdefault.jpg",
+    "by": "1.1M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
    {
-    "title": "Airbnb | あつまる？エアビる？｜今日はちょっと、大人忘れます。",
-    "url": "https://www.youtube.com/watch?v=hmYXIfxAIoM",
-    "image": "https://i.ytimg.com/vi/hmYXIfxAIoM/hqdefault.jpg",
-    "by": "724K views",
+    "title": "Airbnb | あつまる？エアビる？｜あの頃より、近づく夜。",
+    "url": "https://www.youtube.com/watch?v=FfoCK8cltno",
+    "image": "https://i.ytimg.com/vi/FfoCK8cltno/hqdefault.jpg",
+    "by": "1M views",
     "source": "Latest from brands",
     "kind": "performance"
    }
