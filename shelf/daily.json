@@ -1,7 +1,31 @@
 {
- "updated": "2026-10-25T08:30:29.362Z",
+ "updated": "2026-10-26T09:02:53.980Z",
  "media": {
   "ui": [
+   {
+    "title": "A24",
+    "url": "https://www.awwwards.com/sites/a24",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6aa063830971d331326333.png",
+    "note": "An experimental, non-commercial project reimagining A24’s filmography through a 3D disc-based experience built around discovering its standout titles.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "Jobmate AI",
+    "url": "https://www.producthunt.com/products/jobmate-ai-3",
+    "note": "The humanized AI Copilot for your entire Job search",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "makecindy/cindy",
+    "url": "https://github.com/makecindy/cindy",
+    "image": "https://opengraph.githubassets.com/1/makecindy/cindy",
+    "by": "★ 675 today",
+    "note": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
    {
     "title": "Forge Automotive",
     "url": "https://www.awwwards.com/sites/forge-automotive",
@@ -11,18 +35,18 @@
     "kind": "award"
    },
    {
-    "title": "MRRaudit",
-    "url": "https://www.producthunt.com/products/mrraudit",
-    "note": "Understand why your MRR differs and get a number you trust",
+    "title": "MiniMax M3.1 Flash",
+    "url": "https://www.producthunt.com/products/minimax-4",
+    "note": "MiniMax’s Flash model, 3x faster and 70% cheaper for agents",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "cloudflare/security-audit-skill",
-    "url": "https://github.com/cloudflare/security-audit-skill",
-    "image": "https://opengraph.githubassets.com/1/cloudflare/security-audit-skill",
-    "by": "★ 2,264 today",
-    "note": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+    "title": "Nutlope/hallmark",
+    "url": "https://github.com/Nutlope/hallmark",
+    "image": "https://opengraph.githubassets.com/1/Nutlope/hallmark",
+    "by": "★ 1,317 today",
+    "note": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
@@ -35,18 +59,18 @@
     "kind": "award"
    },
    {
-    "title": "How It Spread",
-    "url": "https://www.producthunt.com/products/how-it-spread",
-    "note": "See how anything went viral, from the first post",
+    "title": "N8N Chat UI",
+    "url": "https://www.producthunt.com/products/n8n-chat-ui-2",
+    "note": "Beautiful, no-code, on-brand AI chat widgets for n8n",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "NVIDIA/OpenShell",
-    "url": "https://github.com/NVIDIA/OpenShell",
-    "image": "https://opengraph.githubassets.com/1/NVIDIA/OpenShell",
-    "by": "★ 896 today",
-    "note": "OpenShell is the safe, private runtime for autonomous AI agents.",
+    "title": "debpalash/VoiceStudio",
+    "url": "https://github.com/debpalash/VoiceStudio",
+    "image": "https://opengraph.githubassets.com/1/debpalash/VoiceStudio",
+    "by": "★ 1,592 today",
+    "note": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
@@ -59,47 +83,46 @@
     "kind": "award"
    },
    {
-    "title": "Yourcast 2.0",
-    "url": "https://www.producthunt.com/products/yourcast",
-    "note": "AI summaries with tap-to-jump timestamps, right in Telegram",
+    "title": "Flipcorder",
+    "url": "https://www.producthunt.com/products/flipcorder",
+    "note": "A 1991 camcorder for your iPhone, one tape a day",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "aws/agent-toolkit-for-aws",
-    "url": "https://github.com/aws/agent-toolkit-for-aws",
-    "image": "https://opengraph.githubassets.com/1/aws/agent-toolkit-for-aws",
-    "by": "★ 13 today",
-    "note": "Official, AWS-supported MCP servers, skills, and plugins to help AI agents build on AWS",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Emotion Agency",
-    "url": "https://www.awwwards.com/sites/emotion-agency-1",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6a9ad27402bed148704137.jpg",
-    "note": "We didn’t just build a portfolio. We built a space that reflects exactly how we think, how we feel, and the standard we apply to our clients' products.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
-   },
-   {
-    "title": "Papermark Virtual Data Room",
-    "url": "https://www.producthunt.com/products/papermark-2",
-    "note": "Secure data rooms your AI agents can run. Live in",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "Nutlope/hallmark",
-    "url": "https://github.com/Nutlope/hallmark",
-    "image": "https://opengraph.githubassets.com/1/Nutlope/hallmark",
-    "by": "★ 455 today",
-    "note": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+    "title": "pbakaus/impeccable",
+    "url": "https://github.com/pbakaus/impeccable",
+    "image": "https://opengraph.githubassets.com/1/pbakaus/impeccable",
+    "by": "★ 1,092 today",
+    "note": "The design language that makes your AI harness better at design.",
     "source": "GitHub Trending",
     "kind": "trending"
    }
   ],
   "landing": [
+   {
+    "title": "A24",
+    "url": "https://www.awwwards.com/sites/a24",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6aa063830971d331326333.png",
+    "note": "An experimental, non-commercial project reimagining A24’s filmography through a 3D disc-based experience built around discovering its standout titles.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "Monocle",
+    "url": "https://onepagelove.com/monocle",
+    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/10/monocle-homepage-preview-1.png",
+    "note": "Monocle, a native macOS app, blurs everything on your screen except the active window you’re viewing. Its spacious landing page uses restrained typography, extensive white space, deliberately blurred ",
+    "source": "One Page Love",
+    "kind": "gallery"
+   },
+   {
+    "title": "Jobmate AI",
+    "url": "https://www.producthunt.com/products/jobmate-ai-3",
+    "note": "The humanized AI Copilot for your entire Job search",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
    {
     "title": "Forge Automotive",
     "url": "https://www.awwwards.com/sites/forge-automotive",
@@ -117,9 +140,9 @@
     "kind": "gallery"
    },
    {
-    "title": "MRRaudit",
-    "url": "https://www.producthunt.com/products/mrraudit",
-    "note": "Understand why your MRR differs and get a number you trust",
+    "title": "MiniMax M3.1 Flash",
+    "url": "https://www.producthunt.com/products/minimax-4",
+    "note": "MiniMax’s Flash model, 3x faster and 70% cheaper for agents",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -140,9 +163,9 @@
     "kind": "gallery"
    },
    {
-    "title": "How It Spread",
-    "url": "https://www.producthunt.com/products/how-it-spread",
-    "note": "See how anything went viral, from the first post",
+    "title": "N8N Chat UI",
+    "url": "https://www.producthunt.com/products/n8n-chat-ui-2",
+    "note": "Beautiful, no-code, on-brand AI chat widgets for n8n",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -163,89 +186,34 @@
     "kind": "gallery"
    },
    {
-    "title": "Yourcast 2.0",
-    "url": "https://www.producthunt.com/products/yourcast",
-    "note": "AI summaries with tap-to-jump timestamps, right in Telegram",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "Emotion Agency",
-    "url": "https://www.awwwards.com/sites/emotion-agency-1",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6a9ad27402bed148704137.jpg",
-    "note": "We didn’t just build a portfolio. We built a space that reflects exactly how we think, how we feel, and the standard we apply to our clients' products.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
-   },
-   {
-    "title": "Resurf",
-    "url": "https://onepagelove.com/resurf",
-    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/10/opl-screenshot-resurf-personal-1792397500534-desktop.jpg",
-    "note": "Resurf is a local-first personal knowledge library for collecting and searching notes, bookmarks, screenshots, PDFs and other research, with optional AI summaries and agent integrations. Its refined l",
-    "source": "One Page Love",
-    "kind": "gallery"
-   },
-   {
-    "title": "Papermark Virtual Data Room",
-    "url": "https://www.producthunt.com/products/papermark-2",
-    "note": "Secure data rooms your AI agents can run. Live in",
+    "title": "Flipcorder",
+    "url": "https://www.producthunt.com/products/flipcorder",
+    "note": "A 1991 camcorder for your iPhone, one tape a day",
     "source": "Product Hunt · Today",
     "kind": "trending"
    }
   ],
   "app": [
    {
-    "title": "MRRaudit",
-    "url": "https://www.producthunt.com/products/mrraudit",
-    "note": "Understand why your MRR differs and get a number you trust",
+    "title": "Jobmate AI",
+    "url": "https://www.producthunt.com/products/jobmate-ai-3",
+    "note": "The humanized AI Copilot for your entire Job search",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "cloudflare/security-audit-skill",
-    "url": "https://github.com/cloudflare/security-audit-skill",
-    "image": "https://opengraph.githubassets.com/1/cloudflare/security-audit-skill",
-    "by": "★ 2,264 today",
-    "note": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+    "title": "makecindy/cindy",
+    "url": "https://github.com/makecindy/cindy",
+    "image": "https://opengraph.githubassets.com/1/makecindy/cindy",
+    "by": "★ 675 today",
+    "note": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "How It Spread",
-    "url": "https://www.producthunt.com/products/how-it-spread",
-    "note": "See how anything went viral, from the first post",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "NVIDIA/OpenShell",
-    "url": "https://github.com/NVIDIA/OpenShell",
-    "image": "https://opengraph.githubassets.com/1/NVIDIA/OpenShell",
-    "by": "★ 896 today",
-    "note": "OpenShell is the safe, private runtime for autonomous AI agents.",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Yourcast 2.0",
-    "url": "https://www.producthunt.com/products/yourcast",
-    "note": "AI summaries with tap-to-jump timestamps, right in Telegram",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "aws/agent-toolkit-for-aws",
-    "url": "https://github.com/aws/agent-toolkit-for-aws",
-    "image": "https://opengraph.githubassets.com/1/aws/agent-toolkit-for-aws",
-    "by": "★ 13 today",
-    "note": "Official, AWS-supported MCP servers, skills, and plugins to help AI agents build on AWS",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Papermark Virtual Data Room",
-    "url": "https://www.producthunt.com/products/papermark-2",
-    "note": "Secure data rooms your AI agents can run. Live in",
+    "title": "MiniMax M3.1 Flash",
+    "url": "https://www.producthunt.com/products/minimax-4",
+    "note": "MiniMax’s Flash model, 3x faster and 70% cheaper for agents",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -253,31 +221,31 @@
     "title": "Nutlope/hallmark",
     "url": "https://github.com/Nutlope/hallmark",
     "image": "https://opengraph.githubassets.com/1/Nutlope/hallmark",
-    "by": "★ 455 today",
+    "by": "★ 1,317 today",
     "note": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "pawl",
-    "url": "https://www.producthunt.com/products/pawl",
-    "note": "a tiny mac focus timer you start by pulling a paw",
+    "title": "N8N Chat UI",
+    "url": "https://www.producthunt.com/products/n8n-chat-ui-2",
+    "note": "Beautiful, no-code, on-brand AI chat widgets for n8n",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "luongnv89/claude-howto",
-    "url": "https://github.com/luongnv89/claude-howto",
-    "image": "https://opengraph.githubassets.com/1/luongnv89/claude-howto",
-    "by": "★ 392 today",
-    "note": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
+    "title": "debpalash/VoiceStudio",
+    "url": "https://github.com/debpalash/VoiceStudio",
+    "image": "https://opengraph.githubassets.com/1/debpalash/VoiceStudio",
+    "by": "★ 1,592 today",
+    "note": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Clips by Plastic",
-    "url": "https://www.producthunt.com/products/clips-by-plastic",
-    "note": "Lyric video ads for every part of your song, on the beat",
+    "title": "Flipcorder",
+    "url": "https://www.producthunt.com/products/flipcorder",
+    "note": "A 1991 camcorder for your iPhone, one tape a day",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -285,8 +253,40 @@
     "title": "pbakaus/impeccable",
     "url": "https://github.com/pbakaus/impeccable",
     "image": "https://opengraph.githubassets.com/1/pbakaus/impeccable",
-    "by": "★ 619 today",
+    "by": "★ 1,092 today",
     "note": "The design language that makes your AI harness better at design.",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "Standfast",
+    "url": "https://www.producthunt.com/products/standfast",
+    "note": "Know if your Mac's GitHub Actions runners will get work",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "pollen-robotics/microduck",
+    "url": "https://github.com/pollen-robotics/microduck",
+    "image": "https://opengraph.githubassets.com/1/pollen-robotics/microduck",
+    "by": "★ 647 today",
+    "note": "A Tiny biped duck robot 🦆",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "2G",
+    "url": "https://www.producthunt.com/products/2g",
+    "note": "Sampler to create early 2000 Neural Synthesis",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "TauricResearch/TradingAgents",
+    "url": "https://github.com/TauricResearch/TradingAgents",
+    "image": "https://opengraph.githubassets.com/1/TauricResearch/TradingAgents",
+    "by": "★ 381 today",
+    "note": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
     "source": "GitHub Trending",
     "kind": "trending"
    }
@@ -310,10 +310,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Optical Arts Drops the Mops Like Dominos for Dyson",
-    "url": "https://www.stashmedia.tv/optical-arts-drops-the-mops-like-dominos-for-dyson/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Dyson-CleanWash-Hygiene-vacuum-mop-film-by-Optical-Arts-STASH-MAGAZINE2-1920x1080.jpg",
-    "note": "CD Fabrice Le Nezet and the team at Optical Arts in London (whose many CG feats we track here), elevate Dyson's Clean+Wash Hygiene vacuum-mop by substituting fun and energy for the standard features l",
+    "title": "Adrian Villagomez & Mathematic “Finish It” for The Terry Fox Foundation",
+    "url": "https://www.stashmedia.tv/adrian-villagomez-mathematic-finish-it-for-the-terry-fox-foundation/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/The-Terry-Fox-Foundation-Finish-It-by-Fela-Adrian-Villagomez-and-Mathematic-STASH-MAGAZINE7-1920x1080.jpg",
+    "note": "Following up on last year's emotional spot for The Terry Fox Foundation, Toronto agency Diamond turn to Fela director Adrian Villagomez and the CG animation crew at Mathematic for the next installment",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -334,10 +334,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Mind & Body Get it “Together” in Kim Soobin’s New Short Film",
-    "url": "https://www.stashmedia.tv/mind-body-get-it-together-in-kim-soobins-new-short-film/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Together-Short-Film-by-Kim-Soobin-STASH-MAGAZINE3-1920x1080.jpg",
-    "note": "Seoul-based animator/motion designer Kim Soobin makes her Stash debut with Together, a personal film that considers philosophy's mind-body problem through the style and whimsy of a child's storybook. ",
+    "title": "Optical Arts Drops the Mops Like Dominos for Dyson",
+    "url": "https://www.stashmedia.tv/optical-arts-drops-the-mops-like-dominos-for-dyson/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Dyson-CleanWash-Hygiene-vacuum-mop-film-by-Optical-Arts-STASH-MAGAZINE2-1920x1080.jpg",
+    "note": "CD Fabrice Le Nezet and the team at Optical Arts in London (whose many CG feats we track here), elevate Dyson's Clean+Wash Hygiene vacuum-mop by substituting fun and energy for the standard features l",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -358,10 +358,10 @@
     "kind": "gallery"
    },
    {
-    "title": "We Love Pitching: Chronicles of a Necessary Mess – Part 22",
-    "url": "https://www.stashmedia.tv/we-love-pitching-chronicles-of-a-necessary-mess-part-22/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/We-Love-Pitching-Part-22-Guest-editorial-by-Claus-Cibilis-_-STASH-MAGAZINE2-1402x1080.jpg",
-    "note": "Nerdo ECD Claus Cibils looks at one of the foundational conundrums of the motion design and animation universe: is all the time, effort, and expense  spent on pitching a gamble or an investment? [Watc",
+    "title": "Mind & Body Get it “Together” in Kim Soobin’s New Short Film",
+    "url": "https://www.stashmedia.tv/mind-body-get-it-together-in-kim-soobins-new-short-film/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Together-Short-Film-by-Kim-Soobin-STASH-MAGAZINE3-1920x1080.jpg",
+    "note": "Seoul-based animator/motion designer Kim Soobin makes her Stash debut with Together, a personal film that considers philosophy's mind-body problem through the style and whimsy of a child's storybook. ",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -369,7 +369,7 @@
     "title": "The new HomePod mini 2: Rich, room-filling sound in a compact design.",
     "url": "https://www.youtube.com/watch?v=xLL4UnrLNWs",
     "image": "https://i.ytimg.com/vi/xLL4UnrLNWs/hqdefault.jpg",
-    "by": "965K views",
+    "by": "971K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -382,10 +382,10 @@
     "kind": "gallery"
    },
    {
-    "title": "FutureDeluxe Zooms Way Out for Verizon London Hub Film",
-    "url": "https://www.stashmedia.tv/futuredeluxe-zooms-way-out-for-verizon-london-hub-film/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Verizon-London-Hub-Brand-Film-by-FutureDeluxe-STASH-MAGAZINE6-1920x1011.jpg",
-    "note": "Inspired by Charles and Ray Eames’ 1977 classic short film Powers of Ten, director Marcus Chaloner and the FutureDeluxe CG motion crew created this intricate welcome film for a tech hub at Verizon's L",
+    "title": "We Love Pitching: Chronicles of a Necessary Mess – Part 22",
+    "url": "https://www.stashmedia.tv/we-love-pitching-chronicles-of-a-necessary-mess-part-22/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/We-Love-Pitching-Part-22-Guest-editorial-by-Claus-Cibilis-_-STASH-MAGAZINE2-1402x1080.jpg",
+    "note": "Nerdo ECD Claus Cibils looks at one of the foundational conundrums of the motion design and animation universe: is all the time, effort, and expense  spent on pitching a gamble or an investment? [Watc",
     "source": "STASH",
     "kind": "gallery"
    }
@@ -399,10 +399,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Optical Arts Drops the Mops Like Dominos for Dyson",
-    "url": "https://www.stashmedia.tv/optical-arts-drops-the-mops-like-dominos-for-dyson/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Dyson-CleanWash-Hygiene-vacuum-mop-film-by-Optical-Arts-STASH-MAGAZINE2-1920x1080.jpg",
-    "note": "CD Fabrice Le Nezet and the team at Optical Arts in London (whose many CG feats we track here), elevate Dyson's Clean+Wash Hygiene vacuum-mop by substituting fun and energy for the standard features l",
+    "title": "Adrian Villagomez & Mathematic “Finish It” for The Terry Fox Foundation",
+    "url": "https://www.stashmedia.tv/adrian-villagomez-mathematic-finish-it-for-the-terry-fox-foundation/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/The-Terry-Fox-Foundation-Finish-It-by-Fela-Adrian-Villagomez-and-Mathematic-STASH-MAGAZINE7-1920x1080.jpg",
+    "note": "Following up on last year's emotional spot for The Terry Fox Foundation, Toronto agency Diamond turn to Fela director Adrian Villagomez and the CG animation crew at Mathematic for the next installment",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -422,10 +422,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Mind & Body Get it “Together” in Kim Soobin’s New Short Film",
-    "url": "https://www.stashmedia.tv/mind-body-get-it-together-in-kim-soobins-new-short-film/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Together-Short-Film-by-Kim-Soobin-STASH-MAGAZINE3-1920x1080.jpg",
-    "note": "Seoul-based animator/motion designer Kim Soobin makes her Stash debut with Together, a personal film that considers philosophy's mind-body problem through the style and whimsy of a child's storybook. ",
+    "title": "Optical Arts Drops the Mops Like Dominos for Dyson",
+    "url": "https://www.stashmedia.tv/optical-arts-drops-the-mops-like-dominos-for-dyson/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Dyson-CleanWash-Hygiene-vacuum-mop-film-by-Optical-Arts-STASH-MAGAZINE2-1920x1080.jpg",
+    "note": "CD Fabrice Le Nezet and the team at Optical Arts in London (whose many CG feats we track here), elevate Dyson's Clean+Wash Hygiene vacuum-mop by substituting fun and energy for the standard features l",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -445,10 +445,10 @@
     "kind": "gallery"
    },
    {
-    "title": "We Love Pitching: Chronicles of a Necessary Mess – Part 22",
-    "url": "https://www.stashmedia.tv/we-love-pitching-chronicles-of-a-necessary-mess-part-22/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/We-Love-Pitching-Part-22-Guest-editorial-by-Claus-Cibilis-_-STASH-MAGAZINE2-1402x1080.jpg",
-    "note": "Nerdo ECD Claus Cibils looks at one of the foundational conundrums of the motion design and animation universe: is all the time, effort, and expense  spent on pitching a gamble or an investment? [Watc",
+    "title": "Mind & Body Get it “Together” in Kim Soobin’s New Short Film",
+    "url": "https://www.stashmedia.tv/mind-body-get-it-together-in-kim-soobins-new-short-film/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Together-Short-Film-by-Kim-Soobin-STASH-MAGAZINE3-1920x1080.jpg",
+    "note": "Seoul-based animator/motion designer Kim Soobin makes her Stash debut with Together, a personal film that considers philosophy's mind-body problem through the style and whimsy of a child's storybook. ",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -469,10 +469,10 @@
     "kind": "gallery"
    },
    {
-    "title": "FutureDeluxe Zooms Way Out for Verizon London Hub Film",
-    "url": "https://www.stashmedia.tv/futuredeluxe-zooms-way-out-for-verizon-london-hub-film/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Verizon-London-Hub-Brand-Film-by-FutureDeluxe-STASH-MAGAZINE6-1920x1011.jpg",
-    "note": "Inspired by Charles and Ray Eames’ 1977 classic short film Powers of Ten, director Marcus Chaloner and the FutureDeluxe CG motion crew created this intricate welcome film for a tech hub at Verizon's L",
+    "title": "We Love Pitching: Chronicles of a Necessary Mess – Part 22",
+    "url": "https://www.stashmedia.tv/we-love-pitching-chronicles-of-a-necessary-mess-part-22/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/We-Love-Pitching-Part-22-Guest-editorial-by-Claus-Cibilis-_-STASH-MAGAZINE2-1402x1080.jpg",
+    "note": "Nerdo ECD Claus Cibils looks at one of the foundational conundrums of the motion design and animation universe: is all the time, effort, and expense  spent on pitching a gamble or an investment? [Watc",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -510,10 +510,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Optical Arts Drops the Mops Like Dominos for Dyson",
-    "url": "https://www.stashmedia.tv/optical-arts-drops-the-mops-like-dominos-for-dyson/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Dyson-CleanWash-Hygiene-vacuum-mop-film-by-Optical-Arts-STASH-MAGAZINE2-1920x1080.jpg",
-    "note": "CD Fabrice Le Nezet and the team at Optical Arts in London (whose many CG feats we track here), elevate Dyson's Clean+Wash Hygiene vacuum-mop by substituting fun and energy for the standard features l",
+    "title": "Adrian Villagomez & Mathematic “Finish It” for The Terry Fox Foundation",
+    "url": "https://www.stashmedia.tv/adrian-villagomez-mathematic-finish-it-for-the-terry-fox-foundation/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/The-Terry-Fox-Foundation-Finish-It-by-Fela-Adrian-Villagomez-and-Mathematic-STASH-MAGAZINE7-1920x1080.jpg",
+    "note": "Following up on last year's emotional spot for The Terry Fox Foundation, Toronto agency Diamond turn to Fela director Adrian Villagomez and the CG animation crew at Mathematic for the next installment",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -541,10 +541,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Mind & Body Get it “Together” in Kim Soobin’s New Short Film",
-    "url": "https://www.stashmedia.tv/mind-body-get-it-together-in-kim-soobins-new-short-film/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Together-Short-Film-by-Kim-Soobin-STASH-MAGAZINE3-1920x1080.jpg",
-    "note": "Seoul-based animator/motion designer Kim Soobin makes her Stash debut with Together, a personal film that considers philosophy's mind-body problem through the style and whimsy of a child's storybook. ",
+    "title": "Optical Arts Drops the Mops Like Dominos for Dyson",
+    "url": "https://www.stashmedia.tv/optical-arts-drops-the-mops-like-dominos-for-dyson/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Dyson-CleanWash-Hygiene-vacuum-mop-film-by-Optical-Arts-STASH-MAGAZINE2-1920x1080.jpg",
+    "note": "CD Fabrice Le Nezet and the team at Optical Arts in London (whose many CG feats we track here), elevate Dyson's Clean+Wash Hygiene vacuum-mop by substituting fun and energy for the standard features l",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -572,10 +572,10 @@
     "kind": "gallery"
    },
    {
-    "title": "We Love Pitching: Chronicles of a Necessary Mess – Part 22",
-    "url": "https://www.stashmedia.tv/we-love-pitching-chronicles-of-a-necessary-mess-part-22/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/We-Love-Pitching-Part-22-Guest-editorial-by-Claus-Cibilis-_-STASH-MAGAZINE2-1402x1080.jpg",
-    "note": "Nerdo ECD Claus Cibils looks at one of the foundational conundrums of the motion design and animation universe: is all the time, effort, and expense  spent on pitching a gamble or an investment? [Watc",
+    "title": "Mind & Body Get it “Together” in Kim Soobin’s New Short Film",
+    "url": "https://www.stashmedia.tv/mind-body-get-it-together-in-kim-soobins-new-short-film/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Together-Short-Film-by-Kim-Soobin-STASH-MAGAZINE3-1920x1080.jpg",
+    "note": "Seoul-based animator/motion designer Kim Soobin makes her Stash debut with Together, a personal film that considers philosophy's mind-body problem through the style and whimsy of a child's storybook. ",
     "source": "STASH",
     "kind": "gallery"
    }
@@ -585,7 +585,7 @@
     "title": "\"That's Impossible\"",
     "url": "https://www.youtube.com/watch?v=s2XXcGdtFh8",
     "image": "https://i.ytimg.com/vi/s2XXcGdtFh8/hqdefault.jpg",
-    "by": "6.4M views",
+    "by": "7.3M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -593,7 +593,7 @@
     "title": "Backflipping Off An Iceberg 🥶",
     "url": "https://www.youtube.com/watch?v=0kZ3FsOrOcw",
     "image": "https://i.ytimg.com/vi/0kZ3FsOrOcw/hqdefault.jpg",
-    "by": "2.3M views",
+    "by": "2.7M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -601,6 +601,22 @@
     "title": "She Just Made History 👏",
     "url": "https://www.youtube.com/watch?v=ddRY9ITtb0Q",
     "image": "https://i.ytimg.com/vi/ddRY9ITtb0Q/hqdefault.jpg",
+    "by": "2.5M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Airbnb | あつまる？エアビる？｜プールでエアビる",
+    "url": "https://www.youtube.com/watch?v=QS0QEqKGGIw",
+    "image": "https://i.ytimg.com/vi/QS0QEqKGGIw/hqdefault.jpg",
+    "by": "1.3M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "so close eddy, you're a pink lafufu. hope this helps!",
+    "url": "https://www.youtube.com/watch?v=nSt9U8x-Drw",
+    "image": "https://i.ytimg.com/vi/nSt9U8x-Drw/hqdefault.jpg",
     "by": "1.2M views",
     "source": "Latest from brands",
     "kind": "performance"
@@ -609,15 +625,7 @@
     "title": "That's Not What We Expected 😳",
     "url": "https://www.youtube.com/watch?v=N_WT8lM1MA0",
     "image": "https://i.ytimg.com/vi/N_WT8lM1MA0/hqdefault.jpg",
-    "by": "1.1M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "Airbnb | あつまる？エアビる？｜プールでエアビる",
-    "url": "https://www.youtube.com/watch?v=QS0QEqKGGIw",
-    "image": "https://i.ytimg.com/vi/QS0QEqKGGIw/hqdefault.jpg",
-    "by": "1.1M views",
+    "by": "1.2M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -625,7 +633,7 @@
     "title": "Airbnb | あつまる？エアビる？｜今日はちょっと、大人忘れます。",
     "url": "https://www.youtube.com/watch?v=p8HvRJALo4Y",
     "image": "https://i.ytimg.com/vi/p8HvRJALo4Y/hqdefault.jpg",
-    "by": "991K views",
+    "by": "1.1M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -633,15 +641,7 @@
     "title": "Wingsuiting Down a Norwegian Road 🎬 Amber Forte + Espen Fadnes #GoPro",
     "url": "https://www.youtube.com/watch?v=IG783lckvuo",
     "image": "https://i.ytimg.com/vi/IG783lckvuo/hqdefault.jpg",
-    "by": "932K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "so close eddy, you're a pink lafufu. hope this helps!",
-    "url": "https://www.youtube.com/watch?v=nSt9U8x-Drw",
-    "image": "https://i.ytimg.com/vi/nSt9U8x-Drw/hqdefault.jpg",
-    "by": "863K views",
+    "by": "975K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -657,7 +657,15 @@
     "title": "who’s my cute lil baka?? 🥰",
     "url": "https://www.youtube.com/watch?v=riBx8kalPdI",
     "image": "https://i.ytimg.com/vi/riBx8kalPdI/hqdefault.jpg",
-    "by": "392K views",
+    "by": "430K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "what's everyone dressing up as??",
+    "url": "https://www.youtube.com/watch?v=1cLHuTNlXuk",
+    "image": "https://i.ytimg.com/vi/1cLHuTNlXuk/hqdefault.jpg",
+    "by": "414K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -668,86 +676,78 @@
     "by": "356K views",
     "source": "Latest from brands",
     "kind": "performance"
-   },
-   {
-    "title": "what's everyone dressing up as??",
-    "url": "https://www.youtube.com/watch?v=1cLHuTNlXuk",
-    "image": "https://i.ytimg.com/vi/1cLHuTNlXuk/hqdefault.jpg",
-    "by": "351K views",
-    "source": "Latest from brands",
-    "kind": "performance"
    }
   ],
   "post": [
    {
-    "title": "America has lost 200k of jobs in media, film and the arts. How much is AI?",
-    "url": "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class",
+    "title": "Show HN: TitleArt – Make text like it's 1997",
+    "url": "https://titleart.dvy.io/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "We should be more ambitious with the software we build",
-    "url": "https://danluu.com/ambitious/",
+    "title": "IBM CEO says open weight models are now good and cheap on-prem",
+    "url": "https://www.theregister.com/systems/2026/10/22/ibm-ceo-says-open-weight-models-are-now-irresistibly-good-and-cheap-on-prem/5304640",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Show HN: Steal My Bitcoin",
-    "url": "https://stealmybitcoin.com/",
+    "title": "Lula wins election after final votes tallied",
+    "url": "https://www.reuters.com/live/brazil-election-live-lula-bolsonaro-face-off-presidential-runoff-2026-10-25/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "No signs of AI payoff outside the tech sector",
-    "url": "https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector",
+    "title": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
+    "url": "https://minimaxir.com/2026/10/cheap-llms/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "The Goose Programming Language",
-    "url": "https://aardappel.github.io/goose/",
+    "title": "Serbia's Vucic concedes election defeat in historic win for student movement",
+    "url": "https://www.reuters.com/world/europe/serbia-votes-students-seek-unseat-vucic-snap-election-2026-10-25/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Danish Government silently drops plan to dump MS Office",
-    "url": "https://www.computerworld.dk/art/297226/digitaliseringsministeriet-har-i-al-stilhed-droppet-stort-anlagt-forsoeg-med-open-source-alternativ-til-microsoft",
+    "title": "Why I Am a Programmer",
+    "url": "https://www.alfie.wtf/programming/why-i-am-a-programmer.html",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Roku developer repositories moved from GitHub to GitLab",
-    "url": "https://blog.roku.com/developer/gitlab-move",
+    "title": "Dolly Parton's Imagination Library",
+    "url": "https://imaginationlibrary.com/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "FreeDNS",
-    "url": "https://freedns.afraid.org/",
+    "title": "Oregon Police Are Charging a Local News Outlet $2.5M for Records About One Cop",
+    "url": "https://theintercept.com/2026/10/01/oregon-police-misconduct-public-records-cost-fee/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Google illegally cut down 250K trees in Finland for data center",
-    "url": "https://nypost.com/2026/10/24/business/google-illegally-tore-down-250k-trees-for-finland-data-center-infuriating-locals-report/",
+    "title": "I refuse to accept a censored Internet. Join Me at FOSDEM 27",
+    "url": "https://talkweb.eu/openweb/4558/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Elon Musk Just Gave Europe a Reason to Replace American Technology",
-    "url": "https://steveblank.com/2026/10/24/europe-gets-a-wake-up-call/",
+    "title": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
+    "url": "https://lynchlab.net/llm-skin-cancer",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "GPU-unlock: FP/BF16 instruction issue rate on Nvidia 3000's cards",
-    "url": "https://github.com/Zagitta/gpu-unlock",
+    "title": "AI use leads UC Berkeley math professor to see 'no point' in grading homework",
+    "url": "https://www.dailycal.org/news/campus/academics/ai-use-leads-uc-berkeley-math-professor-to-see-no-point-in-grading-homework/article_bdf1eae2-c08b-491f-b9f1-81a7cea177de.html",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "I don't understand quantum physics (2018)",
-    "url": "https://www.southampton.ac.uk/~doug/quantum_physics/index.html",
+    "title": "JetBrains Thinkrail",
+    "url": "https://github.com/JetBrains/thinkrail",
     "source": "Hacker News · Best",
     "kind": "performance"
    }
@@ -805,7 +805,7 @@
     "title": "Airbnb | あつまる？エアビる？｜リビングでエアビる",
     "url": "https://www.youtube.com/watch?v=Mx608ORGCFA",
     "image": "https://i.ytimg.com/vi/Mx608ORGCFA/hqdefault.jpg",
-    "by": "1.2M views",
+    "by": "1.3M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -818,10 +818,10 @@
     "kind": "gallery"
    },
    {
-    "title": "The new Apple HomeView: Keep the whole home connected, entertained, and in the know.",
-    "url": "https://www.youtube.com/watch?v=QeQAXuQpGEA",
-    "image": "https://i.ytimg.com/vi/QeQAXuQpGEA/hqdefault.jpg",
-    "by": "1.1M views",
+    "title": "Airbnb | あつまる？エアビる？｜今日はちょっと、大人忘れます。",
+    "url": "https://www.youtube.com/watch?v=hmYXIfxAIoM",
+    "image": "https://i.ytimg.com/vi/hmYXIfxAIoM/hqdefault.jpg",
+    "by": "1.2M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -834,18 +834,18 @@
     "kind": "gallery"
    },
    {
-    "title": "Airbnb | あつまる？エアビる？｜今日はちょっと、大人忘れます。",
-    "url": "https://www.youtube.com/watch?v=hmYXIfxAIoM",
-    "image": "https://i.ytimg.com/vi/hmYXIfxAIoM/hqdefault.jpg",
-    "by": "1.1M views",
+    "title": "Airbnb | あつまる？エアビる？｜あの頃より、近づく夜。",
+    "url": "https://www.youtube.com/watch?v=FfoCK8cltno",
+    "image": "https://i.ytimg.com/vi/FfoCK8cltno/hqdefault.jpg",
+    "by": "1.2M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
    {
-    "title": "Airbnb | あつまる？エアビる？｜あの頃より、近づく夜。",
-    "url": "https://www.youtube.com/watch?v=FfoCK8cltno",
-    "image": "https://i.ytimg.com/vi/FfoCK8cltno/hqdefault.jpg",
-    "by": "1M views",
+    "title": "The new Apple HomeView: Keep the whole home connected, entertained, and in the know.",
+    "url": "https://www.youtube.com/watch?v=QeQAXuQpGEA",
+    "image": "https://i.ytimg.com/vi/QeQAXuQpGEA/hqdefault.jpg",
+    "by": "1.1M views",
     "source": "Latest from brands",
     "kind": "performance"
    }
