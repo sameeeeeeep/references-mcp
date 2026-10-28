@@ -1,7 +1,30 @@
 {
- "updated": "2026-10-27T09:05:55.150Z",
+ "updated": "2026-10-28T09:47:01.481Z",
  "media": {
   "ui": [
+   {
+    "title": "G. Colombel — Portfolio 2026",
+    "url": "https://www.awwwards.com/sites/g-colombel-portfolio-2026",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6ab287b7b1b30467092149.png",
+    "note": "Portfolio of Guillaume Colombel, freelance interactive developer. Specializing in immersive web experiences and creative websites. Based in Paris, available worldwide.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "LFM3 by Liquid AI",
+    "url": "https://www.producthunt.com/products/lfm2",
+    "note": "Six 2B-class models for phones, laptops and robots",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "elayadesign/ai-design-skills",
+    "url": "https://github.com/elayadesign/ai-design-skills",
+    "image": "https://opengraph.githubassets.com/1/elayadesign/ai-design-skills",
+    "by": "★ 1,395 today",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
    {
     "title": "Awards Racing",
     "url": "https://www.awwwards.com/sites/awards-racing",
@@ -11,9 +34,9 @@
     "kind": "award"
    },
    {
-    "title": "Orbit",
-    "url": "https://www.producthunt.com/products/orbit-app-blocker",
-    "note": "Stop doomscrolling. Earn every app unlock.",
+    "title": "Zro: Uncensored Security Models",
+    "url": "https://www.producthunt.com/products/zro",
+    "note": "Abliterated open models for security work",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -21,7 +44,7 @@
     "title": "Nutlope/hallmark",
     "url": "https://github.com/Nutlope/hallmark",
     "image": "https://opengraph.githubassets.com/1/Nutlope/hallmark",
-    "by": "★ 2,244 today",
+    "by": "★ 2,830 today",
     "note": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
     "source": "GitHub Trending",
     "kind": "trending"
@@ -35,18 +58,18 @@
     "kind": "award"
    },
    {
-    "title": "Arcade Controller Pro",
-    "url": "https://www.producthunt.com/products/bluetooth-snes-controller",
-    "note": "A fight controller with no stick and its own screen",
+    "title": "Trellis",
+    "url": "https://www.producthunt.com/products/trellis-4",
+    "note": "More than a terminal: a native macOS workspace for devs",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "TauricResearch/TradingAgents",
-    "url": "https://github.com/TauricResearch/TradingAgents",
-    "image": "https://opengraph.githubassets.com/1/TauricResearch/TradingAgents",
-    "by": "★ 1,395 today",
-    "note": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+    "title": "nightly-labs/openbot",
+    "url": "https://github.com/nightly-labs/openbot",
+    "image": "https://opengraph.githubassets.com/1/nightly-labs/openbot",
+    "by": "★ 777 today",
+    "note": "A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
@@ -59,52 +82,74 @@
     "kind": "award"
    },
    {
-    "title": "fswitcher",
-    "url": "https://www.producthunt.com/products/fswitcher",
-    "note": "fswitcher replaces Command-Tab on your Mac",
+    "title": "RageLayer",
+    "url": "https://www.producthunt.com/products/ragelayer",
+    "note": "Let visitors smash your website, then sweep it back",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "JetBrains/thinkrail",
-    "url": "https://github.com/JetBrains/thinkrail",
-    "image": "https://opengraph.githubassets.com/1/JetBrains/thinkrail",
-    "by": "★ 1,173 today",
-    "note": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Brandon Yasin",
-    "url": "https://www.awwwards.com/sites/brandon-yasin",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6aa2923a5a36b597378848.jpg",
-    "note": "Colour palettes shift with the time of day, or drag the clock to time travel. Navigation unfolds like magazine covers side by side. Inspired by editorial and brought to life by motion.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
-   },
-   {
-    "title": "Off Grid AI",
-    "url": "https://www.producthunt.com/products/off-grid-ai",
-    "note": "Private AI on your phone and computer.",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "makecindy/cindy",
-    "url": "https://github.com/makecindy/cindy",
-    "image": "https://opengraph.githubassets.com/1/makecindy/cindy",
-    "by": "★ 1,296 today",
-    "note": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
+    "title": "obra/superpowers",
+    "url": "https://github.com/obra/superpowers",
+    "image": "https://opengraph.githubassets.com/1/obra/superpowers",
+    "by": "★ 617 today",
+    "note": "An agentic skills framework & software development methodology that works.",
     "source": "GitHub Trending",
     "kind": "trending"
    }
   ],
   "landing": [
    {
+    "title": "G. Colombel — Portfolio 2026",
+    "url": "https://www.awwwards.com/sites/g-colombel-portfolio-2026",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6ab287b7b1b30467092149.png",
+    "note": "Portfolio of Guillaume Colombel, freelance interactive developer. Specializing in immersive web experiences and creative websites. Based in Paris, available worldwide.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "Josh Puckett",
+    "url": "https://onepagelove.com/josh-puckett",
+    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/10/opl-screenshot-josh-puckett-1793028073630-desktop.jpg",
+    "note": "Love the whirlpool effect! Josh Puckett’s website is a concise personal profile highlighting his career as a designer, studio co-founder, advisor and investor, followed by a curated directory of proje",
+    "source": "One Page Love",
+    "kind": "gallery"
+   },
+   {
+    "title": "LFM3 by Liquid AI",
+    "url": "https://www.producthunt.com/products/lfm2",
+    "note": "Six 2B-class models for phones, laptops and robots",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
     "title": "Awards Racing",
     "url": "https://www.awwwards.com/sites/awards-racing",
     "image": "https://www.awwwards.com/awards/submissions/2026/09/6a9e9f5bdabf9983024717.png",
     "note": "A browser drift-racer built with three.js and Bullet physics, mixing arcade racing with vehicular combat in a design-world setting: a young nominee racing to the top, dodging angry jurors and rivals. ",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "Abdullah",
+    "url": "https://onepagelove.com/abdullah",
+    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/10/Abdullah-portfolio-preview.png",
+    "note": "Abdullah is a creative designer and writer who builds digital experiences, manages media, and creates brand identity content. The website uses a spacious white interface, subtle animation and filterab",
+    "source": "One Page Love",
+    "kind": "gallery"
+   },
+   {
+    "title": "Zro: Uncensored Security Models",
+    "url": "https://www.producthunt.com/products/zro",
+    "note": "Abliterated open models for security work",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "A24",
+    "url": "https://www.awwwards.com/sites/a24",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6aa063830971d331326333.png",
+    "note": "An experimental, non-commercial project reimagining A24’s filmography through a 3D disc-based experience built around discovering its standout titles.",
     "source": "Awwwards · Sites of the Day",
     "kind": "award"
    },
@@ -117,32 +162,9 @@
     "kind": "gallery"
    },
    {
-    "title": "Orbit",
-    "url": "https://www.producthunt.com/products/orbit-app-blocker",
-    "note": "Stop doomscrolling. Earn every app unlock.",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "A24",
-    "url": "https://www.awwwards.com/sites/a24",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6aa063830971d331326333.png",
-    "note": "An experimental, non-commercial project reimagining A24’s filmography through a 3D disc-based experience built around discovering its standout titles.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
-   },
-   {
-    "title": "Monocle",
-    "url": "https://onepagelove.com/monocle",
-    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/10/monocle-homepage-preview-1.png",
-    "note": "Monocle, a native macOS app, blurs everything on your screen except the active window you’re viewing. Its spacious landing page uses restrained typography, extensive white space, deliberately blurred ",
-    "source": "One Page Love",
-    "kind": "gallery"
-   },
-   {
-    "title": "Arcade Controller Pro",
-    "url": "https://www.producthunt.com/products/bluetooth-snes-controller",
-    "note": "A fight controller with no stick and its own screen",
+    "title": "Trellis",
+    "url": "https://www.producthunt.com/products/trellis-4",
+    "note": "More than a terminal: a native macOS workspace for devs",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -155,49 +177,41 @@
     "kind": "award"
    },
    {
-    "title": "Duo Case",
-    "url": "https://onepagelove.com/duo-case",
-    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/10/Duo-Iphone-case-preview.png",
-    "note": "Duo Case is an independent parody product concept that combines two older iPhones into a single foldable device. The site convincingly recreates a premium tech campaign using cinematic black product r",
+    "title": "Monocle",
+    "url": "https://onepagelove.com/monocle",
+    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/10/monocle-homepage-preview-1.png",
+    "note": "Monocle, a native macOS app, blurs everything on your screen except the active window you’re viewing. Its spacious landing page uses restrained typography, extensive white space, deliberately blurred ",
     "source": "One Page Love",
     "kind": "gallery"
    },
    {
-    "title": "fswitcher",
-    "url": "https://www.producthunt.com/products/fswitcher",
-    "note": "fswitcher replaces Command-Tab on your Mac",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "Brandon Yasin",
-    "url": "https://www.awwwards.com/sites/brandon-yasin",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6aa2923a5a36b597378848.jpg",
-    "note": "Colour palettes shift with the time of day, or drag the clock to time travel. Navigation unfolds like magazine covers side by side. Inspired by editorial and brought to life by motion.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
-   },
-   {
-    "title": "Swash",
-    "url": "https://onepagelove.com/swash",
-    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/10/opl-screenshot-swash-1792583614486-desktop.jpg",
-    "note": "Swash is a motion design tool that runs in the browser. The website uses a dark, high-contrast interface that combines neon-green accents, animated editable lettering and a rotating three-dimensional ",
-    "source": "One Page Love",
-    "kind": "gallery"
-   },
-   {
-    "title": "Off Grid AI",
-    "url": "https://www.producthunt.com/products/off-grid-ai",
-    "note": "Private AI on your phone and computer.",
+    "title": "RageLayer",
+    "url": "https://www.producthunt.com/products/ragelayer",
+    "note": "Let visitors smash your website, then sweep it back",
     "source": "Product Hunt · Today",
     "kind": "trending"
    }
   ],
   "app": [
    {
-    "title": "Orbit",
-    "url": "https://www.producthunt.com/products/orbit-app-blocker",
-    "note": "Stop doomscrolling. Earn every app unlock.",
+    "title": "LFM3 by Liquid AI",
+    "url": "https://www.producthunt.com/products/lfm2",
+    "note": "Six 2B-class models for phones, laptops and robots",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "elayadesign/ai-design-skills",
+    "url": "https://github.com/elayadesign/ai-design-skills",
+    "image": "https://opengraph.githubassets.com/1/elayadesign/ai-design-skills",
+    "by": "★ 1,395 today",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "Zro: Uncensored Security Models",
+    "url": "https://www.producthunt.com/products/zro",
+    "note": "Abliterated open models for security work",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -205,79 +219,47 @@
     "title": "Nutlope/hallmark",
     "url": "https://github.com/Nutlope/hallmark",
     "image": "https://opengraph.githubassets.com/1/Nutlope/hallmark",
-    "by": "★ 2,244 today",
+    "by": "★ 2,830 today",
     "note": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Arcade Controller Pro",
-    "url": "https://www.producthunt.com/products/bluetooth-snes-controller",
-    "note": "A fight controller with no stick and its own screen",
+    "title": "Trellis",
+    "url": "https://www.producthunt.com/products/trellis-4",
+    "note": "More than a terminal: a native macOS workspace for devs",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "TauricResearch/TradingAgents",
-    "url": "https://github.com/TauricResearch/TradingAgents",
-    "image": "https://opengraph.githubassets.com/1/TauricResearch/TradingAgents",
-    "by": "★ 1,395 today",
-    "note": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+    "title": "nightly-labs/openbot",
+    "url": "https://github.com/nightly-labs/openbot",
+    "image": "https://opengraph.githubassets.com/1/nightly-labs/openbot",
+    "by": "★ 777 today",
+    "note": "A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "fswitcher",
-    "url": "https://www.producthunt.com/products/fswitcher",
-    "note": "fswitcher replaces Command-Tab on your Mac",
+    "title": "RageLayer",
+    "url": "https://www.producthunt.com/products/ragelayer",
+    "note": "Let visitors smash your website, then sweep it back",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "JetBrains/thinkrail",
-    "url": "https://github.com/JetBrains/thinkrail",
-    "image": "https://opengraph.githubassets.com/1/JetBrains/thinkrail",
-    "by": "★ 1,173 today",
-    "note": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
+    "title": "obra/superpowers",
+    "url": "https://github.com/obra/superpowers",
+    "image": "https://opengraph.githubassets.com/1/obra/superpowers",
+    "by": "★ 617 today",
+    "note": "An agentic skills framework & software development methodology that works.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Off Grid AI",
-    "url": "https://www.producthunt.com/products/off-grid-ai",
-    "note": "Private AI on your phone and computer.",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "makecindy/cindy",
-    "url": "https://github.com/makecindy/cindy",
-    "image": "https://opengraph.githubassets.com/1/makecindy/cindy",
-    "by": "★ 1,296 today",
-    "note": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "PulseDev",
-    "url": "https://www.producthunt.com/products/pulsedev",
-    "note": "Click any UI bug on localhost. Your AI agent fixes it.",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "affaan-m/ECC",
-    "url": "https://github.com/affaan-m/ECC",
-    "image": "https://opengraph.githubassets.com/1/affaan-m/ECC",
-    "by": "★ 896 today",
-    "note": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "SavorApp_AI",
-    "url": "https://www.producthunt.com/products/savor-3",
-    "note": "Capture what matters and move your intentions forward",
+    "title": "Fraud Blocker",
+    "url": "https://www.producthunt.com/products/fraud-blocker",
+    "note": "AI ad fraud protection for Google and Meta ads",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -285,8 +267,24 @@
     "title": "pbakaus/impeccable",
     "url": "https://github.com/pbakaus/impeccable",
     "image": "https://opengraph.githubassets.com/1/pbakaus/impeccable",
-    "by": "★ 1,506 today",
-    "note": "The design language that makes your AI harness better at design.",
+    "by": "★ 1,449 today",
+    "note": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "Mudroom",
+    "url": "https://www.producthunt.com/products/mudroom-3",
+    "note": "Run coding agents in a VM, review changes like a PR",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "makecindy/cindy",
+    "url": "https://github.com/makecindy/cindy",
+    "image": "https://opengraph.githubassets.com/1/makecindy/cindy",
+    "by": "★ 1,465 today",
+    "note": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
     "source": "GitHub Trending",
     "kind": "trending"
    }
@@ -294,10 +292,57 @@
   "deck": [],
   "video": [
    {
-    "title": "Welcome Apple HomeView: Designed for life at home.",
-    "url": "https://www.youtube.com/watch?v=hkrYiZ_g9tw",
-    "image": "https://i.ytimg.com/vi/hkrYiZ_g9tw/hqdefault.jpg",
-    "by": "6.9M views",
+    "title": "The new 14” MacBook Pro with M6",
+    "url": "https://www.youtube.com/watch?v=xWfNhWn88Bc",
+    "image": "https://i.ytimg.com/vi/xWfNhWn88Bc/hqdefault.jpg",
+    "by": "5.2M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Permanence- Veritus Milller & Ronnie Heard III",
+    "url": "https://vimeo.com/channels/staffpicks/1223839596",
+    "image": "https://i.vimeocdn.com/video/2217723416-fac39a402a9409cac196376b07d7c63ab657cd38d8e432ecbbd616711905b7fe-d_960?region=us",
+    "note": "Permanence is a 35mm short music film about the choices we make and how a single moment can change the course of a life. The film follows three young men moving&hellip;",
+    "source": "Vimeo Staff Picks",
+    "kind": "gallery"
+   },
+   {
+    "title": "Vagrants Appoints Paul Muhlbach EP of Partnerships",
+    "url": "https://www.stashmedia.tv/vagrants-appoints-paul-muhlbach-ep-of-partnerships/",
+    "note": "From the release: Vagrants is expanding with the appointment of Paul Muhlbach as executive producer, partnerships. Based in Los Angeles, Muhlbach will lead national business development, building rela",
+    "source": "STASH",
+    "kind": "gallery"
+   },
+   {
+    "title": "Introducing the new iPad mini with OLED display",
+    "url": "https://www.youtube.com/watch?v=x5h1JykMcFU",
+    "image": "https://i.ytimg.com/vi/x5h1JykMcFU/hqdefault.jpg",
+    "by": "2.2M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Ouais.",
+    "url": "https://vimeo.com/channels/staffpicks/1236790091",
+    "image": "https://i.vimeocdn.com/video/2213387753-7acdd0f8ca18e43f77f32488019fd82b3425ad9f1b5cdd88ff1025900d4bb885-d_960?region=us",
+    "note": "&laquo; Ouais. &raquo; is a short film made in 2025 as part of the Bachelor in Animation program at the Lucerne School of Design, Film and Art. The film explores&hellip;",
+    "source": "Vimeo Staff Picks",
+    "kind": "gallery"
+   },
+   {
+    "title": "Art & Eyewear Collide in Spot Studio’s New Film for Felipe Pantone x Etnia Barcelona",
+    "url": "https://www.stashmedia.tv/art-eyewear-collide-in-spot-studios-new-film-for-felipe-pantone-x-etnia-barcelona/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Felipe-Pantone-x-Etnia-Barcelona-brand-film-by-Spot-Studio-STASH-MAGAZINE-1920x1080.jpg",
+    "note": "Spot Studio in Barcelona, whose stylish 3D exploits we track here, nudge forward the battle lines of the CG eyewear wars with this vibrant and glitchy work merging design and contemporary art. [Watch]",
+    "source": "STASH",
+    "kind": "gallery"
+   },
+   {
+    "title": "The new iPad mini: Thinner. Lighter. Ultraportable.",
+    "url": "https://www.youtube.com/watch?v=3pQYJ_Um7YI",
+    "image": "https://i.ytimg.com/vi/3pQYJ_Um7YI/hqdefault.jpg",
+    "by": "925K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -317,10 +362,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Introducing the new iPad mini with OLED display",
-    "url": "https://www.youtube.com/watch?v=x5h1JykMcFU",
-    "image": "https://i.ytimg.com/vi/x5h1JykMcFU/hqdefault.jpg",
-    "by": "1.9M views",
+    "title": "The new MacBook Pro with M6 delivers blazing-fast performance and up to 24 hours of battery life.",
+    "url": "https://www.youtube.com/watch?v=vT-o5hh1cVc",
+    "image": "https://i.ytimg.com/vi/vT-o5hh1cVc/hqdefault.jpg",
+    "by": "679K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -339,54 +384,6 @@
     "note": "In 2018, League of Legends and animation studio Fortiche broke the internet (and made the cover of Stash 133) with the Pop/Stars music video for virtual band K/DA. The follow-up is finally here, compl",
     "source": "STASH",
     "kind": "gallery"
-   },
-   {
-    "title": "The new Apple TV 4K: The ultimate cinematic experience.",
-    "url": "https://www.youtube.com/watch?v=bNdmGYamiWM",
-    "image": "https://i.ytimg.com/vi/bNdmGYamiWM/hqdefault.jpg",
-    "by": "1.5M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "Iteration",
-    "url": "https://vimeo.com/channels/staffpicks/1224671736",
-    "image": "https://i.vimeocdn.com/video/2216094348-fdee022f16b5899f338368db356328576920b3b48c558ae8a90eaab6d72bd960-d_960?region=us",
-    "note": "A Fractal Journey Through Coral Life  'Iteration' originates from a close exploration of corals &mdash; an immersion beyond the surface to observe the&hellip;",
-    "source": "Vimeo Staff Picks",
-    "kind": "gallery"
-   },
-   {
-    "title": "Adrian Villagomez & Mathematic “Finish It” for The Terry Fox Foundation",
-    "url": "https://www.stashmedia.tv/adrian-villagomez-mathematic-finish-it-for-the-terry-fox-foundation/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/The-Terry-Fox-Foundation-Finish-It-by-Fela-Adrian-Villagomez-and-Mathematic-STASH-MAGAZINE7-1920x1080.jpg",
-    "note": "Following up on last year's emotional spot for The Terry Fox Foundation, Toronto agency Diamond turn to Fela director Adrian Villagomez and the CG animation crew at Mathematic for the next installment",
-    "source": "STASH",
-    "kind": "gallery"
-   },
-   {
-    "title": "The new Apple HomeView: Keep the whole home connected, entertained, and in the know.",
-    "url": "https://www.youtube.com/watch?v=QeQAXuQpGEA",
-    "image": "https://i.ytimg.com/vi/QeQAXuQpGEA/hqdefault.jpg",
-    "by": "1.1M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "What We Leave Behind",
-    "url": "https://vimeo.com/channels/staffpicks/1237757917",
-    "image": "https://i.vimeocdn.com/video/2214751793-f6b07e05a97ca25b8317452b11b762554e485b071e11806c71b2141a000095bd-d_960?region=us",
-    "note": "Dan has a gaping hole in his neck that won't heal. Why? He can't remember, nor talk about it. Back in the sinister arena of his childhood, he must find&hellip;",
-    "source": "Vimeo Staff Picks",
-    "kind": "gallery"
-   },
-   {
-    "title": "Optical Arts Drops the Mops Like Dominos for Dyson",
-    "url": "https://www.stashmedia.tv/optical-arts-drops-the-mops-like-dominos-for-dyson/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Dyson-CleanWash-Hygiene-vacuum-mop-film-by-Optical-Arts-STASH-MAGAZINE2-1920x1080.jpg",
-    "note": "CD Fabrice Le Nezet and the team at Optical Arts in London (whose many CG feats we track here), elevate Dyson's Clean+Wash Hygiene vacuum-mop by substituting fun and energy for the standard features l",
-    "source": "STASH",
-    "kind": "gallery"
    }
   ],
   "motion": [
@@ -398,9 +395,9 @@
     "kind": "gallery"
    },
    {
-    "title": "Hornet Signs Student Academy Award-Winner Lucas Ansel to Directing Roster",
-    "url": "https://www.stashmedia.tv/hornet-signs-student-academy-award-winner-lucas-ansel-to-directing-roster/",
-    "note": "From the release: From shaping narrative arcs out of abstract commercial briefs to stretching a comedic bit well beyond its expected punchline, Lucas Ansel has an instinct for storytelling that brings",
+    "title": "Vagrants Appoints Paul Muhlbach EP of Partnerships",
+    "url": "https://www.stashmedia.tv/vagrants-appoints-paul-muhlbach-ep-of-partnerships/",
+    "note": "From the release: Vagrants is expanding with the appointment of Paul Muhlbach as executive producer, partnerships. Based in Los Angeles, Muhlbach will lead national business development, building rela",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -420,10 +417,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Back From the Dead: Fortiche Drops New K/DA “Firestarter” Music Video for LOL",
-    "url": "https://www.stashmedia.tv/back-from-the-dead-fortiche-drops-new-k-da-firestarter-music-video-for-lol/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/League-of-Legends-KDA-Firestarter22Music-Video-by-Fortiche-STASH-MAGAZINE7-1920x817.jpg",
-    "note": "In 2018, League of Legends and animation studio Fortiche broke the internet (and made the cover of Stash 133) with the Pop/Stars music video for virtual band K/DA. The follow-up is finally here, compl",
+    "title": "Art & Eyewear Collide in Spot Studio’s New Film for Felipe Pantone x Etnia Barcelona",
+    "url": "https://www.stashmedia.tv/art-eyewear-collide-in-spot-studios-new-film-for-felipe-pantone-x-etnia-barcelona/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Felipe-Pantone-x-Etnia-Barcelona-brand-film-by-Spot-Studio-STASH-MAGAZINE-1920x1080.jpg",
+    "note": "Spot Studio in Barcelona, whose stylish 3D exploits we track here, nudge forward the battle lines of the CG eyewear wars with this vibrant and glitchy work merging design and contemporary art. [Watch]",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -443,10 +440,9 @@
     "kind": "gallery"
    },
    {
-    "title": "Adrian Villagomez & Mathematic “Finish It” for The Terry Fox Foundation",
-    "url": "https://www.stashmedia.tv/adrian-villagomez-mathematic-finish-it-for-the-terry-fox-foundation/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/The-Terry-Fox-Foundation-Finish-It-by-Fela-Adrian-Villagomez-and-Mathematic-STASH-MAGAZINE7-1920x1080.jpg",
-    "note": "Following up on last year's emotional spot for The Terry Fox Foundation, Toronto agency Diamond turn to Fela director Adrian Villagomez and the CG animation crew at Mathematic for the next installment",
+    "title": "Hornet Signs Student Academy Award-Winner Lucas Ansel to Directing Roster",
+    "url": "https://www.stashmedia.tv/hornet-signs-student-academy-award-winner-lucas-ansel-to-directing-roster/",
+    "note": "From the release: From shaping narrative arcs out of abstract commercial briefs to stretching a comedic bit well beyond its expected punchline, Lucas Ansel has an instinct for storytelling that brings",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -467,10 +463,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Optical Arts Drops the Mops Like Dominos for Dyson",
-    "url": "https://www.stashmedia.tv/optical-arts-drops-the-mops-like-dominos-for-dyson/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Dyson-CleanWash-Hygiene-vacuum-mop-film-by-Optical-Arts-STASH-MAGAZINE2-1920x1080.jpg",
-    "note": "CD Fabrice Le Nezet and the team at Optical Arts in London (whose many CG feats we track here), elevate Dyson's Clean+Wash Hygiene vacuum-mop by substituting fun and energy for the standard features l",
+    "title": "Back From the Dead: Fortiche Drops New K/DA “Firestarter” Music Video for LOL",
+    "url": "https://www.stashmedia.tv/back-from-the-dead-fortiche-drops-new-k-da-firestarter-music-video-for-lol/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/League-of-Legends-KDA-Firestarter22Music-Video-by-Fortiche-STASH-MAGAZINE7-1920x817.jpg",
+    "note": "In 2018, League of Legends and animation studio Fortiche broke the internet (and made the cover of Stash 133) with the Pop/Stars music video for virtual band K/DA. The follow-up is finally here, compl",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -493,10 +489,10 @@
     "kind": "performance"
    },
    {
-    "title": "Pipes",
-    "url": "https://vimeo.com/channels/staffpicks/1237176348",
-    "image": "https://i.vimeocdn.com/video/2216929615-37651044bfb21ed4573e9349bb0f3b466c516a6220617caa17e51aaaf8c93785-d_960?region=us",
-    "note": "Bob the plumber is hired to fix a broken pipe and lands to his surprise in a gay fetish club.  Direction: Kilian Feusi, Jessica Meier, Sujanth Ravichandran Production:&hellip;",
+    "title": "Permanence- Veritus Milller & Ronnie Heard III",
+    "url": "https://vimeo.com/channels/staffpicks/1223839596",
+    "image": "https://i.vimeocdn.com/video/2217723416-fac39a402a9409cac196376b07d7c63ab657cd38d8e432ecbbd616711905b7fe-d_960?region=us",
+    "note": "Permanence is a 35mm short music film about the choices we make and how a single moment can change the course of a life. The film follows three young men moving&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
@@ -508,9 +504,9 @@
     "kind": "gallery"
    },
    {
-    "title": "Hornet Signs Student Academy Award-Winner Lucas Ansel to Directing Roster",
-    "url": "https://www.stashmedia.tv/hornet-signs-student-academy-award-winner-lucas-ansel-to-directing-roster/",
-    "note": "From the release: From shaping narrative arcs out of abstract commercial briefs to stretching a comedic bit well beyond its expected punchline, Lucas Ansel has an instinct for storytelling that brings",
+    "title": "Vagrants Appoints Paul Muhlbach EP of Partnerships",
+    "url": "https://www.stashmedia.tv/vagrants-appoints-paul-muhlbach-ep-of-partnerships/",
+    "note": "From the release: Vagrants is expanding with the appointment of Paul Muhlbach as executive producer, partnerships. Based in Los Angeles, Muhlbach will lead national business development, building rela",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -523,10 +519,10 @@
     "kind": "performance"
    },
    {
-    "title": "¡PIKA! [The Itch]",
-    "url": "https://vimeo.com/channels/staffpicks/1238505828",
-    "image": "https://i.vimeocdn.com/video/2216237496-e97ebc0849d8f2d426b49e390409812159342f542c6537975ed497e5311e755e-d_960?region=us",
-    "note": "There is no relief. A man wakes up with an unbearable itch &ndash; anxious to find a cure, he embarks on a nightmarish odyssey in search of relief.  Sundance Film&hellip;",
+    "title": "Ouais.",
+    "url": "https://vimeo.com/channels/staffpicks/1236790091",
+    "image": "https://i.vimeocdn.com/video/2213387753-7acdd0f8ca18e43f77f32488019fd82b3425ad9f1b5cdd88ff1025900d4bb885-d_960?region=us",
+    "note": "&laquo; Ouais. &raquo; is a short film made in 2025 as part of the Bachelor in Animation program at the Lucerne School of Design, Film and Art. The film explores&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
@@ -538,10 +534,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Back From the Dead: Fortiche Drops New K/DA “Firestarter” Music Video for LOL",
-    "url": "https://www.stashmedia.tv/back-from-the-dead-fortiche-drops-new-k-da-firestarter-music-video-for-lol/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/League-of-Legends-KDA-Firestarter22Music-Video-by-Fortiche-STASH-MAGAZINE7-1920x817.jpg",
-    "note": "In 2018, League of Legends and animation studio Fortiche broke the internet (and made the cover of Stash 133) with the Pop/Stars music video for virtual band K/DA. The follow-up is finally here, compl",
+    "title": "Art & Eyewear Collide in Spot Studio’s New Film for Felipe Pantone x Etnia Barcelona",
+    "url": "https://www.stashmedia.tv/art-eyewear-collide-in-spot-studios-new-film-for-felipe-pantone-x-etnia-barcelona/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Felipe-Pantone-x-Etnia-Barcelona-brand-film-by-Spot-Studio-STASH-MAGAZINE-1920x1080.jpg",
+    "note": "Spot Studio in Barcelona, whose stylish 3D exploits we track here, nudge forward the battle lines of the CG eyewear wars with this vibrant and glitchy work merging design and contemporary art. [Watch]",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -554,10 +550,10 @@
     "kind": "performance"
    },
    {
-    "title": "Iteration",
-    "url": "https://vimeo.com/channels/staffpicks/1224671736",
-    "image": "https://i.vimeocdn.com/video/2216094348-fdee022f16b5899f338368db356328576920b3b48c558ae8a90eaab6d72bd960-d_960?region=us",
-    "note": "A Fractal Journey Through Coral Life  'Iteration' originates from a close exploration of corals &mdash; an immersion beyond the surface to observe the&hellip;",
+    "title": "Pipes",
+    "url": "https://vimeo.com/channels/staffpicks/1237176348",
+    "image": "https://i.vimeocdn.com/video/2216929615-37651044bfb21ed4573e9349bb0f3b466c516a6220617caa17e51aaaf8c93785-d_960?region=us",
+    "note": "Bob the plumber is hired to fix a broken pipe and lands to his surprise in a gay fetish club.  Direction: Kilian Feusi, Jessica Meier, Sujanth Ravichandran Production:&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
@@ -569,28 +565,19 @@
     "kind": "gallery"
    },
    {
-    "title": "Adrian Villagomez & Mathematic “Finish It” for The Terry Fox Foundation",
-    "url": "https://www.stashmedia.tv/adrian-villagomez-mathematic-finish-it-for-the-terry-fox-foundation/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/The-Terry-Fox-Foundation-Finish-It-by-Fela-Adrian-Villagomez-and-Mathematic-STASH-MAGAZINE7-1920x1080.jpg",
-    "note": "Following up on last year's emotional spot for The Terry Fox Foundation, Toronto agency Diamond turn to Fela director Adrian Villagomez and the CG animation crew at Mathematic for the next installment",
+    "title": "Hornet Signs Student Academy Award-Winner Lucas Ansel to Directing Roster",
+    "url": "https://www.stashmedia.tv/hornet-signs-student-academy-award-winner-lucas-ansel-to-directing-roster/",
+    "note": "From the release: From shaping narrative arcs out of abstract commercial briefs to stretching a comedic bit well beyond its expected punchline, Lucas Ansel has an instinct for storytelling that brings",
     "source": "STASH",
     "kind": "gallery"
    }
   ],
   "social": [
    {
-    "title": "\"That's Impossible\"",
-    "url": "https://www.youtube.com/watch?v=s2XXcGdtFh8",
-    "image": "https://i.ytimg.com/vi/s2XXcGdtFh8/hqdefault.jpg",
-    "by": "8.1M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
     "title": "Backflipping Off An Iceberg 🥶",
     "url": "https://www.youtube.com/watch?v=0kZ3FsOrOcw",
     "image": "https://i.ytimg.com/vi/0kZ3FsOrOcw/hqdefault.jpg",
-    "by": "2.9M views",
+    "by": "3.2M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -598,7 +585,7 @@
     "title": "She Just Made History 👏",
     "url": "https://www.youtube.com/watch?v=ddRY9ITtb0Q",
     "image": "https://i.ytimg.com/vi/ddRY9ITtb0Q/hqdefault.jpg",
-    "by": "2.7M views",
+    "by": "2.8M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -606,7 +593,7 @@
     "title": "so close eddy, you're a pink lafufu. hope this helps!",
     "url": "https://www.youtube.com/watch?v=nSt9U8x-Drw",
     "image": "https://i.ytimg.com/vi/nSt9U8x-Drw/hqdefault.jpg",
-    "by": "1.4M views",
+    "by": "1.7M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -614,15 +601,7 @@
     "title": "Airbnb | あつまる？エアビる？｜プールでエアビる",
     "url": "https://www.youtube.com/watch?v=QS0QEqKGGIw",
     "image": "https://i.ytimg.com/vi/QS0QEqKGGIw/hqdefault.jpg",
-    "by": "1.4M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "That's Not What We Expected 😳",
-    "url": "https://www.youtube.com/watch?v=N_WT8lM1MA0",
-    "image": "https://i.ytimg.com/vi/N_WT8lM1MA0/hqdefault.jpg",
-    "by": "1.2M views",
+    "by": "1.5M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -630,7 +609,7 @@
     "title": "Airbnb | あつまる？エアビる？｜今日はちょっと、大人忘れます。",
     "url": "https://www.youtube.com/watch?v=p8HvRJALo4Y",
     "image": "https://i.ytimg.com/vi/p8HvRJALo4Y/hqdefault.jpg",
-    "by": "1.1M views",
+    "by": "1.2M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -638,7 +617,7 @@
     "title": "Wingsuiting Down a Norwegian Road 🎬 Amber Forte + Espen Fadnes #GoPro",
     "url": "https://www.youtube.com/watch?v=IG783lckvuo",
     "image": "https://i.ytimg.com/vi/IG783lckvuo/hqdefault.jpg",
-    "by": "997K views",
+    "by": "1M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -646,15 +625,7 @@
     "title": "Nido de Villanas: Ep. 1 Don Cristóbal’s inheritance",
     "url": "https://www.youtube.com/watch?v=wG_LaKvlcqM",
     "image": "https://i.ytimg.com/vi/wG_LaKvlcqM/hqdefault.jpg",
-    "by": "551K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "what's everyone dressing up as??",
-    "url": "https://www.youtube.com/watch?v=1cLHuTNlXuk",
-    "image": "https://i.ytimg.com/vi/1cLHuTNlXuk/hqdefault.jpg",
-    "by": "469K views",
+    "by": "552K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -662,15 +633,39 @@
     "title": "Get sorted for college with Roxie from the Apple Store.",
     "url": "https://www.youtube.com/watch?v=P5GxUjU4uBI",
     "image": "https://i.ytimg.com/vi/P5GxUjU4uBI/hqdefault.jpg",
-    "by": "357K views",
+    "by": "358K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
    {
-    "title": "use your hands 🙌 #stitch w/ @iamdeniszzz #ryanair",
-    "url": "https://www.youtube.com/watch?v=qK7M70vmJoQ",
-    "image": "https://i.ytimg.com/vi/qK7M70vmJoQ/hqdefault.jpg",
+    "title": "Training For A World Record 🤯",
+    "url": "https://www.youtube.com/watch?v=hLtyTYHidvI",
+    "image": "https://i.ytimg.com/vi/hLtyTYHidvI/hqdefault.jpg",
+    "by": "318K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Show off your work with Desk View. Tip from Kylie at the Apple Store.",
+    "url": "https://www.youtube.com/watch?v=BTyWlJJUX2I",
+    "image": "https://i.ytimg.com/vi/BTyWlJJUX2I/hqdefault.jpg",
     "by": "296K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "dressed up like jinshi but people kept mistaking me for ah-duo 🎨: ​⁠@brerbo",
+    "url": "https://www.youtube.com/watch?v=CS3SOLBFDyg",
+    "image": "https://i.ytimg.com/vi/CS3SOLBFDyg/hqdefault.jpg",
+    "by": "249K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "leave everything in the past except ur streak 🎤: @NAJWAFAROUKOFFICIELLE",
+    "url": "https://www.youtube.com/watch?v=S6JObd4N0e0",
+    "image": "https://i.ytimg.com/vi/S6JObd4N0e0/hqdefault.jpg",
+    "by": "221K views",
     "source": "Latest from brands",
     "kind": "performance"
    }
@@ -678,10 +673,26 @@
   "post": [],
   "ad": [
    {
-    "title": "Welcome Apple HomeView: Designed for life at home.",
-    "url": "https://www.youtube.com/watch?v=hkrYiZ_g9tw",
-    "image": "https://i.ytimg.com/vi/hkrYiZ_g9tw/hqdefault.jpg",
-    "by": "6.9M views",
+    "title": "The new 14” MacBook Pro with M6",
+    "url": "https://www.youtube.com/watch?v=xWfNhWn88Bc",
+    "image": "https://i.ytimg.com/vi/xWfNhWn88Bc/hqdefault.jpg",
+    "by": "5.2M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Come Back to Firefox",
+    "url": "https://www.adsoftheworld.com/campaigns/come-back-to-firefox",
+    "image": "https://image.adsoftheworld.com/y8fg4dtgvk15xsf5g2t5tns4wmgn",
+    "by": "Firefox",
+    "source": "Ads of the World",
+    "kind": "gallery"
+   },
+   {
+    "title": "Introducing the new iPad mini with OLED display",
+    "url": "https://www.youtube.com/watch?v=x5h1JykMcFU",
+    "image": "https://i.ytimg.com/vi/x5h1JykMcFU/hqdefault.jpg",
+    "by": "2.2M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -694,10 +705,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Introducing the new iPad mini with OLED display",
-    "url": "https://www.youtube.com/watch?v=x5h1JykMcFU",
-    "image": "https://i.ytimg.com/vi/x5h1JykMcFU/hqdefault.jpg",
-    "by": "1.9M views",
+    "title": "Airbnb | あつまる？エアビる？｜リビングでエアビる",
+    "url": "https://www.youtube.com/watch?v=Mx608ORGCFA",
+    "image": "https://i.ytimg.com/vi/Mx608ORGCFA/hqdefault.jpg",
+    "by": "1.6M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -710,10 +721,10 @@
     "kind": "gallery"
    },
    {
-    "title": "The new Apple TV 4K: The ultimate cinematic experience.",
-    "url": "https://www.youtube.com/watch?v=bNdmGYamiWM",
-    "image": "https://i.ytimg.com/vi/bNdmGYamiWM/hqdefault.jpg",
-    "by": "1.5M views",
+    "title": "Studio Fleece | NSW | Nike",
+    "url": "https://www.youtube.com/watch?v=vyjhrYmboO8",
+    "image": "https://i.ytimg.com/vi/vyjhrYmboO8/hqdefault.jpg",
+    "by": "1.3M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -726,10 +737,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Airbnb | あつまる？エアビる？｜リビングでエアビる",
-    "url": "https://www.youtube.com/watch?v=Mx608ORGCFA",
-    "image": "https://i.ytimg.com/vi/Mx608ORGCFA/hqdefault.jpg",
-    "by": "1.5M views",
+    "title": "Airbnb | あつまる？エアビる？｜今日はちょっと、大人忘れます。",
+    "url": "https://www.youtube.com/watch?v=hmYXIfxAIoM",
+    "image": "https://i.ytimg.com/vi/hmYXIfxAIoM/hqdefault.jpg",
+    "by": "1.3M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -742,34 +753,18 @@
     "kind": "gallery"
    },
    {
-    "title": "Studio Fleece | NSW | Nike",
-    "url": "https://www.youtube.com/watch?v=vyjhrYmboO8",
-    "image": "https://i.ytimg.com/vi/vyjhrYmboO8/hqdefault.jpg",
-    "by": "1.3M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "Haunted Farms",
-    "url": "https://www.adsoftheworld.com/campaigns/haunted-farms",
-    "image": "https://image.adsoftheworld.com/e1hrsmpwvjhzh3e5rlgs28neijmf",
-    "by": "Hay Day",
-    "source": "Ads of the World",
-    "kind": "gallery"
-   },
-   {
-    "title": "Airbnb | あつまる？エアビる？｜今日はちょっと、大人忘れます。",
-    "url": "https://www.youtube.com/watch?v=hmYXIfxAIoM",
-    "image": "https://i.ytimg.com/vi/hmYXIfxAIoM/hqdefault.jpg",
-    "by": "1.3M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
     "title": "Airbnb | あつまる？エアビる？｜あの頃より、近づく夜。",
     "url": "https://www.youtube.com/watch?v=FfoCK8cltno",
     "image": "https://i.ytimg.com/vi/FfoCK8cltno/hqdefault.jpg",
     "by": "1.3M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "The new iPad mini: Thinner. Lighter. Ultraportable.",
+    "url": "https://www.youtube.com/watch?v=3pQYJ_Um7YI",
+    "image": "https://i.ytimg.com/vi/3pQYJ_Um7YI/hqdefault.jpg",
+    "by": "925K views",
     "source": "Latest from brands",
     "kind": "performance"
    }
