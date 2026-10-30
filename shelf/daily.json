@@ -1,7 +1,31 @@
 {
- "updated": "2026-10-29T10:05:28.108Z",
+ "updated": "2026-10-30T10:08:02.774Z",
  "media": {
   "ui": [
+   {
+    "title": "Spyker Cars",
+    "url": "https://www.awwwards.com/sites/spyker-cars",
+    "image": "https://www.awwwards.com/awards/submissions/2026/08/6a914a3ee8da2510874104.png",
+    "note": "Most only see a Spyker in images, so we built a digital experience that hands them the keys. A day of ownership: an easy Italian morning, a mountain pass at speed, a red-carpet evening.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "Kestrix",
+    "url": "https://www.producthunt.com/products/kestrix",
+    "note": "Repo-agnostic CI control plane with DAG-based triggers.",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "HKUDS/DeepTutor",
+    "url": "https://github.com/HKUDS/DeepTutor",
+    "image": "https://opengraph.githubassets.com/1/HKUDS/DeepTutor",
+    "by": "★ 1,930 today",
+    "note": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
    {
     "title": "Unbelievably Crap",
     "url": "https://www.awwwards.com/sites/unbelievably-crap",
@@ -11,18 +35,18 @@
     "kind": "award"
    },
    {
-    "title": "ChatInbox",
-    "url": "https://www.producthunt.com/products/chatinbox-2",
-    "note": "Email that groups your inbox by contact",
+    "title": "StepGrab",
+    "url": "https://www.producthunt.com/products/stepgrab",
+    "note": "Now on Windows, with redaction and a real editor",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "JetBrains/thinkrail",
-    "url": "https://github.com/JetBrains/thinkrail",
-    "image": "https://opengraph.githubassets.com/1/JetBrains/thinkrail",
-    "by": "★ 1,068 today",
-    "note": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
+    "title": "obra/superpowers",
+    "url": "https://github.com/obra/superpowers",
+    "image": "https://opengraph.githubassets.com/1/obra/superpowers",
+    "by": "★ 1,034 today",
+    "note": "An agentic skills framework & software development methodology that works.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
@@ -35,17 +59,18 @@
     "kind": "award"
    },
    {
-    "title": "Gologin Cloud Browser",
-    "url": "https://www.producthunt.com/products/gologin",
-    "note": "Cloud browser for AI agents and tough sites",
+    "title": "Canva Brush",
+    "url": "https://www.producthunt.com/products/canva",
+    "note": "Canva Brush: a vision-language model that edits your designs",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "elayadesign/ai-design-skills",
-    "url": "https://github.com/elayadesign/ai-design-skills",
-    "image": "https://opengraph.githubassets.com/1/elayadesign/ai-design-skills",
-    "by": "★ 2,139 today",
+    "title": "pbakaus/impeccable",
+    "url": "https://github.com/pbakaus/impeccable",
+    "image": "https://opengraph.githubassets.com/1/pbakaus/impeccable",
+    "by": "★ 2,870 today",
+    "note": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
@@ -58,52 +83,74 @@
     "kind": "award"
    },
    {
-    "title": "Scape",
-    "url": "https://www.producthunt.com/products/scape-4",
-    "note": "An intelligent email inbox that works for you",
+    "title": "Chopstick",
+    "url": "https://www.producthunt.com/products/chopstick",
+    "note": "Mac activity and action widgets that write themselves",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "obra/superpowers",
-    "url": "https://github.com/obra/superpowers",
-    "image": "https://opengraph.githubassets.com/1/obra/superpowers",
-    "by": "★ 1,095 today",
-    "note": "An agentic skills framework & software development methodology that works.",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "A24",
-    "url": "https://www.awwwards.com/sites/a24",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6aa063830971d331326333.png",
-    "note": "An experimental, non-commercial project reimagining A24’s filmography through a 3D disc-based experience built around discovering its standout titles.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
-   },
-   {
-    "title": "Intrascope 2.0",
-    "url": "https://www.producthunt.com/products/intrascope-app",
-    "note": "New AI agent, 1,650+ apps, Skills and smart model routing",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "HKUDS/DeepTutor",
-    "url": "https://github.com/HKUDS/DeepTutor",
-    "image": "https://opengraph.githubassets.com/1/HKUDS/DeepTutor",
-    "by": "★ 2,371 today",
-    "note": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
+    "title": "JetBrains/thinkrail",
+    "url": "https://github.com/JetBrains/thinkrail",
+    "image": "https://opengraph.githubassets.com/1/JetBrains/thinkrail",
+    "by": "★ 1,117 today",
+    "note": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
     "source": "GitHub Trending",
     "kind": "trending"
    }
   ],
   "landing": [
    {
+    "title": "Spyker Cars",
+    "url": "https://www.awwwards.com/sites/spyker-cars",
+    "image": "https://www.awwwards.com/awards/submissions/2026/08/6a914a3ee8da2510874104.png",
+    "note": "Most only see a Spyker in images, so we built a digital experience that hands them the keys. A day of ownership: an easy Italian morning, a mountain pass at speed, a red-carpet evening.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "Voice Tag Gods",
+    "url": "https://onepagelove.com/voice-tag-gods",
+    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/10/voicetags-landing-page-preview.png",
+    "note": "Voice Tag Gods provides custom producer tags, voice overs, and DJ drops from professional vocalists. The design combines enormous expressive typography, scattered artist imagery, vivid accent colors, ",
+    "source": "One Page Love",
+    "kind": "gallery"
+   },
+   {
+    "title": "Kestrix",
+    "url": "https://www.producthunt.com/products/kestrix",
+    "note": "Repo-agnostic CI control plane with DAG-based triggers.",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
     "title": "Unbelievably Crap",
     "url": "https://www.awwwards.com/sites/unbelievably-crap",
     "image": "https://www.awwwards.com/awards/submissions/2026/09/6aa06aafa4f85878540881.png",
     "note": "Unbelievably Crap is a catalyst for catharsis through bold, quirky visual character. Built to crave the unknown, not repeat the known.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "Angelo",
+    "url": "https://onepagelove.com/angelo",
+    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/10/opl-screenshot-design-tomorrow-1793187456245-desktop.jpg",
+    "note": "Angelo’s website is an interactive product-design portfolio. The website presents each project as a glossy floating sphere, combining generous white space, translucent materials, smooth animated case-",
+    "source": "One Page Love",
+    "kind": "gallery"
+   },
+   {
+    "title": "StepGrab",
+    "url": "https://www.producthunt.com/products/stepgrab",
+    "note": "Now on Windows, with redaction and a real editor",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "G. Colombel — Portfolio 2026",
+    "url": "https://www.awwwards.com/sites/g-colombel-portfolio-2026",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6ab287b7b1b30467092149.png",
+    "note": "Portfolio of Guillaume Colombel, freelance interactive developer. Specializing in immersive web experiences and creative websites. Based in Paris, available worldwide.",
     "source": "Awwwards · Sites of the Day",
     "kind": "award"
    },
@@ -116,32 +163,9 @@
     "kind": "gallery"
    },
    {
-    "title": "ChatInbox",
-    "url": "https://www.producthunt.com/products/chatinbox-2",
-    "note": "Email that groups your inbox by contact",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "G. Colombel — Portfolio 2026",
-    "url": "https://www.awwwards.com/sites/g-colombel-portfolio-2026",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6ab287b7b1b30467092149.png",
-    "note": "Portfolio of Guillaume Colombel, freelance interactive developer. Specializing in immersive web experiences and creative websites. Based in Paris, available worldwide.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
-   },
-   {
-    "title": "Eight Shot",
-    "url": "https://onepagelove.com/eight-shot",
-    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/10/Eight-Shot-landing-page-preview.png",
-    "note": "Eight Shot lets users shoot film packs, collect memories together, and create custom film. Its warm cream canvas, realistic phone interface, overlapping Polaroid photographs and small bursts of color ",
-    "source": "One Page Love",
-    "kind": "gallery"
-   },
-   {
-    "title": "Gologin Cloud Browser",
-    "url": "https://www.producthunt.com/products/gologin",
-    "note": "Cloud browser for AI agents and tough sites",
+    "title": "Canva Brush",
+    "url": "https://www.producthunt.com/products/canva",
+    "note": "Canva Brush: a vision-language model that edits your designs",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -154,96 +178,26 @@
     "kind": "award"
    },
    {
-    "title": "Josh Puckett",
-    "url": "https://onepagelove.com/josh-puckett",
-    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/10/opl-screenshot-josh-puckett-1793028073630-desktop.jpg",
-    "note": "Love the whirlpool effect! Josh Puckett’s website is a concise personal profile highlighting his career as a designer, studio co-founder, advisor and investor, followed by a curated directory of proje",
+    "title": "Eight Shot",
+    "url": "https://onepagelove.com/eight-shot",
+    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/10/Eight-Shot-landing-page-preview.png",
+    "note": "Eight Shot lets users shoot film packs, collect memories together, and create custom film. Its warm cream canvas, realistic phone interface, overlapping Polaroid photographs and small bursts of color ",
     "source": "One Page Love",
     "kind": "gallery"
    },
    {
-    "title": "Scape",
-    "url": "https://www.producthunt.com/products/scape-4",
-    "note": "An intelligent email inbox that works for you",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "A24",
-    "url": "https://www.awwwards.com/sites/a24",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6aa063830971d331326333.png",
-    "note": "An experimental, non-commercial project reimagining A24’s filmography through a 3D disc-based experience built around discovering its standout titles.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
-   },
-   {
-    "title": "Abdullah",
-    "url": "https://onepagelove.com/abdullah",
-    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/10/Abdullah-portfolio-preview.png",
-    "note": "Abdullah is a creative designer and writer who builds digital experiences, manages media, and creates brand identity content. The website uses a spacious white interface, subtle animation and filterab",
-    "source": "One Page Love",
-    "kind": "gallery"
-   },
-   {
-    "title": "Intrascope 2.0",
-    "url": "https://www.producthunt.com/products/intrascope-app",
-    "note": "New AI agent, 1,650+ apps, Skills and smart model routing",
+    "title": "Chopstick",
+    "url": "https://www.producthunt.com/products/chopstick",
+    "note": "Mac activity and action widgets that write themselves",
     "source": "Product Hunt · Today",
     "kind": "trending"
    }
   ],
   "app": [
    {
-    "title": "ChatInbox",
-    "url": "https://www.producthunt.com/products/chatinbox-2",
-    "note": "Email that groups your inbox by contact",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "JetBrains/thinkrail",
-    "url": "https://github.com/JetBrains/thinkrail",
-    "image": "https://opengraph.githubassets.com/1/JetBrains/thinkrail",
-    "by": "★ 1,068 today",
-    "note": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Gologin Cloud Browser",
-    "url": "https://www.producthunt.com/products/gologin",
-    "note": "Cloud browser for AI agents and tough sites",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "elayadesign/ai-design-skills",
-    "url": "https://github.com/elayadesign/ai-design-skills",
-    "image": "https://opengraph.githubassets.com/1/elayadesign/ai-design-skills",
-    "by": "★ 2,139 today",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Scape",
-    "url": "https://www.producthunt.com/products/scape-4",
-    "note": "An intelligent email inbox that works for you",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "obra/superpowers",
-    "url": "https://github.com/obra/superpowers",
-    "image": "https://opengraph.githubassets.com/1/obra/superpowers",
-    "by": "★ 1,095 today",
-    "note": "An agentic skills framework & software development methodology that works.",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Intrascope 2.0",
-    "url": "https://www.producthunt.com/products/intrascope-app",
-    "note": "New AI agent, 1,650+ apps, Skills and smart model routing",
+    "title": "Kestrix",
+    "url": "https://www.producthunt.com/products/kestrix",
+    "note": "Repo-agnostic CI control plane with DAG-based triggers.",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -251,40 +205,88 @@
     "title": "HKUDS/DeepTutor",
     "url": "https://github.com/HKUDS/DeepTutor",
     "image": "https://opengraph.githubassets.com/1/HKUDS/DeepTutor",
-    "by": "★ 2,371 today",
+    "by": "★ 1,930 today",
     "note": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Smart Jelly",
-    "url": "https://www.producthunt.com/products/smart-jelly",
-    "note": "Your everyday AI tools and memory in one Mac app.",
+    "title": "StepGrab",
+    "url": "https://www.producthunt.com/products/stepgrab",
+    "note": "Now on Windows, with redaction and a real editor",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "macro-inc/macro",
-    "url": "https://github.com/macro-inc/macro",
-    "image": "https://opengraph.githubassets.com/1/macro-inc/macro",
-    "by": "★ 117 today",
-    "note": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.",
+    "title": "obra/superpowers",
+    "url": "https://github.com/obra/superpowers",
+    "image": "https://opengraph.githubassets.com/1/obra/superpowers",
+    "by": "★ 1,034 today",
+    "note": "An agentic skills framework & software development methodology that works.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "IFTTT.ai",
-    "url": "https://www.producthunt.com/products/ifttt",
-    "note": "The easiest way to automate anything",
+    "title": "Canva Brush",
+    "url": "https://www.producthunt.com/products/canva",
+    "note": "Canva Brush: a vision-language model that edits your designs",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "Nutlope/hallmark",
-    "url": "https://github.com/Nutlope/hallmark",
-    "image": "https://opengraph.githubassets.com/1/Nutlope/hallmark",
-    "by": "★ 2,110 today",
-    "note": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
+    "title": "pbakaus/impeccable",
+    "url": "https://github.com/pbakaus/impeccable",
+    "image": "https://opengraph.githubassets.com/1/pbakaus/impeccable",
+    "by": "★ 2,870 today",
+    "note": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "Chopstick",
+    "url": "https://www.producthunt.com/products/chopstick",
+    "note": "Mac activity and action widgets that write themselves",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "JetBrains/thinkrail",
+    "url": "https://github.com/JetBrains/thinkrail",
+    "image": "https://opengraph.githubassets.com/1/JetBrains/thinkrail",
+    "by": "★ 1,117 today",
+    "note": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "SparkBots AI (Powered by Jev)",
+    "url": "https://www.producthunt.com/products/sparkbots-ai-analyze-pages-and-pdfs",
+    "note": "Instantly extract key details and analyze any webpage or PDF",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "milind-soni/OpenMausBot",
+    "url": "https://github.com/milind-soni/OpenMausBot",
+    "image": "https://opengraph.githubassets.com/1/milind-soni/OpenMausBot",
+    "by": "★ 1,199 today",
+    "note": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "ilse",
+    "url": "https://www.producthunt.com/products/ilse",
+    "note": "Point at your app and your AI agent changes the code",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "nightly-labs/openbot",
+    "url": "https://github.com/nightly-labs/openbot",
+    "image": "https://opengraph.githubassets.com/1/nightly-labs/openbot",
+    "by": "★ 709 today",
+    "note": "A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration.",
     "source": "GitHub Trending",
     "kind": "trending"
    }
@@ -292,10 +294,34 @@
   "deck": [],
   "video": [
    {
+    "title": "New MacBook Pro with PROLED XDR Display: The first-ever Mac with Touch",
+    "url": "https://www.youtube.com/watch?v=hnZI5uUSdEo",
+    "image": "https://i.ytimg.com/vi/hnZI5uUSdEo/hqdefault.jpg",
+    "by": "20M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Sisowath Quay",
+    "url": "https://vimeo.com/channels/staffpicks/1226740492",
+    "image": "https://i.vimeocdn.com/video/2200813656-24305dbeaee2592bf31bb314bd256e5b48e368490a10873c3a902117f42e2f6f-d_960?region=us",
+    "note": "Short film. Animation. 15 minutes 31. Release date : February 2025. Khmer with English subtitles.  More than 70 selections in worlwide festivals (Annecy, Clermont-Ferrand,&hellip;",
+    "source": "Vimeo Staff Picks",
+    "kind": "gallery"
+   },
+   {
+    "title": "Animation Icon Bill Plympton is Back With a Trippy Music Video for Average Friends",
+    "url": "https://www.stashmedia.tv/animation-icon-bill-plympton-is-back-with-a-trippy-music-video-for-average-friends/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Average-Friends-u-know-i-luv-u-music-video-by-Bill-Plympton-STASH-MAGAZINE4-1920x1080.jpg",
+    "note": "Fifty-plus year's into his animation career, Bill Plympton (the rightfully self-proclaimed King of Indie Animation, who turned 80 in April) just dropped this wonderfully warped music video for Califor",
+    "source": "STASH",
+    "kind": "gallery"
+   },
+   {
     "title": "The new 14” MacBook Pro with M6",
     "url": "https://www.youtube.com/watch?v=xWfNhWn88Bc",
     "image": "https://i.ytimg.com/vi/xWfNhWn88Bc/hqdefault.jpg",
-    "by": "14M views",
+    "by": "16M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -316,10 +342,10 @@
     "kind": "gallery"
    },
    {
-    "title": "New MacBook Pro with PROLED XDR Display: The first-ever Mac with Touch",
-    "url": "https://www.youtube.com/watch?v=hnZI5uUSdEo",
-    "image": "https://i.ytimg.com/vi/hnZI5uUSdEo/hqdefault.jpg",
-    "by": "4.9M views",
+    "title": "New MacBook Pro with PROLED XDR Display and Touch: The world’s best laptop display",
+    "url": "https://www.youtube.com/watch?v=WzuIZLoHqqA",
+    "image": "https://i.ytimg.com/vi/WzuIZLoHqqA/hqdefault.jpg",
+    "by": "1.1M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -339,10 +365,10 @@
     "kind": "gallery"
    },
    {
-    "title": "New MacBook Pro with PROLED XDR Display and Touch: The world’s best laptop display",
-    "url": "https://www.youtube.com/watch?v=WzuIZLoHqqA",
-    "image": "https://i.ytimg.com/vi/WzuIZLoHqqA/hqdefault.jpg",
-    "by": "983K views",
+    "title": "The new MacBook Pro with M6 delivers blazing-fast performance and up to 24 hours of battery life.",
+    "url": "https://www.youtube.com/watch?v=vT-o5hh1cVc",
+    "image": "https://i.ytimg.com/vi/vT-o5hh1cVc/hqdefault.jpg",
+    "by": "908K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -361,29 +387,6 @@
     "note": "Following up their stand out work on the Hyperboot, Berlin CG stylists someform Studio re-team with Hyperice and Nike for a very calm and comfortable take in this film for the new Air Zoom Hyperslide.",
     "source": "STASH",
     "kind": "gallery"
-   },
-   {
-    "title": "The new MacBook Pro with M6 delivers blazing-fast performance and up to 24 hours of battery life.",
-    "url": "https://www.youtube.com/watch?v=vT-o5hh1cVc",
-    "image": "https://i.ytimg.com/vi/vT-o5hh1cVc/hqdefault.jpg",
-    "by": "877K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "Ouais.",
-    "url": "https://vimeo.com/channels/staffpicks/1236790091",
-    "image": "https://i.vimeocdn.com/video/2213387753-7acdd0f8ca18e43f77f32488019fd82b3425ad9f1b5cdd88ff1025900d4bb885-d_960?region=us",
-    "note": "&laquo; Ouais. &raquo; is a short film made in 2025 as part of the Bachelor in Animation program at the Lucerne School of Design, Film and Art. The film explores&hellip;",
-    "source": "Vimeo Staff Picks",
-    "kind": "gallery"
-   },
-   {
-    "title": "Vagrants Appoints Paul Muhlbach EP of Partnerships",
-    "url": "https://www.stashmedia.tv/vagrants-appoints-paul-muhlbach-ep-of-partnerships/",
-    "note": "From the release: Vagrants is expanding with the appointment of Paul Muhlbach as executive producer, partnerships. Based in Los Angeles, Muhlbach will lead national business development, building rela",
-    "source": "STASH",
-    "kind": "gallery"
    }
   ],
   "motion": [
@@ -395,10 +398,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Fun & Color in Style: Lumbre Keeps it Mega for Mega Chile",
-    "url": "https://www.stashmedia.tv/fun-color-in-style-lumbre-keeps-it-mega-for-mega-chile/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Mega-Chile-rebrand-by-by-Lumbre-STASH-MAGAZINE4-1920x1080.jpg",
-    "note": "Chilean broadcaster Mega and their family of channels and platforms get an infusion of vibrant, stylish fun in this redesign of their on-air graphics and brand system by the CG motion crew at Lumbre i",
+    "title": "Animation Icon Bill Plympton is Back With a Trippy Music Video for Average Friends",
+    "url": "https://www.stashmedia.tv/animation-icon-bill-plympton-is-back-with-a-trippy-music-video-for-average-friends/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Average-Friends-u-know-i-luv-u-music-video-by-Bill-Plympton-STASH-MAGAZINE4-1920x1080.jpg",
+    "note": "Fifty-plus year's into his animation career, Bill Plympton (the rightfully self-proclaimed King of Indie Animation, who turned 80 in April) just dropped this wonderfully warped music video for Califor",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -418,9 +421,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Hornet Signs UK Director Troy Browne to Global Roster",
-    "url": "https://www.stashmedia.tv/hornet-signs-uk-director-troy-browne-to-global-roster/",
-    "note": "From the release: Troy Browne brings a bold, distinctive voice to multimedia storytelling, creating work for global brands including Apple, Vimeo, Adobe, Crocs, Converse, and Accenture. [Watch]\nThe po",
+    "title": "Fun & Color in Style: Lumbre Keeps it Mega for Mega Chile",
+    "url": "https://www.stashmedia.tv/fun-color-in-style-lumbre-keeps-it-mega-for-mega-chile/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Mega-Chile-rebrand-by-by-Lumbre-STASH-MAGAZINE4-1920x1080.jpg",
+    "note": "Chilean broadcaster Mega and their family of channels and platforms get an infusion of vibrant, stylish fun in this redesign of their on-air graphics and brand system by the CG motion crew at Lumbre i",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -440,10 +444,9 @@
     "kind": "gallery"
    },
    {
-    "title": "Someform Studio Slips into the Hyperslide for Hyperice & Nike",
-    "url": "https://www.stashmedia.tv/someform-studio-slips-into-the-hyperslide-for-hyperice-nike/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Hyperslide-launch-film-for-Hyperice-Nike-by-someform-Studio-STASH-MAGAZINE4-1920x1080.jpg",
-    "note": "Following up their stand out work on the Hyperboot, Berlin CG stylists someform Studio re-team with Hyperice and Nike for a very calm and comfortable take in this film for the new Air Zoom Hyperslide.",
+    "title": "Hornet Signs UK Director Troy Browne to Global Roster",
+    "url": "https://www.stashmedia.tv/hornet-signs-uk-director-troy-browne-to-global-roster/",
+    "note": "From the release: Troy Browne brings a bold, distinctive voice to multimedia storytelling, creating work for global brands including Apple, Vimeo, Adobe, Crocs, Converse, and Accenture. [Watch]\nThe po",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -464,9 +467,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Vagrants Appoints Paul Muhlbach EP of Partnerships",
-    "url": "https://www.stashmedia.tv/vagrants-appoints-paul-muhlbach-ep-of-partnerships/",
-    "note": "From the release: Vagrants is expanding with the appointment of Paul Muhlbach as executive producer, partnerships. Based in Los Angeles, Muhlbach will lead national business development, building rela",
+    "title": "Someform Studio Slips into the Hyperslide for Hyperice & Nike",
+    "url": "https://www.stashmedia.tv/someform-studio-slips-into-the-hyperslide-for-hyperice-nike/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Hyperslide-launch-film-for-Hyperice-Nike-by-someform-Studio-STASH-MAGAZINE4-1920x1080.jpg",
+    "note": "Following up their stand out work on the Hyperboot, Berlin CG stylists someform Studio re-team with Hyperice and Nike for a very calm and comfortable take in this film for the new Air Zoom Hyperslide.",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -484,15 +488,15 @@
     "title": "AI Just Crossed the Terrifying Line - Now What?",
     "url": "https://www.youtube.com/watch?v=ujkD4SxPKOI",
     "image": "https://i.ytimg.com/vi/ujkD4SxPKOI/hqdefault.jpg",
-    "by": "22M views",
+    "by": "23M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
    {
-    "title": "Galopa",
-    "url": "https://vimeo.com/channels/staffpicks/1227172678",
-    "image": "https://i.vimeocdn.com/video/2202379673-ea260de1e99c8ad942877365c9b6d841ddbe56a84a6615ec1f67ae948895d324-d_960?region=us",
-    "note": "Sam i featuring Baby Tate &amp; MC RD music video directed by Meat Dept.",
+    "title": "Sisowath Quay",
+    "url": "https://vimeo.com/channels/staffpicks/1226740492",
+    "image": "https://i.vimeocdn.com/video/2200813656-24305dbeaee2592bf31bb314bd256e5b48e368490a10873c3a902117f42e2f6f-d_960?region=us",
+    "note": "Short film. Animation. 15 minutes 31. Release date : February 2025. Khmer with English subtitles.  More than 70 selections in worlwide festivals (Annecy, Clermont-Ferrand,&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
@@ -504,10 +508,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Fun & Color in Style: Lumbre Keeps it Mega for Mega Chile",
-    "url": "https://www.stashmedia.tv/fun-color-in-style-lumbre-keeps-it-mega-for-mega-chile/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Mega-Chile-rebrand-by-by-Lumbre-STASH-MAGAZINE4-1920x1080.jpg",
-    "note": "Chilean broadcaster Mega and their family of channels and platforms get an infusion of vibrant, stylish fun in this redesign of their on-air graphics and brand system by the CG motion crew at Lumbre i",
+    "title": "Animation Icon Bill Plympton is Back With a Trippy Music Video for Average Friends",
+    "url": "https://www.stashmedia.tv/animation-icon-bill-plympton-is-back-with-a-trippy-music-video-for-average-friends/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Average-Friends-u-know-i-luv-u-music-video-by-Bill-Plympton-STASH-MAGAZINE4-1920x1080.jpg",
+    "note": "Fifty-plus year's into his animation career, Bill Plympton (the rightfully self-proclaimed King of Indie Animation, who turned 80 in April) just dropped this wonderfully warped music video for Califor",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -520,10 +524,10 @@
     "kind": "performance"
    },
    {
-    "title": "The Life of Death and the Ensh*ttificator",
-    "url": "https://vimeo.com/channels/staffpicks/1226731365",
-    "image": "https://i.vimeocdn.com/video/2200788942-5b86ba87c02b24c363bb6cf1011427d546e183b4bca9672fe3b13ec662d3998b-d_960?region=us",
-    "note": "Ever noticed how things tend to die a little too soon? So have we.   That&rsquo;s the topic of our latest report.  Read more at forbrukerradet.no/shortlife   Agency:&hellip;",
+    "title": "Galopa",
+    "url": "https://vimeo.com/channels/staffpicks/1227172678",
+    "image": "https://i.vimeocdn.com/video/2202379673-ea260de1e99c8ad942877365c9b6d841ddbe56a84a6615ec1f67ae948895d324-d_960?region=us",
+    "note": "Sam i featuring Baby Tate &amp; MC RD music video directed by Meat Dept.",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
@@ -535,9 +539,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Hornet Signs UK Director Troy Browne to Global Roster",
-    "url": "https://www.stashmedia.tv/hornet-signs-uk-director-troy-browne-to-global-roster/",
-    "note": "From the release: Troy Browne brings a bold, distinctive voice to multimedia storytelling, creating work for global brands including Apple, Vimeo, Adobe, Crocs, Converse, and Accenture. [Watch]\nThe po",
+    "title": "Fun & Color in Style: Lumbre Keeps it Mega for Mega Chile",
+    "url": "https://www.stashmedia.tv/fun-color-in-style-lumbre-keeps-it-mega-for-mega-chile/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Mega-Chile-rebrand-by-by-Lumbre-STASH-MAGAZINE4-1920x1080.jpg",
+    "note": "Chilean broadcaster Mega and their family of channels and platforms get an infusion of vibrant, stylish fun in this redesign of their on-air graphics and brand system by the CG motion crew at Lumbre i",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -550,10 +555,10 @@
     "kind": "performance"
    },
    {
-    "title": "Permanence- Veritus Milller & Ronnie Heard III",
-    "url": "https://vimeo.com/channels/staffpicks/1223839596",
-    "image": "https://i.vimeocdn.com/video/2217723416-fac39a402a9409cac196376b07d7c63ab657cd38d8e432ecbbd616711905b7fe-d_960?region=us",
-    "note": "Permanence is a 35mm short music film about the choices we make and how a single moment can change the course of a life. The film follows three young men moving&hellip;",
+    "title": "The Life of Death and the Ensh*ttificator",
+    "url": "https://vimeo.com/channels/staffpicks/1226731365",
+    "image": "https://i.vimeocdn.com/video/2200788942-5b86ba87c02b24c363bb6cf1011427d546e183b4bca9672fe3b13ec662d3998b-d_960?region=us",
+    "note": "Ever noticed how things tend to die a little too soon? So have we.   That&rsquo;s the topic of our latest report.  Read more at forbrukerradet.no/shortlife   Agency:&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
@@ -565,10 +570,9 @@
     "kind": "gallery"
    },
    {
-    "title": "Someform Studio Slips into the Hyperslide for Hyperice & Nike",
-    "url": "https://www.stashmedia.tv/someform-studio-slips-into-the-hyperslide-for-hyperice-nike/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Hyperslide-launch-film-for-Hyperice-Nike-by-someform-Studio-STASH-MAGAZINE4-1920x1080.jpg",
-    "note": "Following up their stand out work on the Hyperboot, Berlin CG stylists someform Studio re-team with Hyperice and Nike for a very calm and comfortable take in this film for the new Air Zoom Hyperslide.",
+    "title": "Hornet Signs UK Director Troy Browne to Global Roster",
+    "url": "https://www.stashmedia.tv/hornet-signs-uk-director-troy-browne-to-global-roster/",
+    "note": "From the release: Troy Browne brings a bold, distinctive voice to multimedia storytelling, creating work for global brands including Apple, Vimeo, Adobe, Crocs, Converse, and Accenture. [Watch]\nThe po",
     "source": "STASH",
     "kind": "gallery"
    }
@@ -578,7 +582,7 @@
     "title": "Monkey Bars Under A 216m Bridge 🤯",
     "url": "https://www.youtube.com/watch?v=mxV0E4fXxXk",
     "image": "https://i.ytimg.com/vi/mxV0E4fXxXk/hqdefault.jpg",
-    "by": "3M views",
+    "by": "4.2M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -586,7 +590,7 @@
     "title": "She Just Made History 👏",
     "url": "https://www.youtube.com/watch?v=ddRY9ITtb0Q",
     "image": "https://i.ytimg.com/vi/ddRY9ITtb0Q/hqdefault.jpg",
-    "by": "3M views",
+    "by": "3.1M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -594,7 +598,7 @@
     "title": "Airbnb | あつまる？エアビる？｜プールでエアビる",
     "url": "https://www.youtube.com/watch?v=QS0QEqKGGIw",
     "image": "https://i.ytimg.com/vi/QS0QEqKGGIw/hqdefault.jpg",
-    "by": "1.5M views",
+    "by": "1.6M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -602,7 +606,7 @@
     "title": "Airbnb | あつまる？エアビる？｜今日はちょっと、大人忘れます。",
     "url": "https://www.youtube.com/watch?v=p8HvRJALo4Y",
     "image": "https://i.ytimg.com/vi/p8HvRJALo4Y/hqdefault.jpg",
-    "by": "1.3M views",
+    "by": "1.4M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -615,6 +619,22 @@
     "kind": "performance"
    },
    {
+    "title": "Narrow Cliff Jump POV 🎬 Daniel Todd #GoPro",
+    "url": "https://www.youtube.com/watch?v=VWa8IaIVrNU",
+    "image": "https://i.ytimg.com/vi/VWa8IaIVrNU/hqdefault.jpg",
+    "by": "494K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "You'll NEVER Guess 🤔💭",
+    "url": "https://www.youtube.com/watch?v=N6fwHbi2D2U",
+    "image": "https://i.ytimg.com/vi/N6fwHbi2D2U/hqdefault.jpg",
+    "by": "429K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
     "title": "Get sorted for college with Roxie from the Apple Store.",
     "url": "https://www.youtube.com/watch?v=P5GxUjU4uBI",
     "image": "https://i.ytimg.com/vi/P5GxUjU4uBI/hqdefault.jpg",
@@ -623,42 +643,10 @@
     "kind": "performance"
    },
    {
-    "title": "Training For A World Record 🤯",
-    "url": "https://www.youtube.com/watch?v=hLtyTYHidvI",
-    "image": "https://i.ytimg.com/vi/hLtyTYHidvI/hqdefault.jpg",
-    "by": "336K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
     "title": "Show off your work with Desk View. Tip from Kylie at the Apple Store.",
     "url": "https://www.youtube.com/watch?v=BTyWlJJUX2I",
     "image": "https://i.ytimg.com/vi/BTyWlJJUX2I/hqdefault.jpg",
-    "by": "302K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "leave everything in the past except ur streak 🎤: @NAJWAFAROUKOFFICIELLE",
-    "url": "https://www.youtube.com/watch?v=S6JObd4N0e0",
-    "image": "https://i.ytimg.com/vi/S6JObd4N0e0/hqdefault.jpg",
-    "by": "270K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "dressed up like jinshi but people kept mistaking me for ah-duo 🎨: ​⁠@brerbo",
-    "url": "https://www.youtube.com/watch?v=CS3SOLBFDyg",
-    "image": "https://i.ytimg.com/vi/CS3SOLBFDyg/hqdefault.jpg",
-    "by": "269K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "Narrow Cliff Jump POV 🎬 Daniel Todd #GoPro",
-    "url": "https://www.youtube.com/watch?v=VWa8IaIVrNU",
-    "image": "https://i.ytimg.com/vi/VWa8IaIVrNU/hqdefault.jpg",
-    "by": "268K views",
+    "by": "305K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -666,6 +654,22 @@
     "title": "We Needed To Capture This 📸",
     "url": "https://www.youtube.com/watch?v=5YS_vrdoMMY",
     "image": "https://i.ytimg.com/vi/5YS_vrdoMMY/hqdefault.jpg",
+    "by": "214K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "make my own group, call it K/DUO",
+    "url": "https://www.youtube.com/watch?v=cnuy9y8__m8",
+    "image": "https://i.ytimg.com/vi/cnuy9y8__m8/hqdefault.jpg",
+    "by": "210K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Never forget an assignment with Reminders. Tip from Sam at the Apple Store.",
+    "url": "https://www.youtube.com/watch?v=64hq3vDifcY",
+    "image": "https://i.ytimg.com/vi/64hq3vDifcY/hqdefault.jpg",
     "by": "198K views",
     "source": "Latest from brands",
     "kind": "performance"
@@ -674,10 +678,26 @@
   "post": [],
   "ad": [
    {
+    "title": "New MacBook Pro with PROLED XDR Display: The first-ever Mac with Touch",
+    "url": "https://www.youtube.com/watch?v=hnZI5uUSdEo",
+    "image": "https://i.ytimg.com/vi/hnZI5uUSdEo/hqdefault.jpg",
+    "by": "20M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Endless Possibilities",
+    "url": "https://www.adsoftheworld.com/campaigns/establish",
+    "image": "https://image.adsoftheworld.com/jrwf0oswvq1l25lf7sh8jkeykauj",
+    "by": "Wero",
+    "source": "Ads of the World",
+    "kind": "gallery"
+   },
+   {
     "title": "The new 14” MacBook Pro with M6",
     "url": "https://www.youtube.com/watch?v=xWfNhWn88Bc",
     "image": "https://i.ytimg.com/vi/xWfNhWn88Bc/hqdefault.jpg",
-    "by": "14M views",
+    "by": "16M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -690,10 +710,10 @@
     "kind": "gallery"
    },
    {
-    "title": "New MacBook Pro with PROLED XDR Display: The first-ever Mac with Touch",
-    "url": "https://www.youtube.com/watch?v=hnZI5uUSdEo",
-    "image": "https://i.ytimg.com/vi/hnZI5uUSdEo/hqdefault.jpg",
-    "by": "4.9M views",
+    "title": "Airbnb | あつまる？エアビる？｜リビングでエアビる",
+    "url": "https://www.youtube.com/watch?v=Mx608ORGCFA",
+    "image": "https://i.ytimg.com/vi/Mx608ORGCFA/hqdefault.jpg",
+    "by": "1.9M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -706,10 +726,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Airbnb | あつまる？エアビる？｜リビングでエアビる",
-    "url": "https://www.youtube.com/watch?v=Mx608ORGCFA",
-    "image": "https://i.ytimg.com/vi/Mx608ORGCFA/hqdefault.jpg",
-    "by": "1.8M views",
+    "title": "Airbnb | あつまる？エアビる？｜あの頃より、近づく夜。",
+    "url": "https://www.youtube.com/watch?v=FfoCK8cltno",
+    "image": "https://i.ytimg.com/vi/FfoCK8cltno/hqdefault.jpg",
+    "by": "1.4M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -752,22 +772,6 @@
     "by": "Midea",
     "source": "Ads of the World",
     "kind": "gallery"
-   },
-   {
-    "title": "Airbnb | あつまる？エアビる？｜あの頃より、近づく夜。",
-    "url": "https://www.youtube.com/watch?v=FfoCK8cltno",
-    "image": "https://i.ytimg.com/vi/FfoCK8cltno/hqdefault.jpg",
-    "by": "1.3M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "New MacBook Pro with PROLED XDR Display and Touch: The world’s best laptop display",
-    "url": "https://www.youtube.com/watch?v=WzuIZLoHqqA",
-    "image": "https://i.ytimg.com/vi/WzuIZLoHqqA/hqdefault.jpg",
-    "by": "983K views",
-    "source": "Latest from brands",
-    "kind": "performance"
    }
   ]
  }
