@@ -1,19 +1,11 @@
 {
- "updated": "2026-10-31T09:44:35.193Z",
+ "updated": "2026-11-01T10:34:12.568Z",
  "media": {
   "ui": [
    {
-    "title": "Spyker Cars",
-    "url": "https://www.awwwards.com/sites/spyker-cars",
-    "image": "https://www.awwwards.com/awards/submissions/2026/08/6a914a3ee8da2510874104.png",
-    "note": "Most only see a Spyker in images, so we built a digital experience that hands them the keys. A day of ownership: an easy Italian morning, a mountain pass at speed, a red-carpet evening.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
-   },
-   {
-    "title": "CubbyPad",
-    "url": "https://www.producthunt.com/products/cubbypad",
-    "note": "Launchpad is back on macOS 26, and it's smarter",
+    "title": "Click",
+    "url": "https://www.producthunt.com/products/click-6",
+    "note": "Managed agents API that works with any model",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -21,23 +13,78 @@
     "title": "thedotmack/claude-mem",
     "url": "https://github.com/thedotmack/claude-mem",
     "image": "https://opengraph.githubassets.com/1/thedotmack/claude-mem",
-    "by": "★ 1,140 today",
+    "by": "★ 1,723 today",
     "note": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Clau",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Unbelievably Crap",
-    "url": "https://www.awwwards.com/sites/unbelievably-crap",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6aa06aafa4f85878540881.png",
-    "note": "Unbelievably Crap is a catalyst for catharsis through bold, quirky visual character. Built to crave the unknown, not repeat the known.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
+    "title": "Embage",
+    "url": "https://www.producthunt.com/products/embage",
+    "note": "Build agent for your customers, run workflows, analyzed.",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
    },
    {
-    "title": "GitHub Copilot Fusion",
-    "url": "https://www.producthunt.com/products/github-copilot-fusion",
-    "note": "GitHub's AI coding agent that picks and combines models",
+    "title": "mattpocock/skills",
+    "url": "https://github.com/mattpocock/skills",
+    "image": "https://opengraph.githubassets.com/1/mattpocock/skills",
+    "by": "★ 883 today",
+    "note": "Skills for Real Engineers. Straight from my .agents directory.",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "Precise Edit by Ideogram",
+    "url": "https://www.producthunt.com/products/ideogram",
+    "note": "Precise editing with context window",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "Donchitos/Claude-Code-Game-Studios",
+    "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+    "image": "https://opengraph.githubassets.com/1/Donchitos/Claude-Code-Game-Studios",
+    "by": "★ 742 today",
+    "note": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "agentmash",
+    "url": "https://www.producthunt.com/products/agentmash",
+    "note": "open-source multiplayer AI for teams' coding agents",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "pingdotgg/t3code",
+    "url": "https://github.com/pingdotgg/t3code",
+    "image": "https://opengraph.githubassets.com/1/pingdotgg/t3code",
+    "by": "★ 1,148 today",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "magpie",
+    "url": "https://www.producthunt.com/products/magpie-14",
+    "note": "everything you’ve saved, in one visual library",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "Renhuai123/ziwei-doushu",
+    "url": "https://github.com/Renhuai123/ziwei-doushu",
+    "image": "https://opengraph.githubassets.com/1/Renhuai123/ziwei-doushu",
+    "by": "★ 1,092 today",
+    "note": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "Usage for Claude + ChatGPT 4.0",
+    "url": "https://www.producthunt.com/products/usage-for-claude",
+    "note": "Claude + ChatGPT limits on your Mac, iPhone, iPad and Watch",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -45,68 +92,42 @@
     "title": "milind-soni/OpenMausBot",
     "url": "https://github.com/milind-soni/OpenMausBot",
     "image": "https://opengraph.githubassets.com/1/milind-soni/OpenMausBot",
-    "by": "★ 895 today",
+    "by": "★ 1,303 today",
     "note": "Open-source Grok Bot alternative with a virtual machine that bots can use",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "G. Colombel — Portfolio 2026",
-    "url": "https://www.awwwards.com/sites/g-colombel-portfolio-2026",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6ab287b7b1b30467092149.png",
-    "note": "Portfolio of Guillaume Colombel, freelance interactive developer. Specializing in immersive web experiences and creative websites. Based in Paris, available worldwide.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
-   },
-   {
-    "title": "Mo",
-    "url": "https://www.producthunt.com/products/mo-5",
-    "note": "A little character on your Mac who does 232 tasks for you",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "pbakaus/impeccable",
-    "url": "https://github.com/pbakaus/impeccable",
-    "image": "https://opengraph.githubassets.com/1/pbakaus/impeccable",
-    "by": "★ 2,300 today",
-    "note": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Awards Racing",
-    "url": "https://www.awwwards.com/sites/awards-racing",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6a9e9f5bdabf9983024717.png",
-    "note": "A browser drift-racer built with three.js and Bullet physics, mixing arcade racing with vehicular combat in a design-world setting: a young nominee racing to the top, dodging angry jurors and rivals. ",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
-   },
-   {
-    "title": "Seqora",
-    "url": "https://www.producthunt.com/products/seqora",
-    "note": "Design your schema on a canvas. Seqora writes the SQL.",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "CopilotKit/OpenBot",
-    "url": "https://github.com/CopilotKit/OpenBot",
-    "image": "https://opengraph.githubassets.com/1/CopilotKit/OpenBot",
-    "by": "★ 706 today",
-    "note": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.",
     "source": "GitHub Trending",
     "kind": "trending"
    }
   ],
   "landing": [
    {
-    "title": "Spyker Cars",
-    "url": "https://www.awwwards.com/sites/spyker-cars",
-    "image": "https://www.awwwards.com/awards/submissions/2026/08/6a914a3ee8da2510874104.png",
-    "note": "Most only see a Spyker in images, so we built a digital experience that hands them the keys. A day of ownership: an easy Italian morning, a mountain pass at speed, a red-carpet evening.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
+    "title": "Christoph Mandl",
+    "url": "https://onepagelove.com/christoph-mandl",
+    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/10/opl-screenshot-christoph-mandl-1793102239405-desktop.jpg",
+    "note": "MANDL is Christoph Mandl’s multidisciplinary portfolio, presenting detailed projects across brand identity, digital products, UI systems, editorial design, packaging, physical products and photography",
+    "source": "One Page Love",
+    "kind": "gallery"
+   },
+   {
+    "title": "Click",
+    "url": "https://www.producthunt.com/products/click-6",
+    "note": "Managed agents API that works with any model",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "Mathias Adolfsson",
+    "url": "https://onepagelove.com/mathias-adolfsson",
+    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/10/opl-screenshot-mathias-adolfsson-1793119910077-desktop.jpg",
+    "note": "Mathias Adolfsson’s website is an immersive portfolio for a freelance creative engineer. It presents projects through a cinematic horizontal carousel with curved three-dimensional panels, full-screen ",
+    "source": "One Page Love",
+    "kind": "gallery"
+   },
+   {
+    "title": "Embage",
+    "url": "https://www.producthunt.com/products/embage",
+    "note": "Build agent for your customers, run workflows, analyzed.",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
    },
    {
     "title": "Kelvin",
@@ -117,19 +138,11 @@
     "kind": "gallery"
    },
    {
-    "title": "CubbyPad",
-    "url": "https://www.producthunt.com/products/cubbypad",
-    "note": "Launchpad is back on macOS 26, and it's smarter",
+    "title": "Precise Edit by Ideogram",
+    "url": "https://www.producthunt.com/products/ideogram",
+    "note": "Precise editing with context window",
     "source": "Product Hunt · Today",
     "kind": "trending"
-   },
-   {
-    "title": "Unbelievably Crap",
-    "url": "https://www.awwwards.com/sites/unbelievably-crap",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6aa06aafa4f85878540881.png",
-    "note": "Unbelievably Crap is a catalyst for catharsis through bold, quirky visual character. Built to crave the unknown, not repeat the known.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
    },
    {
     "title": "Voice Tag Gods",
@@ -140,19 +153,11 @@
     "kind": "gallery"
    },
    {
-    "title": "GitHub Copilot Fusion",
-    "url": "https://www.producthunt.com/products/github-copilot-fusion",
-    "note": "GitHub's AI coding agent that picks and combines models",
+    "title": "agentmash",
+    "url": "https://www.producthunt.com/products/agentmash",
+    "note": "open-source multiplayer AI for teams' coding agents",
     "source": "Product Hunt · Today",
     "kind": "trending"
-   },
-   {
-    "title": "G. Colombel — Portfolio 2026",
-    "url": "https://www.awwwards.com/sites/g-colombel-portfolio-2026",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6ab287b7b1b30467092149.png",
-    "note": "Portfolio of Guillaume Colombel, freelance interactive developer. Specializing in immersive web experiences and creative websites. Based in Paris, available worldwide.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
    },
    {
     "title": "Angelo",
@@ -163,19 +168,11 @@
     "kind": "gallery"
    },
    {
-    "title": "Mo",
-    "url": "https://www.producthunt.com/products/mo-5",
-    "note": "A little character on your Mac who does 232 tasks for you",
+    "title": "magpie",
+    "url": "https://www.producthunt.com/products/magpie-14",
+    "note": "everything you’ve saved, in one visual library",
     "source": "Product Hunt · Today",
     "kind": "trending"
-   },
-   {
-    "title": "Awards Racing",
-    "url": "https://www.awwwards.com/sites/awards-racing",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6a9e9f5bdabf9983024717.png",
-    "note": "A browser drift-racer built with three.js and Bullet physics, mixing arcade racing with vehicular combat in a design-world setting: a young nominee racing to the top, dodging angry jurors and rivals. ",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
    },
    {
     "title": "mappy",
@@ -186,18 +183,18 @@
     "kind": "gallery"
    },
    {
-    "title": "Seqora",
-    "url": "https://www.producthunt.com/products/seqora",
-    "note": "Design your schema on a canvas. Seqora writes the SQL.",
+    "title": "Usage for Claude + ChatGPT 4.0",
+    "url": "https://www.producthunt.com/products/usage-for-claude",
+    "note": "Claude + ChatGPT limits on your Mac, iPhone, iPad and Watch",
     "source": "Product Hunt · Today",
     "kind": "trending"
    }
   ],
   "app": [
    {
-    "title": "CubbyPad",
-    "url": "https://www.producthunt.com/products/cubbypad",
-    "note": "Launchpad is back on macOS 26, and it's smarter",
+    "title": "Click",
+    "url": "https://www.producthunt.com/products/click-6",
+    "note": "Managed agents API that works with any model",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -205,63 +202,62 @@
     "title": "thedotmack/claude-mem",
     "url": "https://github.com/thedotmack/claude-mem",
     "image": "https://opengraph.githubassets.com/1/thedotmack/claude-mem",
-    "by": "★ 1,140 today",
+    "by": "★ 1,723 today",
     "note": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Clau",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "GitHub Copilot Fusion",
-    "url": "https://www.producthunt.com/products/github-copilot-fusion",
-    "note": "GitHub's AI coding agent that picks and combines models",
+    "title": "Embage",
+    "url": "https://www.producthunt.com/products/embage",
+    "note": "Build agent for your customers, run workflows, analyzed.",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "milind-soni/OpenMausBot",
-    "url": "https://github.com/milind-soni/OpenMausBot",
-    "image": "https://opengraph.githubassets.com/1/milind-soni/OpenMausBot",
-    "by": "★ 895 today",
-    "note": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+    "title": "mattpocock/skills",
+    "url": "https://github.com/mattpocock/skills",
+    "image": "https://opengraph.githubassets.com/1/mattpocock/skills",
+    "by": "★ 883 today",
+    "note": "Skills for Real Engineers. Straight from my .agents directory.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Mo",
-    "url": "https://www.producthunt.com/products/mo-5",
-    "note": "A little character on your Mac who does 232 tasks for you",
+    "title": "Precise Edit by Ideogram",
+    "url": "https://www.producthunt.com/products/ideogram",
+    "note": "Precise editing with context window",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "pbakaus/impeccable",
-    "url": "https://github.com/pbakaus/impeccable",
-    "image": "https://opengraph.githubassets.com/1/pbakaus/impeccable",
-    "by": "★ 2,300 today",
-    "note": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
+    "title": "Donchitos/Claude-Code-Game-Studios",
+    "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
+    "image": "https://opengraph.githubassets.com/1/Donchitos/Claude-Code-Game-Studios",
+    "by": "★ 742 today",
+    "note": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Seqora",
-    "url": "https://www.producthunt.com/products/seqora",
-    "note": "Design your schema on a canvas. Seqora writes the SQL.",
+    "title": "agentmash",
+    "url": "https://www.producthunt.com/products/agentmash",
+    "note": "open-source multiplayer AI for teams' coding agents",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "CopilotKit/OpenBot",
-    "url": "https://github.com/CopilotKit/OpenBot",
-    "image": "https://opengraph.githubassets.com/1/CopilotKit/OpenBot",
-    "by": "★ 706 today",
-    "note": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.",
+    "title": "pingdotgg/t3code",
+    "url": "https://github.com/pingdotgg/t3code",
+    "image": "https://opengraph.githubassets.com/1/pingdotgg/t3code",
+    "by": "★ 1,148 today",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Backenly",
-    "url": "https://www.producthunt.com/products/backenly-2",
-    "note": "The autonomous backend for AI coding agents",
+    "title": "magpie",
+    "url": "https://www.producthunt.com/products/magpie-14",
+    "note": "everything you’ve saved, in one visual library",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -269,24 +265,24 @@
     "title": "Renhuai123/ziwei-doushu",
     "url": "https://github.com/Renhuai123/ziwei-doushu",
     "image": "https://opengraph.githubassets.com/1/Renhuai123/ziwei-doushu",
-    "by": "★ 1,126 today",
+    "by": "★ 1,092 today",
     "note": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "WinnerAdSpy",
-    "url": "https://www.producthunt.com/products/winneradspy",
-    "note": "Turn competitor ad insights into winning app campaigns",
+    "title": "Usage for Claude + ChatGPT 4.0",
+    "url": "https://www.producthunt.com/products/usage-for-claude",
+    "note": "Claude + ChatGPT limits on your Mac, iPhone, iPad and Watch",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "expo/skills",
-    "url": "https://github.com/expo/skills",
-    "image": "https://opengraph.githubassets.com/1/expo/skills",
-    "by": "★ 38 today",
-    "note": "A collection of AI agent skills for working with Expo projects and Expo Application Services",
+    "title": "milind-soni/OpenMausBot",
+    "url": "https://github.com/milind-soni/OpenMausBot",
+    "image": "https://opengraph.githubassets.com/1/milind-soni/OpenMausBot",
+    "by": "★ 1,303 today",
+    "note": "Open-source Grok Bot alternative with a virtual machine that bots can use",
     "source": "GitHub Trending",
     "kind": "trending"
    }
@@ -297,15 +293,15 @@
     "title": "New MacBook Pro with PROLED XDR Display: The first-ever Mac with Touch",
     "url": "https://www.youtube.com/watch?v=hnZI5uUSdEo",
     "image": "https://i.ytimg.com/vi/hnZI5uUSdEo/hqdefault.jpg",
-    "by": "40M views",
+    "by": "43M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
    {
-    "title": "Sweet Tooth",
-    "url": "https://vimeo.com/channels/staffpicks/1238017560",
-    "image": "https://i.vimeocdn.com/video/2215011045-8f9244317c62e1a0b9a64cdf1c9600f7e376cfdb1e1059e67593272812c521d4-d_960?region=us",
-    "note": "Elin's upstairs neighbors are getting on her nerves...  Sweet Tooth premiered at the Fantasia International Film Festival in 2017 and was subsequently acquired&hellip;",
+    "title": "Pen Mari",
+    "url": "https://vimeo.com/channels/staffpicks/1239544587",
+    "image": "https://i.vimeocdn.com/video/2218670818-0046deb2527934cc3cb0e5ebc6aa7b03e7599609c27d0326c867f34649208f27-d_960?region=us",
+    "note": "In the desperate search for a horse&rsquo;s skull to lead an ancient folk procession, a man is drawn into the black market for animal body parts.   Si&ocirc;n Marshall-Waters&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
@@ -326,10 +322,10 @@
     "kind": "performance"
    },
    {
-    "title": "Sisowath Quay",
-    "url": "https://vimeo.com/channels/staffpicks/1226740492",
-    "image": "https://i.vimeocdn.com/video/2200813656-24305dbeaee2592bf31bb314bd256e5b48e368490a10873c3a902117f42e2f6f-d_960?region=us",
-    "note": "Short film. Animation. 15 minutes 31. Release date : February 2025. Khmer with English subtitles.  More than 70 selections in worlwide festivals (Annecy, Clermont-Ferrand,&hellip;",
+    "title": "Sweet Tooth",
+    "url": "https://vimeo.com/channels/staffpicks/1238017560",
+    "image": "https://i.vimeocdn.com/video/2215011045-8f9244317c62e1a0b9a64cdf1c9600f7e376cfdb1e1059e67593272812c521d4-d_960?region=us",
+    "note": "Elin's upstairs neighbors are getting on her nerves...  Sweet Tooth premiered at the Fantasia International Film Festival in 2017 and was subsequently acquired&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
@@ -345,15 +341,15 @@
     "title": "New MacBook Pro with PROLED XDR Display and Touch: The world’s best laptop display",
     "url": "https://www.youtube.com/watch?v=WzuIZLoHqqA",
     "image": "https://i.ytimg.com/vi/WzuIZLoHqqA/hqdefault.jpg",
-    "by": "1.1M views",
+    "by": "1.2M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
    {
-    "title": "Galopa",
-    "url": "https://vimeo.com/channels/staffpicks/1227172678",
-    "image": "https://i.vimeocdn.com/video/2202379673-ea260de1e99c8ad942877365c9b6d841ddbe56a84a6615ec1f67ae948895d324-d_960?region=us",
-    "note": "Sam i featuring Baby Tate &amp; MC RD music video directed by Meat Dept.",
+    "title": "Sisowath Quay",
+    "url": "https://vimeo.com/channels/staffpicks/1226740492",
+    "image": "https://i.vimeocdn.com/video/2200813656-24305dbeaee2592bf31bb314bd256e5b48e368490a10873c3a902117f42e2f6f-d_960?region=us",
+    "note": "Short film. Animation. 15 minutes 31. Release date : February 2025. Khmer with English subtitles.  More than 70 selections in worlwide festivals (Annecy, Clermont-Ferrand,&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
@@ -369,15 +365,15 @@
     "title": "The new MacBook Pro with M6 delivers blazing-fast performance and up to 24 hours of battery life.",
     "url": "https://www.youtube.com/watch?v=vT-o5hh1cVc",
     "image": "https://i.ytimg.com/vi/vT-o5hh1cVc/hqdefault.jpg",
-    "by": "917K views",
+    "by": "922K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
    {
-    "title": "The Life of Death and the Ensh*ttificator",
-    "url": "https://vimeo.com/channels/staffpicks/1226731365",
-    "image": "https://i.vimeocdn.com/video/2200788942-5b86ba87c02b24c363bb6cf1011427d546e183b4bca9672fe3b13ec662d3998b-d_960?region=us",
-    "note": "Ever noticed how things tend to die a little too soon? So have we.   That&rsquo;s the topic of our latest report.  Read more at forbrukerradet.no/shortlife   Agency:&hellip;",
+    "title": "Galopa",
+    "url": "https://vimeo.com/channels/staffpicks/1227172678",
+    "image": "https://i.vimeocdn.com/video/2202379673-ea260de1e99c8ad942877365c9b6d841ddbe56a84a6615ec1f67ae948895d324-d_960?region=us",
+    "note": "Sam i featuring Baby Tate &amp; MC RD music video directed by Meat Dept.",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
@@ -495,10 +491,10 @@
     "kind": "performance"
    },
    {
-    "title": "Sweet Tooth",
-    "url": "https://vimeo.com/channels/staffpicks/1238017560",
-    "image": "https://i.vimeocdn.com/video/2215011045-8f9244317c62e1a0b9a64cdf1c9600f7e376cfdb1e1059e67593272812c521d4-d_960?region=us",
-    "note": "Elin's upstairs neighbors are getting on her nerves...  Sweet Tooth premiered at the Fantasia International Film Festival in 2017 and was subsequently acquired&hellip;",
+    "title": "Pen Mari",
+    "url": "https://vimeo.com/channels/staffpicks/1239544587",
+    "image": "https://i.vimeocdn.com/video/2218670818-0046deb2527934cc3cb0e5ebc6aa7b03e7599609c27d0326c867f34649208f27-d_960?region=us",
+    "note": "In the desperate search for a horse&rsquo;s skull to lead an ancient folk procession, a man is drawn into the black market for animal body parts.   Si&ocirc;n Marshall-Waters&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
@@ -526,10 +522,10 @@
     "kind": "performance"
    },
    {
-    "title": "Sisowath Quay",
-    "url": "https://vimeo.com/channels/staffpicks/1226740492",
-    "image": "https://i.vimeocdn.com/video/2200813656-24305dbeaee2592bf31bb314bd256e5b48e368490a10873c3a902117f42e2f6f-d_960?region=us",
-    "note": "Short film. Animation. 15 minutes 31. Release date : February 2025. Khmer with English subtitles.  More than 70 selections in worlwide festivals (Annecy, Clermont-Ferrand,&hellip;",
+    "title": "Sweet Tooth",
+    "url": "https://vimeo.com/channels/staffpicks/1238017560",
+    "image": "https://i.vimeocdn.com/video/2215011045-8f9244317c62e1a0b9a64cdf1c9600f7e376cfdb1e1059e67593272812c521d4-d_960?region=us",
+    "note": "Elin's upstairs neighbors are getting on her nerves...  Sweet Tooth premiered at the Fantasia International Film Festival in 2017 and was subsequently acquired&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
@@ -557,10 +553,10 @@
     "kind": "performance"
    },
    {
-    "title": "Galopa",
-    "url": "https://vimeo.com/channels/staffpicks/1227172678",
-    "image": "https://i.vimeocdn.com/video/2202379673-ea260de1e99c8ad942877365c9b6d841ddbe56a84a6615ec1f67ae948895d324-d_960?region=us",
-    "note": "Sam i featuring Baby Tate &amp; MC RD music video directed by Meat Dept.",
+    "title": "Sisowath Quay",
+    "url": "https://vimeo.com/channels/staffpicks/1226740492",
+    "image": "https://i.vimeocdn.com/video/2200813656-24305dbeaee2592bf31bb314bd256e5b48e368490a10873c3a902117f42e2f6f-d_960?region=us",
+    "note": "Short film. Animation. 15 minutes 31. Release date : February 2025. Khmer with English subtitles.  More than 70 selections in worlwide festivals (Annecy, Clermont-Ferrand,&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
@@ -585,7 +581,15 @@
     "title": "Monkey Bars Under A 216m Bridge 🤯",
     "url": "https://www.youtube.com/watch?v=mxV0E4fXxXk",
     "image": "https://i.ytimg.com/vi/mxV0E4fXxXk/hqdefault.jpg",
-    "by": "6.8M views",
+    "by": "10M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Narrow Cliff Jump POV 🎬 Daniel Todd #GoPro",
+    "url": "https://www.youtube.com/watch?v=VWa8IaIVrNU",
+    "image": "https://i.ytimg.com/vi/VWa8IaIVrNU/hqdefault.jpg",
+    "by": "1.7M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -606,10 +610,10 @@
     "kind": "performance"
    },
    {
-    "title": "Narrow Cliff Jump POV 🎬 Daniel Todd #GoPro",
-    "url": "https://www.youtube.com/watch?v=VWa8IaIVrNU",
-    "image": "https://i.ytimg.com/vi/VWa8IaIVrNU/hqdefault.jpg",
-    "by": "1.2M views",
+    "title": "You'll NEVER Guess 🤔💭",
+    "url": "https://www.youtube.com/watch?v=N6fwHbi2D2U",
+    "image": "https://i.ytimg.com/vi/N6fwHbi2D2U/hqdefault.jpg",
+    "by": "624K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -622,18 +626,10 @@
     "kind": "performance"
    },
    {
-    "title": "You'll NEVER Guess 🤔💭",
-    "url": "https://www.youtube.com/watch?v=N6fwHbi2D2U",
-    "image": "https://i.ytimg.com/vi/N6fwHbi2D2U/hqdefault.jpg",
-    "by": "517K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
     "title": "the capital of italy is what??",
     "url": "https://www.youtube.com/watch?v=A4I8B8tjJxc",
     "image": "https://i.ytimg.com/vi/A4I8B8tjJxc/hqdefault.jpg",
-    "by": "390K views",
+    "by": "459K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -641,7 +637,7 @@
     "title": "Get sorted for college with Roxie from the Apple Store.",
     "url": "https://www.youtube.com/watch?v=P5GxUjU4uBI",
     "image": "https://i.ytimg.com/vi/P5GxUjU4uBI/hqdefault.jpg",
-    "by": "361K views",
+    "by": "362K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -649,7 +645,7 @@
     "title": "Show off your work with Desk View. Tip from Kylie at the Apple Store.",
     "url": "https://www.youtube.com/watch?v=BTyWlJJUX2I",
     "image": "https://i.ytimg.com/vi/BTyWlJJUX2I/hqdefault.jpg",
-    "by": "308K views",
+    "by": "310K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -657,15 +653,7 @@
     "title": "make my own group, call it K/DUO",
     "url": "https://www.youtube.com/watch?v=cnuy9y8__m8",
     "image": "https://i.ytimg.com/vi/cnuy9y8__m8/hqdefault.jpg",
-    "by": "262K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "We Needed To Capture This 📸",
-    "url": "https://www.youtube.com/watch?v=5YS_vrdoMMY",
-    "image": "https://i.ytimg.com/vi/5YS_vrdoMMY/hqdefault.jpg",
-    "by": "234K views",
+    "by": "302K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -673,81 +661,89 @@
     "title": "Battling The Elements ⚔️",
     "url": "https://www.youtube.com/watch?v=6dj2vDUlyDw",
     "image": "https://i.ytimg.com/vi/6dj2vDUlyDw/hqdefault.jpg",
-    "by": "223K views",
+    "by": "250K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "ima start a streak, im a streakstarter",
+    "url": "https://www.youtube.com/watch?v=wk8_L6OGjew",
+    "image": "https://i.ytimg.com/vi/wk8_L6OGjew/hqdefault.jpg",
+    "by": "244K views",
     "source": "Latest from brands",
     "kind": "performance"
    }
   ],
   "post": [
    {
-    "title": "Through Captain Jean-Luc Picard, Patrick Stewart taught us the measure of a man",
-    "url": "https://www.bostonglobe.com/2026/10/29/metro/patrick-stewart-picard-star-trek-the-next-generation/",
+    "title": "An Italian farmer found some unknown seeds in his attic and planted them",
+    "url": "https://www.smithsonianmag.com/science-nature/italian-farmer-found-unknown-seeds-attic-with-nothing-lose-planted-them-result-biblical-180989644/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Anthropic may not secure investment-grade rating after IPO, Blackstone says",
-    "url": "https://www.ft.com/content/59383c7f-8d82-493f-bf01-d2e862a1018f",
+    "title": "HackerTube: YouTube built from videos recommended by HN",
+    "url": "https://karpathy.bearblog.dev/hacker-tube/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "My favourite PowerMac is a Nintendo Wii",
-    "url": "https://virtuallyfun.com/2026/10/29/my-favourite-powermac-is-a-nintendo-wii/",
+    "title": "Anthropic blocks users for anything touching training larger models",
+    "url": "https://twitter.com/jiahaoshao1/status/2116475922190922088",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "AI isn't replacing SREs, it's deskilling them",
-    "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
+    "title": "TCP Use-After-Free: CVE-2026-98432 / CVSS 9.8",
+    "url": "https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "The federated code forge",
-    "url": "https://tangled.org/blog/forge/",
+    "title": "Malware uses LLMs to rank victims by how much they're worth",
+    "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Northflank Breached",
-    "url": "https://status.northflank.com",
+    "title": "Jepsen: ParticleDB 1.1.4",
+    "url": "https://jepsen.io/analyses/particledb-1.1.4",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Medicare Will Pay $50k for Your Heart Attack. It Should Pay $100 to Prevent It",
-    "url": "https://www.medpagetoday.com/opinion/second-opinions/123553?trw=no",
+    "title": "Do the math: How we took over ChatGPT accounts",
+    "url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "The $6.3B Binance hack was pulled off in just 20 minutes",
-    "url": "https://www.wired.com/story/the-dollar63-billion-binance-hack-was-pulled-off-in-just-20-minutes/",
+    "title": "Molly (Signal fork) has not been updated since 3 months and is vulnerable",
+    "url": "https://piefed.world/post/1503394",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "US Reps Lead Democratic Resolution Opposing A.I. Bubble Bailout for Big Tech",
-    "url": "https://progressives.house.gov/2026/10/reps-casar-waters-lead-democratic-resolution-opposing-a-i-bubble-bailout-for-big-tech-commit-to-protecting-american-people-instead",
+    "title": "Serbia just elected the world's brainiest parliament",
+    "url": "https://www.science.org/content/article/serbia-just-elected-world-s-brainiest-parliament",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Backdoors in official Claude Code extensions",
-    "url": "https://cyberplace.social/@GossiTheDog/117528831681803563",
+    "title": "Digital minimalism",
+    "url": "https://vitalik.eth.limo/general/2026/10/31/digital_minimalism.html",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Claude Code VS Code extension with backdoor released on Cursor marketplace",
-    "url": "https://doublepulsar.com/anthropic-hacked-to-deliver-remote-access-trojan-to-claude-developer-laptops-worldwide-1148a92baae2",
+    "title": "Tell HN: Scribd Breached",
+    "url": "https://news.ycombinator.com/item?id=50312756",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Azure's Weakest Link – Five Full Cross-Tenant Compromises",
-    "url": "https://www.binarysecurity.no/posts/2026/10/one-root-case",
+    "title": "Show HN: To Honor Sir Patrick Stewart, Enjoy the TNG Episode Guessing Game",
+    "url": "https://tng.episodle.com/",
     "source": "Hacker News · Best",
     "kind": "performance"
    }
@@ -757,7 +753,7 @@
     "title": "New MacBook Pro with PROLED XDR Display: The first-ever Mac with Touch",
     "url": "https://www.youtube.com/watch?v=hnZI5uUSdEo",
     "image": "https://i.ytimg.com/vi/hnZI5uUSdEo/hqdefault.jpg",
-    "by": "40M views",
+    "by": "43M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -789,7 +785,7 @@
     "title": "Airbnb | あつまる？エアビる？｜リビングでエアビる",
     "url": "https://www.youtube.com/watch?v=Mx608ORGCFA",
     "image": "https://i.ytimg.com/vi/Mx608ORGCFA/hqdefault.jpg",
-    "by": "2M views",
+    "by": "2.1M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -845,7 +841,7 @@
     "title": "New MacBook Pro with PROLED XDR Display and Touch: The world’s best laptop display",
     "url": "https://www.youtube.com/watch?v=WzuIZLoHqqA",
     "image": "https://i.ytimg.com/vi/WzuIZLoHqqA/hqdefault.jpg",
-    "by": "1.1M views",
+    "by": "1.2M views",
     "source": "Latest from brands",
     "kind": "performance"
    }
