@@ -1,11 +1,43 @@
 {
- "updated": "2026-11-01T10:34:12.568Z",
+ "updated": "2026-11-02T11:19:05.285Z",
  "media": {
   "ui": [
    {
-    "title": "Click",
-    "url": "https://www.producthunt.com/products/click-6",
-    "note": "Managed agents API that works with any model",
+    "title": "Grids",
+    "url": "https://www.awwwards.com/sites/grids-1",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6aa7d6e36002d509691780.jpg",
+    "note": "Grids is an interactive project exploring grids, composition, and key design principles through visual experiments.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "Widgeteer",
+    "url": "https://www.producthunt.com/products/widgeteer",
+    "note": "Describe a widget, get a working one on your site",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "vercel-labs/agent-desktop",
+    "url": "https://github.com/vercel-labs/agent-desktop",
+    "image": "https://opengraph.githubassets.com/1/vercel-labs/agent-desktop",
+    "by": "★ 2,243 today",
+    "note": "Agent Desktop gives any agent reliable computer use on the desktop. Built with Rust, it sees any app's real UI structure through OS accessibility trees and operates it — refs stay stable and actions s",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "Dont Look up game",
+    "url": "https://www.awwwards.com/sites/dont-look-up-game",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6a9ed57f51a76420786025.jpg",
+    "note": "You are very rich, very tall, and standing on quite a lot of people. Keep them entertained enough not to look up, and collect a trillion. A game about the price of attention.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "Help",
+    "url": "https://www.producthunt.com/products/help-381",
+    "note": "The app designed for targeted and transparent help",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -13,92 +45,115 @@
     "title": "thedotmack/claude-mem",
     "url": "https://github.com/thedotmack/claude-mem",
     "image": "https://opengraph.githubassets.com/1/thedotmack/claude-mem",
-    "by": "★ 1,723 today",
+    "by": "★ 1,799 today",
     "note": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Clau",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Embage",
-    "url": "https://www.producthunt.com/products/embage",
-    "note": "Build agent for your customers, run workflows, analyzed.",
+    "title": "MECHA",
+    "url": "https://www.awwwards.com/sites/mecha",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6aa7eda51c421159920632.jpg",
+    "note": "Mecha deploys physical automation into legacy industries. We created strategy, branding, and web design for them.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "Agent Inbox",
+    "url": "https://www.producthunt.com/products/agent-inbox",
+    "note": "Give your agent an email address, Slack and Telegram handle",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "mattpocock/skills",
-    "url": "https://github.com/mattpocock/skills",
-    "image": "https://opengraph.githubassets.com/1/mattpocock/skills",
-    "by": "★ 883 today",
-    "note": "Skills for Real Engineers. Straight from my .agents directory.",
+    "title": "D4Vinci/Scrapling",
+    "url": "https://github.com/D4Vinci/Scrapling",
+    "image": "https://opengraph.githubassets.com/1/D4Vinci/Scrapling",
+    "by": "★ 892 today",
+    "note": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and trick",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Precise Edit by Ideogram",
-    "url": "https://www.producthunt.com/products/ideogram",
-    "note": "Precise editing with context window",
+    "title": "Spyker Cars",
+    "url": "https://www.awwwards.com/sites/spyker-cars",
+    "image": "https://www.awwwards.com/awards/submissions/2026/08/6a914a3ee8da2510874104.png",
+    "note": "Most only see a Spyker in images, so we built a digital experience that hands them the keys. A day of ownership: an easy Italian morning, a mountain pass at speed, a red-carpet evening.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "Self-Growing Websites by Greta.sh",
+    "url": "https://www.producthunt.com/products/gretabyquestera",
+    "note": "Build a website that can do its own SEO & AEO automatically",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "Donchitos/Claude-Code-Game-Studios",
-    "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
-    "image": "https://opengraph.githubassets.com/1/Donchitos/Claude-Code-Game-Studios",
-    "by": "★ 742 today",
-    "note": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "agentmash",
-    "url": "https://www.producthunt.com/products/agentmash",
-    "note": "open-source multiplayer AI for teams' coding agents",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "pingdotgg/t3code",
-    "url": "https://github.com/pingdotgg/t3code",
-    "image": "https://opengraph.githubassets.com/1/pingdotgg/t3code",
-    "by": "★ 1,148 today",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "magpie",
-    "url": "https://www.producthunt.com/products/magpie-14",
-    "note": "everything you’ve saved, in one visual library",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "Renhuai123/ziwei-doushu",
-    "url": "https://github.com/Renhuai123/ziwei-doushu",
-    "image": "https://opengraph.githubassets.com/1/Renhuai123/ziwei-doushu",
-    "by": "★ 1,092 today",
-    "note": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Usage for Claude + ChatGPT 4.0",
-    "url": "https://www.producthunt.com/products/usage-for-claude",
-    "note": "Claude + ChatGPT limits on your Mac, iPhone, iPad and Watch",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "milind-soni/OpenMausBot",
-    "url": "https://github.com/milind-soni/OpenMausBot",
-    "image": "https://opengraph.githubassets.com/1/milind-soni/OpenMausBot",
-    "by": "★ 1,303 today",
-    "note": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+    "title": "hyprwm/Hyprland",
+    "url": "https://github.com/hyprwm/Hyprland",
+    "image": "https://opengraph.githubassets.com/1/hyprwm/Hyprland",
+    "by": "★ 508 today",
+    "note": "Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.",
     "source": "GitHub Trending",
     "kind": "trending"
    }
   ],
   "landing": [
+   {
+    "title": "Grids",
+    "url": "https://www.awwwards.com/sites/grids-1",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6aa7d6e36002d509691780.jpg",
+    "note": "Grids is an interactive project exploring grids, composition, and key design principles through visual experiments.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "Badgey",
+    "url": "https://onepagelove.com/badgey",
+    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/10/opl-screenshot-badgey-your-1793196271854-desktop.jpg",
+    "note": "Badgey is an iPhone app that displays a name badge that rotates based on device orientation for wearing on lanyards or in pockets, shareable via QR code. The website has colorful floating badges, rota",
+    "source": "One Page Love",
+    "kind": "gallery"
+   },
+   {
+    "title": "Widgeteer",
+    "url": "https://www.producthunt.com/products/widgeteer",
+    "note": "Describe a widget, get a working one on your site",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "Dont Look up game",
+    "url": "https://www.awwwards.com/sites/dont-look-up-game",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6a9ed57f51a76420786025.jpg",
+    "note": "You are very rich, very tall, and standing on quite a lot of people. Keep them entertained enough not to look up, and collect a trillion. A game about the price of attention.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "SUPORTE",
+    "url": "https://onepagelove.com/suporte",
+    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/10/opl-screenshot-suporte-1793123226376-desktop.jpg",
+    "note": "SUPORTE is a Brazilian boutique public-relations agency offering press relations, influencer marketing, branded content, events and data-led communication strategy. Its fashion-editorial presentation ",
+    "source": "One Page Love",
+    "kind": "gallery"
+   },
+   {
+    "title": "Help",
+    "url": "https://www.producthunt.com/products/help-381",
+    "note": "The app designed for targeted and transparent help",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "MECHA",
+    "url": "https://www.awwwards.com/sites/mecha",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6aa7eda51c421159920632.jpg",
+    "note": "Mecha deploys physical automation into legacy industries. We created strategy, branding, and web design for them.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
    {
     "title": "Christoph Mandl",
     "url": "https://onepagelove.com/christoph-mandl",
@@ -108,11 +163,19 @@
     "kind": "gallery"
    },
    {
-    "title": "Click",
-    "url": "https://www.producthunt.com/products/click-6",
-    "note": "Managed agents API that works with any model",
+    "title": "Agent Inbox",
+    "url": "https://www.producthunt.com/products/agent-inbox",
+    "note": "Give your agent an email address, Slack and Telegram handle",
     "source": "Product Hunt · Today",
     "kind": "trending"
+   },
+   {
+    "title": "Spyker Cars",
+    "url": "https://www.awwwards.com/sites/spyker-cars",
+    "image": "https://www.awwwards.com/awards/submissions/2026/08/6a914a3ee8da2510874104.png",
+    "note": "Most only see a Spyker in images, so we built a digital experience that hands them the keys. A day of ownership: an easy Italian morning, a mountain pass at speed, a red-carpet evening.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
    },
    {
     "title": "Mathias Adolfsson",
@@ -123,78 +186,34 @@
     "kind": "gallery"
    },
    {
-    "title": "Embage",
-    "url": "https://www.producthunt.com/products/embage",
-    "note": "Build agent for your customers, run workflows, analyzed.",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "Kelvin",
-    "url": "https://onepagelove.com/kelvin",
-    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/10/opl-screenshot-kelvin-1793108732846-desktop.jpg",
-    "note": "Kelvin, a music festival in Rotterdam using thermal cameras to film performances and project them onto a former power station. This design combines thermal color gradients, overlapping information pan",
-    "source": "One Page Love",
-    "kind": "gallery"
-   },
-   {
-    "title": "Precise Edit by Ideogram",
-    "url": "https://www.producthunt.com/products/ideogram",
-    "note": "Precise editing with context window",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "Voice Tag Gods",
-    "url": "https://onepagelove.com/voice-tag-gods",
-    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/10/voicetags-landing-page-preview.png",
-    "note": "Voice Tag Gods provides custom producer tags, voice overs, and DJ drops from professional vocalists. The design combines enormous expressive typography, scattered artist imagery, vivid accent colors, ",
-    "source": "One Page Love",
-    "kind": "gallery"
-   },
-   {
-    "title": "agentmash",
-    "url": "https://www.producthunt.com/products/agentmash",
-    "note": "open-source multiplayer AI for teams' coding agents",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "Angelo",
-    "url": "https://onepagelove.com/angelo",
-    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/10/opl-screenshot-design-tomorrow-1793187456245-desktop.jpg",
-    "note": "Angelo’s website is an interactive product-design portfolio. The website presents each project as a glossy floating sphere, combining generous white space, translucent materials, smooth animated case-",
-    "source": "One Page Love",
-    "kind": "gallery"
-   },
-   {
-    "title": "magpie",
-    "url": "https://www.producthunt.com/products/magpie-14",
-    "note": "everything you’ve saved, in one visual library",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "mappy",
-    "url": "https://onepagelove.com/mappy",
-    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/10/mappy-landing-page-preview.png",
-    "note": "Mappy is a local mind-map app for organizing notes and visual thinking. The landing page resembles an interactive presentation, combining enormous typography, changing full-screen colors, a persistent",
-    "source": "One Page Love",
-    "kind": "gallery"
-   },
-   {
-    "title": "Usage for Claude + ChatGPT 4.0",
-    "url": "https://www.producthunt.com/products/usage-for-claude",
-    "note": "Claude + ChatGPT limits on your Mac, iPhone, iPad and Watch",
+    "title": "Self-Growing Websites by Greta.sh",
+    "url": "https://www.producthunt.com/products/gretabyquestera",
+    "note": "Build a website that can do its own SEO & AEO automatically",
     "source": "Product Hunt · Today",
     "kind": "trending"
    }
   ],
   "app": [
    {
-    "title": "Click",
-    "url": "https://www.producthunt.com/products/click-6",
-    "note": "Managed agents API that works with any model",
+    "title": "Widgeteer",
+    "url": "https://www.producthunt.com/products/widgeteer",
+    "note": "Describe a widget, get a working one on your site",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "vercel-labs/agent-desktop",
+    "url": "https://github.com/vercel-labs/agent-desktop",
+    "image": "https://opengraph.githubassets.com/1/vercel-labs/agent-desktop",
+    "by": "★ 2,243 today",
+    "note": "Agent Desktop gives any agent reliable computer use on the desktop. Built with Rust, it sees any app's real UI structure through OS accessibility trees and operates it — refs stay stable and actions s",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "Help",
+    "url": "https://www.producthunt.com/products/help-381",
+    "note": "The app designed for targeted and transparent help",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -202,31 +221,47 @@
     "title": "thedotmack/claude-mem",
     "url": "https://github.com/thedotmack/claude-mem",
     "image": "https://opengraph.githubassets.com/1/thedotmack/claude-mem",
-    "by": "★ 1,723 today",
+    "by": "★ 1,799 today",
     "note": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Clau",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Embage",
-    "url": "https://www.producthunt.com/products/embage",
-    "note": "Build agent for your customers, run workflows, analyzed.",
+    "title": "Agent Inbox",
+    "url": "https://www.producthunt.com/products/agent-inbox",
+    "note": "Give your agent an email address, Slack and Telegram handle",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "mattpocock/skills",
-    "url": "https://github.com/mattpocock/skills",
-    "image": "https://opengraph.githubassets.com/1/mattpocock/skills",
-    "by": "★ 883 today",
-    "note": "Skills for Real Engineers. Straight from my .agents directory.",
+    "title": "D4Vinci/Scrapling",
+    "url": "https://github.com/D4Vinci/Scrapling",
+    "image": "https://opengraph.githubassets.com/1/D4Vinci/Scrapling",
+    "by": "★ 892 today",
+    "note": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and trick",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Precise Edit by Ideogram",
-    "url": "https://www.producthunt.com/products/ideogram",
-    "note": "Precise editing with context window",
+    "title": "Self-Growing Websites by Greta.sh",
+    "url": "https://www.producthunt.com/products/gretabyquestera",
+    "note": "Build a website that can do its own SEO & AEO automatically",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "hyprwm/Hyprland",
+    "url": "https://github.com/hyprwm/Hyprland",
+    "image": "https://opengraph.githubassets.com/1/hyprwm/Hyprland",
+    "by": "★ 508 today",
+    "note": "Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "CuriousLM",
+    "url": "https://www.producthunt.com/products/curiouslm",
+    "note": "Private AI that runs on your device. No account.",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -234,55 +269,24 @@
     "title": "Donchitos/Claude-Code-Game-Studios",
     "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
     "image": "https://opengraph.githubassets.com/1/Donchitos/Claude-Code-Game-Studios",
-    "by": "★ 742 today",
+    "by": "★ 1,380 today",
     "note": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "agentmash",
-    "url": "https://www.producthunt.com/products/agentmash",
-    "note": "open-source multiplayer AI for teams' coding agents",
+    "title": "Hyperresearch",
+    "url": "https://www.producthunt.com/products/hyperresearch",
+    "note": "Durable, verified agentic search",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "pingdotgg/t3code",
-    "url": "https://github.com/pingdotgg/t3code",
-    "image": "https://opengraph.githubassets.com/1/pingdotgg/t3code",
-    "by": "★ 1,148 today",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "magpie",
-    "url": "https://www.producthunt.com/products/magpie-14",
-    "note": "everything you’ve saved, in one visual library",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "Renhuai123/ziwei-doushu",
-    "url": "https://github.com/Renhuai123/ziwei-doushu",
-    "image": "https://opengraph.githubassets.com/1/Renhuai123/ziwei-doushu",
-    "by": "★ 1,092 today",
-    "note": "紫微斗数开源排盘引擎 — 基于倪海厦《天纪》体系，含完整排盘算法、四化系统、格局知识库、古籍原文数据",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Usage for Claude + ChatGPT 4.0",
-    "url": "https://www.producthunt.com/products/usage-for-claude",
-    "note": "Claude + ChatGPT limits on your Mac, iPhone, iPad and Watch",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "milind-soni/OpenMausBot",
-    "url": "https://github.com/milind-soni/OpenMausBot",
-    "image": "https://opengraph.githubassets.com/1/milind-soni/OpenMausBot",
-    "by": "★ 1,303 today",
-    "note": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+    "title": "FlashML-org/FreeToken",
+    "url": "https://github.com/FlashML-org/FreeToken",
+    "image": "https://opengraph.githubassets.com/1/FlashML-org/FreeToken",
+    "by": "★ 654 today",
+    "note": "FreeToken brings datacenter-scale model serving to your desktop. Run massive models locally, fast and efficiently.",
     "source": "GitHub Trending",
     "kind": "trending"
    }
@@ -306,10 +310,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Em Cooper & Tonic DNA Paint a True Romance for Porsche",
-    "url": "https://www.stashmedia.tv/em-cooper-tonic-dna-paint-a-true-romance-for-porsche/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Porsche-The-Long-Way-to-I-Do-commercial-by-Em-Cooper-and-Tonic-DNA-STASH-MAGAZINE6-1920x1080.jpg",
-    "note": "Working with Montreal studio Tonic DNA, British director/artist Em Cooper (whose Beatles video we featured in Stash 157), uses her signature animated oil paintings to amplify the real-life romance in ",
+    "title": "Henry Scholfield & SAGA Track Crown Royal Through Time",
+    "url": "https://www.stashmedia.tv/henry-scholfield-saga-track-crown-royal-through-time/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Crown-Royal-Always-Been-Here-CG-commercial-by-Henry-Scholfield-and-SAGA-STASH-MAGAZINE-1920x804.jpg",
+    "note": "Working with Spy Films director Henry Scholfield, Toronto motion design studio SAGA conjures an obsessively-detailed, nine-decade, CG journey through Canadian Life for the venerable blended whisky bra",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -330,10 +334,10 @@
     "kind": "gallery"
    },
    {
-    "title": "We Love Pitching: Chronicles of a Necessary Mess – Part 23",
-    "url": "https://www.stashmedia.tv/we-love-pitching-chronicles-of-a-necessary-mess-part-23/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/We-Love-Pitching-Part-23-Guest-editorial-by-Claus-Cibilis-_-STASH-MAGAZINE-1446x1080.jpg",
-    "note": "Nerdo ECD Claus Cibils continues his careful dissection of the creative pitching ecosystem with his latest Stash editorial, looking at the process from the winner's perspective: what can be learned, w",
+    "title": "Em Cooper & Tonic DNA Paint a True Romance for Porsche",
+    "url": "https://www.stashmedia.tv/em-cooper-tonic-dna-paint-a-true-romance-for-porsche/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Porsche-The-Long-Way-to-I-Do-commercial-by-Em-Cooper-and-Tonic-DNA-STASH-MAGAZINE6-1920x1080.jpg",
+    "note": "Working with Montreal studio Tonic DNA, British director/artist Em Cooper (whose Beatles video we featured in Stash 157), uses her signature animated oil paintings to amplify the real-life romance in ",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -354,10 +358,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Animation Icon Bill Plympton is Back With a Trippy Music Video for Average Friends",
-    "url": "https://www.stashmedia.tv/animation-icon-bill-plympton-is-back-with-a-trippy-music-video-for-average-friends/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Average-Friends-u-know-i-luv-u-music-video-by-Bill-Plympton-STASH-MAGAZINE4-1920x1080.jpg",
-    "note": "Fifty-plus year's into his animation career, Bill Plympton (the rightfully self-proclaimed King of Indie Animation, who turned 80 in April) just dropped this wonderfully warped music video for Califor",
+    "title": "We Love Pitching: Chronicles of a Necessary Mess – Part 23",
+    "url": "https://www.stashmedia.tv/we-love-pitching-chronicles-of-a-necessary-mess-part-23/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/We-Love-Pitching-Part-23-Guest-editorial-by-Claus-Cibilis-_-STASH-MAGAZINE-1446x1080.jpg",
+    "note": "Nerdo ECD Claus Cibils continues his careful dissection of the creative pitching ecosystem with his latest Stash editorial, looking at the process from the winner's perspective: what can be learned, w",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -365,7 +369,7 @@
     "title": "The new MacBook Pro with M6 delivers blazing-fast performance and up to 24 hours of battery life.",
     "url": "https://www.youtube.com/watch?v=vT-o5hh1cVc",
     "image": "https://i.ytimg.com/vi/vT-o5hh1cVc/hqdefault.jpg",
-    "by": "922K views",
+    "by": "927K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -378,10 +382,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Fun & Color in Style: Lumbre Keeps it Mega for Mega Chile",
-    "url": "https://www.stashmedia.tv/fun-color-in-style-lumbre-keeps-it-mega-for-mega-chile/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Mega-Chile-rebrand-by-by-Lumbre-STASH-MAGAZINE4-1920x1080.jpg",
-    "note": "Chilean broadcaster Mega and their family of channels and platforms get an infusion of vibrant, stylish fun in this redesign of their on-air graphics and brand system by the CG motion crew at Lumbre i",
+    "title": "Animation Icon Bill Plympton is Back With a Trippy Music Video for Average Friends",
+    "url": "https://www.stashmedia.tv/animation-icon-bill-plympton-is-back-with-a-trippy-music-video-for-average-friends/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Average-Friends-u-know-i-luv-u-music-video-by-Bill-Plympton-STASH-MAGAZINE4-1920x1080.jpg",
+    "note": "Fifty-plus year's into his animation career, Bill Plympton (the rightfully self-proclaimed King of Indie Animation, who turned 80 in April) just dropped this wonderfully warped music video for Califor",
     "source": "STASH",
     "kind": "gallery"
    }
@@ -395,10 +399,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Em Cooper & Tonic DNA Paint a True Romance for Porsche",
-    "url": "https://www.stashmedia.tv/em-cooper-tonic-dna-paint-a-true-romance-for-porsche/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Porsche-The-Long-Way-to-I-Do-commercial-by-Em-Cooper-and-Tonic-DNA-STASH-MAGAZINE6-1920x1080.jpg",
-    "note": "Working with Montreal studio Tonic DNA, British director/artist Em Cooper (whose Beatles video we featured in Stash 157), uses her signature animated oil paintings to amplify the real-life romance in ",
+    "title": "Henry Scholfield & SAGA Track Crown Royal Through Time",
+    "url": "https://www.stashmedia.tv/henry-scholfield-saga-track-crown-royal-through-time/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Crown-Royal-Always-Been-Here-CG-commercial-by-Henry-Scholfield-and-SAGA-STASH-MAGAZINE-1920x804.jpg",
+    "note": "Working with Spy Films director Henry Scholfield, Toronto motion design studio SAGA conjures an obsessively-detailed, nine-decade, CG journey through Canadian Life for the venerable blended whisky bra",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -418,10 +422,10 @@
     "kind": "gallery"
    },
    {
-    "title": "We Love Pitching: Chronicles of a Necessary Mess – Part 23",
-    "url": "https://www.stashmedia.tv/we-love-pitching-chronicles-of-a-necessary-mess-part-23/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/We-Love-Pitching-Part-23-Guest-editorial-by-Claus-Cibilis-_-STASH-MAGAZINE-1446x1080.jpg",
-    "note": "Nerdo ECD Claus Cibils continues his careful dissection of the creative pitching ecosystem with his latest Stash editorial, looking at the process from the winner's perspective: what can be learned, w",
+    "title": "Em Cooper & Tonic DNA Paint a True Romance for Porsche",
+    "url": "https://www.stashmedia.tv/em-cooper-tonic-dna-paint-a-true-romance-for-porsche/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Porsche-The-Long-Way-to-I-Do-commercial-by-Em-Cooper-and-Tonic-DNA-STASH-MAGAZINE6-1920x1080.jpg",
+    "note": "Working with Montreal studio Tonic DNA, British director/artist Em Cooper (whose Beatles video we featured in Stash 157), uses her signature animated oil paintings to amplify the real-life romance in ",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -441,10 +445,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Animation Icon Bill Plympton is Back With a Trippy Music Video for Average Friends",
-    "url": "https://www.stashmedia.tv/animation-icon-bill-plympton-is-back-with-a-trippy-music-video-for-average-friends/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Average-Friends-u-know-i-luv-u-music-video-by-Bill-Plympton-STASH-MAGAZINE4-1920x1080.jpg",
-    "note": "Fifty-plus year's into his animation career, Bill Plympton (the rightfully self-proclaimed King of Indie Animation, who turned 80 in April) just dropped this wonderfully warped music video for Califor",
+    "title": "We Love Pitching: Chronicles of a Necessary Mess – Part 23",
+    "url": "https://www.stashmedia.tv/we-love-pitching-chronicles-of-a-necessary-mess-part-23/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/We-Love-Pitching-Part-23-Guest-editorial-by-Claus-Cibilis-_-STASH-MAGAZINE-1446x1080.jpg",
+    "note": "Nerdo ECD Claus Cibils continues his careful dissection of the creative pitching ecosystem with his latest Stash editorial, looking at the process from the winner's perspective: what can be learned, w",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -465,10 +469,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Fun & Color in Style: Lumbre Keeps it Mega for Mega Chile",
-    "url": "https://www.stashmedia.tv/fun-color-in-style-lumbre-keeps-it-mega-for-mega-chile/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Mega-Chile-rebrand-by-by-Lumbre-STASH-MAGAZINE4-1920x1080.jpg",
-    "note": "Chilean broadcaster Mega and their family of channels and platforms get an infusion of vibrant, stylish fun in this redesign of their on-air graphics and brand system by the CG motion crew at Lumbre i",
+    "title": "Animation Icon Bill Plympton is Back With a Trippy Music Video for Average Friends",
+    "url": "https://www.stashmedia.tv/animation-icon-bill-plympton-is-back-with-a-trippy-music-video-for-average-friends/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Average-Friends-u-know-i-luv-u-music-video-by-Bill-Plympton-STASH-MAGAZINE4-1920x1080.jpg",
+    "note": "Fifty-plus year's into his animation career, Bill Plympton (the rightfully self-proclaimed King of Indie Animation, who turned 80 in April) just dropped this wonderfully warped music video for Califor",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -506,10 +510,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Em Cooper & Tonic DNA Paint a True Romance for Porsche",
-    "url": "https://www.stashmedia.tv/em-cooper-tonic-dna-paint-a-true-romance-for-porsche/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Porsche-The-Long-Way-to-I-Do-commercial-by-Em-Cooper-and-Tonic-DNA-STASH-MAGAZINE6-1920x1080.jpg",
-    "note": "Working with Montreal studio Tonic DNA, British director/artist Em Cooper (whose Beatles video we featured in Stash 157), uses her signature animated oil paintings to amplify the real-life romance in ",
+    "title": "Henry Scholfield & SAGA Track Crown Royal Through Time",
+    "url": "https://www.stashmedia.tv/henry-scholfield-saga-track-crown-royal-through-time/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Crown-Royal-Always-Been-Here-CG-commercial-by-Henry-Scholfield-and-SAGA-STASH-MAGAZINE-1920x804.jpg",
+    "note": "Working with Spy Films director Henry Scholfield, Toronto motion design studio SAGA conjures an obsessively-detailed, nine-decade, CG journey through Canadian Life for the venerable blended whisky bra",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -537,10 +541,10 @@
     "kind": "gallery"
    },
    {
-    "title": "We Love Pitching: Chronicles of a Necessary Mess – Part 23",
-    "url": "https://www.stashmedia.tv/we-love-pitching-chronicles-of-a-necessary-mess-part-23/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/We-Love-Pitching-Part-23-Guest-editorial-by-Claus-Cibilis-_-STASH-MAGAZINE-1446x1080.jpg",
-    "note": "Nerdo ECD Claus Cibils continues his careful dissection of the creative pitching ecosystem with his latest Stash editorial, looking at the process from the winner's perspective: what can be learned, w",
+    "title": "Em Cooper & Tonic DNA Paint a True Romance for Porsche",
+    "url": "https://www.stashmedia.tv/em-cooper-tonic-dna-paint-a-true-romance-for-porsche/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Porsche-The-Long-Way-to-I-Do-commercial-by-Em-Cooper-and-Tonic-DNA-STASH-MAGAZINE6-1920x1080.jpg",
+    "note": "Working with Montreal studio Tonic DNA, British director/artist Em Cooper (whose Beatles video we featured in Stash 157), uses her signature animated oil paintings to amplify the real-life romance in ",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -568,10 +572,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Animation Icon Bill Plympton is Back With a Trippy Music Video for Average Friends",
-    "url": "https://www.stashmedia.tv/animation-icon-bill-plympton-is-back-with-a-trippy-music-video-for-average-friends/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Average-Friends-u-know-i-luv-u-music-video-by-Bill-Plympton-STASH-MAGAZINE4-1920x1080.jpg",
-    "note": "Fifty-plus year's into his animation career, Bill Plympton (the rightfully self-proclaimed King of Indie Animation, who turned 80 in April) just dropped this wonderfully warped music video for Califor",
+    "title": "We Love Pitching: Chronicles of a Necessary Mess – Part 23",
+    "url": "https://www.stashmedia.tv/we-love-pitching-chronicles-of-a-necessary-mess-part-23/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/We-Love-Pitching-Part-23-Guest-editorial-by-Claus-Cibilis-_-STASH-MAGAZINE-1446x1080.jpg",
+    "note": "Nerdo ECD Claus Cibils continues his careful dissection of the creative pitching ecosystem with his latest Stash editorial, looking at the process from the winner's perspective: what can be learned, w",
     "source": "STASH",
     "kind": "gallery"
    }
@@ -581,7 +585,7 @@
     "title": "Monkey Bars Under A 216m Bridge 🤯",
     "url": "https://www.youtube.com/watch?v=mxV0E4fXxXk",
     "image": "https://i.ytimg.com/vi/mxV0E4fXxXk/hqdefault.jpg",
-    "by": "10M views",
+    "by": "11M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -589,7 +593,7 @@
     "title": "Narrow Cliff Jump POV 🎬 Daniel Todd #GoPro",
     "url": "https://www.youtube.com/watch?v=VWa8IaIVrNU",
     "image": "https://i.ytimg.com/vi/VWa8IaIVrNU/hqdefault.jpg",
-    "by": "1.7M views",
+    "by": "2.1M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -597,7 +601,7 @@
     "title": "Airbnb | あつまる？エアビる？｜プールでエアビる",
     "url": "https://www.youtube.com/watch?v=QS0QEqKGGIw",
     "image": "https://i.ytimg.com/vi/QS0QEqKGGIw/hqdefault.jpg",
-    "by": "1.7M views",
+    "by": "1.8M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -605,7 +609,7 @@
     "title": "Airbnb | あつまる？エアビる？｜今日はちょっと、大人忘れます。",
     "url": "https://www.youtube.com/watch?v=p8HvRJALo4Y",
     "image": "https://i.ytimg.com/vi/p8HvRJALo4Y/hqdefault.jpg",
-    "by": "1.4M views",
+    "by": "1.5M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -613,7 +617,15 @@
     "title": "You'll NEVER Guess 🤔💭",
     "url": "https://www.youtube.com/watch?v=N6fwHbi2D2U",
     "image": "https://i.ytimg.com/vi/N6fwHbi2D2U/hqdefault.jpg",
-    "by": "624K views",
+    "by": "1.3M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Dedicated To The Grind 🤝",
+    "url": "https://www.youtube.com/watch?v=MOwsqOCYkoI",
+    "image": "https://i.ytimg.com/vi/MOwsqOCYkoI/hqdefault.jpg",
+    "by": "1M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -629,7 +641,7 @@
     "title": "the capital of italy is what??",
     "url": "https://www.youtube.com/watch?v=A4I8B8tjJxc",
     "image": "https://i.ytimg.com/vi/A4I8B8tjJxc/hqdefault.jpg",
-    "by": "459K views",
+    "by": "517K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -642,10 +654,10 @@
     "kind": "performance"
    },
    {
-    "title": "Show off your work with Desk View. Tip from Kylie at the Apple Store.",
-    "url": "https://www.youtube.com/watch?v=BTyWlJJUX2I",
-    "image": "https://i.ytimg.com/vi/BTyWlJJUX2I/hqdefault.jpg",
-    "by": "310K views",
+    "title": "World's Smallest Basketball Rim 🏀",
+    "url": "https://www.youtube.com/watch?v=7gVbXK385Mk",
+    "image": "https://i.ytimg.com/vi/7gVbXK385Mk/hqdefault.jpg",
+    "by": "335K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -653,97 +665,89 @@
     "title": "make my own group, call it K/DUO",
     "url": "https://www.youtube.com/watch?v=cnuy9y8__m8",
     "image": "https://i.ytimg.com/vi/cnuy9y8__m8/hqdefault.jpg",
-    "by": "302K views",
+    "by": "334K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
    {
-    "title": "Battling The Elements ⚔️",
-    "url": "https://www.youtube.com/watch?v=6dj2vDUlyDw",
-    "image": "https://i.ytimg.com/vi/6dj2vDUlyDw/hqdefault.jpg",
-    "by": "250K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "ima start a streak, im a streakstarter",
-    "url": "https://www.youtube.com/watch?v=wk8_L6OGjew",
-    "image": "https://i.ytimg.com/vi/wk8_L6OGjew/hqdefault.jpg",
-    "by": "244K views",
+    "title": "Show off your work with Desk View. Tip from Kylie at the Apple Store.",
+    "url": "https://www.youtube.com/watch?v=BTyWlJJUX2I",
+    "image": "https://i.ytimg.com/vi/BTyWlJJUX2I/hqdefault.jpg",
+    "by": "311K views",
     "source": "Latest from brands",
     "kind": "performance"
    }
   ],
   "post": [
    {
-    "title": "An Italian farmer found some unknown seeds in his attic and planted them",
-    "url": "https://www.smithsonianmag.com/science-nature/italian-farmer-found-unknown-seeds-attic-with-nothing-lose-planted-them-result-biblical-180989644/",
+    "title": "Show HN: Wikihack – HackerTube, but for Wikipedia articles mentioned on HN",
+    "url": "https://wikihack.netlify.app",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "HackerTube: YouTube built from videos recommended by HN",
-    "url": "https://karpathy.bearblog.dev/hacker-tube/",
+    "title": "OccupySaaS",
+    "url": "https://occupysaas.com/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Anthropic blocks users for anything touching training larger models",
-    "url": "https://twitter.com/jiahaoshao1/status/2116475922190922088",
+    "title": "U.S. workers took home their smallest share of capital since at least 1947",
+    "url": "https://fortune.com/article/why-did-us-workers-just-take-home-smallest-share-of-capital-since-1947-lowest-ever-recorded/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "TCP Use-After-Free: CVE-2026-98432 / CVSS 9.8",
-    "url": "https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf",
+    "title": "AI delivers 'zero financial payoff' to most companies, Apollo economist says",
+    "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Malware uses LLMs to rank victims by how much they're worth",
-    "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/",
+    "title": "Ask HN: Which TV do you recommend for privacy?",
+    "url": "https://news.ycombinator.com/item?id=50328896",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Jepsen: ParticleDB 1.1.4",
-    "url": "https://jepsen.io/analyses/particledb-1.1.4",
+    "title": "Mathematics has changed. Let's act like it",
+    "url": "https://terrytao.wordpress.com/2026/11/01/mathematics-has-changed-lets-act-like-it/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Do the math: How we took over ChatGPT accounts",
-    "url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
+    "title": "Patrick Stewart taught us what good men do with power",
+    "url": "https://www.vox.com/politics/508526/patrick-stewart-jean-luc-picard-star-trek-liberalism",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Molly (Signal fork) has not been updated since 3 months and is vulnerable",
-    "url": "https://piefed.world/post/1503394",
+    "title": "Frontier Airlines Likely Breached",
+    "url": "https://www.reddit.com/r/frontierairlines/comments/1xl20e8/psa_email_scam/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Serbia just elected the world's brainiest parliament",
-    "url": "https://www.science.org/content/article/serbia-just-elected-world-s-brainiest-parliament",
+    "title": "Show HN: HackerBooks – HackerTube, but for books mentioned on HN",
+    "url": "https://hackerbooks.org",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Digital minimalism",
-    "url": "https://vitalik.eth.limo/general/2026/10/31/digital_minimalism.html",
+    "title": "Police chief unplugs cameras after Flock ignores contract cancellation",
+    "url": "https://www.thedrive.com/news/my-city-canceled-flocks-contract-flock-ignored-it-so-the-police-chief-unplugged-the-cameras",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Tell HN: Scribd Breached",
-    "url": "https://news.ycombinator.com/item?id=50312756",
+    "title": "Lenovo's 'encrypted' fingerprint USB is just an unencrypted SD card in a case",
+    "url": "https://www.reddit.com/r/technology/comments/1xl2pr3/lenovos_encrypted_fingerprint_usb_drive_is_just/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Show HN: To Honor Sir Patrick Stewart, Enjoy the TNG Episode Guessing Game",
-    "url": "https://tng.episodle.com/",
+    "title": "Show HN: OmniDiff – Opensource, super fast, content aware Git difftool, in Rust",
+    "url": "https://github.com/ivankovic/omnidiff",
     "source": "Hacker News · Best",
     "kind": "performance"
    }
@@ -785,7 +789,7 @@
     "title": "Airbnb | あつまる？エアビる？｜リビングでエアビる",
     "url": "https://www.youtube.com/watch?v=Mx608ORGCFA",
     "image": "https://i.ytimg.com/vi/Mx608ORGCFA/hqdefault.jpg",
-    "by": "2.1M views",
+    "by": "2.2M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
