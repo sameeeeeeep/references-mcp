@@ -1,7 +1,31 @@
 {
- "updated": "2026-11-02T11:19:05.285Z",
+ "updated": "2026-11-03T10:57:55.720Z",
  "media": {
   "ui": [
+   {
+    "title": "DeepBook",
+    "url": "https://www.awwwards.com/sites/deepbook",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6ab2967aca2c7846610426.png",
+    "note": "Creating a design system, motion graphics, and website design for DeepBook, a decentralized trading platform built on Sui.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "Hookdeck Inspect",
+    "url": "https://www.producthunt.com/products/hookdeck",
+    "note": "Free webhook tester for you and your agent",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "thedotmack/claude-mem",
+    "url": "https://github.com/thedotmack/claude-mem",
+    "image": "https://opengraph.githubassets.com/1/thedotmack/claude-mem",
+    "by": "★ 1,803 today",
+    "note": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Clau",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
    {
     "title": "Grids",
     "url": "https://www.awwwards.com/sites/grids-1",
@@ -11,9 +35,9 @@
     "kind": "award"
    },
    {
-    "title": "Widgeteer",
-    "url": "https://www.producthunt.com/products/widgeteer",
-    "note": "Describe a widget, get a working one on your site",
+    "title": "Remote Gaze",
+    "url": "https://www.producthunt.com/products/remote-gaze",
+    "note": "Your Mac on your iPad and iPhone with no in-between server",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -21,8 +45,8 @@
     "title": "vercel-labs/agent-desktop",
     "url": "https://github.com/vercel-labs/agent-desktop",
     "image": "https://opengraph.githubassets.com/1/vercel-labs/agent-desktop",
-    "by": "★ 2,243 today",
-    "note": "Agent Desktop gives any agent reliable computer use on the desktop. Built with Rust, it sees any app's real UI structure through OS accessibility trees and operates it — refs stay stable and actions s",
+    "by": "★ 2,275 today",
+    "note": "Computer use CLI for AI agents",
     "source": "GitHub Trending",
     "kind": "trending"
    },
@@ -35,18 +59,18 @@
     "kind": "award"
    },
    {
-    "title": "Help",
-    "url": "https://www.producthunt.com/products/help-381",
-    "note": "The app designed for targeted and transparent help",
+    "title": "Videco",
+    "url": "https://www.producthunt.com/products/videco",
+    "note": "Turn every video into a content campaign with AI",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "thedotmack/claude-mem",
-    "url": "https://github.com/thedotmack/claude-mem",
-    "image": "https://opengraph.githubassets.com/1/thedotmack/claude-mem",
-    "by": "★ 1,799 today",
-    "note": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Clau",
+    "title": "max-sixty/worktrunk",
+    "url": "https://github.com/max-sixty/worktrunk",
+    "image": "https://opengraph.githubassets.com/1/max-sixty/worktrunk",
+    "by": "★ 77 today",
+    "note": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
     "source": "GitHub Trending",
     "kind": "trending"
    },
@@ -59,47 +83,46 @@
     "kind": "award"
    },
    {
-    "title": "Agent Inbox",
-    "url": "https://www.producthunt.com/products/agent-inbox",
-    "note": "Give your agent an email address, Slack and Telegram handle",
+    "title": "Flockbay",
+    "url": "https://www.producthunt.com/products/flockbay",
+    "note": "Free AI game maker built on Godot",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "D4Vinci/Scrapling",
-    "url": "https://github.com/D4Vinci/Scrapling",
-    "image": "https://opengraph.githubassets.com/1/D4Vinci/Scrapling",
-    "by": "★ 892 today",
-    "note": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and trick",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Spyker Cars",
-    "url": "https://www.awwwards.com/sites/spyker-cars",
-    "image": "https://www.awwwards.com/awards/submissions/2026/08/6a914a3ee8da2510874104.png",
-    "note": "Most only see a Spyker in images, so we built a digital experience that hands them the keys. A day of ownership: an easy Italian morning, a mountain pass at speed, a red-carpet evening.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
-   },
-   {
-    "title": "Self-Growing Websites by Greta.sh",
-    "url": "https://www.producthunt.com/products/gretabyquestera",
-    "note": "Build a website that can do its own SEO & AEO automatically",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "hyprwm/Hyprland",
-    "url": "https://github.com/hyprwm/Hyprland",
-    "image": "https://opengraph.githubassets.com/1/hyprwm/Hyprland",
-    "by": "★ 508 today",
-    "note": "Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.",
+    "title": "JustVugg/colibri",
+    "url": "https://github.com/JustVugg/colibri",
+    "image": "https://opengraph.githubassets.com/1/JustVugg/colibri",
+    "by": "★ 675 today",
+    "note": "A hierarchical inference engine for frontier MoE models: hot experts on the GPU (CUDA, Vulkan), warm ones in RAM, cold ones streamed from NVMe. Written in C, runs on the hardware you already own.",
     "source": "GitHub Trending",
     "kind": "trending"
    }
   ],
   "landing": [
+   {
+    "title": "DeepBook",
+    "url": "https://www.awwwards.com/sites/deepbook",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6ab2967aca2c7846610426.png",
+    "note": "Creating a design system, motion graphics, and website design for DeepBook, a decentralized trading platform built on Sui.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "Made by Igor",
+    "url": "https://onepagelove.com/made-by-igor",
+    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/10/opl-screenshot-made-igor-1793260817051-desktop.jpg",
+    "note": "Made by Igor is the experimental portfolio of creative developer and digital designer Igor Kovačević, showcasing motion-led interfaces, frontend engineering, and custom management systems. Its design ",
+    "source": "One Page Love",
+    "kind": "gallery"
+   },
+   {
+    "title": "Hookdeck Inspect",
+    "url": "https://www.producthunt.com/products/hookdeck",
+    "note": "Free webhook tester for you and your agent",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
    {
     "title": "Grids",
     "url": "https://www.awwwards.com/sites/grids-1",
@@ -117,9 +140,9 @@
     "kind": "gallery"
    },
    {
-    "title": "Widgeteer",
-    "url": "https://www.producthunt.com/products/widgeteer",
-    "note": "Describe a widget, get a working one on your site",
+    "title": "Remote Gaze",
+    "url": "https://www.producthunt.com/products/remote-gaze",
+    "note": "Your Mac on your iPad and iPhone with no in-between server",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -140,9 +163,9 @@
     "kind": "gallery"
    },
    {
-    "title": "Help",
-    "url": "https://www.producthunt.com/products/help-381",
-    "note": "The app designed for targeted and transparent help",
+    "title": "Videco",
+    "url": "https://www.producthunt.com/products/videco",
+    "note": "Turn every video into a content campaign with AI",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -163,57 +186,18 @@
     "kind": "gallery"
    },
    {
-    "title": "Agent Inbox",
-    "url": "https://www.producthunt.com/products/agent-inbox",
-    "note": "Give your agent an email address, Slack and Telegram handle",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "Spyker Cars",
-    "url": "https://www.awwwards.com/sites/spyker-cars",
-    "image": "https://www.awwwards.com/awards/submissions/2026/08/6a914a3ee8da2510874104.png",
-    "note": "Most only see a Spyker in images, so we built a digital experience that hands them the keys. A day of ownership: an easy Italian morning, a mountain pass at speed, a red-carpet evening.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
-   },
-   {
-    "title": "Mathias Adolfsson",
-    "url": "https://onepagelove.com/mathias-adolfsson",
-    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/10/opl-screenshot-mathias-adolfsson-1793119910077-desktop.jpg",
-    "note": "Mathias Adolfsson’s website is an immersive portfolio for a freelance creative engineer. It presents projects through a cinematic horizontal carousel with curved three-dimensional panels, full-screen ",
-    "source": "One Page Love",
-    "kind": "gallery"
-   },
-   {
-    "title": "Self-Growing Websites by Greta.sh",
-    "url": "https://www.producthunt.com/products/gretabyquestera",
-    "note": "Build a website that can do its own SEO & AEO automatically",
+    "title": "Flockbay",
+    "url": "https://www.producthunt.com/products/flockbay",
+    "note": "Free AI game maker built on Godot",
     "source": "Product Hunt · Today",
     "kind": "trending"
    }
   ],
   "app": [
    {
-    "title": "Widgeteer",
-    "url": "https://www.producthunt.com/products/widgeteer",
-    "note": "Describe a widget, get a working one on your site",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "vercel-labs/agent-desktop",
-    "url": "https://github.com/vercel-labs/agent-desktop",
-    "image": "https://opengraph.githubassets.com/1/vercel-labs/agent-desktop",
-    "by": "★ 2,243 today",
-    "note": "Agent Desktop gives any agent reliable computer use on the desktop. Built with Rust, it sees any app's real UI structure through OS accessibility trees and operates it — refs stay stable and actions s",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Help",
-    "url": "https://www.producthunt.com/products/help-381",
-    "note": "The app designed for targeted and transparent help",
+    "title": "Hookdeck Inspect",
+    "url": "https://www.producthunt.com/products/hookdeck",
+    "note": "Free webhook tester for you and your agent",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -221,72 +205,88 @@
     "title": "thedotmack/claude-mem",
     "url": "https://github.com/thedotmack/claude-mem",
     "image": "https://opengraph.githubassets.com/1/thedotmack/claude-mem",
-    "by": "★ 1,799 today",
+    "by": "★ 1,803 today",
     "note": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Clau",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Agent Inbox",
-    "url": "https://www.producthunt.com/products/agent-inbox",
-    "note": "Give your agent an email address, Slack and Telegram handle",
+    "title": "Remote Gaze",
+    "url": "https://www.producthunt.com/products/remote-gaze",
+    "note": "Your Mac on your iPad and iPhone with no in-between server",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "D4Vinci/Scrapling",
-    "url": "https://github.com/D4Vinci/Scrapling",
-    "image": "https://opengraph.githubassets.com/1/D4Vinci/Scrapling",
-    "by": "★ 892 today",
-    "note": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and trick",
+    "title": "vercel-labs/agent-desktop",
+    "url": "https://github.com/vercel-labs/agent-desktop",
+    "image": "https://opengraph.githubassets.com/1/vercel-labs/agent-desktop",
+    "by": "★ 2,275 today",
+    "note": "Computer use CLI for AI agents",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Self-Growing Websites by Greta.sh",
-    "url": "https://www.producthunt.com/products/gretabyquestera",
-    "note": "Build a website that can do its own SEO & AEO automatically",
+    "title": "Videco",
+    "url": "https://www.producthunt.com/products/videco",
+    "note": "Turn every video into a content campaign with AI",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "hyprwm/Hyprland",
-    "url": "https://github.com/hyprwm/Hyprland",
-    "image": "https://opengraph.githubassets.com/1/hyprwm/Hyprland",
-    "by": "★ 508 today",
-    "note": "Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.",
+    "title": "max-sixty/worktrunk",
+    "url": "https://github.com/max-sixty/worktrunk",
+    "image": "https://opengraph.githubassets.com/1/max-sixty/worktrunk",
+    "by": "★ 77 today",
+    "note": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "CuriousLM",
-    "url": "https://www.producthunt.com/products/curiouslm",
-    "note": "Private AI that runs on your device. No account.",
+    "title": "Flockbay",
+    "url": "https://www.producthunt.com/products/flockbay",
+    "note": "Free AI game maker built on Godot",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "Donchitos/Claude-Code-Game-Studios",
-    "url": "https://github.com/Donchitos/Claude-Code-Game-Studios",
-    "image": "https://opengraph.githubassets.com/1/Donchitos/Claude-Code-Game-Studios",
-    "by": "★ 1,380 today",
-    "note": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
+    "title": "JustVugg/colibri",
+    "url": "https://github.com/JustVugg/colibri",
+    "image": "https://opengraph.githubassets.com/1/JustVugg/colibri",
+    "by": "★ 675 today",
+    "note": "A hierarchical inference engine for frontier MoE models: hot experts on the GPU (CUDA, Vulkan), warm ones in RAM, cold ones streamed from NVMe. Written in C, runs on the hardware you already own.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Hyperresearch",
-    "url": "https://www.producthunt.com/products/hyperresearch",
-    "note": "Durable, verified agentic search",
+    "title": "Peji",
+    "url": "https://www.producthunt.com/products/peji",
+    "note": "An AI chat with a real browser you control",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "FlashML-org/FreeToken",
-    "url": "https://github.com/FlashML-org/FreeToken",
-    "image": "https://opengraph.githubassets.com/1/FlashML-org/FreeToken",
-    "by": "★ 654 today",
-    "note": "FreeToken brings datacenter-scale model serving to your desktop. Run massive models locally, fast and efficiently.",
+    "title": "mattpocock/skills",
+    "url": "https://github.com/mattpocock/skills",
+    "image": "https://opengraph.githubassets.com/1/mattpocock/skills",
+    "by": "★ 858 today",
+    "note": "Skills for Real Engineers. Straight from my .agents directory.",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "Akema",
+    "url": "https://www.producthunt.com/products/akema",
+    "note": "Read-only Kafka message inspection & analytics",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "p-e-w/heretic",
+    "url": "https://github.com/p-e-w/heretic",
+    "image": "https://opengraph.githubassets.com/1/p-e-w/heretic",
+    "by": "★ 420 today",
+    "note": "Training-free language model modification: Remove censorship, suppress slop, reduce sycophancy, and more",
     "source": "GitHub Trending",
     "kind": "trending"
    }
@@ -302,18 +302,18 @@
     "kind": "performance"
    },
    {
-    "title": "Pen Mari",
-    "url": "https://vimeo.com/channels/staffpicks/1239544587",
-    "image": "https://i.vimeocdn.com/video/2218670818-0046deb2527934cc3cb0e5ebc6aa7b03e7599609c27d0326c867f34649208f27-d_960?region=us",
-    "note": "In the desperate search for a horse&rsquo;s skull to lead an ancient folk procession, a man is drawn into the black market for animal body parts.   Si&ocirc;n Marshall-Waters&hellip;",
+    "title": "Fog Eaters",
+    "url": "https://vimeo.com/channels/staffpicks/1239949444",
+    "image": "https://i.vimeocdn.com/video/2218872616-aa8cdff3ac1f2ea0a609e9db4ab52d64698a671566f1c11a41ced34e6d5c162c-d_960?region=us",
+    "note": "Documentary / 2026 / Directed by Kyle Baker  When environmental toxicologists on the California coast discover high levels of mercury in mountain lions, a hunt through&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
    {
-    "title": "Henry Scholfield & SAGA Track Crown Royal Through Time",
-    "url": "https://www.stashmedia.tv/henry-scholfield-saga-track-crown-royal-through-time/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Crown-Royal-Always-Been-Here-CG-commercial-by-Henry-Scholfield-and-SAGA-STASH-MAGAZINE-1920x804.jpg",
-    "note": "Working with Spy Films director Henry Scholfield, Toronto motion design studio SAGA conjures an obsessively-detailed, nine-decade, CG journey through Canadian Life for the venerable blended whisky bra",
+    "title": "Merijn Hos’s Flora Takes Flight for Down The Rabbit Hole",
+    "url": "https://www.stashmedia.tv/merijn-hoss-flora-takes-flight-for-down-the-rabbit-hole/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Down-The-Rabbit-Hole-festival-trailer-by-Merijn-Hos-STASH-MAGAZINE3-1920x1080.jpg",
+    "note": "The 2026 edition of Down the Rabbit Hole (DTRH), a three-day music festival in The Netherlands, rolled out this summer wrapped in branding rich in organic fantasy courtesy of Utrecht-based artist/illu",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -326,18 +326,17 @@
     "kind": "performance"
    },
    {
-    "title": "Sweet Tooth",
-    "url": "https://vimeo.com/channels/staffpicks/1238017560",
-    "image": "https://i.vimeocdn.com/video/2215011045-8f9244317c62e1a0b9a64cdf1c9600f7e376cfdb1e1059e67593272812c521d4-d_960?region=us",
-    "note": "Elin's upstairs neighbors are getting on her nerves...  Sweet Tooth premiered at the Fantasia International Film Festival in 2017 and was subsequently acquired&hellip;",
+    "title": "Pen Mari",
+    "url": "https://vimeo.com/channels/staffpicks/1239544587",
+    "image": "https://i.vimeocdn.com/video/2218670818-0046deb2527934cc3cb0e5ebc6aa7b03e7599609c27d0326c867f34649208f27-d_960?region=us",
+    "note": "In the desperate search for a horse&rsquo;s skull to lead an ancient folk procession, a man is drawn into the black market for animal body parts.   Si&ocirc;n Marshall-Waters&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
    {
-    "title": "Em Cooper & Tonic DNA Paint a True Romance for Porsche",
-    "url": "https://www.stashmedia.tv/em-cooper-tonic-dna-paint-a-true-romance-for-porsche/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Porsche-The-Long-Way-to-I-Do-commercial-by-Em-Cooper-and-Tonic-DNA-STASH-MAGAZINE6-1920x1080.jpg",
-    "note": "Working with Montreal studio Tonic DNA, British director/artist Em Cooper (whose Beatles video we featured in Stash 157), uses her signature animated oil paintings to amplify the real-life romance in ",
+    "title": "Versus Launches New Quarterly Print Magazine “WE ARE”",
+    "url": "https://www.stashmedia.tv/versus-launches-new-quartery-print-magazine-we-are/",
+    "note": "From the release: In a world of endless content, instant gratification and AI-generated everything, creative studio Versus is making a case for slowing down. Introducing WE ARE, a new 170-page quarter",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -350,6 +349,30 @@
     "kind": "performance"
    },
    {
+    "title": "Sweet Tooth",
+    "url": "https://vimeo.com/channels/staffpicks/1238017560",
+    "image": "https://i.vimeocdn.com/video/2215011045-8f9244317c62e1a0b9a64cdf1c9600f7e376cfdb1e1059e67593272812c521d4-d_960?region=us",
+    "note": "Elin's upstairs neighbors are getting on her nerves...  Sweet Tooth premiered at the Fantasia International Film Festival in 2017 and was subsequently acquired&hellip;",
+    "source": "Vimeo Staff Picks",
+    "kind": "gallery"
+   },
+   {
+    "title": "Sam Brown & Electric Theatre Collective Keep the BFG in Sainsbury’s Christmas",
+    "url": "https://www.stashmedia.tv/sam-brown-electric-theatre-collective-keep-the-bfg-in-sainsburys-christmas/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Sainsburys-BFG-Christmas-ad-2026-by-Sam-Brown-Electric-Theatre-Collective-STASH-MAGAZINE5-1920x1080.jpg",
+    "note": "The annual UK holiday advertising wars commenced this week with the creature animation team at Electric Theatre Collective and their collaboration with Rogue Films' director Sam Brown for Sainsbury's ",
+    "source": "STASH",
+    "kind": "gallery"
+   },
+   {
+    "title": "The new MacBook Pro with M6 delivers blazing-fast performance and up to 24 hours of battery life.",
+    "url": "https://www.youtube.com/watch?v=vT-o5hh1cVc",
+    "image": "https://i.ytimg.com/vi/vT-o5hh1cVc/hqdefault.jpg",
+    "by": "930K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
     "title": "Sisowath Quay",
     "url": "https://vimeo.com/channels/staffpicks/1226740492",
     "image": "https://i.vimeocdn.com/video/2200813656-24305dbeaee2592bf31bb314bd256e5b48e368490a10873c3a902117f42e2f6f-d_960?region=us",
@@ -358,51 +381,28 @@
     "kind": "gallery"
    },
    {
-    "title": "We Love Pitching: Chronicles of a Necessary Mess – Part 23",
-    "url": "https://www.stashmedia.tv/we-love-pitching-chronicles-of-a-necessary-mess-part-23/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/We-Love-Pitching-Part-23-Guest-editorial-by-Claus-Cibilis-_-STASH-MAGAZINE-1446x1080.jpg",
-    "note": "Nerdo ECD Claus Cibils continues his careful dissection of the creative pitching ecosystem with his latest Stash editorial, looking at the process from the winner's perspective: what can be learned, w",
-    "source": "STASH",
-    "kind": "gallery"
-   },
-   {
-    "title": "The new MacBook Pro with M6 delivers blazing-fast performance and up to 24 hours of battery life.",
-    "url": "https://www.youtube.com/watch?v=vT-o5hh1cVc",
-    "image": "https://i.ytimg.com/vi/vT-o5hh1cVc/hqdefault.jpg",
-    "by": "927K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "Galopa",
-    "url": "https://vimeo.com/channels/staffpicks/1227172678",
-    "image": "https://i.vimeocdn.com/video/2202379673-ea260de1e99c8ad942877365c9b6d841ddbe56a84a6615ec1f67ae948895d324-d_960?region=us",
-    "note": "Sam i featuring Baby Tate &amp; MC RD music video directed by Meat Dept.",
-    "source": "Vimeo Staff Picks",
-    "kind": "gallery"
-   },
-   {
-    "title": "Animation Icon Bill Plympton is Back With a Trippy Music Video for Average Friends",
-    "url": "https://www.stashmedia.tv/animation-icon-bill-plympton-is-back-with-a-trippy-music-video-for-average-friends/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Average-Friends-u-know-i-luv-u-music-video-by-Bill-Plympton-STASH-MAGAZINE4-1920x1080.jpg",
-    "note": "Fifty-plus year's into his animation career, Bill Plympton (the rightfully self-proclaimed King of Indie Animation, who turned 80 in April) just dropped this wonderfully warped music video for Califor",
+    "title": "Henry Scholfield & SAGA Track Crown Royal Through Time",
+    "url": "https://www.stashmedia.tv/henry-scholfield-saga-track-crown-royal-through-time/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Crown-Royal-Always-Been-Here-CG-commercial-by-Henry-Scholfield-and-SAGA-STASH-MAGAZINE-1920x804.jpg",
+    "note": "Working with Spy Films director Henry Scholfield, Toronto motion design studio SAGA conjures an obsessively-detailed, nine-decade, CG journey through Canadian Life for the venerable blended whisky bra",
     "source": "STASH",
     "kind": "gallery"
    }
   ],
   "motion": [
    {
-    "title": "Lorem Ipsum Rap | F&C ai Lab",
-    "url": "https://motionographer.com/quickie/lorem-ipsum-rap-fc-ai-lab/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/10/Lorem_Ipsum_02-ezgif.com-overlay.jpg",
+    "title": "RevThink Hosts John Warrillow for a Webinar on Building a Business Buyers Want",
+    "url": "https://motionographer.com/news/revthink-john-warrillow-built-to-sell-webinar/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/revthink-john-warrillow-webinar-november-2026.png",
+    "note": "The November 4 webinar with Built to Sell author John Warrillow explores what makes a creative business valuable to buyers, with a live Q&A at 5pm ET / 2pm PT.",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "Henry Scholfield & SAGA Track Crown Royal Through Time",
-    "url": "https://www.stashmedia.tv/henry-scholfield-saga-track-crown-royal-through-time/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Crown-Royal-Always-Been-Here-CG-commercial-by-Henry-Scholfield-and-SAGA-STASH-MAGAZINE-1920x804.jpg",
-    "note": "Working with Spy Films director Henry Scholfield, Toronto motion design studio SAGA conjures an obsessively-detailed, nine-decade, CG journey through Canadian Life for the venerable blended whisky bra",
+    "title": "Merijn Hos’s Flora Takes Flight for Down The Rabbit Hole",
+    "url": "https://www.stashmedia.tv/merijn-hoss-flora-takes-flight-for-down-the-rabbit-hole/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Down-The-Rabbit-Hole-festival-trailer-by-Merijn-Hos-STASH-MAGAZINE3-1920x1080.jpg",
+    "note": "The 2026 edition of Down the Rabbit Hole (DTRH), a three-day music festival in The Netherlands, rolled out this summer wrapped in branding rich in organic fantasy courtesy of Utrecht-based artist/illu",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -415,17 +415,16 @@
     "kind": "gallery"
    },
    {
-    "title": "Food Forest – Ketelbroek | Freek Freriks",
-    "url": "https://motionographer.com/quickie/food-forest-ketelbroek-freek-freriks/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/10/food-forest-ketelbroek.png",
+    "title": "The Haunted Hotel That Sings Back: Anil Glendinning on There Are No Ghosts at the Grand",
+    "url": "https://motionographer.com/2026/11/02/the-haunted-hotel-that-sings-back-there-are-no-ghosts-at-the-grand/",
+    "note": "Friday Sundae's Anil Glendinning talks painted memories, ska, singing power tools, and the creative choices behind Tribeca Games Award winner There Are No Ghosts at the Grand.",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "Em Cooper & Tonic DNA Paint a True Romance for Porsche",
-    "url": "https://www.stashmedia.tv/em-cooper-tonic-dna-paint-a-true-romance-for-porsche/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Porsche-The-Long-Way-to-I-Do-commercial-by-Em-Cooper-and-Tonic-DNA-STASH-MAGAZINE6-1920x1080.jpg",
-    "note": "Working with Montreal studio Tonic DNA, British director/artist Em Cooper (whose Beatles video we featured in Stash 157), uses her signature animated oil paintings to amplify the real-life romance in ",
+    "title": "Versus Launches New Quarterly Print Magazine “WE ARE”",
+    "url": "https://www.stashmedia.tv/versus-launches-new-quartery-print-magazine-we-are/",
+    "note": "From the release: In a world of endless content, instant gratification and AI-generated everything, creative studio Versus is making a case for slowing down. Introducing WE ARE, a new 170-page quarter",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -438,17 +437,17 @@
     "kind": "gallery"
    },
    {
-    "title": "The Flowers Look Back: teamLab at OFFF Barcelona 2026",
-    "url": "https://motionographer.com/2026/10/21/the-flowers-look-back-teamlab-at-offf-barcelona-2026/",
-    "note": "How does an art collective open permanent museums on three continents without turning into a company? We sat down with Sakurako “Saka” Naka of teamLab at OFFF Barcelona 2026 and got an answer about or",
+    "title": "Artful Being Brings Collage Animation to Football’s Off-Pitch Careers",
+    "url": "https://motionographer.com/news/artful-being-follow-your-passion-open-university-bbc-bitesize/",
+    "note": "Danny Cato’s cut-out animation introduces teenagers to the careers behind football in an eight-part series for The Open University and BBC Bitesize.",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "We Love Pitching: Chronicles of a Necessary Mess – Part 23",
-    "url": "https://www.stashmedia.tv/we-love-pitching-chronicles-of-a-necessary-mess-part-23/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/We-Love-Pitching-Part-23-Guest-editorial-by-Claus-Cibilis-_-STASH-MAGAZINE-1446x1080.jpg",
-    "note": "Nerdo ECD Claus Cibils continues his careful dissection of the creative pitching ecosystem with his latest Stash editorial, looking at the process from the winner's perspective: what can be learned, w",
+    "title": "Sam Brown & Electric Theatre Collective Keep the BFG in Sainsbury’s Christmas",
+    "url": "https://www.stashmedia.tv/sam-brown-electric-theatre-collective-keep-the-bfg-in-sainsburys-christmas/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Sainsburys-BFG-Christmas-ad-2026-by-Sam-Brown-Electric-Theatre-Collective-STASH-MAGAZINE5-1920x1080.jpg",
+    "note": "The annual UK holiday advertising wars commenced this week with the creature animation team at Electric Theatre Collective and their collaboration with Rogue Films' director Sam Brown for Sainsbury's ",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -461,18 +460,17 @@
     "kind": "gallery"
    },
    {
-    "title": "Sekondo Puts ChatGPT and Claude Inside After Effects and Premiere Pro.",
-    "url": "https://motionographer.com/news/sekondo-puts-chatgpt-and-claude-inside-after-effects-and-premiere-pro/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/10/Sekondo_Premiere_Pro.png",
-    "note": "Córdoba-based graphic designer Jose Manuel Fernández has launched Sekondo, a plugin that connects ChatGPT and Claude to six Adobe applications: After Effects, Premiere Pro, Photoshop, Illustrator, InD",
+    "title": "Strings Cut | Nikita Didenko",
+    "url": "https://motionographer.com/quickie/strings-cut-nikita-didenko/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/strings-cut-nikita-didenko-still-1.png",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "Animation Icon Bill Plympton is Back With a Trippy Music Video for Average Friends",
-    "url": "https://www.stashmedia.tv/animation-icon-bill-plympton-is-back-with-a-trippy-music-video-for-average-friends/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Average-Friends-u-know-i-luv-u-music-video-by-Bill-Plympton-STASH-MAGAZINE4-1920x1080.jpg",
-    "note": "Fifty-plus year's into his animation career, Bill Plympton (the rightfully self-proclaimed King of Indie Animation, who turned 80 in April) just dropped this wonderfully warped music video for Califor",
+    "title": "Henry Scholfield & SAGA Track Crown Royal Through Time",
+    "url": "https://www.stashmedia.tv/henry-scholfield-saga-track-crown-royal-through-time/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Crown-Royal-Always-Been-Here-CG-commercial-by-Henry-Scholfield-and-SAGA-STASH-MAGAZINE-1920x804.jpg",
+    "note": "Working with Spy Films director Henry Scholfield, Toronto motion design studio SAGA conjures an obsessively-detailed, nine-decade, CG journey through Canadian Life for the venerable blended whisky bra",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -495,25 +493,26 @@
     "kind": "performance"
    },
    {
-    "title": "Pen Mari",
-    "url": "https://vimeo.com/channels/staffpicks/1239544587",
-    "image": "https://i.vimeocdn.com/video/2218670818-0046deb2527934cc3cb0e5ebc6aa7b03e7599609c27d0326c867f34649208f27-d_960?region=us",
-    "note": "In the desperate search for a horse&rsquo;s skull to lead an ancient folk procession, a man is drawn into the black market for animal body parts.   Si&ocirc;n Marshall-Waters&hellip;",
+    "title": "Fog Eaters",
+    "url": "https://vimeo.com/channels/staffpicks/1239949444",
+    "image": "https://i.vimeocdn.com/video/2218872616-aa8cdff3ac1f2ea0a609e9db4ab52d64698a671566f1c11a41ced34e6d5c162c-d_960?region=us",
+    "note": "Documentary / 2026 / Directed by Kyle Baker  When environmental toxicologists on the California coast discover high levels of mercury in mountain lions, a hunt through&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
    {
-    "title": "Lorem Ipsum Rap | F&C ai Lab",
-    "url": "https://motionographer.com/quickie/lorem-ipsum-rap-fc-ai-lab/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/10/Lorem_Ipsum_02-ezgif.com-overlay.jpg",
+    "title": "RevThink Hosts John Warrillow for a Webinar on Building a Business Buyers Want",
+    "url": "https://motionographer.com/news/revthink-john-warrillow-built-to-sell-webinar/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/revthink-john-warrillow-webinar-november-2026.png",
+    "note": "The November 4 webinar with Built to Sell author John Warrillow explores what makes a creative business valuable to buyers, with a live Q&A at 5pm ET / 2pm PT.",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "Henry Scholfield & SAGA Track Crown Royal Through Time",
-    "url": "https://www.stashmedia.tv/henry-scholfield-saga-track-crown-royal-through-time/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Crown-Royal-Always-Been-Here-CG-commercial-by-Henry-Scholfield-and-SAGA-STASH-MAGAZINE-1920x804.jpg",
-    "note": "Working with Spy Films director Henry Scholfield, Toronto motion design studio SAGA conjures an obsessively-detailed, nine-decade, CG journey through Canadian Life for the venerable blended whisky bra",
+    "title": "Merijn Hos’s Flora Takes Flight for Down The Rabbit Hole",
+    "url": "https://www.stashmedia.tv/merijn-hoss-flora-takes-flight-for-down-the-rabbit-hole/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Down-The-Rabbit-Hole-festival-trailer-by-Merijn-Hos-STASH-MAGAZINE3-1920x1080.jpg",
+    "note": "The 2026 edition of Down the Rabbit Hole (DTRH), a three-day music festival in The Netherlands, rolled out this summer wrapped in branding rich in organic fantasy courtesy of Utrecht-based artist/illu",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -526,25 +525,24 @@
     "kind": "performance"
    },
    {
-    "title": "Sweet Tooth",
-    "url": "https://vimeo.com/channels/staffpicks/1238017560",
-    "image": "https://i.vimeocdn.com/video/2215011045-8f9244317c62e1a0b9a64cdf1c9600f7e376cfdb1e1059e67593272812c521d4-d_960?region=us",
-    "note": "Elin's upstairs neighbors are getting on her nerves...  Sweet Tooth premiered at the Fantasia International Film Festival in 2017 and was subsequently acquired&hellip;",
+    "title": "Pen Mari",
+    "url": "https://vimeo.com/channels/staffpicks/1239544587",
+    "image": "https://i.vimeocdn.com/video/2218670818-0046deb2527934cc3cb0e5ebc6aa7b03e7599609c27d0326c867f34649208f27-d_960?region=us",
+    "note": "In the desperate search for a horse&rsquo;s skull to lead an ancient folk procession, a man is drawn into the black market for animal body parts.   Si&ocirc;n Marshall-Waters&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
    {
-    "title": "Food Forest – Ketelbroek | Freek Freriks",
-    "url": "https://motionographer.com/quickie/food-forest-ketelbroek-freek-freriks/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/10/food-forest-ketelbroek.png",
+    "title": "The Haunted Hotel That Sings Back: Anil Glendinning on There Are No Ghosts at the Grand",
+    "url": "https://motionographer.com/2026/11/02/the-haunted-hotel-that-sings-back-there-are-no-ghosts-at-the-grand/",
+    "note": "Friday Sundae's Anil Glendinning talks painted memories, ska, singing power tools, and the creative choices behind Tribeca Games Award winner There Are No Ghosts at the Grand.",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "Em Cooper & Tonic DNA Paint a True Romance for Porsche",
-    "url": "https://www.stashmedia.tv/em-cooper-tonic-dna-paint-a-true-romance-for-porsche/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Porsche-The-Long-Way-to-I-Do-commercial-by-Em-Cooper-and-Tonic-DNA-STASH-MAGAZINE6-1920x1080.jpg",
-    "note": "Working with Montreal studio Tonic DNA, British director/artist Em Cooper (whose Beatles video we featured in Stash 157), uses her signature animated oil paintings to amplify the real-life romance in ",
+    "title": "Versus Launches New Quarterly Print Magazine “WE ARE”",
+    "url": "https://www.stashmedia.tv/versus-launches-new-quartery-print-magazine-we-are/",
+    "note": "From the release: In a world of endless content, instant gratification and AI-generated everything, creative studio Versus is making a case for slowing down. Introducing WE ARE, a new 170-page quarter",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -557,51 +555,43 @@
     "kind": "performance"
    },
    {
-    "title": "Sisowath Quay",
-    "url": "https://vimeo.com/channels/staffpicks/1226740492",
-    "image": "https://i.vimeocdn.com/video/2200813656-24305dbeaee2592bf31bb314bd256e5b48e368490a10873c3a902117f42e2f6f-d_960?region=us",
-    "note": "Short film. Animation. 15 minutes 31. Release date : February 2025. Khmer with English subtitles.  More than 70 selections in worlwide festivals (Annecy, Clermont-Ferrand,&hellip;",
+    "title": "Sweet Tooth",
+    "url": "https://vimeo.com/channels/staffpicks/1238017560",
+    "image": "https://i.vimeocdn.com/video/2215011045-8f9244317c62e1a0b9a64cdf1c9600f7e376cfdb1e1059e67593272812c521d4-d_960?region=us",
+    "note": "Elin's upstairs neighbors are getting on her nerves...  Sweet Tooth premiered at the Fantasia International Film Festival in 2017 and was subsequently acquired&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
    {
-    "title": "The Flowers Look Back: teamLab at OFFF Barcelona 2026",
-    "url": "https://motionographer.com/2026/10/21/the-flowers-look-back-teamlab-at-offf-barcelona-2026/",
-    "note": "How does an art collective open permanent museums on three continents without turning into a company? We sat down with Sakurako “Saka” Naka of teamLab at OFFF Barcelona 2026 and got an answer about or",
+    "title": "Artful Being Brings Collage Animation to Football’s Off-Pitch Careers",
+    "url": "https://motionographer.com/news/artful-being-follow-your-passion-open-university-bbc-bitesize/",
+    "note": "Danny Cato’s cut-out animation introduces teenagers to the careers behind football in an eight-part series for The Open University and BBC Bitesize.",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "We Love Pitching: Chronicles of a Necessary Mess – Part 23",
-    "url": "https://www.stashmedia.tv/we-love-pitching-chronicles-of-a-necessary-mess-part-23/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/We-Love-Pitching-Part-23-Guest-editorial-by-Claus-Cibilis-_-STASH-MAGAZINE-1446x1080.jpg",
-    "note": "Nerdo ECD Claus Cibils continues his careful dissection of the creative pitching ecosystem with his latest Stash editorial, looking at the process from the winner's perspective: what can be learned, w",
+    "title": "Sam Brown & Electric Theatre Collective Keep the BFG in Sainsbury’s Christmas",
+    "url": "https://www.stashmedia.tv/sam-brown-electric-theatre-collective-keep-the-bfg-in-sainsburys-christmas/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Sainsburys-BFG-Christmas-ad-2026-by-Sam-Brown-Electric-Theatre-Collective-STASH-MAGAZINE5-1920x1080.jpg",
+    "note": "The annual UK holiday advertising wars commenced this week with the creature animation team at Electric Theatre Collective and their collaboration with Rogue Films' director Sam Brown for Sainsbury's ",
     "source": "STASH",
     "kind": "gallery"
    }
   ],
   "social": [
    {
-    "title": "Monkey Bars Under A 216m Bridge 🤯",
-    "url": "https://www.youtube.com/watch?v=mxV0E4fXxXk",
-    "image": "https://i.ytimg.com/vi/mxV0E4fXxXk/hqdefault.jpg",
-    "by": "11M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "Narrow Cliff Jump POV 🎬 Daniel Todd #GoPro",
-    "url": "https://www.youtube.com/watch?v=VWa8IaIVrNU",
-    "image": "https://i.ytimg.com/vi/VWa8IaIVrNU/hqdefault.jpg",
-    "by": "2.1M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
     "title": "Airbnb | あつまる？エアビる？｜プールでエアビる",
     "url": "https://www.youtube.com/watch?v=QS0QEqKGGIw",
     "image": "https://i.ytimg.com/vi/QS0QEqKGGIw/hqdefault.jpg",
     "by": "1.8M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "You'll NEVER Guess 🤔💭",
+    "url": "https://www.youtube.com/watch?v=N6fwHbi2D2U",
+    "image": "https://i.ytimg.com/vi/N6fwHbi2D2U/hqdefault.jpg",
+    "by": "1.6M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -614,18 +604,18 @@
     "kind": "performance"
    },
    {
-    "title": "You'll NEVER Guess 🤔💭",
-    "url": "https://www.youtube.com/watch?v=N6fwHbi2D2U",
-    "image": "https://i.ytimg.com/vi/N6fwHbi2D2U/hqdefault.jpg",
-    "by": "1.3M views",
+    "title": "Dedicated To The Grind 🤝",
+    "url": "https://www.youtube.com/watch?v=MOwsqOCYkoI",
+    "image": "https://i.ytimg.com/vi/MOwsqOCYkoI/hqdefault.jpg",
+    "by": "1.1M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
    {
-    "title": "Dedicated To The Grind 🤝",
-    "url": "https://www.youtube.com/watch?v=MOwsqOCYkoI",
-    "image": "https://i.ytimg.com/vi/MOwsqOCYkoI/hqdefault.jpg",
-    "by": "1M views",
+    "title": "the capital of italy is what??",
+    "url": "https://www.youtube.com/watch?v=A4I8B8tjJxc",
+    "image": "https://i.ytimg.com/vi/A4I8B8tjJxc/hqdefault.jpg",
+    "by": "590K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -638,10 +628,10 @@
     "kind": "performance"
    },
    {
-    "title": "the capital of italy is what??",
-    "url": "https://www.youtube.com/watch?v=A4I8B8tjJxc",
-    "image": "https://i.ytimg.com/vi/A4I8B8tjJxc/hqdefault.jpg",
-    "by": "517K views",
+    "title": "World's Smallest Basketball Rim 🏀",
+    "url": "https://www.youtube.com/watch?v=7gVbXK385Mk",
+    "image": "https://i.ytimg.com/vi/7gVbXK385Mk/hqdefault.jpg",
+    "by": "408K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -654,18 +644,10 @@
     "kind": "performance"
    },
    {
-    "title": "World's Smallest Basketball Rim 🏀",
-    "url": "https://www.youtube.com/watch?v=7gVbXK385Mk",
-    "image": "https://i.ytimg.com/vi/7gVbXK385Mk/hqdefault.jpg",
-    "by": "335K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "make my own group, call it K/DUO",
-    "url": "https://www.youtube.com/watch?v=cnuy9y8__m8",
-    "image": "https://i.ytimg.com/vi/cnuy9y8__m8/hqdefault.jpg",
-    "by": "334K views",
+    "title": "Can You Guess? 👀",
+    "url": "https://www.youtube.com/watch?v=8iYiwYOW9vw",
+    "image": "https://i.ytimg.com/vi/8iYiwYOW9vw/hqdefault.jpg",
+    "by": "323K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -673,81 +655,97 @@
     "title": "Show off your work with Desk View. Tip from Kylie at the Apple Store.",
     "url": "https://www.youtube.com/watch?v=BTyWlJJUX2I",
     "image": "https://i.ytimg.com/vi/BTyWlJJUX2I/hqdefault.jpg",
-    "by": "311K views",
+    "by": "312K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "ima start a streak, im a streakstarter",
+    "url": "https://www.youtube.com/watch?v=wk8_L6OGjew",
+    "image": "https://i.ytimg.com/vi/wk8_L6OGjew/hqdefault.jpg",
+    "by": "302K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "scary how good these fits are",
+    "url": "https://www.youtube.com/watch?v=UJrbMIS8tqY",
+    "image": "https://i.ytimg.com/vi/UJrbMIS8tqY/hqdefault.jpg",
+    "by": "285K views",
     "source": "Latest from brands",
     "kind": "performance"
    }
   ],
   "post": [
    {
-    "title": "Show HN: Wikihack – HackerTube, but for Wikipedia articles mentioned on HN",
-    "url": "https://wikihack.netlify.app",
+    "title": "Show HN: Hacker Times, a New York Times-inspired version of Hacker News",
+    "url": "https://hackertimes.ca/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "OccupySaaS",
-    "url": "https://occupysaas.com/",
+    "title": "Scaling Git at OpenAI",
+    "url": "https://openai.com/index/scaling-git-at-openai/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "U.S. workers took home their smallest share of capital since at least 1947",
-    "url": "https://fortune.com/article/why-did-us-workers-just-take-home-smallest-share-of-capital-since-1947-lowest-ever-recorded/",
+    "title": "The SEC Should Block Anthropic's IPO to Protect the Public",
+    "url": "https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "AI delivers 'zero financial payoff' to most companies, Apollo economist says",
-    "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+    "title": "BYD sold more EVs last month than the US did all quarter",
+    "url": "https://electrek.co/2026/11/02/byd-sold-more-evs-last-month-than-the-us-did-all-quarter/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Ask HN: Which TV do you recommend for privacy?",
-    "url": "https://news.ycombinator.com/item?id=50328896",
+    "title": "Ubuntu still has not released patch for Linux 0day RCE in almost 3 weeks",
+    "url": "https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Mathematics has changed. Let's act like it",
-    "url": "https://terrytao.wordpress.com/2026/11/01/mathematics-has-changed-lets-act-like-it/",
+    "title": "Astra can read and write weights to improve Qwen",
+    "url": "https://rikiyat.github.io/blog/weight-space-programming/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Patrick Stewart taught us what good men do with power",
-    "url": "https://www.vox.com/politics/508526/patrick-stewart-jean-luc-picard-star-trek-liberalism",
+    "title": "Self-Employed? Solopreneur? NIST Has a Cybersecurity Guide Just for You",
+    "url": "https://www.nist.gov/news-events/news/2026/11/self-employed-solopreneur-nist-has-cybersecurity-guide-just-you",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Frontier Airlines Likely Breached",
-    "url": "https://www.reddit.com/r/frontierairlines/comments/1xl20e8/psa_email_scam/",
+    "title": "Show HN: Subvocal – Talk to your computer without making noise",
+    "url": "https://news.ycombinator.com/item?id=50340088",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Show HN: HackerBooks – HackerTube, but for books mentioned on HN",
-    "url": "https://hackerbooks.org",
+    "title": "Anthropic's internal AI use, at retail prices, now exceeds its employee pay",
+    "url": "https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Police chief unplugs cameras after Flock ignores contract cancellation",
-    "url": "https://www.thedrive.com/news/my-city-canceled-flocks-contract-flock-ignored-it-so-the-police-chief-unplugged-the-cameras",
+    "title": "US boy names that became girl names and vice versa",
+    "url": "https://namedaisy.com/blog/boy-names-that-became-girl-names",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Lenovo's 'encrypted' fingerprint USB is just an unencrypted SD card in a case",
-    "url": "https://www.reddit.com/r/technology/comments/1xl2pr3/lenovos_encrypted_fingerprint_usb_drive_is_just/",
+    "title": "Show HN: Warsaw in voxels – An interactive 3D map of the city centre",
+    "url": "https://p.migdal.pl/warsaw-vibe-voxel/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Show HN: OmniDiff – Opensource, super fast, content aware Git difftool, in Rust",
-    "url": "https://github.com/ivankovic/omnidiff",
+    "title": "WTF Ubuntu?",
+    "url": "https://chalmovsky.com/posts/wtf-ubuntu",
     "source": "Hacker News · Best",
     "kind": "performance"
    }
@@ -762,10 +760,10 @@
     "kind": "performance"
    },
    {
-    "title": "Endless Possibilities",
-    "url": "https://www.adsoftheworld.com/campaigns/establish",
-    "image": "https://image.adsoftheworld.com/jrwf0oswvq1l25lf7sh8jkeykauj",
-    "by": "Wero",
+    "title": "Joy Of Homecoming",
+    "url": "https://www.adsoftheworld.com/campaigns/joyofhomecoming",
+    "image": "https://image.adsoftheworld.com/a2v2wjz6psy4mrtk4hnio9ii1n0l",
+    "by": "Vivo India",
     "source": "Ads of the World",
     "kind": "gallery"
    },
@@ -778,10 +776,10 @@
     "kind": "performance"
    },
    {
-    "title": "Welcome Workalovers",
-    "url": "https://www.adsoftheworld.com/campaigns/welcome-workalovers",
-    "image": "https://image.adsoftheworld.com/gafan2nb2dwgb6bi1moj6egdrxwt",
-    "by": "Advertising Week Latam",
+    "title": "Endless Possibilities",
+    "url": "https://www.adsoftheworld.com/campaigns/establish",
+    "image": "https://image.adsoftheworld.com/jrwf0oswvq1l25lf7sh8jkeykauj",
+    "by": "Wero",
     "source": "Ads of the World",
     "kind": "gallery"
    },
@@ -789,15 +787,15 @@
     "title": "Airbnb | あつまる？エアビる？｜リビングでエアビる",
     "url": "https://www.youtube.com/watch?v=Mx608ORGCFA",
     "image": "https://i.ytimg.com/vi/Mx608ORGCFA/hqdefault.jpg",
-    "by": "2.2M views",
+    "by": "2.3M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
    {
-    "title": "Come Back to Firefox",
-    "url": "https://www.adsoftheworld.com/campaigns/come-back-to-firefox",
-    "image": "https://image.adsoftheworld.com/y8fg4dtgvk15xsf5g2t5tns4wmgn",
-    "by": "Firefox",
+    "title": "Welcome Workalovers",
+    "url": "https://www.adsoftheworld.com/campaigns/welcome-workalovers",
+    "image": "https://image.adsoftheworld.com/gafan2nb2dwgb6bi1moj6egdrxwt",
+    "by": "Advertising Week Latam",
     "source": "Ads of the World",
     "kind": "gallery"
    },
@@ -810,10 +808,10 @@
     "kind": "performance"
    },
    {
-    "title": "Diwali 2026",
-    "url": "https://www.adsoftheworld.com/campaigns/diwali-2026",
-    "image": "https://image.adsoftheworld.com/8usoq9jki5s5oics8duyabryu852",
-    "by": "Lego",
+    "title": "Come Back to Firefox",
+    "url": "https://www.adsoftheworld.com/campaigns/come-back-to-firefox",
+    "image": "https://image.adsoftheworld.com/y8fg4dtgvk15xsf5g2t5tns4wmgn",
+    "by": "Firefox",
     "source": "Ads of the World",
     "kind": "gallery"
    },
@@ -824,14 +822,6 @@
     "by": "1.4M views",
     "source": "Latest from brands",
     "kind": "performance"
-   },
-   {
-    "title": "What the h.e.l.f.?",
-    "url": "https://www.adsoftheworld.com/campaigns/what-the-h-e-l-f-04922581-ba9e-482a-a29a-1773936fb892",
-    "image": "https://image.adsoftheworld.com/vtj3ruu8yh5tafqzqkmrwcd50316",
-    "by": "e.l.f. Cosmetics",
-    "source": "Ads of the World",
-    "kind": "gallery"
    },
    {
     "title": "Studio Fleece | NSW | Nike",
@@ -846,6 +836,14 @@
     "url": "https://www.youtube.com/watch?v=WzuIZLoHqqA",
     "image": "https://i.ytimg.com/vi/WzuIZLoHqqA/hqdefault.jpg",
     "by": "1.2M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "The new MacBook Pro with M6 delivers blazing-fast performance and up to 24 hours of battery life.",
+    "url": "https://www.youtube.com/watch?v=vT-o5hh1cVc",
+    "image": "https://i.ytimg.com/vi/vT-o5hh1cVc/hqdefault.jpg",
+    "by": "930K views",
     "source": "Latest from brands",
     "kind": "performance"
    }
