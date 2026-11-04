@@ -1,7 +1,31 @@
 {
- "updated": "2026-11-03T10:57:55.720Z",
+ "updated": "2026-11-04T11:02:30.710Z",
  "media": {
   "ui": [
+   {
+    "title": "Grail",
+    "url": "https://www.awwwards.com/sites/grail",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6a9e800a81046329756959.png",
+    "note": "Branding and a scroll-driven 3D web experience for  Grail – an iOS self-improvement app that turns real-world quests into RPG stats.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "Freeport Markets",
+    "url": "https://www.producthunt.com/products/freeport-markets",
+    "note": "Our proprietary AI finds the top onchain wallets to copy",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "thedotmack/claude-mem",
+    "url": "https://github.com/thedotmack/claude-mem",
+    "image": "https://opengraph.githubassets.com/1/thedotmack/claude-mem",
+    "by": "★ 1,139 today",
+    "note": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Clau",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
    {
     "title": "DeepBook",
     "url": "https://www.awwwards.com/sites/deepbook",
@@ -11,18 +35,18 @@
     "kind": "award"
    },
    {
-    "title": "Hookdeck Inspect",
-    "url": "https://www.producthunt.com/products/hookdeck",
-    "note": "Free webhook tester for you and your agent",
+    "title": "Mellow Kids",
+    "url": "https://www.producthunt.com/products/mellow-kids",
+    "note": "Personalized sleep and development app for parents",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "thedotmack/claude-mem",
-    "url": "https://github.com/thedotmack/claude-mem",
-    "image": "https://opengraph.githubassets.com/1/thedotmack/claude-mem",
-    "by": "★ 1,803 today",
-    "note": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Clau",
+    "title": "vercel-labs/agent-desktop",
+    "url": "https://github.com/vercel-labs/agent-desktop",
+    "image": "https://opengraph.githubassets.com/1/vercel-labs/agent-desktop",
+    "by": "★ 3,791 today",
+    "note": "Computer use CLI for AI agents",
     "source": "GitHub Trending",
     "kind": "trending"
    },
@@ -35,18 +59,18 @@
     "kind": "award"
    },
    {
-    "title": "Remote Gaze",
-    "url": "https://www.producthunt.com/products/remote-gaze",
-    "note": "Your Mac on your iPad and iPhone with no in-between server",
+    "title": "Dessn",
+    "url": "https://www.producthunt.com/products/dessn-2",
+    "note": "The design canvas that runs your real code.",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "vercel-labs/agent-desktop",
-    "url": "https://github.com/vercel-labs/agent-desktop",
-    "image": "https://opengraph.githubassets.com/1/vercel-labs/agent-desktop",
-    "by": "★ 2,275 today",
-    "note": "Computer use CLI for AI agents",
+    "title": "max-sixty/worktrunk",
+    "url": "https://github.com/max-sixty/worktrunk",
+    "image": "https://opengraph.githubassets.com/1/max-sixty/worktrunk",
+    "by": "★ 438 today",
+    "note": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
     "source": "GitHub Trending",
     "kind": "trending"
    },
@@ -59,33 +83,9 @@
     "kind": "award"
    },
    {
-    "title": "Videco",
-    "url": "https://www.producthunt.com/products/videco",
-    "note": "Turn every video into a content campaign with AI",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "max-sixty/worktrunk",
-    "url": "https://github.com/max-sixty/worktrunk",
-    "image": "https://opengraph.githubassets.com/1/max-sixty/worktrunk",
-    "by": "★ 77 today",
-    "note": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "MECHA",
-    "url": "https://www.awwwards.com/sites/mecha",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6aa7eda51c421159920632.jpg",
-    "note": "Mecha deploys physical automation into legacy industries. We created strategy, branding, and web design for them.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
-   },
-   {
-    "title": "Flockbay",
-    "url": "https://www.producthunt.com/products/flockbay",
-    "note": "Free AI game maker built on Godot",
+    "title": "QualityLayer",
+    "url": "https://www.producthunt.com/products/qualitylayer",
+    "note": "Plan, build and review software with your coding agents",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -93,7 +93,7 @@
     "title": "JustVugg/colibri",
     "url": "https://github.com/JustVugg/colibri",
     "image": "https://opengraph.githubassets.com/1/JustVugg/colibri",
-    "by": "★ 675 today",
+    "by": "★ 802 today",
     "note": "A hierarchical inference engine for frontier MoE models: hot experts on the GPU (CUDA, Vulkan), warm ones in RAM, cold ones streamed from NVMe. Written in C, runs on the hardware you already own.",
     "source": "GitHub Trending",
     "kind": "trending"
@@ -101,10 +101,10 @@
   ],
   "landing": [
    {
-    "title": "DeepBook",
-    "url": "https://www.awwwards.com/sites/deepbook",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6ab2967aca2c7846610426.png",
-    "note": "Creating a design system, motion graphics, and website design for DeepBook, a decentralized trading platform built on Sui.",
+    "title": "Grail",
+    "url": "https://www.awwwards.com/sites/grail",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6a9e800a81046329756959.png",
+    "note": "Branding and a scroll-driven 3D web experience for  Grail – an iOS self-improvement app that turns real-world quests into RPG stats.",
     "source": "Awwwards · Sites of the Day",
     "kind": "award"
    },
@@ -117,17 +117,17 @@
     "kind": "gallery"
    },
    {
-    "title": "Hookdeck Inspect",
-    "url": "https://www.producthunt.com/products/hookdeck",
-    "note": "Free webhook tester for you and your agent",
+    "title": "Freeport Markets",
+    "url": "https://www.producthunt.com/products/freeport-markets",
+    "note": "Our proprietary AI finds the top onchain wallets to copy",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "Grids",
-    "url": "https://www.awwwards.com/sites/grids-1",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6aa7d6e36002d509691780.jpg",
-    "note": "Grids is an interactive project exploring grids, composition, and key design principles through visual experiments.",
+    "title": "DeepBook",
+    "url": "https://www.awwwards.com/sites/deepbook",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6ab2967aca2c7846610426.png",
+    "note": "Creating a design system, motion graphics, and website design for DeepBook, a decentralized trading platform built on Sui.",
     "source": "Awwwards · Sites of the Day",
     "kind": "award"
    },
@@ -140,17 +140,17 @@
     "kind": "gallery"
    },
    {
-    "title": "Remote Gaze",
-    "url": "https://www.producthunt.com/products/remote-gaze",
-    "note": "Your Mac on your iPad and iPhone with no in-between server",
+    "title": "Mellow Kids",
+    "url": "https://www.producthunt.com/products/mellow-kids",
+    "note": "Personalized sleep and development app for parents",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "Dont Look up game",
-    "url": "https://www.awwwards.com/sites/dont-look-up-game",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6a9ed57f51a76420786025.jpg",
-    "note": "You are very rich, very tall, and standing on quite a lot of people. Keep them entertained enough not to look up, and collect a trillion. A game about the price of attention.",
+    "title": "Grids",
+    "url": "https://www.awwwards.com/sites/grids-1",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6aa7d6e36002d509691780.jpg",
+    "note": "Grids is an interactive project exploring grids, composition, and key design principles through visual experiments.",
     "source": "Awwwards · Sites of the Day",
     "kind": "award"
    },
@@ -163,17 +163,17 @@
     "kind": "gallery"
    },
    {
-    "title": "Videco",
-    "url": "https://www.producthunt.com/products/videco",
-    "note": "Turn every video into a content campaign with AI",
+    "title": "Dessn",
+    "url": "https://www.producthunt.com/products/dessn-2",
+    "note": "The design canvas that runs your real code.",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "MECHA",
-    "url": "https://www.awwwards.com/sites/mecha",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6aa7eda51c421159920632.jpg",
-    "note": "Mecha deploys physical automation into legacy industries. We created strategy, branding, and web design for them.",
+    "title": "Dont Look up game",
+    "url": "https://www.awwwards.com/sites/dont-look-up-game",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6a9ed57f51a76420786025.jpg",
+    "note": "You are very rich, very tall, and standing on quite a lot of people. Keep them entertained enough not to look up, and collect a trillion. A game about the price of attention.",
     "source": "Awwwards · Sites of the Day",
     "kind": "award"
    },
@@ -186,18 +186,18 @@
     "kind": "gallery"
    },
    {
-    "title": "Flockbay",
-    "url": "https://www.producthunt.com/products/flockbay",
-    "note": "Free AI game maker built on Godot",
+    "title": "QualityLayer",
+    "url": "https://www.producthunt.com/products/qualitylayer",
+    "note": "Plan, build and review software with your coding agents",
     "source": "Product Hunt · Today",
     "kind": "trending"
    }
   ],
   "app": [
    {
-    "title": "Hookdeck Inspect",
-    "url": "https://www.producthunt.com/products/hookdeck",
-    "note": "Free webhook tester for you and your agent",
+    "title": "Freeport Markets",
+    "url": "https://www.producthunt.com/products/freeport-markets",
+    "note": "Our proprietary AI finds the top onchain wallets to copy",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -205,15 +205,15 @@
     "title": "thedotmack/claude-mem",
     "url": "https://github.com/thedotmack/claude-mem",
     "image": "https://opengraph.githubassets.com/1/thedotmack/claude-mem",
-    "by": "★ 1,803 today",
+    "by": "★ 1,139 today",
     "note": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Clau",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Remote Gaze",
-    "url": "https://www.producthunt.com/products/remote-gaze",
-    "note": "Your Mac on your iPad and iPhone with no in-between server",
+    "title": "Mellow Kids",
+    "url": "https://www.producthunt.com/products/mellow-kids",
+    "note": "Personalized sleep and development app for parents",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -221,15 +221,15 @@
     "title": "vercel-labs/agent-desktop",
     "url": "https://github.com/vercel-labs/agent-desktop",
     "image": "https://opengraph.githubassets.com/1/vercel-labs/agent-desktop",
-    "by": "★ 2,275 today",
+    "by": "★ 3,791 today",
     "note": "Computer use CLI for AI agents",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Videco",
-    "url": "https://www.producthunt.com/products/videco",
-    "note": "Turn every video into a content campaign with AI",
+    "title": "Dessn",
+    "url": "https://www.producthunt.com/products/dessn-2",
+    "note": "The design canvas that runs your real code.",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -237,15 +237,15 @@
     "title": "max-sixty/worktrunk",
     "url": "https://github.com/max-sixty/worktrunk",
     "image": "https://opengraph.githubassets.com/1/max-sixty/worktrunk",
-    "by": "★ 77 today",
+    "by": "★ 438 today",
     "note": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Flockbay",
-    "url": "https://www.producthunt.com/products/flockbay",
-    "note": "Free AI game maker built on Godot",
+    "title": "QualityLayer",
+    "url": "https://www.producthunt.com/products/qualitylayer",
+    "note": "Plan, build and review software with your coding agents",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -253,15 +253,15 @@
     "title": "JustVugg/colibri",
     "url": "https://github.com/JustVugg/colibri",
     "image": "https://opengraph.githubassets.com/1/JustVugg/colibri",
-    "by": "★ 675 today",
+    "by": "★ 802 today",
     "note": "A hierarchical inference engine for frontier MoE models: hot experts on the GPU (CUDA, Vulkan), warm ones in RAM, cold ones streamed from NVMe. Written in C, runs on the hardware you already own.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Peji",
-    "url": "https://www.producthunt.com/products/peji",
-    "note": "An AI chat with a real browser you control",
+    "title": "Basedash Verified dashboards",
+    "url": "https://www.producthunt.com/products/basedash",
+    "note": "Show your team which dashboards to trust",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -269,15 +269,15 @@
     "title": "mattpocock/skills",
     "url": "https://github.com/mattpocock/skills",
     "image": "https://opengraph.githubassets.com/1/mattpocock/skills",
-    "by": "★ 858 today",
+    "by": "★ 1,164 today",
     "note": "Skills for Real Engineers. Straight from my .agents directory.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Akema",
-    "url": "https://www.producthunt.com/products/akema",
-    "note": "Read-only Kafka message inspection & analytics",
+    "title": "LiveReacting for ChatGPT",
+    "url": "https://www.producthunt.com/products/livereacting",
+    "note": "Run 24/7 and pre-recorded live streams from ChatGPT",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -285,7 +285,7 @@
     "title": "p-e-w/heretic",
     "url": "https://github.com/p-e-w/heretic",
     "image": "https://opengraph.githubassets.com/1/p-e-w/heretic",
-    "by": "★ 420 today",
+    "by": "★ 701 today",
     "note": "Training-free language model modification: Remove censorship, suppress slop, reduce sycophancy, and more",
     "source": "GitHub Trending",
     "kind": "trending"
@@ -310,10 +310,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Merijn Hos’s Flora Takes Flight for Down The Rabbit Hole",
-    "url": "https://www.stashmedia.tv/merijn-hoss-flora-takes-flight-for-down-the-rabbit-hole/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Down-The-Rabbit-Hole-festival-trailer-by-Merijn-Hos-STASH-MAGAZINE3-1920x1080.jpg",
-    "note": "The 2026 edition of Down the Rabbit Hole (DTRH), a three-day music festival in The Netherlands, rolled out this summer wrapped in branding rich in organic fantasy courtesy of Utrecht-based artist/illu",
+    "title": "Alt Western: Buck Opens Bass X Machina on Netflix",
+    "url": "https://www.stashmedia.tv/alt-western-buck-opens-bass-x-machina-on-netflix/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Bass-X-Machina-title-sequence-on-Netflix-by-BUCK-STASH-MAGAZINE7-1920x813.jpg",
+    "note": "Bass X Machina, the six-episode animated steampunk Western premiered on Netflix Nov 3 with this gritty title sequence, created by the motion crew at BUCK and powered by a track from singer/songwriter ",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -334,9 +334,9 @@
     "kind": "gallery"
    },
    {
-    "title": "Versus Launches New Quarterly Print Magazine “WE ARE”",
-    "url": "https://www.stashmedia.tv/versus-launches-new-quartery-print-magazine-we-are/",
-    "note": "From the release: In a world of endless content, instant gratification and AI-generated everything, creative studio Versus is making a case for slowing down. Introducing WE ARE, a new 170-page quarter",
+    "title": "Motion Plus Design Returns to Paris 2026, November 14th",
+    "url": "https://www.stashmedia.tv/motion-plus-design-returns-to-paris-2026-november-14th/",
+    "note": "On Saturday, November 14, Motion Plus Design brings together some of the most inspiring artists on the international motion design scene at Le Grand Rex in Paris.  [Watch]\nThe post Motion Plus Design ",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -357,10 +357,9 @@
     "kind": "gallery"
    },
    {
-    "title": "Sam Brown & Electric Theatre Collective Keep the BFG in Sainsbury’s Christmas",
-    "url": "https://www.stashmedia.tv/sam-brown-electric-theatre-collective-keep-the-bfg-in-sainsburys-christmas/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Sainsburys-BFG-Christmas-ad-2026-by-Sam-Brown-Electric-Theatre-Collective-STASH-MAGAZINE5-1920x1080.jpg",
-    "note": "The annual UK holiday advertising wars commenced this week with the creature animation team at Electric Theatre Collective and their collaboration with Rogue Films' director Sam Brown for Sainsbury's ",
+    "title": "The Loc Studios Expands into 3D and on-set VFX",
+    "url": "https://www.stashmedia.tv/the-loc-studios-expands-into-3d-and-on-set-vfx/",
+    "note": "From the release: The Loc Studios, the independent London VFX studio founded by Jamie Leonard and Chris Chitty, has expanded into 3D and on-set VFX this year and grown its grading and deliverables off",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -368,7 +367,7 @@
     "title": "The new MacBook Pro with M6 delivers blazing-fast performance and up to 24 hours of battery life.",
     "url": "https://www.youtube.com/watch?v=vT-o5hh1cVc",
     "image": "https://i.ytimg.com/vi/vT-o5hh1cVc/hqdefault.jpg",
-    "by": "930K views",
+    "by": "932K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -381,10 +380,9 @@
     "kind": "gallery"
    },
    {
-    "title": "Henry Scholfield & SAGA Track Crown Royal Through Time",
-    "url": "https://www.stashmedia.tv/henry-scholfield-saga-track-crown-royal-through-time/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Crown-Royal-Always-Been-Here-CG-commercial-by-Henry-Scholfield-and-SAGA-STASH-MAGAZINE-1920x804.jpg",
-    "note": "Working with Spy Films director Henry Scholfield, Toronto motion design studio SAGA conjures an obsessively-detailed, nine-decade, CG journey through Canadian Life for the venerable blended whisky bra",
+    "title": "Motion North 2027 Goes Big, March 10-11 in Manchester",
+    "url": "https://www.stashmedia.tv/motion-north-2027-goes-big-march-10-11-in-manchester/",
+    "note": "Manchester-based design and creative festival Motion North has announced the line up for Motion North 2027, the two day festival landing March 10-11th at Freight Island, Manchester. [Watch]\nThe post M",
     "source": "STASH",
     "kind": "gallery"
    }
@@ -399,10 +397,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Merijn Hos’s Flora Takes Flight for Down The Rabbit Hole",
-    "url": "https://www.stashmedia.tv/merijn-hoss-flora-takes-flight-for-down-the-rabbit-hole/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Down-The-Rabbit-Hole-festival-trailer-by-Merijn-Hos-STASH-MAGAZINE3-1920x1080.jpg",
-    "note": "The 2026 edition of Down the Rabbit Hole (DTRH), a three-day music festival in The Netherlands, rolled out this summer wrapped in branding rich in organic fantasy courtesy of Utrecht-based artist/illu",
+    "title": "Alt Western: Buck Opens Bass X Machina on Netflix",
+    "url": "https://www.stashmedia.tv/alt-western-buck-opens-bass-x-machina-on-netflix/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Bass-X-Machina-title-sequence-on-Netflix-by-BUCK-STASH-MAGAZINE7-1920x813.jpg",
+    "note": "Bass X Machina, the six-episode animated steampunk Western premiered on Netflix Nov 3 with this gritty title sequence, created by the motion crew at BUCK and powered by a track from singer/songwriter ",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -422,9 +420,9 @@
     "kind": "gallery"
    },
    {
-    "title": "Versus Launches New Quarterly Print Magazine “WE ARE”",
-    "url": "https://www.stashmedia.tv/versus-launches-new-quartery-print-magazine-we-are/",
-    "note": "From the release: In a world of endless content, instant gratification and AI-generated everything, creative studio Versus is making a case for slowing down. Introducing WE ARE, a new 170-page quarter",
+    "title": "Motion Plus Design Returns to Paris 2026, November 14th",
+    "url": "https://www.stashmedia.tv/motion-plus-design-returns-to-paris-2026-november-14th/",
+    "note": "On Saturday, November 14, Motion Plus Design brings together some of the most inspiring artists on the international motion design scene at Le Grand Rex in Paris.  [Watch]\nThe post Motion Plus Design ",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -444,10 +442,9 @@
     "kind": "gallery"
    },
    {
-    "title": "Sam Brown & Electric Theatre Collective Keep the BFG in Sainsbury’s Christmas",
-    "url": "https://www.stashmedia.tv/sam-brown-electric-theatre-collective-keep-the-bfg-in-sainsburys-christmas/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Sainsburys-BFG-Christmas-ad-2026-by-Sam-Brown-Electric-Theatre-Collective-STASH-MAGAZINE5-1920x1080.jpg",
-    "note": "The annual UK holiday advertising wars commenced this week with the creature animation team at Electric Theatre Collective and their collaboration with Rogue Films' director Sam Brown for Sainsbury's ",
+    "title": "The Loc Studios Expands into 3D and on-set VFX",
+    "url": "https://www.stashmedia.tv/the-loc-studios-expands-into-3d-and-on-set-vfx/",
+    "note": "From the release: The Loc Studios, the independent London VFX studio founded by Jamie Leonard and Chris Chitty, has expanded into 3D and on-set VFX this year and grown its grading and deliverables off",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -467,10 +464,9 @@
     "kind": "gallery"
    },
    {
-    "title": "Henry Scholfield & SAGA Track Crown Royal Through Time",
-    "url": "https://www.stashmedia.tv/henry-scholfield-saga-track-crown-royal-through-time/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Crown-Royal-Always-Been-Here-CG-commercial-by-Henry-Scholfield-and-SAGA-STASH-MAGAZINE-1920x804.jpg",
-    "note": "Working with Spy Films director Henry Scholfield, Toronto motion design studio SAGA conjures an obsessively-detailed, nine-decade, CG journey through Canadian Life for the venerable blended whisky bra",
+    "title": "Motion North 2027 Goes Big, March 10-11 in Manchester",
+    "url": "https://www.stashmedia.tv/motion-north-2027-goes-big-march-10-11-in-manchester/",
+    "note": "Manchester-based design and creative festival Motion North has announced the line up for Motion North 2027, the two day festival landing March 10-11th at Freight Island, Manchester. [Watch]\nThe post M",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -509,10 +505,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Merijn Hos’s Flora Takes Flight for Down The Rabbit Hole",
-    "url": "https://www.stashmedia.tv/merijn-hoss-flora-takes-flight-for-down-the-rabbit-hole/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Down-The-Rabbit-Hole-festival-trailer-by-Merijn-Hos-STASH-MAGAZINE3-1920x1080.jpg",
-    "note": "The 2026 edition of Down the Rabbit Hole (DTRH), a three-day music festival in The Netherlands, rolled out this summer wrapped in branding rich in organic fantasy courtesy of Utrecht-based artist/illu",
+    "title": "Alt Western: Buck Opens Bass X Machina on Netflix",
+    "url": "https://www.stashmedia.tv/alt-western-buck-opens-bass-x-machina-on-netflix/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Bass-X-Machina-title-sequence-on-Netflix-by-BUCK-STASH-MAGAZINE7-1920x813.jpg",
+    "note": "Bass X Machina, the six-episode animated steampunk Western premiered on Netflix Nov 3 with this gritty title sequence, created by the motion crew at BUCK and powered by a track from singer/songwriter ",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -540,9 +536,9 @@
     "kind": "gallery"
    },
    {
-    "title": "Versus Launches New Quarterly Print Magazine “WE ARE”",
-    "url": "https://www.stashmedia.tv/versus-launches-new-quartery-print-magazine-we-are/",
-    "note": "From the release: In a world of endless content, instant gratification and AI-generated everything, creative studio Versus is making a case for slowing down. Introducing WE ARE, a new 170-page quarter",
+    "title": "Motion Plus Design Returns to Paris 2026, November 14th",
+    "url": "https://www.stashmedia.tv/motion-plus-design-returns-to-paris-2026-november-14th/",
+    "note": "On Saturday, November 14, Motion Plus Design brings together some of the most inspiring artists on the international motion design scene at Le Grand Rex in Paris.  [Watch]\nThe post Motion Plus Design ",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -570,10 +566,9 @@
     "kind": "gallery"
    },
    {
-    "title": "Sam Brown & Electric Theatre Collective Keep the BFG in Sainsbury’s Christmas",
-    "url": "https://www.stashmedia.tv/sam-brown-electric-theatre-collective-keep-the-bfg-in-sainsburys-christmas/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Sainsburys-BFG-Christmas-ad-2026-by-Sam-Brown-Electric-Theatre-Collective-STASH-MAGAZINE5-1920x1080.jpg",
-    "note": "The annual UK holiday advertising wars commenced this week with the creature animation team at Electric Theatre Collective and their collaboration with Rogue Films' director Sam Brown for Sainsbury's ",
+    "title": "The Loc Studios Expands into 3D and on-set VFX",
+    "url": "https://www.stashmedia.tv/the-loc-studios-expands-into-3d-and-on-set-vfx/",
+    "note": "From the release: The Loc Studios, the independent London VFX studio founded by Jamie Leonard and Chris Chitty, has expanded into 3D and on-set VFX this year and grown its grading and deliverables off",
     "source": "STASH",
     "kind": "gallery"
    }
@@ -583,15 +578,7 @@
     "title": "Airbnb | あつまる？エアビる？｜プールでエアビる",
     "url": "https://www.youtube.com/watch?v=QS0QEqKGGIw",
     "image": "https://i.ytimg.com/vi/QS0QEqKGGIw/hqdefault.jpg",
-    "by": "1.8M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "You'll NEVER Guess 🤔💭",
-    "url": "https://www.youtube.com/watch?v=N6fwHbi2D2U",
-    "image": "https://i.ytimg.com/vi/N6fwHbi2D2U/hqdefault.jpg",
-    "by": "1.6M views",
+    "by": "1.9M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -599,7 +586,7 @@
     "title": "Airbnb | あつまる？エアビる？｜今日はちょっと、大人忘れます。",
     "url": "https://www.youtube.com/watch?v=p8HvRJALo4Y",
     "image": "https://i.ytimg.com/vi/p8HvRJALo4Y/hqdefault.jpg",
-    "by": "1.5M views",
+    "by": "1.6M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -607,7 +594,7 @@
     "title": "Dedicated To The Grind 🤝",
     "url": "https://www.youtube.com/watch?v=MOwsqOCYkoI",
     "image": "https://i.ytimg.com/vi/MOwsqOCYkoI/hqdefault.jpg",
-    "by": "1.1M views",
+    "by": "1.4M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -615,15 +602,7 @@
     "title": "the capital of italy is what??",
     "url": "https://www.youtube.com/watch?v=A4I8B8tjJxc",
     "image": "https://i.ytimg.com/vi/A4I8B8tjJxc/hqdefault.jpg",
-    "by": "590K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "Nido de Villanas: Ep. 1 Don Cristóbal’s inheritance",
-    "url": "https://www.youtube.com/watch?v=wG_LaKvlcqM",
-    "image": "https://i.ytimg.com/vi/wG_LaKvlcqM/hqdefault.jpg",
-    "by": "554K views",
+    "by": "651K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -631,15 +610,15 @@
     "title": "World's Smallest Basketball Rim 🏀",
     "url": "https://www.youtube.com/watch?v=7gVbXK385Mk",
     "image": "https://i.ytimg.com/vi/7gVbXK385Mk/hqdefault.jpg",
-    "by": "408K views",
+    "by": "564K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
    {
-    "title": "Get sorted for college with Roxie from the Apple Store.",
-    "url": "https://www.youtube.com/watch?v=P5GxUjU4uBI",
-    "image": "https://i.ytimg.com/vi/P5GxUjU4uBI/hqdefault.jpg",
-    "by": "362K views",
+    "title": "Nido de Villanas: Ep. 1 Don Cristóbal’s inheritance",
+    "url": "https://www.youtube.com/watch?v=wG_LaKvlcqM",
+    "image": "https://i.ytimg.com/vi/wG_LaKvlcqM/hqdefault.jpg",
+    "by": "555K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -647,7 +626,15 @@
     "title": "Can You Guess? 👀",
     "url": "https://www.youtube.com/watch?v=8iYiwYOW9vw",
     "image": "https://i.ytimg.com/vi/8iYiwYOW9vw/hqdefault.jpg",
-    "by": "323K views",
+    "by": "411K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Get sorted for college with Roxie from the Apple Store.",
+    "url": "https://www.youtube.com/watch?v=P5GxUjU4uBI",
+    "image": "https://i.ytimg.com/vi/P5GxUjU4uBI/hqdefault.jpg",
+    "by": "363K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -655,15 +642,15 @@
     "title": "Show off your work with Desk View. Tip from Kylie at the Apple Store.",
     "url": "https://www.youtube.com/watch?v=BTyWlJJUX2I",
     "image": "https://i.ytimg.com/vi/BTyWlJJUX2I/hqdefault.jpg",
-    "by": "312K views",
+    "by": "313K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
    {
-    "title": "ima start a streak, im a streakstarter",
-    "url": "https://www.youtube.com/watch?v=wk8_L6OGjew",
-    "image": "https://i.ytimg.com/vi/wk8_L6OGjew/hqdefault.jpg",
-    "by": "302K views",
+    "title": "Slay Is In Her DNA 🧬",
+    "url": "https://www.youtube.com/watch?v=QPCkrlB4CA4",
+    "image": "https://i.ytimg.com/vi/QPCkrlB4CA4/hqdefault.jpg",
+    "by": "313K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -671,81 +658,89 @@
     "title": "scary how good these fits are",
     "url": "https://www.youtube.com/watch?v=UJrbMIS8tqY",
     "image": "https://i.ytimg.com/vi/UJrbMIS8tqY/hqdefault.jpg",
-    "by": "285K views",
+    "by": "308K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Pride and Prejudice premieres December 3 #Netflix",
+    "url": "https://www.youtube.com/watch?v=DTbMDqDNFXw",
+    "image": "https://i.ytimg.com/vi/DTbMDqDNFXw/hqdefault.jpg",
+    "by": "215K views",
     "source": "Latest from brands",
     "kind": "performance"
    }
   ],
   "post": [
    {
-    "title": "Show HN: Hacker Times, a New York Times-inspired version of Hacker News",
-    "url": "https://hackertimes.ca/",
+    "title": "C++26 Disapproved",
+    "url": "https://andreasfertig.com/blog/2026/11/cpp26-dis-failed-how-does-cpp-survive/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Scaling Git at OpenAI",
-    "url": "https://openai.com/index/scaling-git-at-openai/",
+    "title": "The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer",
+    "url": "https://arxiv.org/abs/2605.29713",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "The SEC Should Block Anthropic's IPO to Protect the Public",
-    "url": "https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public/",
+    "title": "Safari introduces Adaptive Dark Mode in 27.3",
+    "url": "https://webkit.org/blog/18541/introducing-adaptive-dark-mode/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "BYD sold more EVs last month than the US did all quarter",
-    "url": "https://electrek.co/2026/11/02/byd-sold-more-evs-last-month-than-the-us-did-all-quarter/",
+    "title": "US tech giants' hidden AI debt swells 90% to $3.2T in 6 months",
+    "url": "https://asia.nikkei.com/business/technology/artificial-intelligence/us-tech-giants-hidden-ai-debt-swells-90-to-3.2tn-in-6-months",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Ubuntu still has not released patch for Linux 0day RCE in almost 3 weeks",
-    "url": "https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432",
+    "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+    "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Astra can read and write weights to improve Qwen",
-    "url": "https://rikiyat.github.io/blog/weight-space-programming/",
+    "title": "Postman silently auto-installs AI plugins and attempts to share all API data",
+    "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Self-Employed? Solopreneur? NIST Has a Cybersecurity Guide Just for You",
-    "url": "https://www.nist.gov/news-events/news/2026/11/self-employed-solopreneur-nist-has-cybersecurity-guide-just-you",
+    "title": "Stringman, an $800 open-source room scale gripper robot",
+    "url": "https://neufangled.com/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Show HN: Subvocal – Talk to your computer without making noise",
-    "url": "https://news.ycombinator.com/item?id=50340088",
+    "title": "Kalshi and its co-founders face felony charges for violating Utah gambling laws",
+    "url": "https://arstechnica.com/tech-policy/2026/10/trump-admin-sues-utah-to-save-kalshi-from-the-states-total-ban-on-gambling/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Anthropic's internal AI use, at retail prices, now exceeds its employee pay",
-    "url": "https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11",
+    "title": "Google will turn off search for schools that reject AI",
+    "url": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "US boy names that became girl names and vice versa",
-    "url": "https://namedaisy.com/blog/boy-names-that-became-girl-names",
+    "title": "Mac at any scale",
+    "url": "https://namespace.so/blog/mac-at-any-scale",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Show HN: Warsaw in voxels – An interactive 3D map of the city centre",
-    "url": "https://p.migdal.pl/warsaw-vibe-voxel/",
+    "title": "OpenAI seems to be silently re-enabling model training on Codex chats",
+    "url": "https://news.ycombinator.com/item?id=50352757",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "WTF Ubuntu?",
-    "url": "https://chalmovsky.com/posts/wtf-ubuntu",
+    "title": "The 'Astra can read and write weights to improve Qwen' post is misleading",
+    "url": "https://honnibal.dev/blog/astra-read-write-misleading",
     "source": "Hacker News · Best",
     "kind": "performance"
    }
@@ -760,10 +755,10 @@
     "kind": "performance"
    },
    {
-    "title": "Joy Of Homecoming",
-    "url": "https://www.adsoftheworld.com/campaigns/joyofhomecoming",
-    "image": "https://image.adsoftheworld.com/a2v2wjz6psy4mrtk4hnio9ii1n0l",
-    "by": "Vivo India",
+    "title": "Take Time to Connect",
+    "url": "https://www.adsoftheworld.com/campaigns/take-time-to-connect",
+    "image": "https://image.adsoftheworld.com/8v14k3o3pym1s7mt7q1smkw5ebv5",
+    "by": "Deutsche Telekom",
     "source": "Ads of the World",
     "kind": "gallery"
    },
@@ -776,6 +771,22 @@
     "kind": "performance"
    },
    {
+    "title": "Joy Of Homecoming",
+    "url": "https://www.adsoftheworld.com/campaigns/joyofhomecoming",
+    "image": "https://image.adsoftheworld.com/a2v2wjz6psy4mrtk4hnio9ii1n0l",
+    "by": "Vivo India",
+    "source": "Ads of the World",
+    "kind": "gallery"
+   },
+   {
+    "title": "Airbnb | あつまる？エアビる？｜リビングでエアビる",
+    "url": "https://www.youtube.com/watch?v=Mx608ORGCFA",
+    "image": "https://i.ytimg.com/vi/Mx608ORGCFA/hqdefault.jpg",
+    "by": "2.4M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
     "title": "Endless Possibilities",
     "url": "https://www.adsoftheworld.com/campaigns/establish",
     "image": "https://image.adsoftheworld.com/jrwf0oswvq1l25lf7sh8jkeykauj",
@@ -784,10 +795,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Airbnb | あつまる？エアビる？｜リビングでエアビる",
-    "url": "https://www.youtube.com/watch?v=Mx608ORGCFA",
-    "image": "https://i.ytimg.com/vi/Mx608ORGCFA/hqdefault.jpg",
-    "by": "2.3M views",
+    "title": "Airbnb | あつまる？エアビる？｜あの頃より、近づく夜。",
+    "url": "https://www.youtube.com/watch?v=FfoCK8cltno",
+    "image": "https://i.ytimg.com/vi/FfoCK8cltno/hqdefault.jpg",
+    "by": "1.5M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -803,22 +814,6 @@
     "title": "Airbnb | あつまる？エアビる？｜今日はちょっと、大人忘れます。",
     "url": "https://www.youtube.com/watch?v=hmYXIfxAIoM",
     "image": "https://i.ytimg.com/vi/hmYXIfxAIoM/hqdefault.jpg",
-    "by": "1.4M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "Come Back to Firefox",
-    "url": "https://www.adsoftheworld.com/campaigns/come-back-to-firefox",
-    "image": "https://image.adsoftheworld.com/y8fg4dtgvk15xsf5g2t5tns4wmgn",
-    "by": "Firefox",
-    "source": "Ads of the World",
-    "kind": "gallery"
-   },
-   {
-    "title": "Airbnb | あつまる？エアビる？｜あの頃より、近づく夜。",
-    "url": "https://www.youtube.com/watch?v=FfoCK8cltno",
-    "image": "https://i.ytimg.com/vi/FfoCK8cltno/hqdefault.jpg",
     "by": "1.4M views",
     "source": "Latest from brands",
     "kind": "performance"
@@ -843,7 +838,7 @@
     "title": "The new MacBook Pro with M6 delivers blazing-fast performance and up to 24 hours of battery life.",
     "url": "https://www.youtube.com/watch?v=vT-o5hh1cVc",
     "image": "https://i.ytimg.com/vi/vT-o5hh1cVc/hqdefault.jpg",
-    "by": "930K views",
+    "by": "932K views",
     "source": "Latest from brands",
     "kind": "performance"
    }
