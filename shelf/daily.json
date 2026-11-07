@@ -1,7 +1,31 @@
 {
- "updated": "2026-11-06T11:00:19.175Z",
+ "updated": "2026-11-07T10:20:50.319Z",
  "media": {
   "ui": [
+   {
+    "title": "Justin Jefferson",
+    "url": "https://www.awwwards.com/sites/justin-jefferson",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6aad95a1585a1398750089.jpg",
+    "note": "The official site of Justin Jefferson. A full portrait of his influence on the field and beyond it, from his countless records to the style, the partnerships and the JJets Foundation.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "seam",
+    "url": "https://www.producthunt.com/products/seam-2",
+    "note": "Turn your Mac's notch into a Dynamic Island",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "zed-industries/zed",
+    "url": "https://github.com/zed-industries/zed",
+    "image": "https://opengraph.githubassets.com/1/zed-industries/zed",
+    "by": "★ 306 today",
+    "note": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
    {
     "title": "ViV",
     "url": "https://www.awwwards.com/sites/viv",
@@ -11,9 +35,9 @@
     "kind": "award"
    },
    {
-    "title": "Chronos DB",
-    "url": "https://www.producthunt.com/products/chronos-db",
-    "note": "The database for the autonomous AI era.",
+    "title": "Trace by Context.dev",
+    "url": "https://www.producthunt.com/products/context-dev",
+    "note": "Weekly web scraping API benchmark",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -21,7 +45,7 @@
     "title": "NVIDIA/auto-ontology",
     "url": "https://github.com/NVIDIA/auto-ontology",
     "image": "https://opengraph.githubassets.com/1/NVIDIA/auto-ontology",
-    "by": "★ 2,679 today",
+    "by": "★ 2,015 today",
     "note": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM ",
     "source": "GitHub Trending",
     "kind": "trending"
@@ -35,18 +59,18 @@
     "kind": "award"
    },
    {
-    "title": "Moatly",
-    "url": "https://www.producthunt.com/products/moatly-2",
-    "note": "Measures your product's moat and the threats testing it",
+    "title": "Duly",
+    "url": "https://www.producthunt.com/products/duly-life-organizer",
+    "note": "Press the orb, ramble, and everything gets organized",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "mattpocock/skills",
-    "url": "https://github.com/mattpocock/skills",
-    "image": "https://opengraph.githubassets.com/1/mattpocock/skills",
-    "by": "★ 2,071 today",
-    "note": "Skills for Real Engineers. Straight from my .agents directory.",
+    "title": "rails/rails",
+    "url": "https://github.com/rails/rails",
+    "image": "https://opengraph.githubassets.com/1/rails/rails",
+    "by": "★ 142 today",
+    "note": "Ruby on Rails",
     "source": "GitHub Trending",
     "kind": "trending"
    },
@@ -59,52 +83,74 @@
     "kind": "award"
    },
    {
-    "title": "crystl",
-    "url": "https://www.producthunt.com/products/crystl-multitasking-terminal",
-    "note": "multitasking terminal for AI coding agents, built for macOS",
+    "title": "GPT‑6 Cyber",
+    "url": "https://www.producthunt.com/products/openai",
+    "note": "OpenAI’s cyber model, with vetted access for defenders",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "garrytan/gstack",
-    "url": "https://github.com/garrytan/gstack",
-    "image": "https://opengraph.githubassets.com/1/garrytan/gstack",
-    "by": "★ 612 today",
-    "note": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "DeepBook",
-    "url": "https://www.awwwards.com/sites/deepbook",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6ab2967aca2c7846610426.png",
-    "note": "Creating a design system, motion graphics, and website design for DeepBook, a decentralized trading platform built on Sui.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
-   },
-   {
-    "title": "Mechvibes 3",
-    "url": "https://www.producthunt.com/products/mechvibes",
-    "note": "Give your keyboard and mouse any sound you like",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "Usagi-org/ai-goofish-monitor",
-    "url": "https://github.com/Usagi-org/ai-goofish-monitor",
-    "image": "https://opengraph.githubassets.com/1/Usagi-org/ai-goofish-monitor",
-    "by": "★ 240 today",
-    "note": "基于 Playwright 和AI实现的闲鱼多任务实时/定时监控与智能分析系统，配备了功能完善的后台管理UI。帮助用户从闲鱼海量商品中，找到心仪产品。",
+    "title": "mpv-player/mpv",
+    "url": "https://github.com/mpv-player/mpv",
+    "image": "https://opengraph.githubassets.com/1/mpv-player/mpv",
+    "by": "★ 37 today",
+    "note": "🎥 Command line media player",
     "source": "GitHub Trending",
     "kind": "trending"
    }
   ],
   "landing": [
    {
+    "title": "Justin Jefferson",
+    "url": "https://www.awwwards.com/sites/justin-jefferson",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6aad95a1585a1398750089.jpg",
+    "note": "The official site of Justin Jefferson. A full portrait of his influence on the field and beyond it, from his countless records to the style, the partnerships and the JJets Foundation.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "Tegra",
+    "url": "https://onepagelove.com/tegra",
+    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/11/opl-screenshot-tegra-1793808856344-desktop.jpg",
+    "note": "Tegra, a New York interior-construction company, has a website that uses a disciplined white layout, bold geometric branding, red accents and large construction photography to communicate strength, pr",
+    "source": "One Page Love",
+    "kind": "gallery"
+   },
+   {
+    "title": "seam",
+    "url": "https://www.producthunt.com/products/seam-2",
+    "note": "Turn your Mac's notch into a Dynamic Island",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
     "title": "ViV",
     "url": "https://www.awwwards.com/sites/viv",
     "image": "https://www.awwwards.com/awards/submissions/2026/08/6a85aef725236326579664.jpg",
     "note": "A new identity and website for ViV, a New York artist management and production company, designed to put its roster and production work front and centre.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "JUNGLE",
+    "url": "https://onepagelove.com/jungle",
+    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/11/opl-screenshot-jungle-1793803469928-desktop.jpg",
+    "note": "Jungle is an independent graphic design and art direction studio based in Neuchâtel, Switzerland. The playful portfolio resembles a factory conveyor belt, using raw interface controls, horizontal thum",
+    "source": "One Page Love",
+    "kind": "gallery"
+   },
+   {
+    "title": "Trace by Context.dev",
+    "url": "https://www.producthunt.com/products/context-dev",
+    "note": "Weekly web scraping API benchmark",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "Agrumea Farm",
+    "url": "https://www.awwwards.com/sites/agrumea-farm",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6aacf2ed22405670949235.jpg",
+    "note": "An immersive web journey through Agrumea Farm, blending Sicilian heritage with Three.js, Nuxt, GSAP and smooth Lenis interactions",
     "source": "Awwwards · Sites of the Day",
     "kind": "award"
    },
@@ -117,32 +163,9 @@
     "kind": "gallery"
    },
    {
-    "title": "Chronos DB",
-    "url": "https://www.producthunt.com/products/chronos-db",
-    "note": "The database for the autonomous AI era.",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "Agrumea Farm",
-    "url": "https://www.awwwards.com/sites/agrumea-farm",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6aacf2ed22405670949235.jpg",
-    "note": "An immersive web journey through Agrumea Farm, blending Sicilian heritage with Three.js, Nuxt, GSAP and smooth Lenis interactions",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
-   },
-   {
-    "title": "Pete Sena",
-    "url": "https://onepagelove.com/pete-sena",
-    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/11/opl-screenshot-pete-sena-1793719760461-desktop.jpg",
-    "note": "Pete Sena, a brand strategist, creative advisor, speaker and AI transformation consultant working with startups, challenger brands and large companies. The site uses cinematic dark-to-light transition",
-    "source": "One Page Love",
-    "kind": "gallery"
-   },
-   {
-    "title": "Moatly",
-    "url": "https://www.producthunt.com/products/moatly-2",
-    "note": "Measures your product's moat and the threats testing it",
+    "title": "Duly",
+    "url": "https://www.producthunt.com/products/duly-life-organizer",
+    "note": "Press the orb, ramble, and everything gets organized",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -155,49 +178,42 @@
     "kind": "award"
    },
    {
-    "title": "Made by Igor",
-    "url": "https://onepagelove.com/made-by-igor",
-    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/10/opl-screenshot-made-igor-1793260817051-desktop.jpg",
-    "note": "Made by Igor is the experimental portfolio of creative developer and digital designer Igor Kovačević, showcasing motion-led interfaces, frontend engineering, and custom management systems. Its design ",
+    "title": "Pete Sena",
+    "url": "https://onepagelove.com/pete-sena",
+    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/11/opl-screenshot-pete-sena-1793719760461-desktop.jpg",
+    "note": "Pete Sena, a brand strategist, creative advisor, speaker and AI transformation consultant working with startups, challenger brands and large companies. The site uses cinematic dark-to-light transition",
     "source": "One Page Love",
     "kind": "gallery"
    },
    {
-    "title": "crystl",
-    "url": "https://www.producthunt.com/products/crystl-multitasking-terminal",
-    "note": "multitasking terminal for AI coding agents, built for macOS",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "DeepBook",
-    "url": "https://www.awwwards.com/sites/deepbook",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6ab2967aca2c7846610426.png",
-    "note": "Creating a design system, motion graphics, and website design for DeepBook, a decentralized trading platform built on Sui.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
-   },
-   {
-    "title": "Badgey",
-    "url": "https://onepagelove.com/badgey",
-    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/10/opl-screenshot-badgey-your-1793196271854-desktop.jpg",
-    "note": "Badgey is an iPhone app that displays a name badge that rotates based on device orientation for wearing on lanyards or in pockets, shareable via QR code. The website has colorful floating badges, rota",
-    "source": "One Page Love",
-    "kind": "gallery"
-   },
-   {
-    "title": "Mechvibes 3",
-    "url": "https://www.producthunt.com/products/mechvibes",
-    "note": "Give your keyboard and mouse any sound you like",
+    "title": "GPT‑6 Cyber",
+    "url": "https://www.producthunt.com/products/openai",
+    "note": "OpenAI’s cyber model, with vetted access for defenders",
     "source": "Product Hunt · Today",
     "kind": "trending"
    }
   ],
   "app": [
    {
-    "title": "Chronos DB",
-    "url": "https://www.producthunt.com/products/chronos-db",
-    "note": "The database for the autonomous AI era.",
+    "title": "seam",
+    "url": "https://www.producthunt.com/products/seam-2",
+    "note": "Turn your Mac's notch into a Dynamic Island",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "zed-industries/zed",
+    "url": "https://github.com/zed-industries/zed",
+    "image": "https://opengraph.githubassets.com/1/zed-industries/zed",
+    "by": "★ 306 today",
+    "note": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "Trace by Context.dev",
+    "url": "https://www.producthunt.com/products/context-dev",
+    "note": "Weekly web scraping API benchmark",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -205,89 +221,73 @@
     "title": "NVIDIA/auto-ontology",
     "url": "https://github.com/NVIDIA/auto-ontology",
     "image": "https://opengraph.githubassets.com/1/NVIDIA/auto-ontology",
-    "by": "★ 2,679 today",
+    "by": "★ 2,015 today",
     "note": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM ",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Moatly",
-    "url": "https://www.producthunt.com/products/moatly-2",
-    "note": "Measures your product's moat and the threats testing it",
+    "title": "Duly",
+    "url": "https://www.producthunt.com/products/duly-life-organizer",
+    "note": "Press the orb, ramble, and everything gets organized",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "mattpocock/skills",
-    "url": "https://github.com/mattpocock/skills",
-    "image": "https://opengraph.githubassets.com/1/mattpocock/skills",
-    "by": "★ 2,071 today",
-    "note": "Skills for Real Engineers. Straight from my .agents directory.",
+    "title": "rails/rails",
+    "url": "https://github.com/rails/rails",
+    "image": "https://opengraph.githubassets.com/1/rails/rails",
+    "by": "★ 142 today",
+    "note": "Ruby on Rails",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "crystl",
-    "url": "https://www.producthunt.com/products/crystl-multitasking-terminal",
-    "note": "multitasking terminal for AI coding agents, built for macOS",
+    "title": "GPT‑6 Cyber",
+    "url": "https://www.producthunt.com/products/openai",
+    "note": "OpenAI’s cyber model, with vetted access for defenders",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "garrytan/gstack",
-    "url": "https://github.com/garrytan/gstack",
-    "image": "https://opengraph.githubassets.com/1/garrytan/gstack",
-    "by": "★ 612 today",
-    "note": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
+    "title": "mpv-player/mpv",
+    "url": "https://github.com/mpv-player/mpv",
+    "image": "https://opengraph.githubassets.com/1/mpv-player/mpv",
+    "by": "★ 37 today",
+    "note": "🎥 Command line media player",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Mechvibes 3",
-    "url": "https://www.producthunt.com/products/mechvibes",
-    "note": "Give your keyboard and mouse any sound you like",
+    "title": "rust-lang/rust",
+    "url": "https://github.com/rust-lang/rust",
+    "image": "https://opengraph.githubassets.com/1/rust-lang/rust",
+    "by": "★ 192 today",
+    "note": "Empowering everyone to build reliable and efficient software.",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "Exa Monitors v2",
+    "url": "https://www.producthunt.com/products/exa-ai",
+    "note": "Web search on a schedule that calls your agent, $2/1k runs",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "Usagi-org/ai-goofish-monitor",
-    "url": "https://github.com/Usagi-org/ai-goofish-monitor",
-    "image": "https://opengraph.githubassets.com/1/Usagi-org/ai-goofish-monitor",
-    "by": "★ 240 today",
-    "note": "基于 Playwright 和AI实现的闲鱼多任务实时/定时监控与智能分析系统，配备了功能完善的后台管理UI。帮助用户从闲鱼海量商品中，找到心仪产品。",
+    "title": "react/react",
+    "url": "https://github.com/react/react",
+    "image": "https://opengraph.githubassets.com/1/react/react",
+    "by": "★ 248 today",
+    "note": "The library for web and native user interfaces.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Any Video to Text",
-    "url": "https://www.producthunt.com/products/any-video-to-text",
-    "note": "Paste a video link, get the transcript in seconds",
+    "title": "The Writer's Quarter",
+    "url": "https://www.producthunt.com/products/the-writer-s-quarter",
+    "note": "AI-Free Writing & Novel Planning Software",
     "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "D4Vinci/Scrapling",
-    "url": "https://github.com/D4Vinci/Scrapling",
-    "image": "https://opengraph.githubassets.com/1/D4Vinci/Scrapling",
-    "by": "★ 1,655 today",
-    "note": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and trick",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Tobira Site Agent",
-    "url": "https://www.producthunt.com/products/tobira-ai",
-    "note": "Turn your website into an AI agent that sells to AI agents",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "vercel-labs/agent-desktop",
-    "url": "https://github.com/vercel-labs/agent-desktop",
-    "image": "https://opengraph.githubassets.com/1/vercel-labs/agent-desktop",
-    "by": "★ 2,173 today",
-    "note": "Computer use CLI for AI agents",
-    "source": "GitHub Trending",
     "kind": "trending"
    }
   ],
@@ -302,42 +302,18 @@
     "kind": "performance"
    },
    {
-    "title": "Something Greater than You",
-    "url": "https://vimeo.com/channels/staffpicks/1242348473",
-    "image": "https://i.vimeocdn.com/video/2220624966-3443a627169e7469fc7072984418323c6e9e55ec33c0967c7b4a4d74aec7bc9a-d_960?region=us",
-    "note": "Two feuding raccoons, having found shelter from a fierce winter storm, receive an unexpected guest.",
+    "title": "Gatorville",
+    "url": "https://vimeo.com/channels/staffpicks/1244254462",
+    "image": "https://i.vimeocdn.com/video/2223015373-e371b8678886a6fe51c3a7690ba02ff0887ad004d53e173321476f8879b83013-d_960?region=us",
+    "note": "In Colorado&rsquo;s forgotten valley, two siblings face alligators and the ache of leaving youth behind.  Director: Freddie Gluck Producer: Chloe Campion, Freddie&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
    {
-    "title": "Infinte & Invisible: Bleed Get Clean With LOLA MullenLowe",
-    "url": "https://www.stashmedia.tv/infinte-invisible-bleed-get-clean-with-lola-mullenlowe/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Cif-Infinte-Clean-commercial-by-Bleed-and-LOLA-MullenLowe-STASH-MAGAZINE6-1920x1080.jpg",
-    "note": "Director Paolo Cavalieri and Buenos Aires studio Bleed pull back the curtain on the pitch they used to win the assignment of visualizing the invisible for the global launch of Unilever's probiotic cle",
-    "source": "STASH",
-    "kind": "gallery"
-   },
-   {
-    "title": "The new 14” MacBook Pro with M6",
-    "url": "https://www.youtube.com/watch?v=xWfNhWn88Bc",
-    "image": "https://i.ytimg.com/vi/xWfNhWn88Bc/hqdefault.jpg",
-    "by": "17M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "Stalin Boys",
-    "url": "https://vimeo.com/channels/staffpicks/1242476309",
-    "image": "https://i.vimeocdn.com/video/2220842278-a14ceea2fde6503383a9b7090be52d6372f5fa13e012038a90658e87c40cbc6a-d_960?region=us",
-    "note": "Four middle school boys in a Texas border town have developed an unusual obsession: Joseph Stalin. As the boys write and rehearse their play about Stalin for the&hellip;",
-    "source": "Vimeo Staff Picks",
-    "kind": "gallery"
-   },
-   {
-    "title": "More Holiday Warmth and Wit from Wallace & Gromit",
-    "url": "https://www.stashmedia.tv/more-holiday-warmth-and-wit-from-wallace-gromit/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Barbour-x-Wallace-Gromit-Christmas-Film-2026-STASH-MAGAZINE5-1920x1080.jpg",
-    "note": "Following the success of their 2025 holiday collab, Aardman and luxury British fashion brand Barbour re-enlist Wallace & Gromit for another bit of snowy stop-motion mayhem balanced with warmth and wit",
+    "title": "Framestore’s Reindeer Takes Flight for The National Lottery",
+    "url": "https://www.stashmedia.tv/framestore-reindeer-take-flight-for-the-national-lottery/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/National-Lottery-Reindeer-holiday-ad-2026-by-Framestore-STASH-MAGAZINE5-1920x1036.jpg",
+    "note": "Working with Arts and Sciences director Tim McNaughton, the deeply experienced (and awarded) CG creature team at Framestore in London imbue a brave reindeer with quiet but unflagging determination for",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -350,10 +326,58 @@
     "kind": "performance"
    },
    {
-    "title": "PLAY GUN",
-    "url": "https://vimeo.com/channels/staffpicks/1239573506",
-    "image": "https://i.vimeocdn.com/video/2221309961-518ef1f869656b00185f20bc7d88ae9fbd2e9ebd0a887fd4b0dcca00e0b33ad7-d_960?region=us",
-    "note": "Atlas picks up a pantomime firearm.  Written/Directed by Noah Kentis  Starring: Noah Kentis Emily Ash Adams Rory J Saper Ally Ioannides Lilibet Viner Kat Collings Louise&hellip;",
+    "title": "Son Lux \"Out Into Us\"",
+    "url": "https://vimeo.com/channels/staffpicks/1228116196",
+    "image": "https://i.vimeocdn.com/video/2207155061-05e1466c175c4c30865b67ad65d90863171f9459678796eaad88e8d379916e3c-d_960?region=us",
+    "note": "Commissioned by Mass MoCA + Pioneer Works  Teen: Luzdivina Asue Nse Micha Father: Patrick Mitogo Mother: Elianny Heredia Bautista Grandfather: Michael Dozie Child:&hellip;",
+    "source": "Vimeo Staff Picks",
+    "kind": "gallery"
+   },
+   {
+    "title": "Infinte & Invisible: Bleed Get Clean With LOLA MullenLowe",
+    "url": "https://www.stashmedia.tv/infinte-invisible-bleed-get-clean-with-lola-mullenlowe/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Cif-Infinte-Clean-commercial-by-Bleed-and-LOLA-MullenLowe-STASH-MAGAZINE6-1920x1080.jpg",
+    "note": "Director Paolo Cavalieri and Buenos Aires studio Bleed pull back the curtain on the pitch they used to win the assignment of visualizing the invisible for the global launch of Unilever's probiotic cle",
+    "source": "STASH",
+    "kind": "gallery"
+   },
+   {
+    "title": "The new MacBook Pro with M6 delivers blazing-fast performance and up to 24 hours of battery life.",
+    "url": "https://www.youtube.com/watch?v=vT-o5hh1cVc",
+    "image": "https://i.ytimg.com/vi/vT-o5hh1cVc/hqdefault.jpg",
+    "by": "938K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Something Greater than You",
+    "url": "https://vimeo.com/channels/staffpicks/1242348473",
+    "image": "https://i.vimeocdn.com/video/2220624966-3443a627169e7469fc7072984418323c6e9e55ec33c0967c7b4a4d74aec7bc9a-d_960?region=us",
+    "note": "Two feuding raccoons, having found shelter from a fierce winter storm, receive an unexpected guest.",
+    "source": "Vimeo Staff Picks",
+    "kind": "gallery"
+   },
+   {
+    "title": "More Holiday Warmth and Wit from Wallace & Gromit",
+    "url": "https://www.stashmedia.tv/more-holiday-warmth-and-wit-from-wallace-gromit/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Barbour-x-Wallace-Gromit-Christmas-Film-2026-STASH-MAGAZINE5-1920x1080.jpg",
+    "note": "Following the success of their 2025 holiday collab, Aardman and luxury British fashion brand Barbour re-enlist Wallace & Gromit for another bit of snowy stop-motion mayhem balanced with warmth and wit",
+    "source": "STASH",
+    "kind": "gallery"
+   },
+   {
+    "title": "Apple Watch Heart Rate: Morgan’s True Apple Watch Story",
+    "url": "https://www.youtube.com/watch?v=NOUuyzWx8WI",
+    "image": "https://i.ytimg.com/vi/NOUuyzWx8WI/hqdefault.jpg",
+    "by": "406K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Stalin Boys",
+    "url": "https://vimeo.com/channels/staffpicks/1242476309",
+    "image": "https://i.vimeocdn.com/video/2220842278-a14ceea2fde6503383a9b7090be52d6372f5fa13e012038a90658e87c40cbc6a-d_960?region=us",
+    "note": "Four middle school boys in a Texas border town have developed an unusual obsession: Joseph Stalin. As the boys write and rehearse their play about Stalin for the&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
@@ -364,45 +388,22 @@
     "note": "Business Club director Tom Noakes teams with London post/VFX house Black Kite to conjure a weirdly light-hearted post-apocalypse for KFC’s collab with Marvel Studios’ Avengers: Doomsday thru ad agency",
     "source": "STASH",
     "kind": "gallery"
-   },
-   {
-    "title": "The new MacBook Pro with M6 delivers blazing-fast performance and up to 24 hours of battery life.",
-    "url": "https://www.youtube.com/watch?v=vT-o5hh1cVc",
-    "image": "https://i.ytimg.com/vi/vT-o5hh1cVc/hqdefault.jpg",
-    "by": "936K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "Fog Eaters",
-    "url": "https://vimeo.com/channels/staffpicks/1239949444",
-    "image": "https://i.vimeocdn.com/video/2218872616-aa8cdff3ac1f2ea0a609e9db4ab52d64698a671566f1c11a41ced34e6d5c162c-d_960?region=us",
-    "note": "Documentary / 2026 / Directed by Kyle Baker  When environmental toxicologists on the California coast discover high levels of mercury in mountain lions, a hunt through&hellip;",
-    "source": "Vimeo Staff Picks",
-    "kind": "gallery"
-   },
-   {
-    "title": "Alt Western: Buck Opens Bass X Machina on Netflix",
-    "url": "https://www.stashmedia.tv/alt-western-buck-opens-bass-x-machina-on-netflix/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Bass-X-Machina-title-sequence-on-Netflix-by-BUCK-STASH-MAGAZINE7-1920x813.jpg",
-    "note": "Bass X Machina, the six-episode animated steampunk Western premiered on Netflix Nov 3 with this gritty title sequence, created by the motion crew at BUCK and powered by a track from singer/songwriter ",
-    "source": "STASH",
-    "kind": "gallery"
    }
   ],
   "motion": [
    {
-    "title": "Volleyball World – VNL Trailer | Musclebeaver",
-    "url": "https://motionographer.com/quickie/volleyball-world-vnl-trailer-musclebeaver/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/Musclebeaver-VNL-Title-Frame-01-TEAM-4K-scaled.jpeg",
+    "title": "Tendril Builds Alo’s Handbag Films Around Leather, Light and Movement",
+    "url": "https://motionographer.com/news/tendril-alo-handbag-films-leather-light-movement/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/tendril-alo-handbag-landscape-cover.png",
+    "note": "Tendril’s Inhale and Exhale films reveal Alo’s handbags through leather, brass, crystal and movement, with design and animation by Bureau Klaus Alman.",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "Infinte & Invisible: Bleed Get Clean With LOLA MullenLowe",
-    "url": "https://www.stashmedia.tv/infinte-invisible-bleed-get-clean-with-lola-mullenlowe/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Cif-Infinte-Clean-commercial-by-Bleed-and-LOLA-MullenLowe-STASH-MAGAZINE6-1920x1080.jpg",
-    "note": "Director Paolo Cavalieri and Buenos Aires studio Bleed pull back the curtain on the pitch they used to win the assignment of visualizing the invisible for the global launch of Unilever's probiotic cle",
+    "title": "Framestore’s Reindeer Takes Flight for The National Lottery",
+    "url": "https://www.stashmedia.tv/framestore-reindeer-take-flight-for-the-national-lottery/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/National-Lottery-Reindeer-holiday-ad-2026-by-Framestore-STASH-MAGAZINE5-1920x1036.jpg",
+    "note": "Working with Arts and Sciences director Tim McNaughton, the deeply experienced (and awarded) CG creature team at Framestore in London imbue a brave reindeer with quiet but unflagging determination for",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -415,18 +416,17 @@
     "kind": "gallery"
    },
    {
-    "title": "Maxon’s Fall 2026 Release Adds Cinema 4D Scatter and Liquid FX",
-    "url": "https://motionographer.com/news/maxon-fall-2026-cinema-4d-scatter-liquid-fx/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/maxon-one-fall-2026-release-2027.jpg",
-    "note": "Maxon’s 2027.0 releases bring new simulation and scattering tools to Cinema 4D, UV editing to ZBrush and closer connections across its creative applications.",
+    "title": "CoMotion 2026: Energy in Flux | Anaissa Ruiz Tejada and Cristian Sandoval",
+    "url": "https://motionographer.com/quickie/comotion-2026-energy-in-flux/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/comotion-2026-energy-in-flux.jpg",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "More Holiday Warmth and Wit from Wallace & Gromit",
-    "url": "https://www.stashmedia.tv/more-holiday-warmth-and-wit-from-wallace-gromit/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Barbour-x-Wallace-Gromit-Christmas-Film-2026-STASH-MAGAZINE5-1920x1080.jpg",
-    "note": "Following the success of their 2025 holiday collab, Aardman and luxury British fashion brand Barbour re-enlist Wallace & Gromit for another bit of snowy stop-motion mayhem balanced with warmth and wit",
+    "title": "Infinte & Invisible: Bleed Get Clean With LOLA MullenLowe",
+    "url": "https://www.stashmedia.tv/infinte-invisible-bleed-get-clean-with-lola-mullenlowe/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Cif-Infinte-Clean-commercial-by-Bleed-and-LOLA-MullenLowe-STASH-MAGAZINE6-1920x1080.jpg",
+    "note": "Director Paolo Cavalieri and Buenos Aires studio Bleed pull back the curtain on the pitch they used to win the assignment of visualizing the invisible for the global launch of Unilever's probiotic cle",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -439,17 +439,17 @@
     "kind": "gallery"
    },
    {
-    "title": "DENEB | Jules Guérin",
-    "url": "https://motionographer.com/quickie/deneb-jules-guerin/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/deneb-jules-guerin-01.jpg",
+    "title": "Volleyball World – VNL Trailer | Musclebeaver",
+    "url": "https://motionographer.com/quickie/volleyball-world-vnl-trailer-musclebeaver/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/Musclebeaver-VNL-Title-Frame-01-TEAM-4K-scaled.jpeg",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "Tom Noakes & Black Kite Deliver the Doom Burger for KFC",
-    "url": "https://www.stashmedia.tv/tom-noakes-black-kite-deliver-the-doom-burger-for-kfc/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/KFC-Avengers-Doomsday-Commercial-by-Tom-Noakes-Black-Kite-STASH-MAGAZINE.jpg7_-1920x801.jpg",
-    "note": "Business Club director Tom Noakes teams with London post/VFX house Black Kite to conjure a weirdly light-hearted post-apocalypse for KFC’s collab with Marvel Studios’ Avengers: Doomsday thru ad agency",
+    "title": "More Holiday Warmth and Wit from Wallace & Gromit",
+    "url": "https://www.stashmedia.tv/more-holiday-warmth-and-wit-from-wallace-gromit/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Barbour-x-Wallace-Gromit-Christmas-Film-2026-STASH-MAGAZINE5-1920x1080.jpg",
+    "note": "Following the success of their 2025 holiday collab, Aardman and luxury British fashion brand Barbour re-enlist Wallace & Gromit for another bit of snowy stop-motion mayhem balanced with warmth and wit",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -462,17 +462,18 @@
     "kind": "gallery"
    },
    {
-    "title": "I’M HAVING A BREAKDOWN: DREAMCAT, the monster that wasn’t his",
-    "url": "https://motionographer.com/2026/11/04/im-having-a-breakdown-dreamcat-the-monster-that-wasnt-his/",
-    "note": "Joost Jansen spent two weeks drawing a monster for a film about himself. Then he asked to cut it. Inside DREAMCAT with Joost and MAKE MAMI PROUD.",
+    "title": "Maxon’s Fall 2026 Release Adds Cinema 4D Scatter and Liquid FX",
+    "url": "https://motionographer.com/news/maxon-fall-2026-cinema-4d-scatter-liquid-fx/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/maxon-one-fall-2026-release-2027.jpg",
+    "note": "Maxon’s 2027.0 releases bring new simulation and scattering tools to Cinema 4D, UV editing to ZBrush and closer connections across its creative applications.",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "Alt Western: Buck Opens Bass X Machina on Netflix",
-    "url": "https://www.stashmedia.tv/alt-western-buck-opens-bass-x-machina-on-netflix/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Bass-X-Machina-title-sequence-on-Netflix-by-BUCK-STASH-MAGAZINE7-1920x813.jpg",
-    "note": "Bass X Machina, the six-episode animated steampunk Western premiered on Netflix Nov 3 with this gritty title sequence, created by the motion crew at BUCK and powered by a track from singer/songwriter ",
+    "title": "Tom Noakes & Black Kite Deliver the Doom Burger for KFC",
+    "url": "https://www.stashmedia.tv/tom-noakes-black-kite-deliver-the-doom-burger-for-kfc/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/KFC-Avengers-Doomsday-Commercial-by-Tom-Noakes-Black-Kite-STASH-MAGAZINE.jpg7_-1920x801.jpg",
+    "note": "Business Club director Tom Noakes teams with London post/VFX house Black Kite to conjure a weirdly light-hearted post-apocalypse for KFC’s collab with Marvel Studios’ Avengers: Doomsday thru ad agency",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -495,6 +496,69 @@
     "kind": "performance"
    },
    {
+    "title": "Gatorville",
+    "url": "https://vimeo.com/channels/staffpicks/1244254462",
+    "image": "https://i.vimeocdn.com/video/2223015373-e371b8678886a6fe51c3a7690ba02ff0887ad004d53e173321476f8879b83013-d_960?region=us",
+    "note": "In Colorado&rsquo;s forgotten valley, two siblings face alligators and the ache of leaving youth behind.  Director: Freddie Gluck Producer: Chloe Campion, Freddie&hellip;",
+    "source": "Vimeo Staff Picks",
+    "kind": "gallery"
+   },
+   {
+    "title": "Tendril Builds Alo’s Handbag Films Around Leather, Light and Movement",
+    "url": "https://motionographer.com/news/tendril-alo-handbag-films-leather-light-movement/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/tendril-alo-handbag-landscape-cover.png",
+    "note": "Tendril’s Inhale and Exhale films reveal Alo’s handbags through leather, brass, crystal and movement, with design and animation by Bureau Klaus Alman.",
+    "source": "Motionographer",
+    "kind": "gallery"
+   },
+   {
+    "title": "Framestore’s Reindeer Takes Flight for The National Lottery",
+    "url": "https://www.stashmedia.tv/framestore-reindeer-take-flight-for-the-national-lottery/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/National-Lottery-Reindeer-holiday-ad-2026-by-Framestore-STASH-MAGAZINE5-1920x1036.jpg",
+    "note": "Working with Arts and Sciences director Tim McNaughton, the deeply experienced (and awarded) CG creature team at Framestore in London imbue a brave reindeer with quiet but unflagging determination for",
+    "source": "STASH",
+    "kind": "gallery"
+   },
+   {
+    "title": "This Woman Cured Her Cancer with an Insane Method",
+    "url": "https://www.youtube.com/watch?v=0NY2gAftzJE",
+    "image": "https://i.ytimg.com/vi/0NY2gAftzJE/hqdefault.jpg",
+    "by": "21M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Son Lux \"Out Into Us\"",
+    "url": "https://vimeo.com/channels/staffpicks/1228116196",
+    "image": "https://i.vimeocdn.com/video/2207155061-05e1466c175c4c30865b67ad65d90863171f9459678796eaad88e8d379916e3c-d_960?region=us",
+    "note": "Commissioned by Mass MoCA + Pioneer Works  Teen: Luzdivina Asue Nse Micha Father: Patrick Mitogo Mother: Elianny Heredia Bautista Grandfather: Michael Dozie Child:&hellip;",
+    "source": "Vimeo Staff Picks",
+    "kind": "gallery"
+   },
+   {
+    "title": "CoMotion 2026: Energy in Flux | Anaissa Ruiz Tejada and Cristian Sandoval",
+    "url": "https://motionographer.com/quickie/comotion-2026-energy-in-flux/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/comotion-2026-energy-in-flux.jpg",
+    "source": "Motionographer",
+    "kind": "gallery"
+   },
+   {
+    "title": "Infinte & Invisible: Bleed Get Clean With LOLA MullenLowe",
+    "url": "https://www.stashmedia.tv/infinte-invisible-bleed-get-clean-with-lola-mullenlowe/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Cif-Infinte-Clean-commercial-by-Bleed-and-LOLA-MullenLowe-STASH-MAGAZINE6-1920x1080.jpg",
+    "note": "Director Paolo Cavalieri and Buenos Aires studio Bleed pull back the curtain on the pitch they used to win the assignment of visualizing the invisible for the global launch of Unilever's probiotic cle",
+    "source": "STASH",
+    "kind": "gallery"
+   },
+   {
+    "title": "We Finally Know More About Humanity’s First Civilization",
+    "url": "https://www.youtube.com/watch?v=_y9JuojAIg0",
+    "image": "https://i.ytimg.com/vi/_y9JuojAIg0/hqdefault.jpg",
+    "by": "11M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
     "title": "Something Greater than You",
     "url": "https://vimeo.com/channels/staffpicks/1242348473",
     "image": "https://i.vimeocdn.com/video/2220624966-3443a627169e7469fc7072984418323c6e9e55ec33c0967c7b4a4d74aec7bc9a-d_960?region=us",
@@ -510,73 +574,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Infinte & Invisible: Bleed Get Clean With LOLA MullenLowe",
-    "url": "https://www.stashmedia.tv/infinte-invisible-bleed-get-clean-with-lola-mullenlowe/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Cif-Infinte-Clean-commercial-by-Bleed-and-LOLA-MullenLowe-STASH-MAGAZINE6-1920x1080.jpg",
-    "note": "Director Paolo Cavalieri and Buenos Aires studio Bleed pull back the curtain on the pitch they used to win the assignment of visualizing the invisible for the global launch of Unilever's probiotic cle",
-    "source": "STASH",
-    "kind": "gallery"
-   },
-   {
-    "title": "This Woman Cured Her Cancer with an Insane Method",
-    "url": "https://www.youtube.com/watch?v=0NY2gAftzJE",
-    "image": "https://i.ytimg.com/vi/0NY2gAftzJE/hqdefault.jpg",
-    "by": "21M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "Stalin Boys",
-    "url": "https://vimeo.com/channels/staffpicks/1242476309",
-    "image": "https://i.vimeocdn.com/video/2220842278-a14ceea2fde6503383a9b7090be52d6372f5fa13e012038a90658e87c40cbc6a-d_960?region=us",
-    "note": "Four middle school boys in a Texas border town have developed an unusual obsession: Joseph Stalin. As the boys write and rehearse their play about Stalin for the&hellip;",
-    "source": "Vimeo Staff Picks",
-    "kind": "gallery"
-   },
-   {
-    "title": "Maxon’s Fall 2026 Release Adds Cinema 4D Scatter and Liquid FX",
-    "url": "https://motionographer.com/news/maxon-fall-2026-cinema-4d-scatter-liquid-fx/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/maxon-one-fall-2026-release-2027.jpg",
-    "note": "Maxon’s 2027.0 releases bring new simulation and scattering tools to Cinema 4D, UV editing to ZBrush and closer connections across its creative applications.",
-    "source": "Motionographer",
-    "kind": "gallery"
-   },
-   {
     "title": "More Holiday Warmth and Wit from Wallace & Gromit",
     "url": "https://www.stashmedia.tv/more-holiday-warmth-and-wit-from-wallace-gromit/",
     "image": "http://www.stashmedia.tv/wp-content/uploads/Barbour-x-Wallace-Gromit-Christmas-Film-2026-STASH-MAGAZINE5-1920x1080.jpg",
     "note": "Following the success of their 2025 holiday collab, Aardman and luxury British fashion brand Barbour re-enlist Wallace & Gromit for another bit of snowy stop-motion mayhem balanced with warmth and wit",
-    "source": "STASH",
-    "kind": "gallery"
-   },
-   {
-    "title": "We Finally Know More About Humanity’s First Civilization",
-    "url": "https://www.youtube.com/watch?v=_y9JuojAIg0",
-    "image": "https://i.ytimg.com/vi/_y9JuojAIg0/hqdefault.jpg",
-    "by": "11M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "PLAY GUN",
-    "url": "https://vimeo.com/channels/staffpicks/1239573506",
-    "image": "https://i.vimeocdn.com/video/2221309961-518ef1f869656b00185f20bc7d88ae9fbd2e9ebd0a887fd4b0dcca00e0b33ad7-d_960?region=us",
-    "note": "Atlas picks up a pantomime firearm.  Written/Directed by Noah Kentis  Starring: Noah Kentis Emily Ash Adams Rory J Saper Ally Ioannides Lilibet Viner Kat Collings Louise&hellip;",
-    "source": "Vimeo Staff Picks",
-    "kind": "gallery"
-   },
-   {
-    "title": "DENEB | Jules Guérin",
-    "url": "https://motionographer.com/quickie/deneb-jules-guerin/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/deneb-jules-guerin-01.jpg",
-    "source": "Motionographer",
-    "kind": "gallery"
-   },
-   {
-    "title": "Tom Noakes & Black Kite Deliver the Doom Burger for KFC",
-    "url": "https://www.stashmedia.tv/tom-noakes-black-kite-deliver-the-doom-burger-for-kfc/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/KFC-Avengers-Doomsday-Commercial-by-Tom-Noakes-Black-Kite-STASH-MAGAZINE.jpg7_-1920x801.jpg",
-    "note": "Business Club director Tom Noakes teams with London post/VFX house Black Kite to conjure a weirdly light-hearted post-apocalypse for KFC’s collab with Marvel Studios’ Avengers: Doomsday thru ad agency",
     "source": "STASH",
     "kind": "gallery"
    }
@@ -591,18 +592,26 @@
     "kind": "performance"
    },
    {
-    "title": "Dedicated To The Grind 🤝",
-    "url": "https://www.youtube.com/watch?v=MOwsqOCYkoI",
-    "image": "https://i.ytimg.com/vi/MOwsqOCYkoI/hqdefault.jpg",
+    "title": "Airbnb | あつまる？エアビる？｜今日はちょっと、大人忘れます。",
+    "url": "https://www.youtube.com/watch?v=p8HvRJALo4Y",
+    "image": "https://i.ytimg.com/vi/p8HvRJALo4Y/hqdefault.jpg",
     "by": "1.7M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
    {
-    "title": "Airbnb | あつまる？エアビる？｜今日はちょっと、大人忘れます。",
-    "url": "https://www.youtube.com/watch?v=p8HvRJALo4Y",
-    "image": "https://i.ytimg.com/vi/p8HvRJALo4Y/hqdefault.jpg",
-    "by": "1.6M views",
+    "title": "Can You Guess? 👀",
+    "url": "https://www.youtube.com/watch?v=8iYiwYOW9vw",
+    "image": "https://i.ytimg.com/vi/8iYiwYOW9vw/hqdefault.jpg",
+    "by": "601K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "if my lovity is falsity, why r u my verity 🎨: @lleahistired",
+    "url": "https://www.youtube.com/watch?v=tbUMR2qIEzo",
+    "image": "https://i.ytimg.com/vi/tbUMR2qIEzo/hqdefault.jpg",
+    "by": "583K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -615,10 +624,10 @@
     "kind": "performance"
    },
    {
-    "title": "Can You Guess? 👀",
-    "url": "https://www.youtube.com/watch?v=8iYiwYOW9vw",
-    "image": "https://i.ytimg.com/vi/8iYiwYOW9vw/hqdefault.jpg",
-    "by": "552K views",
+    "title": "move over stolas the og dancing owl is here 🦉 #helluvaboss 🎨: @lleahistired",
+    "url": "https://www.youtube.com/watch?v=i-OP8QFbLm0",
+    "image": "https://i.ytimg.com/vi/i-OP8QFbLm0/hqdefault.jpg",
+    "by": "448K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -626,31 +635,7 @@
     "title": "Get sorted for college with Roxie from the Apple Store.",
     "url": "https://www.youtube.com/watch?v=P5GxUjU4uBI",
     "image": "https://i.ytimg.com/vi/P5GxUjU4uBI/hqdefault.jpg",
-    "by": "363K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "move over stolas the og dancing owl is here 🦉 #helluvaboss 🎨: @lleahistired",
-    "url": "https://www.youtube.com/watch?v=i-OP8QFbLm0",
-    "image": "https://i.ytimg.com/vi/i-OP8QFbLm0/hqdefault.jpg",
-    "by": "355K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "Show off your work with Desk View. Tip from Kylie at the Apple Store.",
-    "url": "https://www.youtube.com/watch?v=BTyWlJJUX2I",
-    "image": "https://i.ytimg.com/vi/BTyWlJJUX2I/hqdefault.jpg",
-    "by": "314K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "The Stairs Weren't An Option 😅",
-    "url": "https://www.youtube.com/watch?v=uevUr8gc3ts",
-    "image": "https://i.ytimg.com/vi/uevUr8gc3ts/hqdefault.jpg",
-    "by": "304K views",
+    "by": "364K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -658,15 +643,23 @@
     "title": "if you’re seeing this on the toilet, you owe me a lesson",
     "url": "https://www.youtube.com/watch?v=wqXmAWXxRZY",
     "image": "https://i.ytimg.com/vi/wqXmAWXxRZY/hqdefault.jpg",
-    "by": "283K views",
+    "by": "322K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
    {
-    "title": "pretend the audio is guten morgen 😍",
-    "url": "https://www.youtube.com/watch?v=Br8AXbB0pwI",
-    "image": "https://i.ytimg.com/vi/Br8AXbB0pwI/hqdefault.jpg",
-    "by": "221K views",
+    "title": "The Stairs Weren't An Option 😅",
+    "url": "https://www.youtube.com/watch?v=uevUr8gc3ts",
+    "image": "https://i.ytimg.com/vi/uevUr8gc3ts/hqdefault.jpg",
+    "by": "322K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Show off your work with Desk View. Tip from Kylie at the Apple Store.",
+    "url": "https://www.youtube.com/watch?v=BTyWlJJUX2I",
+    "image": "https://i.ytimg.com/vi/BTyWlJJUX2I/hqdefault.jpg",
+    "by": "315K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -674,81 +667,89 @@
     "title": "Now THAT'S A Comeback 👏",
     "url": "https://www.youtube.com/watch?v=8j6ZBH3Eb_M",
     "image": "https://i.ytimg.com/vi/8j6ZBH3Eb_M/hqdefault.jpg",
-    "by": "218K views",
+    "by": "271K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "pretend the audio is guten morgen 😍",
+    "url": "https://www.youtube.com/watch?v=Br8AXbB0pwI",
+    "image": "https://i.ytimg.com/vi/Br8AXbB0pwI/hqdefault.jpg",
+    "by": "266K views",
     "source": "Latest from brands",
     "kind": "performance"
    }
   ],
   "post": [
    {
-    "title": "Cuban: Facebook knowingly runs AI deepfake scam ads; docs say $16B fraud revenue",
-    "url": "https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html",
+    "title": "Libghostty 1.0",
+    "url": "https://mitchellh.com/writing/libghostty-1-0",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Claude Code sends your email address to websites",
-    "url": "https://github.com/anthropics/claude-code/issues/107757",
+    "title": "AI is dramatically accelerating AI research",
+    "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "MS Paint Remote Code Execution Vulnerability",
-    "url": "https://www.cve.org/CVERecord?id=CVE-2026-83844",
+    "title": "A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost",
+    "url": "https://hightouch.com/blog/llm-judges-identity-resolution",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Search for everyone",
-    "url": "https://kagi.com/changelog#11820",
+    "title": "Anthropic IPO buyers see valuation as low as $1.1T",
+    "url": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Goodbye from Salon",
-    "url": "https://www.salon.com/2026/11/05/goodbye-from-salon/",
+    "title": "Deus Ex",
+    "url": "https://www.filfre.net/2026/11/deus-ex/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "The Hackintosh Reborn",
-    "url": "https://www.naut.ca/blog/2026/11/05/the-hackintosh-reborn-with-ai/",
+    "title": "RIP Cybertruck",
+    "url": "https://www.wired.com/story/rip-cybertruck-you-were-unloved-unwanted-and-utterly-absurd/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Window Sweaters",
-    "url": "https://github.com/saragordic/window-sweaters",
+    "title": "Gemini Omni 1.2 Flash",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Motorola Signature 27 with GrapheneOS support",
-    "url": "https://motorolanews.com/motorola-signature-27-2/",
+    "title": "Tesla to wind down Cybertruck production",
+    "url": "https://www.nbcnews.com/tech/tech-news/tesla-wind-cybertruck-production-years-poor-sales-markets-rcna607817",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Alpine Linux Security Advisory: OpenSSH-server password authentication bypass",
-    "url": "https://alpinelinux.org/posts/2026-11-05-openssh-password-authentication-bypass/",
+    "title": "Dutch 'idealist' bank ASN blocks non-Google Android, including GrapheneOS",
+    "url": "https://github.com/PrivSec-dev/banking-apps-compat-report/issues/105",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "I wish tech companies knew more about me",
-    "url": "https://rakhim.exotext.com/i-wish-tech-companies-knew-more-about-me",
+    "title": "Blender's UI and Runtime: Much Faster Than GPUI",
+    "url": "https://github.com/ppmpreetham/BUI",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Discord is ditching Electron and its new app uses less RAM",
-    "url": "https://www.theverge.com/news/1027379/discord-ditching-electron-web-app",
+    "title": "Britain to make salary disclosure in job ads mandatory",
+    "url": "https://www.reuters.com/business/world-at-work/britain-make-salary-disclosure-job-ads-mandatory-2026-11-05/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Download your favourite YouTube videos",
-    "url": "https://criminallyvulgar.dev/you-should-absolutely-download-your-favourite-youtube-videos/",
+    "title": "From Linux to Wikipedia: How Volunteers Build the Internet",
+    "url": "https://thereader.mitpress.mit.edu/from-linux-to-wikipedia-how-volunteers-build-the-internet/",
     "source": "Hacker News · Best",
     "kind": "performance"
    }
@@ -763,26 +764,10 @@
     "kind": "performance"
    },
    {
-    "title": "Love is a Gift",
-    "url": "https://www.adsoftheworld.com/campaigns/love-is-a-gift-9ccd574f-e87e-4634-bb0c-b6c749489968",
-    "image": "https://image.adsoftheworld.com/vxisex4hufa3w0iby4vag9ef22cg",
-    "by": "Tiffany & Co.",
-    "source": "Ads of the World",
-    "kind": "gallery"
-   },
-   {
-    "title": "The new 14” MacBook Pro with M6",
-    "url": "https://www.youtube.com/watch?v=xWfNhWn88Bc",
-    "image": "https://i.ytimg.com/vi/xWfNhWn88Bc/hqdefault.jpg",
-    "by": "17M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "Kaytee Presents Nestflix",
-    "url": "https://www.adsoftheworld.com/campaigns/nestflix-campaign-for-smart-feeder-starring-jane-lynch-and-christian-cooper",
-    "image": "https://image.adsoftheworld.com/f14khu5pfsd4bzpq71eqy2yj5gg3",
-    "by": "Kaytee",
+    "title": "Toner Printer Madness",
+    "url": "https://www.adsoftheworld.com/campaigns/toner-printer-madness",
+    "image": "https://image.adsoftheworld.com/30xywfelcmi317bcj4s3y1es5ret",
+    "by": "Epson",
     "source": "Ads of the World",
     "kind": "gallery"
    },
@@ -795,10 +780,10 @@
     "kind": "performance"
    },
    {
-    "title": "Take Time to Connect",
-    "url": "https://www.adsoftheworld.com/campaigns/take-time-to-connect",
-    "image": "https://image.adsoftheworld.com/8v14k3o3pym1s7mt7q1smkw5ebv5",
-    "by": "Deutsche Telekom",
+    "title": "Love is a Gift",
+    "url": "https://www.adsoftheworld.com/campaigns/love-is-a-gift-9ccd574f-e87e-4634-bb0c-b6c749489968",
+    "image": "https://image.adsoftheworld.com/vxisex4hufa3w0iby4vag9ef22cg",
+    "by": "Tiffany & Co.",
     "source": "Ads of the World",
     "kind": "gallery"
    },
@@ -811,10 +796,10 @@
     "kind": "performance"
    },
    {
-    "title": "Joy Of Homecoming",
-    "url": "https://www.adsoftheworld.com/campaigns/joyofhomecoming",
-    "image": "https://image.adsoftheworld.com/a2v2wjz6psy4mrtk4hnio9ii1n0l",
-    "by": "Vivo India",
+    "title": "Kaytee Presents Nestflix",
+    "url": "https://www.adsoftheworld.com/campaigns/nestflix-campaign-for-smart-feeder-starring-jane-lynch-and-christian-cooper",
+    "image": "https://image.adsoftheworld.com/f14khu5pfsd4bzpq71eqy2yj5gg3",
+    "by": "Kaytee",
     "source": "Ads of the World",
     "kind": "gallery"
    },
@@ -827,12 +812,28 @@
     "kind": "performance"
    },
    {
+    "title": "Take Time to Connect",
+    "url": "https://www.adsoftheworld.com/campaigns/take-time-to-connect",
+    "image": "https://image.adsoftheworld.com/8v14k3o3pym1s7mt7q1smkw5ebv5",
+    "by": "Deutsche Telekom",
+    "source": "Ads of the World",
+    "kind": "gallery"
+   },
+   {
     "title": "Studio Fleece | NSW | Nike",
     "url": "https://www.youtube.com/watch?v=vyjhrYmboO8",
     "image": "https://i.ytimg.com/vi/vyjhrYmboO8/hqdefault.jpg",
     "by": "1.3M views",
     "source": "Latest from brands",
     "kind": "performance"
+   },
+   {
+    "title": "Joy Of Homecoming",
+    "url": "https://www.adsoftheworld.com/campaigns/joyofhomecoming",
+    "image": "https://image.adsoftheworld.com/a2v2wjz6psy4mrtk4hnio9ii1n0l",
+    "by": "Vivo India",
+    "source": "Ads of the World",
+    "kind": "gallery"
    },
    {
     "title": "New MacBook Pro with PROLED XDR Display and Touch: The world’s best laptop display",
@@ -846,7 +847,7 @@
     "title": "The new MacBook Pro with M6 delivers blazing-fast performance and up to 24 hours of battery life.",
     "url": "https://www.youtube.com/watch?v=vT-o5hh1cVc",
     "image": "https://i.ytimg.com/vi/vT-o5hh1cVc/hqdefault.jpg",
-    "by": "936K views",
+    "by": "938K views",
     "source": "Latest from brands",
     "kind": "performance"
    }
