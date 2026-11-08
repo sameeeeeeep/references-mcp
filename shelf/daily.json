@@ -1,7 +1,22 @@
 {
- "updated": "2026-11-07T10:20:50.319Z",
+ "updated": "2026-11-08T10:29:35.944Z",
  "media": {
   "ui": [
+   {
+    "title": "Extrafazant",
+    "url": "https://www.awwwards.com/sites/extrafazant",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6aa7fcc33a28e094057489.jpg",
+    "note": "Extrafazant is a video and animation studio from Tilburg, The Netherlands. Making visual content for brands that aren't afraid to stand out.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "Zigzag Browser",
+    "url": "https://www.producthunt.com/products/zigzag-3",
+    "note": "The polished, native Mac browser for life after Arc",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
    {
     "title": "Justin Jefferson",
     "url": "https://www.awwwards.com/sites/justin-jefferson",
@@ -11,19 +26,10 @@
     "kind": "award"
    },
    {
-    "title": "seam",
-    "url": "https://www.producthunt.com/products/seam-2",
-    "note": "Turn your Mac's notch into a Dynamic Island",
+    "title": "NoMac",
+    "url": "https://www.producthunt.com/products/nomac",
+    "note": "Your AI agent's own Mac, billed per minute. No subscription",
     "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "zed-industries/zed",
-    "url": "https://github.com/zed-industries/zed",
-    "image": "https://opengraph.githubassets.com/1/zed-industries/zed",
-    "by": "★ 306 today",
-    "note": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
-    "source": "GitHub Trending",
     "kind": "trending"
    },
    {
@@ -35,19 +41,10 @@
     "kind": "award"
    },
    {
-    "title": "Trace by Context.dev",
-    "url": "https://www.producthunt.com/products/context-dev",
-    "note": "Weekly web scraping API benchmark",
+    "title": "Sage2 by Levanto Labs",
+    "url": "https://www.producthunt.com/products/sagecraft",
+    "note": "Turn live talk into structured data and instant actions",
     "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "NVIDIA/auto-ontology",
-    "url": "https://github.com/NVIDIA/auto-ontology",
-    "image": "https://opengraph.githubassets.com/1/NVIDIA/auto-ontology",
-    "by": "★ 2,015 today",
-    "note": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM ",
-    "source": "GitHub Trending",
     "kind": "trending"
    },
    {
@@ -59,19 +56,10 @@
     "kind": "award"
    },
    {
-    "title": "Duly",
-    "url": "https://www.producthunt.com/products/duly-life-organizer",
-    "note": "Press the orb, ramble, and everything gets organized",
+    "title": "Textly",
+    "url": "https://www.producthunt.com/products/textly-capture-copy-paste",
+    "note": "Capture Text & Tables from Anywhere on Your Mac",
     "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "rails/rails",
-    "url": "https://github.com/rails/rails",
-    "image": "https://opengraph.githubassets.com/1/rails/rails",
-    "by": "★ 142 today",
-    "note": "Ruby on Rails",
-    "source": "GitHub Trending",
     "kind": "trending"
    },
    {
@@ -83,28 +71,34 @@
     "kind": "award"
    },
    {
-    "title": "GPT‑6 Cyber",
-    "url": "https://www.producthunt.com/products/openai",
-    "note": "OpenAI’s cyber model, with vetted access for defenders",
+    "title": "outages.live",
+    "url": "https://www.producthunt.com/products/polylane",
+    "note": "A free live outage feed for your agents",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "mpv-player/mpv",
-    "url": "https://github.com/mpv-player/mpv",
-    "image": "https://opengraph.githubassets.com/1/mpv-player/mpv",
-    "by": "★ 37 today",
-    "note": "🎥 Command line media player",
-    "source": "GitHub Trending",
+    "title": "DeepBook",
+    "url": "https://www.awwwards.com/sites/deepbook",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6ab2967aca2c7846610426.png",
+    "note": "Creating a design system, motion graphics, and website design for DeepBook, a decentralized trading platform built on Sui.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "Agent Clan",
+    "url": "https://www.producthunt.com/products/agent-clan",
+    "note": "Command your Claude Code and Codex agents with gestures",
+    "source": "Product Hunt · Today",
     "kind": "trending"
    }
   ],
   "landing": [
    {
-    "title": "Justin Jefferson",
-    "url": "https://www.awwwards.com/sites/justin-jefferson",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6aad95a1585a1398750089.jpg",
-    "note": "The official site of Justin Jefferson. A full portrait of his influence on the field and beyond it, from his countless records to the style, the partnerships and the JJets Foundation.",
+    "title": "Extrafazant",
+    "url": "https://www.awwwards.com/sites/extrafazant",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6aa7fcc33a28e094057489.jpg",
+    "note": "Extrafazant is a video and animation studio from Tilburg, The Netherlands. Making visual content for brands that aren't afraid to stand out.",
     "source": "Awwwards · Sites of the Day",
     "kind": "award"
    },
@@ -117,17 +111,17 @@
     "kind": "gallery"
    },
    {
-    "title": "seam",
-    "url": "https://www.producthunt.com/products/seam-2",
-    "note": "Turn your Mac's notch into a Dynamic Island",
+    "title": "Zigzag Browser",
+    "url": "https://www.producthunt.com/products/zigzag-3",
+    "note": "The polished, native Mac browser for life after Arc",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "ViV",
-    "url": "https://www.awwwards.com/sites/viv",
-    "image": "https://www.awwwards.com/awards/submissions/2026/08/6a85aef725236326579664.jpg",
-    "note": "A new identity and website for ViV, a New York artist management and production company, designed to put its roster and production work front and centre.",
+    "title": "Justin Jefferson",
+    "url": "https://www.awwwards.com/sites/justin-jefferson",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6aad95a1585a1398750089.jpg",
+    "note": "The official site of Justin Jefferson. A full portrait of his influence on the field and beyond it, from his countless records to the style, the partnerships and the JJets Foundation.",
     "source": "Awwwards · Sites of the Day",
     "kind": "award"
    },
@@ -140,17 +134,17 @@
     "kind": "gallery"
    },
    {
-    "title": "Trace by Context.dev",
-    "url": "https://www.producthunt.com/products/context-dev",
-    "note": "Weekly web scraping API benchmark",
+    "title": "NoMac",
+    "url": "https://www.producthunt.com/products/nomac",
+    "note": "Your AI agent's own Mac, billed per minute. No subscription",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "Agrumea Farm",
-    "url": "https://www.awwwards.com/sites/agrumea-farm",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6aacf2ed22405670949235.jpg",
-    "note": "An immersive web journey through Agrumea Farm, blending Sicilian heritage with Three.js, Nuxt, GSAP and smooth Lenis interactions",
+    "title": "ViV",
+    "url": "https://www.awwwards.com/sites/viv",
+    "image": "https://www.awwwards.com/awards/submissions/2026/08/6a85aef725236326579664.jpg",
+    "note": "A new identity and website for ViV, a New York artist management and production company, designed to put its roster and production work front and centre.",
     "source": "Awwwards · Sites of the Day",
     "kind": "award"
    },
@@ -163,17 +157,17 @@
     "kind": "gallery"
    },
    {
-    "title": "Duly",
-    "url": "https://www.producthunt.com/products/duly-life-organizer",
-    "note": "Press the orb, ramble, and everything gets organized",
+    "title": "Sage2 by Levanto Labs",
+    "url": "https://www.producthunt.com/products/sagecraft",
+    "note": "Turn live talk into structured data and instant actions",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "Grail",
-    "url": "https://www.awwwards.com/sites/grail",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6a9e800a81046329756959.png",
-    "note": "Branding and a scroll-driven 3D web experience for  Grail – an iOS self-improvement app that turns real-world quests into RPG stats.",
+    "title": "Agrumea Farm",
+    "url": "https://www.awwwards.com/sites/agrumea-farm",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6aacf2ed22405670949235.jpg",
+    "note": "An immersive web journey through Agrumea Farm, blending Sicilian heritage with Three.js, Nuxt, GSAP and smooth Lenis interactions",
     "source": "Awwwards · Sites of the Day",
     "kind": "award"
    },
@@ -186,107 +180,95 @@
     "kind": "gallery"
    },
    {
-    "title": "GPT‑6 Cyber",
-    "url": "https://www.producthunt.com/products/openai",
-    "note": "OpenAI’s cyber model, with vetted access for defenders",
+    "title": "Textly",
+    "url": "https://www.producthunt.com/products/textly-capture-copy-paste",
+    "note": "Capture Text & Tables from Anywhere on Your Mac",
     "source": "Product Hunt · Today",
     "kind": "trending"
    }
   ],
   "app": [
    {
-    "title": "seam",
-    "url": "https://www.producthunt.com/products/seam-2",
-    "note": "Turn your Mac's notch into a Dynamic Island",
+    "title": "Zigzag Browser",
+    "url": "https://www.producthunt.com/products/zigzag-3",
+    "note": "The polished, native Mac browser for life after Arc",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "zed-industries/zed",
-    "url": "https://github.com/zed-industries/zed",
-    "image": "https://opengraph.githubassets.com/1/zed-industries/zed",
-    "by": "★ 306 today",
-    "note": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Trace by Context.dev",
-    "url": "https://www.producthunt.com/products/context-dev",
-    "note": "Weekly web scraping API benchmark",
+    "title": "NoMac",
+    "url": "https://www.producthunt.com/products/nomac",
+    "note": "Your AI agent's own Mac, billed per minute. No subscription",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "NVIDIA/auto-ontology",
-    "url": "https://github.com/NVIDIA/auto-ontology",
-    "image": "https://opengraph.githubassets.com/1/NVIDIA/auto-ontology",
-    "by": "★ 2,015 today",
-    "note": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM ",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Duly",
-    "url": "https://www.producthunt.com/products/duly-life-organizer",
-    "note": "Press the orb, ramble, and everything gets organized",
+    "title": "Sage2 by Levanto Labs",
+    "url": "https://www.producthunt.com/products/sagecraft",
+    "note": "Turn live talk into structured data and instant actions",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "rails/rails",
-    "url": "https://github.com/rails/rails",
-    "image": "https://opengraph.githubassets.com/1/rails/rails",
-    "by": "★ 142 today",
-    "note": "Ruby on Rails",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "GPT‑6 Cyber",
-    "url": "https://www.producthunt.com/products/openai",
-    "note": "OpenAI’s cyber model, with vetted access for defenders",
+    "title": "Textly",
+    "url": "https://www.producthunt.com/products/textly-capture-copy-paste",
+    "note": "Capture Text & Tables from Anywhere on Your Mac",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "mpv-player/mpv",
-    "url": "https://github.com/mpv-player/mpv",
-    "image": "https://opengraph.githubassets.com/1/mpv-player/mpv",
-    "by": "★ 37 today",
-    "note": "🎥 Command line media player",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "rust-lang/rust",
-    "url": "https://github.com/rust-lang/rust",
-    "image": "https://opengraph.githubassets.com/1/rust-lang/rust",
-    "by": "★ 192 today",
-    "note": "Empowering everyone to build reliable and efficient software.",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Exa Monitors v2",
-    "url": "https://www.producthunt.com/products/exa-ai",
-    "note": "Web search on a schedule that calls your agent, $2/1k runs",
+    "title": "outages.live",
+    "url": "https://www.producthunt.com/products/polylane",
+    "note": "A free live outage feed for your agents",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "react/react",
-    "url": "https://github.com/react/react",
-    "image": "https://opengraph.githubassets.com/1/react/react",
-    "by": "★ 248 today",
-    "note": "The library for web and native user interfaces.",
-    "source": "GitHub Trending",
+    "title": "Agent Clan",
+    "url": "https://www.producthunt.com/products/agent-clan",
+    "note": "Command your Claude Code and Codex agents with gestures",
+    "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "The Writer's Quarter",
-    "url": "https://www.producthunt.com/products/the-writer-s-quarter",
-    "note": "AI-Free Writing & Novel Planning Software",
+    "title": "NotchIsland",
+    "url": "https://www.producthunt.com/products/notchisland-2",
+    "note": "Free, open-source Dynamic Island for the MacBook notch",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "AXL",
+    "url": "https://www.producthunt.com/products/axl-2",
+    "note": "GTM copilot for AI product founders: 1,200+ actions via MCP",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "NotchX",
+    "url": "https://www.producthunt.com/products/notch-11",
+    "note": "Turn your MacBook's notch into a hub for music and calls",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "Memorias",
+    "url": "https://www.producthunt.com/products/memorias-3",
+    "note": "An AI biographer that turns your stories into a book",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "Keypause",
+    "url": "https://www.producthunt.com/products/keypause",
+    "note": "Turn off your Mac's keyboard while you clean it",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "Deduplication",
+    "url": "https://www.producthunt.com/products/hacker-noon",
+    "note": "Which Meaning Owns the Word?",
     "source": "Product Hunt · Today",
     "kind": "trending"
    }
@@ -345,7 +327,7 @@
     "title": "The new MacBook Pro with M6 delivers blazing-fast performance and up to 24 hours of battery life.",
     "url": "https://www.youtube.com/watch?v=vT-o5hh1cVc",
     "image": "https://i.ytimg.com/vi/vT-o5hh1cVc/hqdefault.jpg",
-    "by": "938K views",
+    "by": "940K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -369,7 +351,7 @@
     "title": "Apple Watch Heart Rate: Morgan’s True Apple Watch Story",
     "url": "https://www.youtube.com/watch?v=NOUuyzWx8WI",
     "image": "https://i.ytimg.com/vi/NOUuyzWx8WI/hqdefault.jpg",
-    "by": "406K views",
+    "by": "449K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -587,7 +569,7 @@
     "title": "Airbnb | あつまる？エアビる？｜プールでエアビる",
     "url": "https://www.youtube.com/watch?v=QS0QEqKGGIw",
     "image": "https://i.ytimg.com/vi/QS0QEqKGGIw/hqdefault.jpg",
-    "by": "2M views",
+    "by": "2.1M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -600,18 +582,10 @@
     "kind": "performance"
    },
    {
-    "title": "Can You Guess? 👀",
-    "url": "https://www.youtube.com/watch?v=8iYiwYOW9vw",
-    "image": "https://i.ytimg.com/vi/8iYiwYOW9vw/hqdefault.jpg",
-    "by": "601K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
     "title": "if my lovity is falsity, why r u my verity 🎨: @lleahistired",
     "url": "https://www.youtube.com/watch?v=tbUMR2qIEzo",
     "image": "https://i.ytimg.com/vi/tbUMR2qIEzo/hqdefault.jpg",
-    "by": "583K views",
+    "by": "1.1M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -619,7 +593,7 @@
     "title": "Nido de Villanas: Ep. 1 Don Cristóbal’s inheritance",
     "url": "https://www.youtube.com/watch?v=wG_LaKvlcqM",
     "image": "https://i.ytimg.com/vi/wG_LaKvlcqM/hqdefault.jpg",
-    "by": "555K views",
+    "by": "556K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -627,7 +601,15 @@
     "title": "move over stolas the og dancing owl is here 🦉 #helluvaboss 🎨: @lleahistired",
     "url": "https://www.youtube.com/watch?v=i-OP8QFbLm0",
     "image": "https://i.ytimg.com/vi/i-OP8QFbLm0/hqdefault.jpg",
-    "by": "448K views",
+    "by": "536K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Gravity Had Other Plans 😅",
+    "url": "https://www.youtube.com/watch?v=QRQxi-SynaA",
+    "image": "https://i.ytimg.com/vi/QRQxi-SynaA/hqdefault.jpg",
+    "by": "392K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -643,7 +625,7 @@
     "title": "if you’re seeing this on the toilet, you owe me a lesson",
     "url": "https://www.youtube.com/watch?v=wqXmAWXxRZY",
     "image": "https://i.ytimg.com/vi/wqXmAWXxRZY/hqdefault.jpg",
-    "by": "322K views",
+    "by": "362K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -651,7 +633,7 @@
     "title": "The Stairs Weren't An Option 😅",
     "url": "https://www.youtube.com/watch?v=uevUr8gc3ts",
     "image": "https://i.ytimg.com/vi/uevUr8gc3ts/hqdefault.jpg",
-    "by": "322K views",
+    "by": "344K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -659,6 +641,14 @@
     "title": "Show off your work with Desk View. Tip from Kylie at the Apple Store.",
     "url": "https://www.youtube.com/watch?v=BTyWlJJUX2I",
     "image": "https://i.ytimg.com/vi/BTyWlJJUX2I/hqdefault.jpg",
+    "by": "317K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "pretend the audio is guten morgen 😍",
+    "url": "https://www.youtube.com/watch?v=Br8AXbB0pwI",
+    "image": "https://i.ytimg.com/vi/Br8AXbB0pwI/hqdefault.jpg",
     "by": "315K views",
     "source": "Latest from brands",
     "kind": "performance"
@@ -667,89 +657,81 @@
     "title": "Now THAT'S A Comeback 👏",
     "url": "https://www.youtube.com/watch?v=8j6ZBH3Eb_M",
     "image": "https://i.ytimg.com/vi/8j6ZBH3Eb_M/hqdefault.jpg",
-    "by": "271K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "pretend the audio is guten morgen 😍",
-    "url": "https://www.youtube.com/watch?v=Br8AXbB0pwI",
-    "image": "https://i.ytimg.com/vi/Br8AXbB0pwI/hqdefault.jpg",
-    "by": "266K views",
+    "by": "314K views",
     "source": "Latest from brands",
     "kind": "performance"
    }
   ],
   "post": [
    {
-    "title": "Libghostty 1.0",
-    "url": "https://mitchellh.com/writing/libghostty-1-0",
+    "title": "Goodbye Claude, Hello Pi",
+    "url": "https://caleb.software/posts/claude-to-pi.html",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "AI is dramatically accelerating AI research",
-    "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
+    "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+    "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost",
-    "url": "https://hightouch.com/blog/llm-judges-identity-resolution",
+    "title": "What I run on my $10 USD OpenStick homelab",
+    "url": "https://blog.bosscher.ch/posts/openstick/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Anthropic IPO buyers see valuation as low as $1.1T",
-    "url": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
+    "title": "The end of Microsoft Research's AI Frontiers group",
+    "url": "https://hunch.net/?p=13764006",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Deus Ex",
-    "url": "https://www.filfre.net/2026/11/deus-ex/",
+    "title": "Show HN: Coldframe, a honeypot that poses as a supermarket fridge controller",
+    "url": "https://github.com/hedgerow-dev/coldframe",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "RIP Cybertruck",
-    "url": "https://www.wired.com/story/rip-cybertruck-you-were-unloved-unwanted-and-utterly-absurd/",
+    "title": "MaxxBench – \"Nice DeepSWE score. But is it true?\"",
+    "url": "https://maxxbench.unlap.ai/research/why-maxxbench/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Gemini Omni 1.2 Flash",
-    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+    "title": "Apple’s grey list: Words and phrases your iPhone won’t help you spell",
+    "url": "https://www.theguardian.com/technology/2026/nov/06/struggling-to-spell-male-chauvinist-pig-apple-grey-list-means-your-iphone-wont-help-you",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Tesla to wind down Cybertruck production",
-    "url": "https://www.nbcnews.com/tech/tech-news/tesla-wind-cybertruck-production-years-poor-sales-markets-rcna607817",
+    "title": "They don't make 'em like that any more: Borland Turbo Pascal 7",
+    "url": "https://kevinboone.me/tpwin.html",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Dutch 'idealist' bank ASN blocks non-Google Android, including GrapheneOS",
-    "url": "https://github.com/PrivSec-dev/banking-apps-compat-report/issues/105",
+    "title": "The $8 Linux Computer (2022)",
+    "url": "http://thelittleengineerthatcould.blogspot.com/2022/12/the-8-linux-computer.html",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Blender's UI and Runtime: Much Faster Than GPUI",
-    "url": "https://github.com/ppmpreetham/BUI",
+    "title": "Every Windows 11 app should kill Electron, and Discord just showed why",
+    "url": "https://www.windowslatest.com/2026/11/06/every-windows-11-app-should-kill-electron-and-discord-just-showed-why-no-starting-screen-and-70-less-ram-even-with-two-accounts-signed-in/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Britain to make salary disclosure in job ads mandatory",
-    "url": "https://www.reuters.com/business/world-at-work/britain-make-salary-disclosure-job-ads-mandatory-2026-11-05/",
+    "title": "Upload Your RAM",
+    "url": "https://uploadyourram.org",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "From Linux to Wikipedia: How Volunteers Build the Internet",
-    "url": "https://thereader.mitpress.mit.edu/from-linux-to-wikipedia-how-volunteers-build-the-internet/",
+    "title": "Every Mac comes with an (undocumented) family member classifier",
+    "url": "https://8rank.ai/game/apple-intelligence-personal-knowledge-graph",
     "source": "Hacker News · Best",
     "kind": "performance"
    }
@@ -775,7 +757,7 @@
     "title": "Airbnb | あつまる？エアビる？｜リビングでエアビる",
     "url": "https://www.youtube.com/watch?v=Mx608ORGCFA",
     "image": "https://i.ytimg.com/vi/Mx608ORGCFA/hqdefault.jpg",
-    "by": "2.5M views",
+    "by": "2.7M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -847,7 +829,7 @@
     "title": "The new MacBook Pro with M6 delivers blazing-fast performance and up to 24 hours of battery life.",
     "url": "https://www.youtube.com/watch?v=vT-o5hh1cVc",
     "image": "https://i.ytimg.com/vi/vT-o5hh1cVc/hqdefault.jpg",
-    "by": "938K views",
+    "by": "940K views",
     "source": "Latest from brands",
     "kind": "performance"
    }
