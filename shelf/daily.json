@@ -1,19 +1,11 @@
 {
- "updated": "2026-11-10T11:19:35.113Z",
+ "updated": "2026-11-11T11:06:06.065Z",
  "media": {
   "ui": [
    {
-    "title": "Creative Reference Library",
-    "url": "https://www.awwwards.com/sites/creative-reference-library",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6ab4a45ed1eae579756505.png",
-    "note": "Creative Reference Library / CRL® is a curated library of creative references from music, film, books, and writing that shape how ideas are developed, tested, and made.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
-   },
-   {
-    "title": "LotusQ",
-    "url": "https://www.producthunt.com/products/lotusq",
-    "note": "Talk instead of type, in any app",
+    "title": "Seedream 5.5 by ByteDance",
+    "url": "https://www.producthunt.com/products/seedream-4-0",
+    "note": "ByteDance's AI image model built for 100-round editing",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -21,47 +13,62 @@
     "title": "meta/astryx",
     "url": "https://github.com/meta/astryx",
     "image": "https://opengraph.githubassets.com/1/meta/astryx",
-    "by": "★ 3,111 today",
+    "by": "★ 2,842 today",
     "note": "An open source design system that's fully customizable and agent ready",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "ZIRKA Interceptor",
-    "url": "https://www.awwwards.com/sites/zirka-interceptor",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6aa120efaba15027332213.jpg",
-    "note": "Building a digital experience for a next-gen Ukrainian interceptor drone.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
-   },
-   {
-    "title": "Kumiko",
-    "url": "https://www.producthunt.com/products/kumiko-2",
-    "note": "AI window manager for ultrawide and big-screen Macs",
+    "title": "StableBar",
+    "url": "https://www.producthunt.com/products/stablebar",
+    "note": "A native, open-source menu bar for macOS",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "anthropics/skills",
-    "url": "https://github.com/anthropics/skills",
-    "image": "https://opengraph.githubassets.com/1/anthropics/skills",
-    "by": "★ 1,676 today",
-    "note": "Public repository for Agent Skills",
+    "title": "ZhuLinsen/daily_stock_analysis",
+    "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+    "image": "https://opengraph.githubassets.com/1/ZhuLinsen/daily_stock_analysis",
+    "by": "★ 960 today",
+    "note": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-fr",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Extrafazant",
-    "url": "https://www.awwwards.com/sites/extrafazant",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6aa7fcc33a28e094057489.jpg",
-    "note": "Extrafazant is a video and animation studio from Tilburg, The Netherlands. Making visual content for brands that aren't afraid to stand out.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
+    "title": "Valin",
+    "url": "https://www.producthunt.com/products/valin",
+    "note": "Your private memory for everything you save.",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
    },
    {
-    "title": "Gesso",
-    "url": "https://www.producthunt.com/products/gesso-2",
-    "note": "Ask ChatGPT or Claude to design, then edit every layer",
+    "title": "GoogleChrome/modern-web-guidance-src",
+    "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+    "image": "https://opengraph.githubassets.com/1/GoogleChrome/modern-web-guidance-src",
+    "by": "★ 133 today",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "Mitra MCP",
+    "url": "https://www.producthunt.com/products/mitra-5",
+    "note": "Give your AI agents access to your personal phone line",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "shadcn/improve",
+    "url": "https://github.com/shadcn/improve",
+    "image": "https://opengraph.githubassets.com/1/shadcn/improve",
+    "by": "★ 333 today",
+    "note": "Use your most capable model to audit your codebase and write plans for cheaper models to execute.",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "Muse Ember by Meta",
+    "url": "https://www.producthunt.com/products/meta-ai",
+    "note": "Meta's low-cost AI model for high-volume agent tasks",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -69,44 +76,43 @@
     "title": "addyosmani/agent-skills",
     "url": "https://github.com/addyosmani/agent-skills",
     "image": "https://opengraph.githubassets.com/1/addyosmani/agent-skills",
-    "by": "★ 465 today",
+    "by": "★ 788 today",
     "note": "Production-grade engineering skills for AI coding agents.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Justin Jefferson",
-    "url": "https://www.awwwards.com/sites/justin-jefferson",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6aad95a1585a1398750089.jpg",
-    "note": "The official site of Justin Jefferson. A full portrait of his influence on the field and beyond it, from his countless records to the style, the partnerships and the JJets Foundation.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
-   },
-   {
-    "title": "TOWeb 15",
-    "url": "https://www.producthunt.com/products/toweb",
-    "note": "Rewritten as a native Mac & Windows app, with AI and MCP",
+    "title": "nizima ACTION!!",
+    "url": "https://www.producthunt.com/products/nizima-action-by-live2d",
+    "note": "Powerful editing, expressive characters, zero installs.",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "anthropics/claude-quickstarts",
-    "url": "https://github.com/anthropics/claude-quickstarts",
-    "image": "https://opengraph.githubassets.com/1/anthropics/claude-quickstarts",
-    "by": "★ 530 today",
-    "note": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API",
+    "title": "vercel-labs/agent-browser",
+    "url": "https://github.com/vercel-labs/agent-browser",
+    "image": "https://opengraph.githubassets.com/1/vercel-labs/agent-browser",
+    "by": "★ 712 today",
+    "note": "Browser automation CLI for AI agents",
     "source": "GitHub Trending",
     "kind": "trending"
    }
   ],
   "landing": [
    {
-    "title": "Creative Reference Library",
-    "url": "https://www.awwwards.com/sites/creative-reference-library",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6ab4a45ed1eae579756505.png",
-    "note": "Creative Reference Library / CRL® is a curated library of creative references from music, film, books, and writing that shape how ideas are developed, tested, and made.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
+    "title": "Clips",
+    "url": "https://onepagelove.com/clips",
+    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/11/opl-screenshot-clips-c2b7-1794319289435-desktop.jpg",
+    "note": "Plastic Audio Clips turns songs into batches of vertical lyric and lip-sync videos, automatically cutting sections on the beat and synchronizing lyrics word by word. The dark, high-contrast landing pa",
+    "source": "One Page Love",
+    "kind": "gallery"
+   },
+   {
+    "title": "Seedream 5.5 by ByteDance",
+    "url": "https://www.producthunt.com/products/seedream-4-0",
+    "note": "ByteDance's AI image model built for 100-round editing",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
    },
    {
     "title": "Ilnaz Khasanshin",
@@ -117,19 +123,11 @@
     "kind": "gallery"
    },
    {
-    "title": "LotusQ",
-    "url": "https://www.producthunt.com/products/lotusq",
-    "note": "Talk instead of type, in any app",
+    "title": "StableBar",
+    "url": "https://www.producthunt.com/products/stablebar",
+    "note": "A native, open-source menu bar for macOS",
     "source": "Product Hunt · Today",
     "kind": "trending"
-   },
-   {
-    "title": "ZIRKA Interceptor",
-    "url": "https://www.awwwards.com/sites/zirka-interceptor",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6aa120efaba15027332213.jpg",
-    "note": "Building a digital experience for a next-gen Ukrainian interceptor drone.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
    },
    {
     "title": "La Coignardière",
@@ -140,19 +138,11 @@
     "kind": "gallery"
    },
    {
-    "title": "Kumiko",
-    "url": "https://www.producthunt.com/products/kumiko-2",
-    "note": "AI window manager for ultrawide and big-screen Macs",
+    "title": "Valin",
+    "url": "https://www.producthunt.com/products/valin",
+    "note": "Your private memory for everything you save.",
     "source": "Product Hunt · Today",
     "kind": "trending"
-   },
-   {
-    "title": "Extrafazant",
-    "url": "https://www.awwwards.com/sites/extrafazant",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6aa7fcc33a28e094057489.jpg",
-    "note": "Extrafazant is a video and animation studio from Tilburg, The Netherlands. Making visual content for brands that aren't afraid to stand out.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
    },
    {
     "title": "Oluwatobi Salawu",
@@ -163,19 +153,11 @@
     "kind": "gallery"
    },
    {
-    "title": "Gesso",
-    "url": "https://www.producthunt.com/products/gesso-2",
-    "note": "Ask ChatGPT or Claude to design, then edit every layer",
+    "title": "Mitra MCP",
+    "url": "https://www.producthunt.com/products/mitra-5",
+    "note": "Give your AI agents access to your personal phone line",
     "source": "Product Hunt · Today",
     "kind": "trending"
-   },
-   {
-    "title": "Justin Jefferson",
-    "url": "https://www.awwwards.com/sites/justin-jefferson",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6aad95a1585a1398750089.jpg",
-    "note": "The official site of Justin Jefferson. A full portrait of his influence on the field and beyond it, from his countless records to the style, the partnerships and the JJets Foundation.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
    },
    {
     "title": "Tegra",
@@ -186,18 +168,33 @@
     "kind": "gallery"
    },
    {
-    "title": "TOWeb 15",
-    "url": "https://www.producthunt.com/products/toweb",
-    "note": "Rewritten as a native Mac & Windows app, with AI and MCP",
+    "title": "Muse Ember by Meta",
+    "url": "https://www.producthunt.com/products/meta-ai",
+    "note": "Meta's low-cost AI model for high-volume agent tasks",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "JUNGLE",
+    "url": "https://onepagelove.com/jungle",
+    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/11/opl-screenshot-jungle-1793803469928-desktop.jpg",
+    "note": "Jungle is an independent graphic design and art direction studio based in Neuchâtel, Switzerland. The playful portfolio resembles a factory conveyor belt, using raw interface controls, horizontal thum",
+    "source": "One Page Love",
+    "kind": "gallery"
+   },
+   {
+    "title": "nizima ACTION!!",
+    "url": "https://www.producthunt.com/products/nizima-action-by-live2d",
+    "note": "Powerful editing, expressive characters, zero installs.",
     "source": "Product Hunt · Today",
     "kind": "trending"
    }
   ],
   "app": [
    {
-    "title": "LotusQ",
-    "url": "https://www.producthunt.com/products/lotusq",
-    "note": "Talk instead of type, in any app",
+    "title": "Seedream 5.5 by ByteDance",
+    "url": "https://www.producthunt.com/products/seedream-4-0",
+    "note": "ByteDance's AI image model built for 100-round editing",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -205,31 +202,62 @@
     "title": "meta/astryx",
     "url": "https://github.com/meta/astryx",
     "image": "https://opengraph.githubassets.com/1/meta/astryx",
-    "by": "★ 3,111 today",
+    "by": "★ 2,842 today",
     "note": "An open source design system that's fully customizable and agent ready",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Kumiko",
-    "url": "https://www.producthunt.com/products/kumiko-2",
-    "note": "AI window manager for ultrawide and big-screen Macs",
+    "title": "StableBar",
+    "url": "https://www.producthunt.com/products/stablebar",
+    "note": "A native, open-source menu bar for macOS",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "anthropics/skills",
-    "url": "https://github.com/anthropics/skills",
-    "image": "https://opengraph.githubassets.com/1/anthropics/skills",
-    "by": "★ 1,676 today",
-    "note": "Public repository for Agent Skills",
+    "title": "ZhuLinsen/daily_stock_analysis",
+    "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+    "image": "https://opengraph.githubassets.com/1/ZhuLinsen/daily_stock_analysis",
+    "by": "★ 960 today",
+    "note": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-fr",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Gesso",
-    "url": "https://www.producthunt.com/products/gesso-2",
-    "note": "Ask ChatGPT or Claude to design, then edit every layer",
+    "title": "Valin",
+    "url": "https://www.producthunt.com/products/valin",
+    "note": "Your private memory for everything you save.",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "GoogleChrome/modern-web-guidance-src",
+    "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+    "image": "https://opengraph.githubassets.com/1/GoogleChrome/modern-web-guidance-src",
+    "by": "★ 133 today",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "Mitra MCP",
+    "url": "https://www.producthunt.com/products/mitra-5",
+    "note": "Give your AI agents access to your personal phone line",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "shadcn/improve",
+    "url": "https://github.com/shadcn/improve",
+    "image": "https://opengraph.githubassets.com/1/shadcn/improve",
+    "by": "★ 333 today",
+    "note": "Use your most capable model to audit your codebase and write plans for cheaper models to execute.",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "Muse Ember by Meta",
+    "url": "https://www.producthunt.com/products/meta-ai",
+    "note": "Meta's low-cost AI model for high-volume agent tasks",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -237,56 +265,24 @@
     "title": "addyosmani/agent-skills",
     "url": "https://github.com/addyosmani/agent-skills",
     "image": "https://opengraph.githubassets.com/1/addyosmani/agent-skills",
-    "by": "★ 465 today",
+    "by": "★ 788 today",
     "note": "Production-grade engineering skills for AI coding agents.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "TOWeb 15",
-    "url": "https://www.producthunt.com/products/toweb",
-    "note": "Rewritten as a native Mac & Windows app, with AI and MCP",
+    "title": "nizima ACTION!!",
+    "url": "https://www.producthunt.com/products/nizima-action-by-live2d",
+    "note": "Powerful editing, expressive characters, zero installs.",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "anthropics/claude-quickstarts",
-    "url": "https://github.com/anthropics/claude-quickstarts",
-    "image": "https://opengraph.githubassets.com/1/anthropics/claude-quickstarts",
-    "by": "★ 530 today",
-    "note": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Operum",
-    "url": "https://www.producthunt.com/products/operum",
-    "note": "Your AI product team, with expert workflows built in",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "google-deepmind/mujoco",
-    "url": "https://github.com/google-deepmind/mujoco",
-    "image": "https://opengraph.githubassets.com/1/google-deepmind/mujoco",
-    "by": "★ 453 today",
-    "note": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Ember",
-    "url": "https://www.producthunt.com/products/ember-117",
-    "note": "Free, open-source Slack you host on Cloudflare in one click",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "we-promise/sure",
-    "url": "https://github.com/we-promise/sure",
-    "image": "https://opengraph.githubassets.com/1/we-promise/sure",
-    "by": "★ 184 today",
-    "note": "The personal finance app for everyone (by everyone)",
+    "title": "vercel-labs/agent-browser",
+    "url": "https://github.com/vercel-labs/agent-browser",
+    "image": "https://opengraph.githubassets.com/1/vercel-labs/agent-browser",
+    "by": "★ 712 today",
+    "note": "Browser automation CLI for AI agents",
     "source": "GitHub Trending",
     "kind": "trending"
    }
@@ -302,18 +298,18 @@
     "kind": "performance"
    },
    {
-    "title": "Me, Myself and Mary",
-    "url": "https://vimeo.com/channels/staffpicks/1244470254",
-    "image": "https://i.vimeocdn.com/video/2224103133-f4083c56850f2844b4050b3f8233c8050604942e5898b62ced5d09a92fc9c7d4-d_960?region=us",
-    "note": "Chris O'Dowd and Aisling Bea star in the true story of an inattentive student who gets his days confused and ends up alone with the President of Ireland whilst&hellip;",
+    "title": "Balming Tiger - Janjan (Official Video)",
+    "url": "https://vimeo.com/channels/staffpicks/1210405418",
+    "image": "https://i.vimeocdn.com/video/2209433748-5ee94dcdc2676eccd1a489d75d703571b61a8522bcd66e51375e2fd538a811fb-d_960?region=us",
+    "note": "* Credit  Director &amp; Animation: Takahashi Riku (DOKUZEN) Creative Director: San Yawn  * Music Production  Executive Producer: San Yawn Producer(s): bj wnjn,&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
    {
-    "title": "David Carson Time: Destination NYC Swatch Watch Launch Film by João Vaz Oliveira",
-    "url": "https://www.stashmedia.tv/david-carson-time-destination-nyc-swatch-watch-launch-film-by-joao-vaz-oliveira/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Carson-Time-Destination-NYC-Swatch-Watch-Launch-Film-by-Joao-Vaz-Oliveira-STASH-MAGAZINE8-1920x1080.jpg",
-    "note": "Motion designer João Vaz Oliveira first worked with David Carson on the designer's 2022 reel, and just recently re-teamed with him for a Swatch collaboration on a signature (and instantly collectable)",
+    "title": "We Love Pitching: Chronicles of a Necessary Mess – Part 24",
+    "url": "https://www.stashmedia.tv/we-love-pitching-chronicles-of-a-necessary-mess-part-24/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/We-Love-Pitching-Part-24-Guest-editorial-by-Claus-Cibilis-_-STASH-MAGAZINE-1446x1080.jpg",
+    "note": "Nerdo ECD Claus Cibils wraps up his passionate and thoughtful series of a editorials on the challenges of the creative pitching process, a 24-part opus fueled by two decades of experience in the motio",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -321,7 +317,53 @@
     "title": "New MacBook Pro with PROLED XDR Display and Touch: The world’s best laptop display",
     "url": "https://www.youtube.com/watch?v=WzuIZLoHqqA",
     "image": "https://i.ytimg.com/vi/WzuIZLoHqqA/hqdefault.jpg",
-    "by": "1.2M views",
+    "by": "1.3M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "PARADAÏZ",
+    "url": "https://vimeo.com/channels/staffpicks/1242836280",
+    "image": "https://i.vimeocdn.com/video/2221192735-f802f7910f7e23a6d0cfc25187e96c2bcd9459bb05da94418e89b1cb7b30f911-d_960?region=us",
+    "note": "Welcome to a place where the houses have holes, tomatoes are ticking time bombs, and snails wander the streets in search of a safe space. Absurdist animation, archival&hellip;",
+    "source": "Vimeo Staff Picks",
+    "kind": "gallery"
+   },
+   {
+    "title": "World War Seven Signs Stop-Motion and Animation Studio Starburns Industries",
+    "url": "https://www.stashmedia.tv/world-war-seven-signs-stop-motion-and-animation-studio-starburns-industries/",
+    "note": "From the release: World War Seven has found the missing piece in its roster: Starburns Industries, who join as WW7’s new partner for stop-motion and animation projects.  [Watch]\nThe post World War Sev",
+    "source": "STASH",
+    "kind": "gallery"
+   },
+   {
+    "title": "Apple Watch Activity Rings: Josh's True Apple Watch Story",
+    "url": "https://www.youtube.com/watch?v=nBmS3DOebLc",
+    "image": "https://i.ytimg.com/vi/nBmS3DOebLc/hqdefault.jpg",
+    "by": "507K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Me, Myself and Mary",
+    "url": "https://vimeo.com/channels/staffpicks/1244470254",
+    "image": "https://i.vimeocdn.com/video/2224527616-c65ef8619f2ab645fb9dbc22776a94d82de7e021d5f0e8a08a60e9fbbc69c677-d_960?region=us",
+    "note": "Chris O'Dowd and Aisling Bea star in the true story of an inattentive student who gets his days confused and ends up alone with the President of Ireland whilst&hellip;",
+    "source": "Vimeo Staff Picks",
+    "kind": "gallery"
+   },
+   {
+    "title": "Beyond the Hype: Envato Releases 2026 The State of AI in Creative Work Report",
+    "url": "https://www.stashmedia.tv/beyond-the-hype-envato-releases-2026-the-state-of-ai-in-creative-work-report/",
+    "note": "From the release: Envato, the leading all-in-one creative asset toolkit empowering millions of creatives worldwide with creative stock and AI-powered tools, releases its second annual Beyond the Hype:",
+    "source": "STASH",
+    "kind": "gallery"
+   },
+   {
+    "title": "Created live on Mac: “Surrender” by Labrinth",
+    "url": "https://www.youtube.com/watch?v=YaPx9scLwfk",
+    "image": "https://i.ytimg.com/vi/YaPx9scLwfk/hqdefault.jpg",
+    "by": "350K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -334,75 +376,27 @@
     "kind": "gallery"
    },
    {
-    "title": "Escafandra Studio Opens 2026 Web Unleashed Event With “Less Perfect” Title Sequence",
-    "url": "https://www.stashmedia.tv/escafandra-studio-opens-web-unleashed-2026/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Web-Unleashed-2026-conference-opening-titles-by-Escafandra-Studio-STASH-MAGAZINE3.jpg",
-    "note": "FITC's 2026 Web Unleashed conference opened in Toronto in Late October with this sequence from local studio Escafandra, a return engagement after creating the titles for the brand's flagship FITC even",
-    "source": "STASH",
-    "kind": "gallery"
-   },
-   {
-    "title": "Apple Watch Heart Rate: Morgan’s True Apple Watch Story",
-    "url": "https://www.youtube.com/watch?v=NOUuyzWx8WI",
-    "image": "https://i.ytimg.com/vi/NOUuyzWx8WI/hqdefault.jpg",
-    "by": "516K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "Son Lux \"Out Into Us\"",
-    "url": "https://vimeo.com/channels/staffpicks/1228116196",
-    "image": "https://i.vimeocdn.com/video/2207155061-05e1466c175c4c30865b67ad65d90863171f9459678796eaad88e8d379916e3c-d_960?region=us",
-    "note": "Commissioned by Mass MoCA + Pioneer Works  Teen: Luzdivina Asue Nse Micha Father: Patrick Mitogo Mother: Elianny Heredia Bautista Grandfather: Michael Dozie Child:&hellip;",
-    "source": "Vimeo Staff Picks",
-    "kind": "gallery"
-   },
-   {
-    "title": "Take a Break From Festive Feels and Get Lost in Renaud Hallée’s New Short Film “PLUS”",
-    "url": "https://www.stashmedia.tv/take-a-break-from-festive-feels-and-get-lost-in-renaud-hallees-new-short-film-plus/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Renaud-Hallee-Short-Film-22PLUS22-STASH-MAGAZINE6-1920x1080.jpg",
-    "note": "Montreal director/animator Renaud Hallée just dropped us his latest personal film, an exercise in music-driven visual precision that feels perfectly timed to counter the annual torrent of emotional Ch",
-    "source": "STASH",
-    "kind": "gallery"
-   },
-   {
-    "title": "Apple Watch Activity Rings: Josh's True Apple Watch Story",
-    "url": "https://www.youtube.com/watch?v=nBmS3DOebLc",
-    "image": "https://i.ytimg.com/vi/nBmS3DOebLc/hqdefault.jpg",
-    "by": "474K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "Something Greater than You",
-    "url": "https://vimeo.com/channels/staffpicks/1242348473",
-    "image": "https://i.vimeocdn.com/video/2220624966-3443a627169e7469fc7072984418323c6e9e55ec33c0967c7b4a4d74aec7bc9a-d_960?region=us",
-    "note": "Two feuding raccoons, having found shelter from a fierce winter storm, receive an unexpected guest.",
-    "source": "Vimeo Staff Picks",
-    "kind": "gallery"
-   },
-   {
-    "title": "Framestore’s Reindeer Takes Flight for The National Lottery",
-    "url": "https://www.stashmedia.tv/framestore-reindeer-take-flight-for-the-national-lottery/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/National-Lottery-Reindeer-holiday-ad-2026-by-Framestore-STASH-MAGAZINE5-1920x1036.jpg",
-    "note": "Working with Arts and Sciences director Tim McNaughton, the deeply experienced (and awarded) CG creature team at Framestore in London imbue a brave reindeer with quiet but unflagging determination for",
+    "title": "Trizz Reframes Complexity for Google Security",
+    "url": "https://www.stashmedia.tv/trizz-reframes-complexity-for-google-security/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Google-Security-brand-film-by-Trizz-and-Across-the-Pond-STASH-MAGAZINE2-1920x1080.jpg",
+    "note": "Working with creative consultancy Across the Pond, the CG motion team at Trizz in Barcelona reframe the dry complexity of Google's cybersecurity systems into a playful and visually mesmerizing journey",
     "source": "STASH",
     "kind": "gallery"
    }
   ],
   "motion": [
    {
-    "title": "Logitech G3 Power Up Campaign | Laundry",
-    "url": "https://motionographer.com/quickie/logitech-g3-power-up-campaign-laundry/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/laundry-logitech-still-00.jpg",
+    "title": "Lofsöng and the Language That Outlives Us",
+    "url": "https://motionographer.com/2026/11/10/lofsong-and-the-language-that-outlives-us/",
+    "note": "At Tribeca Games, Jesse Rylander speaks with Unrelated Studio’s Alessandro Durando about singing stones, brutalist monuments, and a wordless game built to reach across deep time.",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "David Carson Time: Destination NYC Swatch Watch Launch Film by João Vaz Oliveira",
-    "url": "https://www.stashmedia.tv/david-carson-time-destination-nyc-swatch-watch-launch-film-by-joao-vaz-oliveira/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Carson-Time-Destination-NYC-Swatch-Watch-Launch-Film-by-Joao-Vaz-Oliveira-STASH-MAGAZINE8-1920x1080.jpg",
-    "note": "Motion designer João Vaz Oliveira first worked with David Carson on the designer's 2022 reel, and just recently re-teamed with him for a Swatch collaboration on a signature (and instantly collectable)",
+    "title": "We Love Pitching: Chronicles of a Necessary Mess – Part 24",
+    "url": "https://www.stashmedia.tv/we-love-pitching-chronicles-of-a-necessary-mess-part-24/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/We-Love-Pitching-Part-24-Guest-editorial-by-Claus-Cibilis-_-STASH-MAGAZINE-1446x1080.jpg",
+    "note": "Nerdo ECD Claus Cibils wraps up his passionate and thoughtful series of a editorials on the challenges of the creative pitching process, a 24-part opus fueled by two decades of experience in the motio",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -415,18 +409,17 @@
     "kind": "gallery"
    },
    {
-    "title": "Art Director Flora MacLeod Joins Electric Theatre Collective",
-    "url": "https://motionographer.com/news/flora-macleod-electric-theatre-collective/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/flora-macleod-electric-theatre-collective-scaled.jpeg",
-    "note": "Flora MacLeod joins ETC’s 3D design team, bringing experience in tactile CG imagery, Channel 4 idents and immersive work for Outernet London.",
+    "title": "Haymaker VFX Acquires SWISS",
+    "url": "https://motionographer.com/news/haymaker-vfx-acquires-swiss/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/haymaker-wizard-of-oz-sphere.jpg",
+    "note": "Stockholm-based, globally recognized creative team becomes part of Haymaker VFX in next phase of the studio’s international growth. GOTHENBURG, SWEDEN – 1 October 2026 – Haymaker VFX has acquired Swed",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "Escafandra Studio Opens 2026 Web Unleashed Event With “Less Perfect” Title Sequence",
-    "url": "https://www.stashmedia.tv/escafandra-studio-opens-web-unleashed-2026/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Web-Unleashed-2026-conference-opening-titles-by-Escafandra-Studio-STASH-MAGAZINE3.jpg",
-    "note": "FITC's 2026 Web Unleashed conference opened in Toronto in Late October with this sequence from local studio Escafandra, a return engagement after creating the titles for the brand's flagship FITC even",
+    "title": "World War Seven Signs Stop-Motion and Animation Studio Starburns Industries",
+    "url": "https://www.stashmedia.tv/world-war-seven-signs-stop-motion-and-animation-studio-starburns-industries/",
+    "note": "From the release: World War Seven has found the missing piece in its roster: Starburns Industries, who join as WW7’s new partner for stop-motion and animation projects.  [Watch]\nThe post World War Sev",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -439,18 +432,16 @@
     "kind": "gallery"
    },
    {
-    "title": "Tendril Builds Alo’s Handbag Films Around Leather, Light and Movement",
-    "url": "https://motionographer.com/news/tendril-alo-handbag-films-leather-light-movement/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/tendril-alo-handbag-landscape-cover.png",
-    "note": "Tendril’s Inhale and Exhale films reveal Alo’s handbags through leather, brass, crystal and movement, with design and animation by Bureau Klaus Alman.",
+    "title": "ServiceNow AI Platform | NotReal",
+    "url": "https://motionographer.com/quickie/servicenow-ai-platform-notreal/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/notreal-servicenow-behance-15-80.jpg",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "Take a Break From Festive Feels and Get Lost in Renaud Hallée’s New Short Film “PLUS”",
-    "url": "https://www.stashmedia.tv/take-a-break-from-festive-feels-and-get-lost-in-renaud-hallees-new-short-film-plus/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Renaud-Hallee-Short-Film-22PLUS22-STASH-MAGAZINE6-1920x1080.jpg",
-    "note": "Montreal director/animator Renaud Hallée just dropped us his latest personal film, an exercise in music-driven visual precision that feels perfectly timed to counter the annual torrent of emotional Ch",
+    "title": "Beyond the Hype: Envato Releases 2026 The State of AI in Creative Work Report",
+    "url": "https://www.stashmedia.tv/beyond-the-hype-envato-releases-2026-the-state-of-ai-in-creative-work-report/",
+    "note": "From the release: Envato, the leading all-in-one creative asset toolkit empowering millions of creatives worldwide with creative stock and AI-powered tools, releases its second annual Beyond the Hype:",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -463,17 +454,17 @@
     "kind": "gallery"
    },
    {
-    "title": "CoMotion 2026: Energy in Flux | Anaissa Ruiz Tejada and Cristian Sandoval",
-    "url": "https://motionographer.com/quickie/comotion-2026-energy-in-flux/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/comotion-2026-energy-in-flux.jpg",
+    "title": "Logitech G3 Power Up Campaign | Laundry",
+    "url": "https://motionographer.com/quickie/logitech-g3-power-up-campaign-laundry/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/laundry-logitech-still-00.jpg",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "Framestore’s Reindeer Takes Flight for The National Lottery",
-    "url": "https://www.stashmedia.tv/framestore-reindeer-take-flight-for-the-national-lottery/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/National-Lottery-Reindeer-holiday-ad-2026-by-Framestore-STASH-MAGAZINE5-1920x1036.jpg",
-    "note": "Working with Arts and Sciences director Tim McNaughton, the deeply experienced (and awarded) CG creature team at Framestore in London imbue a brave reindeer with quiet but unflagging determination for",
+    "title": "Trizz Reframes Complexity for Google Security",
+    "url": "https://www.stashmedia.tv/trizz-reframes-complexity-for-google-security/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Google-Security-brand-film-by-Trizz-and-Across-the-Pond-STASH-MAGAZINE2-1920x1080.jpg",
+    "note": "Working with creative consultancy Across the Pond, the CG motion team at Trizz in Barcelona reframe the dry complexity of Google's cybersecurity systems into a playful and visually mesmerizing journey",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -496,57 +487,25 @@
     "kind": "performance"
    },
    {
-    "title": "Me, Myself and Mary",
-    "url": "https://vimeo.com/channels/staffpicks/1244470254",
-    "image": "https://i.vimeocdn.com/video/2224103133-f4083c56850f2844b4050b3f8233c8050604942e5898b62ced5d09a92fc9c7d4-d_960?region=us",
-    "note": "Chris O'Dowd and Aisling Bea star in the true story of an inattentive student who gets his days confused and ends up alone with the President of Ireland whilst&hellip;",
+    "title": "Balming Tiger - Janjan (Official Video)",
+    "url": "https://vimeo.com/channels/staffpicks/1210405418",
+    "image": "https://i.vimeocdn.com/video/2209433748-5ee94dcdc2676eccd1a489d75d703571b61a8522bcd66e51375e2fd538a811fb-d_960?region=us",
+    "note": "* Credit  Director &amp; Animation: Takahashi Riku (DOKUZEN) Creative Director: San Yawn  * Music Production  Executive Producer: San Yawn Producer(s): bj wnjn,&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
    {
-    "title": "Logitech G3 Power Up Campaign | Laundry",
-    "url": "https://motionographer.com/quickie/logitech-g3-power-up-campaign-laundry/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/laundry-logitech-still-00.jpg",
+    "title": "Lofsöng and the Language That Outlives Us",
+    "url": "https://motionographer.com/2026/11/10/lofsong-and-the-language-that-outlives-us/",
+    "note": "At Tribeca Games, Jesse Rylander speaks with Unrelated Studio’s Alessandro Durando about singing stones, brutalist monuments, and a wordless game built to reach across deep time.",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "David Carson Time: Destination NYC Swatch Watch Launch Film by João Vaz Oliveira",
-    "url": "https://www.stashmedia.tv/david-carson-time-destination-nyc-swatch-watch-launch-film-by-joao-vaz-oliveira/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Carson-Time-Destination-NYC-Swatch-Watch-Launch-Film-by-Joao-Vaz-Oliveira-STASH-MAGAZINE8-1920x1080.jpg",
-    "note": "Motion designer João Vaz Oliveira first worked with David Carson on the designer's 2022 reel, and just recently re-teamed with him for a Swatch collaboration on a signature (and instantly collectable)",
-    "source": "STASH",
-    "kind": "gallery"
-   },
-   {
-    "title": "This Woman Cured Her Cancer with an Insane Method",
-    "url": "https://www.youtube.com/watch?v=0NY2gAftzJE",
-    "image": "https://i.ytimg.com/vi/0NY2gAftzJE/hqdefault.jpg",
-    "by": "21M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "Gatorville",
-    "url": "https://vimeo.com/channels/staffpicks/1244254462",
-    "image": "https://i.vimeocdn.com/video/2223015373-e371b8678886a6fe51c3a7690ba02ff0887ad004d53e173321476f8879b83013-d_960?region=us",
-    "note": "In Colorado&rsquo;s forgotten valley, two siblings face alligators and the ache of leaving youth behind.  Director: Freddie Gluck Producer: Chloe Campion, Freddie&hellip;",
-    "source": "Vimeo Staff Picks",
-    "kind": "gallery"
-   },
-   {
-    "title": "Art Director Flora MacLeod Joins Electric Theatre Collective",
-    "url": "https://motionographer.com/news/flora-macleod-electric-theatre-collective/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/flora-macleod-electric-theatre-collective-scaled.jpeg",
-    "note": "Flora MacLeod joins ETC’s 3D design team, bringing experience in tactile CG imagery, Channel 4 idents and immersive work for Outernet London.",
-    "source": "Motionographer",
-    "kind": "gallery"
-   },
-   {
-    "title": "Escafandra Studio Opens 2026 Web Unleashed Event With “Less Perfect” Title Sequence",
-    "url": "https://www.stashmedia.tv/escafandra-studio-opens-web-unleashed-2026/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Web-Unleashed-2026-conference-opening-titles-by-Escafandra-Studio-STASH-MAGAZINE3.jpg",
-    "note": "FITC's 2026 Web Unleashed conference opened in Toronto in Late October with this sequence from local studio Escafandra, a return engagement after creating the titles for the brand's flagship FITC even",
+    "title": "We Love Pitching: Chronicles of a Necessary Mess – Part 24",
+    "url": "https://www.stashmedia.tv/we-love-pitching-chronicles-of-a-necessary-mess-part-24/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/We-Love-Pitching-Part-24-Guest-editorial-by-Claus-Cibilis-_-STASH-MAGAZINE-1446x1080.jpg",
+    "note": "Nerdo ECD Claus Cibils wraps up his passionate and thoughtful series of a editorials on the challenges of the creative pitching process, a 24-part opus fueled by two decades of experience in the motio",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -559,26 +518,55 @@
     "kind": "performance"
    },
    {
-    "title": "Son Lux \"Out Into Us\"",
-    "url": "https://vimeo.com/channels/staffpicks/1228116196",
-    "image": "https://i.vimeocdn.com/video/2207155061-05e1466c175c4c30865b67ad65d90863171f9459678796eaad88e8d379916e3c-d_960?region=us",
-    "note": "Commissioned by Mass MoCA + Pioneer Works  Teen: Luzdivina Asue Nse Micha Father: Patrick Mitogo Mother: Elianny Heredia Bautista Grandfather: Michael Dozie Child:&hellip;",
+    "title": "PARADAÏZ",
+    "url": "https://vimeo.com/channels/staffpicks/1242836280",
+    "image": "https://i.vimeocdn.com/video/2221192735-f802f7910f7e23a6d0cfc25187e96c2bcd9459bb05da94418e89b1cb7b30f911-d_960?region=us",
+    "note": "Welcome to a place where the houses have holes, tomatoes are ticking time bombs, and snails wander the streets in search of a safe space. Absurdist animation, archival&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
    {
-    "title": "Tendril Builds Alo’s Handbag Films Around Leather, Light and Movement",
-    "url": "https://motionographer.com/news/tendril-alo-handbag-films-leather-light-movement/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/tendril-alo-handbag-landscape-cover.png",
-    "note": "Tendril’s Inhale and Exhale films reveal Alo’s handbags through leather, brass, crystal and movement, with design and animation by Bureau Klaus Alman.",
+    "title": "Haymaker VFX Acquires SWISS",
+    "url": "https://motionographer.com/news/haymaker-vfx-acquires-swiss/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/haymaker-wizard-of-oz-sphere.jpg",
+    "note": "Stockholm-based, globally recognized creative team becomes part of Haymaker VFX in next phase of the studio’s international growth. GOTHENBURG, SWEDEN – 1 October 2026 – Haymaker VFX has acquired Swed",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "Take a Break From Festive Feels and Get Lost in Renaud Hallée’s New Short Film “PLUS”",
-    "url": "https://www.stashmedia.tv/take-a-break-from-festive-feels-and-get-lost-in-renaud-hallees-new-short-film-plus/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Renaud-Hallee-Short-Film-22PLUS22-STASH-MAGAZINE6-1920x1080.jpg",
-    "note": "Montreal director/animator Renaud Hallée just dropped us his latest personal film, an exercise in music-driven visual precision that feels perfectly timed to counter the annual torrent of emotional Ch",
+    "title": "World War Seven Signs Stop-Motion and Animation Studio Starburns Industries",
+    "url": "https://www.stashmedia.tv/world-war-seven-signs-stop-motion-and-animation-studio-starburns-industries/",
+    "note": "From the release: World War Seven has found the missing piece in its roster: Starburns Industries, who join as WW7’s new partner for stop-motion and animation projects.  [Watch]\nThe post World War Sev",
+    "source": "STASH",
+    "kind": "gallery"
+   },
+   {
+    "title": "This Is What a Godlike Civilization Would Look Like",
+    "url": "https://www.youtube.com/watch?v=QW_jlUn4gA8",
+    "image": "https://i.ytimg.com/vi/QW_jlUn4gA8/hqdefault.jpg",
+    "by": "9.5M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Me, Myself and Mary",
+    "url": "https://vimeo.com/channels/staffpicks/1244470254",
+    "image": "https://i.vimeocdn.com/video/2224527616-c65ef8619f2ab645fb9dbc22776a94d82de7e021d5f0e8a08a60e9fbbc69c677-d_960?region=us",
+    "note": "Chris O'Dowd and Aisling Bea star in the true story of an inattentive student who gets his days confused and ends up alone with the President of Ireland whilst&hellip;",
+    "source": "Vimeo Staff Picks",
+    "kind": "gallery"
+   },
+   {
+    "title": "ServiceNow AI Platform | NotReal",
+    "url": "https://motionographer.com/quickie/servicenow-ai-platform-notreal/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/notreal-servicenow-behance-15-80.jpg",
+    "source": "Motionographer",
+    "kind": "gallery"
+   },
+   {
+    "title": "Beyond the Hype: Envato Releases 2026 The State of AI in Creative Work Report",
+    "url": "https://www.stashmedia.tv/beyond-the-hype-envato-releases-2026-the-state-of-ai-in-creative-work-report/",
+    "note": "From the release: Envato, the leading all-in-one creative asset toolkit empowering millions of creatives worldwide with creative stock and AI-powered tools, releases its second annual Beyond the Hype:",
     "source": "STASH",
     "kind": "gallery"
    }
@@ -588,7 +576,15 @@
     "title": "World's Biggest Human Catapult 🤯",
     "url": "https://www.youtube.com/watch?v=_72h8SbCgqE",
     "image": "https://i.ytimg.com/vi/_72h8SbCgqE/hqdefault.jpg",
-    "by": "21M views",
+    "by": "26M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "How To Make An Exit 💥",
+    "url": "https://www.youtube.com/watch?v=ehyKWTwuGFI",
+    "image": "https://i.ytimg.com/vi/ehyKWTwuGFI/hqdefault.jpg",
+    "by": "6.5M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -601,6 +597,14 @@
     "kind": "performance"
    },
    {
+    "title": "Gravity Had Other Plans 😅",
+    "url": "https://www.youtube.com/watch?v=QRQxi-SynaA",
+    "image": "https://i.ytimg.com/vi/QRQxi-SynaA/hqdefault.jpg",
+    "by": "2M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
     "title": "Airbnb | あつまる？エアビる？｜今日はちょっと、大人忘れます。",
     "url": "https://www.youtube.com/watch?v=p8HvRJALo4Y",
     "image": "https://i.ytimg.com/vi/p8HvRJALo4Y/hqdefault.jpg",
@@ -609,34 +613,10 @@
     "kind": "performance"
    },
    {
-    "title": "Gravity Had Other Plans 😅",
-    "url": "https://www.youtube.com/watch?v=QRQxi-SynaA",
-    "image": "https://i.ytimg.com/vi/QRQxi-SynaA/hqdefault.jpg",
-    "by": "1.5M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
     "title": "if my lovity is falsity, why r u my verity 🎨: @lleahistired",
     "url": "https://www.youtube.com/watch?v=tbUMR2qIEzo",
     "image": "https://i.ytimg.com/vi/tbUMR2qIEzo/hqdefault.jpg",
-    "by": "1.3M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "Now THAT'S A Comeback 👏",
-    "url": "https://www.youtube.com/watch?v=8j6ZBH3Eb_M",
-    "image": "https://i.ytimg.com/vi/8j6ZBH3Eb_M/hqdefault.jpg",
-    "by": "926K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "move over stolas the og dancing owl is here 🦉 #helluvaboss 🎨: @lleahistired",
-    "url": "https://www.youtube.com/watch?v=i-OP8QFbLm0",
-    "image": "https://i.ytimg.com/vi/i-OP8QFbLm0/hqdefault.jpg",
-    "by": "632K views",
+    "by": "1.5M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -644,7 +624,7 @@
     "title": "Nido de Villanas: Ep. 1 Don Cristóbal’s inheritance",
     "url": "https://www.youtube.com/watch?v=wG_LaKvlcqM",
     "image": "https://i.ytimg.com/vi/wG_LaKvlcqM/hqdefault.jpg",
-    "by": "556K views",
+    "by": "557K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -652,7 +632,7 @@
     "title": "pretend the audio is guten morgen 😍",
     "url": "https://www.youtube.com/watch?v=Br8AXbB0pwI",
     "image": "https://i.ytimg.com/vi/Br8AXbB0pwI/hqdefault.jpg",
-    "by": "365K views",
+    "by": "386K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -660,15 +640,15 @@
     "title": "Get sorted for college with Roxie from the Apple Store.",
     "url": "https://www.youtube.com/watch?v=P5GxUjU4uBI",
     "image": "https://i.ytimg.com/vi/P5GxUjU4uBI/hqdefault.jpg",
-    "by": "365K views",
+    "by": "366K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
    {
-    "title": "How To Make An Exit 💥",
-    "url": "https://www.youtube.com/watch?v=ehyKWTwuGFI",
-    "image": "https://i.ytimg.com/vi/ehyKWTwuGFI/hqdefault.jpg",
-    "by": "331K views",
+    "title": "Short And Sweet... Right? 👀",
+    "url": "https://www.youtube.com/watch?v=MfGU9yzdyTk",
+    "image": "https://i.ytimg.com/vi/MfGU9yzdyTk/hqdefault.jpg",
+    "by": "343K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -676,18 +656,115 @@
     "title": "Show off your work with Desk View. Tip from Kylie at the Apple Store.",
     "url": "https://www.youtube.com/watch?v=BTyWlJJUX2I",
     "image": "https://i.ytimg.com/vi/BTyWlJJUX2I/hqdefault.jpg",
-    "by": "318K views",
+    "by": "319K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "BOBERRRRRRRRRRRR",
+    "url": "https://www.youtube.com/watch?v=rlwQUmgm8Z8",
+    "image": "https://i.ytimg.com/vi/rlwQUmgm8Z8/hqdefault.jpg",
+    "by": "275K views",
     "source": "Latest from brands",
     "kind": "performance"
    }
   ],
-  "post": [],
+  "post": [
+   {
+    "title": "Tracking Anthropic-discovered vulnerabilities",
+    "url": "https://www.vulncheck.com/blog/anthropic-glasswing-november-update",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "Scion is back and is going to sell a kei truck in America",
+    "url": "https://www.theautopian.com/scion-is-back-and-its-going-to-sell-a-freaking-kei-truck-in-america/",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "Starlink Mini 2",
+    "url": "https://starlink.com/mini-2",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "Synaptics patent claims stop work on DisplayLink drivers",
+    "url": "https://lwn.net/SubscriberLink/1102549/acbc92e00cee3a3f/",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+    "url": "https://github.com/GoogleChrome/modern-web-guidance",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "Val Town is winding down",
+    "url": "https://blog.val.town/winding-down",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": ".name Grandfathered",
+    "url": "https://neil.fraser.name/news/2026/11/10/",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "Blender 5.3 released with Gaussian Splat support",
+    "url": "https://www.blender.org/download/releases/5-3/",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "Smart home devices should work without the internet",
+    "url": "https://docodethatmatters.com/home-automation-overnight-success/",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "AlphaProof Code",
+    "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "AI usage generates a fragile codebase",
+    "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "Amazon saves millions by replacing Sonnet 4.6 with Strands Decider",
+    "url": "https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   }
+  ],
   "ad": [
    {
     "title": "New MacBook Pro with PROLED XDR Display: The first-ever Mac with Touch",
     "url": "https://www.youtube.com/watch?v=hnZI5uUSdEo",
     "image": "https://i.ytimg.com/vi/hnZI5uUSdEo/hqdefault.jpg",
     "by": "44M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Count Before You Click",
+    "url": "https://www.adsoftheworld.com/campaigns/count-before-you-click-b54b03b4-3528-4bd8-84bf-7e4f73677174",
+    "image": "https://image.adsoftheworld.com/fyobom1jsq5jhp70j991e5eike2m",
+    "by": "Take9",
+    "source": "Ads of the World",
+    "kind": "gallery"
+   },
+   {
+    "title": "Airbnb | あつまる？エアビる？｜リビングでエアビる",
+    "url": "https://www.youtube.com/watch?v=Mx608ORGCFA",
+    "image": "https://i.ytimg.com/vi/Mx608ORGCFA/hqdefault.jpg",
+    "by": "2.9M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -700,10 +777,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Airbnb | あつまる？エアビる？｜リビングでエアビる",
-    "url": "https://www.youtube.com/watch?v=Mx608ORGCFA",
-    "image": "https://i.ytimg.com/vi/Mx608ORGCFA/hqdefault.jpg",
-    "by": "2.8M views",
+    "title": "Airbnb | あつまる？エアビる？｜あの頃より、近づく夜。",
+    "url": "https://www.youtube.com/watch?v=FfoCK8cltno",
+    "image": "https://i.ytimg.com/vi/FfoCK8cltno/hqdefault.jpg",
+    "by": "1.6M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -716,10 +793,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Airbnb | あつまる？エアビる？｜あの頃より、近づく夜。",
-    "url": "https://www.youtube.com/watch?v=FfoCK8cltno",
-    "image": "https://i.ytimg.com/vi/FfoCK8cltno/hqdefault.jpg",
-    "by": "1.6M views",
+    "title": "Airbnb | あつまる？エアビる？｜今日はちょっと、大人忘れます。",
+    "url": "https://www.youtube.com/watch?v=hmYXIfxAIoM",
+    "image": "https://i.ytimg.com/vi/hmYXIfxAIoM/hqdefault.jpg",
+    "by": "1.5M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -732,10 +809,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Airbnb | あつまる？エアビる？｜今日はちょっと、大人忘れます。",
-    "url": "https://www.youtube.com/watch?v=hmYXIfxAIoM",
-    "image": "https://i.ytimg.com/vi/hmYXIfxAIoM/hqdefault.jpg",
-    "by": "1.5M views",
+    "title": "New MacBook Pro with PROLED XDR Display and Touch: The world’s best laptop display",
+    "url": "https://www.youtube.com/watch?v=WzuIZLoHqqA",
+    "image": "https://i.ytimg.com/vi/WzuIZLoHqqA/hqdefault.jpg",
+    "by": "1.3M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -756,26 +833,10 @@
     "kind": "performance"
    },
    {
-    "title": "Take Time to Connect",
-    "url": "https://www.adsoftheworld.com/campaigns/take-time-to-connect",
-    "image": "https://image.adsoftheworld.com/8v14k3o3pym1s7mt7q1smkw5ebv5",
-    "by": "Deutsche Telekom",
-    "source": "Ads of the World",
-    "kind": "gallery"
-   },
-   {
-    "title": "New MacBook Pro with PROLED XDR Display and Touch: The world’s best laptop display",
-    "url": "https://www.youtube.com/watch?v=WzuIZLoHqqA",
-    "image": "https://i.ytimg.com/vi/WzuIZLoHqqA/hqdefault.jpg",
-    "by": "1.2M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "Apple Watch Heart Rate: Morgan’s True Apple Watch Story",
-    "url": "https://www.youtube.com/watch?v=NOUuyzWx8WI",
-    "image": "https://i.ytimg.com/vi/NOUuyzWx8WI/hqdefault.jpg",
-    "by": "516K views",
+    "title": "Apple Watch Activity Rings: Josh's True Apple Watch Story",
+    "url": "https://www.youtube.com/watch?v=nBmS3DOebLc",
+    "image": "https://i.ytimg.com/vi/nBmS3DOebLc/hqdefault.jpg",
+    "by": "507K views",
     "source": "Latest from brands",
     "kind": "performance"
    }
