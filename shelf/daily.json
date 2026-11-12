@@ -1,43 +1,11 @@
 {
- "updated": "2026-11-11T11:06:06.065Z",
+ "updated": "2026-11-12T11:24:45.431Z",
  "media": {
   "ui": [
    {
-    "title": "Seedream 5.5 by ByteDance",
-    "url": "https://www.producthunt.com/products/seedream-4-0",
-    "note": "ByteDance's AI image model built for 100-round editing",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "meta/astryx",
-    "url": "https://github.com/meta/astryx",
-    "image": "https://opengraph.githubassets.com/1/meta/astryx",
-    "by": "★ 2,842 today",
-    "note": "An open source design system that's fully customizable and agent ready",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "StableBar",
-    "url": "https://www.producthunt.com/products/stablebar",
-    "note": "A native, open-source menu bar for macOS",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "ZhuLinsen/daily_stock_analysis",
-    "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
-    "image": "https://opengraph.githubassets.com/1/ZhuLinsen/daily_stock_analysis",
-    "by": "★ 960 today",
-    "note": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-fr",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Valin",
-    "url": "https://www.producthunt.com/products/valin",
-    "note": "Your private memory for everything you save.",
+    "title": "Didit MCP",
+    "url": "https://www.producthunt.com/products/didit-3",
+    "note": "The MCP server for identity verification and fraud checks",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -45,55 +13,87 @@
     "title": "GoogleChrome/modern-web-guidance-src",
     "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
     "image": "https://opengraph.githubassets.com/1/GoogleChrome/modern-web-guidance-src",
-    "by": "★ 133 today",
+    "by": "★ 159 today",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Mitra MCP",
-    "url": "https://www.producthunt.com/products/mitra-5",
-    "note": "Give your AI agents access to your personal phone line",
+    "title": "CanyonOS",
+    "url": "https://www.producthunt.com/products/canyon-code",
+    "note": "The One Platform for Scaling your Agentic Apps",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "shadcn/improve",
-    "url": "https://github.com/shadcn/improve",
-    "image": "https://opengraph.githubassets.com/1/shadcn/improve",
-    "by": "★ 333 today",
-    "note": "Use your most capable model to audit your codebase and write plans for cheaper models to execute.",
+    "title": "openai/codex-security",
+    "url": "https://github.com/openai/codex-security",
+    "image": "https://opengraph.githubassets.com/1/openai/codex-security",
+    "by": "★ 52 today",
+    "note": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Muse Ember by Meta",
-    "url": "https://www.producthunt.com/products/meta-ai",
-    "note": "Meta's low-cost AI model for high-volume agent tasks",
+    "title": "Skysoon",
+    "url": "https://www.producthunt.com/products/skysoon",
+    "note": "Beautiful weather timelines and countdowns to what's next.",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "addyosmani/agent-skills",
-    "url": "https://github.com/addyosmani/agent-skills",
-    "image": "https://opengraph.githubassets.com/1/addyosmani/agent-skills",
-    "by": "★ 788 today",
-    "note": "Production-grade engineering skills for AI coding agents.",
+    "title": "nvm-sh/nvm",
+    "url": "https://github.com/nvm-sh/nvm",
+    "image": "https://opengraph.githubassets.com/1/nvm-sh/nvm",
+    "by": "★ 79 today",
+    "note": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "nizima ACTION!!",
-    "url": "https://www.producthunt.com/products/nizima-action-by-live2d",
-    "note": "Powerful editing, expressive characters, zero installs.",
+    "title": "Hoy for Mac",
+    "url": "https://www.producthunt.com/products/hoy-for-mac",
+    "note": "Walkie-talkie meets AirDrop meets Messages",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "vercel-labs/agent-browser",
-    "url": "https://github.com/vercel-labs/agent-browser",
-    "image": "https://opengraph.githubassets.com/1/vercel-labs/agent-browser",
-    "by": "★ 712 today",
-    "note": "Browser automation CLI for AI agents",
+    "title": "pookjw/HermesEnabler",
+    "url": "https://github.com/pookjw/HermesEnabler",
+    "image": "https://opengraph.githubassets.com/1/pookjw/HermesEnabler",
+    "by": "★ 390 today",
+    "note": "Enable Hermès Watch Faces on any Apple Watch devices",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "Sendr V4: Lovable for GTM",
+    "url": "https://www.producthunt.com/products/sendr",
+    "note": "Your AI GTM engineer to build signal based go-to-market",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "we-promise/sure",
+    "url": "https://github.com/we-promise/sure",
+    "image": "https://opengraph.githubassets.com/1/we-promise/sure",
+    "by": "★ 1,078 today",
+    "note": "The personal finance app for everyone (by everyone)",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "Foxpit",
+    "url": "https://www.producthunt.com/products/foxpit",
+    "note": "Run Claude Code, Codex & OpenCode as one AI team",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "QwenLM/qwen-code",
+    "url": "https://github.com/QwenLM/qwen-code",
+    "image": "https://opengraph.githubassets.com/1/QwenLM/qwen-code",
+    "by": "★ 151 today",
+    "note": "An open-source AI coding agent that lives in your terminal.",
     "source": "GitHub Trending",
     "kind": "trending"
    }
@@ -108,9 +108,9 @@
     "kind": "gallery"
    },
    {
-    "title": "Seedream 5.5 by ByteDance",
-    "url": "https://www.producthunt.com/products/seedream-4-0",
-    "note": "ByteDance's AI image model built for 100-round editing",
+    "title": "Didit MCP",
+    "url": "https://www.producthunt.com/products/didit-3",
+    "note": "The MCP server for identity verification and fraud checks",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -123,9 +123,9 @@
     "kind": "gallery"
    },
    {
-    "title": "StableBar",
-    "url": "https://www.producthunt.com/products/stablebar",
-    "note": "A native, open-source menu bar for macOS",
+    "title": "CanyonOS",
+    "url": "https://www.producthunt.com/products/canyon-code",
+    "note": "The One Platform for Scaling your Agentic Apps",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -138,9 +138,9 @@
     "kind": "gallery"
    },
    {
-    "title": "Valin",
-    "url": "https://www.producthunt.com/products/valin",
-    "note": "Your private memory for everything you save.",
+    "title": "Skysoon",
+    "url": "https://www.producthunt.com/products/skysoon",
+    "note": "Beautiful weather timelines and countdowns to what's next.",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -153,9 +153,9 @@
     "kind": "gallery"
    },
    {
-    "title": "Mitra MCP",
-    "url": "https://www.producthunt.com/products/mitra-5",
-    "note": "Give your AI agents access to your personal phone line",
+    "title": "Hoy for Mac",
+    "url": "https://www.producthunt.com/products/hoy-for-mac",
+    "note": "Walkie-talkie meets AirDrop meets Messages",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -168,9 +168,9 @@
     "kind": "gallery"
    },
    {
-    "title": "Muse Ember by Meta",
-    "url": "https://www.producthunt.com/products/meta-ai",
-    "note": "Meta's low-cost AI model for high-volume agent tasks",
+    "title": "Sendr V4: Lovable for GTM",
+    "url": "https://www.producthunt.com/products/sendr",
+    "note": "Your AI GTM engineer to build signal based go-to-market",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -183,50 +183,18 @@
     "kind": "gallery"
    },
    {
-    "title": "nizima ACTION!!",
-    "url": "https://www.producthunt.com/products/nizima-action-by-live2d",
-    "note": "Powerful editing, expressive characters, zero installs.",
+    "title": "Foxpit",
+    "url": "https://www.producthunt.com/products/foxpit",
+    "note": "Run Claude Code, Codex & OpenCode as one AI team",
     "source": "Product Hunt · Today",
     "kind": "trending"
    }
   ],
   "app": [
    {
-    "title": "Seedream 5.5 by ByteDance",
-    "url": "https://www.producthunt.com/products/seedream-4-0",
-    "note": "ByteDance's AI image model built for 100-round editing",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "meta/astryx",
-    "url": "https://github.com/meta/astryx",
-    "image": "https://opengraph.githubassets.com/1/meta/astryx",
-    "by": "★ 2,842 today",
-    "note": "An open source design system that's fully customizable and agent ready",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "StableBar",
-    "url": "https://www.producthunt.com/products/stablebar",
-    "note": "A native, open-source menu bar for macOS",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "ZhuLinsen/daily_stock_analysis",
-    "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
-    "image": "https://opengraph.githubassets.com/1/ZhuLinsen/daily_stock_analysis",
-    "by": "★ 960 today",
-    "note": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-fr",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Valin",
-    "url": "https://www.producthunt.com/products/valin",
-    "note": "Your private memory for everything you save.",
+    "title": "Didit MCP",
+    "url": "https://www.producthunt.com/products/didit-3",
+    "note": "The MCP server for identity verification and fraud checks",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -234,55 +202,87 @@
     "title": "GoogleChrome/modern-web-guidance-src",
     "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
     "image": "https://opengraph.githubassets.com/1/GoogleChrome/modern-web-guidance-src",
-    "by": "★ 133 today",
+    "by": "★ 159 today",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Mitra MCP",
-    "url": "https://www.producthunt.com/products/mitra-5",
-    "note": "Give your AI agents access to your personal phone line",
+    "title": "CanyonOS",
+    "url": "https://www.producthunt.com/products/canyon-code",
+    "note": "The One Platform for Scaling your Agentic Apps",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "shadcn/improve",
-    "url": "https://github.com/shadcn/improve",
-    "image": "https://opengraph.githubassets.com/1/shadcn/improve",
-    "by": "★ 333 today",
-    "note": "Use your most capable model to audit your codebase and write plans for cheaper models to execute.",
+    "title": "openai/codex-security",
+    "url": "https://github.com/openai/codex-security",
+    "image": "https://opengraph.githubassets.com/1/openai/codex-security",
+    "by": "★ 52 today",
+    "note": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Muse Ember by Meta",
-    "url": "https://www.producthunt.com/products/meta-ai",
-    "note": "Meta's low-cost AI model for high-volume agent tasks",
+    "title": "Skysoon",
+    "url": "https://www.producthunt.com/products/skysoon",
+    "note": "Beautiful weather timelines and countdowns to what's next.",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "addyosmani/agent-skills",
-    "url": "https://github.com/addyosmani/agent-skills",
-    "image": "https://opengraph.githubassets.com/1/addyosmani/agent-skills",
-    "by": "★ 788 today",
-    "note": "Production-grade engineering skills for AI coding agents.",
+    "title": "nvm-sh/nvm",
+    "url": "https://github.com/nvm-sh/nvm",
+    "image": "https://opengraph.githubassets.com/1/nvm-sh/nvm",
+    "by": "★ 79 today",
+    "note": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "nizima ACTION!!",
-    "url": "https://www.producthunt.com/products/nizima-action-by-live2d",
-    "note": "Powerful editing, expressive characters, zero installs.",
+    "title": "Hoy for Mac",
+    "url": "https://www.producthunt.com/products/hoy-for-mac",
+    "note": "Walkie-talkie meets AirDrop meets Messages",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "vercel-labs/agent-browser",
-    "url": "https://github.com/vercel-labs/agent-browser",
-    "image": "https://opengraph.githubassets.com/1/vercel-labs/agent-browser",
-    "by": "★ 712 today",
-    "note": "Browser automation CLI for AI agents",
+    "title": "pookjw/HermesEnabler",
+    "url": "https://github.com/pookjw/HermesEnabler",
+    "image": "https://opengraph.githubassets.com/1/pookjw/HermesEnabler",
+    "by": "★ 390 today",
+    "note": "Enable Hermès Watch Faces on any Apple Watch devices",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "Sendr V4: Lovable for GTM",
+    "url": "https://www.producthunt.com/products/sendr",
+    "note": "Your AI GTM engineer to build signal based go-to-market",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "we-promise/sure",
+    "url": "https://github.com/we-promise/sure",
+    "image": "https://opengraph.githubassets.com/1/we-promise/sure",
+    "by": "★ 1,078 today",
+    "note": "The personal finance app for everyone (by everyone)",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "Foxpit",
+    "url": "https://www.producthunt.com/products/foxpit",
+    "note": "Run Claude Code, Codex & OpenCode as one AI team",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "QwenLM/qwen-code",
+    "url": "https://github.com/QwenLM/qwen-code",
+    "image": "https://opengraph.githubassets.com/1/QwenLM/qwen-code",
+    "by": "★ 151 today",
+    "note": "An open-source AI coding agent that lives in your terminal.",
     "source": "GitHub Trending",
     "kind": "trending"
    }
@@ -293,7 +293,31 @@
     "title": "New MacBook Pro with PROLED XDR Display: The first-ever Mac with Touch",
     "url": "https://www.youtube.com/watch?v=hnZI5uUSdEo",
     "image": "https://i.ytimg.com/vi/hnZI5uUSdEo/hqdefault.jpg",
-    "by": "44M views",
+    "by": "45M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Paper Trail",
+    "url": "https://vimeo.com/channels/staffpicks/1234190827",
+    "image": "https://i.vimeocdn.com/video/2210099538-c8d668916f0e1b7a9a1f5d7035e69d29c6c709c0a224f6dcfc8c3d0316455aa1-d_960?region=us",
+    "note": "A life, seen through paper.   Paper Trail is now available to pre-order on Blu-ray with the 2024 animated film ME, exclusive optional audio commentaries by Don Hertzfeldt,&hellip;",
+    "source": "Vimeo Staff Picks",
+    "kind": "gallery"
+   },
+   {
+    "title": "Electric Theatre Collective’s Ambitious Amphibian Adventure",
+    "url": "https://www.stashmedia.tv/electric-theatre-collectives-ambitious-amphibian-adventure/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/NETFLIX-ad-with-axolotl-by-Electric-Theatre-Collective-STASH-MAGAZINE3-1920x1080.jpg",
+    "note": "Working with Iconoclast directors Vania & Muggia, the VFX crew at ETC in London transform an axolotl (aquatic salamander native to Mexico City) into a Bridgerton-binging hero as part of a new Netflix ",
+    "source": "STASH",
+    "kind": "gallery"
+   },
+   {
+    "title": "New MacBook Pro with PROLED XDR Display and Touch: The world’s best laptop display",
+    "url": "https://www.youtube.com/watch?v=WzuIZLoHqqA",
+    "image": "https://i.ytimg.com/vi/WzuIZLoHqqA/hqdefault.jpg",
+    "by": "1.3M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -314,10 +338,10 @@
     "kind": "gallery"
    },
    {
-    "title": "New MacBook Pro with PROLED XDR Display and Touch: The world’s best laptop display",
-    "url": "https://www.youtube.com/watch?v=WzuIZLoHqqA",
-    "image": "https://i.ytimg.com/vi/WzuIZLoHqqA/hqdefault.jpg",
-    "by": "1.3M views",
+    "title": "Created live on Mac: “Surrender” by Labrinth",
+    "url": "https://www.youtube.com/watch?v=YaPx9scLwfk",
+    "image": "https://i.ytimg.com/vi/YaPx9scLwfk/hqdefault.jpg",
+    "by": "678K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -337,10 +361,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Apple Watch Activity Rings: Josh's True Apple Watch Story",
-    "url": "https://www.youtube.com/watch?v=nBmS3DOebLc",
-    "image": "https://i.ytimg.com/vi/nBmS3DOebLc/hqdefault.jpg",
-    "by": "507K views",
+    "title": "Apple Pay: The fast, easy, and secure way to pay.",
+    "url": "https://www.youtube.com/watch?v=miUjxZ2ASRs",
+    "image": "https://i.ytimg.com/vi/miUjxZ2ASRs/hqdefault.jpg",
+    "by": "247K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -358,30 +382,6 @@
     "note": "From the release: Envato, the leading all-in-one creative asset toolkit empowering millions of creatives worldwide with creative stock and AI-powered tools, releases its second annual Beyond the Hype:",
     "source": "STASH",
     "kind": "gallery"
-   },
-   {
-    "title": "Created live on Mac: “Surrender” by Labrinth",
-    "url": "https://www.youtube.com/watch?v=YaPx9scLwfk",
-    "image": "https://i.ytimg.com/vi/YaPx9scLwfk/hqdefault.jpg",
-    "by": "350K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "Gatorville",
-    "url": "https://vimeo.com/channels/staffpicks/1244254462",
-    "image": "https://i.vimeocdn.com/video/2223015373-e371b8678886a6fe51c3a7690ba02ff0887ad004d53e173321476f8879b83013-d_960?region=us",
-    "note": "In Colorado&rsquo;s forgotten valley, two siblings face alligators and the ache of leaving youth behind.  Director: Freddie Gluck Producer: Chloe Campion, Freddie&hellip;",
-    "source": "Vimeo Staff Picks",
-    "kind": "gallery"
-   },
-   {
-    "title": "Trizz Reframes Complexity for Google Security",
-    "url": "https://www.stashmedia.tv/trizz-reframes-complexity-for-google-security/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Google-Security-brand-film-by-Trizz-and-Across-the-Pond-STASH-MAGAZINE2-1920x1080.jpg",
-    "note": "Working with creative consultancy Across the Pond, the CG motion team at Trizz in Barcelona reframe the dry complexity of Google's cybersecurity systems into a playful and visually mesmerizing journey",
-    "source": "STASH",
-    "kind": "gallery"
    }
   ],
   "motion": [
@@ -393,10 +393,10 @@
     "kind": "gallery"
    },
    {
-    "title": "We Love Pitching: Chronicles of a Necessary Mess – Part 24",
-    "url": "https://www.stashmedia.tv/we-love-pitching-chronicles-of-a-necessary-mess-part-24/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/We-Love-Pitching-Part-24-Guest-editorial-by-Claus-Cibilis-_-STASH-MAGAZINE-1446x1080.jpg",
-    "note": "Nerdo ECD Claus Cibils wraps up his passionate and thoughtful series of a editorials on the challenges of the creative pitching process, a 24-part opus fueled by two decades of experience in the motio",
+    "title": "Electric Theatre Collective’s Ambitious Amphibian Adventure",
+    "url": "https://www.stashmedia.tv/electric-theatre-collectives-ambitious-amphibian-adventure/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/NETFLIX-ad-with-axolotl-by-Electric-Theatre-Collective-STASH-MAGAZINE3-1920x1080.jpg",
+    "note": "Working with Iconoclast directors Vania & Muggia, the VFX crew at ETC in London transform an axolotl (aquatic salamander native to Mexico City) into a Bridgerton-binging hero as part of a new Netflix ",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -417,9 +417,10 @@
     "kind": "gallery"
    },
    {
-    "title": "World War Seven Signs Stop-Motion and Animation Studio Starburns Industries",
-    "url": "https://www.stashmedia.tv/world-war-seven-signs-stop-motion-and-animation-studio-starburns-industries/",
-    "note": "From the release: World War Seven has found the missing piece in its roster: Starburns Industries, who join as WW7’s new partner for stop-motion and animation projects.  [Watch]\nThe post World War Sev",
+    "title": "We Love Pitching: Chronicles of a Necessary Mess – Part 24",
+    "url": "https://www.stashmedia.tv/we-love-pitching-chronicles-of-a-necessary-mess-part-24/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/We-Love-Pitching-Part-24-Guest-editorial-by-Claus-Cibilis-_-STASH-MAGAZINE-1446x1080.jpg",
+    "note": "Nerdo ECD Claus Cibils wraps up his passionate and thoughtful series of a editorials on the challenges of the creative pitching process, a 24-part opus fueled by two decades of experience in the motio",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -439,9 +440,9 @@
     "kind": "gallery"
    },
    {
-    "title": "Beyond the Hype: Envato Releases 2026 The State of AI in Creative Work Report",
-    "url": "https://www.stashmedia.tv/beyond-the-hype-envato-releases-2026-the-state-of-ai-in-creative-work-report/",
-    "note": "From the release: Envato, the leading all-in-one creative asset toolkit empowering millions of creatives worldwide with creative stock and AI-powered tools, releases its second annual Beyond the Hype:",
+    "title": "World War Seven Signs Stop-Motion and Animation Studio Starburns Industries",
+    "url": "https://www.stashmedia.tv/world-war-seven-signs-stop-motion-and-animation-studio-starburns-industries/",
+    "note": "From the release: World War Seven has found the missing piece in its roster: Starburns Industries, who join as WW7’s new partner for stop-motion and animation projects.  [Watch]\nThe post World War Sev",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -461,10 +462,9 @@
     "kind": "gallery"
    },
    {
-    "title": "Trizz Reframes Complexity for Google Security",
-    "url": "https://www.stashmedia.tv/trizz-reframes-complexity-for-google-security/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Google-Security-brand-film-by-Trizz-and-Across-the-Pond-STASH-MAGAZINE2-1920x1080.jpg",
-    "note": "Working with creative consultancy Across the Pond, the CG motion team at Trizz in Barcelona reframe the dry complexity of Google's cybersecurity systems into a playful and visually mesmerizing journey",
+    "title": "Beyond the Hype: Envato Releases 2026 The State of AI in Creative Work Report",
+    "url": "https://www.stashmedia.tv/beyond-the-hype-envato-releases-2026-the-state-of-ai-in-creative-work-report/",
+    "note": "From the release: Envato, the leading all-in-one creative asset toolkit empowering millions of creatives worldwide with creative stock and AI-powered tools, releases its second annual Beyond the Hype:",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -487,10 +487,10 @@
     "kind": "performance"
    },
    {
-    "title": "Balming Tiger - Janjan (Official Video)",
-    "url": "https://vimeo.com/channels/staffpicks/1210405418",
-    "image": "https://i.vimeocdn.com/video/2209433748-5ee94dcdc2676eccd1a489d75d703571b61a8522bcd66e51375e2fd538a811fb-d_960?region=us",
-    "note": "* Credit  Director &amp; Animation: Takahashi Riku (DOKUZEN) Creative Director: San Yawn  * Music Production  Executive Producer: San Yawn Producer(s): bj wnjn,&hellip;",
+    "title": "Paper Trail",
+    "url": "https://vimeo.com/channels/staffpicks/1234190827",
+    "image": "https://i.vimeocdn.com/video/2210099538-c8d668916f0e1b7a9a1f5d7035e69d29c6c709c0a224f6dcfc8c3d0316455aa1-d_960?region=us",
+    "note": "A life, seen through paper.   Paper Trail is now available to pre-order on Blu-ray with the 2024 animated film ME, exclusive optional audio commentaries by Don Hertzfeldt,&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
@@ -502,10 +502,10 @@
     "kind": "gallery"
    },
    {
-    "title": "We Love Pitching: Chronicles of a Necessary Mess – Part 24",
-    "url": "https://www.stashmedia.tv/we-love-pitching-chronicles-of-a-necessary-mess-part-24/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/We-Love-Pitching-Part-24-Guest-editorial-by-Claus-Cibilis-_-STASH-MAGAZINE-1446x1080.jpg",
-    "note": "Nerdo ECD Claus Cibils wraps up his passionate and thoughtful series of a editorials on the challenges of the creative pitching process, a 24-part opus fueled by two decades of experience in the motio",
+    "title": "Electric Theatre Collective’s Ambitious Amphibian Adventure",
+    "url": "https://www.stashmedia.tv/electric-theatre-collectives-ambitious-amphibian-adventure/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/NETFLIX-ad-with-axolotl-by-Electric-Theatre-Collective-STASH-MAGAZINE3-1920x1080.jpg",
+    "note": "Working with Iconoclast directors Vania & Muggia, the VFX crew at ETC in London transform an axolotl (aquatic salamander native to Mexico City) into a Bridgerton-binging hero as part of a new Netflix ",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -518,10 +518,10 @@
     "kind": "performance"
    },
    {
-    "title": "PARADAÏZ",
-    "url": "https://vimeo.com/channels/staffpicks/1242836280",
-    "image": "https://i.vimeocdn.com/video/2221192735-f802f7910f7e23a6d0cfc25187e96c2bcd9459bb05da94418e89b1cb7b30f911-d_960?region=us",
-    "note": "Welcome to a place where the houses have holes, tomatoes are ticking time bombs, and snails wander the streets in search of a safe space. Absurdist animation, archival&hellip;",
+    "title": "Balming Tiger - Janjan (Official Video)",
+    "url": "https://vimeo.com/channels/staffpicks/1210405418",
+    "image": "https://i.vimeocdn.com/video/2209433748-5ee94dcdc2676eccd1a489d75d703571b61a8522bcd66e51375e2fd538a811fb-d_960?region=us",
+    "note": "* Credit  Director &amp; Animation: Takahashi Riku (DOKUZEN) Creative Director: San Yawn  * Music Production  Executive Producer: San Yawn Producer(s): bj wnjn,&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
@@ -534,9 +534,10 @@
     "kind": "gallery"
    },
    {
-    "title": "World War Seven Signs Stop-Motion and Animation Studio Starburns Industries",
-    "url": "https://www.stashmedia.tv/world-war-seven-signs-stop-motion-and-animation-studio-starburns-industries/",
-    "note": "From the release: World War Seven has found the missing piece in its roster: Starburns Industries, who join as WW7’s new partner for stop-motion and animation projects.  [Watch]\nThe post World War Sev",
+    "title": "We Love Pitching: Chronicles of a Necessary Mess – Part 24",
+    "url": "https://www.stashmedia.tv/we-love-pitching-chronicles-of-a-necessary-mess-part-24/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/We-Love-Pitching-Part-24-Guest-editorial-by-Claus-Cibilis-_-STASH-MAGAZINE-1446x1080.jpg",
+    "note": "Nerdo ECD Claus Cibils wraps up his passionate and thoughtful series of a editorials on the challenges of the creative pitching process, a 24-part opus fueled by two decades of experience in the motio",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -549,10 +550,10 @@
     "kind": "performance"
    },
    {
-    "title": "Me, Myself and Mary",
-    "url": "https://vimeo.com/channels/staffpicks/1244470254",
-    "image": "https://i.vimeocdn.com/video/2224527616-c65ef8619f2ab645fb9dbc22776a94d82de7e021d5f0e8a08a60e9fbbc69c677-d_960?region=us",
-    "note": "Chris O'Dowd and Aisling Bea star in the true story of an inattentive student who gets his days confused and ends up alone with the President of Ireland whilst&hellip;",
+    "title": "PARADAÏZ",
+    "url": "https://vimeo.com/channels/staffpicks/1242836280",
+    "image": "https://i.vimeocdn.com/video/2221192735-f802f7910f7e23a6d0cfc25187e96c2bcd9459bb05da94418e89b1cb7b30f911-d_960?region=us",
+    "note": "Welcome to a place where the houses have holes, tomatoes are ticking time bombs, and snails wander the streets in search of a safe space. Absurdist animation, archival&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
@@ -564,9 +565,9 @@
     "kind": "gallery"
    },
    {
-    "title": "Beyond the Hype: Envato Releases 2026 The State of AI in Creative Work Report",
-    "url": "https://www.stashmedia.tv/beyond-the-hype-envato-releases-2026-the-state-of-ai-in-creative-work-report/",
-    "note": "From the release: Envato, the leading all-in-one creative asset toolkit empowering millions of creatives worldwide with creative stock and AI-powered tools, releases its second annual Beyond the Hype:",
+    "title": "World War Seven Signs Stop-Motion and Animation Studio Starburns Industries",
+    "url": "https://www.stashmedia.tv/world-war-seven-signs-stop-motion-and-animation-studio-starburns-industries/",
+    "note": "From the release: World War Seven has found the missing piece in its roster: Starburns Industries, who join as WW7’s new partner for stop-motion and animation projects.  [Watch]\nThe post World War Sev",
     "source": "STASH",
     "kind": "gallery"
    }
@@ -576,7 +577,7 @@
     "title": "World's Biggest Human Catapult 🤯",
     "url": "https://www.youtube.com/watch?v=_72h8SbCgqE",
     "image": "https://i.ytimg.com/vi/_72h8SbCgqE/hqdefault.jpg",
-    "by": "26M views",
+    "by": "30M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -584,7 +585,15 @@
     "title": "How To Make An Exit 💥",
     "url": "https://www.youtube.com/watch?v=ehyKWTwuGFI",
     "image": "https://i.ytimg.com/vi/ehyKWTwuGFI/hqdefault.jpg",
-    "by": "6.5M views",
+    "by": "13M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Gravity Had Other Plans 😅",
+    "url": "https://www.youtube.com/watch?v=QRQxi-SynaA",
+    "image": "https://i.ytimg.com/vi/QRQxi-SynaA/hqdefault.jpg",
+    "by": "3.2M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -597,10 +606,10 @@
     "kind": "performance"
    },
    {
-    "title": "Gravity Had Other Plans 😅",
-    "url": "https://www.youtube.com/watch?v=QRQxi-SynaA",
-    "image": "https://i.ytimg.com/vi/QRQxi-SynaA/hqdefault.jpg",
-    "by": "2M views",
+    "title": "NEW WORLD RECORD 💥",
+    "url": "https://www.youtube.com/watch?v=61qsaigvPyI",
+    "image": "https://i.ytimg.com/vi/61qsaigvPyI/hqdefault.jpg",
+    "by": "2.1M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -608,7 +617,7 @@
     "title": "Airbnb | あつまる？エアビる？｜今日はちょっと、大人忘れます。",
     "url": "https://www.youtube.com/watch?v=p8HvRJALo4Y",
     "image": "https://i.ytimg.com/vi/p8HvRJALo4Y/hqdefault.jpg",
-    "by": "1.8M views",
+    "by": "1.9M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -616,7 +625,7 @@
     "title": "if my lovity is falsity, why r u my verity 🎨: @lleahistired",
     "url": "https://www.youtube.com/watch?v=tbUMR2qIEzo",
     "image": "https://i.ytimg.com/vi/tbUMR2qIEzo/hqdefault.jpg",
-    "by": "1.5M views",
+    "by": "1.6M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -629,10 +638,10 @@
     "kind": "performance"
    },
    {
-    "title": "pretend the audio is guten morgen 😍",
-    "url": "https://www.youtube.com/watch?v=Br8AXbB0pwI",
-    "image": "https://i.ytimg.com/vi/Br8AXbB0pwI/hqdefault.jpg",
-    "by": "386K views",
+    "title": "Short And Sweet... Right? 👀",
+    "url": "https://www.youtube.com/watch?v=MfGU9yzdyTk",
+    "image": "https://i.ytimg.com/vi/MfGU9yzdyTk/hqdefault.jpg",
+    "by": "422K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -645,100 +654,92 @@
     "kind": "performance"
    },
    {
-    "title": "Short And Sweet... Right? 👀",
-    "url": "https://www.youtube.com/watch?v=MfGU9yzdyTk",
-    "image": "https://i.ytimg.com/vi/MfGU9yzdyTk/hqdefault.jpg",
-    "by": "343K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
     "title": "Show off your work with Desk View. Tip from Kylie at the Apple Store.",
     "url": "https://www.youtube.com/watch?v=BTyWlJJUX2I",
     "image": "https://i.ytimg.com/vi/BTyWlJJUX2I/hqdefault.jpg",
-    "by": "319K views",
+    "by": "320K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
    {
-    "title": "BOBERRRRRRRRRRRR",
-    "url": "https://www.youtube.com/watch?v=rlwQUmgm8Z8",
-    "image": "https://i.ytimg.com/vi/rlwQUmgm8Z8/hqdefault.jpg",
-    "by": "275K views",
+    "title": "POV: 55ft MTB Freefall 🎬 Antoni Villoni #GoPro",
+    "url": "https://www.youtube.com/watch?v=tAIjGmGVa1g",
+    "image": "https://i.ytimg.com/vi/tAIjGmGVa1g/hqdefault.jpg",
+    "by": "319K views",
     "source": "Latest from brands",
     "kind": "performance"
    }
   ],
   "post": [
    {
-    "title": "Tracking Anthropic-discovered vulnerabilities",
-    "url": "https://www.vulncheck.com/blog/anthropic-glasswing-november-update",
+    "title": "Humble Bundle just killed most of their security through vibecoding",
+    "url": "https://forums.spacebattles.com/threads/humble-bundle-just-completely-killed-most-of-their-security-through-vibecoding.1346295/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Scion is back and is going to sell a kei truck in America",
-    "url": "https://www.theautopian.com/scion-is-back-and-its-going-to-sell-a-freaking-kei-truck-in-america/",
+    "title": "93% of paint splatters are valid Perl programs (2019)",
+    "url": "https://www.mcmillen.dev/sigbovik/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Starlink Mini 2",
-    "url": "https://starlink.com/mini-2",
+    "title": "Nvidia is preparing to oust Jensen Huang",
+    "url": "https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Synaptics patent claims stop work on DisplayLink drivers",
-    "url": "https://lwn.net/SubscriberLink/1102549/acbc92e00cee3a3f/",
+    "title": "Jensen Huang said to have had relationship with executive who reports to him",
+    "url": "https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
-    "url": "https://github.com/GoogleChrome/modern-web-guidance",
+    "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
+    "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Val Town is winding down",
-    "url": "https://blog.val.town/winding-down",
+    "title": "Gemini Decisions API",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": ".name Grandfathered",
-    "url": "https://neil.fraser.name/news/2026/11/10/",
+    "title": "AWS emulator",
+    "url": "https://github.com/aws/aws-emulator",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Blender 5.3 released with Gaussian Splat support",
-    "url": "https://www.blender.org/download/releases/5-3/",
+    "title": "A false smoke alarm almost drowned Jane Street's only NYC datacenter",
+    "url": "https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Smart home devices should work without the internet",
-    "url": "https://docodethatmatters.com/home-automation-overnight-success/",
+    "title": "I asked every TV manufacturer 17 questions about how they spy on you",
+    "url": "https://www.theverge.com/tech/1012372/tv-privacy-acr-questions",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "AlphaProof Code",
-    "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+    "title": "Hyper-Realistic Sand with WebGL2",
+    "url": "https://av.github.io/safe-sand/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "AI usage generates a fragile codebase",
-    "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
+    "title": "My AI agents found an unmapped Maya site?",
+    "url": "https://pietromiotti.com/latest/maya-site",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Amazon saves millions by replacing Sonnet 4.6 with Strands Decider",
-    "url": "https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/",
+    "title": "Using voltage glitching to unleash the A100 in my mining card",
+    "url": "https://blog.kate.land/posts/using-voltage-glitching-to-unlock-the-a100/",
     "source": "Hacker News · Best",
     "kind": "performance"
    }
@@ -748,7 +749,23 @@
     "title": "New MacBook Pro with PROLED XDR Display: The first-ever Mac with Touch",
     "url": "https://www.youtube.com/watch?v=hnZI5uUSdEo",
     "image": "https://i.ytimg.com/vi/hnZI5uUSdEo/hqdefault.jpg",
-    "by": "44M views",
+    "by": "45M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "The Home Of Christmas",
+    "url": "https://www.adsoftheworld.com/campaigns/the-home-of-christmas",
+    "image": "https://image.adsoftheworld.com/kpy4xw1mfuhmhy2fdxitywadngxn",
+    "by": "M&S",
+    "source": "Ads of the World",
+    "kind": "gallery"
+   },
+   {
+    "title": "Airbnb | あつまる？エアビる？｜リビングでエアビる",
+    "url": "https://www.youtube.com/watch?v=Mx608ORGCFA",
+    "image": "https://i.ytimg.com/vi/Mx608ORGCFA/hqdefault.jpg",
+    "by": "3M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -761,10 +778,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Airbnb | あつまる？エアビる？｜リビングでエアビる",
-    "url": "https://www.youtube.com/watch?v=Mx608ORGCFA",
-    "image": "https://i.ytimg.com/vi/Mx608ORGCFA/hqdefault.jpg",
-    "by": "2.9M views",
+    "title": "Airbnb | あつまる？エアビる？｜今日はちょっと、大人忘れます。",
+    "url": "https://www.youtube.com/watch?v=hmYXIfxAIoM",
+    "image": "https://i.ytimg.com/vi/hmYXIfxAIoM/hqdefault.jpg",
+    "by": "1.6M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -793,10 +810,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Airbnb | あつまる？エアビる？｜今日はちょっと、大人忘れます。",
-    "url": "https://www.youtube.com/watch?v=hmYXIfxAIoM",
-    "image": "https://i.ytimg.com/vi/hmYXIfxAIoM/hqdefault.jpg",
-    "by": "1.5M views",
+    "title": "New MacBook Pro with PROLED XDR Display and Touch: The world’s best laptop display",
+    "url": "https://www.youtube.com/watch?v=WzuIZLoHqqA",
+    "image": "https://i.ytimg.com/vi/WzuIZLoHqqA/hqdefault.jpg",
+    "by": "1.3M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -809,22 +826,6 @@
     "kind": "gallery"
    },
    {
-    "title": "New MacBook Pro with PROLED XDR Display and Touch: The world’s best laptop display",
-    "url": "https://www.youtube.com/watch?v=WzuIZLoHqqA",
-    "image": "https://i.ytimg.com/vi/WzuIZLoHqqA/hqdefault.jpg",
-    "by": "1.3M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "Kaytee Presents Nestflix",
-    "url": "https://www.adsoftheworld.com/campaigns/nestflix-campaign-for-smart-feeder-starring-jane-lynch-and-christian-cooper",
-    "image": "https://image.adsoftheworld.com/f14khu5pfsd4bzpq71eqy2yj5gg3",
-    "by": "Kaytee",
-    "source": "Ads of the World",
-    "kind": "gallery"
-   },
-   {
     "title": "Studio Fleece | NSW | Nike",
     "url": "https://www.youtube.com/watch?v=vyjhrYmboO8",
     "image": "https://i.ytimg.com/vi/vyjhrYmboO8/hqdefault.jpg",
@@ -833,10 +834,10 @@
     "kind": "performance"
    },
    {
-    "title": "Apple Watch Activity Rings: Josh's True Apple Watch Story",
-    "url": "https://www.youtube.com/watch?v=nBmS3DOebLc",
-    "image": "https://i.ytimg.com/vi/nBmS3DOebLc/hqdefault.jpg",
-    "by": "507K views",
+    "title": "Created live on Mac: “Surrender” by Labrinth",
+    "url": "https://www.youtube.com/watch?v=YaPx9scLwfk",
+    "image": "https://i.ytimg.com/vi/YaPx9scLwfk/hqdefault.jpg",
+    "by": "678K views",
     "source": "Latest from brands",
     "kind": "performance"
    }
