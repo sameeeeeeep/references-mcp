@@ -1,7 +1,31 @@
 {
- "updated": "2026-11-13T11:07:37.154Z",
+ "updated": "2026-11-14T10:35:02.188Z",
  "media": {
   "ui": [
+   {
+    "title": "Preymaker",
+    "url": "https://www.awwwards.com/sites/preymaker",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6ab13a392cc6b094293023.png",
+    "note": "Preymaker is a global creative technology studio blending VFX, design and emerging technology to create exceptional visual content and experiences.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "Kokonut UI",
+    "url": "https://www.producthunt.com/products/kokonutui",
+    "note": "Open-source UI components for your AI agent",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "alibaba/open-code-review",
+    "url": "https://github.com/alibaba/open-code-review",
+    "image": "https://opengraph.githubassets.com/1/alibaba/open-code-review",
+    "by": "★ 215 today",
+    "note": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE,",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
    {
     "title": "Delta Cafés",
     "url": "https://www.awwwards.com/sites/delta-cafes",
@@ -11,18 +35,18 @@
     "kind": "award"
    },
    {
-    "title": "Replicate",
-    "url": "https://www.producthunt.com/products/replicate-10",
-    "note": "Turn Webflow/Framer app into a Claude/Codex project for free",
+    "title": "Thunder",
+    "url": "https://www.producthunt.com/products/thunder-3",
+    "note": "A blazing-fast, persistent, key-value AI workload database",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "alibaba/open-code-review",
-    "url": "https://github.com/alibaba/open-code-review",
-    "image": "https://opengraph.githubassets.com/1/alibaba/open-code-review",
-    "by": "★ 206 today",
-    "note": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE,",
+    "title": "GoogleChrome/modern-web-guidance-src",
+    "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+    "image": "https://opengraph.githubassets.com/1/GoogleChrome/modern-web-guidance-src",
+    "by": "★ 1,925 today",
+    "note": "Keep your coding agent up to date with the latest web best practices",
     "source": "GitHub Trending",
     "kind": "trending"
    },
@@ -35,18 +59,18 @@
     "kind": "award"
    },
    {
-    "title": "Gemini 4 Hydrogen",
-    "url": "https://www.producthunt.com/products/gemini-6",
-    "note": "Fast agentic development for coders",
+    "title": "CodeMesh",
+    "url": "https://www.producthunt.com/products/codemesh-2",
+    "note": "Cut AI coding costs by 90%",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "GoogleChrome/modern-web-guidance-src",
-    "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
-    "image": "https://opengraph.githubassets.com/1/GoogleChrome/modern-web-guidance-src",
-    "by": "★ 1,875 today",
-    "note": "Keep your coding agent up to date with the latest web best practices",
+    "title": "openai/codex-security",
+    "url": "https://github.com/openai/codex-security",
+    "image": "https://opengraph.githubassets.com/1/openai/codex-security",
+    "by": "★ 751 today",
+    "note": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
     "source": "GitHub Trending",
     "kind": "trending"
    },
@@ -59,33 +83,9 @@
     "kind": "award"
    },
    {
-    "title": "Pocket Studio for Supabase",
-    "url": "https://www.producthunt.com/products/pocket-studio-for-supabase",
-    "note": "Supabase dashboard & SQL editor for Android",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "openai/codex-security",
-    "url": "https://github.com/openai/codex-security",
-    "image": "https://opengraph.githubassets.com/1/openai/codex-security",
-    "by": "★ 754 today",
-    "note": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Creative Reference Library",
-    "url": "https://www.awwwards.com/sites/creative-reference-library",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6ab4a45ed1eae579756505.png",
-    "note": "Creative Reference Library / CRL® is a curated library of creative references from music, film, books, and writing that shape how ideas are developed, tested, and made.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
-   },
-   {
-    "title": "Filament by Galaxy",
-    "url": "https://www.producthunt.com/products/galaxy",
-    "note": "Move data using your terminal or agent. Fast & open source.",
+    "title": "HiringNow",
+    "url": "https://www.producthunt.com/products/hiringnow",
+    "note": "AI job agent that finds & apply for jobs before anyone else.",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -93,7 +93,7 @@
     "title": "ZhuLinsen/daily_stock_analysis",
     "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
     "image": "https://opengraph.githubassets.com/1/ZhuLinsen/daily_stock_analysis",
-    "by": "★ 272 today",
+    "by": "★ 256 today",
     "note": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-fr",
     "source": "GitHub Trending",
     "kind": "trending"
@@ -101,10 +101,10 @@
   ],
   "landing": [
    {
-    "title": "Delta Cafés",
-    "url": "https://www.awwwards.com/sites/delta-cafes",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6aba4799e2814987403946.jpg",
-    "note": "Discover Delta Cafés: six decades of Portuguese coffee heritage, culture, sustainability and experiences, from bean to cup, for every coffee lover.",
+    "title": "Preymaker",
+    "url": "https://www.awwwards.com/sites/preymaker",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6ab13a392cc6b094293023.png",
+    "note": "Preymaker is a global creative technology studio blending VFX, design and emerging technology to create exceptional visual content and experiences.",
     "source": "Awwwards · Sites of the Day",
     "kind": "award"
    },
@@ -117,17 +117,17 @@
     "kind": "gallery"
    },
    {
-    "title": "Replicate",
-    "url": "https://www.producthunt.com/products/replicate-10",
-    "note": "Turn Webflow/Framer app into a Claude/Codex project for free",
+    "title": "Kokonut UI",
+    "url": "https://www.producthunt.com/products/kokonutui",
+    "note": "Open-source UI components for your AI agent",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "AUGE Experience",
-    "url": "https://www.awwwards.com/sites/auge-experience",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6ab695ee12e89641139763.jpg",
-    "note": "An award-winning digital experience studio partenring with ambitious brands to create distinctive experiences through design, technology and creative experimentations.",
+    "title": "Delta Cafés",
+    "url": "https://www.awwwards.com/sites/delta-cafes",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6aba4799e2814987403946.jpg",
+    "note": "Discover Delta Cafés: six decades of Portuguese coffee heritage, culture, sustainability and experiences, from bean to cup, for every coffee lover.",
     "source": "Awwwards · Sites of the Day",
     "kind": "award"
    },
@@ -140,17 +140,17 @@
     "kind": "gallery"
    },
    {
-    "title": "Gemini 4 Hydrogen",
-    "url": "https://www.producthunt.com/products/gemini-6",
-    "note": "Fast agentic development for coders",
+    "title": "Thunder",
+    "url": "https://www.producthunt.com/products/thunder-3",
+    "note": "A blazing-fast, persistent, key-value AI workload database",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "Cyera AI Guardian",
-    "url": "https://www.awwwards.com/sites/cyera-ai-guardian",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6ab46da86e036198149047.png",
-    "note": "An interactive microsite where users pilot a vessel through three AI security planets, completing mini-games and exploring Cyera’s data security capabilities.",
+    "title": "AUGE Experience",
+    "url": "https://www.awwwards.com/sites/auge-experience",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6ab695ee12e89641139763.jpg",
+    "note": "An award-winning digital experience studio partenring with ambitious brands to create distinctive experiences through design, technology and creative experimentations.",
     "source": "Awwwards · Sites of the Day",
     "kind": "award"
    },
@@ -163,17 +163,17 @@
     "kind": "gallery"
    },
    {
-    "title": "Pocket Studio for Supabase",
-    "url": "https://www.producthunt.com/products/pocket-studio-for-supabase",
-    "note": "Supabase dashboard & SQL editor for Android",
+    "title": "CodeMesh",
+    "url": "https://www.producthunt.com/products/codemesh-2",
+    "note": "Cut AI coding costs by 90%",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "Creative Reference Library",
-    "url": "https://www.awwwards.com/sites/creative-reference-library",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6ab4a45ed1eae579756505.png",
-    "note": "Creative Reference Library / CRL® is a curated library of creative references from music, film, books, and writing that shape how ideas are developed, tested, and made.",
+    "title": "Cyera AI Guardian",
+    "url": "https://www.awwwards.com/sites/cyera-ai-guardian",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6ab46da86e036198149047.png",
+    "note": "An interactive microsite where users pilot a vessel through three AI security planets, completing mini-games and exploring Cyera’s data security capabilities.",
     "source": "Awwwards · Sites of the Day",
     "kind": "award"
    },
@@ -186,18 +186,18 @@
     "kind": "gallery"
    },
    {
-    "title": "Filament by Galaxy",
-    "url": "https://www.producthunt.com/products/galaxy",
-    "note": "Move data using your terminal or agent. Fast & open source.",
+    "title": "HiringNow",
+    "url": "https://www.producthunt.com/products/hiringnow",
+    "note": "AI job agent that finds & apply for jobs before anyone else.",
     "source": "Product Hunt · Today",
     "kind": "trending"
    }
   ],
   "app": [
    {
-    "title": "Replicate",
-    "url": "https://www.producthunt.com/products/replicate-10",
-    "note": "Turn Webflow/Framer app into a Claude/Codex project for free",
+    "title": "Kokonut UI",
+    "url": "https://www.producthunt.com/products/kokonutui",
+    "note": "Open-source UI components for your AI agent",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -205,15 +205,15 @@
     "title": "alibaba/open-code-review",
     "url": "https://github.com/alibaba/open-code-review",
     "image": "https://opengraph.githubassets.com/1/alibaba/open-code-review",
-    "by": "★ 206 today",
+    "by": "★ 215 today",
     "note": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE,",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Gemini 4 Hydrogen",
-    "url": "https://www.producthunt.com/products/gemini-6",
-    "note": "Fast agentic development for coders",
+    "title": "Thunder",
+    "url": "https://www.producthunt.com/products/thunder-3",
+    "note": "A blazing-fast, persistent, key-value AI workload database",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -221,15 +221,15 @@
     "title": "GoogleChrome/modern-web-guidance-src",
     "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
     "image": "https://opengraph.githubassets.com/1/GoogleChrome/modern-web-guidance-src",
-    "by": "★ 1,875 today",
+    "by": "★ 1,925 today",
     "note": "Keep your coding agent up to date with the latest web best practices",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Pocket Studio for Supabase",
-    "url": "https://www.producthunt.com/products/pocket-studio-for-supabase",
-    "note": "Supabase dashboard & SQL editor for Android",
+    "title": "CodeMesh",
+    "url": "https://www.producthunt.com/products/codemesh-2",
+    "note": "Cut AI coding costs by 90%",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -237,15 +237,15 @@
     "title": "openai/codex-security",
     "url": "https://github.com/openai/codex-security",
     "image": "https://opengraph.githubassets.com/1/openai/codex-security",
-    "by": "★ 754 today",
+    "by": "★ 751 today",
     "note": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Filament by Galaxy",
-    "url": "https://www.producthunt.com/products/galaxy",
-    "note": "Move data using your terminal or agent. Fast & open source.",
+    "title": "HiringNow",
+    "url": "https://www.producthunt.com/products/hiringnow",
+    "note": "AI job agent that finds & apply for jobs before anyone else.",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -253,15 +253,15 @@
     "title": "ZhuLinsen/daily_stock_analysis",
     "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
     "image": "https://opengraph.githubassets.com/1/ZhuLinsen/daily_stock_analysis",
-    "by": "★ 272 today",
+    "by": "★ 256 today",
     "note": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-fr",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Expo Simulators",
-    "url": "https://www.producthunt.com/products/expo",
-    "note": "Cloud simulators built for agents",
+    "title": "CaptureFlow",
+    "url": "https://www.producthunt.com/products/captureflow",
+    "note": "Open-source screen recorder with instant share links",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -269,15 +269,15 @@
     "title": "we-promise/sure",
     "url": "https://github.com/we-promise/sure",
     "image": "https://opengraph.githubassets.com/1/we-promise/sure",
-    "by": "★ 944 today",
+    "by": "★ 925 today",
     "note": "The personal finance app for everyone (by everyone)",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "WHOOP Humans",
-    "url": "https://www.producthunt.com/products/whoop",
-    "note": "WHOOP's social network built around real health data",
+    "title": "Uber Parking",
+    "url": "https://www.producthunt.com/products/uber",
+    "note": "Find, compare and reserve parking inside the Uber app",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -285,7 +285,7 @@
     "title": "backnotprop/plannotator",
     "url": "https://github.com/backnotprop/plannotator",
     "image": "https://opengraph.githubassets.com/1/backnotprop/plannotator",
-    "by": "★ 100 today",
+    "by": "★ 108 today",
     "note": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
     "source": "GitHub Trending",
     "kind": "trending"
@@ -302,6 +302,29 @@
     "kind": "performance"
    },
    {
+    "title": "PSYCHONAUTS",
+    "url": "https://vimeo.com/channels/staffpicks/1245502303",
+    "image": "https://i.vimeocdn.com/video/2224652526-1a5fbcfe2884ed9f38fbb160efe92eab159361d605432c449d15c5ea47b75dcb-d_960?region=us",
+    "note": "Leaving their human hosts, mental disorders take on anthropomorphic forms and find new refuges. Patients of the University Psychiatry Hospital Vrapče worked on &hellip;",
+    "source": "Vimeo Staff Picks",
+    "kind": "gallery"
+   },
+   {
+    "title": "1stAveMachine Signs Director Kit Lynch-Robinson",
+    "url": "https://www.stashmedia.tv/1stavemachine-signs-director-kit-lynch-robinson/",
+    "note": "From the release: 1stAveMachine, the director-driven production company known for exceptional craft and inventive ideas, has welcomed British director Kit Lynch-Robinson to its roster. [Watch]\nThe pos",
+    "source": "STASH",
+    "kind": "gallery"
+   },
+   {
+    "title": "“The Dreamer”: An Apple Holiday Film featuring MacBook Neo",
+    "url": "https://www.youtube.com/watch?v=Sp54mxnWjUM",
+    "image": "https://i.ytimg.com/vi/Sp54mxnWjUM/hqdefault.jpg",
+    "by": "3.9M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
     "title": "Snow In September",
     "url": "https://vimeo.com/channels/staffpicks/1240299939",
     "image": "https://i.vimeocdn.com/video/2218073657-710f7cd2c00ddb1a58ad7ff861ad26c62299efddb7b31ab5320b87ac9a7a1771-d_960?region=us",
@@ -310,18 +333,18 @@
     "kind": "gallery"
    },
    {
-    "title": "Roof Studio & Pedro Allevato Stay Hands On for Clash Royale",
-    "url": "https://www.stashmedia.tv/roof-studio-pedro-allevato-stay-hands-on-for-clash-royale/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Clash-Royal-30-seconds-to-detonation-trailer-by-Roof-Studio-and-Pedro-Allevato-STASH-MAGAZINE6.jpg",
-    "note": "Working to Supercell's brief that no AI be used in their newest Clash Royal trailer, director Pedro Allevato and the animation team at Roof Studio in New York, responded with this handcrafted, frame-b",
+    "title": "Reframe Studio Get Comfortable in Fursys Manta Chair",
+    "url": "https://www.stashmedia.tv/reframe-studio-get-comfortable-in-fursys-manta-chair/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Fursys-Manta-Chair-launch-film-by-Reframe-Studio-STASH-MAGAZINE7-1920x1080.jpg",
+    "note": "Reframe Studio in Seoul apply their talents for striking yet tasteful CG style to this Zen-like launch film for the Manta chair designed by German studio Jehs+Laub for South Korean furniture brand Fur",
     "source": "STASH",
     "kind": "gallery"
    },
    {
-    "title": "“The Dreamer”: An Apple Holiday Film featuring MacBook Neo",
-    "url": "https://www.youtube.com/watch?v=Sp54mxnWjUM",
-    "image": "https://i.ytimg.com/vi/Sp54mxnWjUM/hqdefault.jpg",
-    "by": "3.7M views",
+    "title": "Created live on Mac: “Surrender” by Labrinth",
+    "url": "https://www.youtube.com/watch?v=YaPx9scLwfk",
+    "image": "https://i.ytimg.com/vi/YaPx9scLwfk/hqdefault.jpg",
+    "by": "1.5M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -334,10 +357,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Electric Theatre Collective’s Ambitious Amphibian Adventure",
-    "url": "https://www.stashmedia.tv/electric-theatre-collectives-ambitious-amphibian-adventure/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/NETFLIX-ad-with-axolotl-by-Electric-Theatre-Collective-STASH-MAGAZINE3-1920x1080.jpg",
-    "note": "Working with Iconoclast directors Vania & Muggia, the VFX crew at ETC in London transform an axolotl (aquatic salamander native to Mexico City) into a Bridgerton-binging hero as part of a new Netflix ",
+    "title": "Roof Studio & Pedro Allevato Stay Hands On for Clash Royale",
+    "url": "https://www.stashmedia.tv/roof-studio-pedro-allevato-stay-hands-on-for-clash-royale/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Clash-Royal-30-seconds-to-detonation-trailer-by-Roof-Studio-and-Pedro-Allevato-STASH-MAGAZINE6.jpg",
+    "note": "Working to Supercell's brief that no AI be used in their newest Clash Royal trailer, director Pedro Allevato and the animation team at Roof Studio in New York, responded with this handcrafted, frame-b",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -358,51 +381,26 @@
     "kind": "gallery"
    },
    {
-    "title": "We Love Pitching: Chronicles of a Necessary Mess – Part 24",
-    "url": "https://www.stashmedia.tv/we-love-pitching-chronicles-of-a-necessary-mess-part-24/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/We-Love-Pitching-Part-24-Guest-editorial-by-Claus-Cibilis-_-STASH-MAGAZINE-1446x1080.jpg",
-    "note": "Nerdo ECD Claus Cibils wraps up his passionate and thoughtful series of a editorials on the challenges of the creative pitching process, a 24-part opus fueled by two decades of experience in the motio",
-    "source": "STASH",
-    "kind": "gallery"
-   },
-   {
-    "title": "Created live on Mac: “Surrender” by Labrinth",
-    "url": "https://www.youtube.com/watch?v=YaPx9scLwfk",
-    "image": "https://i.ytimg.com/vi/YaPx9scLwfk/hqdefault.jpg",
-    "by": "1.1M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "PARADAÏZ",
-    "url": "https://vimeo.com/channels/staffpicks/1242836280",
-    "image": "https://i.vimeocdn.com/video/2221192735-f802f7910f7e23a6d0cfc25187e96c2bcd9459bb05da94418e89b1cb7b30f911-d_960?region=us",
-    "note": "Welcome to a place where the houses have holes, tomatoes are ticking time bombs, and snails wander the streets in search of a safe space. Absurdist animation, archival&hellip;",
-    "source": "Vimeo Staff Picks",
-    "kind": "gallery"
-   },
-   {
-    "title": "World War Seven Signs Stop-Motion and Animation Studio Starburns Industries",
-    "url": "https://www.stashmedia.tv/world-war-seven-signs-stop-motion-and-animation-studio-starburns-industries/",
-    "note": "From the release: World War Seven has found the missing piece in its roster: Starburns Industries, who join as WW7’s new partner for stop-motion and animation projects.  [Watch]\nThe post World War Sev",
+    "title": "Electric Theatre Collective’s Ambitious Amphibian Adventure",
+    "url": "https://www.stashmedia.tv/electric-theatre-collectives-ambitious-amphibian-adventure/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/NETFLIX-ad-with-axolotl-by-Electric-Theatre-Collective-STASH-MAGAZINE3-1920x1080.jpg",
+    "note": "Working with Iconoclast directors Vania & Muggia, the VFX crew at ETC in London transform an axolotl (aquatic salamander native to Mexico City) into a Bridgerton-binging hero as part of a new Netflix ",
     "source": "STASH",
     "kind": "gallery"
    }
   ],
   "motion": [
    {
-    "title": "Reframe: David Sheldon-Hicks and Art Tindsley open a new podcast with Patrice Vermette",
-    "url": "https://motionographer.com/news/reframe-david-sheldon-hicks-and-art-tindsley-open-a-new-podcast-with-patrice-vermette/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/reframe-podcast-landscape.jpg",
-    "note": "David Sheldon-Hicks of Territory Studio and Art Tindsley of Pogo launch Reframe, a podcast on creativity and technology. First guest: Dune production designer Patrice Vermette.",
+    "title": "HP Studio | HP Limited Edition Scuderia Ferrari AI PC",
+    "url": "https://motionographer.com/quickie/hp-studio-hp-limited-edition-scuderia-ferrari-ai-pc/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/hp-ferrari-ai-pc-original-still.png",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "Roof Studio & Pedro Allevato Stay Hands On for Clash Royale",
-    "url": "https://www.stashmedia.tv/roof-studio-pedro-allevato-stay-hands-on-for-clash-royale/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Clash-Royal-30-seconds-to-detonation-trailer-by-Roof-Studio-and-Pedro-Allevato-STASH-MAGAZINE6.jpg",
-    "note": "Working to Supercell's brief that no AI be used in their newest Clash Royal trailer, director Pedro Allevato and the animation team at Roof Studio in New York, responded with this handcrafted, frame-b",
+    "title": "1stAveMachine Signs Director Kit Lynch-Robinson",
+    "url": "https://www.stashmedia.tv/1stavemachine-signs-director-kit-lynch-robinson/",
+    "note": "From the release: 1stAveMachine, the director-driven production company known for exceptional craft and inventive ideas, has welcomed British director Kit Lynch-Robinson to its roster. [Watch]\nThe pos",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -415,18 +413,18 @@
     "kind": "gallery"
    },
    {
-    "title": "Perfect Stranger Appoints Tony Kadillak as Head of Client Partnerships",
-    "url": "https://motionographer.com/news/perfect-stranger-tony-kadillak-head-client-partnerships/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/tony-kadillak-perfect-stranger-landscape-original.jpg",
-    "note": "Tony Kadillak joins Perfect Stranger as Head of Client Partnerships, reuniting with Daniel Fries to build long-term relationships with brands.",
+    "title": "Reframe: David Sheldon-Hicks and Art Tindsley open a new podcast with Patrice Vermette",
+    "url": "https://motionographer.com/news/reframe-david-sheldon-hicks-and-art-tindsley-open-a-new-podcast-with-patrice-vermette/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/reframe-podcast-landscape.jpg",
+    "note": "David Sheldon-Hicks of Territory Studio and Art Tindsley of Pogo launch Reframe, a podcast on creativity and technology. First guest: Dune production designer Patrice Vermette.",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "Electric Theatre Collective’s Ambitious Amphibian Adventure",
-    "url": "https://www.stashmedia.tv/electric-theatre-collectives-ambitious-amphibian-adventure/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/NETFLIX-ad-with-axolotl-by-Electric-Theatre-Collective-STASH-MAGAZINE3-1920x1080.jpg",
-    "note": "Working with Iconoclast directors Vania & Muggia, the VFX crew at ETC in London transform an axolotl (aquatic salamander native to Mexico City) into a Bridgerton-binging hero as part of a new Netflix ",
+    "title": "Reframe Studio Get Comfortable in Fursys Manta Chair",
+    "url": "https://www.stashmedia.tv/reframe-studio-get-comfortable-in-fursys-manta-chair/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Fursys-Manta-Chair-launch-film-by-Reframe-Studio-STASH-MAGAZINE7-1920x1080.jpg",
+    "note": "Reframe Studio in Seoul apply their talents for striking yet tasteful CG style to this Zen-like launch film for the Manta chair designed by German studio Jehs+Laub for South Korean furniture brand Fur",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -439,17 +437,18 @@
     "kind": "gallery"
    },
    {
-    "title": "La Llama | The Post Office",
-    "url": "https://motionographer.com/quickie/la-llama-the-post-office/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/La-Llama-Alba-Prado-ICEX-14-scaled.jpeg",
+    "title": "Perfect Stranger Appoints Tony Kadillak as Head of Client Partnerships",
+    "url": "https://motionographer.com/news/perfect-stranger-tony-kadillak-head-client-partnerships/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/tony-kadillak-perfect-stranger-landscape-original.jpg",
+    "note": "Tony Kadillak joins Perfect Stranger as Head of Client Partnerships, reuniting with Daniel Fries to build long-term relationships with brands.",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "We Love Pitching: Chronicles of a Necessary Mess – Part 24",
-    "url": "https://www.stashmedia.tv/we-love-pitching-chronicles-of-a-necessary-mess-part-24/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/We-Love-Pitching-Part-24-Guest-editorial-by-Claus-Cibilis-_-STASH-MAGAZINE-1446x1080.jpg",
-    "note": "Nerdo ECD Claus Cibils wraps up his passionate and thoughtful series of a editorials on the challenges of the creative pitching process, a 24-part opus fueled by two decades of experience in the motio",
+    "title": "Roof Studio & Pedro Allevato Stay Hands On for Clash Royale",
+    "url": "https://www.stashmedia.tv/roof-studio-pedro-allevato-stay-hands-on-for-clash-royale/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Clash-Royal-30-seconds-to-detonation-trailer-by-Roof-Studio-and-Pedro-Allevato-STASH-MAGAZINE6.jpg",
+    "note": "Working to Supercell's brief that no AI be used in their newest Clash Royal trailer, director Pedro Allevato and the animation team at Roof Studio in New York, responded with this handcrafted, frame-b",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -462,16 +461,17 @@
     "kind": "gallery"
    },
    {
-    "title": "Lofsöng and the Language That Outlives Us",
-    "url": "https://motionographer.com/2026/11/10/lofsong-and-the-language-that-outlives-us/",
-    "note": "At Tribeca Games, Jesse Rylander speaks with Unrelated Studio’s Alessandro Durando about singing stones, brutalist monuments, and a wordless game built to reach across deep time.",
+    "title": "La Llama | The Post Office",
+    "url": "https://motionographer.com/quickie/la-llama-the-post-office/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/La-Llama-Alba-Prado-ICEX-14-scaled.jpeg",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "World War Seven Signs Stop-Motion and Animation Studio Starburns Industries",
-    "url": "https://www.stashmedia.tv/world-war-seven-signs-stop-motion-and-animation-studio-starburns-industries/",
-    "note": "From the release: World War Seven has found the missing piece in its roster: Starburns Industries, who join as WW7’s new partner for stop-motion and animation projects.  [Watch]\nThe post World War Sev",
+    "title": "Electric Theatre Collective’s Ambitious Amphibian Adventure",
+    "url": "https://www.stashmedia.tv/electric-theatre-collectives-ambitious-amphibian-adventure/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/NETFLIX-ad-with-axolotl-by-Electric-Theatre-Collective-STASH-MAGAZINE3-1920x1080.jpg",
+    "note": "Working with Iconoclast directors Vania & Muggia, the VFX crew at ETC in London transform an axolotl (aquatic salamander native to Mexico City) into a Bridgerton-binging hero as part of a new Netflix ",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -489,7 +489,37 @@
     "title": "AI Just Crossed the Terrifying Line - Now What?",
     "url": "https://www.youtube.com/watch?v=ujkD4SxPKOI",
     "image": "https://i.ytimg.com/vi/ujkD4SxPKOI/hqdefault.jpg",
-    "by": "23M views",
+    "by": "24M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "PSYCHONAUTS",
+    "url": "https://vimeo.com/channels/staffpicks/1245502303",
+    "image": "https://i.vimeocdn.com/video/2224652526-1a5fbcfe2884ed9f38fbb160efe92eab159361d605432c449d15c5ea47b75dcb-d_960?region=us",
+    "note": "Leaving their human hosts, mental disorders take on anthropomorphic forms and find new refuges. Patients of the University Psychiatry Hospital Vrapče worked on &hellip;",
+    "source": "Vimeo Staff Picks",
+    "kind": "gallery"
+   },
+   {
+    "title": "HP Studio | HP Limited Edition Scuderia Ferrari AI PC",
+    "url": "https://motionographer.com/quickie/hp-studio-hp-limited-edition-scuderia-ferrari-ai-pc/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/hp-ferrari-ai-pc-original-still.png",
+    "source": "Motionographer",
+    "kind": "gallery"
+   },
+   {
+    "title": "1stAveMachine Signs Director Kit Lynch-Robinson",
+    "url": "https://www.stashmedia.tv/1stavemachine-signs-director-kit-lynch-robinson/",
+    "note": "From the release: 1stAveMachine, the director-driven production company known for exceptional craft and inventive ideas, has welcomed British director Kit Lynch-Robinson to its roster. [Watch]\nThe pos",
+    "source": "STASH",
+    "kind": "gallery"
+   },
+   {
+    "title": "We Finally Know More About Humanity’s First Civilization",
+    "url": "https://www.youtube.com/watch?v=_y9JuojAIg0",
+    "image": "https://i.ytimg.com/vi/_y9JuojAIg0/hqdefault.jpg",
+    "by": "12M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -510,18 +540,18 @@
     "kind": "gallery"
    },
    {
-    "title": "Roof Studio & Pedro Allevato Stay Hands On for Clash Royale",
-    "url": "https://www.stashmedia.tv/roof-studio-pedro-allevato-stay-hands-on-for-clash-royale/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Clash-Royal-30-seconds-to-detonation-trailer-by-Roof-Studio-and-Pedro-Allevato-STASH-MAGAZINE6.jpg",
-    "note": "Working to Supercell's brief that no AI be used in their newest Clash Royal trailer, director Pedro Allevato and the animation team at Roof Studio in New York, responded with this handcrafted, frame-b",
+    "title": "Reframe Studio Get Comfortable in Fursys Manta Chair",
+    "url": "https://www.stashmedia.tv/reframe-studio-get-comfortable-in-fursys-manta-chair/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Fursys-Manta-Chair-launch-film-by-Reframe-Studio-STASH-MAGAZINE7-1920x1080.jpg",
+    "note": "Reframe Studio in Seoul apply their talents for striking yet tasteful CG style to this Zen-like launch film for the Manta chair designed by German studio Jehs+Laub for South Korean furniture brand Fur",
     "source": "STASH",
     "kind": "gallery"
    },
    {
-    "title": "We Finally Know More About Humanity’s First Civilization",
-    "url": "https://www.youtube.com/watch?v=_y9JuojAIg0",
-    "image": "https://i.ytimg.com/vi/_y9JuojAIg0/hqdefault.jpg",
-    "by": "12M views",
+    "title": "This Is What a Godlike Civilization Would Look Like",
+    "url": "https://www.youtube.com/watch?v=QW_jlUn4gA8",
+    "image": "https://i.ytimg.com/vi/QW_jlUn4gA8/hqdefault.jpg",
+    "by": "9.6M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -542,41 +572,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Electric Theatre Collective’s Ambitious Amphibian Adventure",
-    "url": "https://www.stashmedia.tv/electric-theatre-collectives-ambitious-amphibian-adventure/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/NETFLIX-ad-with-axolotl-by-Electric-Theatre-Collective-STASH-MAGAZINE3-1920x1080.jpg",
-    "note": "Working with Iconoclast directors Vania & Muggia, the VFX crew at ETC in London transform an axolotl (aquatic salamander native to Mexico City) into a Bridgerton-binging hero as part of a new Netflix ",
-    "source": "STASH",
-    "kind": "gallery"
-   },
-   {
-    "title": "This Is What a Godlike Civilization Would Look Like",
-    "url": "https://www.youtube.com/watch?v=QW_jlUn4gA8",
-    "image": "https://i.ytimg.com/vi/QW_jlUn4gA8/hqdefault.jpg",
-    "by": "9.6M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "Balming Tiger - Janjan (Official Video)",
-    "url": "https://vimeo.com/channels/staffpicks/1210405418",
-    "image": "https://i.vimeocdn.com/video/2209433748-5ee94dcdc2676eccd1a489d75d703571b61a8522bcd66e51375e2fd538a811fb-d_960?region=us",
-    "note": "* Credit  Director &amp; Animation: Takahashi Riku (DOKUZEN) Creative Director: San Yawn  * Music Production  Executive Producer: San Yawn Producer(s): bj wnjn,&hellip;",
-    "source": "Vimeo Staff Picks",
-    "kind": "gallery"
-   },
-   {
-    "title": "La Llama | The Post Office",
-    "url": "https://motionographer.com/quickie/la-llama-the-post-office/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/La-Llama-Alba-Prado-ICEX-14-scaled.jpeg",
-    "source": "Motionographer",
-    "kind": "gallery"
-   },
-   {
-    "title": "We Love Pitching: Chronicles of a Necessary Mess – Part 24",
-    "url": "https://www.stashmedia.tv/we-love-pitching-chronicles-of-a-necessary-mess-part-24/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/We-Love-Pitching-Part-24-Guest-editorial-by-Claus-Cibilis-_-STASH-MAGAZINE-1446x1080.jpg",
-    "note": "Nerdo ECD Claus Cibils wraps up his passionate and thoughtful series of a editorials on the challenges of the creative pitching process, a 24-part opus fueled by two decades of experience in the motio",
+    "title": "Roof Studio & Pedro Allevato Stay Hands On for Clash Royale",
+    "url": "https://www.stashmedia.tv/roof-studio-pedro-allevato-stay-hands-on-for-clash-royale/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Clash-Royal-30-seconds-to-detonation-trailer-by-Roof-Studio-and-Pedro-Allevato-STASH-MAGAZINE6.jpg",
+    "note": "Working to Supercell's brief that no AI be used in their newest Clash Royal trailer, director Pedro Allevato and the animation team at Roof Studio in New York, responded with this handcrafted, frame-b",
     "source": "STASH",
     "kind": "gallery"
    }
@@ -586,7 +585,7 @@
     "title": "World's Biggest Human Catapult 🤯",
     "url": "https://www.youtube.com/watch?v=_72h8SbCgqE",
     "image": "https://i.ytimg.com/vi/_72h8SbCgqE/hqdefault.jpg",
-    "by": "32M views",
+    "by": "34M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -594,7 +593,7 @@
     "title": "How To Make An Exit 💥",
     "url": "https://www.youtube.com/watch?v=ehyKWTwuGFI",
     "image": "https://i.ytimg.com/vi/ehyKWTwuGFI/hqdefault.jpg",
-    "by": "16M views",
+    "by": "18M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -602,7 +601,7 @@
     "title": "NEW WORLD RECORD 💥",
     "url": "https://www.youtube.com/watch?v=61qsaigvPyI",
     "image": "https://i.ytimg.com/vi/61qsaigvPyI/hqdefault.jpg",
-    "by": "3.1M views",
+    "by": "4M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -626,7 +625,7 @@
     "title": "if my lovity is falsity, why r u my verity 🎨: @lleahistired",
     "url": "https://www.youtube.com/watch?v=tbUMR2qIEzo",
     "image": "https://i.ytimg.com/vi/tbUMR2qIEzo/hqdefault.jpg",
-    "by": "1.7M views",
+    "by": "1.8M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -634,7 +633,15 @@
     "title": "No, You Couldn't Do This 🙅‍♂️",
     "url": "https://www.youtube.com/watch?v=-D7Q7irRp54",
     "image": "https://i.ytimg.com/vi/-D7Q7irRp54/hqdefault.jpg",
-    "by": "646K views",
+    "by": "1.8M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "POV: The World's Biggest Human Catapult 😳",
+    "url": "https://www.youtube.com/watch?v=muokuPK7V_E",
+    "image": "https://i.ytimg.com/vi/muokuPK7V_E/hqdefault.jpg",
+    "by": "1.2M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -647,18 +654,10 @@
     "kind": "performance"
    },
    {
-    "title": "Short And Sweet... Right? 👀",
-    "url": "https://www.youtube.com/watch?v=MfGU9yzdyTk",
-    "image": "https://i.ytimg.com/vi/MfGU9yzdyTk/hqdefault.jpg",
-    "by": "515K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
     "title": "POV: 55ft MTB Freefall 🎬 Antoni Villoni #GoPro",
     "url": "https://www.youtube.com/watch?v=tAIjGmGVa1g",
     "image": "https://i.ytimg.com/vi/tAIjGmGVa1g/hqdefault.jpg",
-    "by": "416K views",
+    "by": "485K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -666,7 +665,7 @@
     "title": "Get sorted for college with Roxie from the Apple Store.",
     "url": "https://www.youtube.com/watch?v=P5GxUjU4uBI",
     "image": "https://i.ytimg.com/vi/P5GxUjU4uBI/hqdefault.jpg",
-    "by": "366K views",
+    "by": "367K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -674,18 +673,107 @@
     "title": "Show off your work with Desk View. Tip from Kylie at the Apple Store.",
     "url": "https://www.youtube.com/watch?v=BTyWlJJUX2I",
     "image": "https://i.ytimg.com/vi/BTyWlJJUX2I/hqdefault.jpg",
-    "by": "321K views",
+    "by": "322K views",
     "source": "Latest from brands",
     "kind": "performance"
    }
   ],
-  "post": [],
+  "post": [
+   {
+    "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
+    "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "FAA issues national ground stop – lifted 4.5 hours later",
+    "url": "https://www.nbcnews.com/news/us-news/faa-orders-nationwide-ground-stop-departing-flights-reasons-safety-rcna609247",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "$11.4M in Nvidia hardware vanishes during shipment from CA to TX",
+    "url": "https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "It Takes 16 Clicks for a Student to Open a PowerPoint on an iPad",
+    "url": "https://www.reddit.com/r/Teachers/comments/1xuup7a/technology_sucks_it_literally_takes_16_clicks_for/",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "AI unlocks Gödel's notebooks, said to contain hundreds of proved theorems",
+    "url": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "LibreOffice actually works 365 days a year",
+    "url": "https://twitter.com/LibreOffice/status/2121205272479998268",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "Doomsday: Friday, 13 November, A.D. 2026 (1960)",
+    "url": "https://www.science.org/doi/10.1126/science.132.3436.1291",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "AI is destroying the trust between writers and readers",
+    "url": "https://www.theatlantic.com/books/2026/11/ai-literary-scams-amazon/689391/",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+    "url": "https://status.claude.com/incidents/nn11wk485zfn",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "Microsoft Outlook/365 still down after 12 hours",
+    "url": "https://twitter.com/MSFT365Status/status/2121079061774491735",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "IceWM",
+    "url": "https://ice-wm.org/",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "Nvidia employees petition to bring back Jensen Huang",
+    "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   }
+  ],
   "ad": [
    {
     "title": "New MacBook Pro with PROLED XDR Display: The first-ever Mac with Touch",
     "url": "https://www.youtube.com/watch?v=hnZI5uUSdEo",
     "image": "https://i.ytimg.com/vi/hnZI5uUSdEo/hqdefault.jpg",
     "by": "45M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Not Really For Tourists",
+    "url": "https://www.adsoftheworld.com/campaigns/not-really-for-tourists",
+    "image": "https://image.adsoftheworld.com/txu7qrqx6thchblaqqa20q6n96ic",
+    "by": "Tourism Tasmania",
+    "source": "Ads of the World",
+    "kind": "gallery"
+   },
+   {
+    "title": "“The Dreamer”: An Apple Holiday Film featuring MacBook Neo",
+    "url": "https://www.youtube.com/watch?v=Sp54mxnWjUM",
+    "image": "https://i.ytimg.com/vi/Sp54mxnWjUM/hqdefault.jpg",
+    "by": "3.9M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -698,10 +786,10 @@
     "kind": "gallery"
    },
    {
-    "title": "“The Dreamer”: An Apple Holiday Film featuring MacBook Neo",
-    "url": "https://www.youtube.com/watch?v=Sp54mxnWjUM",
-    "image": "https://i.ytimg.com/vi/Sp54mxnWjUM/hqdefault.jpg",
-    "by": "3.7M views",
+    "title": "Airbnb | あつまる？エアビる？｜リビングでエアビる",
+    "url": "https://www.youtube.com/watch?v=Mx608ORGCFA",
+    "image": "https://i.ytimg.com/vi/Mx608ORGCFA/hqdefault.jpg",
+    "by": "3.1M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -714,22 +802,6 @@
     "kind": "gallery"
    },
    {
-    "title": "Airbnb | あつまる？エアビる？｜リビングでエアビる",
-    "url": "https://www.youtube.com/watch?v=Mx608ORGCFA",
-    "image": "https://i.ytimg.com/vi/Mx608ORGCFA/hqdefault.jpg",
-    "by": "3M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "The Home Of Christmas",
-    "url": "https://www.adsoftheworld.com/campaigns/the-home-of-christmas",
-    "image": "https://image.adsoftheworld.com/kpy4xw1mfuhmhy2fdxitywadngxn",
-    "by": "M&S",
-    "source": "Ads of the World",
-    "kind": "gallery"
-   },
-   {
     "title": "Airbnb | あつまる？エアビる？｜今日はちょっと、大人忘れます。",
     "url": "https://www.youtube.com/watch?v=hmYXIfxAIoM",
     "image": "https://i.ytimg.com/vi/hmYXIfxAIoM/hqdefault.jpg",
@@ -738,10 +810,10 @@
     "kind": "performance"
    },
    {
-    "title": "Count Before You Click",
-    "url": "https://www.adsoftheworld.com/campaigns/count-before-you-click-b54b03b4-3528-4bd8-84bf-7e4f73677174",
-    "image": "https://image.adsoftheworld.com/fyobom1jsq5jhp70j991e5eike2m",
-    "by": "Take9",
+    "title": "The Home Of Christmas",
+    "url": "https://www.adsoftheworld.com/campaigns/the-home-of-christmas",
+    "image": "https://image.adsoftheworld.com/kpy4xw1mfuhmhy2fdxitywadngxn",
+    "by": "M&S",
     "source": "Ads of the World",
     "kind": "gallery"
    },
@@ -762,17 +834,17 @@
     "kind": "gallery"
    },
    {
-    "title": "New MacBook Pro with PROLED XDR Display and Touch: The world’s best laptop display",
-    "url": "https://www.youtube.com/watch?v=WzuIZLoHqqA",
-    "image": "https://i.ytimg.com/vi/WzuIZLoHqqA/hqdefault.jpg",
-    "by": "1.3M views",
+    "title": "Created live on Mac: “Surrender” by Labrinth",
+    "url": "https://www.youtube.com/watch?v=YaPx9scLwfk",
+    "image": "https://i.ytimg.com/vi/YaPx9scLwfk/hqdefault.jpg",
+    "by": "1.5M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
    {
-    "title": "Studio Fleece | NSW | Nike",
-    "url": "https://www.youtube.com/watch?v=vyjhrYmboO8",
-    "image": "https://i.ytimg.com/vi/vyjhrYmboO8/hqdefault.jpg",
+    "title": "New MacBook Pro with PROLED XDR Display and Touch: The world’s best laptop display",
+    "url": "https://www.youtube.com/watch?v=WzuIZLoHqqA",
+    "image": "https://i.ytimg.com/vi/WzuIZLoHqqA/hqdefault.jpg",
     "by": "1.3M views",
     "source": "Latest from brands",
     "kind": "performance"
