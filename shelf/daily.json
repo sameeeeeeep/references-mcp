@@ -1,7 +1,31 @@
 {
- "updated": "2026-11-14T10:35:02.188Z",
+ "updated": "2026-11-15T11:03:40.844Z",
  "media": {
   "ui": [
+   {
+    "title": "SANTAL",
+    "url": "https://www.awwwards.com/sites/santal",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6ab1e9b49c123112947598.png",
+    "note": "Santal Architecture — the team behind a private villa commissioned by a legendary watchmaking house, a project where architecture borrowed the logic of haute horlogerie.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "Privacyboard",
+    "url": "https://www.producthunt.com/products/privacyboard",
+    "note": "Privacy compliance on autopilot",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "backnotprop/plannotator",
+    "url": "https://github.com/backnotprop/plannotator",
+    "image": "https://opengraph.githubassets.com/1/backnotprop/plannotator",
+    "by": "★ 860 today",
+    "note": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
    {
     "title": "Preymaker",
     "url": "https://www.awwwards.com/sites/preymaker",
@@ -11,18 +35,18 @@
     "kind": "award"
    },
    {
-    "title": "Kokonut UI",
-    "url": "https://www.producthunt.com/products/kokonutui",
-    "note": "Open-source UI components for your AI agent",
+    "title": "collecto.rs",
+    "url": "https://www.producthunt.com/products/collecto-rs",
+    "note": "Catalog any collection, from Pokémon to pitcher plants",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "alibaba/open-code-review",
-    "url": "https://github.com/alibaba/open-code-review",
-    "image": "https://opengraph.githubassets.com/1/alibaba/open-code-review",
-    "by": "★ 215 today",
-    "note": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE,",
+    "title": "GoogleChrome/modern-web-guidance-src",
+    "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+    "image": "https://opengraph.githubassets.com/1/GoogleChrome/modern-web-guidance-src",
+    "by": "★ 1,220 today",
+    "note": "Keep your coding agent up to date with the latest web best practices",
     "source": "GitHub Trending",
     "kind": "trending"
    },
@@ -35,18 +59,18 @@
     "kind": "award"
    },
    {
-    "title": "Thunder",
-    "url": "https://www.producthunt.com/products/thunder-3",
-    "note": "A blazing-fast, persistent, key-value AI workload database",
+    "title": "Pixel Office",
+    "url": "https://www.producthunt.com/products/pixel-office-3",
+    "note": "Run a team of AI agents from a pixel-art office",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "GoogleChrome/modern-web-guidance-src",
-    "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
-    "image": "https://opengraph.githubassets.com/1/GoogleChrome/modern-web-guidance-src",
-    "by": "★ 1,925 today",
-    "note": "Keep your coding agent up to date with the latest web best practices",
+    "title": "tradermonty/claude-trading-skills",
+    "url": "https://github.com/tradermonty/claude-trading-skills",
+    "image": "https://opengraph.githubassets.com/1/tradermonty/claude-trading-skills",
+    "by": "★ 707 today",
+    "note": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
@@ -59,52 +83,28 @@
     "kind": "award"
    },
    {
-    "title": "CodeMesh",
-    "url": "https://www.producthunt.com/products/codemesh-2",
-    "note": "Cut AI coding costs by 90%",
+    "title": "TwoBucket",
+    "url": "https://www.producthunt.com/products/twobucket",
+    "note": "Beginner-friendly mobile detailing software for bookings",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "openai/codex-security",
-    "url": "https://github.com/openai/codex-security",
-    "image": "https://opengraph.githubassets.com/1/openai/codex-security",
-    "by": "★ 751 today",
-    "note": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Cyera AI Guardian",
-    "url": "https://www.awwwards.com/sites/cyera-ai-guardian",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6ab46da86e036198149047.png",
-    "note": "An interactive microsite where users pilot a vessel through three AI security planets, completing mini-games and exploring Cyera’s data security capabilities.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
-   },
-   {
-    "title": "HiringNow",
-    "url": "https://www.producthunt.com/products/hiringnow",
-    "note": "AI job agent that finds & apply for jobs before anyone else.",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "ZhuLinsen/daily_stock_analysis",
-    "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
-    "image": "https://opengraph.githubassets.com/1/ZhuLinsen/daily_stock_analysis",
-    "by": "★ 256 today",
-    "note": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-fr",
+    "title": "ChromeDevTools/chrome-devtools-mcp",
+    "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+    "image": "https://opengraph.githubassets.com/1/ChromeDevTools/chrome-devtools-mcp",
+    "by": "★ 718 today",
+    "note": "Chrome DevTools for coding agents",
     "source": "GitHub Trending",
     "kind": "trending"
    }
   ],
   "landing": [
    {
-    "title": "Preymaker",
-    "url": "https://www.awwwards.com/sites/preymaker",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6ab13a392cc6b094293023.png",
-    "note": "Preymaker is a global creative technology studio blending VFX, design and emerging technology to create exceptional visual content and experiences.",
+    "title": "SANTAL",
+    "url": "https://www.awwwards.com/sites/santal",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6ab1e9b49c123112947598.png",
+    "note": "Santal Architecture — the team behind a private villa commissioned by a legendary watchmaking house, a project where architecture borrowed the logic of haute horlogerie.",
     "source": "Awwwards · Sites of the Day",
     "kind": "award"
    },
@@ -117,17 +117,17 @@
     "kind": "gallery"
    },
    {
-    "title": "Kokonut UI",
-    "url": "https://www.producthunt.com/products/kokonutui",
-    "note": "Open-source UI components for your AI agent",
+    "title": "Privacyboard",
+    "url": "https://www.producthunt.com/products/privacyboard",
+    "note": "Privacy compliance on autopilot",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "Delta Cafés",
-    "url": "https://www.awwwards.com/sites/delta-cafes",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6aba4799e2814987403946.jpg",
-    "note": "Discover Delta Cafés: six decades of Portuguese coffee heritage, culture, sustainability and experiences, from bean to cup, for every coffee lover.",
+    "title": "Preymaker",
+    "url": "https://www.awwwards.com/sites/preymaker",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6ab13a392cc6b094293023.png",
+    "note": "Preymaker is a global creative technology studio blending VFX, design and emerging technology to create exceptional visual content and experiences.",
     "source": "Awwwards · Sites of the Day",
     "kind": "award"
    },
@@ -140,17 +140,17 @@
     "kind": "gallery"
    },
    {
-    "title": "Thunder",
-    "url": "https://www.producthunt.com/products/thunder-3",
-    "note": "A blazing-fast, persistent, key-value AI workload database",
+    "title": "collecto.rs",
+    "url": "https://www.producthunt.com/products/collecto-rs",
+    "note": "Catalog any collection, from Pokémon to pitcher plants",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "AUGE Experience",
-    "url": "https://www.awwwards.com/sites/auge-experience",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6ab695ee12e89641139763.jpg",
-    "note": "An award-winning digital experience studio partenring with ambitious brands to create distinctive experiences through design, technology and creative experimentations.",
+    "title": "Delta Cafés",
+    "url": "https://www.awwwards.com/sites/delta-cafes",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6aba4799e2814987403946.jpg",
+    "note": "Discover Delta Cafés: six decades of Portuguese coffee heritage, culture, sustainability and experiences, from bean to cup, for every coffee lover.",
     "source": "Awwwards · Sites of the Day",
     "kind": "award"
    },
@@ -163,17 +163,17 @@
     "kind": "gallery"
    },
    {
-    "title": "CodeMesh",
-    "url": "https://www.producthunt.com/products/codemesh-2",
-    "note": "Cut AI coding costs by 90%",
+    "title": "Pixel Office",
+    "url": "https://www.producthunt.com/products/pixel-office-3",
+    "note": "Run a team of AI agents from a pixel-art office",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "Cyera AI Guardian",
-    "url": "https://www.awwwards.com/sites/cyera-ai-guardian",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6ab46da86e036198149047.png",
-    "note": "An interactive microsite where users pilot a vessel through three AI security planets, completing mini-games and exploring Cyera’s data security capabilities.",
+    "title": "AUGE Experience",
+    "url": "https://www.awwwards.com/sites/auge-experience",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6ab695ee12e89641139763.jpg",
+    "note": "An award-winning digital experience studio partenring with ambitious brands to create distinctive experiences through design, technology and creative experimentations.",
     "source": "Awwwards · Sites of the Day",
     "kind": "award"
    },
@@ -186,98 +186,18 @@
     "kind": "gallery"
    },
    {
-    "title": "HiringNow",
-    "url": "https://www.producthunt.com/products/hiringnow",
-    "note": "AI job agent that finds & apply for jobs before anyone else.",
+    "title": "TwoBucket",
+    "url": "https://www.producthunt.com/products/twobucket",
+    "note": "Beginner-friendly mobile detailing software for bookings",
     "source": "Product Hunt · Today",
     "kind": "trending"
    }
   ],
   "app": [
    {
-    "title": "Kokonut UI",
-    "url": "https://www.producthunt.com/products/kokonutui",
-    "note": "Open-source UI components for your AI agent",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "alibaba/open-code-review",
-    "url": "https://github.com/alibaba/open-code-review",
-    "image": "https://opengraph.githubassets.com/1/alibaba/open-code-review",
-    "by": "★ 215 today",
-    "note": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE,",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Thunder",
-    "url": "https://www.producthunt.com/products/thunder-3",
-    "note": "A blazing-fast, persistent, key-value AI workload database",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "GoogleChrome/modern-web-guidance-src",
-    "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
-    "image": "https://opengraph.githubassets.com/1/GoogleChrome/modern-web-guidance-src",
-    "by": "★ 1,925 today",
-    "note": "Keep your coding agent up to date with the latest web best practices",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "CodeMesh",
-    "url": "https://www.producthunt.com/products/codemesh-2",
-    "note": "Cut AI coding costs by 90%",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "openai/codex-security",
-    "url": "https://github.com/openai/codex-security",
-    "image": "https://opengraph.githubassets.com/1/openai/codex-security",
-    "by": "★ 751 today",
-    "note": "OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "HiringNow",
-    "url": "https://www.producthunt.com/products/hiringnow",
-    "note": "AI job agent that finds & apply for jobs before anyone else.",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "ZhuLinsen/daily_stock_analysis",
-    "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
-    "image": "https://opengraph.githubassets.com/1/ZhuLinsen/daily_stock_analysis",
-    "by": "★ 256 today",
-    "note": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-fr",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "CaptureFlow",
-    "url": "https://www.producthunt.com/products/captureflow",
-    "note": "Open-source screen recorder with instant share links",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "we-promise/sure",
-    "url": "https://github.com/we-promise/sure",
-    "image": "https://opengraph.githubassets.com/1/we-promise/sure",
-    "by": "★ 925 today",
-    "note": "The personal finance app for everyone (by everyone)",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Uber Parking",
-    "url": "https://www.producthunt.com/products/uber",
-    "note": "Find, compare and reserve parking inside the Uber app",
+    "title": "Privacyboard",
+    "url": "https://www.producthunt.com/products/privacyboard",
+    "note": "Privacy compliance on autopilot",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -285,8 +205,88 @@
     "title": "backnotprop/plannotator",
     "url": "https://github.com/backnotprop/plannotator",
     "image": "https://opengraph.githubassets.com/1/backnotprop/plannotator",
-    "by": "★ 108 today",
+    "by": "★ 860 today",
     "note": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "collecto.rs",
+    "url": "https://www.producthunt.com/products/collecto-rs",
+    "note": "Catalog any collection, from Pokémon to pitcher plants",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "GoogleChrome/modern-web-guidance-src",
+    "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+    "image": "https://opengraph.githubassets.com/1/GoogleChrome/modern-web-guidance-src",
+    "by": "★ 1,220 today",
+    "note": "Keep your coding agent up to date with the latest web best practices",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "Pixel Office",
+    "url": "https://www.producthunt.com/products/pixel-office-3",
+    "note": "Run a team of AI agents from a pixel-art office",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "tradermonty/claude-trading-skills",
+    "url": "https://github.com/tradermonty/claude-trading-skills",
+    "image": "https://opengraph.githubassets.com/1/tradermonty/claude-trading-skills",
+    "by": "★ 707 today",
+    "note": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "TwoBucket",
+    "url": "https://www.producthunt.com/products/twobucket",
+    "note": "Beginner-friendly mobile detailing software for bookings",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "ChromeDevTools/chrome-devtools-mcp",
+    "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+    "image": "https://opengraph.githubassets.com/1/ChromeDevTools/chrome-devtools-mcp",
+    "by": "★ 718 today",
+    "note": "Chrome DevTools for coding agents",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "Tulvo",
+    "url": "https://www.producthunt.com/products/tulvo",
+    "note": "Smart & adaptive workspace to manage all your work",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "alibaba/open-code-review",
+    "url": "https://github.com/alibaba/open-code-review",
+    "image": "https://opengraph.githubassets.com/1/alibaba/open-code-review",
+    "by": "★ 688 today",
+    "note": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE,",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "Emayler",
+    "url": "https://www.producthunt.com/products/emayler",
+    "note": "Custom email on your domain, minus the headache",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "QwenLM/qwen-code",
+    "url": "https://github.com/QwenLM/qwen-code",
+    "image": "https://opengraph.githubassets.com/1/QwenLM/qwen-code",
+    "by": "★ 64 today",
+    "note": "An open-source AI coding agent that lives in your terminal.",
     "source": "GitHub Trending",
     "kind": "trending"
    }
@@ -320,7 +320,7 @@
     "title": "“The Dreamer”: An Apple Holiday Film featuring MacBook Neo",
     "url": "https://www.youtube.com/watch?v=Sp54mxnWjUM",
     "image": "https://i.ytimg.com/vi/Sp54mxnWjUM/hqdefault.jpg",
-    "by": "3.9M views",
+    "by": "4.1M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -344,7 +344,7 @@
     "title": "Created live on Mac: “Surrender” by Labrinth",
     "url": "https://www.youtube.com/watch?v=YaPx9scLwfk",
     "image": "https://i.ytimg.com/vi/YaPx9scLwfk/hqdefault.jpg",
-    "by": "1.5M views",
+    "by": "2.1M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -582,18 +582,10 @@
   ],
   "social": [
    {
-    "title": "World's Biggest Human Catapult 🤯",
-    "url": "https://www.youtube.com/watch?v=_72h8SbCgqE",
-    "image": "https://i.ytimg.com/vi/_72h8SbCgqE/hqdefault.jpg",
-    "by": "34M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
     "title": "How To Make An Exit 💥",
     "url": "https://www.youtube.com/watch?v=ehyKWTwuGFI",
     "image": "https://i.ytimg.com/vi/ehyKWTwuGFI/hqdefault.jpg",
-    "by": "18M views",
+    "by": "20M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -601,31 +593,7 @@
     "title": "NEW WORLD RECORD 💥",
     "url": "https://www.youtube.com/watch?v=61qsaigvPyI",
     "image": "https://i.ytimg.com/vi/61qsaigvPyI/hqdefault.jpg",
-    "by": "4M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "Airbnb | あつまる？エアビる？｜プールでエアビる",
-    "url": "https://www.youtube.com/watch?v=QS0QEqKGGIw",
-    "image": "https://i.ytimg.com/vi/QS0QEqKGGIw/hqdefault.jpg",
-    "by": "2.3M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "Airbnb | あつまる？エアビる？｜今日はちょっと、大人忘れます。",
-    "url": "https://www.youtube.com/watch?v=p8HvRJALo4Y",
-    "image": "https://i.ytimg.com/vi/p8HvRJALo4Y/hqdefault.jpg",
-    "by": "1.9M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "if my lovity is falsity, why r u my verity 🎨: @lleahistired",
-    "url": "https://www.youtube.com/watch?v=tbUMR2qIEzo",
-    "image": "https://i.ytimg.com/vi/tbUMR2qIEzo/hqdefault.jpg",
-    "by": "1.8M views",
+    "by": "4.6M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -633,7 +601,31 @@
     "title": "No, You Couldn't Do This 🙅‍♂️",
     "url": "https://www.youtube.com/watch?v=-D7Q7irRp54",
     "image": "https://i.ytimg.com/vi/-D7Q7irRp54/hqdefault.jpg",
-    "by": "1.8M views",
+    "by": "4.2M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Airbnb | あつまる？エアビる？｜プールでエアビる",
+    "url": "https://www.youtube.com/watch?v=QS0QEqKGGIw",
+    "image": "https://i.ytimg.com/vi/QS0QEqKGGIw/hqdefault.jpg",
+    "by": "2.4M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Airbnb | あつまる？エアビる？｜今日はちょっと、大人忘れます。",
+    "url": "https://www.youtube.com/watch?v=p8HvRJALo4Y",
+    "image": "https://i.ytimg.com/vi/p8HvRJALo4Y/hqdefault.jpg",
+    "by": "2M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "if my lovity is falsity, why r u my verity 🎨: @lleahistired",
+    "url": "https://www.youtube.com/watch?v=tbUMR2qIEzo",
+    "image": "https://i.ytimg.com/vi/tbUMR2qIEzo/hqdefault.jpg",
+    "by": "1.9M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -641,15 +633,15 @@
     "title": "POV: The World's Biggest Human Catapult 😳",
     "url": "https://www.youtube.com/watch?v=muokuPK7V_E",
     "image": "https://i.ytimg.com/vi/muokuPK7V_E/hqdefault.jpg",
-    "by": "1.2M views",
+    "by": "1.6M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
    {
-    "title": "Nido de Villanas: Ep. 1 Don Cristóbal’s inheritance",
-    "url": "https://www.youtube.com/watch?v=wG_LaKvlcqM",
-    "image": "https://i.ytimg.com/vi/wG_LaKvlcqM/hqdefault.jpg",
-    "by": "557K views",
+    "title": "The Ultimate Race on ICE ❄️",
+    "url": "https://www.youtube.com/watch?v=0Qs7uYqVOUM",
+    "image": "https://i.ytimg.com/vi/0Qs7uYqVOUM/hqdefault.jpg",
+    "by": "610K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -657,7 +649,15 @@
     "title": "POV: 55ft MTB Freefall 🎬 Antoni Villoni #GoPro",
     "url": "https://www.youtube.com/watch?v=tAIjGmGVa1g",
     "image": "https://i.ytimg.com/vi/tAIjGmGVa1g/hqdefault.jpg",
-    "by": "485K views",
+    "by": "564K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Nido de Villanas: Ep. 1 Don Cristóbal’s inheritance",
+    "url": "https://www.youtube.com/watch?v=wG_LaKvlcqM",
+    "image": "https://i.ytimg.com/vi/wG_LaKvlcqM/hqdefault.jpg",
+    "by": "558K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -670,15 +670,75 @@
     "kind": "performance"
    },
    {
-    "title": "Show off your work with Desk View. Tip from Kylie at the Apple Store.",
-    "url": "https://www.youtube.com/watch?v=BTyWlJJUX2I",
-    "image": "https://i.ytimg.com/vi/BTyWlJJUX2I/hqdefault.jpg",
-    "by": "322K views",
+    "title": "y'all need to lock in on ur listening exercises 🎨: @brerbo",
+    "url": "https://www.youtube.com/watch?v=jNctdfv480U",
+    "image": "https://i.ytimg.com/vi/jNctdfv480U/hqdefault.jpg",
+    "by": "334K views",
     "source": "Latest from brands",
     "kind": "performance"
    }
   ],
   "post": [
+   {
+    "title": "Nvidia deliberately kept GPU prices high through circular financing deals",
+    "url": "https://www.techspot.com/news/114558-nvidia-deliberately-kept-gpu-prices-high-through-circular.html",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "SpaceX catches the Starship to end Flight 15",
+    "url": "https://www.spacex.com/launches/starship-flight-15",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "LinkedIn, Monster take down over 1000 fake job postings after CBC investigation",
+    "url": "https://www.cbc.ca/news/canada/linkedin-monster-take-down-over-1-000-fake-job-postings-after-cbc-investigation-9.7415379",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "A family tree of software job titles",
+    "url": "https://zwischenzugs.com/2026/11/03/a-family-tree-of-software-job-titles/",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "Lovable apps expose passport details and more than 200K private messages",
+    "url": "https://www.crissyfield.de/research/lovable-en/",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "Italy fines Meta $887M over Android users' data access",
+    "url": "https://www.reuters.com/world/italy-fines-meta-887-million-over-android-users-data-access-2026-11-14/",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "KDE: The documentary [video]",
+    "url": "https://tube.kockatoo.org/w/fFinNHfanLT7aBEb2B8y4c",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "Tech companies are trying to shift the concept of privacy again",
+    "url": "https://www.eff.org/deeplinks/2026/11/tech-companies-are-trying-shift-entire-concept-privacy-again",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "Project Zero will disclose vulnerabilities 90 days after reporting",
+    "url": "https://projectzero.google/2026/11/disclosure-policy.html",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "Monkey Island: all 13 versions side by side",
+    "url": "https://monkeyisland.pages.dev/",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
    {
     "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
     "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
@@ -686,68 +746,8 @@
     "kind": "performance"
    },
    {
-    "title": "FAA issues national ground stop – lifted 4.5 hours later",
-    "url": "https://www.nbcnews.com/news/us-news/faa-orders-nationwide-ground-stop-departing-flights-reasons-safety-rcna609247",
-    "source": "Hacker News · Best",
-    "kind": "performance"
-   },
-   {
-    "title": "$11.4M in Nvidia hardware vanishes during shipment from CA to TX",
-    "url": "https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas",
-    "source": "Hacker News · Best",
-    "kind": "performance"
-   },
-   {
-    "title": "It Takes 16 Clicks for a Student to Open a PowerPoint on an iPad",
-    "url": "https://www.reddit.com/r/Teachers/comments/1xuup7a/technology_sucks_it_literally_takes_16_clicks_for/",
-    "source": "Hacker News · Best",
-    "kind": "performance"
-   },
-   {
-    "title": "AI unlocks Gödel's notebooks, said to contain hundreds of proved theorems",
-    "url": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
-    "source": "Hacker News · Best",
-    "kind": "performance"
-   },
-   {
-    "title": "LibreOffice actually works 365 days a year",
-    "url": "https://twitter.com/LibreOffice/status/2121205272479998268",
-    "source": "Hacker News · Best",
-    "kind": "performance"
-   },
-   {
-    "title": "Doomsday: Friday, 13 November, A.D. 2026 (1960)",
-    "url": "https://www.science.org/doi/10.1126/science.132.3436.1291",
-    "source": "Hacker News · Best",
-    "kind": "performance"
-   },
-   {
-    "title": "AI is destroying the trust between writers and readers",
-    "url": "https://www.theatlantic.com/books/2026/11/ai-literary-scams-amazon/689391/",
-    "source": "Hacker News · Best",
-    "kind": "performance"
-   },
-   {
-    "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
-    "url": "https://status.claude.com/incidents/nn11wk485zfn",
-    "source": "Hacker News · Best",
-    "kind": "performance"
-   },
-   {
-    "title": "Microsoft Outlook/365 still down after 12 hours",
-    "url": "https://twitter.com/MSFT365Status/status/2121079061774491735",
-    "source": "Hacker News · Best",
-    "kind": "performance"
-   },
-   {
-    "title": "IceWM",
-    "url": "https://ice-wm.org/",
-    "source": "Hacker News · Best",
-    "kind": "performance"
-   },
-   {
-    "title": "Nvidia employees petition to bring back Jensen Huang",
-    "url": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
+    "title": "Ggml v1.0.0",
+    "url": "https://github.com/ggml-org/ggml/releases/tag/v1.0.0",
     "source": "Hacker News · Best",
     "kind": "performance"
    }
@@ -773,7 +773,7 @@
     "title": "“The Dreamer”: An Apple Holiday Film featuring MacBook Neo",
     "url": "https://www.youtube.com/watch?v=Sp54mxnWjUM",
     "image": "https://i.ytimg.com/vi/Sp54mxnWjUM/hqdefault.jpg",
-    "by": "3.9M views",
+    "by": "4.1M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -789,7 +789,7 @@
     "title": "Airbnb | あつまる？エアビる？｜リビングでエアビる",
     "url": "https://www.youtube.com/watch?v=Mx608ORGCFA",
     "image": "https://i.ytimg.com/vi/Mx608ORGCFA/hqdefault.jpg",
-    "by": "3.1M views",
+    "by": "3.2M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -802,10 +802,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Airbnb | あつまる？エアビる？｜今日はちょっと、大人忘れます。",
-    "url": "https://www.youtube.com/watch?v=hmYXIfxAIoM",
-    "image": "https://i.ytimg.com/vi/hmYXIfxAIoM/hqdefault.jpg",
-    "by": "1.6M views",
+    "title": "Created live on Mac: “Surrender” by Labrinth",
+    "url": "https://www.youtube.com/watch?v=YaPx9scLwfk",
+    "image": "https://i.ytimg.com/vi/YaPx9scLwfk/hqdefault.jpg",
+    "by": "2.1M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -818,9 +818,9 @@
     "kind": "gallery"
    },
    {
-    "title": "Airbnb | あつまる？エアビる？｜あの頃より、近づく夜。",
-    "url": "https://www.youtube.com/watch?v=FfoCK8cltno",
-    "image": "https://i.ytimg.com/vi/FfoCK8cltno/hqdefault.jpg",
+    "title": "Airbnb | あつまる？エアビる？｜今日はちょっと、大人忘れます。",
+    "url": "https://www.youtube.com/watch?v=hmYXIfxAIoM",
+    "image": "https://i.ytimg.com/vi/hmYXIfxAIoM/hqdefault.jpg",
     "by": "1.6M views",
     "source": "Latest from brands",
     "kind": "performance"
@@ -834,10 +834,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Created live on Mac: “Surrender” by Labrinth",
-    "url": "https://www.youtube.com/watch?v=YaPx9scLwfk",
-    "image": "https://i.ytimg.com/vi/YaPx9scLwfk/hqdefault.jpg",
-    "by": "1.5M views",
+    "title": "Airbnb | あつまる？エアビる？｜あの頃より、近づく夜。",
+    "url": "https://www.youtube.com/watch?v=FfoCK8cltno",
+    "image": "https://i.ytimg.com/vi/FfoCK8cltno/hqdefault.jpg",
+    "by": "1.6M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
