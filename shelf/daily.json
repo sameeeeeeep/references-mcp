@@ -1,91 +1,67 @@
 {
- "updated": "2026-11-16T11:33:00.897Z",
+ "updated": "2026-11-17T11:58:43.276Z",
  "media": {
   "ui": [
    {
-    "title": "AgentWatch",
-    "url": "https://www.producthunt.com/products/agentwatch-ai-traffic-tracker",
-    "note": "Monitor AI shopping agent sales and visibility on Shopify",
+    "title": "Sweet Tape",
+    "url": "https://www.awwwards.com/sites/sweet-tape",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6abcd26414b0a515009810.jpg",
+    "note": "Reimagine an everyday tape essential as something more thoughtful, expressive, and full of heart.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "Superhands",
+    "url": "https://www.producthunt.com/products/stencil-by-superhands",
+    "note": "Design the system, not every output.",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "dream-num/univer",
-    "url": "https://github.com/dream-num/univer",
-    "image": "https://opengraph.githubassets.com/1/dream-num/univer",
-    "by": "★ 1,878 today",
-    "note": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
+    "title": "elementalsouls/Claude-BugHunter",
+    "url": "https://github.com/elementalsouls/Claude-BugHunter",
+    "image": "https://opengraph.githubassets.com/1/elementalsouls/Claude-BugHunter",
+    "by": "★ 1,007 today",
+    "note": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identi",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Findy",
-    "url": "https://www.producthunt.com/products/findy-3",
-    "note": "Find Files on Your Mac by what you remember",
+    "title": "Bulletproof",
+    "url": "https://www.awwwards.com/sites/bulletproof",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6abba11c9296a681844638.jpg",
+    "note": "We are the world's largest independent brand agency. We drive growth, standout and fandom for the world's most desirable brands.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "Continuo",
+    "url": "https://www.producthunt.com/products/continuo-4",
+    "note": "One keyboard and mouse across Macs, no Apple Account",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "ag-ui-protocol/ag-ui",
-    "url": "https://github.com/ag-ui-protocol/ag-ui",
-    "image": "https://opengraph.githubassets.com/1/ag-ui-protocol/ag-ui",
-    "by": "★ 790 today",
-    "note": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
+    "title": "mvanhorn/last30days-skill",
+    "url": "https://github.com/mvanhorn/last30days-skill",
+    "image": "https://opengraph.githubassets.com/1/mvanhorn/last30days-skill",
+    "by": "★ 135 today",
+    "note": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "OpenBot",
-    "url": "https://www.producthunt.com/products/copilotkit",
-    "note": "Grok Bot alternative: self-host, fully customize, any stack",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
+    "title": "SANTAL",
+    "url": "https://www.awwwards.com/sites/santal",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6ab1e9b49c123112947598.png",
+    "note": "Santal Architecture — the team behind a private villa commissioned by a legendary watchmaking house, a project where architecture borrowed the logic of haute horlogerie.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
    },
    {
-    "title": "google-labs-code/stitch-skills",
-    "url": "https://github.com/google-labs-code/stitch-skills",
-    "image": "https://opengraph.githubassets.com/1/google-labs-code/stitch-skills",
-    "by": "★ 247 today",
-    "note": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude C",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Pharen Hub",
-    "url": "https://www.producthunt.com/products/pharen-hub",
-    "note": "One AI workspace for your whole company",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "backnotprop/plannotator",
-    "url": "https://github.com/backnotprop/plannotator",
-    "image": "https://opengraph.githubassets.com/1/backnotprop/plannotator",
-    "by": "★ 689 today",
-    "note": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Kafkador",
-    "url": "https://www.producthunt.com/products/kafkador",
-    "note": "A console for to manage, observe & play Apache Kafka",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "ChromeDevTools/chrome-devtools-mcp",
-    "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
-    "image": "https://opengraph.githubassets.com/1/ChromeDevTools/chrome-devtools-mcp",
-    "by": "★ 837 today",
-    "note": "Chrome DevTools for coding agents",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "readywhen",
-    "url": "https://www.producthunt.com/products/readywhen",
-    "note": "Your personal assistant that lives in email around the clock",
+    "title": "Versine",
+    "url": "https://www.producthunt.com/products/versine",
+    "note": "Let your AI send and receive money. We're Venmo for agents.",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -93,13 +69,45 @@
     "title": "alibaba/open-code-review",
     "url": "https://github.com/alibaba/open-code-review",
     "image": "https://opengraph.githubassets.com/1/alibaba/open-code-review",
-    "by": "★ 946 today",
+    "by": "★ 764 today",
     "note": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE,",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "Preymaker",
+    "url": "https://www.awwwards.com/sites/preymaker",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6ab13a392cc6b094293023.png",
+    "note": "Preymaker is a global creative technology studio blending VFX, design and emerging technology to create exceptional visual content and experiences.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "Liquid d1.2",
+    "url": "https://www.producthunt.com/products/lfm2",
+    "note": "Decision models that return calibrated probabilities",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "Tencent/LoopForge",
+    "url": "https://github.com/Tencent/LoopForge",
+    "image": "https://opengraph.githubassets.com/1/Tencent/LoopForge",
+    "by": "★ 590 today",
+    "note": "Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants.",
     "source": "GitHub Trending",
     "kind": "trending"
    }
   ],
   "landing": [
+   {
+    "title": "Sweet Tape",
+    "url": "https://www.awwwards.com/sites/sweet-tape",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6abcd26414b0a515009810.jpg",
+    "note": "Reimagine an everyday tape essential as something more thoughtful, expressive, and full of heart.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
    {
     "title": "Wowww studio",
     "url": "https://onepagelove.com/wowww-studio",
@@ -109,11 +117,19 @@
     "kind": "gallery"
    },
    {
-    "title": "AgentWatch",
-    "url": "https://www.producthunt.com/products/agentwatch-ai-traffic-tracker",
-    "note": "Monitor AI shopping agent sales and visibility on Shopify",
+    "title": "Superhands",
+    "url": "https://www.producthunt.com/products/stencil-by-superhands",
+    "note": "Design the system, not every output.",
     "source": "Product Hunt · Today",
     "kind": "trending"
+   },
+   {
+    "title": "Bulletproof",
+    "url": "https://www.awwwards.com/sites/bulletproof",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6abba11c9296a681844638.jpg",
+    "note": "We are the world's largest independent brand agency. We drive growth, standout and fandom for the world's most desirable brands.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
    },
    {
     "title": "Justin Schüler",
@@ -124,11 +140,19 @@
     "kind": "gallery"
    },
    {
-    "title": "Findy",
-    "url": "https://www.producthunt.com/products/findy-3",
-    "note": "Find Files on Your Mac by what you remember",
+    "title": "Continuo",
+    "url": "https://www.producthunt.com/products/continuo-4",
+    "note": "One keyboard and mouse across Macs, no Apple Account",
     "source": "Product Hunt · Today",
     "kind": "trending"
+   },
+   {
+    "title": "SANTAL",
+    "url": "https://www.awwwards.com/sites/santal",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6ab1e9b49c123112947598.png",
+    "note": "Santal Architecture — the team behind a private villa commissioned by a legendary watchmaking house, a project where architecture borrowed the logic of haute horlogerie.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
    },
    {
     "title": "Clips",
@@ -139,11 +163,19 @@
     "kind": "gallery"
    },
    {
-    "title": "OpenBot",
-    "url": "https://www.producthunt.com/products/copilotkit",
-    "note": "Grok Bot alternative: self-host, fully customize, any stack",
+    "title": "Versine",
+    "url": "https://www.producthunt.com/products/versine",
+    "note": "Let your AI send and receive money. We're Venmo for agents.",
     "source": "Product Hunt · Today",
     "kind": "trending"
+   },
+   {
+    "title": "Preymaker",
+    "url": "https://www.awwwards.com/sites/preymaker",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6ab13a392cc6b094293023.png",
+    "note": "Preymaker is a global creative technology studio blending VFX, design and emerging technology to create exceptional visual content and experiences.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
    },
    {
     "title": "Ilnaz Khasanshin",
@@ -154,128 +186,50 @@
     "kind": "gallery"
    },
    {
-    "title": "Pharen Hub",
-    "url": "https://www.producthunt.com/products/pharen-hub",
-    "note": "One AI workspace for your whole company",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "La Coignardière",
-    "url": "https://onepagelove.com/la-coignardiere",
-    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/11/opl-screenshot-la-coignardiere-1793986315636-desktop.jpg",
-    "note": "La Coignardière houses René Coignard’s music archive, preserving and providing access to his musical organ recordings and compositions. The stark monochrome interface uses bold typography, thin horizo",
-    "source": "One Page Love",
-    "kind": "gallery"
-   },
-   {
-    "title": "Kafkador",
-    "url": "https://www.producthunt.com/products/kafkador",
-    "note": "A console for to manage, observe & play Apache Kafka",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "Oluwatobi Salawu",
-    "url": "https://onepagelove.com/oluwatobi-salawu",
-    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/11/opl-screenshot-oluwatobi-salawu-1793810183735-desktop.jpg",
-    "note": "Oluwatobi Salawu is a full-stack engineer who built a portfolio to look and feel like his 10 year old self when he first started coding. Its centered single-column layout mixes playful handwritten ann",
-    "source": "One Page Love",
-    "kind": "gallery"
-   },
-   {
-    "title": "readywhen",
-    "url": "https://www.producthunt.com/products/readywhen",
-    "note": "Your personal assistant that lives in email around the clock",
+    "title": "Liquid d1.2",
+    "url": "https://www.producthunt.com/products/lfm2",
+    "note": "Decision models that return calibrated probabilities",
     "source": "Product Hunt · Today",
     "kind": "trending"
    }
   ],
   "app": [
    {
-    "title": "AgentWatch",
-    "url": "https://www.producthunt.com/products/agentwatch-ai-traffic-tracker",
-    "note": "Monitor AI shopping agent sales and visibility on Shopify",
+    "title": "Superhands",
+    "url": "https://www.producthunt.com/products/stencil-by-superhands",
+    "note": "Design the system, not every output.",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "dream-num/univer",
-    "url": "https://github.com/dream-num/univer",
-    "image": "https://opengraph.githubassets.com/1/dream-num/univer",
-    "by": "★ 1,878 today",
-    "note": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
+    "title": "elementalsouls/Claude-BugHunter",
+    "url": "https://github.com/elementalsouls/Claude-BugHunter",
+    "image": "https://opengraph.githubassets.com/1/elementalsouls/Claude-BugHunter",
+    "by": "★ 1,007 today",
+    "note": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identi",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Findy",
-    "url": "https://www.producthunt.com/products/findy-3",
-    "note": "Find Files on Your Mac by what you remember",
+    "title": "Continuo",
+    "url": "https://www.producthunt.com/products/continuo-4",
+    "note": "One keyboard and mouse across Macs, no Apple Account",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "ag-ui-protocol/ag-ui",
-    "url": "https://github.com/ag-ui-protocol/ag-ui",
-    "image": "https://opengraph.githubassets.com/1/ag-ui-protocol/ag-ui",
-    "by": "★ 790 today",
-    "note": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
+    "title": "mvanhorn/last30days-skill",
+    "url": "https://github.com/mvanhorn/last30days-skill",
+    "image": "https://opengraph.githubassets.com/1/mvanhorn/last30days-skill",
+    "by": "★ 135 today",
+    "note": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "OpenBot",
-    "url": "https://www.producthunt.com/products/copilotkit",
-    "note": "Grok Bot alternative: self-host, fully customize, any stack",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "google-labs-code/stitch-skills",
-    "url": "https://github.com/google-labs-code/stitch-skills",
-    "image": "https://opengraph.githubassets.com/1/google-labs-code/stitch-skills",
-    "by": "★ 247 today",
-    "note": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude C",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Pharen Hub",
-    "url": "https://www.producthunt.com/products/pharen-hub",
-    "note": "One AI workspace for your whole company",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "backnotprop/plannotator",
-    "url": "https://github.com/backnotprop/plannotator",
-    "image": "https://opengraph.githubassets.com/1/backnotprop/plannotator",
-    "by": "★ 689 today",
-    "note": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Kafkador",
-    "url": "https://www.producthunt.com/products/kafkador",
-    "note": "A console for to manage, observe & play Apache Kafka",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "ChromeDevTools/chrome-devtools-mcp",
-    "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
-    "image": "https://opengraph.githubassets.com/1/ChromeDevTools/chrome-devtools-mcp",
-    "by": "★ 837 today",
-    "note": "Chrome DevTools for coding agents",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "readywhen",
-    "url": "https://www.producthunt.com/products/readywhen",
-    "note": "Your personal assistant that lives in email around the clock",
+    "title": "Versine",
+    "url": "https://www.producthunt.com/products/versine",
+    "note": "Let your AI send and receive money. We're Venmo for agents.",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -283,8 +237,56 @@
     "title": "alibaba/open-code-review",
     "url": "https://github.com/alibaba/open-code-review",
     "image": "https://opengraph.githubassets.com/1/alibaba/open-code-review",
-    "by": "★ 946 today",
+    "by": "★ 764 today",
     "note": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE,",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "Liquid d1.2",
+    "url": "https://www.producthunt.com/products/lfm2",
+    "note": "Decision models that return calibrated probabilities",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "Tencent/LoopForge",
+    "url": "https://github.com/Tencent/LoopForge",
+    "image": "https://opengraph.githubassets.com/1/Tencent/LoopForge",
+    "by": "★ 590 today",
+    "note": "Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants.",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "Pinecall",
+    "url": "https://www.producthunt.com/products/pinecall",
+    "note": "The open-source platform for voice AI agents",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "dream-num/univer",
+    "url": "https://github.com/dream-num/univer",
+    "image": "https://opengraph.githubassets.com/1/dream-num/univer",
+    "by": "★ 1,776 today",
+    "note": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "3BCAD",
+    "url": "https://www.producthunt.com/products/3bcad",
+    "note": "Open-source parametric CAD with built-in 3D print prep",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "getarcaneapp/arcane",
+    "url": "https://github.com/getarcaneapp/arcane",
+    "image": "https://opengraph.githubassets.com/1/getarcaneapp/arcane",
+    "by": "★ 46 today",
+    "note": "Modern Docker Management, Designed for Everyone",
     "source": "GitHub Trending",
     "kind": "trending"
    }
@@ -300,6 +302,30 @@
     "kind": "performance"
    },
    {
+    "title": "IMaGO",
+    "url": "https://vimeo.com/channels/staffpicks/1243581164",
+    "image": "https://i.vimeocdn.com/video/2222731672-986a973875a7aee0b56eff1b7323a5dbea1922441e1e4a61e8848eaad75930ae-d_960?region=us",
+    "note": "When Ana's mom starts transforming into a bug, their codependent relationship reaches its boiling point.  Starring Didi Romero, Ada Luz Pla, Josh Plasse, Denise&hellip;",
+    "source": "Vimeo Staff Picks",
+    "kind": "gallery"
+   },
+   {
+    "title": "“Quorum” is the Latest Buzz from Colors And The Kids",
+    "url": "https://www.stashmedia.tv/quorum-is-the-latest-buzz-from-colors-and-the-kids/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/22Quorum22-CG-short-film-by-Colors-And-The-Kids-STASH-MAGAZINE-1920x1080.jpg",
+    "note": "Few studios push harder on the limits of CG style than the team at Colors And The Kids in Berlin and this latest experimental piece, called Quorum (with music also produced in-house) is just the lates",
+    "source": "STASH",
+    "kind": "gallery"
+   },
+   {
+    "title": "“The Dreamer”: An Apple Holiday Film featuring MacBook Neo",
+    "url": "https://www.youtube.com/watch?v=Sp54mxnWjUM",
+    "image": "https://i.ytimg.com/vi/Sp54mxnWjUM/hqdefault.jpg",
+    "by": "4.3M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
     "title": "JAZZ INFERNAL",
     "url": "https://vimeo.com/channels/staffpicks/1246752032",
     "image": "https://i.vimeocdn.com/video/2226286757-73068a99c64ddd37d3e5dc514b9ae8e88cee0b00b31c3cfeb766f48be7faba27-d_960?region=us",
@@ -308,18 +334,18 @@
     "kind": "gallery"
    },
    {
-    "title": "New Issue! Stash 180 Drops Inspiration, Insight, & Insanity",
-    "url": "https://www.stashmedia.tv/new-issue-stash-180-drops-inspiration-insight-insanity/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/email-sub-options-table-email-489corp2.jpg",
-    "note": "Possibly our most eclectic issue yet, Stash 180 is an absolute firehose of inspiration and the latest addition to the  Stash Permanent Collection, the only video streaming platform built for designers",
+    "title": "The Nose Knows: Creative Control Makes Stash Debut With “Something in the Air” Short Film",
+    "url": "https://www.stashmedia.tv/the-nose-knows-creative-control-makes-stash-debut-with-something-in-the-air-short-film/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Something-in-the-Air-Short-Film-by-Creative-Control-Studio-_-STASH-MAGAZINE12-1522x1080.jpg",
+    "note": "Directors Marcos Siqueira and Julien Marsouin at Creative Control in Berlin just dropped us their new mini-musical Something in the Air, a witty (and very relatable) foray into the olfactory side of s",
     "source": "STASH",
     "kind": "gallery"
    },
    {
-    "title": "“The Dreamer”: An Apple Holiday Film featuring MacBook Neo",
-    "url": "https://www.youtube.com/watch?v=Sp54mxnWjUM",
-    "image": "https://i.ytimg.com/vi/Sp54mxnWjUM/hqdefault.jpg",
-    "by": "4.2M views",
+    "title": "Created live on Mac: “Surrender” by Labrinth",
+    "url": "https://www.youtube.com/watch?v=YaPx9scLwfk",
+    "image": "https://i.ytimg.com/vi/YaPx9scLwfk/hqdefault.jpg",
+    "by": "3M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -332,33 +358,10 @@
     "kind": "gallery"
    },
    {
-    "title": "1stAveMachine Signs Director Kit Lynch-Robinson",
-    "url": "https://www.stashmedia.tv/1stavemachine-signs-director-kit-lynch-robinson/",
-    "note": "From the release: 1stAveMachine, the director-driven production company known for exceptional craft and inventive ideas, has welcomed British director Kit Lynch-Robinson to its roster. [Watch]\nThe pos",
-    "source": "STASH",
-    "kind": "gallery"
-   },
-   {
-    "title": "Created live on Mac: “Surrender” by Labrinth",
-    "url": "https://www.youtube.com/watch?v=YaPx9scLwfk",
-    "image": "https://i.ytimg.com/vi/YaPx9scLwfk/hqdefault.jpg",
-    "by": "2.6M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "Snow In September",
-    "url": "https://vimeo.com/channels/staffpicks/1240299939",
-    "image": "https://i.vimeocdn.com/video/2218073657-710f7cd2c00ddb1a58ad7ff861ad26c62299efddb7b31ab5320b87ac9a7a1771-d_960?region=us",
-    "note": "Davka is a teenager who lives in dilapidated Soviet apartment buildings. He and his classmate Anuka talk about manga and tease each other about sex. When Davka meets&hellip;",
-    "source": "Vimeo Staff Picks",
-    "kind": "gallery"
-   },
-   {
-    "title": "Reframe Studio Gets Comfortable in Fursys Manta Chair",
-    "url": "https://www.stashmedia.tv/reframe-studio-get-comfortable-in-fursys-manta-chair/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Fursys-Manta-Chair-launch-film-by-Reframe-Studio-STASH-MAGAZINE7-1920x1080.jpg",
-    "note": "Reframe Studio in Seoul apply their talents for striking yet tasteful CG style to this Zen-like launch film for the Manta chair designed by German studio Jehs+Laub for South Korean furniture brand Fur",
+    "title": "New Issue! Stash 180 Drops Inspiration, Insight, & Insanity",
+    "url": "https://www.stashmedia.tv/new-issue-stash-180-drops-inspiration-insight-insanity/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/email-sub-options-table-email-489corp2.jpg",
+    "note": "Possibly our most eclectic issue yet, Stash 180 is an absolute firehose of inspiration and the latest addition to the  Stash Permanent Collection, the only video streaming platform built for designers",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -371,35 +374,35 @@
     "kind": "performance"
    },
    {
-    "title": "Paper Trail",
-    "url": "https://vimeo.com/channels/staffpicks/1234190827",
-    "image": "https://i.vimeocdn.com/video/2210099538-c8d668916f0e1b7a9a1f5d7035e69d29c6c709c0a224f6dcfc8c3d0316455aa1-d_960?region=us",
-    "note": "A life, seen through paper.   Paper Trail is now available to pre-order on Blu-ray with the 2024 animated film ME, exclusive optional audio commentaries by Don Hertzfeldt,&hellip;",
+    "title": "Snow In September",
+    "url": "https://vimeo.com/channels/staffpicks/1240299939",
+    "image": "https://i.vimeocdn.com/video/2218073657-710f7cd2c00ddb1a58ad7ff861ad26c62299efddb7b31ab5320b87ac9a7a1771-d_960?region=us",
+    "note": "Davka is a teenager who lives in dilapidated Soviet apartment buildings. He and his classmate Anuka talk about manga and tease each other about sex. When Davka meets&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
    {
-    "title": "Roof Studio & Pedro Allevato Stay Hands On for Clash Royale",
-    "url": "https://www.stashmedia.tv/roof-studio-pedro-allevato-stay-hands-on-for-clash-royale/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Clash-Royal-30-seconds-to-detonation-trailer-by-Roof-Studio-and-Pedro-Allevato-STASH-MAGAZINE6.jpg",
-    "note": "Working to Supercell's brief that no AI be used in their newest Clash Royal trailer, director Pedro Allevato and the animation team at Roof Studio in New York, responded with this handcrafted, frame-b",
+    "title": "1stAveMachine Signs Director Kit Lynch-Robinson",
+    "url": "https://www.stashmedia.tv/1stavemachine-signs-director-kit-lynch-robinson/",
+    "note": "From the release: 1stAveMachine, the director-driven production company known for exceptional craft and inventive ideas, has welcomed British director Kit Lynch-Robinson to its roster. [Watch]\nThe pos",
     "source": "STASH",
     "kind": "gallery"
    }
   ],
   "motion": [
    {
-    "title": "HP Studio | HP Limited Edition Scuderia Ferrari AI PC",
-    "url": "https://motionographer.com/quickie/hp-studio-hp-limited-edition-scuderia-ferrari-ai-pc/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/hp-ferrari-ai-pc-original-still.png",
+    "title": "DissEmbargo | F1 2026 Opening Titles – Making of",
+    "url": "https://motionographer.com/quickie/dissembargo-f1-2026-opening-titles-making-of/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/dissembargo-f1-2026-marketing.png",
+    "note": "DissEmbargo shares the CG process behind the F1 2026 opening titles, created in collaboration with Formula 1’s in-house creative team.",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "New Issue! Stash 180 Drops Inspiration, Insight, & Insanity",
-    "url": "https://www.stashmedia.tv/new-issue-stash-180-drops-inspiration-insight-insanity/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/email-sub-options-table-email-489corp2.jpg",
-    "note": "Possibly our most eclectic issue yet, Stash 180 is an absolute firehose of inspiration and the latest addition to the  Stash Permanent Collection, the only video streaming platform built for designers",
+    "title": "“Quorum” is the Latest Buzz from Colors And The Kids",
+    "url": "https://www.stashmedia.tv/quorum-is-the-latest-buzz-from-colors-and-the-kids/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/22Quorum22-CG-short-film-by-Colors-And-The-Kids-STASH-MAGAZINE-1920x1080.jpg",
+    "note": "Few studios push harder on the limits of CG style than the team at Colors And The Kids in Berlin and this latest experimental piece, called Quorum (with music also produced in-house) is just the lates",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -412,17 +415,17 @@
     "kind": "gallery"
    },
    {
-    "title": "Reframe: David Sheldon-Hicks and Art Tindsley open a new podcast with Patrice Vermette",
-    "url": "https://motionographer.com/news/reframe-david-sheldon-hicks-and-art-tindsley-open-a-new-podcast-with-patrice-vermette/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/reframe-podcast-landscape.jpg",
-    "note": "David Sheldon-Hicks of Territory Studio and Art Tindsley of Pogo launch Reframe, a podcast on creativity and technology. First guest: Dune production designer Patrice Vermette.",
+    "title": "HP Studio | HP Limited Edition Scuderia Ferrari AI PC",
+    "url": "https://motionographer.com/quickie/hp-studio-hp-limited-edition-scuderia-ferrari-ai-pc/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/hp-ferrari-ai-pc-original-still.png",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "1stAveMachine Signs Director Kit Lynch-Robinson",
-    "url": "https://www.stashmedia.tv/1stavemachine-signs-director-kit-lynch-robinson/",
-    "note": "From the release: 1stAveMachine, the director-driven production company known for exceptional craft and inventive ideas, has welcomed British director Kit Lynch-Robinson to its roster. [Watch]\nThe pos",
+    "title": "The Nose Knows: Creative Control Makes Stash Debut With “Something in the Air” Short Film",
+    "url": "https://www.stashmedia.tv/the-nose-knows-creative-control-makes-stash-debut-with-something-in-the-air-short-film/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Something-in-the-Air-Short-Film-by-Creative-Control-Studio-_-STASH-MAGAZINE12-1522x1080.jpg",
+    "note": "Directors Marcos Siqueira and Julien Marsouin at Creative Control in Berlin just dropped us their new mini-musical Something in the Air, a witty (and very relatable) foray into the olfactory side of s",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -435,18 +438,18 @@
     "kind": "gallery"
    },
    {
-    "title": "Perfect Stranger Appoints Tony Kadillak as Head of Client Partnerships",
-    "url": "https://motionographer.com/news/perfect-stranger-tony-kadillak-head-client-partnerships/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/tony-kadillak-perfect-stranger-landscape-original.jpg",
-    "note": "Tony Kadillak joins Perfect Stranger as Head of Client Partnerships, reuniting with Daniel Fries to build long-term relationships with brands.",
+    "title": "Reframe: David Sheldon-Hicks and Art Tindsley open a new podcast with Patrice Vermette",
+    "url": "https://motionographer.com/news/reframe-david-sheldon-hicks-and-art-tindsley-open-a-new-podcast-with-patrice-vermette/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/reframe-podcast-landscape.jpg",
+    "note": "David Sheldon-Hicks of Territory Studio and Art Tindsley of Pogo launch Reframe, a podcast on creativity and technology. First guest: Dune production designer Patrice Vermette.",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "Reframe Studio Gets Comfortable in Fursys Manta Chair",
-    "url": "https://www.stashmedia.tv/reframe-studio-get-comfortable-in-fursys-manta-chair/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Fursys-Manta-Chair-launch-film-by-Reframe-Studio-STASH-MAGAZINE7-1920x1080.jpg",
-    "note": "Reframe Studio in Seoul apply their talents for striking yet tasteful CG style to this Zen-like launch film for the Manta chair designed by German studio Jehs+Laub for South Korean furniture brand Fur",
+    "title": "New Issue! Stash 180 Drops Inspiration, Insight, & Insanity",
+    "url": "https://www.stashmedia.tv/new-issue-stash-180-drops-inspiration-insight-insanity/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/email-sub-options-table-email-489corp2.jpg",
+    "note": "Possibly our most eclectic issue yet, Stash 180 is an absolute firehose of inspiration and the latest addition to the  Stash Permanent Collection, the only video streaming platform built for designers",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -459,17 +462,17 @@
     "kind": "gallery"
    },
    {
-    "title": "La Llama | The Post Office",
-    "url": "https://motionographer.com/quickie/la-llama-the-post-office/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/La-Llama-Alba-Prado-ICEX-14-scaled.jpeg",
+    "title": "Perfect Stranger Appoints Tony Kadillak as Head of Client Partnerships",
+    "url": "https://motionographer.com/news/perfect-stranger-tony-kadillak-head-client-partnerships/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/tony-kadillak-perfect-stranger-landscape-original.jpg",
+    "note": "Tony Kadillak joins Perfect Stranger as Head of Client Partnerships, reuniting with Daniel Fries to build long-term relationships with brands.",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "Roof Studio & Pedro Allevato Stay Hands On for Clash Royale",
-    "url": "https://www.stashmedia.tv/roof-studio-pedro-allevato-stay-hands-on-for-clash-royale/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Clash-Royal-30-seconds-to-detonation-trailer-by-Roof-Studio-and-Pedro-Allevato-STASH-MAGAZINE6.jpg",
-    "note": "Working to Supercell's brief that no AI be used in their newest Clash Royal trailer, director Pedro Allevato and the animation team at Roof Studio in New York, responded with this handcrafted, frame-b",
+    "title": "1stAveMachine Signs Director Kit Lynch-Robinson",
+    "url": "https://www.stashmedia.tv/1stavemachine-signs-director-kit-lynch-robinson/",
+    "note": "From the release: 1stAveMachine, the director-driven production company known for exceptional craft and inventive ideas, has welcomed British director Kit Lynch-Robinson to its roster. [Watch]\nThe pos",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -492,6 +495,38 @@
     "kind": "performance"
    },
    {
+    "title": "IMaGO",
+    "url": "https://vimeo.com/channels/staffpicks/1243581164",
+    "image": "https://i.vimeocdn.com/video/2222731672-986a973875a7aee0b56eff1b7323a5dbea1922441e1e4a61e8848eaad75930ae-d_960?region=us",
+    "note": "When Ana's mom starts transforming into a bug, their codependent relationship reaches its boiling point.  Starring Didi Romero, Ada Luz Pla, Josh Plasse, Denise&hellip;",
+    "source": "Vimeo Staff Picks",
+    "kind": "gallery"
+   },
+   {
+    "title": "DissEmbargo | F1 2026 Opening Titles – Making of",
+    "url": "https://motionographer.com/quickie/dissembargo-f1-2026-opening-titles-making-of/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/dissembargo-f1-2026-marketing.png",
+    "note": "DissEmbargo shares the CG process behind the F1 2026 opening titles, created in collaboration with Formula 1’s in-house creative team.",
+    "source": "Motionographer",
+    "kind": "gallery"
+   },
+   {
+    "title": "“Quorum” is the Latest Buzz from Colors And The Kids",
+    "url": "https://www.stashmedia.tv/quorum-is-the-latest-buzz-from-colors-and-the-kids/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/22Quorum22-CG-short-film-by-Colors-And-The-Kids-STASH-MAGAZINE-1920x1080.jpg",
+    "note": "Few studios push harder on the limits of CG style than the team at Colors And The Kids in Berlin and this latest experimental piece, called Quorum (with music also produced in-house) is just the lates",
+    "source": "STASH",
+    "kind": "gallery"
+   },
+   {
+    "title": "We Finally Know More About Humanity’s First Civilization",
+    "url": "https://www.youtube.com/watch?v=_y9JuojAIg0",
+    "image": "https://i.ytimg.com/vi/_y9JuojAIg0/hqdefault.jpg",
+    "by": "12M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
     "title": "JAZZ INFERNAL",
     "url": "https://vimeo.com/channels/staffpicks/1246752032",
     "image": "https://i.vimeocdn.com/video/2226286757-73068a99c64ddd37d3e5dc514b9ae8e88cee0b00b31c3cfeb766f48be7faba27-d_960?region=us",
@@ -507,18 +542,18 @@
     "kind": "gallery"
    },
    {
-    "title": "New Issue! Stash 180 Drops Inspiration, Insight, & Insanity",
-    "url": "https://www.stashmedia.tv/new-issue-stash-180-drops-inspiration-insight-insanity/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/email-sub-options-table-email-489corp2.jpg",
-    "note": "Possibly our most eclectic issue yet, Stash 180 is an absolute firehose of inspiration and the latest addition to the  Stash Permanent Collection, the only video streaming platform built for designers",
+    "title": "The Nose Knows: Creative Control Makes Stash Debut With “Something in the Air” Short Film",
+    "url": "https://www.stashmedia.tv/the-nose-knows-creative-control-makes-stash-debut-with-something-in-the-air-short-film/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Something-in-the-Air-Short-Film-by-Creative-Control-Studio-_-STASH-MAGAZINE12-1522x1080.jpg",
+    "note": "Directors Marcos Siqueira and Julien Marsouin at Creative Control in Berlin just dropped us their new mini-musical Something in the Air, a witty (and very relatable) foray into the olfactory side of s",
     "source": "STASH",
     "kind": "gallery"
    },
    {
-    "title": "We Finally Know More About Humanity’s First Civilization",
-    "url": "https://www.youtube.com/watch?v=_y9JuojAIg0",
-    "image": "https://i.ytimg.com/vi/_y9JuojAIg0/hqdefault.jpg",
-    "by": "12M views",
+    "title": "This Is What a Godlike Civilization Would Look Like",
+    "url": "https://www.youtube.com/watch?v=QW_jlUn4gA8",
+    "image": "https://i.ytimg.com/vi/QW_jlUn4gA8/hqdefault.jpg",
+    "by": "9.6M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -539,41 +574,10 @@
     "kind": "gallery"
    },
    {
-    "title": "1stAveMachine Signs Director Kit Lynch-Robinson",
-    "url": "https://www.stashmedia.tv/1stavemachine-signs-director-kit-lynch-robinson/",
-    "note": "From the release: 1stAveMachine, the director-driven production company known for exceptional craft and inventive ideas, has welcomed British director Kit Lynch-Robinson to its roster. [Watch]\nThe pos",
-    "source": "STASH",
-    "kind": "gallery"
-   },
-   {
-    "title": "This Is What a Godlike Civilization Would Look Like",
-    "url": "https://www.youtube.com/watch?v=QW_jlUn4gA8",
-    "image": "https://i.ytimg.com/vi/QW_jlUn4gA8/hqdefault.jpg",
-    "by": "9.6M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "Snow In September",
-    "url": "https://vimeo.com/channels/staffpicks/1240299939",
-    "image": "https://i.vimeocdn.com/video/2218073657-710f7cd2c00ddb1a58ad7ff861ad26c62299efddb7b31ab5320b87ac9a7a1771-d_960?region=us",
-    "note": "Davka is a teenager who lives in dilapidated Soviet apartment buildings. He and his classmate Anuka talk about manga and tease each other about sex. When Davka meets&hellip;",
-    "source": "Vimeo Staff Picks",
-    "kind": "gallery"
-   },
-   {
-    "title": "Perfect Stranger Appoints Tony Kadillak as Head of Client Partnerships",
-    "url": "https://motionographer.com/news/perfect-stranger-tony-kadillak-head-client-partnerships/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/tony-kadillak-perfect-stranger-landscape-original.jpg",
-    "note": "Tony Kadillak joins Perfect Stranger as Head of Client Partnerships, reuniting with Daniel Fries to build long-term relationships with brands.",
-    "source": "Motionographer",
-    "kind": "gallery"
-   },
-   {
-    "title": "Reframe Studio Gets Comfortable in Fursys Manta Chair",
-    "url": "https://www.stashmedia.tv/reframe-studio-get-comfortable-in-fursys-manta-chair/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Fursys-Manta-Chair-launch-film-by-Reframe-Studio-STASH-MAGAZINE7-1920x1080.jpg",
-    "note": "Reframe Studio in Seoul apply their talents for striking yet tasteful CG style to this Zen-like launch film for the Manta chair designed by German studio Jehs+Laub for South Korean furniture brand Fur",
+    "title": "New Issue! Stash 180 Drops Inspiration, Insight, & Insanity",
+    "url": "https://www.stashmedia.tv/new-issue-stash-180-drops-inspiration-insight-insanity/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/email-sub-options-table-email-489corp2.jpg",
+    "note": "Possibly our most eclectic issue yet, Stash 180 is an absolute firehose of inspiration and the latest addition to the  Stash Permanent Collection, the only video streaming platform built for designers",
     "source": "STASH",
     "kind": "gallery"
    }
@@ -583,15 +587,7 @@
     "title": "No, You Couldn't Do This 🙅‍♂️",
     "url": "https://www.youtube.com/watch?v=-D7Q7irRp54",
     "image": "https://i.ytimg.com/vi/-D7Q7irRp54/hqdefault.jpg",
-    "by": "6.1M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "NEW WORLD RECORD 💥",
-    "url": "https://www.youtube.com/watch?v=61qsaigvPyI",
-    "image": "https://i.ytimg.com/vi/61qsaigvPyI/hqdefault.jpg",
-    "by": "5M views",
+    "by": "7.6M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -599,15 +595,7 @@
     "title": "Airbnb | あつまる？エアビる？｜プールでエアビる",
     "url": "https://www.youtube.com/watch?v=QS0QEqKGGIw",
     "image": "https://i.ytimg.com/vi/QS0QEqKGGIw/hqdefault.jpg",
-    "by": "2.4M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "if my lovity is falsity, why r u my verity 🎨: @lleahistired",
-    "url": "https://www.youtube.com/watch?v=tbUMR2qIEzo",
-    "image": "https://i.ytimg.com/vi/tbUMR2qIEzo/hqdefault.jpg",
-    "by": "2M views",
+    "by": "2.5M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -615,6 +603,14 @@
     "title": "Airbnb | あつまる？エアビる？｜今日はちょっと、大人忘れます。",
     "url": "https://www.youtube.com/watch?v=p8HvRJALo4Y",
     "image": "https://i.ytimg.com/vi/p8HvRJALo4Y/hqdefault.jpg",
+    "by": "2.1M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "if my lovity is falsity, why r u my verity 🎨: @lleahistired",
+    "url": "https://www.youtube.com/watch?v=tbUMR2qIEzo",
+    "image": "https://i.ytimg.com/vi/tbUMR2qIEzo/hqdefault.jpg",
     "by": "2M views",
     "source": "Latest from brands",
     "kind": "performance"
@@ -631,7 +627,7 @@
     "title": "The Ultimate Race on ICE ❄️",
     "url": "https://www.youtube.com/watch?v=0Qs7uYqVOUM",
     "image": "https://i.ytimg.com/vi/0Qs7uYqVOUM/hqdefault.jpg",
-    "by": "903K views",
+    "by": "1.1M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -639,7 +635,7 @@
     "title": "POV: 55ft MTB Freefall 🎬 Antoni Villoni #GoPro",
     "url": "https://www.youtube.com/watch?v=tAIjGmGVa1g",
     "image": "https://i.ytimg.com/vi/tAIjGmGVa1g/hqdefault.jpg",
-    "by": "627K views",
+    "by": "670K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -648,6 +644,14 @@
     "url": "https://www.youtube.com/watch?v=wG_LaKvlcqM",
     "image": "https://i.ytimg.com/vi/wG_LaKvlcqM/hqdefault.jpg",
     "by": "558K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "you're hooked on me i'm hooked on sakura mochi 🍡 🎨: @brerbo",
+    "url": "https://www.youtube.com/watch?v=TrEHPMqHVAc",
+    "image": "https://i.ytimg.com/vi/TrEHPMqHVAc/hqdefault.jpg",
+    "by": "371K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -663,89 +667,89 @@
     "title": "y'all need to lock in on ur listening exercises 🎨: @brerbo",
     "url": "https://www.youtube.com/watch?v=jNctdfv480U",
     "image": "https://i.ytimg.com/vi/jNctdfv480U/hqdefault.jpg",
-    "by": "346K views",
+    "by": "356K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
    {
-    "title": "you're hooked on me i'm hooked on sakura mochi 🍡 🎨: @brerbo",
-    "url": "https://www.youtube.com/watch?v=TrEHPMqHVAc",
-    "image": "https://i.ytimg.com/vi/TrEHPMqHVAc/hqdefault.jpg",
-    "by": "343K views",
+    "title": "They Went HOW fast?? 😳",
+    "url": "https://www.youtube.com/watch?v=YLpdWPeSC8M",
+    "image": "https://i.ytimg.com/vi/YLpdWPeSC8M/hqdefault.jpg",
+    "by": "345K views",
     "source": "Latest from brands",
     "kind": "performance"
    }
   ],
   "post": [
    {
-    "title": "How to make almost anything",
-    "url": "https://pub.cba.mit.edu/863.26/site/",
+    "title": "Optimizely compromised, served malware on Zoom, GitLab",
+    "url": "https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Qwen4-Max",
-    "url": "https://qwen.ai/blog?id=qwen4-max",
+    "title": "Windows 11 is collecting data on which coding agents and developer tools you use",
+    "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Universal XSS in uBlock Origin from website-driven element picker",
-    "url": "https://iter.ca/post/ubo-uxss/",
+    "title": "BugMeNot has closed",
+    "url": "https://www.bugmenot.com/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "What's Next for Nvidia?",
-    "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/",
+    "title": "OpenCode Browse",
+    "url": "https://opencode.ai/product/browse",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Old Bitly links are being hijacked",
-    "url": "https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/",
+    "title": "Carnegie Mellon is putting computer science courses on YouTube for free",
+    "url": "https://www.cs.cmu.edu/learn/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Handwriting, as a Font",
-    "url": "https://ductus.sorenblank.com",
+    "title": "Rust changed me as a developer",
+    "url": "https://blog.startifact.com/posts/how-rust-changed-me/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Protomaps: Self-hosting map tiles has gotten cheap and easy",
-    "url": "https://bruceroettgers.eu/blog/protomaps/",
+    "title": "Technical issue at JPMorgan Chase triggers online banking delays for US banks",
+    "url": "https://apnews.com/article/bank-outage-chase-wells-fargo-truist-50fee2693c22f597fa6ca51a97ef2cda",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Microsoft 365 outage leads to chlorine gas poisoning of 15 hotel guests",
-    "url": "https://www1.wdr.de/nrw/rheinland/rhein-erft-kreis/technischer-defekt-chlor-phantasialand-100.html",
+    "title": "Software is breaking down at a systemic level",
+    "url": "https://www.breck-mckye.com/blog/2026/11/software-is-breaking-down-at-a-systemic-level/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "A short explainer on how El Niño works [video]",
-    "url": "https://www.youtube.com/watch?v=7_JF3etiAv8",
+    "title": "Grazing sheep in fields with solar arrays",
+    "url": "https://news.cornell.edu/stories/2026/10/sheep-grazing-solar-fields-offers-farmers-economic-ecological-gains",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Crows make decisions faster than we can",
-    "url": "https://www.nytimes.com/2026/11/15/science/birdbrain-crows-birds-research-decision.html",
+    "title": "Jiff 1.0: A datetime library for Rust",
+    "url": "https://burntsushi.net/jiff/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "All AI-generated code should be Open Source",
-    "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+    "title": "Frame – 31.5\" color ePaper display",
+    "url": "https://trmnl.com/blog/introducing-frame",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Things That Turbo Pascal Is Smaller Than (2011)",
-    "url": "https://prog21.dadgum.com/116.html",
+    "title": "Nvidia was in trouble before the Jensen Huang mess",
+    "url": "https://www.wired.com/story/nvidia-was-already-in-trouble-before-the-jensen-huang-mess/",
     "source": "Hacker News · Best",
     "kind": "performance"
    }
@@ -771,7 +775,7 @@
     "title": "“The Dreamer”: An Apple Holiday Film featuring MacBook Neo",
     "url": "https://www.youtube.com/watch?v=Sp54mxnWjUM",
     "image": "https://i.ytimg.com/vi/Sp54mxnWjUM/hqdefault.jpg",
-    "by": "4.2M views",
+    "by": "4.3M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -784,10 +788,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Airbnb | あつまる？エアビる？｜リビングでエアビる",
-    "url": "https://www.youtube.com/watch?v=Mx608ORGCFA",
-    "image": "https://i.ytimg.com/vi/Mx608ORGCFA/hqdefault.jpg",
-    "by": "3.3M views",
+    "title": "Created live on Mac: “Surrender” by Labrinth",
+    "url": "https://www.youtube.com/watch?v=YaPx9scLwfk",
+    "image": "https://i.ytimg.com/vi/YaPx9scLwfk/hqdefault.jpg",
+    "by": "3M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -800,10 +804,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Created live on Mac: “Surrender” by Labrinth",
-    "url": "https://www.youtube.com/watch?v=YaPx9scLwfk",
-    "image": "https://i.ytimg.com/vi/YaPx9scLwfk/hqdefault.jpg",
-    "by": "2.6M views",
+    "title": "New MacBook Pro with PROLED XDR Display and Touch: The world’s best laptop display",
+    "url": "https://www.youtube.com/watch?v=WzuIZLoHqqA",
+    "image": "https://i.ytimg.com/vi/WzuIZLoHqqA/hqdefault.jpg",
+    "by": "1.3M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -816,10 +820,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Airbnb | あつまる？エアビる？｜今日はちょっと、大人忘れます。",
-    "url": "https://www.youtube.com/watch?v=hmYXIfxAIoM",
-    "image": "https://i.ytimg.com/vi/hmYXIfxAIoM/hqdefault.jpg",
-    "by": "1.6M views",
+    "title": "What's going on at DuoMart!?! | DuoTV (Full Series)",
+    "url": "https://www.youtube.com/watch?v=YP2KYQZUkWY",
+    "image": "https://i.ytimg.com/vi/YP2KYQZUkWY/hqdefault.jpg",
+    "by": "474K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -832,18 +836,18 @@
     "kind": "gallery"
    },
    {
-    "title": "Airbnb | あつまる？エアビる？｜あの頃より、近づく夜。",
-    "url": "https://www.youtube.com/watch?v=FfoCK8cltno",
-    "image": "https://i.ytimg.com/vi/FfoCK8cltno/hqdefault.jpg",
-    "by": "1.6M views",
+    "title": "Caitlin 1 | Behind the Design | Nike",
+    "url": "https://www.youtube.com/watch?v=628ogczUw6o",
+    "image": "https://i.ytimg.com/vi/628ogczUw6o/hqdefault.jpg",
+    "by": "303K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
    {
-    "title": "New MacBook Pro with PROLED XDR Display and Touch: The world’s best laptop display",
-    "url": "https://www.youtube.com/watch?v=WzuIZLoHqqA",
-    "image": "https://i.ytimg.com/vi/WzuIZLoHqqA/hqdefault.jpg",
-    "by": "1.3M views",
+    "title": "Apple Pay: The fast, easy, and secure way to pay.",
+    "url": "https://www.youtube.com/watch?v=miUjxZ2ASRs",
+    "image": "https://i.ytimg.com/vi/miUjxZ2ASRs/hqdefault.jpg",
+    "by": "279K views",
     "source": "Latest from brands",
     "kind": "performance"
    }
