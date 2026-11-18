@@ -1,7 +1,31 @@
 {
- "updated": "2026-11-17T11:58:43.276Z",
+ "updated": "2026-11-18T11:51:09.051Z",
  "media": {
   "ui": [
+   {
+    "title": "PSP Production",
+    "url": "https://www.awwwards.com/sites/psp-production",
+    "image": "https://www.awwwards.com/awards/submissions/2026/10/6ac610277c0e9964016706.jpg",
+    "note": "PSP Production is a senior-led film & commercial studio in Portugal & Spain with 25+ years of experience and a portfolio of Porsche, BMW, Netflix's Money Heist & FBI International.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "canfit",
+    "url": "https://www.producthunt.com/products/canfit",
+    "note": "The top command for people running local LLMs and apps",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "elementalsouls/Claude-BugHunter",
+    "url": "https://github.com/elementalsouls/Claude-BugHunter",
+    "image": "https://opengraph.githubassets.com/1/elementalsouls/Claude-BugHunter",
+    "by": "★ 2,322 today",
+    "note": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identi",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
    {
     "title": "Sweet Tape",
     "url": "https://www.awwwards.com/sites/sweet-tape",
@@ -11,18 +35,18 @@
     "kind": "award"
    },
    {
-    "title": "Superhands",
-    "url": "https://www.producthunt.com/products/stencil-by-superhands",
-    "note": "Design the system, not every output.",
+    "title": "Introzy",
+    "url": "https://www.producthunt.com/products/introzy",
+    "note": "Track referrals from intro to commission",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "elementalsouls/Claude-BugHunter",
-    "url": "https://github.com/elementalsouls/Claude-BugHunter",
-    "image": "https://opengraph.githubassets.com/1/elementalsouls/Claude-BugHunter",
-    "by": "★ 1,007 today",
-    "note": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identi",
+    "title": "cursor/plugins",
+    "url": "https://github.com/cursor/plugins",
+    "image": "https://opengraph.githubassets.com/1/cursor/plugins",
+    "by": "★ 315 today",
+    "note": "Cursor plugin specification and official plugins",
     "source": "GitHub Trending",
     "kind": "trending"
    },
@@ -35,18 +59,18 @@
     "kind": "award"
    },
    {
-    "title": "Continuo",
-    "url": "https://www.producthunt.com/products/continuo-4",
-    "note": "One keyboard and mouse across Macs, no Apple Account",
+    "title": "Ody Ai Business Phone",
+    "url": "https://www.producthunt.com/products/ody-ai-business-phone",
+    "note": "Shared workspace + manageable AI agents",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "mvanhorn/last30days-skill",
-    "url": "https://github.com/mvanhorn/last30days-skill",
-    "image": "https://opengraph.githubassets.com/1/mvanhorn/last30days-skill",
-    "by": "★ 135 today",
-    "note": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+    "title": "HKUDS/CLI-Anything",
+    "url": "https://github.com/HKUDS/CLI-Anything",
+    "image": "https://opengraph.githubassets.com/1/HKUDS/CLI-Anything",
+    "by": "★ 384 today",
+    "note": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
     "source": "GitHub Trending",
     "kind": "trending"
    },
@@ -59,52 +83,74 @@
     "kind": "award"
    },
    {
-    "title": "Versine",
-    "url": "https://www.producthunt.com/products/versine",
-    "note": "Let your AI send and receive money. We're Venmo for agents.",
+    "title": "kwatch",
+    "url": "https://www.producthunt.com/products/kwatch",
+    "note": "Kubernetes alerts that name the root cause",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "alibaba/open-code-review",
-    "url": "https://github.com/alibaba/open-code-review",
-    "image": "https://opengraph.githubassets.com/1/alibaba/open-code-review",
-    "by": "★ 764 today",
-    "note": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE,",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Preymaker",
-    "url": "https://www.awwwards.com/sites/preymaker",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6ab13a392cc6b094293023.png",
-    "note": "Preymaker is a global creative technology studio blending VFX, design and emerging technology to create exceptional visual content and experiences.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
-   },
-   {
-    "title": "Liquid d1.2",
-    "url": "https://www.producthunt.com/products/lfm2",
-    "note": "Decision models that return calibrated probabilities",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "Tencent/LoopForge",
-    "url": "https://github.com/Tencent/LoopForge",
-    "image": "https://opengraph.githubassets.com/1/Tencent/LoopForge",
-    "by": "★ 590 today",
-    "note": "Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants.",
+    "title": "mvanhorn/last30days-skill",
+    "url": "https://github.com/mvanhorn/last30days-skill",
+    "image": "https://opengraph.githubassets.com/1/mvanhorn/last30days-skill",
+    "by": "★ 1,062 today",
+    "note": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
     "source": "GitHub Trending",
     "kind": "trending"
    }
   ],
   "landing": [
    {
+    "title": "PSP Production",
+    "url": "https://www.awwwards.com/sites/psp-production",
+    "image": "https://www.awwwards.com/awards/submissions/2026/10/6ac610277c0e9964016706.jpg",
+    "note": "PSP Production is a senior-led film & commercial studio in Portugal & Spain with 25+ years of experience and a portfolio of Porsche, BMW, Netflix's Money Heist & FBI International.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "Fonting",
+    "url": "https://onepagelove.com/fonting",
+    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/11/opl-screenshot-fonting-1794927582643-desktop.jpg",
+    "note": "Fonting organizes and previews fonts on Mac and iPhone, storing the library in iCloud for access across devices. This one-pager has a clean white interface, colorful specimen cards, orderly feature gr",
+    "source": "One Page Love",
+    "kind": "gallery"
+   },
+   {
+    "title": "canfit",
+    "url": "https://www.producthunt.com/products/canfit",
+    "note": "The top command for people running local LLMs and apps",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
     "title": "Sweet Tape",
     "url": "https://www.awwwards.com/sites/sweet-tape",
     "image": "https://www.awwwards.com/awards/submissions/2026/09/6abcd26414b0a515009810.jpg",
     "note": "Reimagine an everyday tape essential as something more thoughtful, expressive, and full of heart.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "Hoy",
+    "url": "https://onepagelove.com/hoy",
+    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/11/opl-screenshot-hoy-c2b7-1794579587612-desktop.jpg",
+    "note": "Hoy integrates contact management directly into Mac, allowing users to quickly share files with anyone. The landing page uses expansive white space, floating circular avatars and a scroll-controlled d",
+    "source": "One Page Love",
+    "kind": "gallery"
+   },
+   {
+    "title": "Introzy",
+    "url": "https://www.producthunt.com/products/introzy",
+    "note": "Track referrals from intro to commission",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "Bulletproof",
+    "url": "https://www.awwwards.com/sites/bulletproof",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6abba11c9296a681844638.jpg",
+    "note": "We are the world's largest independent brand agency. We drive growth, standout and fandom for the world's most desirable brands.",
     "source": "Awwwards · Sites of the Day",
     "kind": "award"
    },
@@ -117,32 +163,9 @@
     "kind": "gallery"
    },
    {
-    "title": "Superhands",
-    "url": "https://www.producthunt.com/products/stencil-by-superhands",
-    "note": "Design the system, not every output.",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "Bulletproof",
-    "url": "https://www.awwwards.com/sites/bulletproof",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6abba11c9296a681844638.jpg",
-    "note": "We are the world's largest independent brand agency. We drive growth, standout and fandom for the world's most desirable brands.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
-   },
-   {
-    "title": "Justin Schüler",
-    "url": "https://onepagelove.com/justin-schuler",
-    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/11/opl-screenshot-justin-schueler-1794321231950-desktop.jpg",
-    "note": "Justin is a designer and founder who runs Smalltribe, a branding studio, and Tribehouse, a creative community in Leipzig. The site uses a narrow editorial column, abundant white space, restrained sans",
-    "source": "One Page Love",
-    "kind": "gallery"
-   },
-   {
-    "title": "Continuo",
-    "url": "https://www.producthunt.com/products/continuo-4",
-    "note": "One keyboard and mouse across Macs, no Apple Account",
+    "title": "Ody Ai Business Phone",
+    "url": "https://www.producthunt.com/products/ody-ai-business-phone",
+    "note": "Shared workspace + manageable AI agents",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -155,49 +178,26 @@
     "kind": "award"
    },
    {
-    "title": "Clips",
-    "url": "https://onepagelove.com/clips",
-    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/11/opl-screenshot-clips-c2b7-1794319289435-desktop.jpg",
-    "note": "Plastic Audio Clips turns songs into batches of vertical lyric and lip-sync videos, automatically cutting sections on the beat and synchronizing lyrics word by word. The dark, high-contrast landing pa",
+    "title": "Justin Schüler",
+    "url": "https://onepagelove.com/justin-schuler",
+    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/11/opl-screenshot-justin-schueler-1794321231950-desktop.jpg",
+    "note": "Justin is a designer and founder who runs Smalltribe, a branding studio, and Tribehouse, a creative community in Leipzig. The site uses a narrow editorial column, abundant white space, restrained sans",
     "source": "One Page Love",
     "kind": "gallery"
    },
    {
-    "title": "Versine",
-    "url": "https://www.producthunt.com/products/versine",
-    "note": "Let your AI send and receive money. We're Venmo for agents.",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "Preymaker",
-    "url": "https://www.awwwards.com/sites/preymaker",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6ab13a392cc6b094293023.png",
-    "note": "Preymaker is a global creative technology studio blending VFX, design and emerging technology to create exceptional visual content and experiences.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
-   },
-   {
-    "title": "Ilnaz Khasanshin",
-    "url": "https://onepagelove.com/ilnaz-khasanshin",
-    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/11/opl-screenshot-ilnaz-khasanshin-1794041202692-desktop.jpg",
-    "note": "Ilnaz Khasanshin is a senior product designer, showcasing design systems, industrial design, web design and AI-generated artwork. The portfolio resembles an interactive retro television interface, com",
-    "source": "One Page Love",
-    "kind": "gallery"
-   },
-   {
-    "title": "Liquid d1.2",
-    "url": "https://www.producthunt.com/products/lfm2",
-    "note": "Decision models that return calibrated probabilities",
+    "title": "kwatch",
+    "url": "https://www.producthunt.com/products/kwatch",
+    "note": "Kubernetes alerts that name the root cause",
     "source": "Product Hunt · Today",
     "kind": "trending"
    }
   ],
   "app": [
    {
-    "title": "Superhands",
-    "url": "https://www.producthunt.com/products/stencil-by-superhands",
-    "note": "Design the system, not every output.",
+    "title": "canfit",
+    "url": "https://www.producthunt.com/products/canfit",
+    "note": "The top command for people running local LLMs and apps",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -205,15 +205,47 @@
     "title": "elementalsouls/Claude-BugHunter",
     "url": "https://github.com/elementalsouls/Claude-BugHunter",
     "image": "https://opengraph.githubassets.com/1/elementalsouls/Claude-BugHunter",
-    "by": "★ 1,007 today",
+    "by": "★ 2,322 today",
     "note": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identi",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Continuo",
-    "url": "https://www.producthunt.com/products/continuo-4",
-    "note": "One keyboard and mouse across Macs, no Apple Account",
+    "title": "Introzy",
+    "url": "https://www.producthunt.com/products/introzy",
+    "note": "Track referrals from intro to commission",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "cursor/plugins",
+    "url": "https://github.com/cursor/plugins",
+    "image": "https://opengraph.githubassets.com/1/cursor/plugins",
+    "by": "★ 315 today",
+    "note": "Cursor plugin specification and official plugins",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "Ody Ai Business Phone",
+    "url": "https://www.producthunt.com/products/ody-ai-business-phone",
+    "note": "Shared workspace + manageable AI agents",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "HKUDS/CLI-Anything",
+    "url": "https://github.com/HKUDS/CLI-Anything",
+    "image": "https://opengraph.githubassets.com/1/HKUDS/CLI-Anything",
+    "by": "★ 384 today",
+    "note": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "kwatch",
+    "url": "https://www.producthunt.com/products/kwatch",
+    "note": "Kubernetes alerts that name the root cause",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -221,63 +253,15 @@
     "title": "mvanhorn/last30days-skill",
     "url": "https://github.com/mvanhorn/last30days-skill",
     "image": "https://opengraph.githubassets.com/1/mvanhorn/last30days-skill",
-    "by": "★ 135 today",
+    "by": "★ 1,062 today",
     "note": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Versine",
-    "url": "https://www.producthunt.com/products/versine",
-    "note": "Let your AI send and receive money. We're Venmo for agents.",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "alibaba/open-code-review",
-    "url": "https://github.com/alibaba/open-code-review",
-    "image": "https://opengraph.githubassets.com/1/alibaba/open-code-review",
-    "by": "★ 764 today",
-    "note": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE,",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Liquid d1.2",
-    "url": "https://www.producthunt.com/products/lfm2",
-    "note": "Decision models that return calibrated probabilities",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "Tencent/LoopForge",
-    "url": "https://github.com/Tencent/LoopForge",
-    "image": "https://opengraph.githubassets.com/1/Tencent/LoopForge",
-    "by": "★ 590 today",
-    "note": "Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants.",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Pinecall",
-    "url": "https://www.producthunt.com/products/pinecall",
-    "note": "The open-source platform for voice AI agents",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "dream-num/univer",
-    "url": "https://github.com/dream-num/univer",
-    "image": "https://opengraph.githubassets.com/1/dream-num/univer",
-    "by": "★ 1,776 today",
-    "note": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "3BCAD",
-    "url": "https://www.producthunt.com/products/3bcad",
-    "note": "Open-source parametric CAD with built-in 3D print prep",
+    "title": "Stringman",
+    "url": "https://www.producthunt.com/products/stringman",
+    "note": "Turns your room into a crane game",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -285,8 +269,24 @@
     "title": "getarcaneapp/arcane",
     "url": "https://github.com/getarcaneapp/arcane",
     "image": "https://opengraph.githubassets.com/1/getarcaneapp/arcane",
-    "by": "★ 46 today",
+    "by": "★ 547 today",
     "note": "Modern Docker Management, Designed for Everyone",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "Mermaid Flow",
+    "url": "https://www.producthunt.com/products/mermaid-chart",
+    "note": "The visual builder for agentic workflows",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "NVIDIA/SkillEvaluator",
+    "url": "https://github.com/NVIDIA/SkillEvaluator",
+    "image": "https://opengraph.githubassets.com/1/NVIDIA/SkillEvaluator",
+    "by": "★ 869 today",
+    "note": "Multi-tier framework for evaluating AI agent skills and plugins with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how ski",
     "source": "GitHub Trending",
     "kind": "trending"
    }
@@ -302,10 +302,34 @@
     "kind": "performance"
    },
    {
-    "title": "IMaGO",
-    "url": "https://vimeo.com/channels/staffpicks/1243581164",
-    "image": "https://i.vimeocdn.com/video/2222731672-986a973875a7aee0b56eff1b7323a5dbea1922441e1e4a61e8848eaad75930ae-d_960?region=us",
-    "note": "When Ana's mom starts transforming into a bug, their codependent relationship reaches its boiling point.  Starring Didi Romero, Ada Luz Pla, Josh Plasse, Denise&hellip;",
+    "title": "Dancing on Osees",
+    "url": "https://vimeo.com/channels/staffpicks/1236237071",
+    "image": "https://i.vimeocdn.com/video/2212683008-9be4589f0ebd0a780d84c5d1b86310ba41e13569daf64da5a3547423e82e7159-d_960?region=us",
+    "note": "Self-initiated animation on the song Together Tomorrow by Osees. All hand drawn on paper, 100% human.",
+    "source": "Vimeo Staff Picks",
+    "kind": "gallery"
+   },
+   {
+    "title": "Postoffice Amsterdam “Give the Gift of Closeness” for Swiss Brands United",
+    "url": "https://www.stashmedia.tv/postoffice-amsterdam-give-the-gift-of-closeness-for-swiss-brands-united/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Swiss-Brands-United-22Give-the-Gift-of-Closeness22-ad-by-Duncan-Christie-Postoffice-Amsterdam-STASH-MAGAZINE4-1920x961.jpg",
+    "note": "You could go a lifetime never hearing about an axolotl, but this holiday we got a pair, the adventurous one  last week from ETC for Netflix, and today the heart-warming version from Postoffice Amsterd",
+    "source": "STASH",
+    "kind": "gallery"
+   },
+   {
+    "title": "“The Dreamer”: An Apple Holiday Film featuring MacBook Neo",
+    "url": "https://www.youtube.com/watch?v=Sp54mxnWjUM",
+    "image": "https://i.ytimg.com/vi/Sp54mxnWjUM/hqdefault.jpg",
+    "by": "4.5M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Blue",
+    "url": "https://vimeo.com/channels/staffpicks/1247312751",
+    "image": "https://i.vimeocdn.com/video/2227227264-8d6194c856999599f51aef68c958c690cd1d03c9e7a24cbcd85fe8dc6d8841c8-d_960?region=us",
+    "note": "Josh runs into an old friend.  Written, Directed, and Edited by Ethan Romaine Starring Nathan Vincenti and Jada Delgado Cinematography by Benjy Berkowitz Sound Design&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
@@ -314,30 +338,6 @@
     "url": "https://www.stashmedia.tv/quorum-is-the-latest-buzz-from-colors-and-the-kids/",
     "image": "http://www.stashmedia.tv/wp-content/uploads/22Quorum22-CG-short-film-by-Colors-And-The-Kids-STASH-MAGAZINE-1920x1080.jpg",
     "note": "Few studios push harder on the limits of CG style than the team at Colors And The Kids in Berlin and this latest experimental piece, called Quorum (with music also produced in-house) is just the lates",
-    "source": "STASH",
-    "kind": "gallery"
-   },
-   {
-    "title": "“The Dreamer”: An Apple Holiday Film featuring MacBook Neo",
-    "url": "https://www.youtube.com/watch?v=Sp54mxnWjUM",
-    "image": "https://i.ytimg.com/vi/Sp54mxnWjUM/hqdefault.jpg",
-    "by": "4.3M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "JAZZ INFERNAL",
-    "url": "https://vimeo.com/channels/staffpicks/1246752032",
-    "image": "https://i.vimeocdn.com/video/2226286757-73068a99c64ddd37d3e5dc514b9ae8e88cee0b00b31c3cfeb766f48be7faba27-d_960?region=us",
-    "note": "Jazz Infernal breathes like memory itself, exhilarating, haunting, alive with the tension of not knowing whether to laugh or cry. Life in its raw complexity, where&hellip;",
-    "source": "Vimeo Staff Picks",
-    "kind": "gallery"
-   },
-   {
-    "title": "The Nose Knows: Creative Control Makes Stash Debut With “Something in the Air” Short Film",
-    "url": "https://www.stashmedia.tv/the-nose-knows-creative-control-makes-stash-debut-with-something-in-the-air-short-film/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Something-in-the-Air-Short-Film-by-Creative-Control-Studio-_-STASH-MAGAZINE12-1522x1080.jpg",
-    "note": "Directors Marcos Siqueira and Julien Marsouin at Creative Control in Berlin just dropped us their new mini-musical Something in the Air, a witty (and very relatable) foray into the olfactory side of s",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -350,18 +350,18 @@
     "kind": "performance"
    },
    {
-    "title": "PSYCHONAUTS",
-    "url": "https://vimeo.com/channels/staffpicks/1245502303",
-    "image": "https://i.vimeocdn.com/video/2224652526-1a5fbcfe2884ed9f38fbb160efe92eab159361d605432c449d15c5ea47b75dcb-d_960?region=us",
-    "note": "Leaving their human hosts, mental disorders take on anthropomorphic forms and find new refuges. Patients of the University Psychiatry Hospital Vrapče worked on &hellip;",
+    "title": "IMaGO",
+    "url": "https://vimeo.com/channels/staffpicks/1243581164",
+    "image": "https://i.vimeocdn.com/video/2222731672-986a973875a7aee0b56eff1b7323a5dbea1922441e1e4a61e8848eaad75930ae-d_960?region=us",
+    "note": "When Ana's mom starts transforming into a bug, their codependent relationship reaches its boiling point.  Starring Didi Romero, Ada Luz Pla, Josh Plasse, Denise&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
    {
-    "title": "New Issue! Stash 180 Drops Inspiration, Insight, & Insanity",
-    "url": "https://www.stashmedia.tv/new-issue-stash-180-drops-inspiration-insight-insanity/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/email-sub-options-table-email-489corp2.jpg",
-    "note": "Possibly our most eclectic issue yet, Stash 180 is an absolute firehose of inspiration and the latest addition to the  Stash Permanent Collection, the only video streaming platform built for designers",
+    "title": "The Nose Knows: Creative Control Makes Stash Debut With “Something in the Air” Short Film",
+    "url": "https://www.stashmedia.tv/the-nose-knows-creative-control-makes-stash-debut-with-something-in-the-air-short-film/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Something-in-the-Air-Short-Film-by-Creative-Control-Studio-_-STASH-MAGAZINE12-1522x1080.jpg",
+    "note": "Directors Marcos Siqueira and Julien Marsouin at Creative Control in Berlin just dropped us their new mini-musical Something in the Air, a witty (and very relatable) foray into the olfactory side of s",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -374,35 +374,36 @@
     "kind": "performance"
    },
    {
-    "title": "Snow In September",
-    "url": "https://vimeo.com/channels/staffpicks/1240299939",
-    "image": "https://i.vimeocdn.com/video/2218073657-710f7cd2c00ddb1a58ad7ff861ad26c62299efddb7b31ab5320b87ac9a7a1771-d_960?region=us",
-    "note": "Davka is a teenager who lives in dilapidated Soviet apartment buildings. He and his classmate Anuka talk about manga and tease each other about sex. When Davka meets&hellip;",
+    "title": "JAZZ INFERNAL",
+    "url": "https://vimeo.com/channels/staffpicks/1246752032",
+    "image": "https://i.vimeocdn.com/video/2227779944-57e0a3fb0e4e336edceeee09253717aec6a8b346072c81e11e77f865ce640b8d-d_960?region=us",
+    "note": "FOR YOUR CONSIDERATION - BEST LIVE ACTION SHORT FILM  85+ Selections   Awards   Sundance 2026: Short Film Jury Award, International Fiction New York Shorts International&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
    {
-    "title": "1stAveMachine Signs Director Kit Lynch-Robinson",
-    "url": "https://www.stashmedia.tv/1stavemachine-signs-director-kit-lynch-robinson/",
-    "note": "From the release: 1stAveMachine, the director-driven production company known for exceptional craft and inventive ideas, has welcomed British director Kit Lynch-Robinson to its roster. [Watch]\nThe pos",
+    "title": "New Issue! Stash 180 Drops Inspiration, Insight, & Insanity",
+    "url": "https://www.stashmedia.tv/new-issue-stash-180-drops-inspiration-insight-insanity/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/email-sub-options-table-email-489corp2.jpg",
+    "note": "Possibly our most eclectic issue yet, Stash 180 is an absolute firehose of inspiration and the latest addition to the  Stash Permanent Collection, the only video streaming platform built for designers",
     "source": "STASH",
     "kind": "gallery"
    }
   ],
   "motion": [
    {
-    "title": "DissEmbargo | F1 2026 Opening Titles – Making of",
-    "url": "https://motionographer.com/quickie/dissembargo-f1-2026-opening-titles-making-of/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/dissembargo-f1-2026-marketing.png",
-    "note": "DissEmbargo shares the CG process behind the F1 2026 opening titles, created in collaboration with Formula 1’s in-house creative team.",
+    "title": "Marie Lavis | Where Did My Diamond Go?",
+    "url": "https://motionographer.com/quickie/marie-lavis-where-did-my-diamond-go/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/marie-lavis-diamond-animation-scaled.png",
+    "note": "Marie Lavis translates Jacob Collier’s musical sketch into an animated pursuit of an elusive treasure, made entirely on an iPad.",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "“Quorum” is the Latest Buzz from Colors And The Kids",
-    "url": "https://www.stashmedia.tv/quorum-is-the-latest-buzz-from-colors-and-the-kids/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/22Quorum22-CG-short-film-by-Colors-And-The-Kids-STASH-MAGAZINE-1920x1080.jpg",
-    "note": "Few studios push harder on the limits of CG style than the team at Colors And The Kids in Berlin and this latest experimental piece, called Quorum (with music also produced in-house) is just the lates",
+    "title": "Postoffice Amsterdam “Give the Gift of Closeness” for Swiss Brands United",
+    "url": "https://www.stashmedia.tv/postoffice-amsterdam-give-the-gift-of-closeness-for-swiss-brands-united/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Swiss-Brands-United-22Give-the-Gift-of-Closeness22-ad-by-Duncan-Christie-Postoffice-Amsterdam-STASH-MAGAZINE4-1920x961.jpg",
+    "note": "You could go a lifetime never hearing about an axolotl, but this holiday we got a pair, the adventurous one  last week from ETC for Netflix, and today the heart-warming version from Postoffice Amsterd",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -415,17 +416,18 @@
     "kind": "gallery"
    },
    {
-    "title": "HP Studio | HP Limited Edition Scuderia Ferrari AI PC",
-    "url": "https://motionographer.com/quickie/hp-studio-hp-limited-edition-scuderia-ferrari-ai-pc/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/hp-ferrari-ai-pc-original-still.png",
+    "title": "Woodwork Amsterdam Launches Visual Valley, an Immersive Storytelling Label",
+    "url": "https://motionographer.com/news/woodwork-amsterdam-visual-valley-immersive-storytelling-label/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/visual-valley-press-release-01-original.jpg",
+    "note": "The Amsterdam studio brings its immersive work for museums, venues and brands under a dedicated label, with narrative at the center of the experience.",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "The Nose Knows: Creative Control Makes Stash Debut With “Something in the Air” Short Film",
-    "url": "https://www.stashmedia.tv/the-nose-knows-creative-control-makes-stash-debut-with-something-in-the-air-short-film/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Something-in-the-Air-Short-Film-by-Creative-Control-Studio-_-STASH-MAGAZINE12-1522x1080.jpg",
-    "note": "Directors Marcos Siqueira and Julien Marsouin at Creative Control in Berlin just dropped us their new mini-musical Something in the Air, a witty (and very relatable) foray into the olfactory side of s",
+    "title": "“Quorum” is the Latest Buzz from Colors And The Kids",
+    "url": "https://www.stashmedia.tv/quorum-is-the-latest-buzz-from-colors-and-the-kids/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/22Quorum22-CG-short-film-by-Colors-And-The-Kids-STASH-MAGAZINE-1920x1080.jpg",
+    "note": "Few studios push harder on the limits of CG style than the team at Colors And The Kids in Berlin and this latest experimental piece, called Quorum (with music also produced in-house) is just the lates",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -438,18 +440,18 @@
     "kind": "gallery"
    },
    {
-    "title": "Reframe: David Sheldon-Hicks and Art Tindsley open a new podcast with Patrice Vermette",
-    "url": "https://motionographer.com/news/reframe-david-sheldon-hicks-and-art-tindsley-open-a-new-podcast-with-patrice-vermette/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/reframe-podcast-landscape.jpg",
-    "note": "David Sheldon-Hicks of Territory Studio and Art Tindsley of Pogo launch Reframe, a podcast on creativity and technology. First guest: Dune production designer Patrice Vermette.",
+    "title": "DissEmbargo | F1 2026 Opening Titles – Making of",
+    "url": "https://motionographer.com/quickie/dissembargo-f1-2026-opening-titles-making-of/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/dissembargo-f1-2026-marketing.png",
+    "note": "DissEmbargo shares the CG process behind the F1 2026 opening titles, created in collaboration with Formula 1’s in-house creative team.",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "New Issue! Stash 180 Drops Inspiration, Insight, & Insanity",
-    "url": "https://www.stashmedia.tv/new-issue-stash-180-drops-inspiration-insight-insanity/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/email-sub-options-table-email-489corp2.jpg",
-    "note": "Possibly our most eclectic issue yet, Stash 180 is an absolute firehose of inspiration and the latest addition to the  Stash Permanent Collection, the only video streaming platform built for designers",
+    "title": "The Nose Knows: Creative Control Makes Stash Debut With “Something in the Air” Short Film",
+    "url": "https://www.stashmedia.tv/the-nose-knows-creative-control-makes-stash-debut-with-something-in-the-air-short-film/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Something-in-the-Air-Short-Film-by-Creative-Control-Studio-_-STASH-MAGAZINE12-1522x1080.jpg",
+    "note": "Directors Marcos Siqueira and Julien Marsouin at Creative Control in Berlin just dropped us their new mini-musical Something in the Air, a witty (and very relatable) foray into the olfactory side of s",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -462,17 +464,17 @@
     "kind": "gallery"
    },
    {
-    "title": "Perfect Stranger Appoints Tony Kadillak as Head of Client Partnerships",
-    "url": "https://motionographer.com/news/perfect-stranger-tony-kadillak-head-client-partnerships/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/tony-kadillak-perfect-stranger-landscape-original.jpg",
-    "note": "Tony Kadillak joins Perfect Stranger as Head of Client Partnerships, reuniting with Daniel Fries to build long-term relationships with brands.",
+    "title": "HP Studio | HP Limited Edition Scuderia Ferrari AI PC",
+    "url": "https://motionographer.com/quickie/hp-studio-hp-limited-edition-scuderia-ferrari-ai-pc/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/hp-ferrari-ai-pc-original-still.png",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "1stAveMachine Signs Director Kit Lynch-Robinson",
-    "url": "https://www.stashmedia.tv/1stavemachine-signs-director-kit-lynch-robinson/",
-    "note": "From the release: 1stAveMachine, the director-driven production company known for exceptional craft and inventive ideas, has welcomed British director Kit Lynch-Robinson to its roster. [Watch]\nThe pos",
+    "title": "New Issue! Stash 180 Drops Inspiration, Insight, & Insanity",
+    "url": "https://www.stashmedia.tv/new-issue-stash-180-drops-inspiration-insight-insanity/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/email-sub-options-table-email-489corp2.jpg",
+    "note": "Possibly our most eclectic issue yet, Stash 180 is an absolute firehose of inspiration and the latest addition to the  Stash Permanent Collection, the only video streaming platform built for designers",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -495,6 +497,70 @@
     "kind": "performance"
    },
    {
+    "title": "Dancing on Osees",
+    "url": "https://vimeo.com/channels/staffpicks/1236237071",
+    "image": "https://i.vimeocdn.com/video/2212683008-9be4589f0ebd0a780d84c5d1b86310ba41e13569daf64da5a3547423e82e7159-d_960?region=us",
+    "note": "Self-initiated animation on the song Together Tomorrow by Osees. All hand drawn on paper, 100% human.",
+    "source": "Vimeo Staff Picks",
+    "kind": "gallery"
+   },
+   {
+    "title": "Marie Lavis | Where Did My Diamond Go?",
+    "url": "https://motionographer.com/quickie/marie-lavis-where-did-my-diamond-go/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/marie-lavis-diamond-animation-scaled.png",
+    "note": "Marie Lavis translates Jacob Collier’s musical sketch into an animated pursuit of an elusive treasure, made entirely on an iPad.",
+    "source": "Motionographer",
+    "kind": "gallery"
+   },
+   {
+    "title": "Postoffice Amsterdam “Give the Gift of Closeness” for Swiss Brands United",
+    "url": "https://www.stashmedia.tv/postoffice-amsterdam-give-the-gift-of-closeness-for-swiss-brands-united/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Swiss-Brands-United-22Give-the-Gift-of-Closeness22-ad-by-Duncan-Christie-Postoffice-Amsterdam-STASH-MAGAZINE4-1920x961.jpg",
+    "note": "You could go a lifetime never hearing about an axolotl, but this holiday we got a pair, the adventurous one  last week from ETC for Netflix, and today the heart-warming version from Postoffice Amsterd",
+    "source": "STASH",
+    "kind": "gallery"
+   },
+   {
+    "title": "We Finally Know More About Humanity’s First Civilization",
+    "url": "https://www.youtube.com/watch?v=_y9JuojAIg0",
+    "image": "https://i.ytimg.com/vi/_y9JuojAIg0/hqdefault.jpg",
+    "by": "12M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Blue",
+    "url": "https://vimeo.com/channels/staffpicks/1247312751",
+    "image": "https://i.vimeocdn.com/video/2227227264-8d6194c856999599f51aef68c958c690cd1d03c9e7a24cbcd85fe8dc6d8841c8-d_960?region=us",
+    "note": "Josh runs into an old friend.  Written, Directed, and Edited by Ethan Romaine Starring Nathan Vincenti and Jada Delgado Cinematography by Benjy Berkowitz Sound Design&hellip;",
+    "source": "Vimeo Staff Picks",
+    "kind": "gallery"
+   },
+   {
+    "title": "Woodwork Amsterdam Launches Visual Valley, an Immersive Storytelling Label",
+    "url": "https://motionographer.com/news/woodwork-amsterdam-visual-valley-immersive-storytelling-label/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/visual-valley-press-release-01-original.jpg",
+    "note": "The Amsterdam studio brings its immersive work for museums, venues and brands under a dedicated label, with narrative at the center of the experience.",
+    "source": "Motionographer",
+    "kind": "gallery"
+   },
+   {
+    "title": "“Quorum” is the Latest Buzz from Colors And The Kids",
+    "url": "https://www.stashmedia.tv/quorum-is-the-latest-buzz-from-colors-and-the-kids/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/22Quorum22-CG-short-film-by-Colors-And-The-Kids-STASH-MAGAZINE-1920x1080.jpg",
+    "note": "Few studios push harder on the limits of CG style than the team at Colors And The Kids in Berlin and this latest experimental piece, called Quorum (with music also produced in-house) is just the lates",
+    "source": "STASH",
+    "kind": "gallery"
+   },
+   {
+    "title": "This Is What a Godlike Civilization Would Look Like",
+    "url": "https://www.youtube.com/watch?v=QW_jlUn4gA8",
+    "image": "https://i.ytimg.com/vi/QW_jlUn4gA8/hqdefault.jpg",
+    "by": "9.6M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
     "title": "IMaGO",
     "url": "https://vimeo.com/channels/staffpicks/1243581164",
     "image": "https://i.vimeocdn.com/video/2222731672-986a973875a7aee0b56eff1b7323a5dbea1922441e1e4a61e8848eaad75930ae-d_960?region=us",
@@ -511,86 +577,15 @@
     "kind": "gallery"
    },
    {
-    "title": "“Quorum” is the Latest Buzz from Colors And The Kids",
-    "url": "https://www.stashmedia.tv/quorum-is-the-latest-buzz-from-colors-and-the-kids/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/22Quorum22-CG-short-film-by-Colors-And-The-Kids-STASH-MAGAZINE-1920x1080.jpg",
-    "note": "Few studios push harder on the limits of CG style than the team at Colors And The Kids in Berlin and this latest experimental piece, called Quorum (with music also produced in-house) is just the lates",
-    "source": "STASH",
-    "kind": "gallery"
-   },
-   {
-    "title": "We Finally Know More About Humanity’s First Civilization",
-    "url": "https://www.youtube.com/watch?v=_y9JuojAIg0",
-    "image": "https://i.ytimg.com/vi/_y9JuojAIg0/hqdefault.jpg",
-    "by": "12M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "JAZZ INFERNAL",
-    "url": "https://vimeo.com/channels/staffpicks/1246752032",
-    "image": "https://i.vimeocdn.com/video/2226286757-73068a99c64ddd37d3e5dc514b9ae8e88cee0b00b31c3cfeb766f48be7faba27-d_960?region=us",
-    "note": "Jazz Infernal breathes like memory itself, exhilarating, haunting, alive with the tension of not knowing whether to laugh or cry. Life in its raw complexity, where&hellip;",
-    "source": "Vimeo Staff Picks",
-    "kind": "gallery"
-   },
-   {
-    "title": "HP Studio | HP Limited Edition Scuderia Ferrari AI PC",
-    "url": "https://motionographer.com/quickie/hp-studio-hp-limited-edition-scuderia-ferrari-ai-pc/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/hp-ferrari-ai-pc-original-still.png",
-    "source": "Motionographer",
-    "kind": "gallery"
-   },
-   {
     "title": "The Nose Knows: Creative Control Makes Stash Debut With “Something in the Air” Short Film",
     "url": "https://www.stashmedia.tv/the-nose-knows-creative-control-makes-stash-debut-with-something-in-the-air-short-film/",
     "image": "http://www.stashmedia.tv/wp-content/uploads/Something-in-the-Air-Short-Film-by-Creative-Control-Studio-_-STASH-MAGAZINE12-1522x1080.jpg",
     "note": "Directors Marcos Siqueira and Julien Marsouin at Creative Control in Berlin just dropped us their new mini-musical Something in the Air, a witty (and very relatable) foray into the olfactory side of s",
     "source": "STASH",
     "kind": "gallery"
-   },
-   {
-    "title": "This Is What a Godlike Civilization Would Look Like",
-    "url": "https://www.youtube.com/watch?v=QW_jlUn4gA8",
-    "image": "https://i.ytimg.com/vi/QW_jlUn4gA8/hqdefault.jpg",
-    "by": "9.6M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "PSYCHONAUTS",
-    "url": "https://vimeo.com/channels/staffpicks/1245502303",
-    "image": "https://i.vimeocdn.com/video/2224652526-1a5fbcfe2884ed9f38fbb160efe92eab159361d605432c449d15c5ea47b75dcb-d_960?region=us",
-    "note": "Leaving their human hosts, mental disorders take on anthropomorphic forms and find new refuges. Patients of the University Psychiatry Hospital Vrapče worked on &hellip;",
-    "source": "Vimeo Staff Picks",
-    "kind": "gallery"
-   },
-   {
-    "title": "Reframe: David Sheldon-Hicks and Art Tindsley open a new podcast with Patrice Vermette",
-    "url": "https://motionographer.com/news/reframe-david-sheldon-hicks-and-art-tindsley-open-a-new-podcast-with-patrice-vermette/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/reframe-podcast-landscape.jpg",
-    "note": "David Sheldon-Hicks of Territory Studio and Art Tindsley of Pogo launch Reframe, a podcast on creativity and technology. First guest: Dune production designer Patrice Vermette.",
-    "source": "Motionographer",
-    "kind": "gallery"
-   },
-   {
-    "title": "New Issue! Stash 180 Drops Inspiration, Insight, & Insanity",
-    "url": "https://www.stashmedia.tv/new-issue-stash-180-drops-inspiration-insight-insanity/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/email-sub-options-table-email-489corp2.jpg",
-    "note": "Possibly our most eclectic issue yet, Stash 180 is an absolute firehose of inspiration and the latest addition to the  Stash Permanent Collection, the only video streaming platform built for designers",
-    "source": "STASH",
-    "kind": "gallery"
    }
   ],
   "social": [
-   {
-    "title": "No, You Couldn't Do This 🙅‍♂️",
-    "url": "https://www.youtube.com/watch?v=-D7Q7irRp54",
-    "image": "https://i.ytimg.com/vi/-D7Q7irRp54/hqdefault.jpg",
-    "by": "7.6M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
    {
     "title": "Airbnb | あつまる？エアビる？｜プールでエアビる",
     "url": "https://www.youtube.com/watch?v=QS0QEqKGGIw",
@@ -619,7 +614,7 @@
     "title": "POV: The World's Biggest Human Catapult 😳",
     "url": "https://www.youtube.com/watch?v=muokuPK7V_E",
     "image": "https://i.ytimg.com/vi/muokuPK7V_E/hqdefault.jpg",
-    "by": "1.8M views",
+    "by": "2M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -627,7 +622,15 @@
     "title": "The Ultimate Race on ICE ❄️",
     "url": "https://www.youtube.com/watch?v=0Qs7uYqVOUM",
     "image": "https://i.ytimg.com/vi/0Qs7uYqVOUM/hqdefault.jpg",
-    "by": "1.1M views",
+    "by": "1.5M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Racing An F1 Car on ICE 🥶",
+    "url": "https://www.youtube.com/watch?v=rUUEFnaY7_E",
+    "image": "https://i.ytimg.com/vi/rUUEFnaY7_E/hqdefault.jpg",
+    "by": "856K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -635,7 +638,7 @@
     "title": "POV: 55ft MTB Freefall 🎬 Antoni Villoni #GoPro",
     "url": "https://www.youtube.com/watch?v=tAIjGmGVa1g",
     "image": "https://i.ytimg.com/vi/tAIjGmGVa1g/hqdefault.jpg",
-    "by": "670K views",
+    "by": "724K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -643,31 +646,7 @@
     "title": "Nido de Villanas: Ep. 1 Don Cristóbal’s inheritance",
     "url": "https://www.youtube.com/watch?v=wG_LaKvlcqM",
     "image": "https://i.ytimg.com/vi/wG_LaKvlcqM/hqdefault.jpg",
-    "by": "558K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "you're hooked on me i'm hooked on sakura mochi 🍡 🎨: @brerbo",
-    "url": "https://www.youtube.com/watch?v=TrEHPMqHVAc",
-    "image": "https://i.ytimg.com/vi/TrEHPMqHVAc/hqdefault.jpg",
-    "by": "371K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "Get sorted for college with Roxie from the Apple Store.",
-    "url": "https://www.youtube.com/watch?v=P5GxUjU4uBI",
-    "image": "https://i.ytimg.com/vi/P5GxUjU4uBI/hqdefault.jpg",
-    "by": "368K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "y'all need to lock in on ur listening exercises 🎨: @brerbo",
-    "url": "https://www.youtube.com/watch?v=jNctdfv480U",
-    "image": "https://i.ytimg.com/vi/jNctdfv480U/hqdefault.jpg",
-    "by": "356K views",
+    "by": "559K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -675,81 +654,105 @@
     "title": "They Went HOW fast?? 😳",
     "url": "https://www.youtube.com/watch?v=YLpdWPeSC8M",
     "image": "https://i.ytimg.com/vi/YLpdWPeSC8M/hqdefault.jpg",
-    "by": "345K views",
+    "by": "468K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "you're hooked on me i'm hooked on sakura mochi 🍡 🎨: @brerbo",
+    "url": "https://www.youtube.com/watch?v=TrEHPMqHVAc",
+    "image": "https://i.ytimg.com/vi/TrEHPMqHVAc/hqdefault.jpg",
+    "by": "393K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Get sorted for college with Roxie from the Apple Store.",
+    "url": "https://www.youtube.com/watch?v=P5GxUjU4uBI",
+    "image": "https://i.ytimg.com/vi/P5GxUjU4uBI/hqdefault.jpg",
+    "by": "369K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "y'all need to lock in on ur listening exercises 🎨: @brerbo",
+    "url": "https://www.youtube.com/watch?v=jNctdfv480U",
+    "image": "https://i.ytimg.com/vi/jNctdfv480U/hqdefault.jpg",
+    "by": "366K views",
     "source": "Latest from brands",
     "kind": "performance"
    }
   ],
   "post": [
    {
-    "title": "Optimizely compromised, served malware on Zoom, GitLab",
-    "url": "https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/",
+    "title": "AI is killing All About Berlin",
+    "url": "https://nicolasbouliane.com/blog/death-by-ai",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Windows 11 is collecting data on which coding agents and developer tools you use",
-    "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
+    "title": "Interviewed at a YC startup, found out they used my LinkedIn without permission",
+    "url": "https://reddit.com/r/recruitinghell/comments/1xyr6ml/interviewed_at_a_yc_startup_spent_30_hours/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "BugMeNot has closed",
-    "url": "https://www.bugmenot.com/",
+    "title": "ID.me terms required for IRS sign-in",
+    "url": "https://consumerrights.wiki/w/ID.me_terms_required_for_IRS_sign-in",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "OpenCode Browse",
-    "url": "https://opencode.ai/product/browse",
+    "title": "Google's AI answers reducing search traffic by 40%",
+    "url": "https://revscope.co/blog/search-seo-geo-2026/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Carnegie Mellon is putting computer science courses on YouTube for free",
-    "url": "https://www.cs.cmu.edu/learn/",
+    "title": "Microsoft's ONNX Runtime has disappeared from GitHub",
+    "url": "https://github.com/microsoft/onnxruntime",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Rust changed me as a developer",
-    "url": "https://blog.startifact.com/posts/how-rust-changed-me/",
+    "title": "Quad9's withdrawal from France: A canary in the coal mine",
+    "url": "https://blog.cloudflare.com/quad9-withdrawal-from-france/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Technical issue at JPMorgan Chase triggers online banking delays for US banks",
-    "url": "https://apnews.com/article/bank-outage-chase-wells-fargo-truist-50fee2693c22f597fa6ca51a97ef2cda",
+    "title": "Java4Shell: RCE in OpenJDK when processing Base64",
+    "url": "https://calif.io/java4shell/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Software is breaking down at a systemic level",
-    "url": "https://www.breck-mckye.com/blog/2026/11/software-is-breaking-down-at-a-systemic-level/",
+    "title": "350 years ago, Ole Rømer discovered that light has a finite speed",
+    "url": "https://www.sciencenorway.no/culture-history-history-of-science/350-years-ago-this-man-discovered-that-light-has-a-finite-speed/2737969",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Grazing sheep in fields with solar arrays",
-    "url": "https://news.cornell.edu/stories/2026/10/sheep-grazing-solar-fields-offers-farmers-economic-ecological-gains",
+    "title": "Phrack 73",
+    "url": "https://phrack.org/issues/73/introduction_md",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Jiff 1.0: A datetime library for Rust",
-    "url": "https://burntsushi.net/jiff/",
+    "title": "MAI Code 2 and Code 2 Flash",
+    "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Frame – 31.5\" color ePaper display",
-    "url": "https://trmnl.com/blog/introducing-frame",
+    "title": "Apple Services Down",
+    "url": "https://developer.apple.com/system-status/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Nvidia was in trouble before the Jensen Huang mess",
-    "url": "https://www.wired.com/story/nvidia-was-already-in-trouble-before-the-jensen-huang-mess/",
+    "title": "GPT‑6.2 Astra and Sol",
+    "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
     "source": "Hacker News · Best",
     "kind": "performance"
    }
@@ -764,10 +767,10 @@
     "kind": "performance"
    },
    {
-    "title": "Not Really For Tourists",
-    "url": "https://www.adsoftheworld.com/campaigns/not-really-for-tourists",
-    "image": "https://image.adsoftheworld.com/txu7qrqx6thchblaqqa20q6n96ic",
-    "by": "Tourism Tasmania",
+    "title": "You’re Golden",
+    "url": "https://www.adsoftheworld.com/campaigns/you-re-golden",
+    "image": "https://image.adsoftheworld.com/2bikscziqp0o64w6nropa5sp3zx0",
+    "by": "Hertz",
     "source": "Ads of the World",
     "kind": "gallery"
    },
@@ -775,15 +778,15 @@
     "title": "“The Dreamer”: An Apple Holiday Film featuring MacBook Neo",
     "url": "https://www.youtube.com/watch?v=Sp54mxnWjUM",
     "image": "https://i.ytimg.com/vi/Sp54mxnWjUM/hqdefault.jpg",
-    "by": "4.3M views",
+    "by": "4.5M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
    {
-    "title": "2027 CFE Campaign",
-    "url": "https://www.adsoftheworld.com/campaigns/2027-cfe-campaign",
-    "image": "https://image.adsoftheworld.com/zocgiat6z0anst7fze9blcra17jr",
-    "by": "Clio Awards",
+    "title": "Not Really For Tourists",
+    "url": "https://www.adsoftheworld.com/campaigns/not-really-for-tourists",
+    "image": "https://image.adsoftheworld.com/txu7qrqx6thchblaqqa20q6n96ic",
+    "by": "Tourism Tasmania",
     "source": "Ads of the World",
     "kind": "gallery"
    },
@@ -796,10 +799,10 @@
     "kind": "performance"
    },
    {
-    "title": "The Perfect Gift 2",
-    "url": "https://www.adsoftheworld.com/campaigns/the-perfect-gift-2",
-    "image": "https://image.adsoftheworld.com/wglqa3k5jx9f9asnjmoahs8tj1gg",
-    "by": "Waitrose",
+    "title": "2027 CFE Campaign",
+    "url": "https://www.adsoftheworld.com/campaigns/2027-cfe-campaign",
+    "image": "https://image.adsoftheworld.com/zocgiat6z0anst7fze9blcra17jr",
+    "by": "Clio Awards",
     "source": "Ads of the World",
     "kind": "gallery"
    },
@@ -812,10 +815,10 @@
     "kind": "performance"
    },
    {
-    "title": "The Home Of Christmas",
-    "url": "https://www.adsoftheworld.com/campaigns/the-home-of-christmas",
-    "image": "https://image.adsoftheworld.com/kpy4xw1mfuhmhy2fdxitywadngxn",
-    "by": "M&S",
+    "title": "The Perfect Gift 2",
+    "url": "https://www.adsoftheworld.com/campaigns/the-perfect-gift-2",
+    "image": "https://image.adsoftheworld.com/wglqa3k5jx9f9asnjmoahs8tj1gg",
+    "by": "Waitrose",
     "source": "Ads of the World",
     "kind": "gallery"
    },
@@ -823,15 +826,15 @@
     "title": "What's going on at DuoMart!?! | DuoTV (Full Series)",
     "url": "https://www.youtube.com/watch?v=YP2KYQZUkWY",
     "image": "https://i.ytimg.com/vi/YP2KYQZUkWY/hqdefault.jpg",
-    "by": "474K views",
+    "by": "479K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
    {
-    "title": "The Sapjack Way",
-    "url": "https://www.adsoftheworld.com/campaigns/the-sapjack-way",
-    "image": "https://image.adsoftheworld.com/0om0v5dd4mgvyuhqzlzxrchd9dei",
-    "by": "Sapjack",
+    "title": "The Home Of Christmas",
+    "url": "https://www.adsoftheworld.com/campaigns/the-home-of-christmas",
+    "image": "https://image.adsoftheworld.com/kpy4xw1mfuhmhy2fdxitywadngxn",
+    "by": "M&S",
     "source": "Ads of the World",
     "kind": "gallery"
    },
@@ -847,7 +850,7 @@
     "title": "Apple Pay: The fast, easy, and secure way to pay.",
     "url": "https://www.youtube.com/watch?v=miUjxZ2ASRs",
     "image": "https://i.ytimg.com/vi/miUjxZ2ASRs/hqdefault.jpg",
-    "by": "279K views",
+    "by": "282K views",
     "source": "Latest from brands",
     "kind": "performance"
    }
