@@ -1,7 +1,31 @@
 {
- "updated": "2026-11-19T11:48:24.011Z",
+ "updated": "2026-11-20T11:48:16.010Z",
  "media": {
   "ui": [
+   {
+    "title": "197 Historias Ilustradas",
+    "url": "https://www.awwwards.com/sites/197-historias-ilustradas",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6aa1a57b078aa657765170.png",
+    "note": "A digital space for memory. Extending \"197 historias ilustradas\", stories of citizens who were disappeared by Uruguay's civic-military dictatorship.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "LOMI",
+    "url": "https://www.producthunt.com/products/lomi-local-model-intelligence",
+    "note": "Run AI models locally on your Android device",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "elementalsouls/Claude-BugHunter",
+    "url": "https://github.com/elementalsouls/Claude-BugHunter",
+    "image": "https://opengraph.githubassets.com/1/elementalsouls/Claude-BugHunter",
+    "by": "★ 1,349 today",
+    "note": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identi",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
    {
     "title": "Carter Ogunsola",
     "url": "https://www.awwwards.com/sites/carter-ogunsola",
@@ -11,9 +35,9 @@
     "kind": "award"
    },
    {
-    "title": "Upsolve MCP Connections",
-    "url": "https://www.producthunt.com/products/upsolve-ai",
-    "note": "Plug Notion, Linear and more into your data agent",
+    "title": "Kuc-kuc",
+    "url": "https://www.producthunt.com/products/kuc-kuc",
+    "note": "A knock on the door when dangerous weather comes",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -21,7 +45,7 @@
     "title": "obra/superpowers",
     "url": "https://github.com/obra/superpowers",
     "image": "https://opengraph.githubassets.com/1/obra/superpowers",
-    "by": "★ 2,029 today",
+    "by": "★ 888 today",
     "note": "An agentic skills framework & software development methodology that works.",
     "source": "GitHub Trending",
     "kind": "trending"
@@ -35,9 +59,9 @@
     "kind": "award"
    },
    {
-    "title": "HeyGen Avatar 6",
-    "url": "https://www.producthunt.com/products/heygen",
-    "note": "AI Avatar Model That Looks Like You",
+    "title": "Same Moon",
+    "url": "https://www.producthunt.com/products/same-moon",
+    "note": "Free bedtime stories for children who had to leave home",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -45,7 +69,7 @@
     "title": "HKUDS/CLI-Anything",
     "url": "https://github.com/HKUDS/CLI-Anything",
     "image": "https://opengraph.githubassets.com/1/HKUDS/CLI-Anything",
-    "by": "★ 899 today",
+    "by": "★ 774 today",
     "note": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
     "source": "GitHub Trending",
     "kind": "trending"
@@ -59,9 +83,9 @@
     "kind": "award"
    },
    {
-    "title": "Rezora IO",
-    "url": "https://www.producthunt.com/products/rezora-io-ai-calling-assistant",
-    "note": "Shopify for AI voice agents: live in 10 minutes",
+    "title": "Andromon",
+    "url": "https://www.producthunt.com/products/andromon",
+    "note": "Your Android phone, on your computer. Free.",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -69,37 +93,36 @@
     "title": "jingyaogong/minimind",
     "url": "https://github.com/jingyaogong/minimind",
     "image": "https://opengraph.githubassets.com/1/jingyaogong/minimind",
-    "by": "★ 687 today",
+    "by": "★ 238 today",
     "note": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Bulletproof",
-    "url": "https://www.awwwards.com/sites/bulletproof",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6abba11c9296a681844638.jpg",
-    "note": "We are the world's largest independent brand agency. We drive growth, standout and fandom for the world's most desirable brands.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
-   },
-   {
-    "title": "Verse Engine by Ctruh",
-    "url": "https://www.producthunt.com/products/verse-engine-by-ctruh",
-    "note": "Blender, Unity or Unreal to a live 3D link in one click",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "cursor/plugins",
-    "url": "https://github.com/cursor/plugins",
-    "image": "https://opengraph.githubassets.com/1/cursor/plugins",
-    "by": "★ 383 today",
-    "note": "Cursor plugin specification and official plugins",
     "source": "GitHub Trending",
     "kind": "trending"
    }
   ],
   "landing": [
+   {
+    "title": "197 Historias Ilustradas",
+    "url": "https://www.awwwards.com/sites/197-historias-ilustradas",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6aa1a57b078aa657765170.png",
+    "note": "A digital space for memory. Extending \"197 historias ilustradas\", stories of citizens who were disappeared by Uruguay's civic-military dictatorship.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "Sunstill",
+    "url": "https://onepagelove.com/sunstill",
+    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/11/opl-screenshot-sunstill-1795086762751-desktop.jpg",
+    "note": "Sunstill app displays a live wallpaper showing sunlight on a wall that follows the real sun’s position based on your location. The landing page combines warm photographic light with different “blinds”",
+    "source": "One Page Love",
+    "kind": "gallery"
+   },
+   {
+    "title": "LOMI",
+    "url": "https://www.producthunt.com/products/lomi-local-model-intelligence",
+    "note": "Run AI models locally on your Android device",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
    {
     "title": "Carter Ogunsola",
     "url": "https://www.awwwards.com/sites/carter-ogunsola",
@@ -117,9 +140,9 @@
     "kind": "gallery"
    },
    {
-    "title": "Upsolve MCP Connections",
-    "url": "https://www.producthunt.com/products/upsolve-ai",
-    "note": "Plug Notion, Linear and more into your data agent",
+    "title": "Kuc-kuc",
+    "url": "https://www.producthunt.com/products/kuc-kuc",
+    "note": "A knock on the door when dangerous weather comes",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -140,9 +163,9 @@
     "kind": "gallery"
    },
    {
-    "title": "HeyGen Avatar 6",
-    "url": "https://www.producthunt.com/products/heygen",
-    "note": "AI Avatar Model That Looks Like You",
+    "title": "Same Moon",
+    "url": "https://www.producthunt.com/products/same-moon",
+    "note": "Free bedtime stories for children who had to leave home",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -163,41 +186,34 @@
     "kind": "gallery"
    },
    {
-    "title": "Rezora IO",
-    "url": "https://www.producthunt.com/products/rezora-io-ai-calling-assistant",
-    "note": "Shopify for AI voice agents: live in 10 minutes",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "Bulletproof",
-    "url": "https://www.awwwards.com/sites/bulletproof",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6abba11c9296a681844638.jpg",
-    "note": "We are the world's largest independent brand agency. We drive growth, standout and fandom for the world's most desirable brands.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
-   },
-   {
-    "title": "Wowww studio",
-    "url": "https://onepagelove.com/wowww-studio",
-    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/11/wowww.art_.png",
-    "note": "The Wowww design studio website combines iridescent 3D lettering, particles and playful scroll-driven transformations, unique rotating testimonials, and fun contact mailbox all against a black canvas ",
-    "source": "One Page Love",
-    "kind": "gallery"
-   },
-   {
-    "title": "Verse Engine by Ctruh",
-    "url": "https://www.producthunt.com/products/verse-engine-by-ctruh",
-    "note": "Blender, Unity or Unreal to a live 3D link in one click",
+    "title": "Andromon",
+    "url": "https://www.producthunt.com/products/andromon",
+    "note": "Your Android phone, on your computer. Free.",
     "source": "Product Hunt · Today",
     "kind": "trending"
    }
   ],
   "app": [
    {
-    "title": "Upsolve MCP Connections",
-    "url": "https://www.producthunt.com/products/upsolve-ai",
-    "note": "Plug Notion, Linear and more into your data agent",
+    "title": "LOMI",
+    "url": "https://www.producthunt.com/products/lomi-local-model-intelligence",
+    "note": "Run AI models locally on your Android device",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "elementalsouls/Claude-BugHunter",
+    "url": "https://github.com/elementalsouls/Claude-BugHunter",
+    "image": "https://opengraph.githubassets.com/1/elementalsouls/Claude-BugHunter",
+    "by": "★ 1,349 today",
+    "note": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identi",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "Kuc-kuc",
+    "url": "https://www.producthunt.com/products/kuc-kuc",
+    "note": "A knock on the door when dangerous weather comes",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -205,15 +221,15 @@
     "title": "obra/superpowers",
     "url": "https://github.com/obra/superpowers",
     "image": "https://opengraph.githubassets.com/1/obra/superpowers",
-    "by": "★ 2,029 today",
+    "by": "★ 888 today",
     "note": "An agentic skills framework & software development methodology that works.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "HeyGen Avatar 6",
-    "url": "https://www.producthunt.com/products/heygen",
-    "note": "AI Avatar Model That Looks Like You",
+    "title": "Same Moon",
+    "url": "https://www.producthunt.com/products/same-moon",
+    "note": "Free bedtime stories for children who had to leave home",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -221,15 +237,15 @@
     "title": "HKUDS/CLI-Anything",
     "url": "https://github.com/HKUDS/CLI-Anything",
     "image": "https://opengraph.githubassets.com/1/HKUDS/CLI-Anything",
-    "by": "★ 899 today",
+    "by": "★ 774 today",
     "note": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Rezora IO",
-    "url": "https://www.producthunt.com/products/rezora-io-ai-calling-assistant",
-    "note": "Shopify for AI voice agents: live in 10 minutes",
+    "title": "Andromon",
+    "url": "https://www.producthunt.com/products/andromon",
+    "note": "Your Android phone, on your computer. Free.",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -237,15 +253,15 @@
     "title": "jingyaogong/minimind",
     "url": "https://github.com/jingyaogong/minimind",
     "image": "https://opengraph.githubassets.com/1/jingyaogong/minimind",
-    "by": "★ 687 today",
+    "by": "★ 238 today",
     "note": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Verse Engine by Ctruh",
-    "url": "https://www.producthunt.com/products/verse-engine-by-ctruh",
-    "note": "Blender, Unity or Unreal to a live 3D link in one click",
+    "title": "Rox",
+    "url": "https://www.producthunt.com/products/rox-2",
+    "note": "Your AI companion for living with chronic illness",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -253,15 +269,15 @@
     "title": "cursor/plugins",
     "url": "https://github.com/cursor/plugins",
     "image": "https://opengraph.githubassets.com/1/cursor/plugins",
-    "by": "★ 383 today",
+    "by": "★ 292 today",
     "note": "Cursor plugin specification and official plugins",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Stripo Email Widgets",
-    "url": "https://www.producthunt.com/products/stripo-email",
-    "note": "Put a game, quiz or survey in your next email. No coding",
+    "title": "InteraOne",
+    "url": "https://www.producthunt.com/products/interaone",
+    "note": "Open-source Intercom & Zendesk alternative with AI agents",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -269,24 +285,8 @@
     "title": "firecrawl/firecrawl",
     "url": "https://github.com/firecrawl/firecrawl",
     "image": "https://opengraph.githubassets.com/1/firecrawl/firecrawl",
-    "by": "★ 795 today",
+    "by": "★ 825 today",
     "note": "Knowledge infrastructure to make your agents smarter. Search, scrape and 550+ data providers through one API.",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Netlify Server",
-    "url": "https://www.producthunt.com/products/netlify",
-    "note": "Run WebSockets, multiplayer apps, and long-running agents",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "nginx/nginx",
-    "url": "https://github.com/nginx/nginx",
-    "image": "https://opengraph.githubassets.com/1/nginx/nginx",
-    "by": "★ 66 today",
-    "note": "The official NGINX Open Source repository.",
     "source": "GitHub Trending",
     "kind": "trending"
    }
@@ -302,6 +302,29 @@
     "kind": "performance"
    },
    {
+    "title": "Les Vouèsins",
+    "url": "https://vimeo.com/channels/staffpicks/1245704717",
+    "image": "https://i.vimeocdn.com/video/2225484360-97ced56687f6b6a86a783a77b1d14de4f28313af5c30543ff1e9eaab50ee6341-d_960?region=us",
+    "note": "In this cautionary tale from Missouri&rsquo;s French Creole community, Petit Jean is a farmer who also happens to be the devil&rsquo;s neighbor. The two work their&hellip;",
+    "source": "Vimeo Staff Picks",
+    "kind": "gallery"
+   },
+   {
+    "title": "Blinkink Signs Director Emma Debany for representation Across UK and Europe",
+    "url": "https://www.stashmedia.tv/blinkink-signs-director-emma-debany-for-representation-across-uk-and-europe/",
+    "note": "From the release: Blinkink are excited to announce that LA-based, award winning, writer and director Emma Debany has joined our roster for representation across the UK and Europe!  [Watch]\nThe post Bl",
+    "source": "STASH",
+    "kind": "gallery"
+   },
+   {
+    "title": "“The Dreamer”: An Apple Holiday Film featuring MacBook Neo",
+    "url": "https://www.youtube.com/watch?v=Sp54mxnWjUM",
+    "image": "https://i.ytimg.com/vi/Sp54mxnWjUM/hqdefault.jpg",
+    "by": "4.8M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
     "title": "DISC",
     "url": "https://vimeo.com/channels/staffpicks/1247772037",
     "image": "https://i.vimeocdn.com/video/2227648157-31591204ee157196b61bbdbdb85521b767e73d27380b75035079e54f6271b025-d_960?region=us",
@@ -310,33 +333,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Creative Outpost Welcomes The Helm To London Studio",
-    "url": "https://www.stashmedia.tv/creative-outpost-welcomes-the-helm-to-london-studio/",
-    "note": "From the release: Independent post-production studio Creative Outpost has welcomed newly-launched offline edit house The Helm to its Fitzrovia headquarters, bringing together some of the industry's mo",
-    "source": "STASH",
-    "kind": "gallery"
-   },
-   {
-    "title": "“The Dreamer”: An Apple Holiday Film featuring MacBook Neo",
-    "url": "https://www.youtube.com/watch?v=Sp54mxnWjUM",
-    "image": "https://i.ytimg.com/vi/Sp54mxnWjUM/hqdefault.jpg",
-    "by": "4.7M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "Dancing on Osees",
-    "url": "https://vimeo.com/channels/staffpicks/1236237071",
-    "image": "https://i.vimeocdn.com/video/2212683008-9be4589f0ebd0a780d84c5d1b86310ba41e13569daf64da5a3547423e82e7159-d_960?region=us",
-    "note": "Self-initiated animation on the song Together Tomorrow by Osees. All hand drawn on paper, 100% human.",
-    "source": "Vimeo Staff Picks",
-    "kind": "gallery"
-   },
-   {
-    "title": "The Cutest Dancing Smart Speaker That Never Was",
-    "url": "https://www.stashmedia.tv/the-cutest-dancing-smart-speaker-that-never-was/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Teenage-Engineering-Raven-R-Dancing-Speaker-animation-by-Peter-Pongo-STASH-MAGAZINE4-1920x1080.jpg",
-    "note": "In 2018, AI/smart hardware startup Raven Tech collaborated with Teenage Engineering on the prototype for the Raven R, a dancing smart speaker. Now, thanks to 3D motion designer Peter Pongó, we get a g",
+    "title": "The Stash x OFFF Montreal 2026 Panel Follow-Up Part 1",
+    "url": "https://www.stashmedia.tv/the-stash-x-offf-montreal-2026-panel-follow-up-part-1/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Stash-Panel-BREAKING-THROUGH-at-OFFF-Montreal-2026-STASH-MAGAZINE.jpg",
+    "note": "This past September we brought our hit BREAKING THROUGH panel to OFFF Montreal with a new lineup and the same premise: how studios and individual creatives get seen, find reps, win pitches, and land t",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -349,17 +349,18 @@
     "kind": "performance"
    },
    {
-    "title": "Blue",
-    "url": "https://vimeo.com/channels/staffpicks/1247312751",
-    "image": "https://i.vimeocdn.com/video/2228050380-8bb7f817dd0bfa89dd91ddf790b884fc2706a168b06deb67b9a2a7d3d11c3d2a-d_960?region=us",
-    "note": "Josh runs into an old friend.  Written, Directed, and Edited by Ethan Romaine Starring Nathan Vincenti and Jada Delgado Cinematography by Benjy Berkowitz Sound Design&hellip;",
+    "title": "Dancing on Osees",
+    "url": "https://vimeo.com/channels/staffpicks/1236237071",
+    "image": "https://i.vimeocdn.com/video/2212683008-9be4589f0ebd0a780d84c5d1b86310ba41e13569daf64da5a3547423e82e7159-d_960?region=us",
+    "note": "Self-initiated animation on the song Together Tomorrow by Osees. All hand drawn on paper, 100% human.",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
    {
-    "title": "LOS YORK Appoints Mathew Lancaster as Head of Films",
-    "url": "https://www.stashmedia.tv/los-york-appoints-mathew-lancaster-as-head-of-films/",
-    "note": "From the release: Award-winning global creative company LOS YORK has appointed Mathew Lancaster as Head of Films, marking a focused investment in LOS FILMS and the next stage of its director roster. [",
+    "title": "Catherine Lepage & Friends Go “Dancing on Osees”",
+    "url": "https://www.stashmedia.tv/catherine-lepage-friends-go-dancing-on-osees/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Catherine-Lepage-22Dancing-on-Osees22-short-film-STASH-MAGAZINE2-1920x1057.jpg",
+    "note": "With the recent spike in fully AI-generated submissions to Stash (most of them dispiriting), it's refreshing to find such raw, handmade work as this music-driven film by Montreal artist, illustrator, ",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -372,34 +373,34 @@
     "kind": "performance"
    },
    {
-    "title": "IMaGO",
-    "url": "https://vimeo.com/channels/staffpicks/1243581164",
-    "image": "https://i.vimeocdn.com/video/2222731672-986a973875a7aee0b56eff1b7323a5dbea1922441e1e4a61e8848eaad75930ae-d_960?region=us",
-    "note": "When Ana's mom starts transforming into a bug, their codependent relationship reaches its boiling point.  Starring Didi Romero, Ada Luz Pla, Josh Plasse, Denise&hellip;",
+    "title": "Blue",
+    "url": "https://vimeo.com/channels/staffpicks/1247312751",
+    "image": "https://i.vimeocdn.com/video/2228050380-8bb7f817dd0bfa89dd91ddf790b884fc2706a168b06deb67b9a2a7d3d11c3d2a-d_960?region=us",
+    "note": "Josh runs into an old friend.  Written, Directed, and Edited by Ethan Romaine Starring Nathan Vincenti and Jada Delgado Cinematography by Benjy Berkowitz Sound Design&hellip;",
     "source": "Vimeo Staff Picks",
-    "kind": "gallery"
-   },
-   {
-    "title": "Postoffice Amsterdam “Give the Gift of Closeness” for Swiss Brands United",
-    "url": "https://www.stashmedia.tv/postoffice-amsterdam-give-the-gift-of-closeness-for-swiss-brands-united/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Swiss-Brands-United-22Give-the-Gift-of-Closeness22-ad-by-Duncan-Christie-Postoffice-Amsterdam-STASH-MAGAZINE4-1920x961.jpg",
-    "note": "You could go a lifetime never hearing about an axolotl, but this holiday we got a pair, the adventurous one  last week from ETC for Netflix, and today the heart-warming version from Postoffice Amsterd",
-    "source": "STASH",
-    "kind": "gallery"
-   }
-  ],
-  "motion": [
-   {
-    "title": "Eeny, Meeny, Miny, Moe! Building a New Myth for the Kids Who Feel Too Much",
-    "url": "https://motionographer.com/2026/11/18/eeny-meeny-miny-moe-building-a-new-myth-for-the-kids-who-feel-too-much/",
-    "note": "A boy with a sun for a head, a playground of young gods and monsters, and a counting rhyme about who gets chosen. Jesse Rylander talks with director Andrea Szelesová and producer Kristina Husová about",
-    "source": "Motionographer",
     "kind": "gallery"
    },
    {
     "title": "Creative Outpost Welcomes The Helm To London Studio",
     "url": "https://www.stashmedia.tv/creative-outpost-welcomes-the-helm-to-london-studio/",
     "note": "From the release: Independent post-production studio Creative Outpost has welcomed newly-launched offline edit house The Helm to its Fitzrovia headquarters, bringing together some of the industry's mo",
+    "source": "STASH",
+    "kind": "gallery"
+   }
+  ],
+  "motion": [
+   {
+    "title": "The Long Way to “I Do”: A Porsche Love Story, Hand-Painted Frame by Frame",
+    "url": "https://motionographer.com/news/porsche-the-long-way-to-i-do-em-cooper-tonic-dna/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/porsche-the-long-way-to-i-do-film-still.png",
+    "note": "Director Em Cooper turns a restored 1966 Porsche 912 and the couple who rebuilt it into a moving oil painting.",
+    "source": "Motionographer",
+    "kind": "gallery"
+   },
+   {
+    "title": "Blinkink Signs Director Emma Debany for representation Across UK and Europe",
+    "url": "https://www.stashmedia.tv/blinkink-signs-director-emma-debany-for-representation-across-uk-and-europe/",
+    "note": "From the release: Blinkink are excited to announce that LA-based, award winning, writer and director Emma Debany has joined our roster for representation across the UK and Europe!  [Watch]\nThe post Bl",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -412,17 +413,18 @@
     "kind": "gallery"
    },
    {
-    "title": "SuperBlimp | Captain Itch",
-    "url": "https://motionographer.com/quickie/superblimp-captain-itch/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/superblimp-captain-itch-3099733087-scaled.jpg",
+    "title": "MAMMAL | Sequential Momentum",
+    "url": "https://motionographer.com/quickie/mammal-sequential-momentum/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/TCM_SequentialMomentum_06-scaled.jpeg",
+    "note": "Watch the full film on Vimeo The newest TCM IDs from MAMMAL act as a series of self-contained vignettes, designed to evolve TCM’s rebrand while deepening its connection to iconic film moments. Each pi",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "The Cutest Dancing Smart Speaker That Never Was",
-    "url": "https://www.stashmedia.tv/the-cutest-dancing-smart-speaker-that-never-was/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Teenage-Engineering-Raven-R-Dancing-Speaker-animation-by-Peter-Pongo-STASH-MAGAZINE4-1920x1080.jpg",
-    "note": "In 2018, AI/smart hardware startup Raven Tech collaborated with Teenage Engineering on the prototype for the Raven R, a dancing smart speaker. Now, thanks to 3D motion designer Peter Pongó, we get a g",
+    "title": "The Stash x OFFF Montreal 2026 Panel Follow-Up Part 1",
+    "url": "https://www.stashmedia.tv/the-stash-x-offf-montreal-2026-panel-follow-up-part-1/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Stash-Panel-BREAKING-THROUGH-at-OFFF-Montreal-2026-STASH-MAGAZINE.jpg",
+    "note": "This past September we brought our hit BREAKING THROUGH panel to OFFF Montreal with a new lineup and the same premise: how studios and individual creatives get seen, find reps, win pitches, and land t",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -435,17 +437,17 @@
     "kind": "gallery"
    },
    {
-    "title": "Marie Lavis | Where Did My Diamond Go?",
-    "url": "https://motionographer.com/quickie/marie-lavis-where-did-my-diamond-go/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/marie-lavis-diamond-animation-scaled.png",
-    "note": "Marie Lavis translates Jacob Collier’s musical sketch into an animated pursuit of an elusive treasure, made entirely on an iPad.",
+    "title": "Eeny, Meeny, Miny, Moe! Building a New Myth for the Kids Who Feel Too Much",
+    "url": "https://motionographer.com/2026/11/18/eeny-meeny-miny-moe-building-a-new-myth-for-the-kids-who-feel-too-much/",
+    "note": "A boy with a sun for a head, a playground of young gods and monsters, and a counting rhyme about who gets chosen. Jesse Rylander talks with director Andrea Szelesová and producer Kristina Husová about",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "LOS YORK Appoints Mathew Lancaster as Head of Films",
-    "url": "https://www.stashmedia.tv/los-york-appoints-mathew-lancaster-as-head-of-films/",
-    "note": "From the release: Award-winning global creative company LOS YORK has appointed Mathew Lancaster as Head of Films, marking a focused investment in LOS FILMS and the next stage of its director roster. [",
+    "title": "Catherine Lepage & Friends Go “Dancing on Osees”",
+    "url": "https://www.stashmedia.tv/catherine-lepage-friends-go-dancing-on-osees/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Catherine-Lepage-22Dancing-on-Osees22-short-film-STASH-MAGAZINE2-1920x1057.jpg",
+    "note": "With the recent spike in fully AI-generated submissions to Stash (most of them dispiriting), it's refreshing to find such raw, handmade work as this music-driven film by Montreal artist, illustrator, ",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -458,18 +460,16 @@
     "kind": "gallery"
    },
    {
-    "title": "Woodwork Amsterdam Launches Visual Valley, an Immersive Storytelling Label",
-    "url": "https://motionographer.com/news/woodwork-amsterdam-visual-valley-immersive-storytelling-label/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/visual-valley-press-release-01-original.jpg",
-    "note": "The Amsterdam studio brings its immersive work for museums, venues and brands under a dedicated label, with narrative at the center of the experience.",
+    "title": "SuperBlimp | Captain Itch",
+    "url": "https://motionographer.com/quickie/superblimp-captain-itch/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/superblimp-captain-itch-3099733087-scaled.jpg",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "Postoffice Amsterdam “Give the Gift of Closeness” for Swiss Brands United",
-    "url": "https://www.stashmedia.tv/postoffice-amsterdam-give-the-gift-of-closeness-for-swiss-brands-united/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Swiss-Brands-United-22Give-the-Gift-of-Closeness22-ad-by-Duncan-Christie-Postoffice-Amsterdam-STASH-MAGAZINE4-1920x961.jpg",
-    "note": "You could go a lifetime never hearing about an axolotl, but this holiday we got a pair, the adventurous one  last week from ETC for Netflix, and today the heart-warming version from Postoffice Amsterd",
+    "title": "Creative Outpost Welcomes The Helm To London Studio",
+    "url": "https://www.stashmedia.tv/creative-outpost-welcomes-the-helm-to-london-studio/",
+    "note": "From the release: Independent post-production studio Creative Outpost has welcomed newly-launched offline edit house The Helm to its Fitzrovia headquarters, bringing together some of the industry's mo",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -492,24 +492,25 @@
     "kind": "performance"
    },
    {
-    "title": "DISC",
-    "url": "https://vimeo.com/channels/staffpicks/1247772037",
-    "image": "https://i.vimeocdn.com/video/2227648157-31591204ee157196b61bbdbdb85521b767e73d27380b75035079e54f6271b025-d_960?region=us",
-    "note": "The story of a hookup gone too far up.",
+    "title": "Les Vouèsins",
+    "url": "https://vimeo.com/channels/staffpicks/1245704717",
+    "image": "https://i.vimeocdn.com/video/2225484360-97ced56687f6b6a86a783a77b1d14de4f28313af5c30543ff1e9eaab50ee6341-d_960?region=us",
+    "note": "In this cautionary tale from Missouri&rsquo;s French Creole community, Petit Jean is a farmer who also happens to be the devil&rsquo;s neighbor. The two work their&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
    {
-    "title": "Eeny, Meeny, Miny, Moe! Building a New Myth for the Kids Who Feel Too Much",
-    "url": "https://motionographer.com/2026/11/18/eeny-meeny-miny-moe-building-a-new-myth-for-the-kids-who-feel-too-much/",
-    "note": "A boy with a sun for a head, a playground of young gods and monsters, and a counting rhyme about who gets chosen. Jesse Rylander talks with director Andrea Szelesová and producer Kristina Husová about",
+    "title": "The Long Way to “I Do”: A Porsche Love Story, Hand-Painted Frame by Frame",
+    "url": "https://motionographer.com/news/porsche-the-long-way-to-i-do-em-cooper-tonic-dna/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/porsche-the-long-way-to-i-do-film-still.png",
+    "note": "Director Em Cooper turns a restored 1966 Porsche 912 and the couple who rebuilt it into a moving oil painting.",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "Creative Outpost Welcomes The Helm To London Studio",
-    "url": "https://www.stashmedia.tv/creative-outpost-welcomes-the-helm-to-london-studio/",
-    "note": "From the release: Independent post-production studio Creative Outpost has welcomed newly-launched offline edit house The Helm to its Fitzrovia headquarters, bringing together some of the industry's mo",
+    "title": "Blinkink Signs Director Emma Debany for representation Across UK and Europe",
+    "url": "https://www.stashmedia.tv/blinkink-signs-director-emma-debany-for-representation-across-uk-and-europe/",
+    "note": "From the release: Blinkink are excited to announce that LA-based, award winning, writer and director Emma Debany has joined our roster for representation across the UK and Europe!  [Watch]\nThe post Bl",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -522,25 +523,26 @@
     "kind": "performance"
    },
    {
-    "title": "Dancing on Osees",
-    "url": "https://vimeo.com/channels/staffpicks/1236237071",
-    "image": "https://i.vimeocdn.com/video/2212683008-9be4589f0ebd0a780d84c5d1b86310ba41e13569daf64da5a3547423e82e7159-d_960?region=us",
-    "note": "Self-initiated animation on the song Together Tomorrow by Osees. All hand drawn on paper, 100% human.",
+    "title": "DISC",
+    "url": "https://vimeo.com/channels/staffpicks/1247772037",
+    "image": "https://i.vimeocdn.com/video/2227648157-31591204ee157196b61bbdbdb85521b767e73d27380b75035079e54f6271b025-d_960?region=us",
+    "note": "The story of a hookup gone too far up.",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
    {
-    "title": "SuperBlimp | Captain Itch",
-    "url": "https://motionographer.com/quickie/superblimp-captain-itch/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/superblimp-captain-itch-3099733087-scaled.jpg",
+    "title": "MAMMAL | Sequential Momentum",
+    "url": "https://motionographer.com/quickie/mammal-sequential-momentum/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/TCM_SequentialMomentum_06-scaled.jpeg",
+    "note": "Watch the full film on Vimeo The newest TCM IDs from MAMMAL act as a series of self-contained vignettes, designed to evolve TCM’s rebrand while deepening its connection to iconic film moments. Each pi",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "The Cutest Dancing Smart Speaker That Never Was",
-    "url": "https://www.stashmedia.tv/the-cutest-dancing-smart-speaker-that-never-was/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Teenage-Engineering-Raven-R-Dancing-Speaker-animation-by-Peter-Pongo-STASH-MAGAZINE4-1920x1080.jpg",
-    "note": "In 2018, AI/smart hardware startup Raven Tech collaborated with Teenage Engineering on the prototype for the Raven R, a dancing smart speaker. Now, thanks to 3D motion designer Peter Pongó, we get a g",
+    "title": "The Stash x OFFF Montreal 2026 Panel Follow-Up Part 1",
+    "url": "https://www.stashmedia.tv/the-stash-x-offf-montreal-2026-panel-follow-up-part-1/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Stash-Panel-BREAKING-THROUGH-at-OFFF-Montreal-2026-STASH-MAGAZINE.jpg",
+    "note": "This past September we brought our hit BREAKING THROUGH panel to OFFF Montreal with a new lineup and the same premise: how studios and individual creatives get seen, find reps, win pitches, and land t",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -553,25 +555,25 @@
     "kind": "performance"
    },
    {
-    "title": "Blue",
-    "url": "https://vimeo.com/channels/staffpicks/1247312751",
-    "image": "https://i.vimeocdn.com/video/2228050380-8bb7f817dd0bfa89dd91ddf790b884fc2706a168b06deb67b9a2a7d3d11c3d2a-d_960?region=us",
-    "note": "Josh runs into an old friend.  Written, Directed, and Edited by Ethan Romaine Starring Nathan Vincenti and Jada Delgado Cinematography by Benjy Berkowitz Sound Design&hellip;",
+    "title": "Dancing on Osees",
+    "url": "https://vimeo.com/channels/staffpicks/1236237071",
+    "image": "https://i.vimeocdn.com/video/2212683008-9be4589f0ebd0a780d84c5d1b86310ba41e13569daf64da5a3547423e82e7159-d_960?region=us",
+    "note": "Self-initiated animation on the song Together Tomorrow by Osees. All hand drawn on paper, 100% human.",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
    {
-    "title": "Marie Lavis | Where Did My Diamond Go?",
-    "url": "https://motionographer.com/quickie/marie-lavis-where-did-my-diamond-go/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/marie-lavis-diamond-animation-scaled.png",
-    "note": "Marie Lavis translates Jacob Collier’s musical sketch into an animated pursuit of an elusive treasure, made entirely on an iPad.",
+    "title": "Eeny, Meeny, Miny, Moe! Building a New Myth for the Kids Who Feel Too Much",
+    "url": "https://motionographer.com/2026/11/18/eeny-meeny-miny-moe-building-a-new-myth-for-the-kids-who-feel-too-much/",
+    "note": "A boy with a sun for a head, a playground of young gods and monsters, and a counting rhyme about who gets chosen. Jesse Rylander talks with director Andrea Szelesová and producer Kristina Husová about",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "LOS YORK Appoints Mathew Lancaster as Head of Films",
-    "url": "https://www.stashmedia.tv/los-york-appoints-mathew-lancaster-as-head-of-films/",
-    "note": "From the release: Award-winning global creative company LOS YORK has appointed Mathew Lancaster as Head of Films, marking a focused investment in LOS FILMS and the next stage of its director roster. [",
+    "title": "Catherine Lepage & Friends Go “Dancing on Osees”",
+    "url": "https://www.stashmedia.tv/catherine-lepage-friends-go-dancing-on-osees/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Catherine-Lepage-22Dancing-on-Osees22-short-film-STASH-MAGAZINE2-1920x1057.jpg",
+    "note": "With the recent spike in fully AI-generated submissions to Stash (most of them dispiriting), it's refreshing to find such raw, handmade work as this music-driven film by Montreal artist, illustrator, ",
     "source": "STASH",
     "kind": "gallery"
    }
@@ -582,14 +584,6 @@
     "url": "https://www.youtube.com/watch?v=QS0QEqKGGIw",
     "image": "https://i.ytimg.com/vi/QS0QEqKGGIw/hqdefault.jpg",
     "by": "2.6M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "POV: The World's Biggest Human Catapult 😳",
-    "url": "https://www.youtube.com/watch?v=muokuPK7V_E",
-    "image": "https://i.ytimg.com/vi/muokuPK7V_E/hqdefault.jpg",
-    "by": "2.4M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -610,18 +604,18 @@
     "kind": "performance"
    },
    {
-    "title": "The Ultimate Race on ICE ❄️",
-    "url": "https://www.youtube.com/watch?v=0Qs7uYqVOUM",
-    "image": "https://i.ytimg.com/vi/0Qs7uYqVOUM/hqdefault.jpg",
-    "by": "1.7M views",
+    "title": "Racing An F1 Car on ICE 🥶",
+    "url": "https://www.youtube.com/watch?v=rUUEFnaY7_E",
+    "image": "https://i.ytimg.com/vi/rUUEFnaY7_E/hqdefault.jpg",
+    "by": "1.9M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
    {
-    "title": "Racing An F1 Car on ICE 🥶",
-    "url": "https://www.youtube.com/watch?v=rUUEFnaY7_E",
-    "image": "https://i.ytimg.com/vi/rUUEFnaY7_E/hqdefault.jpg",
-    "by": "1.4M views",
+    "title": "The Ultimate Race on ICE ❄️",
+    "url": "https://www.youtube.com/watch?v=0Qs7uYqVOUM",
+    "image": "https://i.ytimg.com/vi/0Qs7uYqVOUM/hqdefault.jpg",
+    "by": "1.8M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -629,7 +623,7 @@
     "title": "Skim or Swim 💦",
     "url": "https://www.youtube.com/watch?v=dNnIB16HsMg",
     "image": "https://i.ytimg.com/vi/dNnIB16HsMg/hqdefault.jpg",
-    "by": "1.1M views",
+    "by": "1.5M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -637,7 +631,7 @@
     "title": "POV: 55ft MTB Freefall 🎬 Antoni Villoni #GoPro",
     "url": "https://www.youtube.com/watch?v=tAIjGmGVa1g",
     "image": "https://i.ytimg.com/vi/tAIjGmGVa1g/hqdefault.jpg",
-    "by": "841K views",
+    "by": "1M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -645,7 +639,7 @@
     "title": "They Went HOW fast?? 😳",
     "url": "https://www.youtube.com/watch?v=YLpdWPeSC8M",
     "image": "https://i.ytimg.com/vi/YLpdWPeSC8M/hqdefault.jpg",
-    "by": "577K views",
+    "by": "673K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -661,7 +655,7 @@
     "title": "you're hooked on me i'm hooked on sakura mochi 🍡 🎨: @brerbo",
     "url": "https://www.youtube.com/watch?v=TrEHPMqHVAc",
     "image": "https://i.ytimg.com/vi/TrEHPMqHVAc/hqdefault.jpg",
-    "by": "426K views",
+    "by": "455K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -669,81 +663,89 @@
     "title": "y'all need to lock in on ur listening exercises 🎨: @brerbo",
     "url": "https://www.youtube.com/watch?v=jNctdfv480U",
     "image": "https://i.ytimg.com/vi/jNctdfv480U/hqdefault.jpg",
-    "by": "377K views",
+    "by": "387K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Get sorted for college with Roxie from the Apple Store.",
+    "url": "https://www.youtube.com/watch?v=P5GxUjU4uBI",
+    "image": "https://i.ytimg.com/vi/P5GxUjU4uBI/hqdefault.jpg",
+    "by": "370K views",
     "source": "Latest from brands",
     "kind": "performance"
    }
   ],
   "post": [
    {
-    "title": "We need smart people who give a shit",
-    "url": "https://violetpixel.com/blog/2026-11-17-we-need-smart-people-who-give-a-shit/",
+    "title": "Google is pushing OEMs against GrapheneOS and bootloader unlocking",
+    "url": "https://grapheneos.social/@GrapheneOS/117645038299496084",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Gemini 4 Neon",
-    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+    "title": "Gemini 4 Neon is the new #1 on the Models Engineering Index",
+    "url": "https://git-aarvin.github.io/mei/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Seven new models at scalable price-performance",
-    "url": "https://microsoft.ai/news/microsoft-ignite-2026/",
+    "title": "The 98% Slot Machine: How Paid Advertising Became an Extraction Tax",
+    "url": "https://globalcommercegraph.com/writing/the-ninety-eight-percent-slot-machine",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "AI agents ask better questions than KPMG accountants in audit trial",
-    "url": "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/",
+    "title": "Claude solves two open problems in the physics of black holes",
+    "url": "https://www.anthropic.com/research/claude-black-hole-physics",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Inside Deutsche Bank",
-    "url": "https://www.inside-db.com/",
+    "title": "Pancreatic cancer halted by virus injection in three patients",
+    "url": "https://www.newscientist.com/article/2528235-pancreatic-cancer-halted-by-virus-injection-in-three-patients/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Unauthenticated remote code execution in Nginx",
-    "url": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
+    "title": "Anthropic’s Nasdaq debut",
+    "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Russia reportedly planned mass-casualty attack in Poland to be blamed on Ukraine",
-    "url": "https://www.yahoo.com/news/world/articles/russia-reportedly-planned-mass-casualty-090500574.html",
+    "title": "Fuck Your AI Safeguards",
+    "url": "https://ounapuu.ee/posts/2026/11/19/unsafeguards/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "DNS resolvers are the wrong place to fight piracy",
-    "url": "https://techstackups.com/articles/quad9-leaves-france-dns-blocking/",
+    "title": "UK government forced to admit it issued Apple a secret encryption order",
+    "url": "https://macanorak.com/uk-government-forced-to-admit-it-issued-apple-a-secret-encryption-order/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Energy-Based Reasoners: 385x more efficient inference",
-    "url": "https://energy-based-reasoners.github.io/",
+    "title": "Everything you need to survive and rebuild society",
+    "url": "https://lastbook.org/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "AI is killing All About Berlin",
-    "url": "https://nicolasbouliane.com/blog/death-by-ai",
+    "title": "Making 8-page foldable zines from a single A4 sheet in the browser",
+    "url": "https://krthr.co/paper-folds-and-whats-new-in-fanzines-app/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Interviewed at a YC startup, found out they used my LinkedIn without permission",
-    "url": "https://reddit.com/r/recruitinghell/comments/1xyr6ml/interviewed_at_a_yc_startup_spent_30_hours/",
+    "title": "Someone reported java4shell bug in September 2026",
+    "url": "https://github.com/openjdk/jdk/pull/32781",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "ID.me terms required for IRS sign-in",
-    "url": "https://consumerrights.wiki/w/ID.me_terms_required_for_IRS_sign-in",
+    "title": "How the European Commission rolled out Matrix to more than 40k staff",
+    "url": "https://element.io/blog/how-the-european-commission-rolled-out-matrix-to-more-than-40-000-staff/",
     "source": "Hacker News · Best",
     "kind": "performance"
    }
@@ -758,10 +760,10 @@
     "kind": "performance"
    },
    {
-    "title": "THE END OF THE WORLD",
-    "url": "https://www.adsoftheworld.com/campaigns/the-end-of-the-world-699dd367-0801-4aff-bcbc-4b6257743de5",
-    "image": "https://image.adsoftheworld.com/bd33251ifwp8lh5ni0id1d9f5734",
-    "by": "Cerveza Andina",
+    "title": "The Baby Panthers' Nocturnal Journey",
+    "url": "https://www.adsoftheworld.com/campaigns/the-baby-panthers-nocturnal-journey",
+    "image": "https://image.adsoftheworld.com/4t1mm94j9zytpwbkr2jdi9lrqpsp",
+    "by": "Cartier",
     "source": "Ads of the World",
     "kind": "gallery"
    },
@@ -769,15 +771,15 @@
     "title": "“The Dreamer”: An Apple Holiday Film featuring MacBook Neo",
     "url": "https://www.youtube.com/watch?v=Sp54mxnWjUM",
     "image": "https://i.ytimg.com/vi/Sp54mxnWjUM/hqdefault.jpg",
-    "by": "4.7M views",
+    "by": "4.8M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
    {
-    "title": "Macaulay Culkin reprises his role as Kevin McCallister",
-    "url": "https://www.adsoftheworld.com/campaigns/macaulay-culkin-reprises-his-role-as-kevin-mccallister",
-    "image": "https://image.adsoftheworld.com/6nzg91x9a9zongw85jl97buj54y8",
-    "by": "McDonald's",
+    "title": "THE END OF THE WORLD",
+    "url": "https://www.adsoftheworld.com/campaigns/the-end-of-the-world-699dd367-0801-4aff-bcbc-4b6257743de5",
+    "image": "https://image.adsoftheworld.com/bd33251ifwp8lh5ni0id1d9f5734",
+    "by": "Cerveza Andina",
     "source": "Ads of the World",
     "kind": "gallery"
    },
@@ -790,10 +792,10 @@
     "kind": "performance"
    },
    {
-    "title": "You’re Golden",
-    "url": "https://www.adsoftheworld.com/campaigns/you-re-golden",
-    "image": "https://image.adsoftheworld.com/2bikscziqp0o64w6nropa5sp3zx0",
-    "by": "Hertz",
+    "title": "Macaulay Culkin reprises his role as Kevin McCallister",
+    "url": "https://www.adsoftheworld.com/campaigns/macaulay-culkin-reprises-his-role-as-kevin-mccallister",
+    "image": "https://image.adsoftheworld.com/6nzg91x9a9zongw85jl97buj54y8",
+    "by": "McDonald's",
     "source": "Ads of the World",
     "kind": "gallery"
    },
@@ -806,6 +808,22 @@
     "kind": "performance"
    },
    {
+    "title": "You’re Golden",
+    "url": "https://www.adsoftheworld.com/campaigns/you-re-golden",
+    "image": "https://image.adsoftheworld.com/2bikscziqp0o64w6nropa5sp3zx0",
+    "by": "Hertz",
+    "source": "Ads of the World",
+    "kind": "gallery"
+   },
+   {
+    "title": "What's going on at DuoMart!?! | DuoTV (Full Series)",
+    "url": "https://www.youtube.com/watch?v=YP2KYQZUkWY",
+    "image": "https://i.ytimg.com/vi/YP2KYQZUkWY/hqdefault.jpg",
+    "by": "491K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
     "title": "Not Really For Tourists",
     "url": "https://www.adsoftheworld.com/campaigns/not-really-for-tourists",
     "image": "https://image.adsoftheworld.com/txu7qrqx6thchblaqqa20q6n96ic",
@@ -814,26 +832,10 @@
     "kind": "gallery"
    },
    {
-    "title": "What's going on at DuoMart!?! | DuoTV (Full Series)",
-    "url": "https://www.youtube.com/watch?v=YP2KYQZUkWY",
-    "image": "https://i.ytimg.com/vi/YP2KYQZUkWY/hqdefault.jpg",
-    "by": "485K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "2027 CFE Campaign",
-    "url": "https://www.adsoftheworld.com/campaigns/2027-cfe-campaign",
-    "image": "https://image.adsoftheworld.com/zocgiat6z0anst7fze9blcra17jr",
-    "by": "Clio Awards",
-    "source": "Ads of the World",
-    "kind": "gallery"
-   },
-   {
     "title": "Caitlin 1 | Behind the Design | Nike",
     "url": "https://www.youtube.com/watch?v=628ogczUw6o",
     "image": "https://i.ytimg.com/vi/628ogczUw6o/hqdefault.jpg",
-    "by": "304K views",
+    "by": "305K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -841,7 +843,7 @@
     "title": "Apple Pay: The fast, easy, and secure way to pay.",
     "url": "https://www.youtube.com/watch?v=miUjxZ2ASRs",
     "image": "https://i.ytimg.com/vi/miUjxZ2ASRs/hqdefault.jpg",
-    "by": "286K views",
+    "by": "289K views",
     "source": "Latest from brands",
     "kind": "performance"
    }
