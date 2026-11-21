@@ -1,7 +1,31 @@
 {
- "updated": "2026-11-20T11:48:16.010Z",
+ "updated": "2026-11-21T11:14:24.382Z",
  "media": {
   "ui": [
+   {
+    "title": "Night Drive Racing Game",
+    "url": "https://www.awwwards.com/sites/night-drive-racing-game",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6abbd731284f6515683857.jpg",
+    "note": "A free-to-play racing game built with Three.js and WebGPU, featuring 50+ missions, realistic visuals, dynamic rain, physics, collectibles, and a huge city.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "Hollr",
+    "url": "https://www.producthunt.com/products/hollr-3",
+    "note": "Push-to-talk for your family, on iPhone and Apple Watch",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "elementalsouls/Claude-BugHunter",
+    "url": "https://github.com/elementalsouls/Claude-BugHunter",
+    "image": "https://opengraph.githubassets.com/1/elementalsouls/Claude-BugHunter",
+    "by": "★ 1,622 today",
+    "note": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identi",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
    {
     "title": "197 Historias Ilustradas",
     "url": "https://www.awwwards.com/sites/197-historias-ilustradas",
@@ -11,18 +35,18 @@
     "kind": "award"
    },
    {
-    "title": "LOMI",
-    "url": "https://www.producthunt.com/products/lomi-local-model-intelligence",
-    "note": "Run AI models locally on your Android device",
+    "title": "Beat Watcher",
+    "url": "https://www.producthunt.com/products/beat-watcher",
+    "note": "Fast Apple Watch heart rate alerts you can share with family",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "elementalsouls/Claude-BugHunter",
-    "url": "https://github.com/elementalsouls/Claude-BugHunter",
-    "image": "https://opengraph.githubassets.com/1/elementalsouls/Claude-BugHunter",
-    "by": "★ 1,349 today",
-    "note": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identi",
+    "title": "obra/superpowers",
+    "url": "https://github.com/obra/superpowers",
+    "image": "https://opengraph.githubassets.com/1/obra/superpowers",
+    "by": "★ 890 today",
+    "note": "An agentic skills framework & software development methodology that works.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
@@ -35,18 +59,18 @@
     "kind": "award"
    },
    {
-    "title": "Kuc-kuc",
-    "url": "https://www.producthunt.com/products/kuc-kuc",
-    "note": "A knock on the door when dangerous weather comes",
+    "title": "Alter Contacts",
+    "url": "https://www.producthunt.com/products/alter-contacts-ai-client-relationships",
+    "note": "AI client relationship assistant that thinks and does ahead",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "obra/superpowers",
-    "url": "https://github.com/obra/superpowers",
-    "image": "https://opengraph.githubassets.com/1/obra/superpowers",
-    "by": "★ 888 today",
-    "note": "An agentic skills framework & software development methodology that works.",
+    "title": "HKUDS/CLI-Anything",
+    "url": "https://github.com/HKUDS/CLI-Anything",
+    "image": "https://opengraph.githubassets.com/1/HKUDS/CLI-Anything",
+    "by": "★ 773 today",
+    "note": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
     "source": "GitHub Trending",
     "kind": "trending"
    },
@@ -59,33 +83,9 @@
     "kind": "award"
    },
    {
-    "title": "Same Moon",
-    "url": "https://www.producthunt.com/products/same-moon",
-    "note": "Free bedtime stories for children who had to leave home",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "HKUDS/CLI-Anything",
-    "url": "https://github.com/HKUDS/CLI-Anything",
-    "image": "https://opengraph.githubassets.com/1/HKUDS/CLI-Anything",
-    "by": "★ 774 today",
-    "note": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Sweet Tape",
-    "url": "https://www.awwwards.com/sites/sweet-tape",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6abcd26414b0a515009810.jpg",
-    "note": "Reimagine an everyday tape essential as something more thoughtful, expressive, and full of heart.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
-   },
-   {
-    "title": "Andromon",
-    "url": "https://www.producthunt.com/products/andromon",
-    "note": "Your Android phone, on your computer. Free.",
+    "title": "OpenVorld",
+    "url": "https://www.producthunt.com/products/openvorld",
+    "note": "Give your AI agents a home you can see",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -93,13 +93,36 @@
     "title": "jingyaogong/minimind",
     "url": "https://github.com/jingyaogong/minimind",
     "image": "https://opengraph.githubassets.com/1/jingyaogong/minimind",
-    "by": "★ 238 today",
+    "by": "★ 847 today",
     "note": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
     "source": "GitHub Trending",
     "kind": "trending"
    }
   ],
   "landing": [
+   {
+    "title": "Night Drive Racing Game",
+    "url": "https://www.awwwards.com/sites/night-drive-racing-game",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6abbd731284f6515683857.jpg",
+    "note": "A free-to-play racing game built with Three.js and WebGPU, featuring 50+ missions, realistic visuals, dynamic rain, physics, collectibles, and a huge city.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "Soma",
+    "url": "https://onepagelove.com/soma",
+    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/11/opl-screenshot-soma-fitness-1795100574044-desktop.jpg",
+    "note": "Soma analyzes voice signals on Mac and iPhone to track mental state and identify what affects how users think and feel. It has a refined ivory interface with generous whitespace, monochrome product pr",
+    "source": "One Page Love",
+    "kind": "gallery"
+   },
+   {
+    "title": "Hollr",
+    "url": "https://www.producthunt.com/products/hollr-3",
+    "note": "Push-to-talk for your family, on iPhone and Apple Watch",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
    {
     "title": "197 Historias Ilustradas",
     "url": "https://www.awwwards.com/sites/197-historias-ilustradas",
@@ -117,9 +140,9 @@
     "kind": "gallery"
    },
    {
-    "title": "LOMI",
-    "url": "https://www.producthunt.com/products/lomi-local-model-intelligence",
-    "note": "Run AI models locally on your Android device",
+    "title": "Beat Watcher",
+    "url": "https://www.producthunt.com/products/beat-watcher",
+    "note": "Fast Apple Watch heart rate alerts you can share with family",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -140,9 +163,9 @@
     "kind": "gallery"
    },
    {
-    "title": "Kuc-kuc",
-    "url": "https://www.producthunt.com/products/kuc-kuc",
-    "note": "A knock on the door when dangerous weather comes",
+    "title": "Alter Contacts",
+    "url": "https://www.producthunt.com/products/alter-contacts-ai-client-relationships",
+    "note": "AI client relationship assistant that thinks and does ahead",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -163,41 +186,18 @@
     "kind": "gallery"
    },
    {
-    "title": "Same Moon",
-    "url": "https://www.producthunt.com/products/same-moon",
-    "note": "Free bedtime stories for children who had to leave home",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "Sweet Tape",
-    "url": "https://www.awwwards.com/sites/sweet-tape",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6abcd26414b0a515009810.jpg",
-    "note": "Reimagine an everyday tape essential as something more thoughtful, expressive, and full of heart.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
-   },
-   {
-    "title": "Hoy",
-    "url": "https://onepagelove.com/hoy",
-    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/11/opl-screenshot-hoy-c2b7-1794579587612-desktop.jpg",
-    "note": "Hoy integrates contact management directly into Mac, allowing users to quickly share files with anyone. The landing page uses expansive white space, floating circular avatars and a scroll-controlled d",
-    "source": "One Page Love",
-    "kind": "gallery"
-   },
-   {
-    "title": "Andromon",
-    "url": "https://www.producthunt.com/products/andromon",
-    "note": "Your Android phone, on your computer. Free.",
+    "title": "OpenVorld",
+    "url": "https://www.producthunt.com/products/openvorld",
+    "note": "Give your AI agents a home you can see",
     "source": "Product Hunt · Today",
     "kind": "trending"
    }
   ],
   "app": [
    {
-    "title": "LOMI",
-    "url": "https://www.producthunt.com/products/lomi-local-model-intelligence",
-    "note": "Run AI models locally on your Android device",
+    "title": "Hollr",
+    "url": "https://www.producthunt.com/products/hollr-3",
+    "note": "Push-to-talk for your family, on iPhone and Apple Watch",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -205,15 +205,15 @@
     "title": "elementalsouls/Claude-BugHunter",
     "url": "https://github.com/elementalsouls/Claude-BugHunter",
     "image": "https://opengraph.githubassets.com/1/elementalsouls/Claude-BugHunter",
-    "by": "★ 1,349 today",
+    "by": "★ 1,622 today",
     "note": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identi",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Kuc-kuc",
-    "url": "https://www.producthunt.com/products/kuc-kuc",
-    "note": "A knock on the door when dangerous weather comes",
+    "title": "Beat Watcher",
+    "url": "https://www.producthunt.com/products/beat-watcher",
+    "note": "Fast Apple Watch heart rate alerts you can share with family",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -221,15 +221,15 @@
     "title": "obra/superpowers",
     "url": "https://github.com/obra/superpowers",
     "image": "https://opengraph.githubassets.com/1/obra/superpowers",
-    "by": "★ 888 today",
+    "by": "★ 890 today",
     "note": "An agentic skills framework & software development methodology that works.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Same Moon",
-    "url": "https://www.producthunt.com/products/same-moon",
-    "note": "Free bedtime stories for children who had to leave home",
+    "title": "Alter Contacts",
+    "url": "https://www.producthunt.com/products/alter-contacts-ai-client-relationships",
+    "note": "AI client relationship assistant that thinks and does ahead",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -237,15 +237,15 @@
     "title": "HKUDS/CLI-Anything",
     "url": "https://github.com/HKUDS/CLI-Anything",
     "image": "https://opengraph.githubassets.com/1/HKUDS/CLI-Anything",
-    "by": "★ 774 today",
+    "by": "★ 773 today",
     "note": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Andromon",
-    "url": "https://www.producthunt.com/products/andromon",
-    "note": "Your Android phone, on your computer. Free.",
+    "title": "OpenVorld",
+    "url": "https://www.producthunt.com/products/openvorld",
+    "note": "Give your AI agents a home you can see",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -253,15 +253,15 @@
     "title": "jingyaogong/minimind",
     "url": "https://github.com/jingyaogong/minimind",
     "image": "https://opengraph.githubassets.com/1/jingyaogong/minimind",
-    "by": "★ 238 today",
+    "by": "★ 847 today",
     "note": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Rox",
-    "url": "https://www.producthunt.com/products/rox-2",
-    "note": "Your AI companion for living with chronic illness",
+    "title": "Backspin",
+    "url": "https://www.producthunt.com/products/backspin",
+    "note": "Learn to DJ in your browser, on real vinyl decks",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -269,15 +269,15 @@
     "title": "cursor/plugins",
     "url": "https://github.com/cursor/plugins",
     "image": "https://opengraph.githubassets.com/1/cursor/plugins",
-    "by": "★ 292 today",
+    "by": "★ 299 today",
     "note": "Cursor plugin specification and official plugins",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "InteraOne",
-    "url": "https://www.producthunt.com/products/interaone",
-    "note": "Open-source Intercom & Zendesk alternative with AI agents",
+    "title": "Stitch Loop",
+    "url": "https://www.producthunt.com/products/stitch-loop",
+    "note": "Google’s AI agent that ships fixes and watches the metric",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -285,8 +285,8 @@
     "title": "firecrawl/firecrawl",
     "url": "https://github.com/firecrawl/firecrawl",
     "image": "https://opengraph.githubassets.com/1/firecrawl/firecrawl",
-    "by": "★ 825 today",
-    "note": "Knowledge infrastructure to make your agents smarter. Search, scrape and 550+ data providers through one API.",
+    "by": "★ 1,241 today",
+    "note": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
     "source": "GitHub Trending",
     "kind": "trending"
    }
@@ -302,17 +302,18 @@
     "kind": "performance"
    },
    {
-    "title": "Les Vouèsins",
-    "url": "https://vimeo.com/channels/staffpicks/1245704717",
-    "image": "https://i.vimeocdn.com/video/2225484360-97ced56687f6b6a86a783a77b1d14de4f28313af5c30543ff1e9eaab50ee6341-d_960?region=us",
-    "note": "In this cautionary tale from Missouri&rsquo;s French Creole community, Petit Jean is a farmer who also happens to be the devil&rsquo;s neighbor. The two work their&hellip;",
+    "title": "Ibuka, Justice",
+    "url": "https://vimeo.com/channels/staffpicks/1236621193",
+    "image": "https://i.vimeocdn.com/video/2213180937-6f757aa8f0465ec60553e6f617c9b9a200746871932aa2116c2975a2315c0699-d_960?region=us",
+    "note": "Un film de / A film by : Justice Rutikara Documentary/Animation, Canada, 2024, 23' Production : Yzanakio (Myl&egrave;ne Augutin) | Distribution : SPIRA (short@spira.quebec)  &mdash;&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
    {
-    "title": "Blinkink Signs Director Emma Debany for representation Across UK and Europe",
-    "url": "https://www.stashmedia.tv/blinkink-signs-director-emma-debany-for-representation-across-uk-and-europe/",
-    "note": "From the release: Blinkink are excited to announce that LA-based, award winning, writer and director Emma Debany has joined our roster for representation across the UK and Europe!  [Watch]\nThe post Bl",
+    "title": "Thomas Bertrand & Mathematic Bridge “The Divide” for Les Restos du Cœur",
+    "url": "https://www.stashmedia.tv/thomas-bertrand-mathematic-bridge-the-divide-for-les-restos-du-coeur/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Les-Restos-du-Coeur-unveils-The-Divide-ad-by-Mathematic-STASH-MAGAZINE-1920x1080.jpg",
+    "note": "Working with Paris agency Change, director Thomas Bertrand and the animation team at Mathematic help charity Les Restos du Cœur fight divisions within French society with a heart-warming, stop-motion-",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -320,23 +321,22 @@
     "title": "“The Dreamer”: An Apple Holiday Film featuring MacBook Neo",
     "url": "https://www.youtube.com/watch?v=Sp54mxnWjUM",
     "image": "https://i.ytimg.com/vi/Sp54mxnWjUM/hqdefault.jpg",
-    "by": "4.8M views",
+    "by": "5M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
    {
-    "title": "DISC",
-    "url": "https://vimeo.com/channels/staffpicks/1247772037",
-    "image": "https://i.vimeocdn.com/video/2227648157-31591204ee157196b61bbdbdb85521b767e73d27380b75035079e54f6271b025-d_960?region=us",
-    "note": "The story of a hookup gone too far up.",
+    "title": "TO THE WOODS - Agnès Patron",
+    "url": "https://vimeo.com/channels/staffpicks/1242910943",
+    "image": "https://i.vimeocdn.com/video/2221285387-0e20545818c74e1b455c20a6cf492d6e96f9da63c77da3a317214c970b905226-d_960?region=us",
+    "note": "🌲 TO THE WOODS 🌲   Sister remembers that Brother had dark eyes, hair like her own, shoulders as fragile as a bird's wings, and that he knew the way to the river&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
    {
-    "title": "The Stash x OFFF Montreal 2026 Panel Follow-Up Part 1",
-    "url": "https://www.stashmedia.tv/the-stash-x-offf-montreal-2026-panel-follow-up-part-1/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Stash-Panel-BREAKING-THROUGH-at-OFFF-Montreal-2026-STASH-MAGAZINE.jpg",
-    "note": "This past September we brought our hit BREAKING THROUGH panel to OFFF Montreal with a new lineup and the same premise: how studios and individual creatives get seen, find reps, win pitches, and land t",
+    "title": "Blinkink Signs Director Emma Debany for representation Across UK and Europe",
+    "url": "https://www.stashmedia.tv/blinkink-signs-director-emma-debany-for-representation-across-uk-and-europe/",
+    "note": "From the release: Blinkink are excited to announce that LA-based, award winning, writer and director Emma Debany has joined our roster for representation across the UK and Europe!  [Watch]\nThe post Bl",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -349,18 +349,18 @@
     "kind": "performance"
    },
    {
-    "title": "Dancing on Osees",
-    "url": "https://vimeo.com/channels/staffpicks/1236237071",
-    "image": "https://i.vimeocdn.com/video/2212683008-9be4589f0ebd0a780d84c5d1b86310ba41e13569daf64da5a3547423e82e7159-d_960?region=us",
-    "note": "Self-initiated animation on the song Together Tomorrow by Osees. All hand drawn on paper, 100% human.",
+    "title": "Les Vouèsins",
+    "url": "https://vimeo.com/channels/staffpicks/1245704717",
+    "image": "https://i.vimeocdn.com/video/2225484360-97ced56687f6b6a86a783a77b1d14de4f28313af5c30543ff1e9eaab50ee6341-d_960?region=us",
+    "note": "In this cautionary tale from Missouri&rsquo;s French Creole community, Petit Jean is a farmer who also happens to be the devil&rsquo;s neighbor. The two work their&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
    {
-    "title": "Catherine Lepage & Friends Go “Dancing on Osees”",
-    "url": "https://www.stashmedia.tv/catherine-lepage-friends-go-dancing-on-osees/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Catherine-Lepage-22Dancing-on-Osees22-short-film-STASH-MAGAZINE2-1920x1057.jpg",
-    "note": "With the recent spike in fully AI-generated submissions to Stash (most of them dispiriting), it's refreshing to find such raw, handmade work as this music-driven film by Montreal artist, illustrator, ",
+    "title": "The Stash x OFFF Montreal 2026 Panel Follow-Up Part 1",
+    "url": "https://www.stashmedia.tv/the-stash-x-offf-montreal-2026-panel-follow-up-part-1/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Stash-Panel-BREAKING-THROUGH-at-OFFF-Montreal-2026-STASH-MAGAZINE.jpg",
+    "note": "This past September we brought our hit BREAKING THROUGH panel to OFFF Montreal with a new lineup and the same premise: how studios and individual creatives get seen, find reps, win pitches, and land t",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -373,22 +373,47 @@
     "kind": "performance"
    },
    {
-    "title": "Blue",
-    "url": "https://vimeo.com/channels/staffpicks/1247312751",
-    "image": "https://i.vimeocdn.com/video/2228050380-8bb7f817dd0bfa89dd91ddf790b884fc2706a168b06deb67b9a2a7d3d11c3d2a-d_960?region=us",
-    "note": "Josh runs into an old friend.  Written, Directed, and Edited by Ethan Romaine Starring Nathan Vincenti and Jada Delgado Cinematography by Benjy Berkowitz Sound Design&hellip;",
+    "title": "DISC",
+    "url": "https://vimeo.com/channels/staffpicks/1247772037",
+    "image": "https://i.vimeocdn.com/video/2227648157-31591204ee157196b61bbdbdb85521b767e73d27380b75035079e54f6271b025-d_960?region=us",
+    "note": "The story of a hookup gone too far up.",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
    {
-    "title": "Creative Outpost Welcomes The Helm To London Studio",
-    "url": "https://www.stashmedia.tv/creative-outpost-welcomes-the-helm-to-london-studio/",
-    "note": "From the release: Independent post-production studio Creative Outpost has welcomed newly-launched offline edit house The Helm to its Fitzrovia headquarters, bringing together some of the industry's mo",
+    "title": "Catherine Lepage & Friends Go “Dancing on Osees”",
+    "url": "https://www.stashmedia.tv/catherine-lepage-friends-go-dancing-on-osees/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Catherine-Lepage-22Dancing-on-Osees22-short-film-STASH-MAGAZINE2-1920x1057.jpg",
+    "note": "With the recent spike in fully AI-generated submissions to Stash (most of them dispiriting), it's refreshing to find such raw, handmade work as this music-driven film by Montreal artist, illustrator, ",
     "source": "STASH",
     "kind": "gallery"
    }
   ],
   "motion": [
+   {
+    "title": "AH&Co. Studio | Birkenstock India’s Journey",
+    "url": "https://motionographer.com/quickie/ahandco-studio-birkenstock-indias-journey/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/birkenstock-indias-journey-srinagar.png",
+    "note": "Watch the full film on Vimeo 65+ stores. Countless steps. One enduring journey across India. We had the privilege of bringing BIRKENSTOCK’s remarkable journey across India to film capturing a footprin",
+    "source": "Motionographer",
+    "kind": "gallery"
+   },
+   {
+    "title": "Thomas Bertrand & Mathematic Bridge “The Divide” for Les Restos du Cœur",
+    "url": "https://www.stashmedia.tv/thomas-bertrand-mathematic-bridge-the-divide-for-les-restos-du-coeur/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Les-Restos-du-Coeur-unveils-The-Divide-ad-by-Mathematic-STASH-MAGAZINE-1920x1080.jpg",
+    "note": "Working with Paris agency Change, director Thomas Bertrand and the animation team at Mathematic help charity Les Restos du Cœur fight divisions within French society with a heart-warming, stop-motion-",
+    "source": "STASH",
+    "kind": "gallery"
+   },
+   {
+    "title": "Envisioning Chemistry: Flowers & Colors",
+    "url": "https://vimeo.com/channels/motiongraphics/261819172",
+    "image": "https://i.vimeocdn.com/video/690929383-5cb1fb3a3c6baa3e358f8604ada1936cdd9dc21375b56a6c157db804f031505f-d_960?region=us",
+    "note": "Most red, blue, or purple flowers contain pigments called anthocyanins, whose colors are sensitive to pH (the acidity or basicity of an aqueous solution). As a result,&hellip;",
+    "source": "Vimeo · Motion Graphics",
+    "kind": "gallery"
+   },
    {
     "title": "The Long Way to “I Do”: A Porsche Love Story, Hand-Painted Frame by Frame",
     "url": "https://motionographer.com/news/porsche-the-long-way-to-i-do-em-cooper-tonic-dna/",
@@ -405,10 +430,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Envisioning Chemistry: Flowers & Colors",
-    "url": "https://vimeo.com/channels/motiongraphics/261819172",
-    "image": "https://i.vimeocdn.com/video/690929383-5cb1fb3a3c6baa3e358f8604ada1936cdd9dc21375b56a6c157db804f031505f-d_960?region=us",
-    "note": "Most red, blue, or purple flowers contain pigments called anthocyanins, whose colors are sensitive to pH (the acidity or basicity of an aqueous solution). As a result,&hellip;",
+    "title": "Nubes",
+    "url": "https://vimeo.com/channels/motiongraphics/539443669",
+    "image": "https://i.vimeocdn.com/video/1116843177-ac8dbde0d30fe9d4cc03c21be3f6701429124c366872552cd19b4b348eada71f-d_960?region=us",
+    "note": "2020                                                                                                                                    Custom software in Real-time:&hellip;",
     "source": "Vimeo · Motion Graphics",
     "kind": "gallery"
    },
@@ -429,10 +454,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Nubes",
-    "url": "https://vimeo.com/channels/motiongraphics/539443669",
-    "image": "https://i.vimeocdn.com/video/1116843177-ac8dbde0d30fe9d4cc03c21be3f6701429124c366872552cd19b4b348eada71f-d_960?region=us",
-    "note": "2020                                                                                                                                    Custom software in Real-time:&hellip;",
+    "title": "„SAY_SUPERSTRINGS“ / A Real-Time Generative Installation Performance Of Electrical Activity In The Musician’s Brain!",
+    "url": "https://vimeo.com/channels/motiongraphics/298695684",
+    "image": "https://i.vimeocdn.com/video/736658402-2913e277735c5780d047fc84e9d533f71e0bceb9f38084e11b8ba3d79ec60a44-d_960?region=us",
+    "note": "&bdquo;SAY_SUPERSTRINGS&ldquo; A Real-Time Generative Installation Performance Of Electrical Activity In The Musician&rsquo;s Brain!  dastrio x Ouchhh x Ars Electronica  CREDIT: Direction_Design_Anima",
     "source": "Vimeo · Motion Graphics",
     "kind": "gallery"
    },
@@ -448,28 +473,6 @@
     "url": "https://www.stashmedia.tv/catherine-lepage-friends-go-dancing-on-osees/",
     "image": "http://www.stashmedia.tv/wp-content/uploads/Catherine-Lepage-22Dancing-on-Osees22-short-film-STASH-MAGAZINE2-1920x1057.jpg",
     "note": "With the recent spike in fully AI-generated submissions to Stash (most of them dispiriting), it's refreshing to find such raw, handmade work as this music-driven film by Montreal artist, illustrator, ",
-    "source": "STASH",
-    "kind": "gallery"
-   },
-   {
-    "title": "„SAY_SUPERSTRINGS“ / A Real-Time Generative Installation Performance Of Electrical Activity In The Musician’s Brain!",
-    "url": "https://vimeo.com/channels/motiongraphics/298695684",
-    "image": "https://i.vimeocdn.com/video/736658402-2913e277735c5780d047fc84e9d533f71e0bceb9f38084e11b8ba3d79ec60a44-d_960?region=us",
-    "note": "&bdquo;SAY_SUPERSTRINGS&ldquo; A Real-Time Generative Installation Performance Of Electrical Activity In The Musician&rsquo;s Brain!  dastrio x Ouchhh x Ars Electronica  CREDIT: Direction_Design_Anima",
-    "source": "Vimeo · Motion Graphics",
-    "kind": "gallery"
-   },
-   {
-    "title": "SuperBlimp | Captain Itch",
-    "url": "https://motionographer.com/quickie/superblimp-captain-itch/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/superblimp-captain-itch-3099733087-scaled.jpg",
-    "source": "Motionographer",
-    "kind": "gallery"
-   },
-   {
-    "title": "Creative Outpost Welcomes The Helm To London Studio",
-    "url": "https://www.stashmedia.tv/creative-outpost-welcomes-the-helm-to-london-studio/",
-    "note": "From the release: Independent post-production studio Creative Outpost has welcomed newly-launched offline edit house The Helm to its Fitzrovia headquarters, bringing together some of the industry's mo",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -492,10 +495,42 @@
     "kind": "performance"
    },
    {
-    "title": "Les Vouèsins",
-    "url": "https://vimeo.com/channels/staffpicks/1245704717",
-    "image": "https://i.vimeocdn.com/video/2225484360-97ced56687f6b6a86a783a77b1d14de4f28313af5c30543ff1e9eaab50ee6341-d_960?region=us",
-    "note": "In this cautionary tale from Missouri&rsquo;s French Creole community, Petit Jean is a farmer who also happens to be the devil&rsquo;s neighbor. The two work their&hellip;",
+    "title": "Ibuka, Justice",
+    "url": "https://vimeo.com/channels/staffpicks/1236621193",
+    "image": "https://i.vimeocdn.com/video/2213180937-6f757aa8f0465ec60553e6f617c9b9a200746871932aa2116c2975a2315c0699-d_960?region=us",
+    "note": "Un film de / A film by : Justice Rutikara Documentary/Animation, Canada, 2024, 23' Production : Yzanakio (Myl&egrave;ne Augutin) | Distribution : SPIRA (short@spira.quebec)  &mdash;&hellip;",
+    "source": "Vimeo Staff Picks",
+    "kind": "gallery"
+   },
+   {
+    "title": "AH&Co. Studio | Birkenstock India’s Journey",
+    "url": "https://motionographer.com/quickie/ahandco-studio-birkenstock-indias-journey/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/birkenstock-indias-journey-srinagar.png",
+    "note": "Watch the full film on Vimeo 65+ stores. Countless steps. One enduring journey across India. We had the privilege of bringing BIRKENSTOCK’s remarkable journey across India to film capturing a footprin",
+    "source": "Motionographer",
+    "kind": "gallery"
+   },
+   {
+    "title": "Thomas Bertrand & Mathematic Bridge “The Divide” for Les Restos du Cœur",
+    "url": "https://www.stashmedia.tv/thomas-bertrand-mathematic-bridge-the-divide-for-les-restos-du-coeur/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Les-Restos-du-Coeur-unveils-The-Divide-ad-by-Mathematic-STASH-MAGAZINE-1920x1080.jpg",
+    "note": "Working with Paris agency Change, director Thomas Bertrand and the animation team at Mathematic help charity Les Restos du Cœur fight divisions within French society with a heart-warming, stop-motion-",
+    "source": "STASH",
+    "kind": "gallery"
+   },
+   {
+    "title": "We Finally Know More About Humanity’s First Civilization",
+    "url": "https://www.youtube.com/watch?v=_y9JuojAIg0",
+    "image": "https://i.ytimg.com/vi/_y9JuojAIg0/hqdefault.jpg",
+    "by": "12M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "TO THE WOODS - Agnès Patron",
+    "url": "https://vimeo.com/channels/staffpicks/1242910943",
+    "image": "https://i.vimeocdn.com/video/2221285387-0e20545818c74e1b455c20a6cf492d6e96f9da63c77da3a317214c970b905226-d_960?region=us",
+    "note": "🌲 TO THE WOODS 🌲   Sister remembers that Brother had dark eyes, hair like her own, shoulders as fragile as a bird's wings, and that he knew the way to the river&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
@@ -515,18 +550,18 @@
     "kind": "gallery"
    },
    {
-    "title": "We Finally Know More About Humanity’s First Civilization",
-    "url": "https://www.youtube.com/watch?v=_y9JuojAIg0",
-    "image": "https://i.ytimg.com/vi/_y9JuojAIg0/hqdefault.jpg",
-    "by": "12M views",
+    "title": "This Is What a Godlike Civilization Would Look Like",
+    "url": "https://www.youtube.com/watch?v=QW_jlUn4gA8",
+    "image": "https://i.ytimg.com/vi/QW_jlUn4gA8/hqdefault.jpg",
+    "by": "9.7M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
    {
-    "title": "DISC",
-    "url": "https://vimeo.com/channels/staffpicks/1247772037",
-    "image": "https://i.vimeocdn.com/video/2227648157-31591204ee157196b61bbdbdb85521b767e73d27380b75035079e54f6271b025-d_960?region=us",
-    "note": "The story of a hookup gone too far up.",
+    "title": "Les Vouèsins",
+    "url": "https://vimeo.com/channels/staffpicks/1245704717",
+    "image": "https://i.vimeocdn.com/video/2225484360-97ced56687f6b6a86a783a77b1d14de4f28313af5c30543ff1e9eaab50ee6341-d_960?region=us",
+    "note": "In this cautionary tale from Missouri&rsquo;s French Creole community, Petit Jean is a farmer who also happens to be the devil&rsquo;s neighbor. The two work their&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
@@ -545,37 +580,6 @@
     "note": "This past September we brought our hit BREAKING THROUGH panel to OFFF Montreal with a new lineup and the same premise: how studios and individual creatives get seen, find reps, win pitches, and land t",
     "source": "STASH",
     "kind": "gallery"
-   },
-   {
-    "title": "This Is What a Godlike Civilization Would Look Like",
-    "url": "https://www.youtube.com/watch?v=QW_jlUn4gA8",
-    "image": "https://i.ytimg.com/vi/QW_jlUn4gA8/hqdefault.jpg",
-    "by": "9.6M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "Dancing on Osees",
-    "url": "https://vimeo.com/channels/staffpicks/1236237071",
-    "image": "https://i.vimeocdn.com/video/2212683008-9be4589f0ebd0a780d84c5d1b86310ba41e13569daf64da5a3547423e82e7159-d_960?region=us",
-    "note": "Self-initiated animation on the song Together Tomorrow by Osees. All hand drawn on paper, 100% human.",
-    "source": "Vimeo Staff Picks",
-    "kind": "gallery"
-   },
-   {
-    "title": "Eeny, Meeny, Miny, Moe! Building a New Myth for the Kids Who Feel Too Much",
-    "url": "https://motionographer.com/2026/11/18/eeny-meeny-miny-moe-building-a-new-myth-for-the-kids-who-feel-too-much/",
-    "note": "A boy with a sun for a head, a playground of young gods and monsters, and a counting rhyme about who gets chosen. Jesse Rylander talks with director Andrea Szelesová and producer Kristina Husová about",
-    "source": "Motionographer",
-    "kind": "gallery"
-   },
-   {
-    "title": "Catherine Lepage & Friends Go “Dancing on Osees”",
-    "url": "https://www.stashmedia.tv/catherine-lepage-friends-go-dancing-on-osees/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Catherine-Lepage-22Dancing-on-Osees22-short-film-STASH-MAGAZINE2-1920x1057.jpg",
-    "note": "With the recent spike in fully AI-generated submissions to Stash (most of them dispiriting), it's refreshing to find such raw, handmade work as this music-driven film by Montreal artist, illustrator, ",
-    "source": "STASH",
-    "kind": "gallery"
    }
   ],
   "social": [
@@ -583,7 +587,23 @@
     "title": "Airbnb | あつまる？エアビる？｜プールでエアビる",
     "url": "https://www.youtube.com/watch?v=QS0QEqKGGIw",
     "image": "https://i.ytimg.com/vi/QS0QEqKGGIw/hqdefault.jpg",
-    "by": "2.6M views",
+    "by": "2.7M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "if my lovity is falsity, why r u my verity 🎨: @lleahistired",
+    "url": "https://www.youtube.com/watch?v=tbUMR2qIEzo",
+    "image": "https://i.ytimg.com/vi/tbUMR2qIEzo/hqdefault.jpg",
+    "by": "2.2M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Racing An F1 Car on ICE 🥶",
+    "url": "https://www.youtube.com/watch?v=rUUEFnaY7_E",
+    "image": "https://i.ytimg.com/vi/rUUEFnaY7_E/hqdefault.jpg",
+    "by": "2.2M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -596,34 +616,10 @@
     "kind": "performance"
    },
    {
-    "title": "if my lovity is falsity, why r u my verity 🎨: @lleahistired",
-    "url": "https://www.youtube.com/watch?v=tbUMR2qIEzo",
-    "image": "https://i.ytimg.com/vi/tbUMR2qIEzo/hqdefault.jpg",
-    "by": "2.1M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "Racing An F1 Car on ICE 🥶",
-    "url": "https://www.youtube.com/watch?v=rUUEFnaY7_E",
-    "image": "https://i.ytimg.com/vi/rUUEFnaY7_E/hqdefault.jpg",
-    "by": "1.9M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "The Ultimate Race on ICE ❄️",
-    "url": "https://www.youtube.com/watch?v=0Qs7uYqVOUM",
-    "image": "https://i.ytimg.com/vi/0Qs7uYqVOUM/hqdefault.jpg",
-    "by": "1.8M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
     "title": "Skim or Swim 💦",
     "url": "https://www.youtube.com/watch?v=dNnIB16HsMg",
     "image": "https://i.ytimg.com/vi/dNnIB16HsMg/hqdefault.jpg",
-    "by": "1.5M views",
+    "by": "2.1M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -631,7 +627,15 @@
     "title": "POV: 55ft MTB Freefall 🎬 Antoni Villoni #GoPro",
     "url": "https://www.youtube.com/watch?v=tAIjGmGVa1g",
     "image": "https://i.ytimg.com/vi/tAIjGmGVa1g/hqdefault.jpg",
-    "by": "1M views",
+    "by": "1.1M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "No Respawn Button Here 🚲",
+    "url": "https://www.youtube.com/watch?v=YRozsQp4TXU",
+    "image": "https://i.ytimg.com/vi/YRozsQp4TXU/hqdefault.jpg",
+    "by": "904K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -639,7 +643,7 @@
     "title": "They Went HOW fast?? 😳",
     "url": "https://www.youtube.com/watch?v=YLpdWPeSC8M",
     "image": "https://i.ytimg.com/vi/YLpdWPeSC8M/hqdefault.jpg",
-    "by": "673K views",
+    "by": "750K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -647,7 +651,7 @@
     "title": "Nido de Villanas: Ep. 1 Don Cristóbal’s inheritance",
     "url": "https://www.youtube.com/watch?v=wG_LaKvlcqM",
     "image": "https://i.ytimg.com/vi/wG_LaKvlcqM/hqdefault.jpg",
-    "by": "559K views",
+    "by": "560K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -655,7 +659,15 @@
     "title": "you're hooked on me i'm hooked on sakura mochi 🍡 🎨: @brerbo",
     "url": "https://www.youtube.com/watch?v=TrEHPMqHVAc",
     "image": "https://i.ytimg.com/vi/TrEHPMqHVAc/hqdefault.jpg",
-    "by": "455K views",
+    "by": "471K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "That Was Pretty Fast 😮‍💨",
+    "url": "https://www.youtube.com/watch?v=j8KcKg-WcfI",
+    "image": "https://i.ytimg.com/vi/j8KcKg-WcfI/hqdefault.jpg",
+    "by": "460K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -663,89 +675,81 @@
     "title": "y'all need to lock in on ur listening exercises 🎨: @brerbo",
     "url": "https://www.youtube.com/watch?v=jNctdfv480U",
     "image": "https://i.ytimg.com/vi/jNctdfv480U/hqdefault.jpg",
-    "by": "387K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "Get sorted for college with Roxie from the Apple Store.",
-    "url": "https://www.youtube.com/watch?v=P5GxUjU4uBI",
-    "image": "https://i.ytimg.com/vi/P5GxUjU4uBI/hqdefault.jpg",
-    "by": "370K views",
+    "by": "397K views",
     "source": "Latest from brands",
     "kind": "performance"
    }
   ],
   "post": [
    {
-    "title": "Google is pushing OEMs against GrapheneOS and bootloader unlocking",
-    "url": "https://grapheneos.social/@GrapheneOS/117645038299496084",
+    "title": "Inkling 2 Mini",
+    "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Gemini 4 Neon is the new #1 on the Models Engineering Index",
-    "url": "https://git-aarvin.github.io/mei/",
+    "title": "The stochastic parrots have apparently proved the Riemann Hypothesis",
+    "url": "https://scottaaronson.blog/?p=10344",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "The 98% Slot Machine: How Paid Advertising Became an Extraction Tax",
-    "url": "https://globalcommercegraph.com/writing/the-ninety-eight-percent-slot-machine",
+    "title": "Hurried Announcement: Alessandro Masullo GRH",
+    "url": "https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Claude solves two open problems in the physics of black holes",
-    "url": "https://www.anthropic.com/research/claude-black-hole-physics",
+    "title": "We promoted developers into architects without informing them",
+    "url": "https://manidoraisamy.com/developer-to-architect.html",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Pancreatic cancer halted by virus injection in three patients",
-    "url": "https://www.newscientist.com/article/2528235-pancreatic-cancer-halted-by-virus-injection-in-three-patients/",
+    "title": "Unforced Navier-Stokes Singularity and the Generalized Riemann Hypothesis",
+    "url": "https://terrytao.wordpress.com/2026/11/20/unforced-euler-singularity-unforced-navier-stokes-singularity-and-the-generalized-riemann-hypothesis/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Anthropic’s Nasdaq debut",
-    "url": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
+    "title": "Language Models Can Rewrite Their Own Weights",
+    "url": "https://arxiv.org/abs/2611.21885",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Fuck Your AI Safeguards",
-    "url": "https://ounapuu.ee/posts/2026/11/19/unsafeguards/",
+    "title": "I'll never buy Framework hardware again",
+    "url": "https://poolp.org/posts/2026-11-20/ill-never-buy-framework-hardware-again/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "UK government forced to admit it issued Apple a secret encryption order",
-    "url": "https://macanorak.com/uk-government-forced-to-admit-it-issued-apple-a-secret-encryption-order/",
+    "title": "Why there are still no non-WebKit browsers on iOS",
+    "url": "https://blog.mozilla.org/en/mozilla/internet-policy/apple-ios-browser-engine-rules/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Everything you need to survive and rebuild society",
-    "url": "https://lastbook.org/",
+    "title": "Levent Alpöge claims proof of the Generalized Riemann Hypothesis [pdf]",
+    "url": "https://alpo.ge/remark.pdf",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Making 8-page foldable zines from a single A4 sheet in the browser",
-    "url": "https://krthr.co/paper-folds-and-whats-new-in-fanzines-app/",
+    "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day",
+    "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Someone reported java4shell bug in September 2026",
-    "url": "https://github.com/openjdk/jdk/pull/32781",
+    "title": "If you stop writing code, you also get worse at reviewing it",
+    "url": "https://cekrem.github.io/posts/if-you-stop-writing-code-you-also-get-worse-at-reviewing-it/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "How the European Commission rolled out Matrix to more than 40k staff",
-    "url": "https://element.io/blog/how-the-european-commission-rolled-out-matrix-to-more-than-40-000-staff/",
+    "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
+    "url": "https://architectlabs.com/blog/frostbite",
     "source": "Hacker News · Best",
     "kind": "performance"
    }
@@ -760,10 +764,10 @@
     "kind": "performance"
    },
    {
-    "title": "The Baby Panthers' Nocturnal Journey",
-    "url": "https://www.adsoftheworld.com/campaigns/the-baby-panthers-nocturnal-journey",
-    "image": "https://image.adsoftheworld.com/4t1mm94j9zytpwbkr2jdi9lrqpsp",
-    "by": "Cartier",
+    "title": "An Extra Set of Pizza Hands",
+    "url": "https://www.adsoftheworld.com/campaigns/an-extra-set-of-pizza-hands",
+    "image": "https://image.adsoftheworld.com/xsf6brxs7bd54uww8xxlza9yabol",
+    "by": "Little Caesars",
     "source": "Ads of the World",
     "kind": "gallery"
    },
@@ -771,15 +775,15 @@
     "title": "“The Dreamer”: An Apple Holiday Film featuring MacBook Neo",
     "url": "https://www.youtube.com/watch?v=Sp54mxnWjUM",
     "image": "https://i.ytimg.com/vi/Sp54mxnWjUM/hqdefault.jpg",
-    "by": "4.8M views",
+    "by": "5M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
    {
-    "title": "THE END OF THE WORLD",
-    "url": "https://www.adsoftheworld.com/campaigns/the-end-of-the-world-699dd367-0801-4aff-bcbc-4b6257743de5",
-    "image": "https://image.adsoftheworld.com/bd33251ifwp8lh5ni0id1d9f5734",
-    "by": "Cerveza Andina",
+    "title": "The Baby Panthers' Nocturnal Journey",
+    "url": "https://www.adsoftheworld.com/campaigns/the-baby-panthers-nocturnal-journey",
+    "image": "https://image.adsoftheworld.com/4t1mm94j9zytpwbkr2jdi9lrqpsp",
+    "by": "Cartier",
     "source": "Ads of the World",
     "kind": "gallery"
    },
@@ -792,10 +796,10 @@
     "kind": "performance"
    },
    {
-    "title": "Macaulay Culkin reprises his role as Kevin McCallister",
-    "url": "https://www.adsoftheworld.com/campaigns/macaulay-culkin-reprises-his-role-as-kevin-mccallister",
-    "image": "https://image.adsoftheworld.com/6nzg91x9a9zongw85jl97buj54y8",
-    "by": "McDonald's",
+    "title": "THE END OF THE WORLD",
+    "url": "https://www.adsoftheworld.com/campaigns/the-end-of-the-world-699dd367-0801-4aff-bcbc-4b6257743de5",
+    "image": "https://image.adsoftheworld.com/bd33251ifwp8lh5ni0id1d9f5734",
+    "by": "Cerveza Andina",
     "source": "Ads of the World",
     "kind": "gallery"
    },
@@ -808,6 +812,22 @@
     "kind": "performance"
    },
    {
+    "title": "Macaulay Culkin reprises his role as Kevin McCallister",
+    "url": "https://www.adsoftheworld.com/campaigns/macaulay-culkin-reprises-his-role-as-kevin-mccallister",
+    "image": "https://image.adsoftheworld.com/6nzg91x9a9zongw85jl97buj54y8",
+    "by": "McDonald's",
+    "source": "Ads of the World",
+    "kind": "gallery"
+   },
+   {
+    "title": "What's going on at DuoMart!?! | DuoTV (Full Series)",
+    "url": "https://www.youtube.com/watch?v=YP2KYQZUkWY",
+    "image": "https://i.ytimg.com/vi/YP2KYQZUkWY/hqdefault.jpg",
+    "by": "498K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
     "title": "You’re Golden",
     "url": "https://www.adsoftheworld.com/campaigns/you-re-golden",
     "image": "https://image.adsoftheworld.com/2bikscziqp0o64w6nropa5sp3zx0",
@@ -816,26 +836,10 @@
     "kind": "gallery"
    },
    {
-    "title": "What's going on at DuoMart!?! | DuoTV (Full Series)",
-    "url": "https://www.youtube.com/watch?v=YP2KYQZUkWY",
-    "image": "https://i.ytimg.com/vi/YP2KYQZUkWY/hqdefault.jpg",
-    "by": "491K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "Not Really For Tourists",
-    "url": "https://www.adsoftheworld.com/campaigns/not-really-for-tourists",
-    "image": "https://image.adsoftheworld.com/txu7qrqx6thchblaqqa20q6n96ic",
-    "by": "Tourism Tasmania",
-    "source": "Ads of the World",
-    "kind": "gallery"
-   },
-   {
     "title": "Caitlin 1 | Behind the Design | Nike",
     "url": "https://www.youtube.com/watch?v=628ogczUw6o",
     "image": "https://i.ytimg.com/vi/628ogczUw6o/hqdefault.jpg",
-    "by": "305K views",
+    "by": "306K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -843,7 +847,7 @@
     "title": "Apple Pay: The fast, easy, and secure way to pay.",
     "url": "https://www.youtube.com/watch?v=miUjxZ2ASRs",
     "image": "https://i.ytimg.com/vi/miUjxZ2ASRs/hqdefault.jpg",
-    "by": "289K views",
+    "by": "293K views",
     "source": "Latest from brands",
     "kind": "performance"
    }
