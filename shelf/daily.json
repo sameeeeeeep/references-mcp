@@ -1,7 +1,31 @@
 {
- "updated": "2026-11-21T11:14:24.382Z",
+ "updated": "2026-11-22T11:33:55.974Z",
  "media": {
   "ui": [
+   {
+    "title": "Artemii Lebedev",
+    "url": "https://www.awwwards.com/sites/artemii-lebedev-1",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6abbce65493c2819140035.jpg",
+    "note": "An independent art director and designer’s portfolio featuring selected websites, motion experiments, and 3D visuals.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "oovi",
+    "url": "https://www.producthunt.com/products/oovi",
+    "note": "Your own team of AI on your desktop",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "elementalsouls/Claude-BugHunter",
+    "url": "https://github.com/elementalsouls/Claude-BugHunter",
+    "image": "https://opengraph.githubassets.com/1/elementalsouls/Claude-BugHunter",
+    "by": "★ 1,803 today",
+    "note": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identi",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
    {
     "title": "Night Drive Racing Game",
     "url": "https://www.awwwards.com/sites/night-drive-racing-game",
@@ -11,18 +35,18 @@
     "kind": "award"
    },
    {
-    "title": "Hollr",
-    "url": "https://www.producthunt.com/products/hollr-3",
-    "note": "Push-to-talk for your family, on iPhone and Apple Watch",
+    "title": "Ulika",
+    "url": "https://www.producthunt.com/products/ulika",
+    "note": "Visual editor for sites built with Claude, Cursor, or Codex",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "elementalsouls/Claude-BugHunter",
-    "url": "https://github.com/elementalsouls/Claude-BugHunter",
-    "image": "https://opengraph.githubassets.com/1/elementalsouls/Claude-BugHunter",
-    "by": "★ 1,622 today",
-    "note": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identi",
+    "title": "obra/superpowers",
+    "url": "https://github.com/obra/superpowers",
+    "image": "https://opengraph.githubassets.com/1/obra/superpowers",
+    "by": "★ 883 today",
+    "note": "An agentic skills framework & software development methodology that works.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
@@ -35,18 +59,18 @@
     "kind": "award"
    },
    {
-    "title": "Beat Watcher",
-    "url": "https://www.producthunt.com/products/beat-watcher",
-    "note": "Fast Apple Watch heart rate alerts you can share with family",
+    "title": "Creavit Studio 4.0",
+    "url": "https://www.producthunt.com/products/creavit-studio",
+    "note": "Screen recording, iPhone camera and cinematic demos for Mac",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
    {
-    "title": "obra/superpowers",
-    "url": "https://github.com/obra/superpowers",
-    "image": "https://opengraph.githubassets.com/1/obra/superpowers",
-    "by": "★ 890 today",
-    "note": "An agentic skills framework & software development methodology that works.",
+    "title": "HKUDS/CLI-Anything",
+    "url": "https://github.com/HKUDS/CLI-Anything",
+    "image": "https://opengraph.githubassets.com/1/HKUDS/CLI-Anything",
+    "by": "★ 769 today",
+    "note": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
     "source": "GitHub Trending",
     "kind": "trending"
    },
@@ -59,33 +83,9 @@
     "kind": "award"
    },
    {
-    "title": "Alter Contacts",
-    "url": "https://www.producthunt.com/products/alter-contacts-ai-client-relationships",
-    "note": "AI client relationship assistant that thinks and does ahead",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "HKUDS/CLI-Anything",
-    "url": "https://github.com/HKUDS/CLI-Anything",
-    "image": "https://opengraph.githubassets.com/1/HKUDS/CLI-Anything",
-    "by": "★ 773 today",
-    "note": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "PSP Production",
-    "url": "https://www.awwwards.com/sites/psp-production",
-    "image": "https://www.awwwards.com/awards/submissions/2026/10/6ac610277c0e9964016706.jpg",
-    "note": "PSP Production is a senior-led film & commercial studio in Portugal & Spain with 25+ years of experience and a portfolio of Porsche, BMW, Netflix's Money Heist & FBI International.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
-   },
-   {
-    "title": "OpenVorld",
-    "url": "https://www.producthunt.com/products/openvorld",
-    "note": "Give your AI agents a home you can see",
+    "title": "TeaserKit",
+    "url": "https://www.producthunt.com/products/teaserkit",
+    "note": "your coding agent directs your launch video",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -93,13 +93,36 @@
     "title": "jingyaogong/minimind",
     "url": "https://github.com/jingyaogong/minimind",
     "image": "https://opengraph.githubassets.com/1/jingyaogong/minimind",
-    "by": "★ 847 today",
+    "by": "★ 488 today",
     "note": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
     "source": "GitHub Trending",
     "kind": "trending"
    }
   ],
   "landing": [
+   {
+    "title": "Artemii Lebedev",
+    "url": "https://www.awwwards.com/sites/artemii-lebedev-1",
+    "image": "https://www.awwwards.com/awards/submissions/2026/09/6abbce65493c2819140035.jpg",
+    "note": "An independent art director and designer’s portfolio featuring selected websites, motion experiments, and 3D visuals.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "Damián Panes",
+    "url": "https://onepagelove.com/damian-panes",
+    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/11/opl-screenshot-damian-panes-1795275356334-desktop.jpg",
+    "note": "Damián Panes, a programmer and founder, has a portfolio that presents everything as a draggable mint-and-black pixel-art chessboard, using animated pieces, bitmap typography and dithered graphics remi",
+    "source": "One Page Love",
+    "kind": "gallery"
+   },
+   {
+    "title": "oovi",
+    "url": "https://www.producthunt.com/products/oovi",
+    "note": "Your own team of AI on your desktop",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
    {
     "title": "Night Drive Racing Game",
     "url": "https://www.awwwards.com/sites/night-drive-racing-game",
@@ -117,9 +140,9 @@
     "kind": "gallery"
    },
    {
-    "title": "Hollr",
-    "url": "https://www.producthunt.com/products/hollr-3",
-    "note": "Push-to-talk for your family, on iPhone and Apple Watch",
+    "title": "Ulika",
+    "url": "https://www.producthunt.com/products/ulika",
+    "note": "Visual editor for sites built with Claude, Cursor, or Codex",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -140,9 +163,9 @@
     "kind": "gallery"
    },
    {
-    "title": "Beat Watcher",
-    "url": "https://www.producthunt.com/products/beat-watcher",
-    "note": "Fast Apple Watch heart rate alerts you can share with family",
+    "title": "Creavit Studio 4.0",
+    "url": "https://www.producthunt.com/products/creavit-studio",
+    "note": "Screen recording, iPhone camera and cinematic demos for Mac",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -163,41 +186,18 @@
     "kind": "gallery"
    },
    {
-    "title": "Alter Contacts",
-    "url": "https://www.producthunt.com/products/alter-contacts-ai-client-relationships",
-    "note": "AI client relationship assistant that thinks and does ahead",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "PSP Production",
-    "url": "https://www.awwwards.com/sites/psp-production",
-    "image": "https://www.awwwards.com/awards/submissions/2026/10/6ac610277c0e9964016706.jpg",
-    "note": "PSP Production is a senior-led film & commercial studio in Portugal & Spain with 25+ years of experience and a portfolio of Porsche, BMW, Netflix's Money Heist & FBI International.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
-   },
-   {
-    "title": "Fonting",
-    "url": "https://onepagelove.com/fonting",
-    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/11/opl-screenshot-fonting-1794927582643-desktop.jpg",
-    "note": "Fonting organizes and previews fonts on Mac and iPhone, storing the library in iCloud for access across devices. This one-pager has a clean white interface, colorful specimen cards, orderly feature gr",
-    "source": "One Page Love",
-    "kind": "gallery"
-   },
-   {
-    "title": "OpenVorld",
-    "url": "https://www.producthunt.com/products/openvorld",
-    "note": "Give your AI agents a home you can see",
+    "title": "TeaserKit",
+    "url": "https://www.producthunt.com/products/teaserkit",
+    "note": "your coding agent directs your launch video",
     "source": "Product Hunt · Today",
     "kind": "trending"
    }
   ],
   "app": [
    {
-    "title": "Hollr",
-    "url": "https://www.producthunt.com/products/hollr-3",
-    "note": "Push-to-talk for your family, on iPhone and Apple Watch",
+    "title": "oovi",
+    "url": "https://www.producthunt.com/products/oovi",
+    "note": "Your own team of AI on your desktop",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -205,15 +205,15 @@
     "title": "elementalsouls/Claude-BugHunter",
     "url": "https://github.com/elementalsouls/Claude-BugHunter",
     "image": "https://opengraph.githubassets.com/1/elementalsouls/Claude-BugHunter",
-    "by": "★ 1,622 today",
+    "by": "★ 1,803 today",
     "note": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identi",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Beat Watcher",
-    "url": "https://www.producthunt.com/products/beat-watcher",
-    "note": "Fast Apple Watch heart rate alerts you can share with family",
+    "title": "Ulika",
+    "url": "https://www.producthunt.com/products/ulika",
+    "note": "Visual editor for sites built with Claude, Cursor, or Codex",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -221,15 +221,15 @@
     "title": "obra/superpowers",
     "url": "https://github.com/obra/superpowers",
     "image": "https://opengraph.githubassets.com/1/obra/superpowers",
-    "by": "★ 890 today",
+    "by": "★ 883 today",
     "note": "An agentic skills framework & software development methodology that works.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Alter Contacts",
-    "url": "https://www.producthunt.com/products/alter-contacts-ai-client-relationships",
-    "note": "AI client relationship assistant that thinks and does ahead",
+    "title": "Creavit Studio 4.0",
+    "url": "https://www.producthunt.com/products/creavit-studio",
+    "note": "Screen recording, iPhone camera and cinematic demos for Mac",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -237,15 +237,15 @@
     "title": "HKUDS/CLI-Anything",
     "url": "https://github.com/HKUDS/CLI-Anything",
     "image": "https://opengraph.githubassets.com/1/HKUDS/CLI-Anything",
-    "by": "★ 773 today",
+    "by": "★ 769 today",
     "note": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "OpenVorld",
-    "url": "https://www.producthunt.com/products/openvorld",
-    "note": "Give your AI agents a home you can see",
+    "title": "TeaserKit",
+    "url": "https://www.producthunt.com/products/teaserkit",
+    "note": "your coding agent directs your launch video",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -253,15 +253,15 @@
     "title": "jingyaogong/minimind",
     "url": "https://github.com/jingyaogong/minimind",
     "image": "https://opengraph.githubassets.com/1/jingyaogong/minimind",
-    "by": "★ 847 today",
+    "by": "★ 488 today",
     "note": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Backspin",
-    "url": "https://www.producthunt.com/products/backspin",
-    "note": "Learn to DJ in your browser, on real vinyl decks",
+    "title": "Copy Haste",
+    "url": "https://www.producthunt.com/products/copy-haste",
+    "note": "Your clipboard, sorted into Text, Code, Links, Media & more",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -269,15 +269,15 @@
     "title": "cursor/plugins",
     "url": "https://github.com/cursor/plugins",
     "image": "https://opengraph.githubassets.com/1/cursor/plugins",
-    "by": "★ 299 today",
+    "by": "★ 260 today",
     "note": "Cursor plugin specification and official plugins",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Stitch Loop",
-    "url": "https://www.producthunt.com/products/stitch-loop",
-    "note": "Google’s AI agent that ships fixes and watches the metric",
+    "title": "Omi CLI",
+    "url": "https://www.producthunt.com/products/omi-cli",
+    "note": "An AI coding agent in your terminal, on 13 models",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -285,7 +285,7 @@
     "title": "firecrawl/firecrawl",
     "url": "https://github.com/firecrawl/firecrawl",
     "image": "https://opengraph.githubassets.com/1/firecrawl/firecrawl",
-    "by": "★ 1,241 today",
+    "by": "★ 1,006 today",
     "note": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
     "source": "GitHub Trending",
     "kind": "trending"
@@ -321,7 +321,7 @@
     "title": "“The Dreamer”: An Apple Holiday Film featuring MacBook Neo",
     "url": "https://www.youtube.com/watch?v=Sp54mxnWjUM",
     "image": "https://i.ytimg.com/vi/Sp54mxnWjUM/hqdefault.jpg",
-    "by": "5M views",
+    "by": "5.1M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -584,10 +584,34 @@
   ],
   "social": [
    {
+    "title": "Skim or Swim 💦",
+    "url": "https://www.youtube.com/watch?v=dNnIB16HsMg",
+    "image": "https://i.ytimg.com/vi/dNnIB16HsMg/hqdefault.jpg",
+    "by": "3.1M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
     "title": "Airbnb | あつまる？エアビる？｜プールでエアビる",
     "url": "https://www.youtube.com/watch?v=QS0QEqKGGIw",
     "image": "https://i.ytimg.com/vi/QS0QEqKGGIw/hqdefault.jpg",
     "by": "2.7M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Racing An F1 Car on ICE 🥶",
+    "url": "https://www.youtube.com/watch?v=rUUEFnaY7_E",
+    "image": "https://i.ytimg.com/vi/rUUEFnaY7_E/hqdefault.jpg",
+    "by": "2.4M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Airbnb | あつまる？エアビる？｜今日はちょっと、大人忘れます。",
+    "url": "https://www.youtube.com/watch?v=p8HvRJALo4Y",
+    "image": "https://i.ytimg.com/vi/p8HvRJALo4Y/hqdefault.jpg",
+    "by": "2.3M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -600,26 +624,10 @@
     "kind": "performance"
    },
    {
-    "title": "Racing An F1 Car on ICE 🥶",
-    "url": "https://www.youtube.com/watch?v=rUUEFnaY7_E",
-    "image": "https://i.ytimg.com/vi/rUUEFnaY7_E/hqdefault.jpg",
-    "by": "2.2M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "Airbnb | あつまる？エアビる？｜今日はちょっと、大人忘れます。",
-    "url": "https://www.youtube.com/watch?v=p8HvRJALo4Y",
-    "image": "https://i.ytimg.com/vi/p8HvRJALo4Y/hqdefault.jpg",
-    "by": "2.2M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "Skim or Swim 💦",
-    "url": "https://www.youtube.com/watch?v=dNnIB16HsMg",
-    "image": "https://i.ytimg.com/vi/dNnIB16HsMg/hqdefault.jpg",
-    "by": "2.1M views",
+    "title": "No Respawn Button Here 🚲",
+    "url": "https://www.youtube.com/watch?v=YRozsQp4TXU",
+    "image": "https://i.ytimg.com/vi/YRozsQp4TXU/hqdefault.jpg",
+    "by": "1.7M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -627,23 +635,15 @@
     "title": "POV: 55ft MTB Freefall 🎬 Antoni Villoni #GoPro",
     "url": "https://www.youtube.com/watch?v=tAIjGmGVa1g",
     "image": "https://i.ytimg.com/vi/tAIjGmGVa1g/hqdefault.jpg",
-    "by": "1.1M views",
+    "by": "1.2M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
    {
-    "title": "No Respawn Button Here 🚲",
-    "url": "https://www.youtube.com/watch?v=YRozsQp4TXU",
-    "image": "https://i.ytimg.com/vi/YRozsQp4TXU/hqdefault.jpg",
-    "by": "904K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "They Went HOW fast?? 😳",
-    "url": "https://www.youtube.com/watch?v=YLpdWPeSC8M",
-    "image": "https://i.ytimg.com/vi/YLpdWPeSC8M/hqdefault.jpg",
-    "by": "750K views",
+    "title": "F1 Car vs MotoGP Bike on ICE 🥶",
+    "url": "https://www.youtube.com/watch?v=JJL4gMS7Iyo",
+    "image": "https://i.ytimg.com/vi/JJL4gMS7Iyo/hqdefault.jpg",
+    "by": "774K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -656,100 +656,100 @@
     "kind": "performance"
    },
    {
-    "title": "you're hooked on me i'm hooked on sakura mochi 🍡 🎨: @brerbo",
-    "url": "https://www.youtube.com/watch?v=TrEHPMqHVAc",
-    "image": "https://i.ytimg.com/vi/TrEHPMqHVAc/hqdefault.jpg",
-    "by": "471K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
     "title": "That Was Pretty Fast 😮‍💨",
     "url": "https://www.youtube.com/watch?v=j8KcKg-WcfI",
     "image": "https://i.ytimg.com/vi/j8KcKg-WcfI/hqdefault.jpg",
-    "by": "460K views",
+    "by": "557K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
    {
-    "title": "y'all need to lock in on ur listening exercises 🎨: @brerbo",
-    "url": "https://www.youtube.com/watch?v=jNctdfv480U",
-    "image": "https://i.ytimg.com/vi/jNctdfv480U/hqdefault.jpg",
-    "by": "397K views",
+    "title": "you're hooked on me i'm hooked on sakura mochi 🍡 🎨: @brerbo",
+    "url": "https://www.youtube.com/watch?v=TrEHPMqHVAc",
+    "image": "https://i.ytimg.com/vi/TrEHPMqHVAc/hqdefault.jpg",
+    "by": "499K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "You know the story. You don’t know this version 👀 STEPS premieres @ midnight PST!",
+    "url": "https://www.youtube.com/watch?v=_PZcS8b58U4",
+    "image": "https://i.ytimg.com/vi/_PZcS8b58U4/hqdefault.jpg",
+    "by": "437K views",
     "source": "Latest from brands",
     "kind": "performance"
    }
   ],
   "post": [
    {
-    "title": "Inkling 2 Mini",
-    "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
+    "title": "Toyota, Nissan, and Honda to standardize parts to lower costs",
+    "url": "https://www.caranddriver.com/news/a74490092/toyota-nissan-honda-standardize-parts-lower-costs/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "The stochastic parrots have apparently proved the Riemann Hypothesis",
-    "url": "https://scottaaronson.blog/?p=10344",
+    "title": "Sandwich Simulator",
+    "url": "https://stulle.app/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Hurried Announcement: Alessandro Masullo GRH",
-    "url": "https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/",
+    "title": "Inkling-2-Mini in 5.4 GB Memory",
+    "url": "https://github.com/ShinMegamiBoson/lookatmyquant",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "We promoted developers into architects without informing them",
-    "url": "https://manidoraisamy.com/developer-to-architect.html",
+    "title": "Lean verification of the Riemann Hypothesis",
+    "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Unforced Navier-Stokes Singularity and the Generalized Riemann Hypothesis",
-    "url": "https://terrytao.wordpress.com/2026/11/20/unforced-euler-singularity-unforced-navier-stokes-singularity-and-the-generalized-riemann-hypothesis/",
+    "title": "Detonating a pile of lead azide",
+    "url": "https://www.science.org/content/blog-post/detonating-huge-pile-lead-azide-really",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Language Models Can Rewrite Their Own Weights",
-    "url": "https://arxiv.org/abs/2611.21885",
+    "title": "My monitor was cutting my download speed by 75%",
+    "url": "https://blog.tymscar.com/posts/studiodisplayethernet/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "I'll never buy Framework hardware again",
-    "url": "https://poolp.org/posts/2026-11-20/ill-never-buy-framework-hardware-again/",
+    "title": "GnuPG Security Advisory for GPGME",
+    "url": "https://lists.gnupg.org/pipermail/gnupg-announce/2026q4/000517.html",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Why there are still no non-WebKit browsers on iOS",
-    "url": "https://blog.mozilla.org/en/mozilla/internet-policy/apple-ios-browser-engine-rules/",
+    "title": "Backblaze Notice at Collection and Privacy Policy",
+    "url": "https://www.backblaze.com/company/policy/privacy",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Levent Alpöge claims proof of the Generalized Riemann Hypothesis [pdf]",
-    "url": "https://alpo.ge/remark.pdf",
+    "title": "Re: Riemann",
+    "url": "https://borretti.me/article/re-riemann",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day",
-    "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+    "title": "Ask HN: I have been unemployed for 2y. 15 years of experience, US. What to do?",
+    "url": "https://news.ycombinator.com/item?id=50583761",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "If you stop writing code, you also get worse at reviewing it",
-    "url": "https://cekrem.github.io/posts/if-you-stop-writing-code-you-also-get-worse-at-reviewing-it/",
+    "title": "NINLIVE: The Nine Inch Nails live archive",
+    "url": "https://ninlive.com/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
-    "url": "https://architectlabs.com/blog/frostbite",
+    "title": "Getting the mind to steer the body to steer you",
+    "url": "https://notnottalmud.substack.com/p/getting-the-mind-to-steer-the-body",
     "source": "Hacker News · Best",
     "kind": "performance"
    }
@@ -775,7 +775,7 @@
     "title": "“The Dreamer”: An Apple Holiday Film featuring MacBook Neo",
     "url": "https://www.youtube.com/watch?v=Sp54mxnWjUM",
     "image": "https://i.ytimg.com/vi/Sp54mxnWjUM/hqdefault.jpg",
-    "by": "5M views",
+    "by": "5.1M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -823,7 +823,7 @@
     "title": "What's going on at DuoMart!?! | DuoTV (Full Series)",
     "url": "https://www.youtube.com/watch?v=YP2KYQZUkWY",
     "image": "https://i.ytimg.com/vi/YP2KYQZUkWY/hqdefault.jpg",
-    "by": "498K views",
+    "by": "506K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -839,7 +839,7 @@
     "title": "Caitlin 1 | Behind the Design | Nike",
     "url": "https://www.youtube.com/watch?v=628ogczUw6o",
     "image": "https://i.ytimg.com/vi/628ogczUw6o/hqdefault.jpg",
-    "by": "306K views",
+    "by": "307K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -847,7 +847,7 @@
     "title": "Apple Pay: The fast, easy, and secure way to pay.",
     "url": "https://www.youtube.com/watch?v=miUjxZ2ASRs",
     "image": "https://i.ytimg.com/vi/miUjxZ2ASRs/hqdefault.jpg",
-    "by": "293K views",
+    "by": "297K views",
     "source": "Latest from brands",
     "kind": "performance"
    }
