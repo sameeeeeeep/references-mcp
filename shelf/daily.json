@@ -1,19 +1,11 @@
 {
- "updated": "2026-11-24T13:51:18.826Z",
+ "updated": "2026-11-25T13:03:58.990Z",
  "media": {
   "ui": [
    {
-    "title": "Two26 Studio",
-    "url": "https://www.awwwards.com/sites/two26-studio",
-    "image": "https://www.awwwards.com/awards/submissions/2026/10/6ac4cd30dcb2c180481361.jpg",
-    "note": "Two26 is a Bucharest-based branding and design studio. Website built to showcase their case studies and services and present the studio as a premium, boutique brand.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
-   },
-   {
-    "title": "Umami Manager",
-    "url": "https://www.producthunt.com/products/umami-manager",
-    "note": "Umami reports, widgets & links – native on iPhone & iPad",
+    "title": "Tray",
+    "url": "https://www.producthunt.com/products/tray-2",
+    "note": "macOS file manager in a screen corner",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -21,23 +13,15 @@
     "title": "elementalsouls/Claude-BugHunter",
     "url": "https://github.com/elementalsouls/Claude-BugHunter",
     "image": "https://opengraph.githubassets.com/1/elementalsouls/Claude-BugHunter",
-    "by": "★ 1,833 today",
+    "by": "★ 1,644 today",
     "note": "A Claude Code skill bundle for bug hunting and external red-team work - 84 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identi",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "La boite à slides",
-    "url": "https://www.awwwards.com/sites/la-boite-a-slide",
-    "image": "https://www.awwwards.com/awards/submissions/2026/10/6ac3a61da6c1a818669397.png",
-    "note": "A modern, story-driven redesign blending immersive 3D, strong SEO foundations and seamless content migration to create a richer digital experience.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
-   },
-   {
-    "title": "Finer Screenshot",
-    "url": "https://www.producthunt.com/products/finer-screenshot",
-    "note": "Add text that automatically stays readable on any background",
+    "title": "MAGI-2",
+    "url": "https://www.producthunt.com/products/magi-1",
+    "note": "Sand AI's 480B model for cinematic video generation",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -45,23 +29,15 @@
     "title": "obra/superpowers",
     "url": "https://github.com/obra/superpowers",
     "image": "https://opengraph.githubassets.com/1/obra/superpowers",
-    "by": "★ 1,006 today",
+    "by": "★ 902 today",
     "note": "An agentic skills framework & software development methodology that works.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Artemii Lebedev",
-    "url": "https://www.awwwards.com/sites/artemii-lebedev-1",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6abbce65493c2819140035.jpg",
-    "note": "An independent art director and designer’s portfolio featuring selected websites, motion experiments, and 3D visuals.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
-   },
-   {
-    "title": "Juncts",
-    "url": "https://www.producthunt.com/products/juncts",
-    "note": "Superhuman for your DMs, with AI that triages and drafts",
+    "title": "SteerLatch",
+    "url": "https://www.producthunt.com/products/steerlatch",
+    "note": "Connect MCP-compatible AIs to your computer",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -69,23 +45,15 @@
     "title": "HKUDS/CLI-Anything",
     "url": "https://github.com/HKUDS/CLI-Anything",
     "image": "https://opengraph.githubassets.com/1/HKUDS/CLI-Anything",
-    "by": "★ 1,075 today",
+    "by": "★ 1,094 today",
     "note": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Night Drive Racing Game",
-    "url": "https://www.awwwards.com/sites/night-drive-racing-game",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6abbd731284f6515683857.jpg",
-    "note": "A free-to-play racing game built with Three.js and WebGPU, featuring 50+ missions, realistic visuals, dynamic rain, physics, collectibles, and a huge city.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
-   },
-   {
-    "title": "Finseo",
-    "url": "https://www.producthunt.com/products/finseo-ai",
-    "note": "Company brain + outreach to get your brand mentioned by AI",
+    "title": "Tendeck",
+    "url": "https://www.producthunt.com/products/tendeck",
+    "note": "Run all your Claude Code and Codex agents on one Mac board",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -93,20 +61,59 @@
     "title": "jingyaogong/minimind",
     "url": "https://github.com/jingyaogong/minimind",
     "image": "https://opengraph.githubassets.com/1/jingyaogong/minimind",
-    "by": "★ 727 today",
+    "by": "★ 828 today",
     "note": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "eluna",
+    "url": "https://www.producthunt.com/products/eluna",
+    "note": "Period tracker for couples that explains WHY, not just WHEN",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "cursor/plugins",
+    "url": "https://github.com/cursor/plugins",
+    "image": "https://opengraph.githubassets.com/1/cursor/plugins",
+    "by": "★ 408 today",
+    "note": "Cursor plugin specification and official plugins",
+    "source": "GitHub Trending",
+    "kind": "trending"
+   },
+   {
+    "title": "Blink",
+    "url": "https://www.producthunt.com/products/blink-35",
+    "note": "Describe any trade and watch Blink build it",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "firecrawl/firecrawl",
+    "url": "https://github.com/firecrawl/firecrawl",
+    "image": "https://opengraph.githubassets.com/1/firecrawl/firecrawl",
+    "by": "★ 1,131 today",
+    "note": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
     "source": "GitHub Trending",
     "kind": "trending"
    }
   ],
   "landing": [
    {
-    "title": "Two26 Studio",
-    "url": "https://www.awwwards.com/sites/two26-studio",
-    "image": "https://www.awwwards.com/awards/submissions/2026/10/6ac4cd30dcb2c180481361.jpg",
-    "note": "Two26 is a Bucharest-based branding and design studio. Website built to showcase their case studies and services and present the studio as a premium, boutique brand.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
+    "title": "Solea",
+    "url": "https://onepagelove.com/solea",
+    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/11/opl-screenshot-solea-c2b7-1795521150015-desktop.jpg",
+    "note": "Solea is a free DJ app for Mac that provides waveform visualization, live stems, accurate beat grids, and USB compatibility with Pioneer players. The design combines a near-black canvas with pixel-lik",
+    "source": "One Page Love",
+    "kind": "gallery"
+   },
+   {
+    "title": "Tray",
+    "url": "https://www.producthunt.com/products/tray-2",
+    "note": "macOS file manager in a screen corner",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
    },
    {
     "title": "Rinat Seif",
@@ -117,19 +124,11 @@
     "kind": "gallery"
    },
    {
-    "title": "Umami Manager",
-    "url": "https://www.producthunt.com/products/umami-manager",
-    "note": "Umami reports, widgets & links – native on iPhone & iPad",
+    "title": "MAGI-2",
+    "url": "https://www.producthunt.com/products/magi-1",
+    "note": "Sand AI's 480B model for cinematic video generation",
     "source": "Product Hunt · Today",
     "kind": "trending"
-   },
-   {
-    "title": "La boite à slides",
-    "url": "https://www.awwwards.com/sites/la-boite-a-slide",
-    "image": "https://www.awwwards.com/awards/submissions/2026/10/6ac3a61da6c1a818669397.png",
-    "note": "A modern, story-driven redesign blending immersive 3D, strong SEO foundations and seamless content migration to create a richer digital experience.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
    },
    {
     "title": "Damián Panes",
@@ -140,19 +139,11 @@
     "kind": "gallery"
    },
    {
-    "title": "Finer Screenshot",
-    "url": "https://www.producthunt.com/products/finer-screenshot",
-    "note": "Add text that automatically stays readable on any background",
+    "title": "SteerLatch",
+    "url": "https://www.producthunt.com/products/steerlatch",
+    "note": "Connect MCP-compatible AIs to your computer",
     "source": "Product Hunt · Today",
     "kind": "trending"
-   },
-   {
-    "title": "Artemii Lebedev",
-    "url": "https://www.awwwards.com/sites/artemii-lebedev-1",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6abbce65493c2819140035.jpg",
-    "note": "An independent art director and designer’s portfolio featuring selected websites, motion experiments, and 3D visuals.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
    },
    {
     "title": "Soma",
@@ -163,19 +154,11 @@
     "kind": "gallery"
    },
    {
-    "title": "Juncts",
-    "url": "https://www.producthunt.com/products/juncts",
-    "note": "Superhuman for your DMs, with AI that triages and drafts",
+    "title": "Tendeck",
+    "url": "https://www.producthunt.com/products/tendeck",
+    "note": "Run all your Claude Code and Codex agents on one Mac board",
     "source": "Product Hunt · Today",
     "kind": "trending"
-   },
-   {
-    "title": "Night Drive Racing Game",
-    "url": "https://www.awwwards.com/sites/night-drive-racing-game",
-    "image": "https://www.awwwards.com/awards/submissions/2026/09/6abbd731284f6515683857.jpg",
-    "note": "A free-to-play racing game built with Three.js and WebGPU, featuring 50+ missions, realistic visuals, dynamic rain, physics, collectibles, and a huge city.",
-    "source": "Awwwards · Sites of the Day",
-    "kind": "award"
    },
    {
     "title": "Sunstill",
@@ -186,18 +169,33 @@
     "kind": "gallery"
    },
    {
-    "title": "Finseo",
-    "url": "https://www.producthunt.com/products/finseo-ai",
-    "note": "Company brain + outreach to get your brand mentioned by AI",
+    "title": "eluna",
+    "url": "https://www.producthunt.com/products/eluna",
+    "note": "Period tracker for couples that explains WHY, not just WHEN",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "GEOFORM®",
+    "url": "https://onepagelove.com/geoform",
+    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/11/opl-screenshot-geoform-1794933315907-desktop.jpg",
+    "note": "GEOFORM® is a full-service design studio offering multidisciplinary services across multiple creative fields. This single-page site uses enormous, fragmented typography with colorful three-dimensional",
+    "source": "One Page Love",
+    "kind": "gallery"
+   },
+   {
+    "title": "Blink",
+    "url": "https://www.producthunt.com/products/blink-35",
+    "note": "Describe any trade and watch Blink build it",
     "source": "Product Hunt · Today",
     "kind": "trending"
    }
   ],
   "app": [
    {
-    "title": "Umami Manager",
-    "url": "https://www.producthunt.com/products/umami-manager",
-    "note": "Umami reports, widgets & links – native on iPhone & iPad",
+    "title": "Tray",
+    "url": "https://www.producthunt.com/products/tray-2",
+    "note": "macOS file manager in a screen corner",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -205,15 +203,15 @@
     "title": "elementalsouls/Claude-BugHunter",
     "url": "https://github.com/elementalsouls/Claude-BugHunter",
     "image": "https://opengraph.githubassets.com/1/elementalsouls/Claude-BugHunter",
-    "by": "★ 1,833 today",
+    "by": "★ 1,644 today",
     "note": "A Claude Code skill bundle for bug hunting and external red-team work - 84 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identi",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Finer Screenshot",
-    "url": "https://www.producthunt.com/products/finer-screenshot",
-    "note": "Add text that automatically stays readable on any background",
+    "title": "MAGI-2",
+    "url": "https://www.producthunt.com/products/magi-1",
+    "note": "Sand AI's 480B model for cinematic video generation",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -221,15 +219,15 @@
     "title": "obra/superpowers",
     "url": "https://github.com/obra/superpowers",
     "image": "https://opengraph.githubassets.com/1/obra/superpowers",
-    "by": "★ 1,006 today",
+    "by": "★ 902 today",
     "note": "An agentic skills framework & software development methodology that works.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Juncts",
-    "url": "https://www.producthunt.com/products/juncts",
-    "note": "Superhuman for your DMs, with AI that triages and drafts",
+    "title": "SteerLatch",
+    "url": "https://www.producthunt.com/products/steerlatch",
+    "note": "Connect MCP-compatible AIs to your computer",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -237,15 +235,15 @@
     "title": "HKUDS/CLI-Anything",
     "url": "https://github.com/HKUDS/CLI-Anything",
     "image": "https://opengraph.githubassets.com/1/HKUDS/CLI-Anything",
-    "by": "★ 1,075 today",
+    "by": "★ 1,094 today",
     "note": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Finseo",
-    "url": "https://www.producthunt.com/products/finseo-ai",
-    "note": "Company brain + outreach to get your brand mentioned by AI",
+    "title": "Tendeck",
+    "url": "https://www.producthunt.com/products/tendeck",
+    "note": "Run all your Claude Code and Codex agents on one Mac board",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -253,15 +251,15 @@
     "title": "jingyaogong/minimind",
     "url": "https://github.com/jingyaogong/minimind",
     "image": "https://opengraph.githubassets.com/1/jingyaogong/minimind",
-    "by": "★ 727 today",
+    "by": "★ 828 today",
     "note": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Viktor Code",
-    "url": "https://www.producthunt.com/products/viktor",
-    "note": "Coding agents know your repo. Viktor knows your company.",
+    "title": "eluna",
+    "url": "https://www.producthunt.com/products/eluna",
+    "note": "Period tracker for couples that explains WHY, not just WHEN",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -269,15 +267,15 @@
     "title": "cursor/plugins",
     "url": "https://github.com/cursor/plugins",
     "image": "https://opengraph.githubassets.com/1/cursor/plugins",
-    "by": "★ 359 today",
+    "by": "★ 408 today",
     "note": "Cursor plugin specification and official plugins",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "frwrd.to",
-    "url": "https://www.producthunt.com/products/frwrd-to",
-    "note": "Your link in bio, sorted by your AI in one message",
+    "title": "Blink",
+    "url": "https://www.producthunt.com/products/blink-35",
+    "note": "Describe any trade and watch Blink build it",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -285,7 +283,7 @@
     "title": "firecrawl/firecrawl",
     "url": "https://github.com/firecrawl/firecrawl",
     "image": "https://opengraph.githubassets.com/1/firecrawl/firecrawl",
-    "by": "★ 990 today",
+    "by": "★ 1,131 today",
     "note": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
     "source": "GitHub Trending",
     "kind": "trending"
@@ -302,18 +300,18 @@
     "kind": "performance"
    },
    {
-    "title": "I made a film in Excel",
-    "url": "https://vimeo.com/channels/staffpicks/1241981102",
-    "image": "https://i.vimeocdn.com/video/2220119244-b6ba3bfe229032b63c18e6a7d3c693bdf20568732c9602a87d0192e9a8d97b6f-d_960?region=us",
-    "note": "Super quick film made in Microsoft Excel The original soundtrack was created first which inspired the visuals. After everything was animated the narration was made.  Excel&hellip;",
+    "title": "I Got My Brother",
+    "url": "https://vimeo.com/channels/staffpicks/1248815965",
+    "image": "https://i.vimeocdn.com/video/2229044852-9e946cb8a06281c44fdd83028bac506e05d7c851101f53db05f3415d176896c9-d_960?region=us",
+    "note": "Two brothers reflect on their candid and often humorous memories of surviving the foster care system and prison, realizing along the way that their path to healing&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
    {
-    "title": "The Tower & the Witch: New Spec Game Trailer by Ripplet",
-    "url": "https://www.stashmedia.tv/the-tower-the-witch-new-spec-game-trailer-by-ripplet/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Tower-Spec-game-trailer-by-Ripplet-Studio-_-STASH-MAGAZINE9-1498x1080.jpg",
-    "note": "Lenar Singatullov, founder/CD at Ripplet in Tbilisi, Georgia, just dropped us the studio's newest self-initiated CG project, an inventive and atmospheric fantasy trailer for an imagined game, from an ",
+    "title": "Technological, Precise & Open: Wix Launches Studio Two",
+    "url": "https://www.stashmedia.tv/technological-precise-open-wix-launches-studio-two/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Launch-video-for-Studio-Two-by-Wix-Motion-Studio-STASH-MAGAZINE3-1920x1078.jpg",
+    "note": "Following up on their films for Wix's Harmony and Symphony products (here and here), the brand's in-house motion studio continues to refine its smooth and stylish explainer vibe with this launch video",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -326,18 +324,18 @@
     "kind": "performance"
    },
    {
-    "title": "Shadows",
-    "url": "https://vimeo.com/channels/staffpicks/1236837249",
-    "image": "https://i.vimeocdn.com/video/2213470414-3e5cf1cc50771902a1a6661390dbc0209aae23dc9b500b5dd6e8744c4bd06f3f-d_960?region=us",
-    "note": "At an over crowded airport, Ahlam, a 15-year old runaway mother, fights the lurking shadows that attempt to steal the only dream that will set her free.  Since its&hellip;",
+    "title": "SAUNA SICKNESS",
+    "url": "https://vimeo.com/channels/staffpicks/1249479904",
+    "image": "https://i.vimeocdn.com/video/2229864348-aeafa0e6f69fc3d905c559c96f4a2282def270213c96d078d32655aa53ebb1cc-d_960?region=us",
+    "note": "FOR YOUR CONSIDERATION - BEST LIVE ACTION SHORT FILM   Struggling to maintain the peace she mistakes for love, Cleo's steamy New Year's Eve plans fissure&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
    {
-    "title": "ManvsMachine Opens Hood Summit ’26 for Robinhood",
-    "url": "https://www.stashmedia.tv/manvsmachine-opens-hood-summit-26-for-robinhood/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Robinhood-Hood-Summit-26-Title-Sequence-by-ManvsMachine-STASH-MAGAZINE1-1920x597.jpg",
-    "note": "Earlier this fall, the American financial services and electronic trading platform Robinhood opened their third annual flagship event in Houston with this perfectly austere, space-zen sequence by the ",
+    "title": "The Tower & the Witch: New Spec Game Trailer by Ripplet",
+    "url": "https://www.stashmedia.tv/the-tower-the-witch-new-spec-game-trailer-by-ripplet/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Tower-Spec-game-trailer-by-Ripplet-Studio-_-STASH-MAGAZINE9-1498x1080.jpg",
+    "note": "Lenar Singatullov, founder/CD at Ripplet in Tbilisi, Georgia, just dropped us the studio's newest self-initiated CG project, an inventive and atmospheric fantasy trailer for an imagined game, from an ",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -350,18 +348,18 @@
     "kind": "performance"
    },
    {
-    "title": "Souvenir",
-    "url": "https://vimeo.com/channels/staffpicks/1248536635",
-    "image": "https://i.vimeocdn.com/video/2228706450-14c9f956636aa82b4b981d0a5e33b9e9a69df66964afe15d6ef3f19418c9060c-d_960?region=us",
-    "note": "While stuck on a family vacation, a young closeted teen must confront the unnerving hold her girlfriend has over her after she takes unwarranted photos of her during&hellip;",
+    "title": "I made a film in Excel",
+    "url": "https://vimeo.com/channels/staffpicks/1241981102",
+    "image": "https://i.vimeocdn.com/video/2220119244-b6ba3bfe229032b63c18e6a7d3c693bdf20568732c9602a87d0192e9a8d97b6f-d_960?region=us",
+    "note": "Super quick film made in Microsoft Excel The original soundtrack was created first which inspired the visuals. After everything was animated the narration was made.  Excel&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
    {
-    "title": "FrameScale Floats the Cloud9 Chair for W. Schillig",
-    "url": "https://www.stashmedia.tv/framescale-floats-the-cloud9-chair-for-w-schillig/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/W.-Schillig-Cloud9-Chair-ad-by-FrameScale-STASH-MAGAZINE5-1920x1080.jpg",
-    "note": "FrameScale, the creative agency founded in Leipzig, Germany, in 2025 by CD Paul Härty and CGO Len Ohlsen, makes their Stash debut with a tasteful and tactile blend of live action and AI for furniture ",
+    "title": "ManvsMachine Opens Hood Summit ’26 for Robinhood",
+    "url": "https://www.stashmedia.tv/manvsmachine-opens-hood-summit-26-for-robinhood/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Robinhood-Hood-Summit-26-Title-Sequence-by-ManvsMachine-STASH-MAGAZINE1-1920x597.jpg",
+    "note": "Earlier this fall, the American financial services and electronic trading platform Robinhood opened their third annual flagship event in Houston with this perfectly austere, space-zen sequence by the ",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -374,36 +372,36 @@
     "kind": "performance"
    },
    {
-    "title": "Ibuka, Justice",
-    "url": "https://vimeo.com/channels/staffpicks/1236621193",
-    "image": "https://i.vimeocdn.com/video/2213180937-6f757aa8f0465ec60553e6f617c9b9a200746871932aa2116c2975a2315c0699-d_960?region=us",
-    "note": "Un film de / A film by : Justice Rutikara Documentary/Animation, Canada, 2024, 23' Production : Yzanakio (Myl&egrave;ne Augutin) | Distribution : SPIRA (short@spira.quebec)  &mdash;&hellip;",
+    "title": "Shadows",
+    "url": "https://vimeo.com/channels/staffpicks/1236837249",
+    "image": "https://i.vimeocdn.com/video/2213470414-3e5cf1cc50771902a1a6661390dbc0209aae23dc9b500b5dd6e8744c4bd06f3f-d_960?region=us",
+    "note": "At an over crowded airport, Ahlam, a 15-year old runaway mother, fights the lurking shadows that attempt to steal the only dream that will set her free.  Since its&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
    {
-    "title": "Thomas Bertrand & Mathematic Bridge “The Divide” for Les Restos du Cœur",
-    "url": "https://www.stashmedia.tv/thomas-bertrand-mathematic-bridge-the-divide-for-les-restos-du-coeur/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Les-Restos-du-Coeur-unveils-The-Divide-ad-by-Mathematic-STASH-MAGAZINE-1920x1080.jpg",
-    "note": "Working with Paris agency Change, director Thomas Bertrand and the animation team at Mathematic help charity Les Restos du Cœur fight divisions within French society with a heart-warming, stop-motion-",
+    "title": "FrameScale Floats the Cloud9 Chair for W. Schillig",
+    "url": "https://www.stashmedia.tv/framescale-floats-the-cloud9-chair-for-w-schillig/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/W.-Schillig-Cloud9-Chair-ad-by-FrameScale-STASH-MAGAZINE5-1920x1080.jpg",
+    "note": "FrameScale, the creative agency founded in Leipzig, Germany, in 2025 by CD Paul Härty and CGO Len Ohlsen, makes their Stash debut with a tasteful and tactile blend of live action and AI for furniture ",
     "source": "STASH",
     "kind": "gallery"
    }
   ],
   "motion": [
    {
-    "title": "AH&Co. Studio | Birkenstock India’s Journey",
-    "url": "https://motionographer.com/quickie/ahandco-studio-birkenstock-indias-journey/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/birkenstock-indias-journey-srinagar.png",
-    "note": "Watch the full film on Vimeo 65+ stores. Countless steps. One enduring journey across India. We had the privilege of bringing BIRKENSTOCK’s remarkable journey across India to film capturing a footprin",
+    "title": "World War Seven Adds Starburns Industries to Its Director Roster",
+    "url": "https://motionographer.com/news/world-war-seven-adds-starburns-industries-to-its-director-roster/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/starburns-industries-team.png",
+    "note": "The studio behind Anomalisa joins World War Seven as a partner for stop-motion and animation.",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "The Tower & the Witch: New Spec Game Trailer by Ripplet",
-    "url": "https://www.stashmedia.tv/the-tower-the-witch-new-spec-game-trailer-by-ripplet/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Tower-Spec-game-trailer-by-Ripplet-Studio-_-STASH-MAGAZINE9-1498x1080.jpg",
-    "note": "Lenar Singatullov, founder/CD at Ripplet in Tbilisi, Georgia, just dropped us the studio's newest self-initiated CG project, an inventive and atmospheric fantasy trailer for an imagined game, from an ",
+    "title": "Technological, Precise & Open: Wix Launches Studio Two",
+    "url": "https://www.stashmedia.tv/technological-precise-open-wix-launches-studio-two/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Launch-video-for-Studio-Two-by-Wix-Motion-Studio-STASH-MAGAZINE3-1920x1078.jpg",
+    "note": "Following up on their films for Wix's Harmony and Symphony products (here and here), the brand's in-house motion studio continues to refine its smooth and stylish explainer vibe with this launch video",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -416,18 +414,18 @@
     "kind": "gallery"
    },
    {
-    "title": "The Long Way to “I Do”: A Porsche Love Story, Hand-Painted Frame by Frame",
-    "url": "https://motionographer.com/news/porsche-the-long-way-to-i-do-em-cooper-tonic-dna/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/porsche-the-long-way-to-i-do-film-still.png",
-    "note": "Director Em Cooper turns a restored 1966 Porsche 912 and the couple who rebuilt it into a moving oil painting.",
+    "title": "Gordon Howie | Broomsticks on Broadway",
+    "url": "https://motionographer.com/quickie/gordon-howie-broomsticks-on-broadway/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/broomsticks-on-broadway-00000.png",
+    "note": "A witch tries to brew a dancing potion in Gordon Howie’s animated homage to classic MGM musicals.",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "ManvsMachine Opens Hood Summit ’26 for Robinhood",
-    "url": "https://www.stashmedia.tv/manvsmachine-opens-hood-summit-26-for-robinhood/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Robinhood-Hood-Summit-26-Title-Sequence-by-ManvsMachine-STASH-MAGAZINE1-1920x597.jpg",
-    "note": "Earlier this fall, the American financial services and electronic trading platform Robinhood opened their third annual flagship event in Houston with this perfectly austere, space-zen sequence by the ",
+    "title": "The Tower & the Witch: New Spec Game Trailer by Ripplet",
+    "url": "https://www.stashmedia.tv/the-tower-the-witch-new-spec-game-trailer-by-ripplet/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Tower-Spec-game-trailer-by-Ripplet-Studio-_-STASH-MAGAZINE9-1498x1080.jpg",
+    "note": "Lenar Singatullov, founder/CD at Ripplet in Tbilisi, Georgia, just dropped us the studio's newest self-initiated CG project, an inventive and atmospheric fantasy trailer for an imagined game, from an ",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -440,18 +438,18 @@
     "kind": "gallery"
    },
    {
-    "title": "MAMMAL | Sequential Momentum",
-    "url": "https://motionographer.com/quickie/mammal-sequential-momentum/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/TCM_SequentialMomentum_06-scaled.jpeg",
-    "note": "Watch the full film on Vimeo The newest TCM IDs from MAMMAL act as a series of self-contained vignettes, designed to evolve TCM’s rebrand while deepening its connection to iconic film moments. Each pi",
+    "title": "AH&Co. Studio | Birkenstock India’s Journey",
+    "url": "https://motionographer.com/quickie/ahandco-studio-birkenstock-indias-journey/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/birkenstock-indias-journey-srinagar.png",
+    "note": "Watch the full film on Vimeo 65+ stores. Countless steps. One enduring journey across India. We had the privilege of bringing BIRKENSTOCK’s remarkable journey across India to film capturing a footprin",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "FrameScale Floats the Cloud9 Chair for W. Schillig",
-    "url": "https://www.stashmedia.tv/framescale-floats-the-cloud9-chair-for-w-schillig/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/W.-Schillig-Cloud9-Chair-ad-by-FrameScale-STASH-MAGAZINE5-1920x1080.jpg",
-    "note": "FrameScale, the creative agency founded in Leipzig, Germany, in 2025 by CD Paul Härty and CGO Len Ohlsen, makes their Stash debut with a tasteful and tactile blend of live action and AI for furniture ",
+    "title": "ManvsMachine Opens Hood Summit ’26 for Robinhood",
+    "url": "https://www.stashmedia.tv/manvsmachine-opens-hood-summit-26-for-robinhood/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Robinhood-Hood-Summit-26-Title-Sequence-by-ManvsMachine-STASH-MAGAZINE1-1920x597.jpg",
+    "note": "Earlier this fall, the American financial services and electronic trading platform Robinhood opened their third annual flagship event in Houston with this perfectly austere, space-zen sequence by the ",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -464,17 +462,18 @@
     "kind": "gallery"
    },
    {
-    "title": "Eeny, Meeny, Miny, Moe! Building a New Myth for the Kids Who Feel Too Much",
-    "url": "https://motionographer.com/2026/11/18/eeny-meeny-miny-moe-building-a-new-myth-for-the-kids-who-feel-too-much/",
-    "note": "A boy with a sun for a head, a playground of young gods and monsters, and a counting rhyme about who gets chosen. Jesse Rylander talks with director Andrea Szelesová and producer Kristina Husová about",
+    "title": "The Long Way to “I Do”: A Porsche Love Story, Hand-Painted Frame by Frame",
+    "url": "https://motionographer.com/news/porsche-the-long-way-to-i-do-em-cooper-tonic-dna/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/porsche-the-long-way-to-i-do-film-still.png",
+    "note": "Director Em Cooper turns a restored 1966 Porsche 912 and the couple who rebuilt it into a moving oil painting.",
     "source": "Motionographer",
     "kind": "gallery"
    },
    {
-    "title": "Thomas Bertrand & Mathematic Bridge “The Divide” for Les Restos du Cœur",
-    "url": "https://www.stashmedia.tv/thomas-bertrand-mathematic-bridge-the-divide-for-les-restos-du-coeur/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Les-Restos-du-Coeur-unveils-The-Divide-ad-by-Mathematic-STASH-MAGAZINE-1920x1080.jpg",
-    "note": "Working with Paris agency Change, director Thomas Bertrand and the animation team at Mathematic help charity Les Restos du Cœur fight divisions within French society with a heart-warming, stop-motion-",
+    "title": "FrameScale Floats the Cloud9 Chair for W. Schillig",
+    "url": "https://www.stashmedia.tv/framescale-floats-the-cloud9-chair-for-w-schillig/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/W.-Schillig-Cloud9-Chair-ad-by-FrameScale-STASH-MAGAZINE5-1920x1080.jpg",
+    "note": "FrameScale, the creative agency founded in Leipzig, Germany, in 2025 by CD Paul Härty and CGO Len Ohlsen, makes their Stash debut with a tasteful and tactile blend of live action and AI for furniture ",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -497,6 +496,70 @@
     "kind": "performance"
    },
    {
+    "title": "I Got My Brother",
+    "url": "https://vimeo.com/channels/staffpicks/1248815965",
+    "image": "https://i.vimeocdn.com/video/2229044852-9e946cb8a06281c44fdd83028bac506e05d7c851101f53db05f3415d176896c9-d_960?region=us",
+    "note": "Two brothers reflect on their candid and often humorous memories of surviving the foster care system and prison, realizing along the way that their path to healing&hellip;",
+    "source": "Vimeo Staff Picks",
+    "kind": "gallery"
+   },
+   {
+    "title": "World War Seven Adds Starburns Industries to Its Director Roster",
+    "url": "https://motionographer.com/news/world-war-seven-adds-starburns-industries-to-its-director-roster/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/starburns-industries-team.png",
+    "note": "The studio behind Anomalisa joins World War Seven as a partner for stop-motion and animation.",
+    "source": "Motionographer",
+    "kind": "gallery"
+   },
+   {
+    "title": "Technological, Precise & Open: Wix Launches Studio Two",
+    "url": "https://www.stashmedia.tv/technological-precise-open-wix-launches-studio-two/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Launch-video-for-Studio-Two-by-Wix-Motion-Studio-STASH-MAGAZINE3-1920x1078.jpg",
+    "note": "Following up on their films for Wix's Harmony and Symphony products (here and here), the brand's in-house motion studio continues to refine its smooth and stylish explainer vibe with this launch video",
+    "source": "STASH",
+    "kind": "gallery"
+   },
+   {
+    "title": "We Finally Know More About Humanity’s First Civilization",
+    "url": "https://www.youtube.com/watch?v=_y9JuojAIg0",
+    "image": "https://i.ytimg.com/vi/_y9JuojAIg0/hqdefault.jpg",
+    "by": "12M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "SAUNA SICKNESS",
+    "url": "https://vimeo.com/channels/staffpicks/1249479904",
+    "image": "https://i.vimeocdn.com/video/2229864348-aeafa0e6f69fc3d905c559c96f4a2282def270213c96d078d32655aa53ebb1cc-d_960?region=us",
+    "note": "FOR YOUR CONSIDERATION - BEST LIVE ACTION SHORT FILM   Struggling to maintain the peace she mistakes for love, Cleo's steamy New Year's Eve plans fissure&hellip;",
+    "source": "Vimeo Staff Picks",
+    "kind": "gallery"
+   },
+   {
+    "title": "Gordon Howie | Broomsticks on Broadway",
+    "url": "https://motionographer.com/quickie/gordon-howie-broomsticks-on-broadway/",
+    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/broomsticks-on-broadway-00000.png",
+    "note": "A witch tries to brew a dancing potion in Gordon Howie’s animated homage to classic MGM musicals.",
+    "source": "Motionographer",
+    "kind": "gallery"
+   },
+   {
+    "title": "The Tower & the Witch: New Spec Game Trailer by Ripplet",
+    "url": "https://www.stashmedia.tv/the-tower-the-witch-new-spec-game-trailer-by-ripplet/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Tower-Spec-game-trailer-by-Ripplet-Studio-_-STASH-MAGAZINE9-1498x1080.jpg",
+    "note": "Lenar Singatullov, founder/CD at Ripplet in Tbilisi, Georgia, just dropped us the studio's newest self-initiated CG project, an inventive and atmospheric fantasy trailer for an imagined game, from an ",
+    "source": "STASH",
+    "kind": "gallery"
+   },
+   {
+    "title": "This Is What a Godlike Civilization Would Look Like",
+    "url": "https://www.youtube.com/watch?v=QW_jlUn4gA8",
+    "image": "https://i.ytimg.com/vi/QW_jlUn4gA8/hqdefault.jpg",
+    "by": "9.7M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
     "title": "I made a film in Excel",
     "url": "https://vimeo.com/channels/staffpicks/1241981102",
     "image": "https://i.vimeocdn.com/video/2220119244-b6ba3bfe229032b63c18e6a7d3c693bdf20568732c9602a87d0192e9a8d97b6f-d_960?region=us",
@@ -513,74 +576,10 @@
     "kind": "gallery"
    },
    {
-    "title": "The Tower & the Witch: New Spec Game Trailer by Ripplet",
-    "url": "https://www.stashmedia.tv/the-tower-the-witch-new-spec-game-trailer-by-ripplet/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Tower-Spec-game-trailer-by-Ripplet-Studio-_-STASH-MAGAZINE9-1498x1080.jpg",
-    "note": "Lenar Singatullov, founder/CD at Ripplet in Tbilisi, Georgia, just dropped us the studio's newest self-initiated CG project, an inventive and atmospheric fantasy trailer for an imagined game, from an ",
-    "source": "STASH",
-    "kind": "gallery"
-   },
-   {
-    "title": "We Finally Know More About Humanity’s First Civilization",
-    "url": "https://www.youtube.com/watch?v=_y9JuojAIg0",
-    "image": "https://i.ytimg.com/vi/_y9JuojAIg0/hqdefault.jpg",
-    "by": "12M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "Shadows",
-    "url": "https://vimeo.com/channels/staffpicks/1236837249",
-    "image": "https://i.vimeocdn.com/video/2213470414-3e5cf1cc50771902a1a6661390dbc0209aae23dc9b500b5dd6e8744c4bd06f3f-d_960?region=us",
-    "note": "At an over crowded airport, Ahlam, a 15-year old runaway mother, fights the lurking shadows that attempt to steal the only dream that will set her free.  Since its&hellip;",
-    "source": "Vimeo Staff Picks",
-    "kind": "gallery"
-   },
-   {
-    "title": "The Long Way to “I Do”: A Porsche Love Story, Hand-Painted Frame by Frame",
-    "url": "https://motionographer.com/news/porsche-the-long-way-to-i-do-em-cooper-tonic-dna/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/porsche-the-long-way-to-i-do-film-still.png",
-    "note": "Director Em Cooper turns a restored 1966 Porsche 912 and the couple who rebuilt it into a moving oil painting.",
-    "source": "Motionographer",
-    "kind": "gallery"
-   },
-   {
     "title": "ManvsMachine Opens Hood Summit ’26 for Robinhood",
     "url": "https://www.stashmedia.tv/manvsmachine-opens-hood-summit-26-for-robinhood/",
     "image": "http://www.stashmedia.tv/wp-content/uploads/Robinhood-Hood-Summit-26-Title-Sequence-by-ManvsMachine-STASH-MAGAZINE1-1920x597.jpg",
     "note": "Earlier this fall, the American financial services and electronic trading platform Robinhood opened their third annual flagship event in Houston with this perfectly austere, space-zen sequence by the ",
-    "source": "STASH",
-    "kind": "gallery"
-   },
-   {
-    "title": "This Is What a Godlike Civilization Would Look Like",
-    "url": "https://www.youtube.com/watch?v=QW_jlUn4gA8",
-    "image": "https://i.ytimg.com/vi/QW_jlUn4gA8/hqdefault.jpg",
-    "by": "9.7M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "Souvenir",
-    "url": "https://vimeo.com/channels/staffpicks/1248536635",
-    "image": "https://i.vimeocdn.com/video/2228706450-14c9f956636aa82b4b981d0a5e33b9e9a69df66964afe15d6ef3f19418c9060c-d_960?region=us",
-    "note": "While stuck on a family vacation, a young closeted teen must confront the unnerving hold her girlfriend has over her after she takes unwarranted photos of her during&hellip;",
-    "source": "Vimeo Staff Picks",
-    "kind": "gallery"
-   },
-   {
-    "title": "MAMMAL | Sequential Momentum",
-    "url": "https://motionographer.com/quickie/mammal-sequential-momentum/",
-    "image": "https://i0.wp.com/motionographer.com/wp-content/uploads/2026/11/TCM_SequentialMomentum_06-scaled.jpeg",
-    "note": "Watch the full film on Vimeo The newest TCM IDs from MAMMAL act as a series of self-contained vignettes, designed to evolve TCM’s rebrand while deepening its connection to iconic film moments. Each pi",
-    "source": "Motionographer",
-    "kind": "gallery"
-   },
-   {
-    "title": "FrameScale Floats the Cloud9 Chair for W. Schillig",
-    "url": "https://www.stashmedia.tv/framescale-floats-the-cloud9-chair-for-w-schillig/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/W.-Schillig-Cloud9-Chair-ad-by-FrameScale-STASH-MAGAZINE5-1920x1080.jpg",
-    "note": "FrameScale, the creative agency founded in Leipzig, Germany, in 2025 by CD Paul Härty and CGO Len Ohlsen, makes their Stash debut with a tasteful and tactile blend of live action and AI for furniture ",
     "source": "STASH",
     "kind": "gallery"
    }
@@ -590,15 +589,7 @@
     "title": "Always Keep Going 👏",
     "url": "https://www.youtube.com/watch?v=Ye4pKOUW6k4",
     "image": "https://i.ytimg.com/vi/Ye4pKOUW6k4/hqdefault.jpg",
-    "by": "4.6M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "Airbnb | あつまる？エアビる？｜プールでエアビる",
-    "url": "https://www.youtube.com/watch?v=QS0QEqKGGIw",
-    "image": "https://i.ytimg.com/vi/QS0QEqKGGIw/hqdefault.jpg",
-    "by": "2.8M views",
+    "by": "7.8M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -606,7 +597,15 @@
     "title": "No Respawn Button Here 🚲",
     "url": "https://www.youtube.com/watch?v=YRozsQp4TXU",
     "image": "https://i.ytimg.com/vi/YRozsQp4TXU/hqdefault.jpg",
-    "by": "2.7M views",
+    "by": "3M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Airbnb | あつまる？エアビる？｜プールでエアビる",
+    "url": "https://www.youtube.com/watch?v=QS0QEqKGGIw",
+    "image": "https://i.ytimg.com/vi/QS0QEqKGGIw/hqdefault.jpg",
+    "by": "2.9M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -622,7 +621,7 @@
     "title": "POV: 55ft MTB Freefall 🎬 Antoni Villoni #GoPro",
     "url": "https://www.youtube.com/watch?v=tAIjGmGVa1g",
     "image": "https://i.ytimg.com/vi/tAIjGmGVa1g/hqdefault.jpg",
-    "by": "1.4M views",
+    "by": "1.5M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -630,23 +629,7 @@
     "title": "F1 Car vs MotoGP Bike on ICE 🥶",
     "url": "https://www.youtube.com/watch?v=JJL4gMS7Iyo",
     "image": "https://i.ytimg.com/vi/JJL4gMS7Iyo/hqdefault.jpg",
-    "by": "1.3M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "That Was Pretty Fast 😮‍💨",
-    "url": "https://www.youtube.com/watch?v=j8KcKg-WcfI",
-    "image": "https://i.ytimg.com/vi/j8KcKg-WcfI/hqdefault.jpg",
-    "by": "716K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "Nido de Villanas: Ep. 1 Don Cristóbal’s inheritance",
-    "url": "https://www.youtube.com/watch?v=wG_LaKvlcqM",
-    "image": "https://i.ytimg.com/vi/wG_LaKvlcqM/hqdefault.jpg",
-    "by": "560K views",
+    "by": "1.4M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -654,7 +637,23 @@
     "title": "you're hooked on me i'm hooked on sakura mochi 🍡 🎨: @brerbo",
     "url": "https://www.youtube.com/watch?v=TrEHPMqHVAc",
     "image": "https://i.ytimg.com/vi/TrEHPMqHVAc/hqdefault.jpg",
-    "by": "540K views",
+    "by": "565K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Nido de Villanas: Ep. 1 Don Cristóbal’s inheritance",
+    "url": "https://www.youtube.com/watch?v=wG_LaKvlcqM",
+    "image": "https://i.ytimg.com/vi/wG_LaKvlcqM/hqdefault.jpg",
+    "by": "561K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "she meant “seis siete”",
+    "url": "https://www.youtube.com/watch?v=L8L24fksmlk",
+    "image": "https://i.ytimg.com/vi/L8L24fksmlk/hqdefault.jpg",
+    "by": "383K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -667,92 +666,92 @@
     "kind": "performance"
    },
    {
-    "title": "is this a math lesson or a language lesson? ib: @PeraToons",
-    "url": "https://www.youtube.com/watch?v=GKJNl4IEFzM",
-    "image": "https://i.ytimg.com/vi/GKJNl4IEFzM/hqdefault.jpg",
-    "by": "332K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
     "title": "Show off your work with Desk View. Tip from Kylie at the Apple Store.",
     "url": "https://www.youtube.com/watch?v=BTyWlJJUX2I",
     "image": "https://i.ytimg.com/vi/BTyWlJJUX2I/hqdefault.jpg",
     "by": "332K views",
     "source": "Latest from brands",
     "kind": "performance"
+   },
+   {
+    "title": "just gift me super for no reason, that’s the basic minimum",
+    "url": "https://www.youtube.com/watch?v=CrLI5ImyTUo",
+    "image": "https://i.ytimg.com/vi/CrLI5ImyTUo/hqdefault.jpg",
+    "by": "317K views",
+    "source": "Latest from brands",
+    "kind": "performance"
    }
   ],
   "post": [
    {
+    "title": "Button Sounds – collection of professionally-recorded button clicks and presses",
+    "url": "https://buttons.joshwcomeau.com/",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "Matrix Multiplication is Θ(n^2.25) [pdf]",
+    "url": "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
+    "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "Ternary Bonsai 2.5 27B",
+    "url": "https://prismml.com/news/bonsai-2-5-27b",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "Ask HN: Anthropic is accusing my company of distilling. How can I prove I'm not?",
+    "url": "https://news.ycombinator.com/item?id=50630809",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "Active intrusion campaign against Check Point security management servers",
+    "url": "https://www.greynoise.io/blog/check-point-security-management-servers-intrusion-campaign",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "Jetty Pro",
+    "url": "http://hypercritical.co/2026/11/23/jetty-pro",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "Tidal bans AI-generated music",
+    "url": "https://variety.com/2026/music/news/tidal-bans-ai-generated-music-1236956924/",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "Anthropic breaks below $83 IPO price",
+    "url": "https://www.bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "GTA 6 Running on Windows",
+    "url": "https://twitter.com/raul_bs3/status/2125213756238291075",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
+    "title": "LLM agents work for their parent companies, not for you",
+    "url": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/",
+    "source": "Hacker News · Best",
+    "kind": "performance"
+   },
+   {
     "title": "Investigation of Polymarket Insider Trading on the Reinstatement of Jensen Huang",
     "url": "https://deucalionn.vercel.app/polymarket-delit-initie-jensen-huang-nvidia/",
-    "source": "Hacker News · Best",
-    "kind": "performance"
-   },
-   {
-    "title": "2035 Came Early",
-    "url": "https://fzakaria.com/2026/11/23/2035-came-early",
-    "source": "Hacker News · Best",
-    "kind": "performance"
-   },
-   {
-    "title": "New York Bans Subscription and Post-Purchase Fees on Cars",
-    "url": "https://www.governor.ny.gov/news/money-your-pockets-governor-hochul-signs-bill-restricting-exploitative-vehicle-subscription",
-    "source": "Hacker News · Best",
-    "kind": "performance"
-   },
-   {
-    "title": "Huang's Return Is the Biggest National Security Scandal in U.S. History",
-    "url": "https://foreignpolicy.com/2026/11/23/jensen-huang-nvidia-return-ceo-national-security-scandal/",
-    "source": "Hacker News · Best",
-    "kind": "performance"
-   },
-   {
-    "title": "Stalwart is now a drop-in replacement for Microsoft Exchange",
-    "url": "https://stalw.art/blog/microsoft-exchange-replacement/",
-    "source": "Hacker News · Best",
-    "kind": "performance"
-   },
-   {
-    "title": "VP ≠ VNP over Every Field",
-    "url": "https://github.com/anthropics/formal-math/tree/main/vp-vnp",
-    "source": "Hacker News · Best",
-    "kind": "performance"
-   },
-   {
-    "title": "Bored.com: Fun, interesting and cool websites to explore when bored",
-    "url": "https://www.bored.com/",
-    "source": "Hacker News · Best",
-    "kind": "performance"
-   },
-   {
-    "title": "GPUI is getting its own repository",
-    "url": "https://github.com/zed-industries/gpui",
-    "source": "Hacker News · Best",
-    "kind": "performance"
-   },
-   {
-    "title": "Per Arm's request, this site will be discontinued on 4 December 2026 :(",
-    "url": "https://arm.jonpalmisc.com/",
-    "source": "Hacker News · Best",
-    "kind": "performance"
-   },
-   {
-    "title": "Apple removed my open-source app from EU App Stores after 9 years",
-    "url": "https://github.com/glushchenko/fsnotes/discussions/2056",
-    "source": "Hacker News · Best",
-    "kind": "performance"
-   },
-   {
-    "title": "Kagi Mail (public beta)",
-    "url": "https://blog.kagi.com/kagi-mail-public-beta",
-    "source": "Hacker News · Best",
-    "kind": "performance"
-   },
-   {
-    "title": "\"Dario is hyping the dangers so OSS models are illegal and he stays in control\"",
-    "url": "https://twitter.com/ylecun/status/2124550037912920090",
     "source": "Hacker News · Best",
     "kind": "performance"
    }
@@ -767,10 +766,10 @@
     "kind": "performance"
    },
    {
-    "title": "The Baby Panthers' Nocturnal Journey",
-    "url": "https://www.adsoftheworld.com/campaigns/the-baby-panthers-nocturnal-journey-c474437f-e5bb-434b-a331-e3cfb3837b4f",
-    "image": "https://image.adsoftheworld.com/aploegyllywr26fb3qmpfz28obfg",
-    "by": "Cartier",
+    "title": "The Sweetest Love Story of the Year",
+    "url": "https://www.adsoftheworld.com/campaigns/the-sweetest-love-story-of-the-year",
+    "image": "https://image.adsoftheworld.com/ey2iwv8eg0jybgqq8bzn7c9o5dev",
+    "by": "Google",
     "source": "Ads of the World",
     "kind": "gallery"
    },
@@ -783,10 +782,10 @@
     "kind": "performance"
    },
    {
-    "title": "The List",
-    "url": "https://www.adsoftheworld.com/campaigns/the-list-2ca9f421-c2c3-41b4-84b1-fe8b7b07f150",
-    "image": "https://image.adsoftheworld.com/e22bya9fcuglrou1u8y9v3ylw6e3",
-    "by": "Oxfam",
+    "title": "The Baby Panthers' Nocturnal Journey",
+    "url": "https://www.adsoftheworld.com/campaigns/the-baby-panthers-nocturnal-journey-c474437f-e5bb-434b-a331-e3cfb3837b4f",
+    "image": "https://image.adsoftheworld.com/aploegyllywr26fb3qmpfz28obfg",
+    "by": "Cartier",
     "source": "Ads of the World",
     "kind": "gallery"
    },
@@ -799,10 +798,10 @@
     "kind": "performance"
    },
    {
-    "title": "An Extra Set of Pizza Hands",
-    "url": "https://www.adsoftheworld.com/campaigns/an-extra-set-of-pizza-hands",
-    "image": "https://image.adsoftheworld.com/xsf6brxs7bd54uww8xxlza9yabol",
-    "by": "Little Caesars",
+    "title": "The List",
+    "url": "https://www.adsoftheworld.com/campaigns/the-list-2ca9f421-c2c3-41b4-84b1-fe8b7b07f150",
+    "image": "https://image.adsoftheworld.com/e22bya9fcuglrou1u8y9v3ylw6e3",
+    "by": "Oxfam",
     "source": "Ads of the World",
     "kind": "gallery"
    },
@@ -815,10 +814,10 @@
     "kind": "performance"
    },
    {
-    "title": "THE END OF THE WORLD",
-    "url": "https://www.adsoftheworld.com/campaigns/the-end-of-the-world-699dd367-0801-4aff-bcbc-4b6257743de5",
-    "image": "https://image.adsoftheworld.com/bd33251ifwp8lh5ni0id1d9f5734",
-    "by": "Cerveza Andina",
+    "title": "An Extra Set of Pizza Hands",
+    "url": "https://www.adsoftheworld.com/campaigns/an-extra-set-of-pizza-hands",
+    "image": "https://image.adsoftheworld.com/xsf6brxs7bd54uww8xxlza9yabol",
+    "by": "Little Caesars",
     "source": "Ads of the World",
     "kind": "gallery"
    },
@@ -826,15 +825,15 @@
     "title": "What's going on at DuoMart!?! | DuoTV (Full Series)",
     "url": "https://www.youtube.com/watch?v=YP2KYQZUkWY",
     "image": "https://i.ytimg.com/vi/YP2KYQZUkWY/hqdefault.jpg",
-    "by": "517K views",
+    "by": "522K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
    {
-    "title": "Macaulay Culkin reprises his role as Kevin McCallister",
-    "url": "https://www.adsoftheworld.com/campaigns/macaulay-culkin-reprises-his-role-as-kevin-mccallister",
-    "image": "https://image.adsoftheworld.com/6nzg91x9a9zongw85jl97buj54y8",
-    "by": "McDonald's",
+    "title": "THE END OF THE WORLD",
+    "url": "https://www.adsoftheworld.com/campaigns/the-end-of-the-world-699dd367-0801-4aff-bcbc-4b6257743de5",
+    "image": "https://image.adsoftheworld.com/bd33251ifwp8lh5ni0id1d9f5734",
+    "by": "Cerveza Andina",
     "source": "Ads of the World",
     "kind": "gallery"
    },
@@ -850,7 +849,7 @@
     "title": "Apple Pay: The fast, easy, and secure way to pay.",
     "url": "https://www.youtube.com/watch?v=miUjxZ2ASRs",
     "image": "https://i.ytimg.com/vi/miUjxZ2ASRs/hqdefault.jpg",
-    "by": "303K views",
+    "by": "305K views",
     "source": "Latest from brands",
     "kind": "performance"
    }
