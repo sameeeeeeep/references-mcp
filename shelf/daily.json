@@ -1,11 +1,19 @@
 {
- "updated": "2026-11-25T13:03:58.990Z",
+ "updated": "2026-11-26T12:44:37.375Z",
  "media": {
   "ui": [
    {
-    "title": "Tray",
-    "url": "https://www.producthunt.com/products/tray-2",
-    "note": "macOS file manager in a screen corner",
+    "title": "Huxley Saga",
+    "url": "https://www.awwwards.com/sites/huxley-saga",
+    "image": "https://www.awwwards.com/awards/submissions/2026/10/6ac4239351de3833681170.png",
+    "note": "The HUXLEY® saga is an original sci-fi universe created by renowned concept artist Ben Mauro.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "OpenChat",
+    "url": "https://www.producthunt.com/products/openchat-5",
+    "note": "Open-source live chat in your own Cloudflare account",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -13,15 +21,23 @@
     "title": "elementalsouls/Claude-BugHunter",
     "url": "https://github.com/elementalsouls/Claude-BugHunter",
     "image": "https://opengraph.githubassets.com/1/elementalsouls/Claude-BugHunter",
-    "by": "★ 1,644 today",
-    "note": "A Claude Code skill bundle for bug hunting and external red-team work - 84 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identi",
+    "by": "★ 1,600 today",
+    "note": "A Claude Code skill bundle for bug hunting and external red-team work - 85 skills, 16 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identi",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "MAGI-2",
-    "url": "https://www.producthunt.com/products/magi-1",
-    "note": "Sand AI's 480B model for cinematic video generation",
+    "title": "Polpharma Biologics",
+    "url": "https://www.awwwards.com/sites/polpharma-biologics",
+    "image": "https://www.awwwards.com/awards/submissions/2026/10/6ac3955504e91069999337.jpg",
+    "note": "Biosimilars are not identical to their reference — only equivalent within defined tolerances. That rule became the design system: controlled variation, never off-system.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "Hub",
+    "url": "https://www.producthunt.com/products/hub-20",
+    "note": "Run 100 Claude Code or Codex sessions like 5",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -29,15 +45,23 @@
     "title": "obra/superpowers",
     "url": "https://github.com/obra/superpowers",
     "image": "https://opengraph.githubassets.com/1/obra/superpowers",
-    "by": "★ 902 today",
+    "by": "★ 853 today",
     "note": "An agentic skills framework & software development methodology that works.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "SteerLatch",
-    "url": "https://www.producthunt.com/products/steerlatch",
-    "note": "Connect MCP-compatible AIs to your computer",
+    "title": "Two26 Studio",
+    "url": "https://www.awwwards.com/sites/two26-studio",
+    "image": "https://www.awwwards.com/awards/submissions/2026/10/6ac4cd30dcb2c180481361.jpg",
+    "note": "Two26 is a Bucharest-based branding and design studio. Website built to showcase their case studies and services and present the studio as a premium, boutique brand.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "FocusHaze",
+    "url": "https://www.producthunt.com/products/focushaze",
+    "note": "Dim every window except the one you're working in",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -45,15 +69,23 @@
     "title": "HKUDS/CLI-Anything",
     "url": "https://github.com/HKUDS/CLI-Anything",
     "image": "https://opengraph.githubassets.com/1/HKUDS/CLI-Anything",
-    "by": "★ 1,094 today",
+    "by": "★ 744 today",
     "note": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Tendeck",
-    "url": "https://www.producthunt.com/products/tendeck",
-    "note": "Run all your Claude Code and Codex agents on one Mac board",
+    "title": "La boite à slides",
+    "url": "https://www.awwwards.com/sites/la-boite-a-slide",
+    "image": "https://www.awwwards.com/awards/submissions/2026/10/6ac3a61da6c1a818669397.png",
+    "note": "A modern, story-driven redesign blending immersive 3D, strong SEO foundations and seamless content migration to create a richer digital experience.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "Ottante",
+    "url": "https://www.producthunt.com/products/ottante",
+    "note": "Checks the work your AI agents did, right on your Mac",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -61,45 +93,44 @@
     "title": "jingyaogong/minimind",
     "url": "https://github.com/jingyaogong/minimind",
     "image": "https://opengraph.githubassets.com/1/jingyaogong/minimind",
-    "by": "★ 828 today",
+    "by": "★ 701 today",
     "note": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "eluna",
-    "url": "https://www.producthunt.com/products/eluna",
-    "note": "Period tracker for couples that explains WHY, not just WHEN",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "cursor/plugins",
-    "url": "https://github.com/cursor/plugins",
-    "image": "https://opengraph.githubassets.com/1/cursor/plugins",
-    "by": "★ 408 today",
-    "note": "Cursor plugin specification and official plugins",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Blink",
-    "url": "https://www.producthunt.com/products/blink-35",
-    "note": "Describe any trade and watch Blink build it",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "firecrawl/firecrawl",
-    "url": "https://github.com/firecrawl/firecrawl",
-    "image": "https://opengraph.githubassets.com/1/firecrawl/firecrawl",
-    "by": "★ 1,131 today",
-    "note": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
     "source": "GitHub Trending",
     "kind": "trending"
    }
   ],
   "landing": [
+   {
+    "title": "Huxley Saga",
+    "url": "https://www.awwwards.com/sites/huxley-saga",
+    "image": "https://www.awwwards.com/awards/submissions/2026/10/6ac4239351de3833681170.png",
+    "note": "The HUXLEY® saga is an original sci-fi universe created by renowned concept artist Ben Mauro.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "Muesli",
+    "url": "https://onepagelove.com/muesli",
+    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/11/opl-screenshot-muesli-talk-1795522557194-desktop.jpg",
+    "note": "Muesli is an AI-assisted reading app that helps users discuss books and articles, capture insights, listen to content, and turn notes into practical actions. The landing page uses abundant white space",
+    "source": "One Page Love",
+    "kind": "gallery"
+   },
+   {
+    "title": "OpenChat",
+    "url": "https://www.producthunt.com/products/openchat-5",
+    "note": "Open-source live chat in your own Cloudflare account",
+    "source": "Product Hunt · Today",
+    "kind": "trending"
+   },
+   {
+    "title": "Polpharma Biologics",
+    "url": "https://www.awwwards.com/sites/polpharma-biologics",
+    "image": "https://www.awwwards.com/awards/submissions/2026/10/6ac3955504e91069999337.jpg",
+    "note": "Biosimilars are not identical to their reference — only equivalent within defined tolerances. That rule became the design system: controlled variation, never off-system.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
    {
     "title": "Solea",
     "url": "https://onepagelove.com/solea",
@@ -109,11 +140,19 @@
     "kind": "gallery"
    },
    {
-    "title": "Tray",
-    "url": "https://www.producthunt.com/products/tray-2",
-    "note": "macOS file manager in a screen corner",
+    "title": "Hub",
+    "url": "https://www.producthunt.com/products/hub-20",
+    "note": "Run 100 Claude Code or Codex sessions like 5",
     "source": "Product Hunt · Today",
     "kind": "trending"
+   },
+   {
+    "title": "Two26 Studio",
+    "url": "https://www.awwwards.com/sites/two26-studio",
+    "image": "https://www.awwwards.com/awards/submissions/2026/10/6ac4cd30dcb2c180481361.jpg",
+    "note": "Two26 is a Bucharest-based branding and design studio. Website built to showcase their case studies and services and present the studio as a premium, boutique brand.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
    },
    {
     "title": "Rinat Seif",
@@ -124,11 +163,19 @@
     "kind": "gallery"
    },
    {
-    "title": "MAGI-2",
-    "url": "https://www.producthunt.com/products/magi-1",
-    "note": "Sand AI's 480B model for cinematic video generation",
+    "title": "FocusHaze",
+    "url": "https://www.producthunt.com/products/focushaze",
+    "note": "Dim every window except the one you're working in",
     "source": "Product Hunt · Today",
     "kind": "trending"
+   },
+   {
+    "title": "La boite à slides",
+    "url": "https://www.awwwards.com/sites/la-boite-a-slide",
+    "image": "https://www.awwwards.com/awards/submissions/2026/10/6ac3a61da6c1a818669397.png",
+    "note": "A modern, story-driven redesign blending immersive 3D, strong SEO foundations and seamless content migration to create a richer digital experience.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
    },
    {
     "title": "Damián Panes",
@@ -139,63 +186,18 @@
     "kind": "gallery"
    },
    {
-    "title": "SteerLatch",
-    "url": "https://www.producthunt.com/products/steerlatch",
-    "note": "Connect MCP-compatible AIs to your computer",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "Soma",
-    "url": "https://onepagelove.com/soma",
-    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/11/opl-screenshot-soma-fitness-1795100574044-desktop.jpg",
-    "note": "Soma analyzes voice signals on Mac and iPhone to track mental state and identify what affects how users think and feel. It has a refined ivory interface with generous whitespace, monochrome product pr",
-    "source": "One Page Love",
-    "kind": "gallery"
-   },
-   {
-    "title": "Tendeck",
-    "url": "https://www.producthunt.com/products/tendeck",
-    "note": "Run all your Claude Code and Codex agents on one Mac board",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "Sunstill",
-    "url": "https://onepagelove.com/sunstill",
-    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/11/opl-screenshot-sunstill-1795086762751-desktop.jpg",
-    "note": "Sunstill app displays a live wallpaper showing sunlight on a wall that follows the real sun’s position based on your location. The landing page combines warm photographic light with different “blinds”",
-    "source": "One Page Love",
-    "kind": "gallery"
-   },
-   {
-    "title": "eluna",
-    "url": "https://www.producthunt.com/products/eluna",
-    "note": "Period tracker for couples that explains WHY, not just WHEN",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "GEOFORM®",
-    "url": "https://onepagelove.com/geoform",
-    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/11/opl-screenshot-geoform-1794933315907-desktop.jpg",
-    "note": "GEOFORM® is a full-service design studio offering multidisciplinary services across multiple creative fields. This single-page site uses enormous, fragmented typography with colorful three-dimensional",
-    "source": "One Page Love",
-    "kind": "gallery"
-   },
-   {
-    "title": "Blink",
-    "url": "https://www.producthunt.com/products/blink-35",
-    "note": "Describe any trade and watch Blink build it",
+    "title": "Ottante",
+    "url": "https://www.producthunt.com/products/ottante",
+    "note": "Checks the work your AI agents did, right on your Mac",
     "source": "Product Hunt · Today",
     "kind": "trending"
    }
   ],
   "app": [
    {
-    "title": "Tray",
-    "url": "https://www.producthunt.com/products/tray-2",
-    "note": "macOS file manager in a screen corner",
+    "title": "OpenChat",
+    "url": "https://www.producthunt.com/products/openchat-5",
+    "note": "Open-source live chat in your own Cloudflare account",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -203,15 +205,15 @@
     "title": "elementalsouls/Claude-BugHunter",
     "url": "https://github.com/elementalsouls/Claude-BugHunter",
     "image": "https://opengraph.githubassets.com/1/elementalsouls/Claude-BugHunter",
-    "by": "★ 1,644 today",
-    "note": "A Claude Code skill bundle for bug hunting and external red-team work - 84 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identi",
+    "by": "★ 1,600 today",
+    "note": "A Claude Code skill bundle for bug hunting and external red-team work - 85 skills, 16 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identi",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "MAGI-2",
-    "url": "https://www.producthunt.com/products/magi-1",
-    "note": "Sand AI's 480B model for cinematic video generation",
+    "title": "Hub",
+    "url": "https://www.producthunt.com/products/hub-20",
+    "note": "Run 100 Claude Code or Codex sessions like 5",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -219,15 +221,15 @@
     "title": "obra/superpowers",
     "url": "https://github.com/obra/superpowers",
     "image": "https://opengraph.githubassets.com/1/obra/superpowers",
-    "by": "★ 902 today",
+    "by": "★ 853 today",
     "note": "An agentic skills framework & software development methodology that works.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "SteerLatch",
-    "url": "https://www.producthunt.com/products/steerlatch",
-    "note": "Connect MCP-compatible AIs to your computer",
+    "title": "FocusHaze",
+    "url": "https://www.producthunt.com/products/focushaze",
+    "note": "Dim every window except the one you're working in",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -235,15 +237,15 @@
     "title": "HKUDS/CLI-Anything",
     "url": "https://github.com/HKUDS/CLI-Anything",
     "image": "https://opengraph.githubassets.com/1/HKUDS/CLI-Anything",
-    "by": "★ 1,094 today",
+    "by": "★ 744 today",
     "note": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Tendeck",
-    "url": "https://www.producthunt.com/products/tendeck",
-    "note": "Run all your Claude Code and Codex agents on one Mac board",
+    "title": "Ottante",
+    "url": "https://www.producthunt.com/products/ottante",
+    "note": "Checks the work your AI agents did, right on your Mac",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -251,15 +253,15 @@
     "title": "jingyaogong/minimind",
     "url": "https://github.com/jingyaogong/minimind",
     "image": "https://opengraph.githubassets.com/1/jingyaogong/minimind",
-    "by": "★ 828 today",
+    "by": "★ 701 today",
     "note": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "eluna",
-    "url": "https://www.producthunt.com/products/eluna",
-    "note": "Period tracker for couples that explains WHY, not just WHEN",
+    "title": "Flurra",
+    "url": "https://www.producthunt.com/products/flurra",
+    "note": "Ask Claude or ChatGPT to edit your videos",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -267,15 +269,15 @@
     "title": "cursor/plugins",
     "url": "https://github.com/cursor/plugins",
     "image": "https://opengraph.githubassets.com/1/cursor/plugins",
-    "by": "★ 408 today",
+    "by": "★ 268 today",
     "note": "Cursor plugin specification and official plugins",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Blink",
-    "url": "https://www.producthunt.com/products/blink-35",
-    "note": "Describe any trade and watch Blink build it",
+    "title": "Remora",
+    "url": "https://www.producthunt.com/products/remora-6",
+    "note": "The long-term memory layer for AI agents",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -283,7 +285,7 @@
     "title": "firecrawl/firecrawl",
     "url": "https://github.com/firecrawl/firecrawl",
     "image": "https://opengraph.githubassets.com/1/firecrawl/firecrawl",
-    "by": "★ 1,131 today",
+    "by": "★ 1,042 today",
     "note": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
     "source": "GitHub Trending",
     "kind": "trending"
@@ -292,10 +294,34 @@
   "deck": [],
   "video": [
    {
-    "title": "New MacBook Pro with PROLED XDR Display: The first-ever Mac with Touch",
-    "url": "https://www.youtube.com/watch?v=hnZI5uUSdEo",
-    "image": "https://i.ytimg.com/vi/hnZI5uUSdEo/hqdefault.jpg",
-    "by": "45M views",
+    "title": "“The Dreamer”: An Apple Holiday Film featuring MacBook Neo",
+    "url": "https://www.youtube.com/watch?v=Sp54mxnWjUM",
+    "image": "https://i.ytimg.com/vi/Sp54mxnWjUM/hqdefault.jpg",
+    "by": "5.4M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Ramón Who Speaks to Ghosts",
+    "url": "https://vimeo.com/channels/staffpicks/1249436870",
+    "image": "https://i.vimeocdn.com/video/2230203672-55ae7cae93faf407f4014ba0bcd31160534b1beff96b7f8417d25218c3c61266-d_960?region=us",
+    "note": "After a volcanic eruption, Ram&oacute;n walks the island of La Palma with his microphone, looking for ghosts.  Exclusive director's commentary available in&hellip;",
+    "source": "Vimeo Staff Picks",
+    "kind": "gallery"
+   },
+   {
+    "title": "Iridescent Airlock: Antibody Opens Blade Runner 2099 Series",
+    "url": "https://www.stashmedia.tv/iridescent-airlock-antibody-opens-blade-runner-2099-series/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Blade-Runner-2099-Series-titles-by-Antibody-STASH-MAGAZINE8-1920x804.jpg",
+    "note": "Mining a vocabulary of degraded analog video, protein imaging, and spectral data, Antibody opens Amazon's new Blade Runner 2099 series with an intriguing exercise in luminous abstraction and electroch",
+    "source": "STASH",
+    "kind": "gallery"
+   },
+   {
+    "title": "Created live on Mac: “Surrender” by Labrinth",
+    "url": "https://www.youtube.com/watch?v=YaPx9scLwfk",
+    "image": "https://i.ytimg.com/vi/YaPx9scLwfk/hqdefault.jpg",
+    "by": "3.1M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -308,58 +334,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Technological, Precise & Open: Wix Launches Studio Two",
-    "url": "https://www.stashmedia.tv/technological-precise-open-wix-launches-studio-two/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Launch-video-for-Studio-Two-by-Wix-Motion-Studio-STASH-MAGAZINE3-1920x1078.jpg",
-    "note": "Following up on their films for Wix's Harmony and Symphony products (here and here), the brand's in-house motion studio continues to refine its smooth and stylish explainer vibe with this launch video",
-    "source": "STASH",
-    "kind": "gallery"
-   },
-   {
-    "title": "“The Dreamer”: An Apple Holiday Film featuring MacBook Neo",
-    "url": "https://www.youtube.com/watch?v=Sp54mxnWjUM",
-    "image": "https://i.ytimg.com/vi/Sp54mxnWjUM/hqdefault.jpg",
-    "by": "5.4M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "SAUNA SICKNESS",
-    "url": "https://vimeo.com/channels/staffpicks/1249479904",
-    "image": "https://i.vimeocdn.com/video/2229864348-aeafa0e6f69fc3d905c559c96f4a2282def270213c96d078d32655aa53ebb1cc-d_960?region=us",
-    "note": "FOR YOUR CONSIDERATION - BEST LIVE ACTION SHORT FILM   Struggling to maintain the peace she mistakes for love, Cleo's steamy New Year's Eve plans fissure&hellip;",
-    "source": "Vimeo Staff Picks",
-    "kind": "gallery"
-   },
-   {
-    "title": "The Tower & the Witch: New Spec Game Trailer by Ripplet",
-    "url": "https://www.stashmedia.tv/the-tower-the-witch-new-spec-game-trailer-by-ripplet/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Tower-Spec-game-trailer-by-Ripplet-Studio-_-STASH-MAGAZINE9-1498x1080.jpg",
-    "note": "Lenar Singatullov, founder/CD at Ripplet in Tbilisi, Georgia, just dropped us the studio's newest self-initiated CG project, an inventive and atmospheric fantasy trailer for an imagined game, from an ",
-    "source": "STASH",
-    "kind": "gallery"
-   },
-   {
-    "title": "Created live on Mac: “Surrender” by Labrinth",
-    "url": "https://www.youtube.com/watch?v=YaPx9scLwfk",
-    "image": "https://i.ytimg.com/vi/YaPx9scLwfk/hqdefault.jpg",
-    "by": "3M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "I made a film in Excel",
-    "url": "https://vimeo.com/channels/staffpicks/1241981102",
-    "image": "https://i.vimeocdn.com/video/2220119244-b6ba3bfe229032b63c18e6a7d3c693bdf20568732c9602a87d0192e9a8d97b6f-d_960?region=us",
-    "note": "Super quick film made in Microsoft Excel The original soundtrack was created first which inspired the visuals. After everything was animated the narration was made.  Excel&hellip;",
-    "source": "Vimeo Staff Picks",
-    "kind": "gallery"
-   },
-   {
-    "title": "ManvsMachine Opens Hood Summit ’26 for Robinhood",
-    "url": "https://www.stashmedia.tv/manvsmachine-opens-hood-summit-26-for-robinhood/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Robinhood-Hood-Summit-26-Title-Sequence-by-ManvsMachine-STASH-MAGAZINE1-1920x597.jpg",
-    "note": "Earlier this fall, the American financial services and electronic trading platform Robinhood opened their third annual flagship event in Houston with this perfectly austere, space-zen sequence by the ",
+    "title": "Been There, Hired That: New Yelp Campaign Film by Panic",
+    "url": "https://www.stashmedia.tv/been-there-hired-that-new-yelp-campaign-film-by-panic/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Yelp-22It-Takes-a-Village22-Campaign-film-by-Panic-STASH-MAGAZINE6-1920x1080.jpg",
+    "note": "Founder/director Gints Gutmanis and the Panic design and animation team nudge Yelp's new illustration style into the motion world with this fresh and friendly campaign film “It Takes a Village”.  [Wat",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -372,18 +350,41 @@
     "kind": "performance"
    },
    {
-    "title": "Shadows",
-    "url": "https://vimeo.com/channels/staffpicks/1236837249",
-    "image": "https://i.vimeocdn.com/video/2213470414-3e5cf1cc50771902a1a6661390dbc0209aae23dc9b500b5dd6e8744c4bd06f3f-d_960?region=us",
-    "note": "At an over crowded airport, Ahlam, a 15-year old runaway mother, fights the lurking shadows that attempt to steal the only dream that will set her free.  Since its&hellip;",
+    "title": "SAUNA SICKNESS",
+    "url": "https://vimeo.com/channels/staffpicks/1249479904",
+    "image": "https://i.vimeocdn.com/video/2229864348-aeafa0e6f69fc3d905c559c96f4a2282def270213c96d078d32655aa53ebb1cc-d_960?region=us",
+    "note": "FOR YOUR CONSIDERATION - BEST LIVE ACTION SHORT FILM   Struggling to maintain the peace she mistakes for love, Cleo's steamy New Year's Eve plans fissure&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
    {
-    "title": "FrameScale Floats the Cloud9 Chair for W. Schillig",
-    "url": "https://www.stashmedia.tv/framescale-floats-the-cloud9-chair-for-w-schillig/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/W.-Schillig-Cloud9-Chair-ad-by-FrameScale-STASH-MAGAZINE5-1920x1080.jpg",
-    "note": "FrameScale, the creative agency founded in Leipzig, Germany, in 2025 by CD Paul Härty and CGO Len Ohlsen, makes their Stash debut with a tasteful and tactile blend of live action and AI for furniture ",
+    "title": "WPP Production Appoints Charlotte Mikkelborg UK Creative Innovation Lead at HEX",
+    "url": "https://www.stashmedia.tv/wpp-production-appoints-charlotte-mikkelborg-uk-creative-innovation-lead-at-hex/",
+    "note": "From the release: WPP Production today announces the appointment of award-winning director and innovation leader, Charlotte Mikkelborg, as UK Creative Innovation Lead at HEX, based in London. [Watch]\n",
+    "source": "STASH",
+    "kind": "gallery"
+   },
+   {
+    "title": "Apple Pay: The fast, easy, and secure way to pay.",
+    "url": "https://www.youtube.com/watch?v=miUjxZ2ASRs",
+    "image": "https://i.ytimg.com/vi/miUjxZ2ASRs/hqdefault.jpg",
+    "by": "307K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "I made a film in Excel",
+    "url": "https://vimeo.com/channels/staffpicks/1241981102",
+    "image": "https://i.vimeocdn.com/video/2220119244-b6ba3bfe229032b63c18e6a7d3c693bdf20568732c9602a87d0192e9a8d97b6f-d_960?region=us",
+    "note": "Super quick film made in Microsoft Excel The original soundtrack was created first which inspired the visuals. After everything was animated the narration was made.  Excel&hellip;",
+    "source": "Vimeo Staff Picks",
+    "kind": "gallery"
+   },
+   {
+    "title": "Technological, Precise & Open: Wix Launches Studio Two",
+    "url": "https://www.stashmedia.tv/technological-precise-open-wix-launches-studio-two/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Launch-video-for-Studio-Two-by-Wix-Motion-Studio-STASH-MAGAZINE3-1920x1078.jpg",
+    "note": "Following up on their films for Wix's Harmony and Symphony products (here and here), the brand's in-house motion studio continues to refine its smooth and stylish explainer vibe with this launch video",
     "source": "STASH",
     "kind": "gallery"
    }
@@ -398,10 +399,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Technological, Precise & Open: Wix Launches Studio Two",
-    "url": "https://www.stashmedia.tv/technological-precise-open-wix-launches-studio-two/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Launch-video-for-Studio-Two-by-Wix-Motion-Studio-STASH-MAGAZINE3-1920x1078.jpg",
-    "note": "Following up on their films for Wix's Harmony and Symphony products (here and here), the brand's in-house motion studio continues to refine its smooth and stylish explainer vibe with this launch video",
+    "title": "Iridescent Airlock: Antibody Opens Blade Runner 2099 Series",
+    "url": "https://www.stashmedia.tv/iridescent-airlock-antibody-opens-blade-runner-2099-series/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Blade-Runner-2099-Series-titles-by-Antibody-STASH-MAGAZINE8-1920x804.jpg",
+    "note": "Mining a vocabulary of degraded analog video, protein imaging, and spectral data, Antibody opens Amazon's new Blade Runner 2099 series with an intriguing exercise in luminous abstraction and electroch",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -422,10 +423,10 @@
     "kind": "gallery"
    },
    {
-    "title": "The Tower & the Witch: New Spec Game Trailer by Ripplet",
-    "url": "https://www.stashmedia.tv/the-tower-the-witch-new-spec-game-trailer-by-ripplet/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Tower-Spec-game-trailer-by-Ripplet-Studio-_-STASH-MAGAZINE9-1498x1080.jpg",
-    "note": "Lenar Singatullov, founder/CD at Ripplet in Tbilisi, Georgia, just dropped us the studio's newest self-initiated CG project, an inventive and atmospheric fantasy trailer for an imagined game, from an ",
+    "title": "Been There, Hired That: New Yelp Campaign Film by Panic",
+    "url": "https://www.stashmedia.tv/been-there-hired-that-new-yelp-campaign-film-by-panic/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Yelp-22It-Takes-a-Village22-Campaign-film-by-Panic-STASH-MAGAZINE6-1920x1080.jpg",
+    "note": "Founder/director Gints Gutmanis and the Panic design and animation team nudge Yelp's new illustration style into the motion world with this fresh and friendly campaign film “It Takes a Village”.  [Wat",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -446,10 +447,9 @@
     "kind": "gallery"
    },
    {
-    "title": "ManvsMachine Opens Hood Summit ’26 for Robinhood",
-    "url": "https://www.stashmedia.tv/manvsmachine-opens-hood-summit-26-for-robinhood/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Robinhood-Hood-Summit-26-Title-Sequence-by-ManvsMachine-STASH-MAGAZINE1-1920x597.jpg",
-    "note": "Earlier this fall, the American financial services and electronic trading platform Robinhood opened their third annual flagship event in Houston with this perfectly austere, space-zen sequence by the ",
+    "title": "WPP Production Appoints Charlotte Mikkelborg UK Creative Innovation Lead at HEX",
+    "url": "https://www.stashmedia.tv/wpp-production-appoints-charlotte-mikkelborg-uk-creative-innovation-lead-at-hex/",
+    "note": "From the release: WPP Production today announces the appointment of award-winning director and innovation leader, Charlotte Mikkelborg, as UK Creative Innovation Lead at HEX, based in London. [Watch]\n",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -470,10 +470,10 @@
     "kind": "gallery"
    },
    {
-    "title": "FrameScale Floats the Cloud9 Chair for W. Schillig",
-    "url": "https://www.stashmedia.tv/framescale-floats-the-cloud9-chair-for-w-schillig/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/W.-Schillig-Cloud9-Chair-ad-by-FrameScale-STASH-MAGAZINE5-1920x1080.jpg",
-    "note": "FrameScale, the creative agency founded in Leipzig, Germany, in 2025 by CD Paul Härty and CGO Len Ohlsen, makes their Stash debut with a tasteful and tactile blend of live action and AI for furniture ",
+    "title": "Technological, Precise & Open: Wix Launches Studio Two",
+    "url": "https://www.stashmedia.tv/technological-precise-open-wix-launches-studio-two/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Launch-video-for-Studio-Two-by-Wix-Motion-Studio-STASH-MAGAZINE3-1920x1078.jpg",
+    "note": "Following up on their films for Wix's Harmony and Symphony products (here and here), the brand's in-house motion studio continues to refine its smooth and stylish explainer vibe with this launch video",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -496,10 +496,10 @@
     "kind": "performance"
    },
    {
-    "title": "I Got My Brother",
-    "url": "https://vimeo.com/channels/staffpicks/1248815965",
-    "image": "https://i.vimeocdn.com/video/2229044852-9e946cb8a06281c44fdd83028bac506e05d7c851101f53db05f3415d176896c9-d_960?region=us",
-    "note": "Two brothers reflect on their candid and often humorous memories of surviving the foster care system and prison, realizing along the way that their path to healing&hellip;",
+    "title": "Ramón Who Speaks to Ghosts",
+    "url": "https://vimeo.com/channels/staffpicks/1249436870",
+    "image": "https://i.vimeocdn.com/video/2230203672-55ae7cae93faf407f4014ba0bcd31160534b1beff96b7f8417d25218c3c61266-d_960?region=us",
+    "note": "After a volcanic eruption, Ram&oacute;n walks the island of La Palma with his microphone, looking for ghosts.  Exclusive director's commentary available in&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
@@ -512,10 +512,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Technological, Precise & Open: Wix Launches Studio Two",
-    "url": "https://www.stashmedia.tv/technological-precise-open-wix-launches-studio-two/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Launch-video-for-Studio-Two-by-Wix-Motion-Studio-STASH-MAGAZINE3-1920x1078.jpg",
-    "note": "Following up on their films for Wix's Harmony and Symphony products (here and here), the brand's in-house motion studio continues to refine its smooth and stylish explainer vibe with this launch video",
+    "title": "Iridescent Airlock: Antibody Opens Blade Runner 2099 Series",
+    "url": "https://www.stashmedia.tv/iridescent-airlock-antibody-opens-blade-runner-2099-series/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Blade-Runner-2099-Series-titles-by-Antibody-STASH-MAGAZINE8-1920x804.jpg",
+    "note": "Mining a vocabulary of degraded analog video, protein imaging, and spectral data, Antibody opens Amazon's new Blade Runner 2099 series with an intriguing exercise in luminous abstraction and electroch",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -528,10 +528,10 @@
     "kind": "performance"
    },
    {
-    "title": "SAUNA SICKNESS",
-    "url": "https://vimeo.com/channels/staffpicks/1249479904",
-    "image": "https://i.vimeocdn.com/video/2229864348-aeafa0e6f69fc3d905c559c96f4a2282def270213c96d078d32655aa53ebb1cc-d_960?region=us",
-    "note": "FOR YOUR CONSIDERATION - BEST LIVE ACTION SHORT FILM   Struggling to maintain the peace she mistakes for love, Cleo's steamy New Year's Eve plans fissure&hellip;",
+    "title": "I Got My Brother",
+    "url": "https://vimeo.com/channels/staffpicks/1248815965",
+    "image": "https://i.vimeocdn.com/video/2229044852-9e946cb8a06281c44fdd83028bac506e05d7c851101f53db05f3415d176896c9-d_960?region=us",
+    "note": "Two brothers reflect on their candid and often humorous memories of surviving the foster care system and prison, realizing along the way that their path to healing&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
@@ -544,10 +544,10 @@
     "kind": "gallery"
    },
    {
-    "title": "The Tower & the Witch: New Spec Game Trailer by Ripplet",
-    "url": "https://www.stashmedia.tv/the-tower-the-witch-new-spec-game-trailer-by-ripplet/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Tower-Spec-game-trailer-by-Ripplet-Studio-_-STASH-MAGAZINE9-1498x1080.jpg",
-    "note": "Lenar Singatullov, founder/CD at Ripplet in Tbilisi, Georgia, just dropped us the studio's newest self-initiated CG project, an inventive and atmospheric fantasy trailer for an imagined game, from an ",
+    "title": "Been There, Hired That: New Yelp Campaign Film by Panic",
+    "url": "https://www.stashmedia.tv/been-there-hired-that-new-yelp-campaign-film-by-panic/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Yelp-22It-Takes-a-Village22-Campaign-film-by-Panic-STASH-MAGAZINE6-1920x1080.jpg",
+    "note": "Founder/director Gints Gutmanis and the Panic design and animation team nudge Yelp's new illustration style into the motion world with this fresh and friendly campaign film “It Takes a Village”.  [Wat",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -560,10 +560,10 @@
     "kind": "performance"
    },
    {
-    "title": "I made a film in Excel",
-    "url": "https://vimeo.com/channels/staffpicks/1241981102",
-    "image": "https://i.vimeocdn.com/video/2220119244-b6ba3bfe229032b63c18e6a7d3c693bdf20568732c9602a87d0192e9a8d97b6f-d_960?region=us",
-    "note": "Super quick film made in Microsoft Excel The original soundtrack was created first which inspired the visuals. After everything was animated the narration was made.  Excel&hellip;",
+    "title": "SAUNA SICKNESS",
+    "url": "https://vimeo.com/channels/staffpicks/1249479904",
+    "image": "https://i.vimeocdn.com/video/2229864348-aeafa0e6f69fc3d905c559c96f4a2282def270213c96d078d32655aa53ebb1cc-d_960?region=us",
+    "note": "FOR YOUR CONSIDERATION - BEST LIVE ACTION SHORT FILM   Struggling to maintain the peace she mistakes for love, Cleo's steamy New Year's Eve plans fissure&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
@@ -576,10 +576,9 @@
     "kind": "gallery"
    },
    {
-    "title": "ManvsMachine Opens Hood Summit ’26 for Robinhood",
-    "url": "https://www.stashmedia.tv/manvsmachine-opens-hood-summit-26-for-robinhood/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Robinhood-Hood-Summit-26-Title-Sequence-by-ManvsMachine-STASH-MAGAZINE1-1920x597.jpg",
-    "note": "Earlier this fall, the American financial services and electronic trading platform Robinhood opened their third annual flagship event in Houston with this perfectly austere, space-zen sequence by the ",
+    "title": "WPP Production Appoints Charlotte Mikkelborg UK Creative Innovation Lead at HEX",
+    "url": "https://www.stashmedia.tv/wpp-production-appoints-charlotte-mikkelborg-uk-creative-innovation-lead-at-hex/",
+    "note": "From the release: WPP Production today announces the appointment of award-winning director and innovation leader, Charlotte Mikkelborg, as UK Creative Innovation Lead at HEX, based in London. [Watch]\n",
     "source": "STASH",
     "kind": "gallery"
    }
@@ -589,15 +588,7 @@
     "title": "Always Keep Going 👏",
     "url": "https://www.youtube.com/watch?v=Ye4pKOUW6k4",
     "image": "https://i.ytimg.com/vi/Ye4pKOUW6k4/hqdefault.jpg",
-    "by": "7.8M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "No Respawn Button Here 🚲",
-    "url": "https://www.youtube.com/watch?v=YRozsQp4TXU",
-    "image": "https://i.ytimg.com/vi/YRozsQp4TXU/hqdefault.jpg",
-    "by": "3M views",
+    "by": "9.7M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -613,7 +604,23 @@
     "title": "Airbnb | あつまる？エアビる？｜今日はちょっと、大人忘れます。",
     "url": "https://www.youtube.com/watch?v=p8HvRJALo4Y",
     "image": "https://i.ytimg.com/vi/p8HvRJALo4Y/hqdefault.jpg",
-    "by": "2.4M views",
+    "by": "2.5M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Pay Attention To The Wheel 👀",
+    "url": "https://www.youtube.com/watch?v=50p59uulAsc",
+    "image": "https://i.ytimg.com/vi/50p59uulAsc/hqdefault.jpg",
+    "by": "2.3M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "F1 Car vs MotoGP Bike on ICE 🥶",
+    "url": "https://www.youtube.com/watch?v=JJL4gMS7Iyo",
+    "image": "https://i.ytimg.com/vi/JJL4gMS7Iyo/hqdefault.jpg",
+    "by": "1.5M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -626,18 +633,10 @@
     "kind": "performance"
    },
    {
-    "title": "F1 Car vs MotoGP Bike on ICE 🥶",
-    "url": "https://www.youtube.com/watch?v=JJL4gMS7Iyo",
-    "image": "https://i.ytimg.com/vi/JJL4gMS7Iyo/hqdefault.jpg",
-    "by": "1.4M views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "you're hooked on me i'm hooked on sakura mochi 🍡 🎨: @brerbo",
-    "url": "https://www.youtube.com/watch?v=TrEHPMqHVAc",
-    "image": "https://i.ytimg.com/vi/TrEHPMqHVAc/hqdefault.jpg",
-    "by": "565K views",
+    "title": "she meant “seis siete”",
+    "url": "https://www.youtube.com/watch?v=L8L24fksmlk",
+    "image": "https://i.ytimg.com/vi/L8L24fksmlk/hqdefault.jpg",
+    "by": "608K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -650,10 +649,10 @@
     "kind": "performance"
    },
    {
-    "title": "she meant “seis siete”",
-    "url": "https://www.youtube.com/watch?v=L8L24fksmlk",
-    "image": "https://i.ytimg.com/vi/L8L24fksmlk/hqdefault.jpg",
-    "by": "383K views",
+    "title": "No Room For Error 😬",
+    "url": "https://www.youtube.com/watch?v=5267FsbsFEc",
+    "image": "https://i.ytimg.com/vi/5267FsbsFEc/hqdefault.jpg",
+    "by": "392K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -661,15 +660,7 @@
     "title": "Get sorted for college with Roxie from the Apple Store.",
     "url": "https://www.youtube.com/watch?v=P5GxUjU4uBI",
     "image": "https://i.ytimg.com/vi/P5GxUjU4uBI/hqdefault.jpg",
-    "by": "372K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "Show off your work with Desk View. Tip from Kylie at the Apple Store.",
-    "url": "https://www.youtube.com/watch?v=BTyWlJJUX2I",
-    "image": "https://i.ytimg.com/vi/BTyWlJJUX2I/hqdefault.jpg",
-    "by": "332K views",
+    "by": "373K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -677,91 +668,115 @@
     "title": "just gift me super for no reason, that’s the basic minimum",
     "url": "https://www.youtube.com/watch?v=CrLI5ImyTUo",
     "image": "https://i.ytimg.com/vi/CrLI5ImyTUo/hqdefault.jpg",
-    "by": "317K views",
+    "by": "355K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Show off your work with Desk View. Tip from Kylie at the Apple Store.",
+    "url": "https://www.youtube.com/watch?v=BTyWlJJUX2I",
+    "image": "https://i.ytimg.com/vi/BTyWlJJUX2I/hqdefault.jpg",
+    "by": "333K views",
     "source": "Latest from brands",
     "kind": "performance"
    }
   ],
   "post": [
    {
-    "title": "Button Sounds – collection of professionally-recorded button clicks and presses",
-    "url": "https://buttons.joshwcomeau.com/",
+    "title": "OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster",
+    "url": "https://twitter.com/thsottiaux/status/2125784147889393806",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Matrix Multiplication is Θ(n^2.25) [pdf]",
-    "url": "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf",
+    "title": "Tell HN: Lots of Ask HNs again",
+    "url": "https://news.ycombinator.com/item?id=50649864",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "GPT-6 models demonstrate intrinsic protein-design capabilities",
-    "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/",
+    "title": "Jev is probably Qwen3.5-35B-A3B",
+    "url": "https://modaic.dev/blog/latency-doesnt-lie",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Ternary Bonsai 2.5 27B",
-    "url": "https://prismml.com/news/bonsai-2-5-27b",
+    "title": "Much shorter version of GRH Lean verification from Anthropic",
+    "url": "https://github.com/lsernau/grh-lean",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Ask HN: Anthropic is accusing my company of distilling. How can I prove I'm not?",
-    "url": "https://news.ycombinator.com/item?id=50630809",
+    "title": "The New York Times warns photographers not to update Photoshop over AI features",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Active intrusion campaign against Check Point security management servers",
-    "url": "https://www.greynoise.io/blog/check-point-security-management-servers-intrusion-campaign",
+    "title": "Slow Ubuntu security response times",
+    "url": "https://www.openwall.com/lists/oss-security/2026/11/25/9",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Jetty Pro",
-    "url": "http://hypercritical.co/2026/11/23/jetty-pro",
+    "title": "Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening",
+    "url": "https://scottaaronson.blog/?p=10379",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Tidal bans AI-generated music",
-    "url": "https://variety.com/2026/music/news/tidal-bans-ai-generated-music-1236956924/",
+    "title": "1Password Security Incident",
+    "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Anthropic breaks below $83 IPO price",
-    "url": "https://www.bloomberg.com/news/articles/2026-11-24/anthropic-breaks-below-83-ipo-price-in-premarket-trading",
+    "title": "A few questions for the guy who went snorkeling in a Home Depot retention pond",
+    "url": "https://www.vox.com/down-to-earth/511999/home-depot-retention-pond-snorkel-joseph-ricketts",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "GTA 6 Running on Windows",
-    "url": "https://twitter.com/raul_bs3/status/2125213756238291075",
+    "title": "Rumors swirling that labs might have cracked Factoring in P",
+    "url": "https://www.reddit.com/r/singularity/comments/1y59ef1/rumor_that_openai_or_anthropic_found_a_way_to/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "LLM agents work for their parent companies, not for you",
-    "url": "https://michaelharley.net/posts/2026/11/01/llm-agents-work-for-their-parent-companies-not-for-you/",
+    "title": "Google releases Cogentic papers on integer factorization, discrete logs and more",
+    "url": "https://github.com/google-research/google-research/tree/master/cogentic_research_papers",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Investigation of Polymarket Insider Trading on the Reinstatement of Jensen Huang",
-    "url": "https://deucalionn.vercel.app/polymarket-delit-initie-jensen-huang-nvidia/",
+    "title": "Windows Loudness Equalization, reverse-engineered and ported to PipeWire",
+    "url": "https://github.com/xoxorwr/pw-loudness-eq",
     "source": "Hacker News · Best",
     "kind": "performance"
    }
   ],
   "ad": [
    {
-    "title": "New MacBook Pro with PROLED XDR Display: The first-ever Mac with Touch",
-    "url": "https://www.youtube.com/watch?v=hnZI5uUSdEo",
-    "image": "https://i.ytimg.com/vi/hnZI5uUSdEo/hqdefault.jpg",
-    "by": "45M views",
+    "title": "“The Dreamer”: An Apple Holiday Film featuring MacBook Neo",
+    "url": "https://www.youtube.com/watch?v=Sp54mxnWjUM",
+    "image": "https://i.ytimg.com/vi/Sp54mxnWjUM/hqdefault.jpg",
+    "by": "5.4M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Are You Watching This?",
+    "url": "https://www.adsoftheworld.com/campaigns/are-you-watching-this",
+    "image": "https://image.adsoftheworld.com/ylw5hydc1eh1t89f9fy9y1tur57h",
+    "by": "FOX One",
+    "source": "Ads of the World",
+    "kind": "gallery"
+   },
+   {
+    "title": "Created live on Mac: “Surrender” by Labrinth",
+    "url": "https://www.youtube.com/watch?v=YaPx9scLwfk",
+    "image": "https://i.ytimg.com/vi/YaPx9scLwfk/hqdefault.jpg",
+    "by": "3.1M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -774,10 +789,10 @@
     "kind": "gallery"
    },
    {
-    "title": "“The Dreamer”: An Apple Holiday Film featuring MacBook Neo",
-    "url": "https://www.youtube.com/watch?v=Sp54mxnWjUM",
-    "image": "https://i.ytimg.com/vi/Sp54mxnWjUM/hqdefault.jpg",
-    "by": "5.4M views",
+    "title": "New MacBook Pro with PROLED XDR Display and Touch: The world’s best laptop display",
+    "url": "https://www.youtube.com/watch?v=WzuIZLoHqqA",
+    "image": "https://i.ytimg.com/vi/WzuIZLoHqqA/hqdefault.jpg",
+    "by": "1.3M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -790,10 +805,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Created live on Mac: “Surrender” by Labrinth",
-    "url": "https://www.youtube.com/watch?v=YaPx9scLwfk",
-    "image": "https://i.ytimg.com/vi/YaPx9scLwfk/hqdefault.jpg",
-    "by": "3M views",
+    "title": "What's going on at DuoMart!?! | DuoTV (Full Series)",
+    "url": "https://www.youtube.com/watch?v=YP2KYQZUkWY",
+    "image": "https://i.ytimg.com/vi/YP2KYQZUkWY/hqdefault.jpg",
+    "by": "528K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -806,10 +821,10 @@
     "kind": "gallery"
    },
    {
-    "title": "New MacBook Pro with PROLED XDR Display and Touch: The world’s best laptop display",
-    "url": "https://www.youtube.com/watch?v=WzuIZLoHqqA",
-    "image": "https://i.ytimg.com/vi/WzuIZLoHqqA/hqdefault.jpg",
-    "by": "1.3M views",
+    "title": "Caitlin 1 | Behind the Design | Nike",
+    "url": "https://www.youtube.com/watch?v=628ogczUw6o",
+    "image": "https://i.ytimg.com/vi/628ogczUw6o/hqdefault.jpg",
+    "by": "309K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -822,34 +837,18 @@
     "kind": "gallery"
    },
    {
-    "title": "What's going on at DuoMart!?! | DuoTV (Full Series)",
-    "url": "https://www.youtube.com/watch?v=YP2KYQZUkWY",
-    "image": "https://i.ytimg.com/vi/YP2KYQZUkWY/hqdefault.jpg",
-    "by": "522K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "THE END OF THE WORLD",
-    "url": "https://www.adsoftheworld.com/campaigns/the-end-of-the-world-699dd367-0801-4aff-bcbc-4b6257743de5",
-    "image": "https://image.adsoftheworld.com/bd33251ifwp8lh5ni0id1d9f5734",
-    "by": "Cerveza Andina",
-    "source": "Ads of the World",
-    "kind": "gallery"
-   },
-   {
-    "title": "Caitlin 1 | Behind the Design | Nike",
-    "url": "https://www.youtube.com/watch?v=628ogczUw6o",
-    "image": "https://i.ytimg.com/vi/628ogczUw6o/hqdefault.jpg",
-    "by": "308K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
     "title": "Apple Pay: The fast, easy, and secure way to pay.",
     "url": "https://www.youtube.com/watch?v=miUjxZ2ASRs",
     "image": "https://i.ytimg.com/vi/miUjxZ2ASRs/hqdefault.jpg",
-    "by": "305K views",
+    "by": "307K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Apple Card: Apply and use in minutes",
+    "url": "https://www.youtube.com/watch?v=1JiNcQ-BbFc",
+    "image": "https://i.ytimg.com/vi/1JiNcQ-BbFc/hqdefault.jpg",
+    "by": "179K views",
     "source": "Latest from brands",
     "kind": "performance"
    }
