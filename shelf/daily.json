@@ -1,11 +1,19 @@
 {
- "updated": "2026-11-27T12:34:53.122Z",
+ "updated": "2026-11-28T11:54:47.665Z",
  "media": {
   "ui": [
    {
-    "title": "Wizstar R1",
-    "url": "https://www.producthunt.com/products/wizstar",
-    "note": "Seedance 2.0-level product videos at a lower cost",
+    "title": "Where Opportunity Takes Root",
+    "url": "https://www.awwwards.com/sites/where-opportunity-takes-root",
+    "image": "https://www.awwwards.com/awards/submissions/2026/10/6ac456ad8beeb834609980.png",
+    "note": "For many Americans, opportunity feels hidden behind barriers. Gladeye turned Gallup's Where Opportunity Takes Root research into an experience that reveals its insights piece by piece.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "RetainIQ",
+    "url": "https://www.producthunt.com/products/retainiq-2",
+    "note": "Know which customers need attention, why & what to do next",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -13,15 +21,23 @@
     "title": "elementalsouls/Claude-BugHunter",
     "url": "https://github.com/elementalsouls/Claude-BugHunter",
     "image": "https://opengraph.githubassets.com/1/elementalsouls/Claude-BugHunter",
-    "by": "★ 1,615 today",
+    "by": "★ 1,372 today",
     "note": "A Claude Code skill bundle for bug hunting and external red-team work - 85 skills, 16 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identi",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "snibl",
-    "url": "https://www.producthunt.com/products/snibl",
-    "note": "Save highlighted text from any app, then ask AI about it",
+    "title": "Prägen Hätlen",
+    "url": "https://www.awwwards.com/sites/pragen-hatlen",
+    "image": "https://www.awwwards.com/awards/submissions/2026/10/6ac3b787ab684100820740.jpg",
+    "note": "Prägen Hätlen is a Swiss watchmaking brand operating at the intersection of fine horology and Web3 Technology.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "Tano",
+    "url": "https://www.producthunt.com/products/tano",
+    "note": "Korean vocabulary app that skips the words you know",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -29,15 +45,23 @@
     "title": "obra/superpowers",
     "url": "https://github.com/obra/superpowers",
     "image": "https://opengraph.githubassets.com/1/obra/superpowers",
-    "by": "★ 916 today",
+    "by": "★ 809 today",
     "note": "An agentic skills framework & software development methodology that works.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "slay",
-    "url": "https://www.producthunt.com/products/slay-3",
-    "note": "AI composition guide camera app for iPhone",
+    "title": "Huxley Saga",
+    "url": "https://www.awwwards.com/sites/huxley-saga",
+    "image": "https://www.awwwards.com/awards/submissions/2026/10/6ac4239351de3833681170.png",
+    "note": "The HUXLEY® saga is an original sci-fi universe created by renowned concept artist Ben Mauro.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "ro",
+    "url": "https://www.producthunt.com/products/ro",
+    "note": "I won't bother you",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -45,15 +69,23 @@
     "title": "HKUDS/CLI-Anything",
     "url": "https://github.com/HKUDS/CLI-Anything",
     "image": "https://opengraph.githubassets.com/1/HKUDS/CLI-Anything",
-    "by": "★ 668 today",
+    "by": "★ 561 today",
     "note": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Depost AI",
-    "url": "https://www.producthunt.com/products/depost-ai",
-    "note": "The LinkedIn AI agent that learns what works for your brand",
+    "title": "Polpharma Biologics",
+    "url": "https://www.awwwards.com/sites/polpharma-biologics",
+    "image": "https://www.awwwards.com/awards/submissions/2026/10/6ac3955504e91069999337.jpg",
+    "note": "Biosimilars are not identical to their reference — only equivalent within defined tolerances. That rule became the design system: controlled variation, never off-system.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
+   {
+    "title": "Superrelay",
+    "url": "https://www.producthunt.com/products/superrelay",
+    "note": "One inbox for every app you ship, never priced per ticket",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -61,45 +93,21 @@
     "title": "jingyaogong/minimind",
     "url": "https://github.com/jingyaogong/minimind",
     "image": "https://opengraph.githubassets.com/1/jingyaogong/minimind",
-    "by": "★ 667 today",
+    "by": "★ 391 today",
     "note": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Prosed AI 2.0 + MCP",
-    "url": "https://www.producthunt.com/products/prosed-turn-your-content-into-a-book",
-    "note": "Your company's words, assembled into a book",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "cursor/plugins",
-    "url": "https://github.com/cursor/plugins",
-    "image": "https://opengraph.githubassets.com/1/cursor/plugins",
-    "by": "★ 242 today",
-    "note": "Cursor plugin specification and official plugins",
-    "source": "GitHub Trending",
-    "kind": "trending"
-   },
-   {
-    "title": "Remove Silence",
-    "url": "https://www.producthunt.com/products/remove-silence",
-    "note": "Cut the silence from audio in your browser, free",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "firecrawl/firecrawl",
-    "url": "https://github.com/firecrawl/firecrawl",
-    "image": "https://opengraph.githubassets.com/1/firecrawl/firecrawl",
-    "by": "★ 833 today",
-    "note": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
     "source": "GitHub Trending",
     "kind": "trending"
    }
   ],
   "landing": [
+   {
+    "title": "Where Opportunity Takes Root",
+    "url": "https://www.awwwards.com/sites/where-opportunity-takes-root",
+    "image": "https://www.awwwards.com/awards/submissions/2026/10/6ac456ad8beeb834609980.png",
+    "note": "For many Americans, opportunity feels hidden behind barriers. Gladeye turned Gallup's Where Opportunity Takes Root research into an experience that reveals its insights piece by piece.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
+   },
    {
     "title": "Manna",
     "url": "https://onepagelove.com/manna",
@@ -109,11 +117,19 @@
     "kind": "gallery"
    },
    {
-    "title": "Wizstar R1",
-    "url": "https://www.producthunt.com/products/wizstar",
-    "note": "Seedance 2.0-level product videos at a lower cost",
+    "title": "RetainIQ",
+    "url": "https://www.producthunt.com/products/retainiq-2",
+    "note": "Know which customers need attention, why & what to do next",
     "source": "Product Hunt · Today",
     "kind": "trending"
+   },
+   {
+    "title": "Prägen Hätlen",
+    "url": "https://www.awwwards.com/sites/pragen-hatlen",
+    "image": "https://www.awwwards.com/awards/submissions/2026/10/6ac3b787ab684100820740.jpg",
+    "note": "Prägen Hätlen is a Swiss watchmaking brand operating at the intersection of fine horology and Web3 Technology.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
    },
    {
     "title": "Muesli",
@@ -124,11 +140,19 @@
     "kind": "gallery"
    },
    {
-    "title": "snibl",
-    "url": "https://www.producthunt.com/products/snibl",
-    "note": "Save highlighted text from any app, then ask AI about it",
+    "title": "Tano",
+    "url": "https://www.producthunt.com/products/tano",
+    "note": "Korean vocabulary app that skips the words you know",
     "source": "Product Hunt · Today",
     "kind": "trending"
+   },
+   {
+    "title": "Huxley Saga",
+    "url": "https://www.awwwards.com/sites/huxley-saga",
+    "image": "https://www.awwwards.com/awards/submissions/2026/10/6ac4239351de3833681170.png",
+    "note": "The HUXLEY® saga is an original sci-fi universe created by renowned concept artist Ben Mauro.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
    },
    {
     "title": "Solea",
@@ -139,11 +163,19 @@
     "kind": "gallery"
    },
    {
-    "title": "slay",
-    "url": "https://www.producthunt.com/products/slay-3",
-    "note": "AI composition guide camera app for iPhone",
+    "title": "ro",
+    "url": "https://www.producthunt.com/products/ro",
+    "note": "I won't bother you",
     "source": "Product Hunt · Today",
     "kind": "trending"
+   },
+   {
+    "title": "Polpharma Biologics",
+    "url": "https://www.awwwards.com/sites/polpharma-biologics",
+    "image": "https://www.awwwards.com/awards/submissions/2026/10/6ac3955504e91069999337.jpg",
+    "note": "Biosimilars are not identical to their reference — only equivalent within defined tolerances. That rule became the design system: controlled variation, never off-system.",
+    "source": "Awwwards · Sites of the Day",
+    "kind": "award"
    },
    {
     "title": "Rinat Seif",
@@ -154,48 +186,18 @@
     "kind": "gallery"
    },
    {
-    "title": "Depost AI",
-    "url": "https://www.producthunt.com/products/depost-ai",
-    "note": "The LinkedIn AI agent that learns what works for your brand",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "Damián Panes",
-    "url": "https://onepagelove.com/damian-panes",
-    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/11/opl-screenshot-damian-panes-1795275356334-desktop.jpg",
-    "note": "Damián Panes, a programmer and founder, has a portfolio that presents everything as a draggable mint-and-black pixel-art chessboard, using animated pieces, bitmap typography and dithered graphics remi",
-    "source": "One Page Love",
-    "kind": "gallery"
-   },
-   {
-    "title": "Prosed AI 2.0 + MCP",
-    "url": "https://www.producthunt.com/products/prosed-turn-your-content-into-a-book",
-    "note": "Your company's words, assembled into a book",
-    "source": "Product Hunt · Today",
-    "kind": "trending"
-   },
-   {
-    "title": "Soma",
-    "url": "https://onepagelove.com/soma",
-    "image": "https://assets.onepagelove.com/cdn-cgi/image/width=1200,height=1200,fit=cover,gravity=top,format=jpg,quality=85/wp-content/uploads/2026/11/opl-screenshot-soma-fitness-1795100574044-desktop.jpg",
-    "note": "Soma analyzes voice signals on Mac and iPhone to track mental state and identify what affects how users think and feel. It has a refined ivory interface with generous whitespace, monochrome product pr",
-    "source": "One Page Love",
-    "kind": "gallery"
-   },
-   {
-    "title": "Remove Silence",
-    "url": "https://www.producthunt.com/products/remove-silence",
-    "note": "Cut the silence from audio in your browser, free",
+    "title": "Superrelay",
+    "url": "https://www.producthunt.com/products/superrelay",
+    "note": "One inbox for every app you ship, never priced per ticket",
     "source": "Product Hunt · Today",
     "kind": "trending"
    }
   ],
   "app": [
    {
-    "title": "Wizstar R1",
-    "url": "https://www.producthunt.com/products/wizstar",
-    "note": "Seedance 2.0-level product videos at a lower cost",
+    "title": "RetainIQ",
+    "url": "https://www.producthunt.com/products/retainiq-2",
+    "note": "Know which customers need attention, why & what to do next",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -203,15 +205,15 @@
     "title": "elementalsouls/Claude-BugHunter",
     "url": "https://github.com/elementalsouls/Claude-BugHunter",
     "image": "https://opengraph.githubassets.com/1/elementalsouls/Claude-BugHunter",
-    "by": "★ 1,615 today",
+    "by": "★ 1,372 today",
     "note": "A Claude Code skill bundle for bug hunting and external red-team work - 85 skills, 16 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identi",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "snibl",
-    "url": "https://www.producthunt.com/products/snibl",
-    "note": "Save highlighted text from any app, then ask AI about it",
+    "title": "Tano",
+    "url": "https://www.producthunt.com/products/tano",
+    "note": "Korean vocabulary app that skips the words you know",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -219,15 +221,15 @@
     "title": "obra/superpowers",
     "url": "https://github.com/obra/superpowers",
     "image": "https://opengraph.githubassets.com/1/obra/superpowers",
-    "by": "★ 916 today",
+    "by": "★ 809 today",
     "note": "An agentic skills framework & software development methodology that works.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "slay",
-    "url": "https://www.producthunt.com/products/slay-3",
-    "note": "AI composition guide camera app for iPhone",
+    "title": "ro",
+    "url": "https://www.producthunt.com/products/ro",
+    "note": "I won't bother you",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -235,15 +237,15 @@
     "title": "HKUDS/CLI-Anything",
     "url": "https://github.com/HKUDS/CLI-Anything",
     "image": "https://opengraph.githubassets.com/1/HKUDS/CLI-Anything",
-    "by": "★ 668 today",
+    "by": "★ 561 today",
     "note": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Depost AI",
-    "url": "https://www.producthunt.com/products/depost-ai",
-    "note": "The LinkedIn AI agent that learns what works for your brand",
+    "title": "Superrelay",
+    "url": "https://www.producthunt.com/products/superrelay",
+    "note": "One inbox for every app you ship, never priced per ticket",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -251,15 +253,15 @@
     "title": "jingyaogong/minimind",
     "url": "https://github.com/jingyaogong/minimind",
     "image": "https://opengraph.githubassets.com/1/jingyaogong/minimind",
-    "by": "★ 667 today",
+    "by": "★ 391 today",
     "note": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Prosed AI 2.0 + MCP",
-    "url": "https://www.producthunt.com/products/prosed-turn-your-content-into-a-book",
-    "note": "Your company's words, assembled into a book",
+    "title": "DearDarling",
+    "url": "https://www.producthunt.com/products/deardarling",
+    "note": "A couples messenger with a mutual friend, Pip",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -267,15 +269,15 @@
     "title": "cursor/plugins",
     "url": "https://github.com/cursor/plugins",
     "image": "https://opengraph.githubassets.com/1/cursor/plugins",
-    "by": "★ 242 today",
+    "by": "★ 214 today",
     "note": "Cursor plugin specification and official plugins",
     "source": "GitHub Trending",
     "kind": "trending"
    },
    {
-    "title": "Remove Silence",
-    "url": "https://www.producthunt.com/products/remove-silence",
-    "note": "Cut the silence from audio in your browser, free",
+    "title": "Bento",
+    "url": "https://www.producthunt.com/products/bento-11",
+    "note": "Runnable lessons and interactive maps of GitHub repos",
     "source": "Product Hunt · Today",
     "kind": "trending"
    },
@@ -283,7 +285,7 @@
     "title": "firecrawl/firecrawl",
     "url": "https://github.com/firecrawl/firecrawl",
     "image": "https://opengraph.githubassets.com/1/firecrawl/firecrawl",
-    "by": "★ 833 today",
+    "by": "★ 717 today",
     "note": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
     "source": "GitHub Trending",
     "kind": "trending"
@@ -300,18 +302,18 @@
     "kind": "performance"
    },
    {
-    "title": "Ramón Who Speaks to Ghosts",
-    "url": "https://vimeo.com/channels/staffpicks/1249436870",
-    "image": "https://i.vimeocdn.com/video/2230203672-55ae7cae93faf407f4014ba0bcd31160534b1beff96b7f8417d25218c3c61266-d_960?region=us",
-    "note": "After a volcanic eruption, Ram&oacute;n walks the island of La Palma with his microphone, looking for ghosts.  Exclusive director's commentary available in&hellip;",
+    "title": "The Mustached Clown Circus/ El circo de los payasos bigotones",
+    "url": "https://vimeo.com/channels/staffpicks/1247685305",
+    "image": "https://i.vimeocdn.com/video/2227588527-081bf6436e652bb6b5dda9d9b61ad48a39e14fe02618cbfa717544cf6f1e9537-d_960?region=us",
+    "note": "The story tells of the disappearances, torture, and humiliation that took place in Argentina during the last military dictatorship, within a sinister circus of big&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
    {
-    "title": "The Stash x OFFF Montreal 2026 Panel Follow-Up Part 2",
-    "url": "https://www.stashmedia.tv/the-stash-x-offf-montreal-2026-panel-follow-up-part-2/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Stash-Panel-BREAKING-THROUGH-at-OFFF-Montreal-2026-STASH-MAGAZINE.jpg",
-    "note": "Our recent BREAKING THROUGH panel at OFFF Montreal generated far more audience questions than we could answer in the session, so we asked our panelists to answer the most-asked queries here. Part 1 of",
+    "title": "Jungler Keeps it Hands-On for Action Against Hunger",
+    "url": "https://www.stashmedia.tv/jungler-gets-hands-on-for-action-against-hunger/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Action-Against-Hunger-Hunger-has-a-cure-ad-by-Junglar-and-La-Chose-STASH-MAGAZINE2-1920x1080.jpg",
+    "note": "Director Margherita Premuroso, Paris prodco Jungler, and agency La Chose pull no punches in this raw and chilling hand-animated film for the pioneering French NGO, Action Against Hunger. [Watch]\nThe p",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -324,18 +326,18 @@
     "kind": "performance"
    },
    {
-    "title": "I Got My Brother",
-    "url": "https://vimeo.com/channels/staffpicks/1248815965",
-    "image": "https://i.vimeocdn.com/video/2229044852-9e946cb8a06281c44fdd83028bac506e05d7c851101f53db05f3415d176896c9-d_960?region=us",
-    "note": "Two brothers reflect on their candid and often humorous memories of surviving the foster care system and prison, realizing along the way that their path to healing&hellip;",
+    "title": "Ramón Who Speaks to Ghosts",
+    "url": "https://vimeo.com/channels/staffpicks/1249436870",
+    "image": "https://i.vimeocdn.com/video/2230203672-55ae7cae93faf407f4014ba0bcd31160534b1beff96b7f8417d25218c3c61266-d_960?region=us",
+    "note": "After a volcanic eruption, Ram&oacute;n walks the island of La Palma with his microphone, looking for ghosts.  Exclusive director's commentary available in&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
    {
-    "title": "Foldable Fun: FOREAL Launches Samsung Galaxy Z Fold8",
-    "url": "https://www.stashmedia.tv/foldable-fun-foreal-launches-samsung-galaxy-z-fold8/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Samsung-Galaxy-ZFold8-global-campaign-film-by-Foreal-STASH-MAGAZINE.jpg",
-    "note": "With a playful poke at Apple's better-late-than-never iPhone Duo, the team at FOREAL make the case for Samsung's seven-year head start in the bendable phone category in this global launch film for the",
+    "title": "The Art of Impact: Trizz Builds TaylorMade’s Beautiful Machine",
+    "url": "https://www.stashmedia.tv/the-art-of-impact-trizz-builds-taylormades-beautiful-machine/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/TaylorMade-Beautiful-Machine-ad-by-Trizz-STASH-MAGAZINE-1920x1080.jpg",
+    "note": "Working with LA prodco The Ebeling Group and agency Zambezi, CD Oriol Puig and his CG motion team at Trizz in Barcelona transform the physics of ball and club into visual intrigue for US golf brand Ta",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -348,6 +350,30 @@
     "kind": "performance"
    },
    {
+    "title": "I Got My Brother",
+    "url": "https://vimeo.com/channels/staffpicks/1248815965",
+    "image": "https://i.vimeocdn.com/video/2229044852-9e946cb8a06281c44fdd83028bac506e05d7c851101f53db05f3415d176896c9-d_960?region=us",
+    "note": "Two brothers reflect on their candid and often humorous memories of surviving the foster care system and prison, realizing along the way that their path to healing&hellip;",
+    "source": "Vimeo Staff Picks",
+    "kind": "gallery"
+   },
+   {
+    "title": "The Stash x OFFF Montreal 2026 Panel Follow-Up Part 2",
+    "url": "https://www.stashmedia.tv/the-stash-x-offf-montreal-2026-panel-follow-up-part-2/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Stash-Panel-BREAKING-THROUGH-at-OFFF-Montreal-2026-STASH-MAGAZINE.jpg",
+    "note": "Our recent BREAKING THROUGH panel at OFFF Montreal generated far more audience questions than we could answer in the session, so we asked our panelists to answer the most-asked queries here. Part 1 of",
+    "source": "STASH",
+    "kind": "gallery"
+   },
+   {
+    "title": "Apple Pay: The fast, easy, and secure way to pay.",
+    "url": "https://www.youtube.com/watch?v=miUjxZ2ASRs",
+    "image": "https://i.ytimg.com/vi/miUjxZ2ASRs/hqdefault.jpg",
+    "by": "311K views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
     "title": "SAUNA SICKNESS",
     "url": "https://vimeo.com/channels/staffpicks/1249479904",
     "image": "https://i.vimeocdn.com/video/2229864348-aeafa0e6f69fc3d905c559c96f4a2282def270213c96d078d32655aa53ebb1cc-d_960?region=us",
@@ -356,34 +382,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Iridescent Airlock: Antibody Opens Blade Runner 2099 Series",
-    "url": "https://www.stashmedia.tv/iridescent-airlock-antibody-opens-blade-runner-2099-series/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Blade-Runner-2099-Series-titles-by-Antibody-STASH-MAGAZINE8-1920x804.jpg",
-    "note": "Mining a vocabulary of degraded analog video, protein imaging, and spectral data, Antibody opens Amazon's new Blade Runner 2099 series with an intriguing exercise in luminous abstraction and electroch",
-    "source": "STASH",
-    "kind": "gallery"
-   },
-   {
-    "title": "Apple Pay: The fast, easy, and secure way to pay.",
-    "url": "https://www.youtube.com/watch?v=miUjxZ2ASRs",
-    "image": "https://i.ytimg.com/vi/miUjxZ2ASRs/hqdefault.jpg",
-    "by": "309K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
-    "title": "I made a film in Excel",
-    "url": "https://vimeo.com/channels/staffpicks/1241981102",
-    "image": "https://i.vimeocdn.com/video/2231224185-f3fb649cd3f109cb553a3c2557a30034216b093e07b6dec8ecd7d45c9563a7a0-d_960?region=us",
-    "note": "Super quick film made in Microsoft Excel The original soundtrack was created first which inspired the visuals. After everything was animated the narration was made.  Excel&hellip;",
-    "source": "Vimeo Staff Picks",
-    "kind": "gallery"
-   },
-   {
-    "title": "Been There, Hired That: New Yelp Campaign Film by Panic",
-    "url": "https://www.stashmedia.tv/been-there-hired-that-new-yelp-campaign-film-by-panic/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Yelp-22It-Takes-a-Village22-Campaign-film-by-Panic-STASH-MAGAZINE6-1920x1080.jpg",
-    "note": "Founder/director Gints Gutmanis and the Panic design and animation team nudge Yelp's new illustration style into the motion world with this fresh and friendly campaign film “It Takes a Village”.  [Wat",
+    "title": "Foldable Fun: FOREAL Launches Samsung Galaxy Z Fold8",
+    "url": "https://www.stashmedia.tv/foldable-fun-foreal-launches-samsung-galaxy-z-fold8/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Samsung-Galaxy-ZFold8-global-campaign-film-by-Foreal-STASH-MAGAZINE.jpg",
+    "note": "With a playful poke at Apple's better-late-than-never iPhone Duo, the team at FOREAL make the case for Samsung's seven-year head start in the bendable phone category in this global launch film for the",
     "source": "STASH",
     "kind": "gallery"
    }
@@ -398,10 +400,10 @@
     "kind": "gallery"
    },
    {
-    "title": "The Stash x OFFF Montreal 2026 Panel Follow-Up Part 2",
-    "url": "https://www.stashmedia.tv/the-stash-x-offf-montreal-2026-panel-follow-up-part-2/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Stash-Panel-BREAKING-THROUGH-at-OFFF-Montreal-2026-STASH-MAGAZINE.jpg",
-    "note": "Our recent BREAKING THROUGH panel at OFFF Montreal generated far more audience questions than we could answer in the session, so we asked our panelists to answer the most-asked queries here. Part 1 of",
+    "title": "Jungler Keeps it Hands-On for Action Against Hunger",
+    "url": "https://www.stashmedia.tv/jungler-gets-hands-on-for-action-against-hunger/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Action-Against-Hunger-Hunger-has-a-cure-ad-by-Junglar-and-La-Chose-STASH-MAGAZINE2-1920x1080.jpg",
+    "note": "Director Margherita Premuroso, Paris prodco Jungler, and agency La Chose pull no punches in this raw and chilling hand-animated film for the pioneering French NGO, Action Against Hunger. [Watch]\nThe p",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -422,10 +424,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Foldable Fun: FOREAL Launches Samsung Galaxy Z Fold8",
-    "url": "https://www.stashmedia.tv/foldable-fun-foreal-launches-samsung-galaxy-z-fold8/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Samsung-Galaxy-ZFold8-global-campaign-film-by-Foreal-STASH-MAGAZINE.jpg",
-    "note": "With a playful poke at Apple's better-late-than-never iPhone Duo, the team at FOREAL make the case for Samsung's seven-year head start in the bendable phone category in this global launch film for the",
+    "title": "The Art of Impact: Trizz Builds TaylorMade’s Beautiful Machine",
+    "url": "https://www.stashmedia.tv/the-art-of-impact-trizz-builds-taylormades-beautiful-machine/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/TaylorMade-Beautiful-Machine-ad-by-Trizz-STASH-MAGAZINE-1920x1080.jpg",
+    "note": "Working with LA prodco The Ebeling Group and agency Zambezi, CD Oriol Puig and his CG motion team at Trizz in Barcelona transform the physics of ball and club into visual intrigue for US golf brand Ta",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -446,10 +448,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Iridescent Airlock: Antibody Opens Blade Runner 2099 Series",
-    "url": "https://www.stashmedia.tv/iridescent-airlock-antibody-opens-blade-runner-2099-series/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Blade-Runner-2099-Series-titles-by-Antibody-STASH-MAGAZINE8-1920x804.jpg",
-    "note": "Mining a vocabulary of degraded analog video, protein imaging, and spectral data, Antibody opens Amazon's new Blade Runner 2099 series with an intriguing exercise in luminous abstraction and electroch",
+    "title": "The Stash x OFFF Montreal 2026 Panel Follow-Up Part 2",
+    "url": "https://www.stashmedia.tv/the-stash-x-offf-montreal-2026-panel-follow-up-part-2/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Stash-Panel-BREAKING-THROUGH-at-OFFF-Montreal-2026-STASH-MAGAZINE.jpg",
+    "note": "Our recent BREAKING THROUGH panel at OFFF Montreal generated far more audience questions than we could answer in the session, so we asked our panelists to answer the most-asked queries here. Part 1 of",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -470,10 +472,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Been There, Hired That: New Yelp Campaign Film by Panic",
-    "url": "https://www.stashmedia.tv/been-there-hired-that-new-yelp-campaign-film-by-panic/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Yelp-22It-Takes-a-Village22-Campaign-film-by-Panic-STASH-MAGAZINE6-1920x1080.jpg",
-    "note": "Founder/director Gints Gutmanis and the Panic design and animation team nudge Yelp's new illustration style into the motion world with this fresh and friendly campaign film “It Takes a Village”.  [Wat",
+    "title": "Foldable Fun: FOREAL Launches Samsung Galaxy Z Fold8",
+    "url": "https://www.stashmedia.tv/foldable-fun-foreal-launches-samsung-galaxy-z-fold8/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Samsung-Galaxy-ZFold8-global-campaign-film-by-Foreal-STASH-MAGAZINE.jpg",
+    "note": "With a playful poke at Apple's better-late-than-never iPhone Duo, the team at FOREAL make the case for Samsung's seven-year head start in the bendable phone category in this global launch film for the",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -496,10 +498,10 @@
     "kind": "performance"
    },
    {
-    "title": "Ramón Who Speaks to Ghosts",
-    "url": "https://vimeo.com/channels/staffpicks/1249436870",
-    "image": "https://i.vimeocdn.com/video/2230203672-55ae7cae93faf407f4014ba0bcd31160534b1beff96b7f8417d25218c3c61266-d_960?region=us",
-    "note": "After a volcanic eruption, Ram&oacute;n walks the island of La Palma with his microphone, looking for ghosts.  Exclusive director's commentary available in&hellip;",
+    "title": "The Mustached Clown Circus/ El circo de los payasos bigotones",
+    "url": "https://vimeo.com/channels/staffpicks/1247685305",
+    "image": "https://i.vimeocdn.com/video/2227588527-081bf6436e652bb6b5dda9d9b61ad48a39e14fe02618cbfa717544cf6f1e9537-d_960?region=us",
+    "note": "The story tells of the disappearances, torture, and humiliation that took place in Argentina during the last military dictatorship, within a sinister circus of big&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
@@ -512,10 +514,10 @@
     "kind": "gallery"
    },
    {
-    "title": "The Stash x OFFF Montreal 2026 Panel Follow-Up Part 2",
-    "url": "https://www.stashmedia.tv/the-stash-x-offf-montreal-2026-panel-follow-up-part-2/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Stash-Panel-BREAKING-THROUGH-at-OFFF-Montreal-2026-STASH-MAGAZINE.jpg",
-    "note": "Our recent BREAKING THROUGH panel at OFFF Montreal generated far more audience questions than we could answer in the session, so we asked our panelists to answer the most-asked queries here. Part 1 of",
+    "title": "Jungler Keeps it Hands-On for Action Against Hunger",
+    "url": "https://www.stashmedia.tv/jungler-gets-hands-on-for-action-against-hunger/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Action-Against-Hunger-Hunger-has-a-cure-ad-by-Junglar-and-La-Chose-STASH-MAGAZINE2-1920x1080.jpg",
+    "note": "Director Margherita Premuroso, Paris prodco Jungler, and agency La Chose pull no punches in this raw and chilling hand-animated film for the pioneering French NGO, Action Against Hunger. [Watch]\nThe p",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -528,10 +530,10 @@
     "kind": "performance"
    },
    {
-    "title": "I Got My Brother",
-    "url": "https://vimeo.com/channels/staffpicks/1248815965",
-    "image": "https://i.vimeocdn.com/video/2229044852-9e946cb8a06281c44fdd83028bac506e05d7c851101f53db05f3415d176896c9-d_960?region=us",
-    "note": "Two brothers reflect on their candid and often humorous memories of surviving the foster care system and prison, realizing along the way that their path to healing&hellip;",
+    "title": "Ramón Who Speaks to Ghosts",
+    "url": "https://vimeo.com/channels/staffpicks/1249436870",
+    "image": "https://i.vimeocdn.com/video/2230203672-55ae7cae93faf407f4014ba0bcd31160534b1beff96b7f8417d25218c3c61266-d_960?region=us",
+    "note": "After a volcanic eruption, Ram&oacute;n walks the island of La Palma with his microphone, looking for ghosts.  Exclusive director's commentary available in&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
@@ -544,10 +546,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Foldable Fun: FOREAL Launches Samsung Galaxy Z Fold8",
-    "url": "https://www.stashmedia.tv/foldable-fun-foreal-launches-samsung-galaxy-z-fold8/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Samsung-Galaxy-ZFold8-global-campaign-film-by-Foreal-STASH-MAGAZINE.jpg",
-    "note": "With a playful poke at Apple's better-late-than-never iPhone Duo, the team at FOREAL make the case for Samsung's seven-year head start in the bendable phone category in this global launch film for the",
+    "title": "The Art of Impact: Trizz Builds TaylorMade’s Beautiful Machine",
+    "url": "https://www.stashmedia.tv/the-art-of-impact-trizz-builds-taylormades-beautiful-machine/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/TaylorMade-Beautiful-Machine-ad-by-Trizz-STASH-MAGAZINE-1920x1080.jpg",
+    "note": "Working with LA prodco The Ebeling Group and agency Zambezi, CD Oriol Puig and his CG motion team at Trizz in Barcelona transform the physics of ball and club into visual intrigue for US golf brand Ta",
     "source": "STASH",
     "kind": "gallery"
    },
@@ -560,10 +562,10 @@
     "kind": "performance"
    },
    {
-    "title": "SAUNA SICKNESS",
-    "url": "https://vimeo.com/channels/staffpicks/1249479904",
-    "image": "https://i.vimeocdn.com/video/2229864348-aeafa0e6f69fc3d905c559c96f4a2282def270213c96d078d32655aa53ebb1cc-d_960?region=us",
-    "note": "FOR YOUR CONSIDERATION - BEST LIVE ACTION SHORT FILM   Struggling to maintain the peace she mistakes for love, Cleo's steamy New Year's Eve plans fissure&hellip;",
+    "title": "I Got My Brother",
+    "url": "https://vimeo.com/channels/staffpicks/1248815965",
+    "image": "https://i.vimeocdn.com/video/2229044852-9e946cb8a06281c44fdd83028bac506e05d7c851101f53db05f3415d176896c9-d_960?region=us",
+    "note": "Two brothers reflect on their candid and often humorous memories of surviving the foster care system and prison, realizing along the way that their path to healing&hellip;",
     "source": "Vimeo Staff Picks",
     "kind": "gallery"
    },
@@ -576,20 +578,20 @@
     "kind": "gallery"
    },
    {
-    "title": "Iridescent Airlock: Antibody Opens Blade Runner 2099 Series",
-    "url": "https://www.stashmedia.tv/iridescent-airlock-antibody-opens-blade-runner-2099-series/",
-    "image": "http://www.stashmedia.tv/wp-content/uploads/Blade-Runner-2099-Series-titles-by-Antibody-STASH-MAGAZINE8-1920x804.jpg",
-    "note": "Mining a vocabulary of degraded analog video, protein imaging, and spectral data, Antibody opens Amazon's new Blade Runner 2099 series with an intriguing exercise in luminous abstraction and electroch",
+    "title": "The Stash x OFFF Montreal 2026 Panel Follow-Up Part 2",
+    "url": "https://www.stashmedia.tv/the-stash-x-offf-montreal-2026-panel-follow-up-part-2/",
+    "image": "http://www.stashmedia.tv/wp-content/uploads/Stash-Panel-BREAKING-THROUGH-at-OFFF-Montreal-2026-STASH-MAGAZINE.jpg",
+    "note": "Our recent BREAKING THROUGH panel at OFFF Montreal generated far more audience questions than we could answer in the session, so we asked our panelists to answer the most-asked queries here. Part 1 of",
     "source": "STASH",
     "kind": "gallery"
    }
   ],
   "social": [
    {
-    "title": "Always Keep Going 👏",
-    "url": "https://www.youtube.com/watch?v=Ye4pKOUW6k4",
-    "image": "https://i.ytimg.com/vi/Ye4pKOUW6k4/hqdefault.jpg",
-    "by": "10M views",
+    "title": "One Step At A Time 😮‍💨",
+    "url": "https://www.youtube.com/watch?v=4A4bQSm5BFY",
+    "image": "https://i.ytimg.com/vi/4A4bQSm5BFY/hqdefault.jpg",
+    "by": "3.7M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -605,7 +607,7 @@
     "title": "Pay Attention To The Wheel 👀",
     "url": "https://www.youtube.com/watch?v=50p59uulAsc",
     "image": "https://i.ytimg.com/vi/50p59uulAsc/hqdefault.jpg",
-    "by": "2.6M views",
+    "by": "2.8M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -613,7 +615,7 @@
     "title": "Airbnb | あつまる？エアビる？｜今日はちょっと、大人忘れます。",
     "url": "https://www.youtube.com/watch?v=p8HvRJALo4Y",
     "image": "https://i.ytimg.com/vi/p8HvRJALo4Y/hqdefault.jpg",
-    "by": "2.5M views",
+    "by": "2.6M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -622,6 +624,14 @@
     "url": "https://www.youtube.com/watch?v=tAIjGmGVa1g",
     "image": "https://i.ytimg.com/vi/tAIjGmGVa1g/hqdefault.jpg",
     "by": "1.6M views",
+    "source": "Latest from brands",
+    "kind": "performance"
+   },
+   {
+    "title": "Different Ways to Catch Flights 👀",
+    "url": "https://www.youtube.com/watch?v=Fs4e7S9s9YY",
+    "image": "https://i.ytimg.com/vi/Fs4e7S9s9YY/hqdefault.jpg",
+    "by": "1.1M views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -637,7 +647,7 @@
     "title": "she meant “seis siete”",
     "url": "https://www.youtube.com/watch?v=L8L24fksmlk",
     "image": "https://i.ytimg.com/vi/L8L24fksmlk/hqdefault.jpg",
-    "by": "690K views",
+    "by": "805K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -650,18 +660,10 @@
     "kind": "performance"
    },
    {
-    "title": "Different Ways to Catch Flights 👀",
-    "url": "https://www.youtube.com/watch?v=Fs4e7S9s9YY",
-    "image": "https://i.ytimg.com/vi/Fs4e7S9s9YY/hqdefault.jpg",
-    "by": "448K views",
-    "source": "Latest from brands",
-    "kind": "performance"
-   },
-   {
     "title": "No Room For Error 😬",
     "url": "https://www.youtube.com/watch?v=5267FsbsFEc",
     "image": "https://i.ytimg.com/vi/5267FsbsFEc/hqdefault.jpg",
-    "by": "446K views",
+    "by": "494K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -669,89 +671,89 @@
     "title": "just gift me super for no reason, that’s the basic minimum",
     "url": "https://www.youtube.com/watch?v=CrLI5ImyTUo",
     "image": "https://i.ytimg.com/vi/CrLI5ImyTUo/hqdefault.jpg",
-    "by": "397K views",
+    "by": "425K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
    {
-    "title": "Get sorted for college with Roxie from the Apple Store.",
-    "url": "https://www.youtube.com/watch?v=P5GxUjU4uBI",
-    "image": "https://i.ytimg.com/vi/P5GxUjU4uBI/hqdefault.jpg",
-    "by": "373K views",
+    "title": "s/o to all the miraculers who learned french because of this show 🐞 #duolingo #miraculousladybug",
+    "url": "https://www.youtube.com/watch?v=QnAJTD_xUOI",
+    "image": "https://i.ytimg.com/vi/QnAJTD_xUOI/hqdefault.jpg",
+    "by": "397K views",
     "source": "Latest from brands",
     "kind": "performance"
    }
   ],
   "post": [
    {
-    "title": "The group chat where your AI talks behind your back",
-    "url": "https://construct22.com/",
+    "title": "Unkernel: Real Linux kernel, compiled to WebAssembly",
+    "url": "https://unkernel.dev",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Hard Drive pricing has gotten bad",
-    "url": "https://blog.ktz.me/black-friday-hard-drive-prices-are-messed-up/",
+    "title": "Google's DeepCrossAttention achieves comparable model quality up to 3x faster",
+    "url": "https://research.google/blog/supercharging-transformer-residual-connections/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "AI made self-hosting fun again",
-    "url": "https://janlukas.blog/posts/ai-self-hosting",
+    "title": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
+    "url": "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Kamil Khan Mumtaz: Pakistani architect, admired at home, almost invisible abroad",
-    "url": "https://worksinprogress.co/issue/the-greatest-architect-youve-never-heard-of-is-in-pakistan/",
+    "title": "Michael Nielsen took down his book on neural nets",
+    "url": "https://neuralnetworksanddeeplearning.com/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Company Culture = Slack Emoji ÷ √Headcount",
-    "url": "https://lia.mg/posts/measuring-company-culture-with-slack-emoji/",
+    "title": "Convex skills send the user's app idea to a remote server without telling them",
+    "url": "https://github.com/convex/convex-backend-skill/issues/64",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "YouTube Ad Punisher – Auto-reloads YouTube pages when an ad plays",
-    "url": "https://github.com/antonpictures/youtube-punisher",
+    "title": "I'm Scared of AI",
+    "url": "https://thesoapbox.email/archive/3",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Tracking Diseases Cured by AI",
-    "url": "https://diseasescuredbyai.com/",
+    "title": "Credit card skimming scripts using WebRTC found on popular shopping sites",
+    "url": "https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "AMD-specific fork of llama.cpp",
-    "url": "https://devnull.land/amd-specific-llama-cpp",
+    "title": "False computer-checked proofs",
+    "url": "https://cr.yp.to/proofs/falseccp.html",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Tell HN: Happy Thanksgiving",
-    "url": "https://news.ycombinator.com/item?id=50655664",
+    "title": "Show HN: bouncemarket – a live prediction market game for a bouncing ball",
+    "url": "https://bouncemarket.minhanhday.com/",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Nextcloud Office Desktop app",
-    "url": "https://nextcloud.com/blog/euro-office-comes-to-your-desktop-with-the-nextcloud-office-desktop-app/",
+    "title": "US Air Force's cloud computing platform hacked",
+    "url": "https://news.sky.com/story/us-air-forces-cloud-computing-platform-hacked-13617163",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Intel One Mono font (2023)",
-    "url": "https://github.com/intel/intel-one-mono",
+    "title": "A Deterministic Subexponential-Time Algorithm for the Discrete Logarithm Problem [pdf]",
+    "url": "https://eprint.iacr.org/2026/3020.pdf",
     "source": "Hacker News · Best",
     "kind": "performance"
    },
    {
-    "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
-    "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
+    "title": "Claude sabotaging ML research tasks?",
+    "url": "https://twitter.com/RealAstropulse/status/2126119408997466389",
     "source": "Hacker News · Best",
     "kind": "performance"
    }
@@ -809,7 +811,7 @@
     "title": "What's going on at DuoMart!?! | DuoTV (Full Series)",
     "url": "https://www.youtube.com/watch?v=YP2KYQZUkWY",
     "image": "https://i.ytimg.com/vi/YP2KYQZUkWY/hqdefault.jpg",
-    "by": "534K views",
+    "by": "541K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -822,10 +824,10 @@
     "kind": "gallery"
    },
    {
-    "title": "Apple Pay: The fast, easy, and secure way to pay.",
-    "url": "https://www.youtube.com/watch?v=miUjxZ2ASRs",
-    "image": "https://i.ytimg.com/vi/miUjxZ2ASRs/hqdefault.jpg",
-    "by": "309K views",
+    "title": "#1話【初公開】 竹内涼真のオフに密着。エアビで再会する仲間たちとは？",
+    "url": "https://www.youtube.com/watch?v=Xk392j2Jljw",
+    "image": "https://i.ytimg.com/vi/Xk392j2Jljw/hqdefault.jpg",
+    "by": "413K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
@@ -838,18 +840,18 @@
     "kind": "gallery"
    },
    {
-    "title": "Caitlin 1 | Behind the Design | Nike",
-    "url": "https://www.youtube.com/watch?v=628ogczUw6o",
-    "image": "https://i.ytimg.com/vi/628ogczUw6o/hqdefault.jpg",
-    "by": "309K views",
+    "title": "Apple Pay: The fast, easy, and secure way to pay.",
+    "url": "https://www.youtube.com/watch?v=miUjxZ2ASRs",
+    "image": "https://i.ytimg.com/vi/miUjxZ2ASRs/hqdefault.jpg",
+    "by": "311K views",
     "source": "Latest from brands",
     "kind": "performance"
    },
    {
-    "title": "iPhone 18 Pro Max: Longest battery life ever in an iPhone",
-    "url": "https://www.youtube.com/watch?v=K87v25BtHw4",
-    "image": "https://i.ytimg.com/vi/K87v25BtHw4/hqdefault.jpg",
-    "by": "218K views",
+    "title": "Caitlin 1 | Behind the Design | Nike",
+    "url": "https://www.youtube.com/watch?v=628ogczUw6o",
+    "image": "https://i.ytimg.com/vi/628ogczUw6o/hqdefault.jpg",
+    "by": "309K views",
     "source": "Latest from brands",
     "kind": "performance"
    }
